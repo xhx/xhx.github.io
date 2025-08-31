@@ -1,5 +1,5 @@
-Here are the main families of **approximate $S = QK^\top$** (the $n\times n$ score matrix) that cut the $O(n^2 d)$ cost. I’ll give one concrete recipe you can implement today, plus alternatives with pros/cons and true complexities.
-
+ **approximate $S = QK^\top$** (the $n\times n$ score matrix) that cut the $O(n^2 d)$ cost. 
+ 
 ---
 
 # 1) Kernelization / “Linear” Attention (e.g., Performer FAVOR+)
