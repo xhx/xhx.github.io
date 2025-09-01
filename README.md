@@ -184,14 +184,11 @@ hugo --gc --cleanDestinationDir
 - [KaTeX Documentation](https://katex.org/docs/)
 - [GitHub Pages](https://pages.github.com/)
 
-## 🤝 Contributing
-
-This is a personal website, but suggestions and improvements are welcome!
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
 Built with ❤️ using Hugo and PaperMod
+
+---
+
+© Xiaohui Xie 2025
