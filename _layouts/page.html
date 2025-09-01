@@ -1,0 +1,188 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    {% if page.description %}
+    <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  {% if page.show_sidebar %}
+  <aside class="sidebar">
+    <nav class="page-navigation">
+      <h3>Site Navigation</h3>
+      
+      <h4>Main Pages</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        {% assign sorted_pages = site.pages | sort: 'title' %}
+        {% for page in sorted_pages %}
+          {% if page.title and page.layout == 'page' %}
+          <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      
+      <h4>Research Areas</h4>
+      <ul>
+        <li><a href="/math/">Mathematics</a></li>
+        <li><a href="/teaching/">Teaching</a></li>
+        <li><a href="/ai/">AI & Machine Learning</a></li>
+      </ul>
+      
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID&sortby=pubdate" target="_blank">Google Scholar</a></li>
+        <li><a href="https://www.ics.uci.edu/~xhx/" target="_blank">UC Irvine Profile</a></li>
+      </ul>
+    </nav>
+  </aside>
+  {% endif %}
+</article>
+
+<style>
+.post {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.post-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e1e4e8;
+}
+
+.post-title {
+  font-size: 2.5rem;
+  color: #24292e;
+  margin-bottom: 0.5rem;
+}
+
+.post-description {
+  font-size: 1.2rem;
+  color: #586069;
+  font-style: italic;
+}
+
+.post-content {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #24292e;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #24292e;
+}
+
+.post-content h1 { font-size: 2rem; }
+.post-content h2 { font-size: 1.8rem; }
+.post-content h3 { font-size: 1.6rem; }
+.post-content h4 { font-size: 1.4rem; }
+.post-content h5 { font-size: 1.2rem; }
+.post-content h6 { font-size: 1.1rem; }
+
+.post-content p {
+  margin-bottom: 1.5rem;
+}
+
+.post-content ul,
+.post-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.post-content li {
+  margin-bottom: 0.5rem;
+}
+
+.post-content blockquote {
+  border-left: 4px solid #0366d6;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #586069;
+}
+
+.post-content code {
+  background-color: #f6f8fa;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+.post-content pre {
+  background-color: #f6f8fa;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.post-content pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+.sidebar {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e1e4e8;
+}
+
+.page-navigation h3 {
+  color: #24292e;
+  margin-bottom: 1rem;
+}
+
+.page-navigation ul {
+  list-style: none;
+  padding: 0;
+}
+
+.page-navigation li {
+  margin-bottom: 0.5rem;
+}
+
+.page-navigation a {
+  color: #0366d6;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  display: block;
+  transition: color 0.2s ease;
+}
+
+.page-navigation a:hover {
+  color: #24292e;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .post {
+    padding: 1rem;
+  }
+  
+  .post-title {
+    font-size: 2rem;
+  }
+  
+  .post-content {
+    font-size: 1rem;
+  }
+}
+</style>

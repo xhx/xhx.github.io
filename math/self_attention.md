@@ -1,4 +1,11 @@
- **approximate $S = QK^\top$** (the $n\times n$ score matrix) that cut the $O(n^2 d)$ cost. 
+---
+layout: page
+title: "Self-Attention Approximation Methods"
+description: "Efficient attention mechanisms including kernelization, low-rank approximations, and structured sparsity"
+permalink: /math/self_attention/
+---
+
+**approximate $S = QK^\top$** (the $n\times n$ score matrix) that cut the $O(n^2 d)$ cost. 
  
 ---
 
