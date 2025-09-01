@@ -1,0 +1,80 @@
+baseURL = "https://xhx.github.io/"
+languageCode = "en-us"
+title = "Xiaohui Xie's Site"
+theme = "PaperMod"
+pagination.pagerSize = 10
+enableRobotsTXT = true
+
+# URL configuration
+[permalinks]
+  posts = "/posts/:slug/"
+  notes = "/:sections/:slugorcontentbasename/"
+
+# Enable sitemap generation
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+    noHl = false
+    style = "github"
+
+# Build configuration
+[build]
+  writeStats = false
+
+# Security settings
+[security]
+  [security.exec]
+    allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$', '^babel$']
+
+# Server settings
+[server]
+  disableFastRender = false
+  disableLiveReload = false
+
+# Recommended by Hugo when deploying on GitHub Actions (stabilizes image cache paths)
+[caches]
+  [caches.images]
+    dir = ":cacheDir/images"
+
+# Sitemap configuration
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+  math = true
+  # PaperMod theme specific parameters
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = true
+  
+  # Profile mode settings
+  ProfileMode.enabled = false
+  
+  # Social icons (add your social media links)
+  # [params.socialIcons]
+  #   github = "xhx"
+  #   email = "your-email@example.com"
+  
+  # SEO and meta settings
+  description = "Personal website of Xiaohui Xie featuring mathematics, teaching, and research"
+  keywords = ["mathematics", "teaching", "research", "AMC", "deep learning"]
+  author = "Xiaohui Xie"
+  
+  # Enable search
+  fuseOpts.isCaseSensitive = false
+  fuseOpts.shouldSort = true
+  fuseOpts.location = 0
+  fuseOpts.distance = 1000
+  fuseOpts.threshold = 0.4
+  fuseOpts.minMatchCharLength = 0
+  fuseOpts.keys = ["title", "permalink", "summary", "content"]
+
+

@@ -1,0 +1,184 @@
+/* Basic site styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-header {
+  border-bottom: 1px solid #e1e4e8;
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+.site-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.site-nav {
+  float: right;
+}
+
+.site-nav .page-link {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #666;
+}
+
+.site-nav .page-link:hover {
+  color: #333;
+}
+
+.page-content {
+  padding: 20px 0;
+}
+
+.post-header {
+  margin-bottom: 30px;
+}
+
+.post-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.post-description {
+  color: #666;
+  font-size: 1.1em;
+}
+
+.post-content {
+  line-height: 1.8;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.post-content p {
+  margin-bottom: 15px;
+}
+
+.post-content ul,
+.post-content ol {
+  margin-bottom: 15px;
+  padding-left: 30px;
+}
+
+.post-content li {
+  margin-bottom: 5px;
+}
+
+.post-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.post-content th,
+.post-content td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.post-content th {
+  background-color: #f6f8fa;
+  font-weight: 600;
+}
+
+.post-content code {
+  background-color: #f6f8fa;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+.post-content pre {
+  background-color: #f6f8fa;
+  padding: 16px;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+.post-content pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+.site-footer {
+  border-top: 1px solid #e1e4e8;
+  padding: 30px 0;
+  margin-top: 50px;
+  color: #666;
+}
+
+.footer-col-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-heading {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contact-list,
+.social-media-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li,
+.social-media-list li {
+  margin-bottom: 5px;
+}
+
+/* MathJax specific styles */
+.MathJax {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .site-nav {
+    float: none;
+    margin-top: 15px;
+  }
+  
+  .site-nav .page-link {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+  
+  .footer-col-wrapper {
+    flex-direction: column;
+  }
+  
+  .footer-col {
+    min-width: auto;
+  }
+}
