@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem;">
-  <img src="/assets/images/profile.jpg" alt="Xiaohui Xie" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 3px solid #667eea;">
+  <img src="/images/profile.jpg" alt="Xiaohui Xie" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 3px solid #667eea;">
   <div>
     <h1 style="margin: 0; color: #2d3748;">Xiaohui Xie</h1>
     <h2 style="margin: 0.5rem 0; color: #4a5568; font-weight: 500;">Professor of Computer Science</h2>
@@ -55,22 +55,13 @@ Please see **[Google Scholar](https://scholar.google.com/citations?user=YOUR_GOO
 
 ---
 
-## 📖 Mathematical Content
-
-Explore my mathematical content and research:
+## 📖 Teaching and Research Notes
 
 - **[Notes](/notes/)** - Organized notes and reference materials
 - **[Self-Attention Mechanisms](/notes/ai/ml/self-attention/)** - Deep learning attention mechanisms
 - **[LSH Attention](/notes/ai/ml/lsh-attention/)** - Locality-sensitive hashing for attention
 - **[AMC Problems](/notes/math/amc/)** - American Mathematics Competitions
 
----
-
-## 🎓 Teaching Resources
-
-Find resources and materials related to my teaching:
-
-- **[Teaching Resources](/teaching/)** - Educational materials and resources
 
 ---
 
@@ -91,12 +82,5 @@ Irvine, CA 92697
 
 </div>
 
----
-
-## 📝 Recent Posts
-
-- **[Hello World](/posts/hello/)** - Introduction to this site
 
 ---
-
-*This site is built with Hugo and the PaperMod theme, featuring beautiful math rendering with KaTeX.*
