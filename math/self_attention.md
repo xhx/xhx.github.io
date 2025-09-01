@@ -5,11 +5,11 @@ description: "Efficient attention mechanisms including kernelization, low-rank a
 permalink: /math/self_attention/
 ---
 
-**approximate $S = QK^\top$** (the $n\times n$ score matrix) that cut the $O(n^2 d)$ cost. 
+**Approximate $S = QK^\top$** (the $n\times n$ score matrix) to reduce the $O(n^2 d)$ computational cost. 
  
 ---
 
-# 1) Kernelization / “Linear” Attention (e.g., Performer FAVOR+)
+# 1) Kernelization / "Linear" Attention (e.g., Performer FAVOR+)
 
 Softmax attention can be seen as a **kernel** $k(q,k)=\exp\!\big(q^\top k/\sqrt{d}\big)$. If we find a feature map $\phi:\mathbb{R}^d\to\mathbb{R}^m$ so that
 
@@ -35,7 +35,7 @@ where division is row-wise. We never form $n\times n$ matrices.
 * Building $\phi(Q),\phi(K)$: $O(n d m)$.
 * **Total**: $O(n m (d+d_v))$ time, $O(n m)$ memory. Pick $m \ll n$.
 
-**Popular choices for $\phi$:** random Fourier features with tricks for stability; Performer’s **FAVOR+** uses **orthogonal random features** and **positive features** to keep numerics stable and support masking/causality.
+**Popular choices for $\phi$:** random Fourier features with tricks for stability; Performer's **FAVOR+** uses **orthogonal random features** and **positive features** to keep numerics stable and support masking/causality.
 
 **When to use:** long contexts; you need full (global) attention behavior but can tolerate a controllable approximation governed by $m$. Causal masks are supported via prefix-sum variants.
 
@@ -153,6 +153,6 @@ Use **CountSketch/TensorSketch** (or other Johnson–Lindenstrauss projections) 
 | Nyström         | $O(n r (d+d_v)) + O(r^3)$ | $O(n r)$ | Yes                  | Low-rank assumption         |
 | Local/Block     |                $O(n w d)$ | $O(n w)$ | Partly               | Add global tokens for reach |
 | LSH/Cluster     |         $\tilde O(n b d)$ | $O(n b)$ | Mostly               | Stochastic buckets          |
-| Sketching       |         $O(n d \log m)$ + | $O(n m)$ | Yes                  | Often combined with others  |
+| Sketching       |         $O(n d \log m) + O(n m d_v)$ | $O(n m)$ | Yes                  | Often combined with others  |
 
 ---
