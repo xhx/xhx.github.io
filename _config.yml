@@ -4,6 +4,6 @@ description: >-
 baseurl: ""   # IMPORTANT: leave empty for user sites
 url: "https://xhx.github.io"   # replace with your GitHub username
 
-theme: minima   # built-in GitHub Pages theme
+# theme: minima   # built-in GitHub Pages theme (commented out for custom layouts)
 markdown: kramdown
 
