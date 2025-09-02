@@ -1,10 +1,9 @@
 ---
 title: "Self-Attention Approximation Methods"
 description: "Efficient attention mechanisms including kernelization, low-rank approximations, and structured sparsity"
-date: 2025-09-01
 draft: false
 math: true
-hideTitle: true
+hideTitle: false
 ---
 
 # Self-Attention Approximation Methods
@@ -15,17 +14,17 @@ hideTitle: true
 
 ## 1) Kernelization / "Linear" Attention (e.g., Performer FAVOR+)
 
-Softmax attention can be seen as a **kernel** $k(q,k)=\exp\!\big(q^\top k/\sqrt{d}\big)$. If we find a feature map $\phi:\mathbb{R}^d\to\mathbb{R}^m$ so that
+Softmax attention can be seen as a **kernel** $k(q,k)=\exp\\!\big(q^\top k/\sqrt{d}\big)$. If we find a feature map $\phi:\mathbb{R}^d\to\mathbb{R}^m$ so that
 
 $$
-\exp\!\Big(\frac{q^\top k}{\sqrt{d}}\Big)\;\approx\; \phi(q)^\top \phi(k),
+\exp\\\! \Big(\frac{q^\top k}{\sqrt{d}}\Big)\\;\approx\\; \phi(q)^\top \phi(k),
 $$
 
 then
 
 $$
-\underbrace{\mathrm{softmax}\!\big(QK^\top/\sqrt{d}\big)}_{\text{row-wise}} V
-\;\approx\;
+\underbrace{\mathrm{softmax}\\!\big(QK^\top/\sqrt{d}\big)}_{\text{row-wise}} V
+\\;\approx\\;
 \frac{ \big(\phi(Q)\,[\phi(K)^\top V]\big) }
      { \big(\phi(Q)\,[\phi(K)^\top \mathbf{1}]\big) },
 $$
@@ -58,7 +57,7 @@ Treat $S=\exp(QK^\top/\sqrt{d})$ (or the *pre*-softmax $QK^\top$) as approximate
 Then compute attention as
 
 $$
-\mathrm{softmax}(S)\,V \;\approx\; \mathrm{row\_norm}\Big( C\,W^\dagger \,(C^\top V) \Big),
+\mathrm{softmax}(S)\,V \\;\approx\\; \mathrm{row\_{norm}}\Big( C\,W^\dagger \,(C^\top V) \Big),
 $$
 
 with appropriate row-wise renormalization (or operate directly on logits before softmax with temperature tricks).

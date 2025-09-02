@@ -1,7 +1,6 @@
 ---
 title: "My Post"
 description: ""
-date: 2025-09-01T13:19:41-07:00
 draft: false
 tags: []
 categories: []

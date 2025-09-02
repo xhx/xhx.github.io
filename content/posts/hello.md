@@ -1,7 +1,6 @@
 ---
 title: "Hello World"
 description: "Welcome to my new Hugo site with PaperMod theme"
-date: 2025-09-01T00:00:00Z
 draft: false
 tags: ["hugo", "website", "introduction"]
 categories: ["general"]

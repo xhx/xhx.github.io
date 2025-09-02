@@ -3,6 +3,7 @@
 <article class="post-single">
   <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
+    {{- if not (.Param "hideTitle") }}
     <h1 class="post-title entry-hint-parent">
       {{ .Title }}
       {{- if .Draft }}
@@ -14,7 +15,8 @@
       </span>
       {{- end }}
     </h1>
-    {{- if .Description }}
+    {{- end }}
+    {{- if and (.Param "ShowPostDesc") .Description }}
     <div class="post-description">
       {{ .Description }}
     </div>

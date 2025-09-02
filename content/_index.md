@@ -1,7 +1,6 @@
 ---
 title: "Xiaohui Xie - Professor of Computer Science"
 description: "Personal website of Xiaohui Xie, Professor of Computer Science at UC Irvine"
-date: 2025-09-01
 draft: false
 ---
 
@@ -64,7 +63,7 @@ Please see **[Google Scholar](https://scholar.google.com/citations?user=YOUR_GOO
 ## 📖 Teaching and Research Notes
 
 - **[Notes](/notes/)** - Organized notes and reference materials
-- **[Self-Attention Mechanisms](/notes/ai/ml/self-attention/)** - Deep learning attention mechanisms
+- **[Self-Attention Mechanisms](/notes/ai/ml/self-attention-approx/)** - Deep learning attention mechanisms
 - **[LSH Attention](/notes/ai/ml/lsh-attention/)** - Locality-sensitive hashing for attention
 - **[AMC Problems](/notes/math/amc/)** - American Mathematics Competitions
  -->

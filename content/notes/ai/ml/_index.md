@@ -1,7 +1,6 @@
 ---
 title: "Machine Learning"
-# optional: show in nav if your theme uses menus or section lists
-# weight: 10
-# draft: false
+description: "Overview and reference for machine learning concepts, methods, and notes"
+draft: false
 ---
-Intro text for the AI notes section (optional).
+Intro text for the ML notes section.

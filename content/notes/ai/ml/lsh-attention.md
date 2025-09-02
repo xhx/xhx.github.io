@@ -1,7 +1,6 @@
 ---
 title: "LSH Attention: Multiple Hyperplanes and Bucketing"
 description: "Understanding how multiple random hyperplanes create better locality-sensitive hashing for attention mechanisms"
-date: 2025-09-01
 draft: false
 math: true
 ---

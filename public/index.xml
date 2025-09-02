@@ -6,12 +6,25 @@
     <description>Recent content in Xiaohui Xie - Professor of Computer Science on Xiaohui Xie&#39;s Site</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Sep 2025 13:19:41 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>http://localhost:1313/posts/hello-world/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hello-world/</guid>
+      <description>Welcome to my new Hugo site with PaperMod theme</description>
+    </item>
+    <item>
+      <title>LSH Attention: Multiple Hyperplanes and Bucketing</title>
+      <link>http://localhost:1313/notes/ai/ml/lsh-attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/ai/ml/lsh-attention/</guid>
+      <description>Understanding how multiple random hyperplanes create better locality-sensitive hashing for attention mechanisms</description>
+    </item>
     <item>
       <title>My Post</title>
       <link>http://localhost:1313/posts/my-post/</link>
-      <pubDate>Mon, 01 Sep 2025 13:19:41 -0700</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/my-post/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Start your post here&amp;hellip;&lt;/p&gt;
@@ -21,24 +34,10 @@
 &lt;p&gt;Wrap up your thoughts here&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Hello World</title>
-      <link>http://localhost:1313/posts/hello-world/</link>
-      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/hello-world/</guid>
-      <description>Welcome to my new Hugo site with PaperMod theme</description>
-    </item>
-    <item>
-      <title>LSH Attention: Multiple Hyperplanes and Bucketing</title>
-      <link>http://localhost:1313/notes/ai/ml/lsh-attention/</link>
-      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/ai/ml/lsh-attention/</guid>
-      <description>Understanding how multiple random hyperplanes create better locality-sensitive hashing for attention mechanisms</description>
-    </item>
-    <item>
       <title>Self-Attention Approximation Methods</title>
-      <link>http://localhost:1313/notes/ai/ml/self-attention/</link>
-      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/ai/ml/self-attention/</guid>
+      <link>http://localhost:1313/notes/ai/ml/self-attention-approx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/ai/ml/self-attention-approx/</guid>
       <description>Efficient attention mechanisms including kernelization, low-rank approximations, and structured sparsity</description>
     </item>
   </channel>

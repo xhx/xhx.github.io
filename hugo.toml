@@ -86,3 +86,4 @@ enableRobotsTXT = true
   # hide footer
   hideFooter = false
 
+  showPostDesc = true

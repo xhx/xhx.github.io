@@ -1,7 +1,6 @@
 ---
 title: "AMC Problems"
 description: "American Mathematics Competitions problems and solutions"
-date: 2025-09-01
 draft: false
 math: true
 ---

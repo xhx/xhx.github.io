@@ -1,7 +1,6 @@
 ---
 title: "Mathematics Notes"
 description: "Mathematical concepts, research notes, and problem sets"
-date: 2025-09-01
 draft: false
 math: true
 ---
@@ -12,7 +11,7 @@ Welcome to the mathematics section of my notes! Here you'll find organized mathe
 
 ## Content
 
-- [Self-Attention Methods](/notes/self-attention/) - Deep learning attention mechanisms
+- [Self-Attention Methods](/notes/ai/ml/self-attention-approx/) - Deep learning attention mechanisms
 - [LSH Attention](/notes/lsh-attention/) - Locality-sensitive hashing for attention
 - [AMC Problems](/notes/amc/) - American Mathematics Competitions
 
