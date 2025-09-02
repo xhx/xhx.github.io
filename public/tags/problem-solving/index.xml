@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Problem-Solving on Xiaohui Xie&#39;s Site</title>
+    <link>http://localhost:1313/tags/problem-solving/</link>
+    <description>Recent content in Problem-Solving on Xiaohui Xie&#39;s Site</description>
+    <generator>Hugo -- 0.149.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/problem-solving/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Problem Solving Tricks</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/tricks/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/tricks/</guid>
+      <description>Useful tricks and techniques for AMC 10 problem solving</description>
+    </item>
+  </channel>
+</rss>

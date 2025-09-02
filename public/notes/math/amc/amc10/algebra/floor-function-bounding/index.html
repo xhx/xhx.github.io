@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Floor Function Bounding | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="amc10, algebra, floor-function, mathematics, competition">
+<meta name="description" content="AMC 10 Algebra: Floor function bounding techniques">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/algebra/floor-function-bounding/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/algebra/floor-function-bounding/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/algebra/">Algebra</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Floor Function Bounding
+    </h1>
+    <div class="post-description">
+      AMC 10 Algebra: Floor function bounding techniques
+    </div>
+    <div class="post-meta"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="floorfunction-bounding-with-lfloorsqrtnrfloor">Floor‑function bounding with $\lfloor\sqrt{n}\rfloor$<a hidden class="anchor" aria-hidden="true" href="#floorfunction-bounding-with-lfloorsqrtnrfloor">#</a></h1>
+<aside>
+💡
+<h2 id="problem">Problem.<a hidden class="anchor" aria-hidden="true" href="#problem">#</a></h2>
+<p><strong>AMC 10A 2020 Problem 20</strong></p>
+<p>Let $T$ be the triangle in the coordinate plane with vertices $(0,0)$, $(4,0)$, and $(4,3)$. Consider the following five isometries (rigid transformations) of the plane: rotations of $90^{\circ}$, $180^{\circ}$, and $270^{\circ}$ counterclockwise around the origin, reflection across the $x$-axis, and reflection across the $y$-axis. How many of the 125 sequences of three of these transformations (not necessarily distinct) will return $T$ to its original position?</p>
+</aside>
+<h2 id="solution">Solution.<a hidden class="anchor" aria-hidden="true" href="#solution">#</a></h2>
+<p>We need to count the number of sequences of three transformations that return triangle $T$ to its original position.</p>
+<p>Let&rsquo;s analyze each transformation:</p>
+<ol>
+<li><strong>Rotation by $90°$ counterclockwise</strong>: $(x,y) \to (-y,x)$</li>
+<li><strong>Rotation by $180°$ counterclockwise</strong>: $(x,y) \to (-x,-y)$</li>
+<li><strong>Rotation by $270°$ counterclockwise</strong>: $(x,y) \to (y,-x)$</li>
+<li><strong>Reflection across $x$-axis</strong>: $(x,y) \to (x,-y)$</li>
+<li><strong>Reflection across $y$-axis</strong>: $(x,y) \to (-x,y)$</li>
+</ol>
+<p>The original triangle $T$ has vertices $(0,0)$, $(4,0)$, and $(4,3)$.</p>
+<h3 id="step-1-find-transformations-that-return-t-to-itself">Step 1: Find transformations that return $T$ to itself<a hidden class="anchor" aria-hidden="true" href="#step-1-find-transformations-that-return-t-to-itself">#</a></h3>
+<p>Let&rsquo;s check which single transformations return $T$ to itself:</p>
+<ul>
+<li>
+<p><strong>Rotation by $180°$</strong>: $(0,0) \to (0,0)$, $(4,0) \to (-4,0)$, $(4,3) \to (-4,-3)$</p>
+<ul>
+<li>This does NOT return $T$ to itself.</li>
+</ul>
+</li>
+<li>
+<p><strong>Reflection across $x$-axis</strong>: $(0,0) \to (0,0)$, $(4,0) \to (4,0)$, $(4,3) \to (4,-3)$</p>
+<ul>
+<li>This does NOT return $T$ to itself.</li>
+</ul>
+</li>
+<li>
+<p><strong>Reflection across $y$-axis</strong>: $(0,0) \to (0,0)$, $(4,0) \to (-4,0)$, $(4,3) \to (-4,3)$</p>
+<ul>
+<li>This does NOT return $T$ to itself.</li>
+</ul>
+</li>
+<li>
+<p><strong>Rotation by $90°$</strong>: $(0,0) \to (0,0)$, $(4,0) \to (0,4)$, $(4,3) \to (-3,4)$</p>
+<ul>
+<li>This does NOT return $T$ to itself.</li>
+</ul>
+</li>
+<li>
+<p><strong>Rotation by $270°$</strong>: $(0,0) \to (0,0)$, $(4,0) \to (0,-4)$, $(4,3) \to (3,-4)$</p>
+<ul>
+<li>This does NOT return $T$ to itself.</li>
+</ul>
+</li>
+</ul>
+<h3 id="step-2-find-sequences-of-two-transformations">Step 2: Find sequences of two transformations<a hidden class="anchor" aria-hidden="true" href="#step-2-find-sequences-of-two-transformations">#</a></h3>
+<p>Let&rsquo;s check sequences of two transformations:</p>
+<p><strong>Identity transformation</strong>: The composition of any transformation with its inverse gives the identity.</p>
+<ul>
+<li>Rotation by $90°$ followed by rotation by $270°$ = Identity</li>
+<li>Rotation by $180°$ followed by rotation by $180°$ = Identity</li>
+<li>Reflection across $x$-axis followed by reflection across $x$-axis = Identity</li>
+<li>Reflection across $y$-axis followed by reflection across $y$-axis = Identity</li>
+</ul>
+<h3 id="step-3-find-sequences-of-three-transformations">Step 3: Find sequences of three transformations<a hidden class="anchor" aria-hidden="true" href="#step-3-find-sequences-of-three-transformations">#</a></h3>
+<p>For a sequence of three transformations to return $T$ to itself, the composition of all three must be the identity transformation.</p>
+<p>Let&rsquo;s denote the transformations as:</p>
+<ul>
+<li>$R_{90}$: Rotation by $90°$</li>
+<li>$R_{180}$: Rotation by $180°$</li>
+<li>$R_{270}$: Rotation by $270°$</li>
+<li>$R_x$: Reflection across $x$-axis</li>
+<li>$R_y$: Reflection across $y$-axis</li>
+</ul>
+<p>We need to find all ordered triples $(A, B, C)$ such that $A \circ B \circ C = \text{Identity}$.</p>
+<p>This means $A \circ B = C^{-1}$.</p>
+<h3 id="step-4-count-the-valid-sequences">Step 4: Count the valid sequences<a hidden class="anchor" aria-hidden="true" href="#step-4-count-the-valid-sequences">#</a></h3>
+<p>Since we have 5 transformations and each has an inverse, we need to count the number of ways to choose $A$ and $B$ such that $A \circ B$ is one of the 5 transformations.</p>
+<p>For each choice of $A$ (5 choices), there is exactly one choice of $B$ such that $A \circ B$ equals any given transformation.</p>
+<p>However, we need to be more systematic. Let&rsquo;s use the fact that:</p>
+<ol>
+<li><strong>Rotations</strong>: $R_{90} \circ R_{270} = R_{180} \circ R_{180} = \text{Identity}$</li>
+<li><strong>Reflections</strong>: $R_x \circ R_x = R_y \circ R_y = \text{Identity}$</li>
+</ol>
+<p>For three transformations to compose to identity, we need:</p>
+<ul>
+<li>Either all three are the same transformation (and it&rsquo;s an involution)</li>
+<li>Or the first two compose to the inverse of the third</li>
+</ul>
+<p>Let&rsquo;s count systematically:</p>
+<p><strong>Case 1: All three transformations are the same</strong></p>
+<ul>
+<li>$R_{180} \circ R_{180} \circ R_{180} = R_{180}$ (not identity)</li>
+<li>$R_x \circ R_x \circ R_x = R_x$ (not identity)</li>
+<li>$R_y \circ R_y \circ R_y = R_y$ (not identity)</li>
+</ul>
+<p><strong>Case 2: First two compose to the inverse of the third</strong></p>
+<p>For $R_{90}$:</p>
+<ul>
+<li>$R_{90} \circ R_{270} \circ R_{180} = \text{Identity} \circ R_{180} = R_{180}$ (not identity)</li>
+<li>$R_{90} \circ R_{180} \circ R_{270} = R_{270} \circ R_{270} = R_{180}$ (not identity)</li>
+</ul>
+<p>Wait, let me recalculate this more carefully.</p>
+<p>Actually, let&rsquo;s use a different approach. We know that:</p>
+<ul>
+<li>$R_{90} \circ R_{270} = \text{Identity}$</li>
+<li>$R_{180} \circ R_{180} = \text{Identity}$</li>
+<li>$R_x \circ R_x = \text{Identity}$</li>
+<li>$R_y \circ R_y = \text{Identity}$</li>
+</ul>
+<p>For three transformations to compose to identity, we need the first two to compose to the inverse of the third.</p>
+<p>The inverses are:</p>
+<ul>
+<li>$R_{90}^{-1} = R_{270}$</li>
+<li>$R_{180}^{-1} = R_{180}$</li>
+<li>$R_{270}^{-1} = R_{90}$</li>
+<li>$R_x^{-1} = R_x$</li>
+<li>$R_y^{-1} = R_y$</li>
+</ul>
+<p>So we need:</p>
+<ol>
+<li>$A \circ B = R_{270}$ and $C = R_{90}$</li>
+<li>$A \circ B = R_{180}$ and $C = R_{180}$</li>
+<li>$A \circ B = R_{90}$ and $C = R_{270}$</li>
+<li>$A \circ B = R_x$ and $C = R_x$</li>
+<li>$A \circ B = R_y$ and $C = R_y$</li>
+</ol>
+<p>For each case, we need to count how many pairs $(A,B)$ satisfy $A \circ B = \text{target}$.</p>
+<p>Since we have 5 transformations, for each target transformation, there are exactly 5 pairs $(A,B)$ such that $A \circ B = \text{target}$ (one for each choice of $A$).</p>
+<p>Therefore, the total number of valid sequences is $5 \times 5 = 25$.</p>
+<p><strong>Answer: $\boxed{25}$</strong></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">Amc10</a></li>
+      <li><a href="http://localhost:1313/tags/algebra/">Algebra</a></li>
+      <li><a href="http://localhost:1313/tags/floor-function/">Floor-Function</a></li>
+      <li><a href="http://localhost:1313/tags/mathematics/">Mathematics</a></li>
+      <li><a href="http://localhost:1313/tags/competition/">Competition</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -2,30 +2,388 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Xiaohui Xie&#39;s Site</title>
-    <link>https://xhx.github.io/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Xiaohui Xie&#39;s Site</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
-    <atom:link href="https://xhx.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3d</title>
+      <link>http://localhost:1313/tags/3d/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/3d/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Absolute-Value-Inequality</title>
+      <link>http://localhost:1313/tags/absolute-value-inequality/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/absolute-value-inequality/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Advanced</title>
+      <link>http://localhost:1313/tags/advanced/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/advanced/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Algebra</title>
+      <link>http://localhost:1313/tags/algebra/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/algebra/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Altitude</title>
+      <link>http://localhost:1313/tags/altitude/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/altitude/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Am-Gm-Bounding-Inequality</title>
+      <link>http://localhost:1313/tags/am-gm-bounding-inequality/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/am-gm-bounding-inequality/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Amc10</title>
+      <link>http://localhost:1313/tags/amc10/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/amc10/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Angle-Bisector</title>
+      <link>http://localhost:1313/tags/angle-bisector/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/angle-bisector/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Binomial-Theorem-Coefficient</title>
+      <link>http://localhost:1313/tags/binomial-theorem-coefficient/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/binomial-theorem-coefficient/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chinese-Remainder-Theorem</title>
+      <link>http://localhost:1313/tags/chinese-remainder-theorem/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/chinese-remainder-theorem/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Combinatorics</title>
+      <link>http://localhost:1313/tags/combinatorics/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/combinatorics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Competition</title>
+      <link>http://localhost:1313/tags/competition/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/competition/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Counting</title>
+      <link>http://localhost:1313/tags/counting/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/counting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Crt</title>
+      <link>http://localhost:1313/tags/crt/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/crt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Curriculum</title>
+      <link>http://localhost:1313/tags/curriculum/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/curriculum/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Diagonals</title>
+      <link>http://localhost:1313/tags/diagonals/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/diagonals/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Digit-Sum-Divisibility-11</title>
+      <link>http://localhost:1313/tags/digit-sum-divisibility-11/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/digit-sum-divisibility-11/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Find-Least-Positive-Integer</title>
+      <link>http://localhost:1313/tags/find-least-positive-integer/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/find-least-positive-integer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Floor-Function</title>
+      <link>http://localhost:1313/tags/floor-function/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/floor-function/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Floor-Sum-Grouping</title>
+      <link>http://localhost:1313/tags/floor-sum-grouping/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/floor-sum-grouping/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Functional-Equation-Plug-X</title>
+      <link>http://localhost:1313/tags/functional-equation-plug-x/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/functional-equation-plug-x/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gcd</title>
+      <link>http://localhost:1313/tags/gcd/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/gcd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Geometry</title>
+      <link>http://localhost:1313/tags/geometry/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/geometry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inclusion-Exclusion</title>
+      <link>http://localhost:1313/tags/inclusion-exclusion/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/inclusion-exclusion/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lcm</title>
+      <link>http://localhost:1313/tags/lcm/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/lcm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linear-Recursion-Explicit</title>
+      <link>http://localhost:1313/tags/linear-recursion-explicit/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/linear-recursion-explicit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mathematics</title>
+      <link>http://localhost:1313/tags/mathematics/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mathematics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Miscellaneous</title>
+      <link>http://localhost:1313/tags/miscellaneous/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/miscellaneous/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Modular-Arithmetic</title>
+      <link>http://localhost:1313/tags/modular-arithmetic/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/modular-arithmetic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Newton-Sum-Symmetric</title>
+      <link>http://localhost:1313/tags/newton-sum-symmetric/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/newton-sum-symmetric/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Number-Theory</title>
+      <link>http://localhost:1313/tags/number-theory/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/number-theory/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Perfect-Square-Discriminant</title>
+      <link>http://localhost:1313/tags/perfect-square-discriminant/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/perfect-square-discriminant/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pie</title>
+      <link>http://localhost:1313/tags/pie/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/pie/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Polynomials</title>
+      <link>http://localhost:1313/tags/polynomials/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/polynomials/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Practice</title>
+      <link>http://localhost:1313/tags/practice/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/practice/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Precalculus</title>
+      <link>http://localhost:1313/tags/precalculus/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/precalculus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Probability</title>
+      <link>http://localhost:1313/tags/probability/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/probability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Problem-Solving</title>
+      <link>http://localhost:1313/tags/problem-solving/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/problem-solving/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Problems</title>
+      <link>http://localhost:1313/tags/problems/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/problems/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pythagorean</title>
+      <link>http://localhost:1313/tags/pythagorean/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/pythagorean/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Radical-Exponent-Manipulation</title>
+      <link>http://localhost:1313/tags/radical-exponent-manipulation/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/radical-exponent-manipulation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Remainder-Theorem-Synthetic</title>
+      <link>http://localhost:1313/tags/remainder-theorem-synthetic/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/remainder-theorem-synthetic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Roots</title>
+      <link>http://localhost:1313/tags/roots/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/roots/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Similar-Triangles</title>
+      <link>http://localhost:1313/tags/similar-triangles/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/similar-triangles/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Strategies</title>
+      <link>http://localhost:1313/tags/strategies/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/strategies/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Syllabus</title>
+      <link>http://localhost:1313/tags/syllabus/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/syllabus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Symmetric-Sum-Identity-Cubics</title>
+      <link>http://localhost:1313/tags/symmetric-sum-identity-cubics/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/symmetric-sum-identity-cubics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Techniques</title>
+      <link>http://localhost:1313/tags/techniques/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/techniques/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Telescoping-Partial-Fraction</title>
+      <link>http://localhost:1313/tags/telescoping-partial-fraction/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/telescoping-partial-fraction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Theorem</title>
+      <link>http://localhost:1313/tags/theorem/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/theorem/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tricks</title>
+      <link>http://localhost:1313/tags/tricks/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/tricks/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Hugo</title>
-      <link>https://xhx.github.io/tags/hugo/</link>
+      <link>http://localhost:1313/tags/hugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/tags/hugo/</guid>
+      <guid>http://localhost:1313/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Introduction</title>
-      <link>https://xhx.github.io/tags/introduction/</link>
+      <link>http://localhost:1313/tags/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/tags/introduction/</guid>
+      <guid>http://localhost:1313/tags/introduction/</guid>
       <description></description>
     </item>
     <item>
       <title>Website</title>
-      <link>https://xhx.github.io/tags/website/</link>
+      <link>http://localhost:1313/tags/website/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/tags/website/</guid>
+      <guid>http://localhost:1313/tags/website/</guid>
       <description></description>
     </item>
   </channel>

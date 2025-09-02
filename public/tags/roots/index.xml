@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Roots on Xiaohui Xie&#39;s Site</title>
+    <link>http://localhost:1313/tags/roots/</link>
+    <description>Recent content in Roots on Xiaohui Xie&#39;s Site</description>
+    <generator>Hugo -- 0.149.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/roots/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Roots of Polynomial</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/algebra/roots-of-polynomial/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/roots-of-polynomial/</guid>
+      <description>Polynomial roots and related concepts for AMC 10</description>
+    </item>
+  </channel>
+</rss>

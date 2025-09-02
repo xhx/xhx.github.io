@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="">
+<meta name="description" content="Wilson&rsquo;s Theorem
+Wilson&rsquo;s Theorem is a result in number theory that characterizes prime numbers using factorials and modular arithmetic. It provides a criterion to test whether a number is prime.
+Statement:
+A positive integer ( p ) is prime if and only if:
+$$
+(p - 1)! \equiv -1 \pmod{p}
+$$
+This means that if ( p ) is a prime number, the factorial of ( (p - 1) ) is congruent to ( -1 ) modulo ( p ). Equivalently, you can write:">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/number-theory/wilsons-theorem-225936cc2214817c996dcd67702aa115/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/number-theory/wilsons-theorem-225936cc2214817c996dcd67702aa115/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/number-theory/">Number Theory</a></div>
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">3 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="wilsons-theorem">Wilson&rsquo;s Theorem<a hidden class="anchor" aria-hidden="true" href="#wilsons-theorem">#</a></h1>
+<p><strong>Wilson&rsquo;s Theorem</strong> is a result in number theory that characterizes prime numbers using factorials and modular arithmetic. It provides a criterion to test whether a number is prime.</p>
+<h3 id="statement">Statement:<a hidden class="anchor" aria-hidden="true" href="#statement">#</a></h3>
+<p>A positive integer ( p ) is prime if and only if:</p>
+<p>$$</p>
+<p>(p - 1)! \equiv -1 \pmod{p}</p>
+<p>$$</p>
+<p>This means that if ( p ) is a prime number, the factorial of ( (p - 1) ) is congruent to ( -1 ) modulo ( p ). Equivalently, you can write:</p>
+<p>$$</p>
+<p>(p - 1)! \equiv (p - 1) \pmod{p}</p>
+<p>$$</p>
+<h3 id="example">Example:<a hidden class="anchor" aria-hidden="true" href="#example">#</a></h3>
+<p>Let’s verify Wilson’s theorem for a few small primes.</p>
+<h3 id="example-1--p--5-">Example 1: ( p = 5 )<a hidden class="anchor" aria-hidden="true" href="#example-1--p--5-">#</a></h3>
+<p>We need to check whether ( 4! \equiv -1 \pmod{5} ).
+[
+4! = 4 \times 3 \times 2 \times 1 = 24
+]
+Now, calculate ( 24 \mod 5 ):
+[
+24 \div 5 = 4 \text{ remainder } 4
+]
+So, ( 24 \equiv 4 \pmod{5} ), and since ( -1 \equiv 4 \pmod{5} ), Wilson’s theorem holds.</p>
+<h3 id="example-2--p--7-">Example 2: ( p = 7 )<a hidden class="anchor" aria-hidden="true" href="#example-2--p--7-">#</a></h3>
+<p>We need to check whether ( 6! \equiv -1 \pmod{7} ).
+[
+6! = 6 \times 5 \times 4 \times 3 \times 2 \times 1 = 720
+]
+Now, calculate ( 720 \mod 7 ):
+[
+720 \div 7 = 102 \text{ remainder } 6
+]
+So, ( 720 \equiv 6 \pmod{7} ), and since ( -1 \equiv 6 \pmod{7} ), Wilson’s theorem holds.</p>
+<h3 id="application-to-composite-numbers">Application to Composite Numbers:<a hidden class="anchor" aria-hidden="true" href="#application-to-composite-numbers">#</a></h3>
+<p>If ( p ) is composite, then Wilson&rsquo;s theorem does <strong>not</strong> hold. For a composite number ( n ), ( (n - 1)! \not\equiv -1 \pmod{n} ).</p>
+<h3 id="example-for-a-composite-number--n--6-">Example for a Composite Number: ( n = 6 )<a hidden class="anchor" aria-hidden="true" href="#example-for-a-composite-number--n--6-">#</a></h3>
+<p>Let’s check if ( 5! \equiv -1 \pmod{6} ):
+[
+5! = 120
+]
+Now, calculate ( 120 \mod 6 ):
+[
+120 \div 6 = 20 \text{ remainder } 0
+]
+So, ( 120 \equiv 0 \pmod{6} ), which is not congruent to ( -1 ), proving that Wilson’s theorem does not hold for composite numbers.</p>
+<h3 id="applications">Applications:<a hidden class="anchor" aria-hidden="true" href="#applications">#</a></h3>
+<ol>
+<li><strong>Prime testing</strong>: While Wilson’s theorem provides a way to test for primes, it is not practical for large numbers because computing factorials grows very fast.</li>
+<li><strong>Number theory</strong>: The theorem is important for theoretical purposes and is often used in the study of modular arithmetic and properties of prime numbers.</li>
+</ol>
+<h3 id="summary">Summary:<a hidden class="anchor" aria-hidden="true" href="#summary">#</a></h3>
+<p>Wilson’s Theorem gives a neat, albeit impractical, test for primes. It says that for a prime ( p ), the factorial of ( (p-1) ) leaves a remainder of ( -1 ) when divided by ( p ). If ( p ) is composite, this relation does not hold.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

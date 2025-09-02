@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Digit-Sum-Divisibility-11 on Xiaohui Xie&#39;s Site</title>
+    <link>http://localhost:1313/tags/digit-sum-divisibility-11/</link>
+    <description>Recent content in Digit-Sum-Divisibility-11 on Xiaohui Xie&#39;s Site</description>
+    <generator>Hugo -- 0.149.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/digit-sum-divisibility-11/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Digit-Sum &amp; Divisibility-by-11 Technique</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/algebra/problems/digit-sum-divisibility-11/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/problems/digit-sum-divisibility-11/</guid>
+      <description>AMC 10 Algebra: Digit-Sum &amp;amp; Divisibility-by-11 Technique</description>
+    </item>
+  </channel>
+</rss>

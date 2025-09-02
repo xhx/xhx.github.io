@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Combinatorics on Xiaohui Xie&#39;s Site</title>
+    <link>http://localhost:1313/tags/combinatorics/</link>
+    <description>Recent content in Combinatorics on Xiaohui Xie&#39;s Site</description>
+    <generator>Hugo -- 0.149.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/combinatorics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advanced Combinatorics</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/counting-prob/combinatorics-advanced/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/counting-prob/combinatorics-advanced/</guid>
+      <description>Advanced combinatorics topics for AMC 10</description>
+    </item>
+    <item>
+      <title>Principle of Inclusion-Exclusion (PIE)</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/counting-prob/principle-of-inclusion-exclusion/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/counting-prob/principle-of-inclusion-exclusion/</guid>
+      <description>Principle of Inclusion-Exclusion and its applications in AMC 10</description>
+    </item>
+  </channel>
+</rss>

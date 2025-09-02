@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>AMC 10 | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="amc10, mathematics, competition, algebra, geometry, number-theory, combinatorics">
+<meta name="description" content="American Mathematics Competition 10 - Topic index and study materials">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/notes/math/amc/amc10/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a></div>
+  <h1>
+    AMC 10
+    <a href="/notes/math/amc/amc10/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+  <div class="post-description">
+    American Mathematics Competition 10 - Topic index and study materials
+  </div>
+</header>
+<div class="post-content"><p><a href="algebra">🧮 <strong>Algebra</strong></a></p>
+<hr>
+<p><a href="geometry">📐 <strong>Geometry</strong></a></p>
+<hr>
+<p><a href="number-theory">📊 <strong>Number Theory</strong></a></p>
+<hr>
+<p><a href="counting-probability">📈 <strong>Counting &amp; Probability</strong></a></p>
+<hr>
+<p><a href="precalculus">📏 <strong>Precalculus</strong></a></p>
+<hr>
+<p><a href="misc">🧠 <strong>General Problem Solving Strategies</strong></a></p>
+<hr>
+<p><a href="syllabus">📚 <strong>A Topic-By-Topic Syllabus</strong></a></p>
+<hr>
+<h3 id="misc">Misc<a hidden class="anchor" aria-hidden="true" href="#misc">#</a></h3>
+<ol>
+<li>Euler’s Theorem.  Euler’s Totient Function.  Fermat’s little theorem.</li>
+</ol>
+<p><a href="chinese-remainder-theorem.md"><strong>Chinese Remainder Theorem (CRT)</strong></a></p>
+<ol>
+<li>Simon’s Favorite Trick (SSFT)</li>
+<li>Modulus operation</li>
+<li>Stars and Bars</li>
+</ol>
+<p><a href="roots-of-polynomial.md">Roots of Polynomial</a></p>
+<p><a href="lcm-gcd.md">LCM &amp; GCD</a></p>
+<p><a href="modular-operation.md">Modular Operation</a></p>
+<p><a href="tricks.md">Tricks</a></p>
+<p><a href="number-theory-advanced.md">Number Theory</a></p>
+<p><a href="algebra-advanced.md">Algebra</a></p>
+<p><a href="combinatorics-advanced.md">Combinatorics</a></p>
+<p><a href="geometry-advanced.md">Geometry</a></p>
+<p><a href="problems.md">Problems</a></p>
+<p><a href="principle-of-inclusion-exclusion.md">Principle of Inclusion-Exclusion (PIE)</a></p>
+<p><a href="number-theory-problems.md">Number Theory Problems</a></p>
+
+
+</div>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AMC 10 Syllabus
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>A topic-by-topic “syllabus” for AMC 10 Algebra &amp; Functions (≈ 36 % of total test) 1.1 Linear &amp; Quadratic Expressions/Equations (10 %) • Factoring, expanding, completing-the-square
+• Using Viète’s relations, sum/product of roots
+• Graph interpretation (vertex, intercepts, axis of symmetry)
+1.2 Higher-Degree Polynomials (4 %) • Remainder &amp; Factor Theorems
+• Roots &amp; coefficients relationships, symmetric sums
+• Synthetic division and clever substitution
+1.3 Rational Expressions &amp; Equations (2 %) • Partial-fraction style decomposition
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to AMC 10 Syllabus" href="http://localhost:1313/notes/math/amc/amc10/syllabus/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Practice Problems
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Problems Algebra </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Practice Problems" href="http://localhost:1313/notes/math/amc/amc10/problems/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Problem Solving Tricks
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Tricks Pick a special value </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Problem Solving Tricks" href="http://localhost:1313/notes/math/amc/amc10/tricks/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Algebra
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🧮 Algebra Key Knowledge Points Formula Reference
+Sequences
+Floor Fractional Part
+Top 20 algebra knowledge points in AMC 10 # Knowledge point What the AMC usually asks you to do 1 Quadratic equations &amp; Vieta’s formulas Solve, compare roots, or form symmetric sums quickly without expanding. 2 Polynomial factoring &amp; special identities (difference of squares, sum/diff of cubes, SFFT) Factor to reveal cancellation or hidden symmetry. 3 Systems of linear equations (2 × 2 or 3 × 3) Speed elimination, substitution, clever parameter tricks. 4 Exponent &amp; radical rules Simplify messy expressions, rationalize denominators, compare magnitudes. 5 Arithmetic sequences/series Find specific terms or partial sums quickly. 6 Geometric sequences/series (finite &amp; ∞) Use $S_n=a(1-r^{n})/(1-r)$ or $S_\infty=a/(1-r)$. 7 Telescoping series &amp; partial‑fraction decomposition Break $1/[k(k&#43;1)]$-type terms; cancel to two endpoints. 8 Remainder &amp; Factor theorems / synthetic division “What is the remainder when $P(x)$ is divided by … ?” 9 Inequalities &amp; bounding (linear, quadratic, AM–GM) Show impossibility, trap answer in a small interval. 10 Absolute‑value equations / inequalities Split into cases or use symmetry. 11 Rational expressions &amp; equations Clear denominators, watch for extraneous roots. 12 Binomial theorem &amp; binomial identities Extract a single coefficient or evaluate $(1&#43;x)^n$ at a clever $x$. 13 Symmetric sums, Newton sums Compute $r_1^k&#43;r_2^k&#43;\dots$ from coefficients without solving. 14 Recursive sequences Turn linear recursions into explicit formulas or telescopes. 15 Function evaluation, composition &amp; simple functional equations Plug in special values or exploit invertibility. 16 Ratio / proportion &amp; direct‑variation word problems Typical “mixture,” “work,” “race” setups that reduce to linear equations. 17 Floor/ceiling &amp; fractional‑part functions Use ${x}&#43;\lfloor x\rfloor=x$ and the $0\le{x}&lt;1$ box. 18 Complex‑number arithmetic Magnitude/conjugate facts, often hiding a geometry flavor. 19 Exponentials in contexts (growth/decay, compound interest) Convert to algebraic equations, exploit geometric‑series sum. 20 Radical equations (extraneous‑root traps) Square with care, check answers against original. How to use this hit list Drill by cluster: Group related topics (e.g., #1, #2, #8, #13 for polynomials) and master them together. Timed reps: Give yourself 2–3 minutes per question to mimic AMC pacing. Spot keywords: “remainder,” “in terms of $r_1&#43;r_2$”, “fractional part,” etc., should instantly cue the corresponding technique. Create a formula sheet: Keep the identities for #2, #4, #6, #12, #13 on one page for rapid review the week before the exam. Hints for solving AMC 10 problems Keyword / phrase you read Technique you should grab first How it plays out in ≤ 30 s “remainder when $P(x)$ is divided by …” Remainder Theorem / Synthetic Division Evaluate $P(c)$ for divisor $x-c$. Example: Remainder of $x^5&#43;3x&#43;2$ mod $x-2$ ⇒ $2^5&#43;3·2&#43;2 = 32&#43;6&#43;2 = 40$. “remainder when divided by $x^2&#43;1$” (degree &gt; 1 divisor) Pair of evaluations at the complex roots Compute $P(i)$ and $P(-i)$ to recover the linear remainder $ax&#43;b$. “in terms of $r_1&#43;r_2$” or “roots $r_1,r_2$…” Vieta’s formulas If $x^2&#43;px&#43;q=0$ then $r_1&#43;r_2=-p$, $r_1r_2=q$. Example: Find $(r_1&#43;r_2)^2-r_1r_2$ without solving the quadratic. $r_1^2&#43;r_2^2&#43;⋯$ (higher powers of roots) Newton sums / symmetric identities Use the Newton‑sum recurrence or expand via $(r_1&#43;r_2)^2-2r_1r_2$. “fractional part ${;}$” or “floor $\lfloor \rfloor$” Use ${x}&#43; \lfloor x\rfloor = x$, remember $0\le{x}&lt;1$ Rewrite any mixed floor–fraction expression in one variable; bound the fractional part to trap integer pieces. “least positive integer $n$ such that …” Treat as modular arithmetic / divisibility / bounding problem Convert inequality to modulus, test candidates in ascending order using congruences instead of brute force. “sum of first $n$ terms of an arithmetic (or geometric) sequence” Plug directly into $S_n=\frac{n}{2}(2a&#43;(n-1)d)$ or $S_n=a(1-r^{,n})/(1-r)$ Saves the need to write the expanded list. “telescoping” clues: $\frac{1}{k(k&#43;1)}$, difference of consecutive terms, “partial fractions” Split into $\frac{1}{k}-\frac{1}{k&#43;1}$ and cancel endpoints Example: $\sum_{k=1}^{n} \frac{1}{k(k&#43;1)} = 1-\frac{1}{n&#43;1}$. “absolute value equation/inequality” Case split about the critical points where inner quantity = 0 Parse quickly at the breakpoints instead of expanding square‑root squares. “digit sum,” “product of digits,” “digits reversed” Represent the number as $10a&#43;b$ (two‑digit) or $100a&#43;10b&#43;c$ and translate conditions Example: “Sum of digits of $2n$ equals 17” becomes an equation in $a,b$. “recursive sequence $a_{n&#43;1}=ka_n&#43;b$” Identify as linear recursion ⇒ explicit form or telescoping Write $a_{n&#43;1}-\alpha = k(a_n-\alpha)$ where $\alpha=-b/(k-1)$. “converges to …” (sequence) Guess the limit $L$ and set $L = f(L)$ if the recursion is continuous Standard trick for fixed‑point problems. “least / greatest value of expression subject to constraint” AM–GM, Cauchy, or bounding For small integer domains, a parity check plus bounding pinpoints the answer faster than full algebra. “multiple of 9 (or 11)” inside base‑10 context Digit‑sum or alternating‑sum test Turns a divisibility condition into a single‑digit congruence check. How to drill this reflex Flash‑card the mapping. Put the keyword on one side, the technique on the other. Quiz until automatic. Timed micro‑drills. Skim past AMC problem statements and underline triggers; spend &lt; 5 s naming the method before solving. Error log. Whenever you miss a fast cue in practice, add that keyword to your personal deck. Mastering the keyword → technique link can shave 30–60 seconds per algebra question—often the difference between a 120‑point and 135‑point AMC 10 score. Happy training!
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Algebra" href="http://localhost:1313/notes/math/amc/amc10/algebra/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Geometry
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>📐 Geometry 💡 Geometry Knowledge Points
+Top 20 Classical AMC 10 Geometry Problem Types # Problem Archetype (What you’re asked) Hall-mark Strategy / Fact 1 Hidden 30-60-90 or 45-45-90 triangle Recognize special right-triangle ratios to finish in one step. 2 Pythagorean-triple perimeter/area Spot integer triples (3-4-5, 5-12-13, 8-15-17, …) embedded in a diagram. 3 Altitude drops ⇒ similar triangles Use AA similarity from an altitude or angle bisector in a right/acute triangle. 4 Inradius of a right triangle Apply $r=\dfrac{a&#43;b-c}{2}$ or $A=rs$ to find the radius or a side. 5 Circumradius with Extended Law of Sines Use $R=\dfrac{a}{2\sin A}$ (often with a 60° or 120° angle). 6 Power of a Point (tangent–secant / chord–chord) Set up $PT^{2}=PA!\cdot!PB$. or $AE ⁣⋅ ⁣EC=BE ⁣⋅ ⁣ED\quad AE!\cdot!EC=BE!\cdot!ED$ 7 Cyclic quadrilateral angle chase Opposite angles sum to 180°, inscribed-angle theorem gives the rest. 8 Mid-segment in a trapezoid/triangle Midpoints create parallel lines; mid-segment length is average of bases. 9 Area by Shoelace on lattice vertices Quick determinant gives half-integer area of a polygon in the grid. 10 Coordinate-bash distance or slope Place key points at convenient coordinates, then use distance/slope formulas. 11 Similar polygons via parallel lines Parallel lines induce similar triangles; solve for lengths or ratios. 12 Angle-bisector theorem ratio Internal or external bisector splits opposite side proportionally. 13 Cevians concurrency (Ceva / mass points) Ratios on sides imply concurrency or find segment lengths. 14 Circle tangent to two lines &amp; a circle (incircle/excircle) Center lies on angle bisector; set up right triangles for radius/coordinates. 15 Three-dimensional box diagonal / face diagonal Compute $d=\sqrt{a^{2}&#43;b^{2}&#43;c^{2}}$ or $\sqrt{a^{2}&#43;b^{2}}$ after unfolding. 16 Cross-section of cube/prism Slice produces a familiar 2-D shape; use similar triangles to get area/perimeter. 17 Cyclic ratio problems with Ptolemy In quadrilateral ABCDABCD, use AC⋅BD=AB⋅CD&#43;BC⋅DAAC·BD = AB·CD &#43; BC·DA to solve for an unknown. 18 Nested squares/triangles (infinite geometric area) Recurring similarity yields a geometric series for total area or perimeter. 19 Rotation/spiral similarity “pinwheel” Two equal-length chords imply a 90° rotation or a spiral similarity point. 20 Geometric probability (dartboard regions) Ratio of areas/lengths in a circle, square, or triangle gives probability. #1 – Hidden 30-60-90 and 45-45-90 Triangles
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Geometry" href="http://localhost:1313/notes/math/amc/amc10/geometry/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Number Theory
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>📊 Number Theory Divisibility rules Primes, factors, multiples Greatest common divisor (GCD) and least common multiple (LCM) Modular arithmetic Remainders Base systems (occasionally) Euclidean Algorithm Linear Diophantine equation
+Example (AMC‑style)
+Solving two‑variable quadratic Diophantine equation
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Number Theory" href="http://localhost:1313/notes/math/amc/amc10/number-theory/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Counting &amp; Probability
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>📈 Counting &amp; Probability Permutations and combinations Basic probability Expected value Complementary counting Binomial coefficients Principle of Inclusion-Exclusion Pigeonhole Principle </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Counting & Probability" href="http://localhost:1313/notes/math/amc/amc10/counting-prob/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Precalculus / Miscellaneous
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>📏 Precalculus / Miscellaneous Sequences and series (arithmetic, geometric) Functions and functional equations Logarithms (rarely) Complex numbers (basic) Vectors (basic) Logic and set notation (basic) </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Precalculus / Miscellaneous" href="http://localhost:1313/notes/math/amc/amc10/precalculus/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">General Problem Solving Strategies
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🧠 General Problem Solving Strategies Working backwards Guess and check Logical deduction Estimation Pattern recognition Symmetry and invariants Usage Tips for Students The single biggest score-boost comes from mastering Algebra-Geometry crossover problems: think of a diagram then translate to equations, or vice-versa.
+Nearly every AMC 10 has 1–2 questions solvable in ≤ 30 s by clever bounding or parity arguments; practice spotting them.
+Practice compound topics: e.g., count lattice points in/on a circle (Geometry &#43; Number Theory &#43; Combinatorics).
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to General Problem Solving Strategies" href="http://localhost:1313/notes/math/amc/amc10/misc/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

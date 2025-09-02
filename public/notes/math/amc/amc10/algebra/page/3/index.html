@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Algebra | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="amc10, algebra, mathematics, competition">
+<meta name="description" content="AMC 10 Algebra topics and techniques">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/algebra/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/notes/math/amc/amc10/algebra/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/algebra/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10</a></div>
+  <h1>
+    Algebra
+    <a href="/notes/math/amc/amc10/algebra/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+  <div class="post-description">
+    AMC 10 Algebra topics and techniques
+  </div>
+</header>
+<div class="post-content"><h1 id="-algebra">🧮 Algebra<a hidden class="anchor" aria-hidden="true" href="#-algebra">#</a></h1>
+<h3 id="key-knowledge-points">Key Knowledge Points<a hidden class="anchor" aria-hidden="true" href="#key-knowledge-points">#</a></h3>
+<ul>
+<li>
+<p><a href="formula-reference">Formula Reference</a></p>
+</li>
+<li>
+<p><a href="sequences">Sequences</a></p>
+</li>
+<li>
+<p><a href="floor-fractional-part">Floor Fractional Part</a></p>
+</li>
+</ul>
+<h2 id="top-20-algebra-knowledge-points-in-amc-10"><strong>Top 20 algebra knowledge points in AMC 10</strong><a hidden class="anchor" aria-hidden="true" href="#top-20-algebra-knowledge-points-in-amc-10">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>#</th>
+          <th>Knowledge point</th>
+          <th>What the AMC usually asks you to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td><strong>Quadratic equations &amp; Vieta’s formulas</strong></td>
+          <td>Solve, compare roots, or form symmetric sums quickly without expanding.</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><strong>Polynomial factoring &amp; special identities</strong> (difference of squares, sum/diff of cubes, SFFT)</td>
+          <td>Factor to reveal cancellation or hidden symmetry.</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td><strong>Systems of linear equations</strong> (2 × 2 or 3 × 3)</td>
+          <td>Speed elimination, substitution, clever parameter tricks.</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td><strong>Exponent &amp; radical rules</strong></td>
+          <td>Simplify messy expressions, rationalize denominators, compare magnitudes.</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td><strong>Arithmetic sequences/series</strong></td>
+          <td>Find specific terms or partial sums quickly.</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td><strong>Geometric sequences/series (finite &amp; ∞)</strong></td>
+          <td>Use $S_n=a(1-r^{n})/(1-r)$ or $S_\infty=a/(1-r)$.</td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td><strong>Telescoping series &amp; partial‑fraction decomposition</strong></td>
+          <td>Break $1/[k(k+1)]$-type terms; cancel to two endpoints.</td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td><strong>Remainder &amp; Factor theorems / synthetic division</strong></td>
+          <td>“What is the remainder when $P(x)$ is divided by … ?”</td>
+      </tr>
+      <tr>
+          <td>9</td>
+          <td><strong>Inequalities &amp; bounding</strong> (linear, quadratic, AM–GM)</td>
+          <td>Show impossibility, trap answer in a small interval.</td>
+      </tr>
+      <tr>
+          <td>10</td>
+          <td><strong>Absolute‑value equations / inequalities</strong></td>
+          <td>Split into cases or use symmetry.</td>
+      </tr>
+      <tr>
+          <td>11</td>
+          <td><strong>Rational expressions &amp; equations</strong></td>
+          <td>Clear denominators, watch for extraneous roots.</td>
+      </tr>
+      <tr>
+          <td>12</td>
+          <td><strong>Binomial theorem &amp; binomial identities</strong></td>
+          <td>Extract a single coefficient or evaluate $(1+x)^n$ at a clever $x$.</td>
+      </tr>
+      <tr>
+          <td>13</td>
+          <td><strong>Symmetric sums, Newton sums</strong></td>
+          <td>Compute $r_1^k+r_2^k+\dots$ from coefficients without solving.</td>
+      </tr>
+      <tr>
+          <td>14</td>
+          <td><strong>Recursive sequences</strong></td>
+          <td>Turn linear recursions into explicit formulas or telescopes.</td>
+      </tr>
+      <tr>
+          <td>15</td>
+          <td><strong>Function evaluation, composition &amp; simple functional equations</strong></td>
+          <td>Plug in special values or exploit invertibility.</td>
+      </tr>
+      <tr>
+          <td>16</td>
+          <td><strong>Ratio / proportion &amp; direct‑variation word problems</strong></td>
+          <td>Typical “mixture,” “work,” “race” setups that reduce to linear equations.</td>
+      </tr>
+      <tr>
+          <td>17</td>
+          <td><strong>Floor/ceiling &amp; fractional‑part functions</strong></td>
+          <td>Use ${x}+\lfloor x\rfloor=x$ and the $0\le{x}&lt;1$ box.</td>
+      </tr>
+      <tr>
+          <td>18</td>
+          <td><strong>Complex‑number arithmetic</strong></td>
+          <td>Magnitude/conjugate facts, often hiding a geometry flavor.</td>
+      </tr>
+      <tr>
+          <td>19</td>
+          <td><strong>Exponentials in contexts</strong> (growth/decay, compound interest)</td>
+          <td>Convert to algebraic equations, exploit geometric‑series sum.</td>
+      </tr>
+      <tr>
+          <td>20</td>
+          <td><strong>Radical equations (extraneous‑root traps)</strong></td>
+          <td>Square with care, check answers against original.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="how-to-use-this-hitlist">How to use this hit list<a hidden class="anchor" aria-hidden="true" href="#how-to-use-this-hitlist">#</a></h3>
+<ol>
+<li><strong>Drill by cluster:</strong> Group related topics (e.g., #1, #2, #8, #13 for polynomials) and master them together.</li>
+<li><strong>Timed reps:</strong> Give yourself 2–3 minutes per question to mimic AMC pacing.</li>
+<li><strong>Spot keywords:</strong> “remainder,” “in terms of $r_1+r_2$”, “fractional part,” etc., should instantly cue the corresponding technique.</li>
+<li><strong>Create a formula sheet:</strong> Keep the identities for #2, #4, #6, #12, #13 on one page for rapid review the week before the exam.</li>
+</ol>
+<h1 id="hints-for-solving-amc-10-problems">Hints for solving AMC 10 problems<a hidden class="anchor" aria-hidden="true" href="#hints-for-solving-amc-10-problems">#</a></h1>
+<table>
+  <thead>
+      <tr>
+          <th>Keyword / phrase you read</th>
+          <th>Technique you should grab first</th>
+          <th>How it plays out in ≤ 30 s</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>“remainder when</strong> $P(x)$ <strong>is divided by …”</strong></td>
+          <td><strong>Remainder Theorem / Synthetic Division</strong></td>
+          <td>Evaluate $P(c)$ for divisor $x-c$.  Example: Remainder of $x^5+3x+2$ mod $x-2$ ⇒ $2^5+3·2+2 = 32+6+2 = 40$.</td>
+      </tr>
+      <tr>
+          <td><strong>“remainder when divided by</strong> $x^2+1$<strong>”</strong> (degree &gt; 1 divisor)</td>
+          <td>Pair of evaluations at the complex roots</td>
+          <td>Compute $P(i)$ and $P(-i)$ to recover the linear remainder $ax+b$.</td>
+      </tr>
+      <tr>
+          <td><strong>“in terms of</strong> $r_1+r_2$<strong>”</strong> or “<strong>roots</strong> $r_1,r_2$<strong>…</strong>”</td>
+          <td><strong>Vieta’s formulas</strong></td>
+          <td>If $x^2+px+q=0$ then $r_1+r_2=-p$, $r_1r_2=q$. Example: Find $(r_1+r_2)^2-r_1r_2$ without solving the quadratic.</td>
+      </tr>
+      <tr>
+          <td>$r_1^2+r_2^2+⋯$ (higher powers of roots)</td>
+          <td><strong>Newton sums / symmetric identities</strong></td>
+          <td>Use the Newton‑sum recurrence or expand via $(r_1+r_2)^2-2r_1r_2$.</td>
+      </tr>
+      <tr>
+          <td><strong>“fractional part</strong> ${;}$<strong>”</strong> or <strong>“floor</strong> $\lfloor \rfloor$<strong>”</strong></td>
+          <td>Use ${x}+ \lfloor x\rfloor = x$<strong>,</strong> remember $0\le{x}&lt;1$</td>
+          <td>Rewrite any mixed floor–fraction expression in one variable; bound the fractional part to trap integer pieces.</td>
+      </tr>
+      <tr>
+          <td><strong>“least positive integer</strong> $n$ <strong>such that …”</strong></td>
+          <td>Treat as <strong>modular arithmetic / divisibility / bounding</strong> problem</td>
+          <td>Convert inequality to modulus, test candidates in ascending order using congruences instead of brute force.</td>
+      </tr>
+      <tr>
+          <td><strong>“sum of first</strong> $n$ <strong>terms of an arithmetic (or geometric) sequence”</strong></td>
+          <td>Plug directly into $S_n=\frac{n}{2}(2a+(n-1)d)$ or $S_n=a(1-r^{,n})/(1-r)$</td>
+          <td>Saves the need to write the expanded list.</td>
+      </tr>
+      <tr>
+          <td><strong>“telescoping”</strong> clues:  $\frac{1}{k(k+1)}$, difference of consecutive terms, “partial fractions”</td>
+          <td>Split into $\frac{1}{k}-\frac{1}{k+1}$ and cancel endpoints</td>
+          <td>Example: $\sum_{k=1}^{n} \frac{1}{k(k+1)} = 1-\frac{1}{n+1}$.</td>
+      </tr>
+      <tr>
+          <td><strong>“absolute value equation/inequality”</strong></td>
+          <td><strong>Case split</strong> about the critical points where inner quantity = 0</td>
+          <td>Parse quickly at the breakpoints instead of expanding square‑root squares.</td>
+      </tr>
+      <tr>
+          <td><strong>“digit sum,” “product of digits,” “digits reversed”</strong></td>
+          <td>Represent the number as $10a+b$ (two‑digit) or $100a+10b+c$ and translate conditions</td>
+          <td>Example: “Sum of digits of $2n$ equals 17” becomes an equation in $a,b$.</td>
+      </tr>
+      <tr>
+          <td><strong>“recursive sequence</strong> $a_{n+1}=ka_n+b$<strong>”</strong></td>
+          <td>Identify as <strong>linear recursion ⇒ explicit form</strong> or telescoping</td>
+          <td>Write $a_{n+1}-\alpha = k(a_n-\alpha)$ where $\alpha=-b/(k-1)$.</td>
+      </tr>
+      <tr>
+          <td><strong>“converges to …”</strong> (sequence)</td>
+          <td>Guess the limit $L$ and set $L = f(L)$ if the recursion is continuous</td>
+          <td>Standard trick for fixed‑point problems.</td>
+      </tr>
+      <tr>
+          <td><strong>“least / greatest value of expression subject to constraint”</strong></td>
+          <td><strong>AM–GM, Cauchy, or bounding</strong></td>
+          <td>For small integer domains, a parity check plus bounding pinpoints the answer faster than full algebra.</td>
+      </tr>
+      <tr>
+          <td><strong>“multiple of 9 (or 11)”</strong> inside base‑10 context</td>
+          <td><strong>Digit‑sum or alternating‑sum test</strong></td>
+          <td>Turns a divisibility condition into a single‑digit congruence check.</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="how-to-drill-this-reflex">How to drill this reflex<a hidden class="anchor" aria-hidden="true" href="#how-to-drill-this-reflex">#</a></h3>
+<ol>
+<li><strong>Flash‑card the mapping.</strong> Put the keyword on one side, the technique on the other. Quiz until automatic.</li>
+<li><strong>Timed micro‑drills.</strong> Skim past AMC problem statements and underline triggers; spend &lt; 5 s naming the method before solving.</li>
+<li><strong>Error log.</strong> Whenever you miss a fast cue in practice, add that keyword to your personal deck.</li>
+</ol>
+<p>Mastering the keyword → technique link can shave <strong>30–60 seconds</strong> per algebra question—often the difference between a 120‑point and 135‑point AMC 10 score.  Happy training!</p>
+<h2 id="example-problems">Example Problems<a hidden class="anchor" aria-hidden="true" href="#example-problems">#</a></h2>
+<p><a href="problems/find-least-positive-integer">Find Least Positive Integer</a></p>
+<p><a href="problems/absolute-value-inequality">Absolute‑Value Inequality</a></p>
+<p><a href="problems/remainder-theorem-synthetic">Remainder‑Theorem / Synthetic‑Division Technique</a></p>
+<p><a href="problems/telescoping-partial-fraction">Telescoping Partial‑Fraction Technique</a></p>
+<p><a href="problems/newton-sum-symmetric">Newton‑Sum / Symmetric‑Sum Technique</a></p>
+<p><a href="problems/binomial-theorem-coefficient">Binomial‑Theorem Coefficient Technique</a></p>
+<p><a href="problems/am-gm-bounding-inequality">AM–GM / Bounding Inequality Technique</a></p>
+<p><a href="problems/linear-recursion-explicit">Linear Recursion → Explicit Formula Technique</a></p>
+<p><a href="problems/radical-exponent-manipulation">Radical‑Exponent Manipulation / “Sum‑of‑Cubes” Trick</a></p>
+<p><a href="problems/digit-sum-divisibility-11">Digit-Sum &amp; Divisibility-by-11 Technique</a></p>
+<p><a href="problems/floor-sum-grouping">Floor‑Sum Grouping by Perfect Squares</a></p>
+<p><a href="problems/functional-equation-plug-x">Functional‑Equation “Plug x &amp; 1 − x” Technique</a></p>
+<p><a href="problems/perfect-square-discriminant">Perfect‑Square Discriminant / Factor‑Pair Technique</a></p>
+<p><a href="problems/symmetric-sum-identity-cubics">Symmetric‑Sum Identity for Cubics</a></p>
+<p><a href="problems/floor-function-bounding"><em>Floor‑function bounding with</em> $\lfloor\sqrt{n}\rfloor$</a></p>
+
+
+</div>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Fraction Decomposition Fraction decomposition is a method of expressing a complex rational function as a sum of simpler fractions. This technique, commonly known as partial fraction decomposition, helps in integrating rational functions and solving algebraic equations, particularly in calculus and algebra.
+The general process involves two steps:
+Factor the denominator. Decompose the fraction into simpler terms according to the structure of the factors in the denominator. Types of Denominators and Decomposition Linear Factors: If the denominator consists of distinct linear factors (terms of the form (x &#43; a)), then the partial fraction decomposition is written as a sum of fractions, where each fraction has one of the linear factors as its denominator.
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/notes/math/amc/amc10/algebra/fraction-decomposition/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Vieta’s theorem Vieta’s theorem relates the coefficients of a polynomial to sums and products of its roots. It’s especially useful for quadratic, cubic, and higher-order polynomials. Here’s the theorem for different polynomial degrees:
+Quadratic Equation For a quadratic equation ( ax^2 &#43; bx &#43; c = 0 ), with roots ( r_1 ) and ( r_2 ), Vieta’s relations are:
+( r_1 &#43; r_2 = -\frac{b}{a} ) (sum of the roots) ( r_1 \cdot r_2 = \frac{c}{a} ) (product of the roots) Cubic Equation For a cubic equation ( ax^3 &#43; bx^2 &#43; cx &#43; d = 0 ), with roots ( r_1 ), ( r_2 ), and ( r_3 ), Vieta’s relations are:
+...</p>
+  </div>
+  <footer class="entry-footer">2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/notes/math/amc/amc10/algebra/vieta-theorem/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/notes/math/amc/amc10/algebra/page/2/">
+      «&nbsp;Prev&nbsp;
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
