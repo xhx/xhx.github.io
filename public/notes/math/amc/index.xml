@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Mathematics Notes on Xiaohui Xie&#39;s Site</title>
-    <link>http://localhost:1313/notes/math/</link>
-    <description>Recent content in Mathematics Notes on Xiaohui Xie&#39;s Site</description>
+    <title>AMC Problems on Xiaohui Xie&#39;s Site</title>
+    <link>http://localhost:1313/notes/math/amc/</link>
+    <description>Recent content in AMC Problems on Xiaohui Xie&#39;s Site</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/notes/math/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/notes/math/amc/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

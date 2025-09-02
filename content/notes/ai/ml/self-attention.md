@@ -4,6 +4,7 @@ description: "Efficient attention mechanisms including kernelization, low-rank a
 date: 2025-09-01
 draft: false
 math: true
+hideTitle: true
 ---
 
 # Self-Attention Approximation Methods
