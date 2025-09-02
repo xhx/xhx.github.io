@@ -61,7 +61,7 @@ enableRobotsTXT = true
   # Social icons (add your social media links)
   # [params.socialIcons]
   #   github = "xhx"
-  #   email = "your-email@example.com"
+  #   email = "xhx@uci.edu"
   
   # SEO and meta settings
   description = "Personal website of Xiaohui Xie featuring mathematics, teaching, and research"
@@ -77,4 +77,6 @@ enableRobotsTXT = true
   fuseOpts.minMatchCharLength = 0
   fuseOpts.keys = ["title", "permalink", "summary", "content"]
 
+  # main sections
+  mainSections = []   # show nothing (some themes fall back to defaults; if it still shows, use Option A)
 

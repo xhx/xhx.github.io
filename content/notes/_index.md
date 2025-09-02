@@ -5,6 +5,7 @@ date: 2025-09-01
 draft: false
 ---
 
+
 # Notes
 
 Welcome to my organized notes section! Here you'll find various notes, references, and materials organized by topic and section.
@@ -25,4 +26,3 @@ Welcome to my organized notes section! Here you'll find various notes, reference
 
 ---
 
-*Notes are organized by topic and section for easy navigation and reference.*

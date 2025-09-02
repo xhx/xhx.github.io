@@ -1,3 +1,10 @@
 {{ if or .Params.math .Site.Params.math }}
   {{ partial "math.html" . }}
 {{ end }}
+
+<style>
+/* Hide post titles */
+.post-title {
+  display: none !important;
+}
+</style>

@@ -1,9 +1,10 @@
 ---
 title: "Xiaohui Xie - Professor of Computer Science"
-description: "Personal website of Xiaohui Xie, Professor of Computer Science at UC Irvine, specializing in AI, machine learning, and computational genomics"
+description: "Personal website of Xiaohui Xie, Professor of Computer Science at UC Irvine"
 date: 2025-09-01
 draft: false
 ---
+
 
 <div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem;">
   <img src="/images/profile.jpg" alt="Xiaohui Xie" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 3px solid #667eea;">
@@ -11,8 +12,13 @@ draft: false
     <h1 style="margin: 0; color: #2d3748;">Xiaohui Xie</h1>
     <h2 style="margin: 0.5rem 0; color: #4a5568; font-weight: 500;">Professor of Computer Science</h2>
     <p style="margin: 0.5rem 0; color: #718096;">
-      <strong>[Bren School of Information and Computer Sciences](https://www.ics.uci.edu/)</strong><br>
-      <strong>[University of California, Irvine](https://www.uci.edu/)</strong>
+      <strong>
+        <a href="https://www.ics.uci.edu/" style="color: #667eea; text-decoration: underline;">Bren School of Information and Computer Sciences</a>
+      </strong>
+      <br>
+      <strong>
+        <a href="https://www.uci.edu/" style="color: #667eea; text-decoration: underline;">University of California, Irvine</a>
+      </strong>
     </p>
   </div>
 </div>
@@ -54,14 +60,14 @@ Please see **[Google Scholar](https://scholar.google.com/citations?user=YOUR_GOO
 </div>
 
 ---
-
+<!-- 
 ## 📖 Teaching and Research Notes
 
 - **[Notes](/notes/)** - Organized notes and reference materials
 - **[Self-Attention Mechanisms](/notes/ai/ml/self-attention/)** - Deep learning attention mechanisms
 - **[LSH Attention](/notes/ai/ml/lsh-attention/)** - Locality-sensitive hashing for attention
 - **[AMC Problems](/notes/math/amc/)** - American Mathematics Competitions
-
+ -->
 
 ---
 
