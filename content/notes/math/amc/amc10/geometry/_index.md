@@ -11,12 +11,21 @@ weight: 2
 
 # 📐 Geometry
 
+
 <aside>
+
 💡
 
 [Geometry Knowledge Points](Geometry%20Knowledge%20Points%20230936cc221480f5a4e6c5b1f29e122e.md)
 
 </aside>
+
+
+
+[Knowledge Point Summary](knowledge-point)
+
+
+
 
 ### Top 20 Classical AMC 10 Geometry Problem Types
 

@@ -113,19 +113,5 @@
       <guid>http://localhost:1313/notes/math/amc/amc10/algebra/problems/telescoping-partial-fraction/</guid>
       <description>AMC 10 Algebra: Telescoping Partial‑Fraction Technique</description>
     </item>
-    <item>
-      <title>Advanced Algebra</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/algebra-advanced/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/algebra-advanced/</guid>
-      <description>Advanced algebra topics for AMC 10</description>
-    </item>
-    <item>
-      <title>Roots of Polynomial</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/roots-of-polynomial/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/roots-of-polynomial/</guid>
-      <description>Polynomial roots and related concepts for AMC 10</description>
-    </item>
   </channel>
 </rss>

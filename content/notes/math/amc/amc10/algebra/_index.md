@@ -9,7 +9,7 @@ tags: ["amc10", "algebra", "mathematics", "competition"]
 weight: 1
 ---
 
-# 🧮 Algebra
+<!-- # 🧮 Algebra -->
 
 Welcome to the AMC 10 Algebra section! This comprehensive guide covers all the essential algebraic concepts and problem-solving techniques you need to excel in the AMC 10 competition.
 

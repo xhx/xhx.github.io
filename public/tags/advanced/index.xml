@@ -9,13 +9,6 @@
     <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/advanced/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Advanced Algebra</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/algebra-advanced/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/algebra-advanced/</guid>
-      <description>Advanced algebra topics for AMC 10</description>
-    </item>
-    <item>
       <title>Advanced Combinatorics</title>
       <link>http://localhost:1313/notes/math/amc/amc10/counting-prob/combinatorics-advanced/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>

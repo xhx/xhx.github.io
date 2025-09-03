@@ -142,13 +142,6 @@
       <description>A comprehensive topic-by-topic syllabus for AMC 10</description>
     </item>
     <item>
-      <title>Advanced Algebra</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/algebra-advanced/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/algebra-advanced/</guid>
-      <description>Advanced algebra topics for AMC 10</description>
-    </item>
-    <item>
       <title>Chinese Remainder Theorem (CRT)</title>
       <link>http://localhost:1313/notes/math/amc/amc10/number-theory/chinese-remainder-theorem/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
@@ -210,13 +203,6 @@
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/math/amc/amc10/problems/</guid>
       <description>Practice problems for AMC 10 across all topics</description>
-    </item>
-    <item>
-      <title>Roots of Polynomial</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/roots-of-polynomial/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/roots-of-polynomial/</guid>
-      <description>Polynomial roots and related concepts for AMC 10</description>
     </item>
     <item>
       <title>Problem Solving Tricks</title>

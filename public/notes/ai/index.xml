@@ -141,13 +141,6 @@
       <description>A comprehensive topic-by-topic syllabus for AMC 10</description>
     </item>
     <item>
-      <title>Advanced Algebra</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/algebra-advanced/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/algebra-advanced/</guid>
-      <description>Advanced algebra topics for AMC 10</description>
-    </item>
-    <item>
       <title>Chinese Remainder Theorem (CRT)</title>
       <link>http://localhost:1313/notes/math/amc/amc10/number-theory/chinese-remainder-theorem/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
@@ -211,13 +204,6 @@
       <description>Practice problems for AMC 10 across all topics</description>
     </item>
     <item>
-      <title>Roots of Polynomial</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/roots-of-polynomial/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/roots-of-polynomial/</guid>
-      <description>Polynomial roots and related concepts for AMC 10</description>
-    </item>
-    <item>
       <title>Problem Solving Tricks</title>
       <link>http://localhost:1313/notes/math/amc/amc10/tricks/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
@@ -225,11 +211,25 @@
       <description>Useful tricks and techniques for AMC 10 problem solving</description>
     </item>
     <item>
+      <title>HS Geometry Study Pack — Text &#43; SVG Diagrams</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/geometry/knowledge-point/</link>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/knowledge-point/</guid>
+      <description>Extracted theorems and identities with PaperMod-compatible SVG diagrams.</description>
+    </item>
+    <item>
       <title>Floor and Fractional Part Functions</title>
       <link>http://localhost:1313/notes/math/amc/amc10/algebra/floor-fractional-part/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/math/amc/amc10/algebra/floor-fractional-part/</guid>
       <description>A reference on floor functions, fractional parts, identities, and problem-solving strategies. Includes AMC/AIME-style examples.</description>
+    </item>
+    <item>
+      <title>Fraction (Partial) Decomposition</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/algebra/fraction-decomposition/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/fraction-decomposition/</guid>
+      <description>A structured guide to partial fraction decomposition: linear, repeated, and quadratic factors. Includes method, examples, and applications.</description>
     </item>
     <item>
       <title>Mathematical Formula Reference</title>
@@ -244,40 +244,6 @@
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/math/amc/amc10/algebra/sequences/</guid>
       <description>Formulas and examples for arithmetic, geometric, and special sequences. Includes AMC/AIME-style tricks and telescoping sums.</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/fraction-decomposition/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/fraction-decomposition/</guid>
-      <description>&lt;h1 id=&#34;fraction-decomposition&#34;&gt;Fraction Decomposition&lt;/h1&gt;
-&lt;p&gt;Fraction decomposition is a method of expressing a complex rational function as a sum of simpler fractions. This technique, commonly known as &lt;strong&gt;partial fraction decomposition&lt;/strong&gt;, helps in integrating rational functions and solving algebraic equations, particularly in calculus and algebra.&lt;/p&gt;
-&lt;p&gt;The general process involves two steps:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Factor the denominator&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Decompose the fraction&lt;/strong&gt; into simpler terms according to the structure of the factors in the denominator.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;types-of-denominators-and-decomposition&#34;&gt;Types of Denominators and Decomposition&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Linear Factors&lt;/strong&gt;:
-If the denominator consists of distinct linear factors (terms of the form (x + a)), then the partial fraction decomposition is written as a sum of fractions, where each fraction has one of the linear factors as its denominator.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/vieta-theorem/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/vieta-theorem/</guid>
-      <description>&lt;h1 id=&#34;vietas-theorem&#34;&gt;Vieta&amp;rsquo;s theorem&lt;/h1&gt;
-&lt;p&gt;Vieta&amp;rsquo;s theorem relates the coefficients of a polynomial to sums and products of its roots. It&amp;rsquo;s especially useful for quadratic, cubic, and higher-order polynomials. Here&amp;rsquo;s the theorem for different polynomial degrees:&lt;/p&gt;
-&lt;h3 id=&#34;quadratic-equation&#34;&gt;Quadratic Equation&lt;/h3&gt;
-&lt;p&gt;For a quadratic equation ( ax^2 + bx + c = 0 ), with roots ( r_1 ) and ( r_2 ), Vieta&amp;rsquo;s relations are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;( r_1 + r_2 = -\frac{b}{a} ) (sum of the roots)&lt;/li&gt;
-&lt;li&gt;( r_1 \cdot r_2 = \frac{c}{a} ) (product of the roots)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;cubic-equation&#34;&gt;Cubic Equation&lt;/h3&gt;
-&lt;p&gt;For a cubic equation ( ax^3 + bx^2 + cx + d = 0 ), with roots ( r_1 ), ( r_2 ), and ( r_3 ), Vieta&amp;rsquo;s relations are:&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>

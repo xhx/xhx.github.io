@@ -6,7 +6,7 @@
     <description>Recent content in Algebra Problems on Xiaohui Xie&#39;s Site</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/notes/math/amc/amc10/algebra/problems/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Absolute‑Value Inequality</title>
@@ -210,6 +210,13 @@
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/math/amc/amc10/tricks/</guid>
       <description>Useful tricks and techniques for AMC 10 problem solving</description>
+    </item>
+    <item>
+      <title>HS Geometry Study Pack — Text &#43; SVG Diagrams</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/geometry/knowledge-point/</link>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/knowledge-point/</guid>
+      <description>Extracted theorems and identities with PaperMod-compatible SVG diagrams.</description>
     </item>
     <item>
       <title>Floor and Fractional Part Functions</title>
