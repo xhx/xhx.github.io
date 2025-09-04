@@ -53,10 +53,19 @@ Application of deep learning to computational genomics and biomedical challenges
 
 Please see **[Google Scholar](https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID&sortby=pubdate)** for research projects ongoing in his group and search for recent publications.
 
-<div style="display: flex; gap: 1rem; flex-wrap: wrap; margin: 1rem 0;">
-  <a href="https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID&sortby=pubdate" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: #667eea; color: white; text-decoration: none; border-radius: 8px; font-weight: 500; transition: background 0.2s;">📊 View Google Scholar Profile</a>
-  <a href="https://www.ics.uci.edu/~xhx/" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: #4a5568; color: white; text-decoration: none; border-radius: 8px; font-weight: 500; transition: background 0.2s;">🏫 UC Irvine Profile</a>
-  <a href="https://github.com/uci-cbcl" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: #24292e; color: white; text-decoration: none; border-radius: 8px; font-weight: 500; transition: background 0.2s;">🐙 XIE Lab GitHub</a>
+<div style="display: flex; gap: 1.2rem; flex-wrap: wrap; margin: 1.5rem 0; justify-content: center;">
+  <a href="https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID&sortby=pubdate" style="display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.8rem 1.6rem; background: #4285f4; color: white; text-decoration: none; border-radius: 10px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 3px 12px rgba(66, 133, 244, 0.25);">
+    <img src="/images/Google_Scholar_logo.svg.png" alt="Google Scholar" width="24" height="24" style="display: inline-block;">
+    Google Scholar
+  </a>
+  <a href="https://www.ics.uci.edu/~xhx/" style="display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.8rem 1.6rem; background: #ff6b35; color: white; text-decoration: none; border-radius: 10px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 3px 12px rgba(255, 107, 53, 0.25);">
+    <img src="/images/University_of_California,_Irvine_logo.svg" alt="UC Irvine" width="24" height="24" style="display: inline-block;">
+    UC Irvine Profile
+  </a>
+  <a href="https://github.com/uci-cbcl" style="display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.8rem 1.6rem; background: #24292e; color: white; text-decoration: none; border-radius: 10px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 3px 12px rgba(36, 41, 46, 0.25);">
+    <img src="/images/github-mark-white.svg" alt="GitHub" width="24" height="24" style="display: inline-block;">
+    XIE Lab GitHub
+  </a>
 </div>
 
 ---
