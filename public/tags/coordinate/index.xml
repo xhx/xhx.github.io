@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Coordinate on Xiaohui Xie&#39;s Site</title>
+    <link>https://xhx.github.io/tags/coordinate/</link>
+    <description>Recent content in Coordinate on Xiaohui Xie&#39;s Site</description>
+    <generator>Hugo -- 0.149.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xhx.github.io/tags/coordinate/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coordinate-Bash Distance, Slope, and Midpoint Tricks</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/coordinate-bash-distance-slope/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/coordinate-bash-distance-slope/</guid>
+      <description>AMC 10 Geometry: Coordinate-Bash Distance, Slope, and Midpoint Tricks</description>
+    </item>
+    <item>
+      <title>Shoelace (Coordinate-Polygon) Area</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/shoelace-coordinate-polygon/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/shoelace-coordinate-polygon/</guid>
+      <description>AMC 10 Geometry: Shoelace (Coordinate-Polygon) Area</description>
+    </item>
+  </channel>
+</rss>

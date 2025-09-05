@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Equations on Xiaohui Xie&#39;s Site</title>
+    <link>https://xhx.github.io/tags/equations/</link>
+    <description>Recent content in Equations on Xiaohui Xie&#39;s Site</description>
+    <generator>Hugo -- 0.149.0</generator>
+    <language>en-us</language>
+    <atom:link href="https://xhx.github.io/tags/equations/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Equations &amp; Inequalities</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/equations-and-inequalities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/equations-and-inequalities/</guid>
+      <description>Absolute value equations, systems, and inequality techniques including AM-GM for AMC preparation.</description>
+    </item>
+    <item>
+      <title>Solving Trig Equations</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/solving-trig-equations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/solving-trig-equations/</guid>
+      <description>Pattern recognition and solution strategies for trigonometric equations in AMC problems.</description>
+    </item>
+    <item>
+      <title>Logarithm Equations &amp; Inequalities</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/logarithm-equations-and-inequalities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/logarithm-equations-and-inequalities/</guid>
+      <description>Pattern recognition and solution strategies for logarithmic equations and inequalities in AMC problems.</description>
+    </item>
+  </channel>
+</rss>

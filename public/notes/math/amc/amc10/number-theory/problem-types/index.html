@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Problem Types | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Number Theory, Problem Types, Patterns">
+<meta name="description" content="Pattern catalog for common AMC number theory problem types with recognition cues and solution templates.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="https://xhx.github.io/notes/math/amc/amc10/number-theory/problem-types/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xhx.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://xhx.github.io/notes/math/amc/amc10/number-theory/problem-types/index.xml">
+<link rel="alternate" hreflang="en" href="https://xhx.github.io/notes/math/amc/amc10/number-theory/problem-types/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+<meta property="og:url" content="https://xhx.github.io/notes/math/amc/amc10/number-theory/problem-types/">
+  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
+  <meta property="og:title" content="Problem Types">
+  <meta property="og:description" content="Pattern catalog for common AMC number theory problem types with recognition cues and solution templates.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Problem Types">
+<meta name="twitter:description" content="Pattern catalog for common AMC number theory problem types with recognition cues and solution templates.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Notes",
+      "item": "https://xhx.github.io/notes/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Mathematics Notes",
+      "item": "https://xhx.github.io/notes/math/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "AMC Problems",
+      "item": "https://xhx.github.io/notes/math/amc/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "AMC 10",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Number Theory Mastery Guide",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/number-theory/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Problem Types",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/number-theory/problem-types/"
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/">Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/number-theory/">Number Theory Mastery Guide</a></div>
+  <h1>
+    Problem Types
+    <a href="/notes/math/amc/amc10/number-theory/problem-types/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+  <div class="post-description">
+    Pattern catalog for common AMC number theory problem types with recognition cues and solution templates.
+  </div>
+</header>
+<div class="post-content"><h1 id="-problem-types">🧩 Problem Types<a hidden class="anchor" aria-hidden="true" href="#-problem-types">#</a></h1>
+<p>A pattern catalog for recognizing and solving common AMC number theory problems. Each pattern includes recognition cues, solution templates, and worked examples.</p>
+<h2 id="-pattern-categories">🎯 Pattern Categories<a hidden class="anchor" aria-hidden="true" href="#-pattern-categories">#</a></h2>
+<h3 id="-modular-arithmetic-patterns">🔄 Modular Arithmetic Patterns<a hidden class="anchor" aria-hidden="true" href="#-modular-arithmetic-patterns">#</a></h3>
+<ul>
+<li><strong><a href="remainders-and-last-digits">Remainders &amp; Last Digits</a></strong>: Cycles, orders, modular patterns</li>
+<li><strong><a href="systems-of-congruences">Systems of Congruences</a></strong>: CRT applications, pairwise coprime</li>
+<li><strong><a href="residue-classes-by-cases">Residue Classes by Cases</a></strong>: Case analysis, symmetry pruning</li>
+</ul>
+<h3 id="-divisibility--factorization-patterns">🔢 Divisibility &amp; Factorization Patterns<a hidden class="anchor" aria-hidden="true" href="#-divisibility--factorization-patterns">#</a></h3>
+<ul>
+<li><strong><a href="counting-divisors-sum-of-divisors">Counting Divisors &amp; Sums</a></strong>: Formula applications, prime exponents</li>
+<li><strong><a href="gcd-lcm-constraints">GCD/LCM Constraints</a></strong>: Relationship problems, parameterization</li>
+<li><strong><a href="factorials-and-trailing-zeros">Factorials &amp; Trailing Zeros</a></strong>: Legendre applications, extremal exponents</li>
+</ul>
+<h3 id="-diophantine-patterns">🔺 Diophantine Patterns<a hidden class="anchor" aria-hidden="true" href="#-diophantine-patterns">#</a></h3>
+<ul>
+<li><strong><a href="linear-diophantine-forms">Linear Diophantine Forms</a></strong>: Parameterization techniques, bounds</li>
+<li><strong><a href="coin-frobenius-lite">Coin &amp; Frobenius Problems</a></strong>: Reachability questions, two-coin case</li>
+<li><strong><a href="pythagorean-triples">Pythagorean Triples</a></strong>: Parametrization, primitive vs non-primitive</li>
+</ul>
+<h3 id="-specialized-patterns">🔢 Specialized Patterns<a hidden class="anchor" aria-hidden="true" href="#-specialized-patterns">#</a></h3>
+<ul>
+<li><strong><a href="digit-sum-and-divisibility-tests">Digit Sum &amp; Divisibility Tests</a></strong>: Casting out nines, base conversion</li>
+<li><strong><a href="binomial-divisibility-patterns">Binomial Divisibility</a></strong>: p-adic techniques, Lucas theorem</li>
+<li><strong><a href="pigeonhole-subset-sum-multiples">Pigeonhole Subset Sums</a></strong>: Classic applications, existence proofs</li>
+</ul>
+<h2 id="-how-to-use-this-section">🎯 How to Use This Section<a hidden class="anchor" aria-hidden="true" href="#-how-to-use-this-section">#</a></h2>
+<ol>
+<li><strong>Recognition</strong>: Learn the key phrases and problem structures that signal each pattern</li>
+<li><strong>Template</strong>: Follow the solution template for systematic problem-solving</li>
+<li><strong>Practice</strong>: Work through the examples to internalize the techniques</li>
+<li><strong>Variants</strong>: Study the common variations and pitfalls</li>
+</ol>
+<h2 id="-pattern-difficulty-matrix">📊 Pattern Difficulty Matrix<a hidden class="anchor" aria-hidden="true" href="#-pattern-difficulty-matrix">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Pattern</th>
+          <th>AMC 10</th>
+          <th>AMC 12</th>
+          <th>Recognition Difficulty</th>
+          <th>Solution Difficulty</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Remainders &amp; Last Digits</td>
+          <td>✅ Core</td>
+          <td>✅ Core</td>
+          <td>Easy</td>
+          <td>Easy-Medium</td>
+      </tr>
+      <tr>
+          <td>Systems of Congruences</td>
+          <td>❌</td>
+          <td>✅ Often</td>
+          <td>Medium</td>
+          <td>Hard</td>
+      </tr>
+      <tr>
+          <td>Counting Divisors</td>
+          <td>⚠️ Stretch</td>
+          <td>✅ Often</td>
+          <td>Easy</td>
+          <td>Medium</td>
+      </tr>
+      <tr>
+          <td>GCD/LCM Constraints</td>
+          <td>✅ Core</td>
+          <td>✅ Core</td>
+          <td>Medium</td>
+          <td>Medium</td>
+      </tr>
+      <tr>
+          <td>Linear Diophantine</td>
+          <td>✅ Core</td>
+          <td>✅ Core</td>
+          <td>Easy</td>
+          <td>Medium</td>
+      </tr>
+      <tr>
+          <td>Pythagorean Triples</td>
+          <td>✅ Core</td>
+          <td>✅ Core</td>
+          <td>Easy</td>
+          <td>Medium</td>
+      </tr>
+      <tr>
+          <td>Digit Sum &amp; Tests</td>
+          <td>✅ Core</td>
+          <td>✅ Core</td>
+          <td>Easy</td>
+          <td>Easy</td>
+      </tr>
+      <tr>
+          <td>Pigeonhole Subset Sums</td>
+          <td>✅ Core</td>
+          <td>✅ Core</td>
+          <td>Medium</td>
+          <td>Medium-Hard</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-quick-recognition-guide">🚀 Quick Recognition Guide<a hidden class="anchor" aria-hidden="true" href="#-quick-recognition-guide">#</a></h2>
+<h3 id="-look-for-these-phrases">🔍 Look for These Phrases<a hidden class="anchor" aria-hidden="true" href="#-look-for-these-phrases">#</a></h3>
+<ul>
+<li><strong>&ldquo;Find the remainder when&hellip;&rdquo;</strong> → Remainders &amp; Last Digits</li>
+<li><strong>&ldquo;How many positive divisors&hellip;&rdquo;</strong> → Counting Divisors &amp; Sums</li>
+<li><strong>&ldquo;Find all pairs $(x,y)$ such that&hellip;&rdquo;</strong> → Linear Diophantine Forms</li>
+<li><strong>&ldquo;How many ways can you make&hellip;&rdquo;</strong> → Coin &amp; Frobenius Problems</li>
+<li><strong>&ldquo;Find the last digit of&hellip;&rdquo;</strong> → Remainders &amp; Last Digits</li>
+<li><strong>&ldquo;Prove that among any $n$ integers&hellip;&rdquo;</strong> → Pigeonhole Subset Sums</li>
+</ul>
+<h3 id="-quick-solution-strategies">⚡ Quick Solution Strategies<a hidden class="anchor" aria-hidden="true" href="#-quick-solution-strategies">#</a></h3>
+<ul>
+<li><strong>Modular arithmetic</strong> → Look for cycles and use Fermat/Euler</li>
+<li><strong>Divisibility</strong> → Factor and use formulas</li>
+<li><strong>Integer solutions</strong> → Parameterize and apply constraints</li>
+<li><strong>Existence proofs</strong> → Use pigeonhole principle or invariants</li>
+</ul>
+<hr>
+<p><strong>Next</strong>: Start with <a href="remainders-and-last-digits">Remainders &amp; Last Digits</a> for the most common pattern.</p>
+
+
+</div>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Remainders &amp; Last Digits
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🔄 Remainders &amp; Last Digits The most common number theory pattern in AMC contests: finding remainders and last digits using modular cycles.
+🔍 Recognition Cues Key Phrases:
+“Find the remainder when $a^b$ is divided by $m$” “What is the last digit of $a^b$?” “Find the remainder when $n!$ is divided by $p$” “What is the smallest positive integer $k$ such that $a^k \equiv 1 \pmod{m}$?” Problem Structure:
+Large exponents with specific moduli Questions about final digits Cycle or periodicity problems Order and primitive root questions 📋 Solution Template Step 1: Identify the Pattern Last digit: Work modulo 10 General remainder: Work modulo the given number Large exponent: Look for cycles or use Fermat/Euler Step 2: Find the Cycle Check gcd: Ensure $\gcd(a,m) = 1$ for Fermat/Euler Compute powers: Find $a^k \equiv 1 \pmod{m}$ for smallest $k$ Use theorems: Apply Fermat’s Little Theorem or Euler’s theorem Step 3: Reduce the Exponent Modulo cycle length: If $a^k \equiv 1 \pmod{m}$, then $a^b \equiv a^{b \bmod k} \pmod{m}$ Break down: Use $a^{bc} = (a^b)^c$ for complex exponents Step 4: Compute the Answer Direct calculation: For reduced exponents Pattern recognition: Use known cycles for common bases 🎯 Worked Examples Example 1: Last Digit Problem Problem: Find the last digit of $7^{2023}$.
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Remainders & Last Digits" href="https://xhx.github.io/notes/math/amc/amc10/number-theory/problem-types/remainders-and-last-digits/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

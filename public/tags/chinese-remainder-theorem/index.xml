@@ -9,11 +9,18 @@
     <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/chinese-remainder-theorem/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Congruence Problems</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/congruence-problems/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/congruence-problems/</guid>
+      <description>AMC-style congruence problems and Chinese Remainder Theorem applications</description>
+    </item>
+    <item>
       <title>Chinese Remainder Theorem (CRT)</title>
       <link>http://localhost:1313/notes/math/amc/amc10/number-theory/chinese-remainder-theorem/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/chinese-remainder-theorem/</guid>
-      <description>Chinese Remainder Theorem and its applications in AMC 10</description>
+      <description>Chinese Remainder Theorem and its applications in AMC 10/12</description>
     </item>
   </channel>
 </rss>

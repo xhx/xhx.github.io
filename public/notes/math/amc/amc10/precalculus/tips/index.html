@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Problem-Solving Tips | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Precalculus, Tips, Strategy">
+<meta name="description" content="Strategic approaches, checklists, and timing advice for AMC precalculus problems.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="https://xhx.github.io/notes/math/amc/amc10/precalculus/tips/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xhx.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://xhx.github.io/notes/math/amc/amc10/precalculus/tips/index.xml">
+<link rel="alternate" hreflang="en" href="https://xhx.github.io/notes/math/amc/amc10/precalculus/tips/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+<meta property="og:url" content="https://xhx.github.io/notes/math/amc/amc10/precalculus/tips/">
+  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
+  <meta property="og:title" content="Problem-Solving Tips">
+  <meta property="og:description" content="Strategic approaches, checklists, and timing advice for AMC precalculus problems.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Problem-Solving Tips">
+<meta name="twitter:description" content="Strategic approaches, checklists, and timing advice for AMC precalculus problems.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Notes",
+      "item": "https://xhx.github.io/notes/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Mathematics Notes",
+      "item": "https://xhx.github.io/notes/math/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "AMC Problems",
+      "item": "https://xhx.github.io/notes/math/amc/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "AMC 10",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Precalculus Mastery Guide",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/precalculus/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Problem-Solving Tips",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/precalculus/tips/"
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/">Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/precalculus/">Precalculus Mastery Guide</a></div>
+  <h1>
+    Problem-Solving Tips
+    <a href="/notes/math/amc/amc10/precalculus/tips/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+  <div class="post-description">
+    Strategic approaches, checklists, and timing advice for AMC precalculus problems.
+  </div>
+</header>
+<div class="post-content"><h1 id="-problem-solving-tips">💡 Problem-Solving Tips<a hidden class="anchor" aria-hidden="true" href="#-problem-solving-tips">#</a></h1>
+<p>Strategic approaches, checklists, and timing advice to maximize your AMC performance.</p>
+<h2 id="-how-to-use-this-section">🎯 How to Use This Section<a hidden class="anchor" aria-hidden="true" href="#-how-to-use-this-section">#</a></h2>
+<ol>
+<li><strong>Study the strategies</strong> - Learn different approaches to problem-solving</li>
+<li><strong>Practice the checklists</strong> - Use them during practice problems</li>
+<li><strong>Master the timing</strong> - Know when to move on and when to persist</li>
+<li><strong>Apply the tips</strong> - Use them in actual AMC competitions</li>
+</ol>
+<h2 id="-tip-categories">📚 Tip Categories<a hidden class="anchor" aria-hidden="true" href="#-tip-categories">#</a></h2>
+<h3 id="-complete-problem-solving-guide">🧠 <a href="/notes/math/amc/amc10/precalculus/tips/problem-solving-tips">Complete Problem-Solving Guide</a><a hidden class="anchor" aria-hidden="true" href="#-complete-problem-solving-guide">#</a></h3>
+<p>Comprehensive collection of strategies, checklists, and timing advice.</p>
+<h2 id="-quick-strategy-overview">🎯 Quick Strategy Overview<a hidden class="anchor" aria-hidden="true" href="#-quick-strategy-overview">#</a></h2>
+<h3 id="when-stuck"><strong>When Stuck</strong><a hidden class="anchor" aria-hidden="true" href="#when-stuck">#</a></h3>
+<ol>
+<li><strong>Graph it</strong> - Visualize the problem</li>
+<li><strong>Try symmetry</strong> - Look for patterns</li>
+<li><strong>Test special cases</strong> - Use simple examples</li>
+<li><strong>Check domains</strong> - Verify constraints</li>
+</ol>
+<h3 id="algebra-sanity-checks"><strong>Algebra Sanity Checks</strong><a hidden class="anchor" aria-hidden="true" href="#algebra-sanity-checks">#</a></h3>
+<ol>
+<li><strong>Factor first</strong> - Look for common factors</li>
+<li><strong>Compare growth rates</strong> - For limits and asymptotes</li>
+<li><strong>Check for extraneous roots</strong> - Especially with log/abs/rational</li>
+<li><strong>Verify solutions</strong> - Substitute back</li>
+</ol>
+<h3 id="trig-sanity-checks"><strong>Trig Sanity Checks</strong><a hidden class="anchor" aria-hidden="true" href="#trig-sanity-checks">#</a></h3>
+<ol>
+<li><strong>Check angle ranges</strong> - Principal values for inverse trig</li>
+<li><strong>Use periodicity</strong> - Don&rsquo;t forget all solutions</li>
+<li><strong>Verify identities</strong> - Make sure they&rsquo;re applicable</li>
+</ol>
+<h3 id="complex-number-playbook"><strong>Complex Number Playbook</strong><a hidden class="anchor" aria-hidden="true" href="#complex-number-playbook">#</a></h3>
+<ol>
+<li><strong>Rotate/scale via multiplication</strong> - Use polar form</li>
+<li><strong>Use argument addition</strong> - For rotations</li>
+<li><strong>Polygon roots-of-unity geometry</strong> - Regular polygons</li>
+</ol>
+<h3 id="sequencesseries-strategy"><strong>Sequences/Series Strategy</strong><a hidden class="anchor" aria-hidden="true" href="#sequencesseries-strategy">#</a></h3>
+<ol>
+<li><strong>Express $a_{n+1}-a_n$</strong> - For telescoping</li>
+<li><strong>Telescope</strong> - Look for cancellation</li>
+<li><strong>Partial sums before limits</strong> - For convergence</li>
+</ol>
+<h2 id="-timing-strategy">⏰ Timing Strategy<a hidden class="anchor" aria-hidden="true" href="#-timing-strategy">#</a></h2>
+<h3 id="amc-10-75-minutes-25-problems"><strong>AMC 10 (75 minutes, 25 problems)</strong><a hidden class="anchor" aria-hidden="true" href="#amc-10-75-minutes-25-problems">#</a></h3>
+<ul>
+<li><strong>Easy problems (1-10)</strong>: 1-2 minutes each</li>
+<li><strong>Medium problems (11-20)</strong>: 3-4 minutes each</li>
+<li><strong>Hard problems (21-25)</strong>: 5-7 minutes each</li>
+<li><strong>Total time</strong>: ~60 minutes, 15 minutes for review</li>
+</ul>
+<h3 id="amc-12-75-minutes-25-problems"><strong>AMC 12 (75 minutes, 25 problems)</strong><a hidden class="anchor" aria-hidden="true" href="#amc-12-75-minutes-25-problems">#</a></h3>
+<ul>
+<li><strong>Easy problems (1-10)</strong>: 1-2 minutes each</li>
+<li><strong>Medium problems (11-20)</strong>: 3-5 minutes each</li>
+<li><strong>Hard problems (21-25)</strong>: 6-8 minutes each</li>
+<li><strong>Total time</strong>: ~65 minutes, 10 minutes for review</li>
+</ul>
+<h3 id="when-to-move-on"><strong>When to Move On</strong><a hidden class="anchor" aria-hidden="true" href="#when-to-move-on">#</a></h3>
+<ul>
+<li><strong>Spent 3+ minutes</strong> on easy problem</li>
+<li><strong>Spent 5+ minutes</strong> on medium problem</li>
+<li><strong>Spent 8+ minutes</strong> on hard problem</li>
+<li><strong>No clear path forward</strong> after 2-3 attempts</li>
+</ul>
+<h2 id="-quick-decision-tree">📋 Quick Decision Tree<a hidden class="anchor" aria-hidden="true" href="#-quick-decision-tree">#</a></h2>
+<h3 id="problem-type-recognition"><strong>Problem Type Recognition</strong><a hidden class="anchor" aria-hidden="true" href="#problem-type-recognition">#</a></h3>
+<ol>
+<li><strong>Functions</strong> → Check domain, use transformations</li>
+<li><strong>Polynomials</strong> → Try Vieta&rsquo;s, factor, remainder theorem</li>
+<li><strong>Trig</strong> → Use identities, check quadrants</li>
+<li><strong>Logs/Exp</strong> → Check domain, use laws</li>
+<li><strong>Complex</strong> → Convert to polar, use De Moivre&rsquo;s</li>
+<li><strong>Sequences</strong> → Look for patterns, use formulas</li>
+<li><strong>Geometry</strong> → Draw diagram, use coordinate geometry</li>
+<li><strong>Inequalities</strong> → Try AM-GM, Cauchy-Schwarz</li>
+</ol>
+<h3 id="solution-strategy"><strong>Solution Strategy</strong><a hidden class="anchor" aria-hidden="true" href="#solution-strategy">#</a></h3>
+<ol>
+<li><strong>Direct approach</strong> - Straightforward calculation</li>
+<li><strong>Substitution</strong> - Change variables to simplify</li>
+<li><strong>Symmetry</strong> - Use geometric or algebraic symmetry</li>
+<li><strong>Special cases</strong> - Test simple examples first</li>
+<li><strong>Contradiction</strong> - Assume opposite and find contradiction</li>
+</ol>
+<h2 id="-amc-success-checklist">🎯 AMC Success Checklist<a hidden class="anchor" aria-hidden="true" href="#-amc-success-checklist">#</a></h2>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Read carefully</strong> - Understand what&rsquo;s being asked</li>
+<li><input disabled="" type="checkbox"> <strong>Identify type</strong> - Which pattern does this match?</li>
+<li><input disabled="" type="checkbox"> <strong>Check constraints</strong> - Domain, range, special cases</li>
+<li><input disabled="" type="checkbox"> <strong>Try standard approach</strong> - Use known techniques</li>
+<li><input disabled="" type="checkbox"> <strong>Simplify</strong> - Look for shortcuts and identities</li>
+<li><input disabled="" type="checkbox"> <strong>Verify answer</strong> - Check it makes sense</li>
+<li><input disabled="" type="checkbox"> <strong>Consider alternatives</strong> - Is there a simpler way?</li>
+</ul>
+<hr>
+<p><strong>Next</strong>: <a href="/notes/math/amc/amc10/precalculus/tips/problem-solving-tips">Complete Problem-Solving Guide</a></p>
+
+
+</div>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Complete Problem-Solving Guide
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>💡 Complete Problem-Solving Guide Master the art of AMC problem-solving with comprehensive strategies, checklists, and timing advice.
+🎯 The AMC Mindset Core Principles Efficiency over perfection - Find the fastest correct solution Pattern recognition - Most problems follow known patterns Strategic guessing - Eliminate wrong answers systematically Time management - Know when to move on Problem-Solving Philosophy Start simple - Try the most direct approach first Look for patterns - AMC problems often have elegant solutions Use symmetry - Geometric and algebraic symmetry are powerful Check your work - Verify answers make sense 📋 The 5-Step Process Step 1: Read &amp; Understand (30 seconds) What’s being asked? - Identify the goal What’s given? - List all information What’s the context? - Which topic area? Any constraints? - Domain, range, special cases Step 2: Identify the Pattern (30 seconds) Function problems - Domain, range, transformations Polynomial problems - Vieta’s, factoring, remainder theorem Trig problems - Identities, unit circle, laws of sines/cosines Log/Exp problems - Laws, domain restrictions, change of base Complex problems - Polar form, De Moivre’s, roots of unity Sequence problems - Arithmetic, geometric, telescoping Geometry problems - Coordinate geometry, distance, area Inequality problems - AM-GM, Cauchy-Schwarz, optimization Step 3: Choose Strategy (1 minute) Direct calculation - Straightforward approach Substitution - Change variables to simplify Symmetry - Use geometric or algebraic symmetry Special cases - Test simple examples first Contradiction - Assume opposite and find contradiction Induction - For sequence or pattern problems Step 4: Execute &amp; Simplify (2-4 minutes) Apply the strategy - Work through the solution Look for shortcuts - Identities, cancellations, patterns Simplify continuously - Don’t carry complex expressions Check intermediate steps - Verify calculations Step 5: Verify &amp; Move On (30 seconds) Check the answer - Does it make sense? Verify constraints - Domain, range, special cases Consider alternatives - Is there a simpler way? Move on - Don’t overthink 🔍 Pattern Recognition Guide Function Problems Look for: $f(x)$, domains, ranges, inverses, composition Common patterns:
+...</p>
+  </div>
+  <footer class="entry-footer">7 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Complete Problem-Solving Guide" href="https://xhx.github.io/notes/math/amc/amc10/precalculus/tips/problem-solving-tips/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

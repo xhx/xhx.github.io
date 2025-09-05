@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Problem-Solving Tips | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Number Theory, Tips, Strategy, Heuristics">
+<meta name="description" content="Detailed heuristics, checklists, and timing strategies for AMC number theory.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/amc/amc10/number-theory/tips/problem-solving-tips/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/amc/amc10/number-theory/tips/problem-solving-tips/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/amc/amc10/number-theory/">Number Theory Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/amc/amc10/number-theory/tips/">Problem-Solving Tips</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Problem-Solving Tips
+    </h1>
+    <div class="post-description">
+      Detailed heuristics, checklists, and timing strategies for AMC number theory.
+    </div>
+    <div class="post-meta">5 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-problem-solving-tips" aria-label="💡 Problem-Solving Tips">💡 Problem-Solving Tips</a><ul>
+                        
+                <li>
+                    <a href="#-strategic-thinking" aria-label="🧠 Strategic Thinking">🧠 Strategic Thinking</a><ul>
+                        
+                <li>
+                    <a href="#modular-arithmetic-mindset" aria-label="Modular Arithmetic Mindset">Modular Arithmetic Mindset</a></li>
+                <li>
+                    <a href="#parity-and-residues-first" aria-label="Parity and Residues First">Parity and Residues First</a></li>
+                <li>
+                    <a href="#factor-first" aria-label="Factor First">Factor First</a></li>
+                <li>
+                    <a href="#orders-and-cycles" aria-label="Orders and Cycles">Orders and Cycles</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-techniques" aria-label="⚡ Quick Techniques">⚡ Quick Techniques</a><ul>
+                        
+                <li>
+                    <a href="#mod-pick-strategy" aria-label="Mod Pick Strategy">Mod Pick Strategy</a></li>
+                <li>
+                    <a href="#crt-mindset" aria-label="CRT Mindset">CRT Mindset</a></li>
+                <li>
+                    <a href="#digitbase-shortcuts" aria-label="Digit/Base Shortcuts">Digit/Base Shortcuts</a></li>
+                <li>
+                    <a href="#valuation-thinking" aria-label="Valuation Thinking">Valuation Thinking</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-contest-strategy" aria-label="🎯 Contest Strategy">🎯 Contest Strategy</a><ul>
+                        
+                <li>
+                    <a href="#timing-guidelines" aria-label="Timing Guidelines">Timing Guidelines</a></li>
+                <li>
+                    <a href="#pattern-recognition" aria-label="Pattern Recognition">Pattern Recognition</a></li>
+                <li>
+                    <a href="#algebra-explosion" aria-label="Algebra Explosion">Algebra Explosion</a></li>
+                <li>
+                    <a href="#test-tiny-cases" aria-label="Test Tiny Cases">Test Tiny Cases</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-problem-solving-checklist" aria-label="📋 Problem-Solving Checklist">📋 Problem-Solving Checklist</a><ul>
+                        
+                <li>
+                    <a href="#before-starting" aria-label="Before Starting">Before Starting</a></li>
+                <li>
+                    <a href="#during-solving" aria-label="During Solving">During Solving</a></li>
+                <li>
+                    <a href="#before-submitting" aria-label="Before Submitting">Before Submitting</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-common-pitfalls" aria-label="⚠️ Common Pitfalls">⚠️ Common Pitfalls</a><ul>
+                        
+                <li>
+                    <a href="#modular-arithmetic-pitfalls" aria-label="Modular Arithmetic Pitfalls">Modular Arithmetic Pitfalls</a></li>
+                <li>
+                    <a href="#divisibility-pitfalls" aria-label="Divisibility Pitfalls">Divisibility Pitfalls</a></li>
+                <li>
+                    <a href="#contest-pitfalls" aria-label="Contest Pitfalls">Contest Pitfalls</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-advanced-techniques" aria-label="🚀 Advanced Techniques">🚀 Advanced Techniques</a><ul>
+                        
+                <li>
+                    <a href="#pigeonhole-principle" aria-label="Pigeonhole Principle">Pigeonhole Principle</a></li>
+                <li>
+                    <a href="#invariants" aria-label="Invariants">Invariants</a></li>
+                <li>
+                    <a href="#chinese-remainder-theorem" aria-label="Chinese Remainder Theorem">Chinese Remainder Theorem</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-problem-solving-tips">💡 Problem-Solving Tips<a hidden class="anchor" aria-hidden="true" href="#-problem-solving-tips">#</a></h1>
+<p>Detailed heuristics, checklists, and timing strategies to master AMC number theory problems.</p>
+<h2 id="-strategic-thinking">🧠 Strategic Thinking<a hidden class="anchor" aria-hidden="true" href="#-strategic-thinking">#</a></h2>
+<h3 id="modular-arithmetic-mindset">Modular Arithmetic Mindset<a hidden class="anchor" aria-hidden="true" href="#modular-arithmetic-mindset">#</a></h3>
+<p><strong>Always consider working modulo small numbers first</strong></p>
+<ul>
+<li><strong>Why</strong>: Modular arithmetic often reveals patterns that regular arithmetic obscures</li>
+<li><strong>How</strong>: Try mod 2, 3, 5, 7, 9, 11, or the LCM of relevant numbers</li>
+<li><strong>Example</strong>: For $a^b \bmod m$, first reduce $a \bmod m$, then look for cycles</li>
+</ul>
+<h3 id="parity-and-residues-first">Parity and Residues First<a hidden class="anchor" aria-hidden="true" href="#parity-and-residues-first">#</a></h3>
+<p><strong>Check for contradictions quickly using parity and small moduli</strong></p>
+<ul>
+<li><strong>Why</strong>: Many problems have no solution due to parity or modular constraints</li>
+<li><strong>How</strong>: Check if the problem makes sense mod 2, 3, or other small numbers</li>
+<li><strong>Example</strong>: If $x^2 + y^2 = z^2$ and $x,y,z$ are all odd, then $x^2 + y^2 \equiv 2 \pmod{4}$ but $z^2 \equiv 1 \pmod{4}$</li>
+</ul>
+<h3 id="factor-first">Factor First<a hidden class="anchor" aria-hidden="true" href="#factor-first">#</a></h3>
+<p><strong>Look for difference of squares, cubes, and cyclotomic hints</strong></p>
+<ul>
+<li><strong>Why</strong>: Factoring often reveals the structure of the problem</li>
+<li><strong>How</strong>: Use $a^2 - b^2 = (a+b)(a-b)$, $a^3 \pm b^3 = (a \pm b)(a^2 \mp ab + b^2)$</li>
+<li><strong>Example</strong>: For $a^n \pm b^n$, consider if $a \pm b$ divides the expression</li>
+</ul>
+<h3 id="orders-and-cycles">Orders and Cycles<a hidden class="anchor" aria-hidden="true" href="#orders-and-cycles">#</a></h3>
+<p><strong>Reduce exponents with $\varphi(m)$ and look for periods</strong></p>
+<ul>
+<li><strong>Why</strong>: Large exponents can be simplified using order theory</li>
+<li><strong>How</strong>: Find the smallest $k$ such that $a^k \equiv 1 \pmod{m}$, then reduce</li>
+<li><strong>Example</strong>: If $a^4 \equiv 1 \pmod{10}$, then $a^{100} \equiv a^{100 \bmod 4} \pmod{10}$</li>
+</ul>
+<h2 id="-quick-techniques">⚡ Quick Techniques<a hidden class="anchor" aria-hidden="true" href="#-quick-techniques">#</a></h2>
+<h3 id="mod-pick-strategy">Mod Pick Strategy<a hidden class="anchor" aria-hidden="true" href="#mod-pick-strategy">#</a></h3>
+<p><strong>Try small primes (2,3,5,7,9,11) and their LCM</strong></p>
+<ul>
+<li><strong>Why</strong>: Small moduli often reveal the essential structure</li>
+<li><strong>How</strong>: Test the problem modulo several small numbers</li>
+<li><strong>Example</strong>: For divisibility by 12, check mod 3 and mod 4</li>
+</ul>
+<h3 id="crt-mindset">CRT Mindset<a hidden class="anchor" aria-hidden="true" href="#crt-mindset">#</a></h3>
+<p><strong>Solve mod prime powers, then combine</strong></p>
+<ul>
+<li><strong>Why</strong>: Chinese Remainder Theorem breaks complex problems into simpler pieces</li>
+<li><strong>How</strong>: Factor the modulus, solve each piece, then combine</li>
+<li><strong>Example</strong>: For $x \equiv 2 \pmod{3}$ and $x \equiv 3 \pmod{5}$, solve each separately</li>
+</ul>
+<h3 id="digitbase-shortcuts">Digit/Base Shortcuts<a hidden class="anchor" aria-hidden="true" href="#digitbase-shortcuts">#</a></h3>
+<p><strong>Guard leading zeros, apply casting out nines</strong></p>
+<ul>
+<li><strong>Why</strong>: Base conversion and digit manipulation often simplify problems</li>
+<li><strong>How</strong>: Use divisibility tests and digital sum properties</li>
+<li><strong>Example</strong>: For divisibility by 9, check if the sum of digits is divisible by 9</li>
+</ul>
+<h3 id="valuation-thinking">Valuation Thinking<a hidden class="anchor" aria-hidden="true" href="#valuation-thinking">#</a></h3>
+<p><strong>Compare highest power of $p$ dividing each side</strong></p>
+<ul>
+<li><strong>Why</strong>: Prime valuations often determine divisibility and equality</li>
+<li><strong>How</strong>: Use $v_p(ab) = v_p(a) + v_p(b)$ and $v_p(a+b) \geq \min(v_p(a), v_p(b))$</li>
+<li><strong>Example</strong>: For $n!$ problems, use Legendre&rsquo;s formula to find $v_p(n!)$</li>
+</ul>
+<h2 id="-contest-strategy">🎯 Contest Strategy<a hidden class="anchor" aria-hidden="true" href="#-contest-strategy">#</a></h2>
+<h3 id="timing-guidelines">Timing Guidelines<a hidden class="anchor" aria-hidden="true" href="#timing-guidelines">#</a></h3>
+<p><strong>Spend 2-3 minutes max on number theory problems</strong></p>
+<ul>
+<li><strong>Easy problems</strong>: 1-2 minutes</li>
+<li><strong>Medium problems</strong>: 2-3 minutes</li>
+<li><strong>Hard problems</strong>: 3-4 minutes (if you&rsquo;re confident)</li>
+</ul>
+<h3 id="pattern-recognition">Pattern Recognition<a hidden class="anchor" aria-hidden="true" href="#pattern-recognition">#</a></h3>
+<p><strong>Look for cycles, parity, and factorization opportunities</strong></p>
+<ul>
+<li><strong>Cycles</strong>: Powers, remainders, and periodic patterns</li>
+<li><strong>Parity</strong>: Even/odd arguments and coloring techniques</li>
+<li><strong>Factorization</strong>: Difference of squares, cubes, and special forms</li>
+</ul>
+<h3 id="algebra-explosion">Algebra Explosion<a hidden class="anchor" aria-hidden="true" href="#algebra-explosion">#</a></h3>
+<p><strong>If algebra gets messy, switch to modular view or parity</strong></p>
+<ul>
+<li><strong>Why</strong>: Modular arithmetic often provides cleaner solutions</li>
+<li><strong>How</strong>: Try working modulo small numbers instead of solving equations</li>
+<li><strong>Example</strong>: Instead of solving $x^2 + y^2 = z^2$, work mod 4 to find constraints</li>
+</ul>
+<h3 id="test-tiny-cases">Test Tiny Cases<a hidden class="anchor" aria-hidden="true" href="#test-tiny-cases">#</a></h3>
+<p><strong>Use small examples to verify your approach</strong></p>
+<ul>
+<li><strong>Why</strong>: Small cases often reveal the general pattern</li>
+<li><strong>How</strong>: Try $n = 1, 2, 3, 4$ and look for patterns</li>
+<li><strong>Example</strong>: For a formula involving $n!$, test with $n = 1, 2, 3, 4$</li>
+</ul>
+<h2 id="-problem-solving-checklist">📋 Problem-Solving Checklist<a hidden class="anchor" aria-hidden="true" href="#-problem-solving-checklist">#</a></h2>
+<h3 id="before-starting">Before Starting<a hidden class="anchor" aria-hidden="true" href="#before-starting">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Read carefully</strong>: Understand what&rsquo;s being asked</li>
+<li><input disabled="" type="checkbox"> <strong>Identify the type</strong>: Remainder, divisibility, Diophantine, etc.</li>
+<li><input disabled="" type="checkbox"> <strong>Check for special cases</strong>: Small values, edge cases</li>
+<li><input disabled="" type="checkbox"> <strong>Look for patterns</strong>: Cycles, symmetry, periodicity</li>
+</ul>
+<h3 id="during-solving">During Solving<a hidden class="anchor" aria-hidden="true" href="#during-solving">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Try modular arithmetic</strong>: Work mod small numbers</li>
+<li><input disabled="" type="checkbox"> <strong>Check parity</strong>: Even/odd arguments</li>
+<li><input disabled="" type="checkbox"> <strong>Factor if possible</strong>: Look for special forms</li>
+<li><input disabled="" type="checkbox"> <strong>Use known formulas</strong>: GCD/LCM, divisor functions, etc.</li>
+<li><input disabled="" type="checkbox"> <strong>Verify with examples</strong>: Test small cases</li>
+</ul>
+<h3 id="before-submitting">Before Submitting<a hidden class="anchor" aria-hidden="true" href="#before-submitting">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Check your answer</strong>: Does it make sense?</li>
+<li><input disabled="" type="checkbox"> <strong>Verify calculations</strong>: Redo key steps</li>
+<li><input disabled="" type="checkbox"> <strong>Consider edge cases</strong>: Are there special cases you missed?</li>
+<li><input disabled="" type="checkbox"> <strong>Time check</strong>: Are you spending too long on this problem?</li>
+</ul>
+<h2 id="-common-pitfalls">⚠️ Common Pitfalls<a hidden class="anchor" aria-hidden="true" href="#-common-pitfalls">#</a></h2>
+<h3 id="modular-arithmetic-pitfalls">Modular Arithmetic Pitfalls<a hidden class="anchor" aria-hidden="true" href="#modular-arithmetic-pitfalls">#</a></h3>
+<ul>
+<li><strong>Don&rsquo;t divide without checking</strong>: Ensure $\gcd(a,m) = 1$ for modular inverses</li>
+<li><strong>Remember to reduce</strong>: Always reduce intermediate results modulo the base</li>
+<li><strong>Watch the signs</strong>: Modular arithmetic can give negative results</li>
+</ul>
+<h3 id="divisibility-pitfalls">Divisibility Pitfalls<a hidden class="anchor" aria-hidden="true" href="#divisibility-pitfalls">#</a></h3>
+<ul>
+<li><strong>Check the direction</strong>: $a \mid b$ means $b$ is divisible by $a$</li>
+<li><strong>Don&rsquo;t confuse GCD and LCM</strong>: GCD is greatest, LCM is least</li>
+<li><strong>Verify your formulas</strong>: Double-check divisor function calculations</li>
+</ul>
+<h3 id="contest-pitfalls">Contest Pitfalls<a hidden class="anchor" aria-hidden="true" href="#contest-pitfalls">#</a></h3>
+<ul>
+<li><strong>Don&rsquo;t overcomplicate</strong>: Use the simplest approach that works</li>
+<li><strong>Check your work</strong>: Verify with small examples</li>
+<li><strong>Manage time</strong>: Don&rsquo;t spend too long on any single problem</li>
+</ul>
+<h2 id="-advanced-techniques">🚀 Advanced Techniques<a hidden class="anchor" aria-hidden="true" href="#-advanced-techniques">#</a></h2>
+<h3 id="pigeonhole-principle">Pigeonhole Principle<a hidden class="anchor" aria-hidden="true" href="#pigeonhole-principle">#</a></h3>
+<p><strong>Use when you need to prove existence or impossibility</strong></p>
+<ul>
+<li><strong>When</strong>: Problems about subsets, remainders, or showing something must exist</li>
+<li><strong>How</strong>: Show that you have more objects than containers</li>
+<li><strong>Example</strong>: Among any 7 integers, some subset sums to a multiple of 7</li>
+</ul>
+<h3 id="invariants">Invariants<a hidden class="anchor" aria-hidden="true" href="#invariants">#</a></h3>
+<p><strong>Use when you need to prove impossibility or limit possibilities</strong></p>
+<ul>
+<li><strong>When</strong>: Problems about operations that preserve certain properties</li>
+<li><strong>How</strong>: Find a property that remains unchanged under the operations</li>
+<li><strong>Example</strong>: If you can only change numbers by adding 1, parity is preserved</li>
+</ul>
+<h3 id="chinese-remainder-theorem">Chinese Remainder Theorem<a hidden class="anchor" aria-hidden="true" href="#chinese-remainder-theorem">#</a></h3>
+<p><strong>Use for systems of congruences with pairwise coprime moduli</strong></p>
+<ul>
+<li><strong>When</strong>: Multiple congruence conditions that need to be satisfied</li>
+<li><strong>How</strong>: Solve each congruence separately, then combine</li>
+<li><strong>Example</strong>: Find $x$ such that $x \equiv 2 \pmod{3}$ and $x \equiv 3 \pmod{5}$</li>
+</ul>
+<hr>
+<p><strong>Previous</strong>: <a href="_index">Tips Overview</a> | <strong>Next</strong>: <a href="../">Back to Main Guide</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">Amc10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/number-theory/">Number-Theory</a></li>
+      <li><a href="http://localhost:1313/tags/tips/">Tips</a></li>
+      <li><a href="http://localhost:1313/tags/strategy/">Strategy</a></li>
+      <li><a href="http://localhost:1313/tags/heuristics/">Heuristics</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -2,24 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Problems on Xiaohui Xie&#39;s Site</title>
-    <link>http://localhost:1313/tags/problems/</link>
+    <link>https://xhx.github.io/tags/problems/</link>
     <description>Recent content in Problems on Xiaohui Xie&#39;s Site</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/problems/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Number Theory Problems</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/number-theory-problems/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/number-theory-problems/</guid>
-      <description>Number theory practice problems for AMC 10</description>
-    </item>
+    <atom:link href="https://xhx.github.io/tags/problems/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Practice Problems</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/problems/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/problems/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/problems/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/problems/</guid>
       <description>Practice problems for AMC 10 across all topics</description>
     </item>
   </channel>

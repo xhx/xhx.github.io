@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Concept Atlas | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Number Theory, Concepts, Reference">
+<meta name="description" content="One-paragraph primers for each number theory area with AMC appearance notes.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/amc/amc10/number-theory/reference/concept-atlas/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/amc/amc10/number-theory/reference/concept-atlas/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/amc/amc10/number-theory/">Number Theory Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/amc/amc10/number-theory/reference/">Reference Materials</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Concept Atlas
+    </h1>
+    <div class="post-description">
+      One-paragraph primers for each number theory area with AMC appearance notes.
+    </div>
+    <div class="post-meta">5 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-concept-atlas" aria-label="🗺️ Concept Atlas">🗺️ Concept Atlas</a><ul>
+                        
+                <li>
+                    <a href="#-divisibility-basics" aria-label="🔢 Divisibility Basics">🔢 Divisibility Basics</a></li>
+                <li>
+                    <a href="#-congruences--modular-arithmetic" aria-label="🔄 Congruences &amp; Modular Arithmetic">🔄 Congruences &amp; Modular Arithmetic</a></li>
+                <li>
+                    <a href="#-fermat-euler--orders" aria-label="⚡ Fermat, Euler &amp; Orders">⚡ Fermat, Euler &amp; Orders</a></li>
+                <li>
+                    <a href="#-chinese-remainder-theorem" aria-label="🧩 Chinese Remainder Theorem">🧩 Chinese Remainder Theorem</a></li>
+                <li>
+                    <a href="#-linear-diophantine-equations" aria-label="🔢 Linear Diophantine Equations">🔢 Linear Diophantine Equations</a></li>
+                <li>
+                    <a href="#-quadratic-diophantine-equations" aria-label="🔺 Quadratic Diophantine Equations">🔺 Quadratic Diophantine Equations</a></li>
+                <li>
+                    <a href="#-factorization--valuation" aria-label="📊 Factorization &amp; Valuation">📊 Factorization &amp; Valuation</a></li>
+                <li>
+                    <a href="#-divisor-functions" aria-label="🔢 Divisor Functions">🔢 Divisor Functions</a></li>
+                <li>
+                    <a href="#-binomial--number-theory" aria-label="🎲 Binomial &amp; Number Theory">🎲 Binomial &amp; Number Theory</a></li>
+                <li>
+                    <a href="#-digit--base-problems" aria-label="🔢 Digit &amp; Base Problems">🔢 Digit &amp; Base Problems</a></li>
+                <li>
+                    <a href="#-invariants--parity" aria-label="⚖️ Invariants &amp; Parity">⚖️ Invariants &amp; Parity</a></li>
+                <li>
+                    <a href="#-pigeonhole-principle" aria-label="🕊️ Pigeonhole Principle">🕊️ Pigeonhole Principle</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-concept-atlas">🗺️ Concept Atlas<a hidden class="anchor" aria-hidden="true" href="#-concept-atlas">#</a></h1>
+<p>One-paragraph primers for each number theory area, with notes on how they appear in AMC problems.</p>
+<h2 id="-divisibility-basics">🔢 Divisibility Basics<a hidden class="anchor" aria-hidden="true" href="#-divisibility-basics">#</a></h2>
+<p><strong>Core Concept</strong>: Divisibility is the foundation of number theory, dealing with when one integer divides another. We study prime numbers (building blocks of integers), composite numbers, and the relationships between them through greatest common divisors (GCD) and least common multiples (LCM). The Euclidean algorithm efficiently computes GCDs, while the fundamental theorem of arithmetic guarantees unique prime factorization.</p>
+<p><strong>AMC Appearance</strong>: Problems ask for divisors, GCD/LCM relationships, or require factoring numbers. Common patterns include &ldquo;find all positive divisors of $n$&rdquo; or &ldquo;what is $\gcd(a,b)$ when $a$ and $b$ satisfy certain conditions.&rdquo;</p>
+<h2 id="-congruences--modular-arithmetic">🔄 Congruences &amp; Modular Arithmetic<a hidden class="anchor" aria-hidden="true" href="#-congruences--modular-arithmetic">#</a></h2>
+<p><strong>Core Concept</strong>: Modular arithmetic studies integers &ldquo;wrapped around&rdquo; a modulus, where we only care about remainders. Two integers are congruent modulo $m$ if they have the same remainder when divided by $m$. This creates a finite arithmetic system with addition, subtraction, and multiplication, but division requires special care (modular inverses).</p>
+<p><strong>AMC Appearance</strong>: Problems about remainders, last digits, or finding solutions to equations modulo some number. Look for &ldquo;find the remainder when $a^b$ is divided by $m$&rdquo; or &ldquo;solve $ax \equiv b \pmod{m}$.&rdquo;</p>
+<h2 id="-fermat-euler--orders">⚡ Fermat, Euler &amp; Orders<a hidden class="anchor" aria-hidden="true" href="#-fermat-euler--orders">#</a></h2>
+<p><strong>Core Concept</strong>: Fermat&rsquo;s Little Theorem states that for prime $p$ and integer $a$ not divisible by $p$, we have $a^{p-1} \equiv 1 \pmod{p}$. Euler&rsquo;s theorem generalizes this to composite moduli using the totient function. The order of an element is the smallest positive power that equals 1, creating cycles in modular exponentiation.</p>
+<p><strong>AMC Appearance</strong>: Problems about last digits, large exponents, or finding cycle lengths. Common patterns include &ldquo;find the last digit of $a^b$&rdquo; or &ldquo;what is the smallest positive integer $k$ such that $a^k \equiv 1 \pmod{m}$.&rdquo;</p>
+<h2 id="-chinese-remainder-theorem">🧩 Chinese Remainder Theorem<a hidden class="anchor" aria-hidden="true" href="#-chinese-remainder-theorem">#</a></h2>
+<p><strong>Core Concept</strong>: When solving systems of congruences with pairwise coprime moduli, there exists a unique solution modulo the product of all moduli. This allows us to break complex modular problems into simpler pieces, solve each piece separately, then combine the results.</p>
+<p><strong>AMC Appearance</strong>: Problems with multiple congruence conditions or systems of equations. Look for &ldquo;find the smallest positive integer that leaves remainder $r_1$ when divided by $m_1$ and remainder $r_2$ when divided by $m_2$.&rdquo;</p>
+<h2 id="-linear-diophantine-equations">🔢 Linear Diophantine Equations<a hidden class="anchor" aria-hidden="true" href="#-linear-diophantine-equations">#</a></h2>
+<p><strong>Core Concept</strong>: These are equations of the form $ax + by = c$ where we seek integer solutions. The key insight is that solutions exist if and only if $\gcd(a,b)$ divides $c$. When solutions exist, we can parameterize them using the extended Euclidean algorithm.</p>
+<p><strong>AMC Appearance</strong>: Problems about coin combinations, buying items with different denominations, or finding integer solutions to linear equations. Common patterns include &ldquo;how many ways can you make $c$ cents using $a$-cent and $b$-cent coins.&rdquo;</p>
+<h2 id="-quadratic-diophantine-equations">🔺 Quadratic Diophantine Equations<a hidden class="anchor" aria-hidden="true" href="#-quadratic-diophantine-equations">#</a></h2>
+<p><strong>Core Concept</strong>: These involve quadratic terms, most famously $a^2 + b^2 = c^2$ (Pythagorean triples). We study parametrizations, conditions for solutions to exist, and relationships between the variables. The key insight is that many quadratic forms have nice parameterizations.</p>
+<p><strong>AMC Appearance</strong>: Problems about right triangles, sums of squares, or finding integer solutions to quadratic equations. Look for &ldquo;find all Pythagorean triples with hypotenuse $c$&rdquo; or &ldquo;how many ways can $n$ be written as a sum of two squares.&rdquo;</p>
+<h2 id="-factorization--valuation">📊 Factorization &amp; Valuation<a hidden class="anchor" aria-hidden="true" href="#-factorization--valuation">#</a></h2>
+<p><strong>Core Concept</strong>: Every positive integer has a unique prime factorization. The $p$-adic valuation $v_p(n)$ counts the highest power of prime $p$ dividing $n$. Legendre&rsquo;s formula gives the prime factorization of factorials, which is crucial for counting problems.</p>
+<p><strong>AMC Appearance</strong>: Problems about prime powers, trailing zeros in factorials, or counting objects with divisibility constraints. Common patterns include &ldquo;how many trailing zeros in $n!$&rdquo; or &ldquo;find the highest power of $p$ dividing $n!$.&rdquo;</p>
+<h2 id="-divisor-functions">🔢 Divisor Functions<a hidden class="anchor" aria-hidden="true" href="#-divisor-functions">#</a></h2>
+<p><strong>Core Concept</strong>: The divisor function $\tau(n)$ counts positive divisors of $n$, while the sum-of-divisors function $\sigma(n)$ sums them. Both are multiplicative functions, meaning their values on products can be computed from their values on prime powers.</p>
+<p><strong>AMC Appearance</strong>: Problems about counting divisors, summing divisors, or finding numbers with special divisor properties. Look for &ldquo;how many positive divisors does $n$ have&rdquo; or &ldquo;find the sum of all positive divisors of $n$.&rdquo;</p>
+<h2 id="-binomial--number-theory">🎲 Binomial &amp; Number Theory<a hidden class="anchor" aria-hidden="true" href="#-binomial--number-theory">#</a></h2>
+<p><strong>Core Concept</strong>: Binomial coefficients have rich divisibility properties. Lucas&rsquo;s theorem gives the prime factorization of binomial coefficients, while $p$-adic valuation techniques help determine when $\binom{n}{k}$ is divisible by prime powers.</p>
+<p><strong>AMC Appearance</strong>: Problems about divisibility of binomial coefficients, Pascal&rsquo;s triangle properties, or counting objects with combinatorial constraints. Common patterns include &ldquo;is $\binom{n}{k}$ divisible by $p$&rdquo; or &ldquo;how many entries in row $n$ of Pascal&rsquo;s triangle are odd.&rdquo;</p>
+<h2 id="-digit--base-problems">🔢 Digit &amp; Base Problems<a hidden class="anchor" aria-hidden="true" href="#-digit--base-problems">#</a></h2>
+<p><strong>Core Concept</strong>: Numbers can be represented in different bases, and their properties depend on the representation. Digital sums, divisibility tests, and base conversion all rely on understanding how digits relate to the underlying number.</p>
+<p><strong>AMC Appearance</strong>: Problems about base conversion, digital sums, or divisibility tests. Look for &ldquo;convert $n$ from base $a$ to base $b$&rdquo; or &ldquo;what is the digital sum of $n$ in base $b$.&rdquo;</p>
+<h2 id="-invariants--parity">⚖️ Invariants &amp; Parity<a hidden class="anchor" aria-hidden="true" href="#-invariants--parity">#</a></h2>
+<p><strong>Core Concept</strong>: Some properties remain unchanged under certain operations. Parity (even/odd) is the most common invariant, but others include remainders modulo fixed numbers, sums, or other arithmetic properties. These invariants can prove impossibility or limit possibilities.</p>
+<p><strong>AMC Appearance</strong>: Problems about impossibility, coloring arguments, or showing that certain configurations cannot exist. Common patterns include &ldquo;prove that no matter how you arrange the numbers, you cannot&hellip;&rdquo; or &ldquo;show that the sum must always be even.&rdquo;</p>
+<h2 id="-pigeonhole-principle">🕊️ Pigeonhole Principle<a hidden class="anchor" aria-hidden="true" href="#-pigeonhole-principle">#</a></h2>
+<p><strong>Core Concept</strong>: If you have more pigeons than holes, some hole must contain multiple pigeons. In number theory, this often means that among enough numbers, some must have the same remainder when divided by a fixed number, or some subset must sum to a multiple of a fixed number.</p>
+<p><strong>AMC Appearance</strong>: Problems about subsets, remainders, or showing that certain configurations must exist. Look for &ldquo;prove that among any $n$ integers, some subset sums to a multiple of $m$&rdquo; or &ldquo;show that some two numbers have the same remainder when divided by $n$.&rdquo;</p>
+<hr>
+<p><strong>Next</strong>: Start studying core topics with <a href="topics/divisibility-basics">Divisibility Basics</a>.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">Amc10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/number-theory/">Number-Theory</a></li>
+      <li><a href="http://localhost:1313/tags/concepts/">Concepts</a></li>
+      <li><a href="http://localhost:1313/tags/reference/">Reference</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

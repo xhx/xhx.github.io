@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Essential Formulas | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Counting, Probability, Formulas">
+<meta name="description" content="Complete formula bank with usage notes and micro-examples for AMC counting and probability.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/04-formulas/essential-formulas/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xhx.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/04-formulas/essential-formulas/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+<meta property="og:url" content="https://xhx.github.io/notes/math/amc/amc10/counting-probability/04-formulas/essential-formulas/">
+  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
+  <meta property="og:title" content="Essential Formulas">
+  <meta property="og:description" content="Complete formula bank with usage notes and micro-examples for AMC counting and probability.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:tag" content="Amc10">
+    <meta property="article:tag" content="AMC12">
+    <meta property="article:tag" content="Counting">
+    <meta property="article:tag" content="Probability">
+    <meta property="article:tag" content="Formulas">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Essential Formulas">
+<meta name="twitter:description" content="Complete formula bank with usage notes and micro-examples for AMC counting and probability.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Notes",
+      "item": "https://xhx.github.io/notes/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Mathematics Notes",
+      "item": "https://xhx.github.io/notes/math/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "AMC Problems",
+      "item": "https://xhx.github.io/notes/math/amc/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "AMC 10",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Counting \u0026 Probability Mastery Guide",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Essential Formulas",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/04-formulas/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  7 ,
+      "name": "Essential Formulas",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/04-formulas/essential-formulas/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Essential Formulas",
+  "name": "Essential Formulas",
+  "description": "Complete formula bank with usage notes and micro-examples for AMC counting and probability.",
+  "keywords": [
+    "AMC10", "AMC12", "Counting", "Probability", "Formulas"
+  ],
+  "articleBody": "📏 Essential Formulas Complete formula bank for AMC counting and probability problems with usage notes and micro-examples.\n🔢 Basic Counting Principles Addition Principle $$|A \\cup B| = |A| + |B| - |A \\cap B|$$ Usage: When counting elements in unions of sets Example: How many numbers from 1 to 100 are divisible by 2 or 3? $50 + 33 - 16 = 67$\nMultiplication Principle $$|A \\times B| = |A| \\cdot |B|$$ Usage: When counting sequences of independent choices Example: How many ways to choose a shirt and pants? $3 \\cdot 4 = 12$ ways\nComplement Principle $$|A| = |S| - |A^c|$$ Usage: When counting “at least” or “at most” problems Example: How many 3-digit numbers contain at least one 7? $900 - 648 = 252$\n🔄 Permutations \u0026 Combinations Permutations $$P(n,k) = \\frac{n!}{(n-k)!}$$ Usage: Arrangements where order matters Example: How many ways to arrange 3 books from 5? $P(5,3) = 60$ ways\nCombinations $$\\binom{n}{k} = \\frac{n!}{k!(n-k)!}$$ Usage: Selections where order doesn’t matter Example: How many ways to choose 3 books from 5? $\\binom{5}{3} = 10$ ways\nCircular Permutations $$(n-1)! \\text{ (no reflection)} \\quad \\text{or} \\quad \\frac{(n-1)!}{2} \\text{ (with reflection)}$$ Usage: Arrangements in a circle Example: How many ways to seat 4 people around a table? $(4-1)! = 6$ ways\nMultinomial Coefficient $$\\binom{n}{k_1,k_2,\\ldots,k_r} = \\frac{n!}{k_1!k_2!\\cdots k_r!}$$ Usage: Arrangements with repeated objects Example: How many ways to arrange “MISSISSIPPI”? $\\frac{11!}{1!4!4!2!} = 34650$ ways\n🎯 Advanced Counting Stars and Bars (Nonnegative) $$\\binom{n+k-1}{k-1}$$ Usage: Nonnegative integer solutions to $x_1 + x_2 + \\cdots + x_k = n$ Example: How many ways to distribute 10 candies to 3 children? $\\binom{12}{2} = 66$ ways\nStars and Bars (Positive) $$\\binom{n-1}{k-1}$$ Usage: Positive integer solutions to $x_1 + x_2 + \\cdots + x_k = n$ Example: How many ways to distribute 10 candies so each child gets at least one? $\\binom{9}{2} = 36$ ways\nInclusion-Exclusion (2 Sets) $$|A \\cup B| = |A| + |B| - |A \\cap B|$$ Usage: Counting elements in unions of two sets Example: How many numbers from 1 to 100 are divisible by 2 or 3? $50 + 33 - 16 = 67$\nInclusion-Exclusion (3 Sets) $$|A \\cup B \\cup C| = |A| + |B| + |C| - |A \\cap B| - |A \\cap C| - |B \\cap C| + |A \\cap B \\cap C|$$ Usage: Counting elements in unions of three sets Example: How many numbers from 1 to 30 are divisible by 2, 3, or 5? $15 + 10 + 6 - 5 - 3 - 2 + 1 = 22$\nPigeonhole Bound At least $\\lceil \\frac{n}{k} \\rceil$ objects in one box Usage: Proving existence results Example: In 25 people, at least $\\lceil \\frac{25}{12} \\rceil = 3$ share a birthday month\n🎲 Probability Basic Probability $$P(A) = \\frac{\\text{number of favorable outcomes}}{\\text{total number of outcomes}}$$ Usage: When all outcomes are equally likely Example: Probability of rolling a 6? $P(6) = \\frac{1}{6}$\nConditional Probability $$P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}$$ Usage: Probability given additional information Example: Given a red card, probability it’s a heart? $P(\\text{heart} \\mid \\text{red}) = \\frac{1}{2}$\nIndependence $$P(A \\cap B) = P(A)P(B)$$ Usage: When events don’t affect each other Example: Consecutive coin flips are independent\nLaw of Total Probability $$P(A) = \\sum_{i=1}^{n} P(A \\mid B_i)P(B_i)$$ Usage: When you have mutually exclusive and exhaustive events Example: Probability of rain given weather forecasts\nBayes’ Theorem $$P(B_i \\mid A) = \\frac{P(A \\mid B_i)P(B_i)}{P(A)}$$ Usage: Finding cause probabilities given effects Example: Given a positive test, probability of having the disease\n📊 Expected Value Expected Value Definition $$\\mathbb{E}[X] = \\sum_{x} x \\cdot P(X = x)$$ Usage: Finding the average value of a random variable Example: Expected value of a die roll? $\\mathbb{E}[X] = 3.5$\nLinearity of Expectation $$\\mathbb{E}[X + Y] = \\mathbb{E}[X] + \\mathbb{E}[Y]$$ Usage: Expected value of sums of random variables Example: Expected number of heads in 10 flips? $10 \\cdot \\frac{1}{2} = 5$\nIndicator Variables $$\\mathbb{E}[I_A] = P(A)$$ Usage: Expected value of binary events Example: Expected number of aces in a 5-card hand? $5 \\cdot \\frac{4}{52} = \\frac{5}{13}$\n📈 Probability Distributions Binomial Distribution $$P(X = k) = \\binom{n}{k} p^k (1-p)^{n-k}, \\quad \\mathbb{E}[X] = np$$ Usage: Success/failure trials with replacement Example: Probability of exactly 3 heads in 5 flips? $\\binom{5}{3} \\left(\\frac{1}{2}\\right)^5 = \\frac{5}{16}$\nGeometric Distribution $$P(X = k) = (1-p)^{k-1} p, \\quad \\mathbb{E}[X] = \\frac{1}{p}$$ Usage: Trials until first success Example: Probability first 6 appears on 4th roll? $\\left(\\frac{5}{6}\\right)^3 \\cdot \\frac{1}{6} = \\frac{125}{1296}$\nHypergeometric Distribution $$P(X = k) = \\frac{\\binom{K}{k}\\binom{N-K}{n-k}}{\\binom{N}{n}}$$ Usage: Sampling without replacement Example: Probability of exactly 2 red balls in 5 draws from urn with 10 red and 15 blue? $\\frac{\\binom{10}{2}\\binom{15}{3}}{\\binom{25}{5}} = \\frac{1365}{3542}$\n🔄 Special Arrangements Derangements $$!n = n! \\sum_{k=0}^{n} \\frac{(-1)^k}{k!}$$ Usage: Permutations with no fixed points Example: How many ways to arrange 5 people so no one sits in their assigned seat? $!5 = 44$ ways\n🎯 Quick Reference Table Problem Type Formula When to Use Arrangements $P(n,k) = \\frac{n!}{(n-k)!}$ Order matters Selections $\\binom{n}{k} = \\frac{n!}{k!(n-k)!}$ Order doesn’t matter Circular $(n-1)!$ Around a table With repetition $n^k$ $k$ positions, $n$ choices each Stars and bars $\\binom{n+k-1}{k-1}$ Nonnegative solutions At least $1 - P(\\text{complement})$ Complement counting Expected value $\\mathbb{E}[X] = \\sum x \\cdot P(X = x)$ Average value Linearity $\\mathbb{E}[X + Y] = \\mathbb{E}[X] + \\mathbb{E}[Y]$ Sum of expectations Next: Problem-Solving Tips → Back to Topics\n",
+  "wordCount" : "876",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Xiaohui Xie"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/04-formulas/essential-formulas/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Xiaohui Xie's Site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xhx.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/">Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/">Counting &amp; Probability Mastery Guide</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/04-formulas/">Essential Formulas</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Essential Formulas
+    </h1>
+    <div class="post-description">
+      Complete formula bank with usage notes and micro-examples for AMC counting and probability.
+    </div>
+    <div class="post-meta">5 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-essential-formulas" aria-label="📏 Essential Formulas">📏 Essential Formulas</a><ul>
+                        
+                <li>
+                    <a href="#-basic-counting-principles" aria-label="🔢 Basic Counting Principles">🔢 Basic Counting Principles</a><ul>
+                        
+                <li>
+                    <a href="#addition-principle" aria-label="Addition Principle">Addition Principle</a></li>
+                <li>
+                    <a href="#multiplication-principle" aria-label="Multiplication Principle">Multiplication Principle</a></li>
+                <li>
+                    <a href="#complement-principle" aria-label="Complement Principle">Complement Principle</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-permutations--combinations" aria-label="🔄 Permutations &amp; Combinations">🔄 Permutations &amp; Combinations</a><ul>
+                        
+                <li>
+                    <a href="#permutations" aria-label="Permutations">Permutations</a></li>
+                <li>
+                    <a href="#combinations" aria-label="Combinations">Combinations</a></li>
+                <li>
+                    <a href="#circular-permutations" aria-label="Circular Permutations">Circular Permutations</a></li>
+                <li>
+                    <a href="#multinomial-coefficient" aria-label="Multinomial Coefficient">Multinomial Coefficient</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-advanced-counting" aria-label="🎯 Advanced Counting">🎯 Advanced Counting</a><ul>
+                        
+                <li>
+                    <a href="#stars-and-bars-nonnegative" aria-label="Stars and Bars (Nonnegative)">Stars and Bars (Nonnegative)</a></li>
+                <li>
+                    <a href="#stars-and-bars-positive" aria-label="Stars and Bars (Positive)">Stars and Bars (Positive)</a></li>
+                <li>
+                    <a href="#inclusion-exclusion-2-sets" aria-label="Inclusion-Exclusion (2 Sets)">Inclusion-Exclusion (2 Sets)</a></li>
+                <li>
+                    <a href="#inclusion-exclusion-3-sets" aria-label="Inclusion-Exclusion (3 Sets)">Inclusion-Exclusion (3 Sets)</a></li>
+                <li>
+                    <a href="#pigeonhole-bound" aria-label="Pigeonhole Bound">Pigeonhole Bound</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-probability" aria-label="🎲 Probability">🎲 Probability</a><ul>
+                        
+                <li>
+                    <a href="#basic-probability" aria-label="Basic Probability">Basic Probability</a></li>
+                <li>
+                    <a href="#conditional-probability" aria-label="Conditional Probability">Conditional Probability</a></li>
+                <li>
+                    <a href="#independence" aria-label="Independence">Independence</a></li>
+                <li>
+                    <a href="#law-of-total-probability" aria-label="Law of Total Probability">Law of Total Probability</a></li>
+                <li>
+                    <a href="#bayes-theorem" aria-label="Bayes&rsquo; Theorem">Bayes&rsquo; Theorem</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-expected-value" aria-label="📊 Expected Value">📊 Expected Value</a><ul>
+                        
+                <li>
+                    <a href="#expected-value-definition" aria-label="Expected Value Definition">Expected Value Definition</a></li>
+                <li>
+                    <a href="#linearity-of-expectation" aria-label="Linearity of Expectation">Linearity of Expectation</a></li>
+                <li>
+                    <a href="#indicator-variables" aria-label="Indicator Variables">Indicator Variables</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-probability-distributions" aria-label="📈 Probability Distributions">📈 Probability Distributions</a><ul>
+                        
+                <li>
+                    <a href="#binomial-distribution" aria-label="Binomial Distribution">Binomial Distribution</a></li>
+                <li>
+                    <a href="#geometric-distribution" aria-label="Geometric Distribution">Geometric Distribution</a></li>
+                <li>
+                    <a href="#hypergeometric-distribution" aria-label="Hypergeometric Distribution">Hypergeometric Distribution</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-special-arrangements" aria-label="🔄 Special Arrangements">🔄 Special Arrangements</a><ul>
+                        
+                <li>
+                    <a href="#derangements" aria-label="Derangements">Derangements</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-reference-table" aria-label="🎯 Quick Reference Table">🎯 Quick Reference Table</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-essential-formulas">📏 Essential Formulas<a hidden class="anchor" aria-hidden="true" href="#-essential-formulas">#</a></h1>
+<p>Complete formula bank for AMC counting and probability problems with usage notes and micro-examples.</p>
+<h2 id="-basic-counting-principles">🔢 Basic Counting Principles<a hidden class="anchor" aria-hidden="true" href="#-basic-counting-principles">#</a></h2>
+<h3 id="addition-principle">Addition Principle<a hidden class="anchor" aria-hidden="true" href="#addition-principle">#</a></h3>
+<p>$$|A \cup B| = |A| + |B| - |A \cap B|$$
+<strong>Usage</strong>: When counting elements in unions of sets
+<strong>Example</strong>: How many numbers from 1 to 100 are divisible by 2 or 3? $50 + 33 - 16 = 67$</p>
+<h3 id="multiplication-principle">Multiplication Principle<a hidden class="anchor" aria-hidden="true" href="#multiplication-principle">#</a></h3>
+<p>$$|A \times B| = |A| \cdot |B|$$
+<strong>Usage</strong>: When counting sequences of independent choices
+<strong>Example</strong>: How many ways to choose a shirt and pants? $3 \cdot 4 = 12$ ways</p>
+<h3 id="complement-principle">Complement Principle<a hidden class="anchor" aria-hidden="true" href="#complement-principle">#</a></h3>
+<p>$$|A| = |S| - |A^c|$$
+<strong>Usage</strong>: When counting &ldquo;at least&rdquo; or &ldquo;at most&rdquo; problems
+<strong>Example</strong>: How many 3-digit numbers contain at least one 7? $900 - 648 = 252$</p>
+<h2 id="-permutations--combinations">🔄 Permutations &amp; Combinations<a hidden class="anchor" aria-hidden="true" href="#-permutations--combinations">#</a></h2>
+<h3 id="permutations">Permutations<a hidden class="anchor" aria-hidden="true" href="#permutations">#</a></h3>
+<p>$$P(n,k) = \frac{n!}{(n-k)!}$$
+<strong>Usage</strong>: Arrangements where order matters
+<strong>Example</strong>: How many ways to arrange 3 books from 5? $P(5,3) = 60$ ways</p>
+<h3 id="combinations">Combinations<a hidden class="anchor" aria-hidden="true" href="#combinations">#</a></h3>
+<p>$$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$
+<strong>Usage</strong>: Selections where order doesn&rsquo;t matter
+<strong>Example</strong>: How many ways to choose 3 books from 5? $\binom{5}{3} = 10$ ways</p>
+<h3 id="circular-permutations">Circular Permutations<a hidden class="anchor" aria-hidden="true" href="#circular-permutations">#</a></h3>
+<p>$$(n-1)! \text{ (no reflection)} \quad \text{or} \quad \frac{(n-1)!}{2} \text{ (with reflection)}$$
+<strong>Usage</strong>: Arrangements in a circle
+<strong>Example</strong>: How many ways to seat 4 people around a table? $(4-1)! = 6$ ways</p>
+<h3 id="multinomial-coefficient">Multinomial Coefficient<a hidden class="anchor" aria-hidden="true" href="#multinomial-coefficient">#</a></h3>
+<p>$$\binom{n}{k_1,k_2,\ldots,k_r} = \frac{n!}{k_1!k_2!\cdots k_r!}$$
+<strong>Usage</strong>: Arrangements with repeated objects
+<strong>Example</strong>: How many ways to arrange &ldquo;MISSISSIPPI&rdquo;? $\frac{11!}{1!4!4!2!} = 34650$ ways</p>
+<h2 id="-advanced-counting">🎯 Advanced Counting<a hidden class="anchor" aria-hidden="true" href="#-advanced-counting">#</a></h2>
+<h3 id="stars-and-bars-nonnegative">Stars and Bars (Nonnegative)<a hidden class="anchor" aria-hidden="true" href="#stars-and-bars-nonnegative">#</a></h3>
+<p>$$\binom{n+k-1}{k-1}$$
+<strong>Usage</strong>: Nonnegative integer solutions to $x_1 + x_2 + \cdots + x_k = n$
+<strong>Example</strong>: How many ways to distribute 10 candies to 3 children? $\binom{12}{2} = 66$ ways</p>
+<h3 id="stars-and-bars-positive">Stars and Bars (Positive)<a hidden class="anchor" aria-hidden="true" href="#stars-and-bars-positive">#</a></h3>
+<p>$$\binom{n-1}{k-1}$$
+<strong>Usage</strong>: Positive integer solutions to $x_1 + x_2 + \cdots + x_k = n$
+<strong>Example</strong>: How many ways to distribute 10 candies so each child gets at least one? $\binom{9}{2} = 36$ ways</p>
+<h3 id="inclusion-exclusion-2-sets">Inclusion-Exclusion (2 Sets)<a hidden class="anchor" aria-hidden="true" href="#inclusion-exclusion-2-sets">#</a></h3>
+<p>$$|A \cup B| = |A| + |B| - |A \cap B|$$
+<strong>Usage</strong>: Counting elements in unions of two sets
+<strong>Example</strong>: How many numbers from 1 to 100 are divisible by 2 or 3? $50 + 33 - 16 = 67$</p>
+<h3 id="inclusion-exclusion-3-sets">Inclusion-Exclusion (3 Sets)<a hidden class="anchor" aria-hidden="true" href="#inclusion-exclusion-3-sets">#</a></h3>
+<p>$$|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C|$$
+<strong>Usage</strong>: Counting elements in unions of three sets
+<strong>Example</strong>: How many numbers from 1 to 30 are divisible by 2, 3, or 5? $15 + 10 + 6 - 5 - 3 - 2 + 1 = 22$</p>
+<h3 id="pigeonhole-bound">Pigeonhole Bound<a hidden class="anchor" aria-hidden="true" href="#pigeonhole-bound">#</a></h3>
+<p>At least $\lceil \frac{n}{k} \rceil$ objects in one box
+<strong>Usage</strong>: Proving existence results
+<strong>Example</strong>: In 25 people, at least $\lceil \frac{25}{12} \rceil = 3$ share a birthday month</p>
+<h2 id="-probability">🎲 Probability<a hidden class="anchor" aria-hidden="true" href="#-probability">#</a></h2>
+<h3 id="basic-probability">Basic Probability<a hidden class="anchor" aria-hidden="true" href="#basic-probability">#</a></h3>
+<p>$$P(A) = \frac{\text{number of favorable outcomes}}{\text{total number of outcomes}}$$
+<strong>Usage</strong>: When all outcomes are equally likely
+<strong>Example</strong>: Probability of rolling a 6? $P(6) = \frac{1}{6}$</p>
+<h3 id="conditional-probability">Conditional Probability<a hidden class="anchor" aria-hidden="true" href="#conditional-probability">#</a></h3>
+<p>$$P(A \mid B) = \frac{P(A \cap B)}{P(B)}$$
+<strong>Usage</strong>: Probability given additional information
+<strong>Example</strong>: Given a red card, probability it&rsquo;s a heart? $P(\text{heart} \mid \text{red}) = \frac{1}{2}$</p>
+<h3 id="independence">Independence<a hidden class="anchor" aria-hidden="true" href="#independence">#</a></h3>
+<p>$$P(A \cap B) = P(A)P(B)$$
+<strong>Usage</strong>: When events don&rsquo;t affect each other
+<strong>Example</strong>: Consecutive coin flips are independent</p>
+<h3 id="law-of-total-probability">Law of Total Probability<a hidden class="anchor" aria-hidden="true" href="#law-of-total-probability">#</a></h3>
+<p>$$P(A) = \sum_{i=1}^{n} P(A \mid B_i)P(B_i)$$
+<strong>Usage</strong>: When you have mutually exclusive and exhaustive events
+<strong>Example</strong>: Probability of rain given weather forecasts</p>
+<h3 id="bayes-theorem">Bayes&rsquo; Theorem<a hidden class="anchor" aria-hidden="true" href="#bayes-theorem">#</a></h3>
+<p>$$P(B_i \mid A) = \frac{P(A \mid B_i)P(B_i)}{P(A)}$$
+<strong>Usage</strong>: Finding cause probabilities given effects
+<strong>Example</strong>: Given a positive test, probability of having the disease</p>
+<h2 id="-expected-value">📊 Expected Value<a hidden class="anchor" aria-hidden="true" href="#-expected-value">#</a></h2>
+<h3 id="expected-value-definition">Expected Value Definition<a hidden class="anchor" aria-hidden="true" href="#expected-value-definition">#</a></h3>
+<p>$$\mathbb{E}[X] = \sum_{x} x \cdot P(X = x)$$
+<strong>Usage</strong>: Finding the average value of a random variable
+<strong>Example</strong>: Expected value of a die roll? $\mathbb{E}[X] = 3.5$</p>
+<h3 id="linearity-of-expectation">Linearity of Expectation<a hidden class="anchor" aria-hidden="true" href="#linearity-of-expectation">#</a></h3>
+<p>$$\mathbb{E}[X + Y] = \mathbb{E}[X] + \mathbb{E}[Y]$$
+<strong>Usage</strong>: Expected value of sums of random variables
+<strong>Example</strong>: Expected number of heads in 10 flips? $10 \cdot \frac{1}{2} = 5$</p>
+<h3 id="indicator-variables">Indicator Variables<a hidden class="anchor" aria-hidden="true" href="#indicator-variables">#</a></h3>
+<p>$$\mathbb{E}[I_A] = P(A)$$
+<strong>Usage</strong>: Expected value of binary events
+<strong>Example</strong>: Expected number of aces in a 5-card hand? $5 \cdot \frac{4}{52} = \frac{5}{13}$</p>
+<h2 id="-probability-distributions">📈 Probability Distributions<a hidden class="anchor" aria-hidden="true" href="#-probability-distributions">#</a></h2>
+<h3 id="binomial-distribution">Binomial Distribution<a hidden class="anchor" aria-hidden="true" href="#binomial-distribution">#</a></h3>
+<p>$$P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}, \quad \mathbb{E}[X] = np$$
+<strong>Usage</strong>: Success/failure trials with replacement
+<strong>Example</strong>: Probability of exactly 3 heads in 5 flips? $\binom{5}{3} \left(\frac{1}{2}\right)^5 = \frac{5}{16}$</p>
+<h3 id="geometric-distribution">Geometric Distribution<a hidden class="anchor" aria-hidden="true" href="#geometric-distribution">#</a></h3>
+<p>$$P(X = k) = (1-p)^{k-1} p, \quad \mathbb{E}[X] = \frac{1}{p}$$
+<strong>Usage</strong>: Trials until first success
+<strong>Example</strong>: Probability first 6 appears on 4th roll? $\left(\frac{5}{6}\right)^3 \cdot \frac{1}{6} = \frac{125}{1296}$</p>
+<h3 id="hypergeometric-distribution">Hypergeometric Distribution<a hidden class="anchor" aria-hidden="true" href="#hypergeometric-distribution">#</a></h3>
+<p>$$P(X = k) = \frac{\binom{K}{k}\binom{N-K}{n-k}}{\binom{N}{n}}$$
+<strong>Usage</strong>: Sampling without replacement
+<strong>Example</strong>: Probability of exactly 2 red balls in 5 draws from urn with 10 red and 15 blue? $\frac{\binom{10}{2}\binom{15}{3}}{\binom{25}{5}} = \frac{1365}{3542}$</p>
+<h2 id="-special-arrangements">🔄 Special Arrangements<a hidden class="anchor" aria-hidden="true" href="#-special-arrangements">#</a></h2>
+<h3 id="derangements">Derangements<a hidden class="anchor" aria-hidden="true" href="#derangements">#</a></h3>
+<p>$$!n = n! \sum_{k=0}^{n} \frac{(-1)^k}{k!}$$
+<strong>Usage</strong>: Permutations with no fixed points
+<strong>Example</strong>: How many ways to arrange 5 people so no one sits in their assigned seat? $!5 = 44$ ways</p>
+<h2 id="-quick-reference-table">🎯 Quick Reference Table<a hidden class="anchor" aria-hidden="true" href="#-quick-reference-table">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Problem Type</th>
+          <th>Formula</th>
+          <th>When to Use</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Arrangements</td>
+          <td>$P(n,k) = \frac{n!}{(n-k)!}$</td>
+          <td>Order matters</td>
+      </tr>
+      <tr>
+          <td>Selections</td>
+          <td>$\binom{n}{k} = \frac{n!}{k!(n-k)!}$</td>
+          <td>Order doesn&rsquo;t matter</td>
+      </tr>
+      <tr>
+          <td>Circular</td>
+          <td>$(n-1)!$</td>
+          <td>Around a table</td>
+      </tr>
+      <tr>
+          <td>With repetition</td>
+          <td>$n^k$</td>
+          <td>$k$ positions, $n$ choices each</td>
+      </tr>
+      <tr>
+          <td>Stars and bars</td>
+          <td>$\binom{n+k-1}{k-1}$</td>
+          <td>Nonnegative solutions</td>
+      </tr>
+      <tr>
+          <td>At least</td>
+          <td>$1 - P(\text{complement})$</td>
+          <td>Complement counting</td>
+      </tr>
+      <tr>
+          <td>Expected value</td>
+          <td>$\mathbb{E}[X] = \sum x \cdot P(X = x)$</td>
+          <td>Average value</td>
+      </tr>
+      <tr>
+          <td>Linearity</td>
+          <td>$\mathbb{E}[X + Y] = \mathbb{E}[X] + \mathbb{E}[Y]$</td>
+          <td>Sum of expectations</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<p><em>Next: <a href="05-tips/">Problem-Solving Tips</a> → <a href="02-topics/">Back to Topics</a></em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://xhx.github.io/tags/amc10/">Amc10</a></li>
+      <li><a href="https://xhx.github.io/tags/amc12/">AMC12</a></li>
+      <li><a href="https://xhx.github.io/tags/counting/">Counting</a></li>
+      <li><a href="https://xhx.github.io/tags/probability/">Probability</a></li>
+      <li><a href="https://xhx.github.io/tags/formulas/">Formulas</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -5,72 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Xiaohui Xie&#39;s Site</title>
-<meta name="keywords" content="">
-<meta name="description" content="#18 – Nested Similar Figures &amp; Infinite Geometric Sums
-(“Russian-doll” squares, triangles, circles, …)
-Whenever a problem says “repeat the construction forever,” look for a constant scale factor kk between successive shapes.
-All linear measures shrink by kk, areas by k2k^{2}, and volumes (rare on AMC 10) by k3k^{3}.
-That turns the total length/area/volume into a one-line geometric-series sum.
-
-  
-      
-          Quantity
-          nn-th copy
-          Infinite total
-      
-  
-  
-      
-          Side / radius / perimeter
-          Ln=k nL0L_n = k^{,n}L_0
-          L∞=L01−kL_{\infty} = \dfrac{L_0}{1-k}
-      
-      
-          Area
-          An=k2nA0A_n = k^{2n}A_0
-          A∞=A01−k2A_{\infty} = \dfrac{A_0}{1-k^{2}}
-      
-      
-          Volume
-          Vn=k3nV0V_n = k^{3n}V_0
-          V∞=V01−k3V_{\infty} = \dfrac{V_0}{1-k^{3}}
-      
-  
-
-
-1 Three AMC-Style Archetypes
-
-  
-      
-          Construction
-          Shrink factor kk
-          AMC “tell”
-      
-  
-  
-      
-          Square-inside-square whose vertices touch the side midpoints (rotated 45°)
-          k=12k=\dfrac{1}{\sqrt2} in side, so k2=12k^{2}=\dfrac12 in area
-          Midpoint wording &#43; picture of a tilted square
-      
-      
-          Inside-similar-triangle (each joins the midpoints of the previous one)
-          k=12k=\dfrac12 in side, so k2=14k^{2}=\dfrac14 in area
-          “Connect midpoints of the sides to form new triangle”
-      
-      
-          Incircle chain in a right triangle (or semicircle)
-          k=a&#43;b−ca&#43;b&#43;ck=\dfrac{a&#43;b-c}{a&#43;b&#43;c} for a right triangle with legs a,ba,b
-          Mentions successive circles tangent to legs and to the previous circle
-      
-  
-
-
-2 Worked Examples
-Example A (Squares at midpoints – area)
-
-A square of side 1010 cm has a second square whose vertices are the mid-points of the sides of the first square, and so on without end.  Find the total area.">
+<title>Nested Similar Figures &amp; Infinite Geometric Sums | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="amc10, geometry, nested, similar, infinite-sums, mathematics">
+<meta name="description" content="AMC 10 Geometry: Nested Similar Figures &amp; Infinite Geometric Sums">
 <meta name="author" content="Xiaohui Xie">
 <link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/geometry/nested-similar-figures/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
@@ -183,122 +120,127 @@ A square of side 1010 cm has a second square whose vertices are the mid-points o
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/">Geometry</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/">AMC 10 Geometry Mastery Guide</a></div>
     <h1 class="post-title entry-hint-parent">
-      
+      Nested Similar Figures &amp; Infinite Geometric Sums
     </h1>
-    <div class="post-meta">3 min&nbsp;·&nbsp;Xiaohui Xie
+    <div class="post-description">
+      AMC 10 Geometry: Nested Similar Figures &amp; Infinite Geometric Sums
+    </div>
+    <div class="post-meta"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Xiaohui Xie
 
 </div>
   </header> 
   <div class="post-content"><h1 id="18--nested-similar-figures--infinite-geometric-sums">#18 – Nested Similar Figures &amp; Infinite Geometric Sums<a hidden class="anchor" aria-hidden="true" href="#18--nested-similar-figures--infinite-geometric-sums">#</a></h1>
-<p><em>(“Russian-doll” squares, triangles, circles, …)</em></p>
-<p>Whenever a problem says “repeat the construction forever,” look for a <strong>constant scale factor kk</strong> between successive shapes.</p>
-<p>All linear measures shrink by kk, areas by k2k^{2}, and volumes (rare on AMC 10) by k3k^{3}.</p>
+<p><em>(&ldquo;Russian-doll&rdquo; squares, triangles, circles, …)</em></p>
+<p>Whenever a problem says &ldquo;repeat the construction forever,&rdquo; look for a <strong>constant scale factor $k$</strong> between successive shapes.</p>
+<p>All linear measures shrink by $k$, areas by $k^{2}$, and volumes (rare on AMC 10) by $k^{3}$.</p>
 <p>That turns the total length/area/volume into a one-line geometric-series sum.</p>
 <table>
   <thead>
       <tr>
           <th>Quantity</th>
-          <th>nn-th copy</th>
+          <th>$n$-th copy</th>
           <th>Infinite total</th>
       </tr>
   </thead>
   <tbody>
       <tr>
           <td>Side / radius / perimeter</td>
-          <td>Ln=k nL0L_n = k^{,n}L_0</td>
-          <td>L∞=L01−kL_{\infty} = \dfrac{L_0}{1-k}</td>
+          <td>$L_n = k^{,n}L_0$</td>
+          <td>$L_{\infty} = \dfrac{L_0}{1-k}$</td>
       </tr>
       <tr>
           <td>Area</td>
-          <td>An=k2nA0A_n = k^{2n}A_0</td>
-          <td>A∞=A01−k2A_{\infty} = \dfrac{A_0}{1-k^{2}}</td>
+          <td>$A_n = k^{2n}A_0$</td>
+          <td>$A_{\infty} = \dfrac{A_0}{1-k^{2}}$</td>
       </tr>
       <tr>
           <td>Volume</td>
-          <td>Vn=k3nV0V_n = k^{3n}V_0</td>
-          <td>V∞=V01−k3V_{\infty} = \dfrac{V_0}{1-k^{3}}</td>
+          <td>$V_n = k^{3n}V_0$</td>
+          <td>$V_{\infty} = \dfrac{V_0}{1-k^{3}}$</td>
       </tr>
   </tbody>
 </table>
 <hr>
-<h2 id="1three-amc-style-archetypes">1 Three AMC-Style Archetypes<a hidden class="anchor" aria-hidden="true" href="#1three-amc-style-archetypes">#</a></h2>
+<h2 id="1-three-amc-style-archetypes">1 Three AMC-Style Archetypes<a hidden class="anchor" aria-hidden="true" href="#1-three-amc-style-archetypes">#</a></h2>
 <table>
   <thead>
       <tr>
           <th>Construction</th>
-          <th>Shrink factor kk</th>
-          <th>AMC “tell”</th>
+          <th>Shrink factor $k$</th>
+          <th>AMC &ldquo;tell&rdquo;</th>
       </tr>
   </thead>
   <tbody>
       <tr>
           <td><strong>Square-inside-square</strong> whose vertices touch the side midpoints (rotated 45°)</td>
-          <td>k=12k=\dfrac{1}{\sqrt2} in side, so k2=12k^{2}=\dfrac12 in area</td>
+          <td>$k=\dfrac{1}{\sqrt2}$ in side, so $k^{2}=\dfrac12$ in area</td>
           <td>Midpoint wording + picture of a tilted square</td>
       </tr>
       <tr>
           <td><strong>Inside-similar-triangle</strong> (each joins the midpoints of the previous one)</td>
-          <td>k=12k=\dfrac12 in side, so k2=14k^{2}=\dfrac14 in area</td>
-          <td>“Connect midpoints of the sides to form new triangle”</td>
+          <td>$k=\dfrac12$ in side, so $k^{2}=\dfrac14$ in area</td>
+          <td>&ldquo;Connect midpoints of the sides to form new triangle&rdquo;</td>
       </tr>
       <tr>
           <td><strong>Incircle chain</strong> in a right triangle (or semicircle)</td>
-          <td>k=a+b−ca+b+ck=\dfrac{a+b-c}{a+b+c} for a right triangle with legs a,ba,b</td>
+          <td>$k=\dfrac{a+b-c}{a+b+c}$ for a right triangle with legs $a,b$</td>
           <td>Mentions successive circles tangent to legs and to the previous circle</td>
       </tr>
   </tbody>
 </table>
 <hr>
-<h2 id="2worked-examples">2 Worked Examples<a hidden class="anchor" aria-hidden="true" href="#2worked-examples">#</a></h2>
-<h3 id="example-asquares-at-midpoints--area">Example A (Squares at midpoints – area)<a hidden class="anchor" aria-hidden="true" href="#example-asquares-at-midpoints--area">#</a></h3>
+<h2 id="2-worked-examples">2 Worked Examples<a hidden class="anchor" aria-hidden="true" href="#2-worked-examples">#</a></h2>
+<h3 id="example-a-squares-at-midpoints--area">Example A (Squares at midpoints – area)<a hidden class="anchor" aria-hidden="true" href="#example-a-squares-at-midpoints--area">#</a></h3>
 <blockquote>
-<p>A square of side 1010 cm has a second square whose vertices are the mid-points of the sides of the first square, and so on without end.  Find the total area.</p></blockquote>
+<p>A square of side $10$ cm has a second square whose vertices are the mid-points of the sides of the first square, and so on without end.  Find the total area.</p></blockquote>
 <ul>
 <li>
-<p>Side factor k=12k=\dfrac{1}{\sqrt2} ⇒ area factor k2=12k^{2}=\tfrac12.</p>
+<p>Side factor $k=\dfrac{1}{\sqrt2}$ ⇒ area factor $k^{2}=\tfrac12$.</p>
 </li>
 <li>
 <p>Infinite sum</p>
-<p>A∞=A01−k2=1021−12=10012=200 cm2.A_{\infty}= \frac{A_0}{1-k^{2}}
+<p>$$A_{\infty}= \frac{A_0}{1-k^{2}}
 = \frac{10^{2}}{1-\tfrac12}
 = \frac{100}{\tfrac12}
-= \boxed{200\text{ cm}^{2}}.</p>
+= \boxed{200\text{ cm}^{2}}.
+$$</p>
 </li>
 </ul>
 <hr>
-<h3 id="example-bincircle-ladder--perimeters">Example B (Incircle ladder – perimeters)<a hidden class="anchor" aria-hidden="true" href="#example-bincircle-ladder--perimeters">#</a></h3>
+<h3 id="example-b-incircle-ladder--perimeters">Example B (Incircle ladder – perimeters)<a hidden class="anchor" aria-hidden="true" href="#example-b-incircle-ladder--perimeters">#</a></h3>
 <blockquote>
-<p>A 6 ⁣− ⁣8 ⁣− ⁣106!-!8!-!10 right triangle has its incircle, then in the corner between the incircle and the legs another circle tangent to both legs and the first circle, and so on forever.  What is the sum of the circumferences?</p></blockquote>
+<p>A $6!-!8!-!10$ right triangle has its incircle, then in the corner between the incircle and the legs another circle tangent to both legs and the first circle, and so on forever.  What is the sum of the circumferences?</p></blockquote>
 <ul>
 <li>
-<p>Original inradius r0=6+8−102=2r_0 = \dfrac{6+8-10}{2}=2.</p>
+<p>Original inradius $r_0 = \dfrac{6+8-10}{2}=2$.</p>
 </li>
 <li>
-<p>Scale factor k=r1r0=6+8−106+8+10=424=16k=\dfrac{r_1}{r_0} =\dfrac{6+8-10}{6+8+10}=\dfrac{4}{24}=\tfrac16.</p>
+<p>Scale factor $k=\dfrac{r_1}{r_0} =\dfrac{6+8-10}{6+8+10}=\dfrac{4}{24}=\tfrac16$.</p>
 </li>
 <li>
 <p>Circumference sum</p>
-<p>C∞=2πr01−k=4π1−16=4π56=24π5.C_{\infty}= \frac{2\pi r_0}{1-k}
+<p>$$C_{\infty}= \frac{2\pi r_0}{1-k}
 = \frac{4\pi}{1-\tfrac16}
 = \frac{4\pi}{\tfrac56}
-= \boxed{\tfrac{24\pi}{5}}.</p>
+= \boxed{\tfrac{24\pi}{5}}.
+$$</p>
 </li>
 </ul>
 <p><em>(Notice the AMC-friendly clean fraction.)</em></p>
 <hr>
-<h2 id="3general-one-glance-strategy">3 General “One-Glance” Strategy<a hidden class="anchor" aria-hidden="true" href="#3general-one-glance-strategy">#</a></h2>
+<h2 id="3-general-one-glance-strategy">3 General &ldquo;One-Glance&rdquo; Strategy<a hidden class="anchor" aria-hidden="true" href="#3-general-one-glance-strategy">#</a></h2>
 <ol>
 <li>
-<p><strong>Spot the similarity.</strong> Each new figure is a scaled copy of the previous one—identify kk.</p>
+<p><strong>Spot the similarity.</strong> Each new figure is a scaled copy of the previous one—identify $k$.</p>
 </li>
 <li>
 <p><strong>Decide whether you need lengths or areas.</strong></p>
 </li>
 <li>
-<p><strong>Write the geometric series</strong> S=first term1−rS=\dfrac{\text{first term}}{1-r} with</p>
-<p>r=kr=k for line-type quantities, r=k2r=k^{2} for areas.</p>
+<p><strong>Write the geometric series</strong> $S=\dfrac{\text{first term}}{1-r}$ with</p>
+<p>$r=k$ for line-type quantities, $r=k^{2}$ for areas.</p>
 </li>
 <li>
 <p><strong>Reduce the arithmetic</strong>—contest writers usually choose numbers so denominators cancel.</p>
@@ -307,9 +249,9 @@ A square of side 1010 cm has a second square whose vertices are the mid-points o
 <hr>
 <h3 id="quick-drill-check-your-mastery">Quick Drill (check your mastery)<a hidden class="anchor" aria-hidden="true" href="#quick-drill-check-your-mastery">#</a></h3>
 <ol>
-<li><strong>Triangles</strong>: An equilateral triangle of side 1212 cm has triangles drawn on the middle third of each side (Koch flake start). What is the infinite total <em>perimeter</em>? <em>(Answer: P∞=12(1+∑n≥1(43)n)=121−43=+∞ P_{\infty}=12\bigl(1+\sum_{n\ge1}(\tfrac43)^{n}\bigr)=\tfrac{12}{1-\tfrac43}=+\infty; perimeter actually diverges—spot the trap!)</em></li>
-<li><strong>Squares rotated 45°</strong> inside a 1414 cm square (midpoint construction). Total <em>area</em>? <em>(Answer: 142/(1−12)=39214^{2}/(1-\tfrac12)=392.)</em></li>
-<li><strong>Circle ladder</strong> inside a 5 ⁣− ⁣12 ⁣− ⁣135!-!12!-!13 triangle. Find kk and the sum of radii.</li>
+<li><strong>Triangles</strong>: An equilateral triangle of side $12$ cm has triangles drawn on the middle third of each side (Koch flake start). What is the infinite total <em>perimeter</em>? <em>(Answer: $P_{\infty}=12\bigl(1+\sum_{n\ge1}(\tfrac43)^{n}\bigr)=\tfrac{12}{1-\tfrac43}=+\infty$; perimeter actually diverges—spot the trap!)</em></li>
+<li><strong>Squares rotated 45°</strong> inside a $14$ cm square (midpoint construction). Total <em>area</em>? <em>(Answer: $14^{2}/(1-\tfrac12)=392$.)</em></li>
+<li><strong>Circle ladder</strong> inside a $5!-!12!-!13$ triangle. Find $k$ and the sum of radii.</li>
 </ol>
 <p>Master these infinite-series shortcuts and a whole class of AMC geometry problems collapses to four lines.</p>
 
@@ -318,6 +260,12 @@ A square of side 1010 cm has a second square whose vertices are the mid-points o
 
   <footer class="post-footer">
     <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">Amc10</a></li>
+      <li><a href="http://localhost:1313/tags/geometry/">Geometry</a></li>
+      <li><a href="http://localhost:1313/tags/nested/">Nested</a></li>
+      <li><a href="http://localhost:1313/tags/similar/">Similar</a></li>
+      <li><a href="http://localhost:1313/tags/infinite-sums/">Infinite-Sums</a></li>
+      <li><a href="http://localhost:1313/tags/mathematics/">Mathematics</a></li>
     </ul>
 
   </footer>

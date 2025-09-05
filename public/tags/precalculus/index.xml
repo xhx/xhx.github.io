@@ -2,11 +2,171 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Precalculus on Xiaohui Xie&#39;s Site</title>
-    <link>http://localhost:1313/tags/precalculus/</link>
+    <link>https://xhx.github.io/tags/precalculus/</link>
     <description>Recent content in Precalculus on Xiaohui Xie&#39;s Site</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/precalculus/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://xhx.github.io/tags/precalculus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AMC Scope Map</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/scope-map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/scope-map/</guid>
+      <description>Comprehensive matrix showing AMC 10 vs AMC 12 precalculus topic coverage and testing frequency.</description>
+    </item>
+    <item>
+      <title>Notation Cheatsheet</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/notation-cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/notation-cheatsheet/</guid>
+      <description>Essential symbols, functions, and mathematical notation for AMC precalculus problems.</description>
+    </item>
+    <item>
+      <title>Concept Atlas</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/concept-atlas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/concept-atlas/</guid>
+      <description>One-paragraph primers on all major precalculus topics with AMC application notes.</description>
+    </item>
+    <item>
+      <title>Functions &amp; Transformations</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/functions-and-transformations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/functions-and-transformations/</guid>
+      <description>Domains, ranges, inverses, shifts, scales, and symmetry in functions for AMC preparation.</description>
+    </item>
+    <item>
+      <title>Equations &amp; Inequalities</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/equations-and-inequalities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/equations-and-inequalities/</guid>
+      <description>Absolute value equations, systems, and inequality techniques including AM-GM for AMC preparation.</description>
+    </item>
+    <item>
+      <title>Polynomials &amp; Rational Functions</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/polynomials-and-rational-functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/polynomials-and-rational-functions/</guid>
+      <description>Factoring, Vieta&amp;#39;s formulas, asymptotes, and partial fractions for AMC polynomial problems.</description>
+    </item>
+    <item>
+      <title>Exponents &amp; Logarithms</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/exponents-and-logarithms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/exponents-and-logarithms/</guid>
+      <description>Laws, change-of-base, equation solving, and growth/decay applications for AMC preparation.</description>
+    </item>
+    <item>
+      <title>Trigonometry Basics</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/trigonometry-basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/trigonometry-basics/</guid>
+      <description>Unit circle, special angles, and right triangle relationships for AMC trigonometry problems.</description>
+    </item>
+    <item>
+      <title>Trig Identities &amp; Equations</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/trig-identities-and-equations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/trig-identities-and-equations/</guid>
+      <description>Addition formulas, double/half angles, sum-to-product, and inverse trig functions for AMC problems.</description>
+    </item>
+    <item>
+      <title>Laws of Sines &amp; Cosines</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/laws-of-sines-and-cosines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/laws-of-sines-and-cosines/</guid>
+      <description>Triangle solving, area calculations, and the ambiguous case for AMC geometry problems.</description>
+    </item>
+    <item>
+      <title>Complex Numbers</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/complex-numbers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/complex-numbers/</guid>
+      <description>Algebra, polar form, De Moivre&amp;#39;s theorem, and roots of unity for AMC 12 complex number problems.</description>
+    </item>
+    <item>
+      <title>Complex Plane Geometry</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/complex-plane-geometry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/complex-plane-geometry/</guid>
+      <description>Rotations, loci, and geometric applications in the complex plane for AMC 12 problems.</description>
+    </item>
+    <item>
+      <title>Sequences &amp; Series</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/sequences-and-series/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/sequences-and-series/</guid>
+      <description>Arithmetic, geometric, telescoping, and partial sums for AMC sequence problems.</description>
+    </item>
+    <item>
+      <title>Binomial Theorem &amp; Series</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/binomial-theorem-and-series/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/binomial-theorem-and-series/</guid>
+      <description>Binomial expansions, coefficients, and estimation techniques for AMC problems.</description>
+    </item>
+    <item>
+      <title>Coordinate Geometry</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/coordinate-geometry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/coordinate-geometry/</guid>
+      <description>Lines, circles, distance, and basic conic sections for AMC coordinate geometry problems.</description>
+    </item>
+    <item>
+      <title>Vectors (Light)</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/vectors-light/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/vectors-light/</guid>
+      <description>2D vectors, dot product, and projections for AMC 12 vector problems.</description>
+    </item>
+    <item>
+      <title>Functional Equations (Light)</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/functional-equations-light/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/functional-equations-light/</guid>
+      <description>Substitutions, invariants, and simple AMC 12 functional equation patterns.</description>
+    </item>
+    <item>
+      <title>Solving Trig Equations</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/solving-trig-equations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/solving-trig-equations/</guid>
+      <description>Pattern recognition and solution strategies for trigonometric equations in AMC problems.</description>
+    </item>
+    <item>
+      <title>Logarithm Equations &amp; Inequalities</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/logarithm-equations-and-inequalities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/logarithm-equations-and-inequalities/</guid>
+      <description>Pattern recognition and solution strategies for logarithmic equations and inequalities in AMC problems.</description>
+    </item>
+    <item>
+      <title>Polynomial Roots &amp; Vieta</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/polynomial-roots-and-vieta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/polynomial-roots-and-vieta/</guid>
+      <description>Pattern recognition and solution strategies for polynomial root problems using Vieta&amp;#39;s formulas.</description>
+    </item>
+    <item>
+      <title>Inequalities AM-GM &amp; Cauchy</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/inequalities-amgm-cauchy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/inequalities-amgm-cauchy/</guid>
+      <description>Pattern recognition and solution strategies for inequality problems using AM-GM and Cauchy-Schwarz.</description>
+    </item>
+    <item>
+      <title>Complete Formula Bank</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/formulas/essential-formulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/formulas/essential-formulas/</guid>
+      <description>Comprehensive collection of all essential precalculus formulas with usage examples.</description>
+    </item>
+    <item>
+      <title>Complete Problem-Solving Guide</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/tips/problem-solving-tips/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/tips/problem-solving-tips/</guid>
+      <description>Comprehensive strategies, checklists, and timing advice for AMC precalculus success.</description>
+    </item>
   </channel>
 </rss>

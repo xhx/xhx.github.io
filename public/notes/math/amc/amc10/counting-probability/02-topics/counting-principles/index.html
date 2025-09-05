@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Counting Principles | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Counting, Principles">
+<meta name="description" content="Fundamental counting rules: addition, multiplication, and complement principles with AMC examples.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/counting-principles/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xhx.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/counting-principles/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+<meta property="og:url" content="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/counting-principles/">
+  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
+  <meta property="og:title" content="Counting Principles">
+  <meta property="og:description" content="Fundamental counting rules: addition, multiplication, and complement principles with AMC examples.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:tag" content="Amc10">
+    <meta property="article:tag" content="AMC12">
+    <meta property="article:tag" content="Counting">
+    <meta property="article:tag" content="Principles">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Counting Principles">
+<meta name="twitter:description" content="Fundamental counting rules: addition, multiplication, and complement principles with AMC examples.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Notes",
+      "item": "https://xhx.github.io/notes/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Mathematics Notes",
+      "item": "https://xhx.github.io/notes/math/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "AMC Problems",
+      "item": "https://xhx.github.io/notes/math/amc/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "AMC 10",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Counting \u0026 Probability Mastery Guide",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Core Topics",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  7 ,
+      "name": "Counting Principles",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/counting-principles/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Counting Principles",
+  "name": "Counting Principles",
+  "description": "Fundamental counting rules: addition, multiplication, and complement principles with AMC examples.",
+  "keywords": [
+    "AMC10", "AMC12", "Counting", "Principles"
+  ],
+  "articleBody": "🔢 Counting Principles The three fundamental rules that form the foundation of all counting problems.\n🎯 Key Ideas Addition Principle When counting objects that can be categorized into mutually exclusive groups, add the counts of each group.\nFormula: If $A$ and $B$ are disjoint sets, then $|A \\cup B| = |A| + |B|$\nMultiplication Principle When counting sequences of choices where each choice is independent, multiply the number of choices at each step.\nFormula: If you can make $m$ choices for the first decision and $n$ choices for the second decision, then there are $m \\cdot n$ total ways to make both decisions.\nComplement Principle Instead of counting what you want, count what you don’t want and subtract from the total.\nFormula: $|A| = |S| - |A^c|$ where $S$ is the universal set.\n💡 Micro-Examples Addition Principle Problem: How many ways can you choose a red or blue ball from a bag with 3 red, 4 blue, and 2 green balls? Solution: $3 + 4 = 7$ ways (red OR blue) Multiplication Principle Problem: How many ways can you choose a shirt and pants if you have 3 shirts and 4 pants? Solution: $3 \\cdot 4 = 12$ ways (shirt AND pants) Complement Principle Problem: How many ways can you roll two dice and get at least one 6? Solution: Total ways = $6^2 = 36$, ways with no 6s = $5^2 = 25$, so answer = $36 - 25 = 11$ ⚠️ Common Traps \u0026 Fixes Trap: Using addition when you should use multiplication Wrong: “I can take the bus (3 routes) or walk (2 routes), so there are $3 + 2 = 5$ ways to get to school” Right: If you’re counting the total number of ways to get to school, it’s $3 + 2 = 5$. But if you’re counting ways to get to school AND back home, it’s $(3 + 2) \\cdot (3 + 2) = 25$ ways. Trap: Forgetting that sets must be disjoint for addition Wrong: “There are 10 math students and 8 science students, so there are $10 + 8 = 18$ students total” Right: If some students take both subjects, use inclusion-exclusion: $10 + 8 - |\\text{math} \\cap \\text{science}|$ Trap: Overcounting with complement Wrong: “At least 2 heads in 3 flips” = Total - “No heads” - “1 head” = $8 - 1 - 3 = 4$ Right: “At least 2 heads” = “Exactly 2 heads” + “Exactly 3 heads” = $3 + 1 = 4$ 🏆 AMC-Style Worked Example Problem: How many 3-digit numbers contain at least one 7?\nSolution:\nTotal 3-digit numbers: $9 \\cdot 10 \\cdot 10 = 900$ (first digit: 1-9, others: 0-9) 3-digit numbers with NO 7s: $8 \\cdot 9 \\cdot 9 = 648$ (first digit: 1-6,8,9; others: 0-6,8,9) Answer: $900 - 648 = 252$ numbers Key insight: Use complement counting to avoid casework on “exactly 1 seven”, “exactly 2 sevens”, etc.\n🔗 Related Topics Permutations \u0026 Combinations - Applications of multiplication principle Inclusion-Exclusion - When sets aren’t disjoint Complement Counting - Advanced complement techniques Next: Permutations \u0026 Combinations → Inclusion-Exclusion\n",
+  "wordCount" : "513",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Xiaohui Xie"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/counting-principles/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Xiaohui Xie's Site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xhx.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/">Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/">Counting &amp; Probability Mastery Guide</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/">Core Topics</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Counting Principles
+    </h1>
+    <div class="post-description">
+      Fundamental counting rules: addition, multiplication, and complement principles with AMC examples.
+    </div>
+    <div class="post-meta">3 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-counting-principles" aria-label="🔢 Counting Principles">🔢 Counting Principles</a><ul>
+                        
+                <li>
+                    <a href="#-key-ideas" aria-label="🎯 Key Ideas">🎯 Key Ideas</a><ul>
+                        
+                <li>
+                    <a href="#addition-principle" aria-label="Addition Principle">Addition Principle</a></li>
+                <li>
+                    <a href="#multiplication-principle" aria-label="Multiplication Principle">Multiplication Principle</a></li>
+                <li>
+                    <a href="#complement-principle" aria-label="Complement Principle">Complement Principle</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-micro-examples" aria-label="💡 Micro-Examples">💡 Micro-Examples</a><ul>
+                        
+                <li>
+                    <a href="#addition-principle-1" aria-label="Addition Principle">Addition Principle</a></li>
+                <li>
+                    <a href="#multiplication-principle-1" aria-label="Multiplication Principle">Multiplication Principle</a></li>
+                <li>
+                    <a href="#complement-principle-1" aria-label="Complement Principle">Complement Principle</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-common-traps--fixes" aria-label="⚠️ Common Traps &amp; Fixes">⚠️ Common Traps &amp; Fixes</a><ul>
+                        
+                <li>
+                    <a href="#trap-using-addition-when-you-should-use-multiplication" aria-label="Trap: Using addition when you should use multiplication">Trap: Using addition when you should use multiplication</a></li>
+                <li>
+                    <a href="#trap-forgetting-that-sets-must-be-disjoint-for-addition" aria-label="Trap: Forgetting that sets must be disjoint for addition">Trap: Forgetting that sets must be disjoint for addition</a></li>
+                <li>
+                    <a href="#trap-overcounting-with-complement" aria-label="Trap: Overcounting with complement">Trap: Overcounting with complement</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-amc-style-worked-example" aria-label="🏆 AMC-Style Worked Example">🏆 AMC-Style Worked Example</a></li>
+                <li>
+                    <a href="#-related-topics" aria-label="🔗 Related Topics">🔗 Related Topics</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-counting-principles">🔢 Counting Principles<a hidden class="anchor" aria-hidden="true" href="#-counting-principles">#</a></h1>
+<p>The three fundamental rules that form the foundation of all counting problems.</p>
+<h2 id="-key-ideas">🎯 Key Ideas<a hidden class="anchor" aria-hidden="true" href="#-key-ideas">#</a></h2>
+<h3 id="addition-principle">Addition Principle<a hidden class="anchor" aria-hidden="true" href="#addition-principle">#</a></h3>
+<p>When counting objects that can be categorized into <strong>mutually exclusive</strong> groups, add the counts of each group.</p>
+<p><strong>Formula</strong>: If $A$ and $B$ are disjoint sets, then $|A \cup B| = |A| + |B|$</p>
+<h3 id="multiplication-principle">Multiplication Principle<a hidden class="anchor" aria-hidden="true" href="#multiplication-principle">#</a></h3>
+<p>When counting sequences of choices where each choice is <strong>independent</strong>, multiply the number of choices at each step.</p>
+<p><strong>Formula</strong>: If you can make $m$ choices for the first decision and $n$ choices for the second decision, then there are $m \cdot n$ total ways to make both decisions.</p>
+<h3 id="complement-principle">Complement Principle<a hidden class="anchor" aria-hidden="true" href="#complement-principle">#</a></h3>
+<p>Instead of counting what you want, count what you <strong>don&rsquo;t want</strong> and subtract from the total.</p>
+<p><strong>Formula</strong>: $|A| = |S| - |A^c|$ where $S$ is the universal set.</p>
+<h2 id="-micro-examples">💡 Micro-Examples<a hidden class="anchor" aria-hidden="true" href="#-micro-examples">#</a></h2>
+<h3 id="addition-principle-1">Addition Principle<a hidden class="anchor" aria-hidden="true" href="#addition-principle-1">#</a></h3>
+<ul>
+<li><strong>Problem</strong>: How many ways can you choose a red or blue ball from a bag with 3 red, 4 blue, and 2 green balls?</li>
+<li><strong>Solution</strong>: $3 + 4 = 7$ ways (red OR blue)</li>
+</ul>
+<h3 id="multiplication-principle-1">Multiplication Principle<a hidden class="anchor" aria-hidden="true" href="#multiplication-principle-1">#</a></h3>
+<ul>
+<li><strong>Problem</strong>: How many ways can you choose a shirt and pants if you have 3 shirts and 4 pants?</li>
+<li><strong>Solution</strong>: $3 \cdot 4 = 12$ ways (shirt AND pants)</li>
+</ul>
+<h3 id="complement-principle-1">Complement Principle<a hidden class="anchor" aria-hidden="true" href="#complement-principle-1">#</a></h3>
+<ul>
+<li><strong>Problem</strong>: How many ways can you roll two dice and get at least one 6?</li>
+<li><strong>Solution</strong>: Total ways = $6^2 = 36$, ways with no 6s = $5^2 = 25$, so answer = $36 - 25 = 11$</li>
+</ul>
+<h2 id="-common-traps--fixes">⚠️ Common Traps &amp; Fixes<a hidden class="anchor" aria-hidden="true" href="#-common-traps--fixes">#</a></h2>
+<h3 id="trap-using-addition-when-you-should-use-multiplication"><strong>Trap</strong>: Using addition when you should use multiplication<a hidden class="anchor" aria-hidden="true" href="#trap-using-addition-when-you-should-use-multiplication">#</a></h3>
+<ul>
+<li><strong>Wrong</strong>: &ldquo;I can take the bus (3 routes) or walk (2 routes), so there are $3 + 2 = 5$ ways to get to school&rdquo;</li>
+<li><strong>Right</strong>: If you&rsquo;re counting the total number of ways to get to school, it&rsquo;s $3 + 2 = 5$. But if you&rsquo;re counting ways to get to school AND back home, it&rsquo;s $(3 + 2) \cdot (3 + 2) = 25$ ways.</li>
+</ul>
+<h3 id="trap-forgetting-that-sets-must-be-disjoint-for-addition"><strong>Trap</strong>: Forgetting that sets must be disjoint for addition<a hidden class="anchor" aria-hidden="true" href="#trap-forgetting-that-sets-must-be-disjoint-for-addition">#</a></h3>
+<ul>
+<li><strong>Wrong</strong>: &ldquo;There are 10 math students and 8 science students, so there are $10 + 8 = 18$ students total&rdquo;</li>
+<li><strong>Right</strong>: If some students take both subjects, use inclusion-exclusion: $10 + 8 - |\text{math} \cap \text{science}|$</li>
+</ul>
+<h3 id="trap-overcounting-with-complement"><strong>Trap</strong>: Overcounting with complement<a hidden class="anchor" aria-hidden="true" href="#trap-overcounting-with-complement">#</a></h3>
+<ul>
+<li><strong>Wrong</strong>: &ldquo;At least 2 heads in 3 flips&rdquo; = Total - &ldquo;No heads&rdquo; - &ldquo;1 head&rdquo; = $8 - 1 - 3 = 4$</li>
+<li><strong>Right</strong>: &ldquo;At least 2 heads&rdquo; = &ldquo;Exactly 2 heads&rdquo; + &ldquo;Exactly 3 heads&rdquo; = $3 + 1 = 4$</li>
+</ul>
+<h2 id="-amc-style-worked-example">🏆 AMC-Style Worked Example<a hidden class="anchor" aria-hidden="true" href="#-amc-style-worked-example">#</a></h2>
+<p><strong>Problem</strong>: How many 3-digit numbers contain at least one 7?</p>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li><strong>Total 3-digit numbers</strong>: $9 \cdot 10 \cdot 10 = 900$ (first digit: 1-9, others: 0-9)</li>
+<li><strong>3-digit numbers with NO 7s</strong>: $8 \cdot 9 \cdot 9 = 648$ (first digit: 1-6,8,9; others: 0-6,8,9)</li>
+<li><strong>Answer</strong>: $900 - 648 = 252$ numbers</li>
+</ul>
+<p><strong>Key insight</strong>: Use complement counting to avoid casework on &ldquo;exactly 1 seven&rdquo;, &ldquo;exactly 2 sevens&rdquo;, etc.</p>
+<h2 id="-related-topics">🔗 Related Topics<a hidden class="anchor" aria-hidden="true" href="#-related-topics">#</a></h2>
+<ul>
+<li><strong><a href="permutations-combinations">Permutations &amp; Combinations</a></strong> - Applications of multiplication principle</li>
+<li><strong><a href="inclusion-exclusion">Inclusion-Exclusion</a></strong> - When sets aren&rsquo;t disjoint</li>
+<li><strong><a href="03-problem-types/at-least-at-most">Complement Counting</a></strong> - Advanced complement techniques</li>
+</ul>
+<hr>
+<p><em>Next: <a href="permutations-combinations">Permutations &amp; Combinations</a> → <a href="inclusion-exclusion">Inclusion-Exclusion</a></em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://xhx.github.io/tags/amc10/">Amc10</a></li>
+      <li><a href="https://xhx.github.io/tags/amc12/">AMC12</a></li>
+      <li><a href="https://xhx.github.io/tags/counting/">Counting</a></li>
+      <li><a href="https://xhx.github.io/tags/principles/">Principles</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

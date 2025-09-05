@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Top 20 AMC 10/12 Number Theory Problem Types | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="amc10, amc12, number-theory, problem-types, mathematics, competition">
+<meta name="description" content="Essential problem patterns for AMC 10/12 number theory success">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/problem-types/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/problem-types/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Top 20 AMC 10/12 Number Theory Problem Types
+    </h1>
+    <div class="post-description">
+      Essential problem patterns for AMC 10/12 number theory success
+    </div>
+    <div class="post-meta"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="-top-20-amc-1012-number-theory-problem-types">🎯 Top 20 AMC 10/12 Number Theory Problem Types<a hidden class="anchor" aria-hidden="true" href="#-top-20-amc-1012-number-theory-problem-types">#</a></h1>
+<p>Master These Essential Problem Patterns</p>
+<p>These are the most frequently appearing number theory problem types in AMC 10/12. Master these patterns and you&rsquo;ll be well-prepared for the competition!</p>
+<div class="table-container">
+  <table class="problem-types-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Problem Type</th>
+        <th>Difficulty</th>
+        <th>Key Concepts</th>
+        <th>Strategy</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Divisibility Rules</td>
+        <td>🟢 Easy</td>
+        <td>2, 3, 4, 5, 6, 8, 9, 11</td>
+        <td>Apply rules directly</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Prime Factorization</td>
+        <td>🟢 Easy</td>
+        <td>Prime factors, powers</td>
+        <td>Factor completely</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>GCD & LCM</td>
+        <td>🟡 Medium</td>
+        <td>Euclidean algorithm, relationship</td>
+        <td>Use $\gcd(a,b) \cdot \text{lcm}(a,b) = ab$</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Modular Arithmetic</td>
+        <td>🟡 Medium</td>
+        <td>Remainders, cycles</td>
+        <td>Find patterns, use theorems</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Fermat's Little Theorem</td>
+        <td>🟡 Medium</td>
+        <td>$a^{p-1} \equiv 1 \pmod{p}$</td>
+        <td>Reduce exponents</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Euler's Theorem</td>
+        <td>🔴 Hard</td>
+        <td>$\phi(n)$, $a^{\phi(n)} \equiv 1 \pmod{n}$</td>
+        <td>Calculate $\phi(n)$ first</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Chinese Remainder Theorem</td>
+        <td>🔴 Hard</td>
+        <td>Systems of congruences</td>
+        <td>Solve pairwise, combine</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Linear Diophantine Equations</td>
+        <td>🟡 Medium</td>
+        <td>$ax + by = c$</td>
+        <td>Check $\gcd(a,b) \mid c$</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Pythagorean Triples</td>
+        <td>🟡 Medium</td>
+        <td>$a^2 + b^2 = c^2$</td>
+        <td>Use parametric form</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Arithmetic Sequences</td>
+        <td>🟢 Easy</td>
+        <td>$a_n = a_1 + (n-1)d$</td>
+        <td>Find first term and common difference</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>Geometric Sequences</td>
+        <td>🟡 Medium</td>
+        <td>$a_n = a_1 \cdot r^{n-1}$</td>
+        <td>Find first term and common ratio</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>Fibonacci Sequence</td>
+        <td>🟡 Medium</td>
+        <td>$F_n = F_{n-1} + F_{n-2}$</td>
+        <td>Use Binet's formula or properties</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>Perfect Powers</td>
+        <td>🟡 Medium</td>
+        <td>Squares, cubes, higher powers</td>
+        <td>Check small cases, use modular arithmetic</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>Base Systems</td>
+        <td>🟡 Medium</td>
+        <td>Base conversion, digit sums</td>
+        <td>Convert to base 10, work backwards</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>Wilson's Theorem</td>
+        <td>🔴 Hard</td>
+        <td>$(p-1)! \equiv -1 \pmod{p}$</td>
+        <td>For prime $p$ only</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>Legendre's Formula</td>
+        <td>🔴 Hard</td>
+        <td>Prime factors in factorials</td>
+        <td>Count powers of primes</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>Bézout's Identity</td>
+        <td>🟡 Medium</td>
+        <td>$\gcd(a,b) = ax + by$</td>
+        <td>Find integer solutions</td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>Chicken McNugget Theorem</td>
+        <td>🔴 Hard</td>
+        <td>Frobenius numbers</td>
+        <td>Use formula $g(a,b) = ab - a - b$</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>Euler's Totient Function</td>
+        <td>🟡 Medium</td>
+        <td>$\phi(n) = n \prod_{p \mid n} (1 - \frac{1}{p})$</td>
+        <td>Count relatively prime numbers</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>Pell's Equation</td>
+        <td>🔴 Hard</td>
+        <td>$x^2 - Dy^2 = 1$</td>
+        <td>Use fundamental solution</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h2 id="-detailed-problem-type-analysis">🎯 Detailed Problem Type Analysis<a hidden class="anchor" aria-hidden="true" href="#-detailed-problem-type-analysis">#</a></h2>
+<h3 id="-easy-problems-1-10">🟢 Easy Problems (1-10)<a hidden class="anchor" aria-hidden="true" href="#-easy-problems-1-10">#</a></h3>
+<h4 id="1-divisibility-rules">1. Divisibility Rules<a hidden class="anchor" aria-hidden="true" href="#1-divisibility-rules">#</a></h4>
+<p><strong>What to look for</strong>: Numbers that must be divisible by specific values
+<strong>Strategy</strong>: Apply divisibility rules directly
+<strong>Example</strong>: &ldquo;Find the largest 4-digit number divisible by 36&rdquo;
+<strong>Solution</strong>: Check divisibility by 4 and 9, then find largest such number</p>
+<h4 id="2-prime-factorization">2. Prime Factorization<a hidden class="anchor" aria-hidden="true" href="#2-prime-factorization">#</a></h4>
+<p><strong>What to look for</strong>: Expressing numbers as products of primes
+<strong>Strategy</strong>: Factor completely using small primes
+<strong>Example</strong>: &ldquo;Find the prime factorization of 2024&rdquo;
+<strong>Solution</strong>: $2024 = 2^3 \cdot 11 \cdot 23$</p>
+<h4 id="3-gcd--lcm">3. GCD &amp; LCM<a hidden class="anchor" aria-hidden="true" href="#3-gcd--lcm">#</a></h4>
+<p><strong>What to look for</strong>: Common factors or multiples
+<strong>Strategy</strong>: Use Euclidean algorithm or relationship formula
+<strong>Example</strong>: &ldquo;Find $\gcd(48, 60)$ and $\text{lcm}(48, 60)$&rdquo;
+<strong>Solution</strong>: $\gcd(48, 60) = 12$, $\text{lcm}(48, 60) = 240$</p>
+<h3 id="-medium-problems-11-20">🟡 Medium Problems (11-20)<a hidden class="anchor" aria-hidden="true" href="#-medium-problems-11-20">#</a></h3>
+<h4 id="4-modular-arithmetic">4. Modular Arithmetic<a hidden class="anchor" aria-hidden="true" href="#4-modular-arithmetic">#</a></h4>
+<p><strong>What to look for</strong>: Remainders, last digits, cyclic patterns
+<strong>Strategy</strong>: Find patterns, use Fermat&rsquo;s Little Theorem
+<strong>Example</strong>: &ldquo;Find the last two digits of $7^{100}$&rdquo;
+<strong>Solution</strong>: Use Euler&rsquo;s theorem: $7^{40} \equiv 1 \pmod{100}$</p>
+<h4 id="5-linear-diophantine-equations">5. Linear Diophantine Equations<a hidden class="anchor" aria-hidden="true" href="#5-linear-diophantine-equations">#</a></h4>
+<p><strong>What to look for</strong>: Integer solutions to $ax + by = c$
+<strong>Strategy</strong>: Check $\gcd(a,b) \mid c$, find particular solution
+<strong>Example</strong>: &ldquo;Find all positive integer solutions to $3x + 5y = 47$&rdquo;
+<strong>Solution</strong>: $x = 4 + 5t$, $y = 7 - 3t$ for $t \geq 0$</p>
+<h4 id="6-sequences">6. Sequences<a hidden class="anchor" aria-hidden="true" href="#6-sequences">#</a></h4>
+<p><strong>What to look for</strong>: Patterns in number sequences
+<strong>Strategy</strong>: Identify type (arithmetic, geometric, recursive)
+<strong>Example</strong>: &ldquo;Find the 100th term of the sequence 2, 5, 8, 11, &hellip;&rdquo;
+<strong>Solution</strong>: Arithmetic sequence: $a_{100} = 2 + 99 \cdot 3 = 299$</p>
+<h3 id="-hard-problems-21-25">🔴 Hard Problems (21-25)<a hidden class="anchor" aria-hidden="true" href="#-hard-problems-21-25">#</a></h3>
+<h4 id="7-chinese-remainder-theorem">7. Chinese Remainder Theorem<a hidden class="anchor" aria-hidden="true" href="#7-chinese-remainder-theorem">#</a></h4>
+<p><strong>What to look for</strong>: Systems of congruences
+<strong>Strategy</strong>: Solve pairwise, combine solutions
+<strong>Example</strong>: &ldquo;Find smallest positive integer $x$ such that $x \equiv 2 \pmod{3}$, $x \equiv 3 \pmod{5}$, $x \equiv 2 \pmod{7}$&rdquo;
+<strong>Solution</strong>: $x = 23 + 105k$ for integer $k$</p>
+<h4 id="8-advanced-modular-arithmetic">8. Advanced Modular Arithmetic<a hidden class="anchor" aria-hidden="true" href="#8-advanced-modular-arithmetic">#</a></h4>
+<p><strong>What to look for</strong>: Complex exponentiation, large numbers
+<strong>Strategy</strong>: Use Euler&rsquo;s theorem, find cycles
+<strong>Example</strong>: &ldquo;Find $3^{1000} \bmod 1000$&rdquo;
+<strong>Solution</strong>: Use Chinese Remainder Theorem with moduli 8 and 125</p>
+<h2 id="-problem-solving-strategies-by-type">🚀 Problem-Solving Strategies by Type<a hidden class="anchor" aria-hidden="true" href="#-problem-solving-strategies-by-type">#</a></h2>
+<h3 id="divisibility-problems">Divisibility Problems<a hidden class="anchor" aria-hidden="true" href="#divisibility-problems">#</a></h3>
+<ol>
+<li><strong>Check divisibility rules</strong> - Start with 2, 3, 5, 9, 11</li>
+<li><strong>Use prime factorization</strong> - Look for common factors</li>
+<li><strong>Apply GCD/LCM relationships</strong> - Often key to solving</li>
+</ol>
+<h3 id="modular-arithmetic-problems">Modular Arithmetic Problems<a hidden class="anchor" aria-hidden="true" href="#modular-arithmetic-problems">#</a></h3>
+<ol>
+<li><strong>Choose appropriate modulus</strong> - Based on what you&rsquo;re finding</li>
+<li><strong>Use Fermat&rsquo;s Little Theorem</strong> - For prime moduli</li>
+<li><strong>Apply Euler&rsquo;s Theorem</strong> - For composite moduli</li>
+<li><strong>Find patterns</strong> - Look for cycles in powers</li>
+</ol>
+<h3 id="sequence-problems">Sequence Problems<a hidden class="anchor" aria-hidden="true" href="#sequence-problems">#</a></h3>
+<ol>
+<li><strong>Identify the type</strong> - Arithmetic, geometric, recursive</li>
+<li><strong>Find the pattern</strong> - Look for common differences/ratios</li>
+<li><strong>Use formulas</strong> - Apply appropriate sequence formulas</li>
+<li><strong>Check with small cases</strong> - Verify your understanding</li>
+</ol>
+<h3 id="diophantine-equation-problems">Diophantine Equation Problems<a hidden class="anchor" aria-hidden="true" href="#diophantine-equation-problems">#</a></h3>
+<ol>
+<li><strong>Check existence</strong> - $\gcd(a,b) \mid c$ for $ax + by = c$</li>
+<li><strong>Find particular solution</strong> - Use Euclidean algorithm</li>
+<li><strong>Write general solution</strong> - Add multiples of fundamental solution</li>
+<li><strong>Apply constraints</strong> - Find solutions meeting given conditions</li>
+</ol>
+<h2 id="-practice-recommendations">📊 Practice Recommendations<a hidden class="anchor" aria-hidden="true" href="#-practice-recommendations">#</a></h2>
+<h3 id="for-each-problem-type">For Each Problem Type<a hidden class="anchor" aria-hidden="true" href="#for-each-problem-type">#</a></h3>
+<ol>
+<li><strong>Master the basic concepts</strong> - Understand the underlying theory</li>
+<li><strong>Practice with examples</strong> - Work through many problems</li>
+<li><strong>Learn the common tricks</strong> - Memorize useful techniques</li>
+<li><strong>Time yourself</strong> - Practice under time pressure</li>
+<li><strong>Review mistakes</strong> - Understand why you got problems wrong</li>
+</ol>
+<h3 id="difficulty-progression">Difficulty Progression<a hidden class="anchor" aria-hidden="true" href="#difficulty-progression">#</a></h3>
+<ul>
+<li><strong>Start with Easy</strong> - Build confidence with basic problems</li>
+<li><strong>Move to Medium</strong> - Develop problem-solving skills</li>
+<li><strong>Tackle Hard</strong> - Challenge yourself with advanced problems</li>
+<li><strong>Mix it up</strong> - Practice all types regularly</li>
+</ul>
+<hr>
+<h2 id="-related-resources">📚 Related Resources<a hidden class="anchor" aria-hidden="true" href="#-related-resources">#</a></h2>
+<ul>
+<li><a href="essential-formulas">🔢 Essential Formulas</a> - Complete formula reference</li>
+<li><a href="problem-solving-tips">💡 Problem-Solving Tips</a> - Strategies and techniques</li>
+<li><a href="reference-guide">📖 Reference Guide</a> - Comprehensive number theory reference</li>
+<li><a href="topic-guides">📝 Topic Guides</a> - Detailed coverage of specific topics</li>
+</ul>
+<hr>
+<p><em>Master these 20 problem patterns and you&rsquo;ll be well-prepared for any AMC 10/12 number theory question!</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">Amc10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/number-theory/">Number-Theory</a></li>
+      <li><a href="http://localhost:1313/tags/problem-types/">Problem Types</a></li>
+      <li><a href="http://localhost:1313/tags/mathematics/">Mathematics</a></li>
+      <li><a href="http://localhost:1313/tags/competition/">Competition</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

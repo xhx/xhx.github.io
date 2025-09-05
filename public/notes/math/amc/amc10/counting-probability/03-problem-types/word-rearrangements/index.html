@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Word Rearrangements | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Counting, Words, Rearrangements">
+<meta name="description" content="Letter arrangements with repeats, position constraints, and first/last letter restrictions.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/word-rearrangements/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xhx.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/word-rearrangements/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+<meta property="og:url" content="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/word-rearrangements/">
+  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
+  <meta property="og:title" content="Word Rearrangements">
+  <meta property="og:description" content="Letter arrangements with repeats, position constraints, and first/last letter restrictions.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:tag" content="Amc10">
+    <meta property="article:tag" content="AMC12">
+    <meta property="article:tag" content="Counting">
+    <meta property="article:tag" content="Words">
+    <meta property="article:tag" content="Rearrangements">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Word Rearrangements">
+<meta name="twitter:description" content="Letter arrangements with repeats, position constraints, and first/last letter restrictions.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Notes",
+      "item": "https://xhx.github.io/notes/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Mathematics Notes",
+      "item": "https://xhx.github.io/notes/math/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "AMC Problems",
+      "item": "https://xhx.github.io/notes/math/amc/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "AMC 10",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Counting \u0026 Probability Mastery Guide",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Problem Types",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  7 ,
+      "name": "Word Rearrangements",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/word-rearrangements/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Word Rearrangements",
+  "name": "Word Rearrangements",
+  "description": "Letter arrangements with repeats, position constraints, and first/last letter restrictions.",
+  "keywords": [
+    "AMC10", "AMC12", "Counting", "Words", "Rearrangements"
+  ],
+  "articleBody": "📝 Word Rearrangements Problems involving arranging letters with repetition, position constraints, and other restrictions.\n🎯 Recognition Cues Keywords: “arrange letters”, “rearrange”, “anagram”, “word”, “string” Setup: Letters with or without repetition Constraints: Specific positions, first/last letters, adjacency, patterns 📋 Solution Template Identify the letter types:\nAll distinct letters Some repeated letters Indistinguishable letters Apply the appropriate formula:\nAll distinct: $n!$ arrangements Some repeated: $\\frac{n!}{n_1!n_2!\\cdots n_k!}$ (multinomial) Indistinguishable: $\\binom{n}{k}$ (choose positions) Apply constraints:\nFixed positions: Arrange the rest First/last letters: Choose, then arrange Adjacency: Treat as unit, then arrange 💡 Micro-Examples Basic Rearrangement Problem: How many ways can you arrange the letters in “MATH”? Solution: $4! = 24$ ways (all distinct letters) With Repetition Problem: How many ways can you arrange the letters in “MISSISSIPPI”? Solution: $\\frac{11!}{1!4!4!2!} = 34650$ ways (M:1, I:4, S:4, P:2) Position Constraints Problem: How many ways can you arrange “MATH” so M is first? Solution: Fix M in first position, arrange the rest: $3! = 6$ ways Adjacency Constraints Problem: How many ways can you arrange “MISSISSIPPI” so no two I’s are adjacent? Solution: Arrange M, S, S, S, S, P, P first: $\\frac{7!}{4!2!} = 105$ ways, then place I’s in 8 gaps: $\\binom{8}{4} = 70$ ways. Total: $105 \\cdot 70 = 7350$ ways ⚠️ Common Pitfalls \u0026 Variants Pitfall: Forgetting to divide by factorials of repeated letters Wrong: “Arrange AABBC” = $5! = 120$ ways Right: $\\frac{5!}{2!2!1!} = 30$ ways (divide by factorials of repeated letters) Pitfall: Confusing arrangements with selections Wrong: “How many 3-letter words from MATH?” = $4!$ ways Right: $P(4,3) = 4 \\cdot 3 \\cdot 2 = 24$ ways (arrangements of 3 from 4) Pitfall: Adjacency with repetition Wrong: “No two I’s adjacent in MISSISSIPPI” = Arrange all letters, subtract adjacent cases Right: Use gaps method - arrange non-I’s first, then place I’s in gaps 🏆 AMC-Style Worked Example Problem: How many ways can you arrange the letters in “AMC” so that no two vowels are adjacent?\nSolution:\nStep 1: Identify vowels and consonants\nVowels: A (only one vowel) Consonants: M, C Step 2: Since there’s only one vowel, the condition is automatically satisfied\nStep 3: Arrange all 3 letters: $3! = 6$ ways\nWait, let me reconsider…\nStep 1: Vowels: A (only one vowel) Step 2: With only one vowel, it’s impossible to have two vowels adjacent Step 3: Arrange all 3 letters: $3! = 6$ ways Key insight: Sometimes the constraint is automatically satisfied!\n🔗 Related Topics Permutations \u0026 Combinations - Foundation for arrangements Multinomial Coefficients - Handling repeated objects Seating \u0026 Restrictions - Similar constraint patterns Next: Committees \u0026 Conditions → Balls in Bins\n",
+  "wordCount" : "433",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Xiaohui Xie"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/word-rearrangements/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Xiaohui Xie's Site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xhx.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/">Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/">Counting &amp; Probability Mastery Guide</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/">Problem Types</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Word Rearrangements
+    </h1>
+    <div class="post-description">
+      Letter arrangements with repeats, position constraints, and first/last letter restrictions.
+    </div>
+    <div class="post-meta">3 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-word-rearrangements" aria-label="📝 Word Rearrangements">📝 Word Rearrangements</a><ul>
+                        
+                <li>
+                    <a href="#-recognition-cues" aria-label="🎯 Recognition Cues">🎯 Recognition Cues</a></li>
+                <li>
+                    <a href="#-solution-template" aria-label="📋 Solution Template">📋 Solution Template</a></li>
+                <li>
+                    <a href="#-micro-examples" aria-label="💡 Micro-Examples">💡 Micro-Examples</a><ul>
+                        
+                <li>
+                    <a href="#basic-rearrangement" aria-label="Basic Rearrangement">Basic Rearrangement</a></li>
+                <li>
+                    <a href="#with-repetition" aria-label="With Repetition">With Repetition</a></li>
+                <li>
+                    <a href="#position-constraints" aria-label="Position Constraints">Position Constraints</a></li>
+                <li>
+                    <a href="#adjacency-constraints" aria-label="Adjacency Constraints">Adjacency Constraints</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-common-pitfalls--variants" aria-label="⚠️ Common Pitfalls &amp; Variants">⚠️ Common Pitfalls &amp; Variants</a><ul>
+                        
+                <li>
+                    <a href="#pitfall-forgetting-to-divide-by-factorials-of-repeated-letters" aria-label="Pitfall: Forgetting to divide by factorials of repeated letters">Pitfall: Forgetting to divide by factorials of repeated letters</a></li>
+                <li>
+                    <a href="#pitfall-confusing-arrangements-with-selections" aria-label="Pitfall: Confusing arrangements with selections">Pitfall: Confusing arrangements with selections</a></li>
+                <li>
+                    <a href="#pitfall-adjacency-with-repetition" aria-label="Pitfall: Adjacency with repetition">Pitfall: Adjacency with repetition</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-amc-style-worked-example" aria-label="🏆 AMC-Style Worked Example">🏆 AMC-Style Worked Example</a></li>
+                <li>
+                    <a href="#-related-topics" aria-label="🔗 Related Topics">🔗 Related Topics</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-word-rearrangements">📝 Word Rearrangements<a hidden class="anchor" aria-hidden="true" href="#-word-rearrangements">#</a></h1>
+<p>Problems involving arranging letters with repetition, position constraints, and other restrictions.</p>
+<h2 id="-recognition-cues">🎯 Recognition Cues<a hidden class="anchor" aria-hidden="true" href="#-recognition-cues">#</a></h2>
+<ul>
+<li><strong>Keywords</strong>: &ldquo;arrange letters&rdquo;, &ldquo;rearrange&rdquo;, &ldquo;anagram&rdquo;, &ldquo;word&rdquo;, &ldquo;string&rdquo;</li>
+<li><strong>Setup</strong>: Letters with or without repetition</li>
+<li><strong>Constraints</strong>: Specific positions, first/last letters, adjacency, patterns</li>
+</ul>
+<h2 id="-solution-template">📋 Solution Template<a hidden class="anchor" aria-hidden="true" href="#-solution-template">#</a></h2>
+<ol>
+<li>
+<p><strong>Identify the letter types</strong>:</p>
+<ul>
+<li>All distinct letters</li>
+<li>Some repeated letters</li>
+<li>Indistinguishable letters</li>
+</ul>
+</li>
+<li>
+<p><strong>Apply the appropriate formula</strong>:</p>
+<ul>
+<li><strong>All distinct</strong>: $n!$ arrangements</li>
+<li><strong>Some repeated</strong>: $\frac{n!}{n_1!n_2!\cdots n_k!}$ (multinomial)</li>
+<li><strong>Indistinguishable</strong>: $\binom{n}{k}$ (choose positions)</li>
+</ul>
+</li>
+<li>
+<p><strong>Apply constraints</strong>:</p>
+<ul>
+<li><strong>Fixed positions</strong>: Arrange the rest</li>
+<li><strong>First/last letters</strong>: Choose, then arrange</li>
+<li><strong>Adjacency</strong>: Treat as unit, then arrange</li>
+</ul>
+</li>
+</ol>
+<h2 id="-micro-examples">💡 Micro-Examples<a hidden class="anchor" aria-hidden="true" href="#-micro-examples">#</a></h2>
+<h3 id="basic-rearrangement">Basic Rearrangement<a hidden class="anchor" aria-hidden="true" href="#basic-rearrangement">#</a></h3>
+<ul>
+<li><strong>Problem</strong>: How many ways can you arrange the letters in &ldquo;MATH&rdquo;?</li>
+<li><strong>Solution</strong>: $4! = 24$ ways (all distinct letters)</li>
+</ul>
+<h3 id="with-repetition">With Repetition<a hidden class="anchor" aria-hidden="true" href="#with-repetition">#</a></h3>
+<ul>
+<li><strong>Problem</strong>: How many ways can you arrange the letters in &ldquo;MISSISSIPPI&rdquo;?</li>
+<li><strong>Solution</strong>: $\frac{11!}{1!4!4!2!} = 34650$ ways (M:1, I:4, S:4, P:2)</li>
+</ul>
+<h3 id="position-constraints">Position Constraints<a hidden class="anchor" aria-hidden="true" href="#position-constraints">#</a></h3>
+<ul>
+<li><strong>Problem</strong>: How many ways can you arrange &ldquo;MATH&rdquo; so M is first?</li>
+<li><strong>Solution</strong>: Fix M in first position, arrange the rest: $3! = 6$ ways</li>
+</ul>
+<h3 id="adjacency-constraints">Adjacency Constraints<a hidden class="anchor" aria-hidden="true" href="#adjacency-constraints">#</a></h3>
+<ul>
+<li><strong>Problem</strong>: How many ways can you arrange &ldquo;MISSISSIPPI&rdquo; so no two I&rsquo;s are adjacent?</li>
+<li><strong>Solution</strong>: Arrange M, S, S, S, S, P, P first: $\frac{7!}{4!2!} = 105$ ways, then place I&rsquo;s in 8 gaps: $\binom{8}{4} = 70$ ways. Total: $105 \cdot 70 = 7350$ ways</li>
+</ul>
+<h2 id="-common-pitfalls--variants">⚠️ Common Pitfalls &amp; Variants<a hidden class="anchor" aria-hidden="true" href="#-common-pitfalls--variants">#</a></h2>
+<h3 id="pitfall-forgetting-to-divide-by-factorials-of-repeated-letters"><strong>Pitfall</strong>: Forgetting to divide by factorials of repeated letters<a hidden class="anchor" aria-hidden="true" href="#pitfall-forgetting-to-divide-by-factorials-of-repeated-letters">#</a></h3>
+<ul>
+<li><strong>Wrong</strong>: &ldquo;Arrange AABBC&rdquo; = $5! = 120$ ways</li>
+<li><strong>Right</strong>: $\frac{5!}{2!2!1!} = 30$ ways (divide by factorials of repeated letters)</li>
+</ul>
+<h3 id="pitfall-confusing-arrangements-with-selections"><strong>Pitfall</strong>: Confusing arrangements with selections<a hidden class="anchor" aria-hidden="true" href="#pitfall-confusing-arrangements-with-selections">#</a></h3>
+<ul>
+<li><strong>Wrong</strong>: &ldquo;How many 3-letter words from MATH?&rdquo; = $4!$ ways</li>
+<li><strong>Right</strong>: $P(4,3) = 4 \cdot 3 \cdot 2 = 24$ ways (arrangements of 3 from 4)</li>
+</ul>
+<h3 id="pitfall-adjacency-with-repetition"><strong>Pitfall</strong>: Adjacency with repetition<a hidden class="anchor" aria-hidden="true" href="#pitfall-adjacency-with-repetition">#</a></h3>
+<ul>
+<li><strong>Wrong</strong>: &ldquo;No two I&rsquo;s adjacent in MISSISSIPPI&rdquo; = Arrange all letters, subtract adjacent cases</li>
+<li><strong>Right</strong>: Use gaps method - arrange non-I&rsquo;s first, then place I&rsquo;s in gaps</li>
+</ul>
+<h2 id="-amc-style-worked-example">🏆 AMC-Style Worked Example<a hidden class="anchor" aria-hidden="true" href="#-amc-style-worked-example">#</a></h2>
+<p><strong>Problem</strong>: How many ways can you arrange the letters in &ldquo;AMC&rdquo; so that no two vowels are adjacent?</p>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>
+<p><strong>Step 1</strong>: Identify vowels and consonants</p>
+<ul>
+<li>Vowels: A (only one vowel)</li>
+<li>Consonants: M, C</li>
+</ul>
+</li>
+<li>
+<p><strong>Step 2</strong>: Since there&rsquo;s only one vowel, the condition is automatically satisfied</p>
+</li>
+<li>
+<p><strong>Step 3</strong>: Arrange all 3 letters: $3! = 6$ ways</p>
+</li>
+</ul>
+<p><strong>Wait, let me reconsider&hellip;</strong></p>
+<ul>
+<li><strong>Step 1</strong>: Vowels: A (only one vowel)</li>
+<li><strong>Step 2</strong>: With only one vowel, it&rsquo;s impossible to have two vowels adjacent</li>
+<li><strong>Step 3</strong>: Arrange all 3 letters: $3! = 6$ ways</li>
+</ul>
+<p><strong>Key insight</strong>: Sometimes the constraint is automatically satisfied!</p>
+<h2 id="-related-topics">🔗 Related Topics<a hidden class="anchor" aria-hidden="true" href="#-related-topics">#</a></h2>
+<ul>
+<li><strong><a href="02-topics/permutations-combinations">Permutations &amp; Combinations</a></strong> - Foundation for arrangements</li>
+<li><strong><a href="02-topics/binomial-multinomial">Multinomial Coefficients</a></strong> - Handling repeated objects</li>
+<li><strong><a href="seatings-restrictions">Seating &amp; Restrictions</a></strong> - Similar constraint patterns</li>
+</ul>
+<hr>
+<p><em>Next: <a href="committees-and-conditions">Committees &amp; Conditions</a> → <a href="balls-in-bins">Balls in Bins</a></em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://xhx.github.io/tags/amc10/">Amc10</a></li>
+      <li><a href="https://xhx.github.io/tags/amc12/">AMC12</a></li>
+      <li><a href="https://xhx.github.io/tags/counting/">Counting</a></li>
+      <li><a href="https://xhx.github.io/tags/words/">Words</a></li>
+      <li><a href="https://xhx.github.io/tags/rearrangements/">Rearrangements</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

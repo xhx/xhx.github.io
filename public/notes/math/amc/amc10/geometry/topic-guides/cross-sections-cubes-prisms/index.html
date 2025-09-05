@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Cross-Sections of Cubes &amp; Prisms | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="amc10, geometry, 3d, cross-sections, cubes, mathematics">
+<meta name="description" content="AMC 10 Geometry: Cross-Sections of Cubes &amp; Prisms">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/cross-sections-cubes-prisms/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xhx.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/cross-sections-cubes-prisms/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+<meta property="og:url" content="https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/cross-sections-cubes-prisms/">
+  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
+  <meta property="og:title" content="Cross-Sections of Cubes & Prisms">
+  <meta property="og:description" content="AMC 10 Geometry: Cross-Sections of Cubes &amp; Prisms">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-01-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-01-01T00:00:00+00:00">
+    <meta property="article:tag" content="Amc10">
+    <meta property="article:tag" content="Geometry">
+    <meta property="article:tag" content="3d">
+    <meta property="article:tag" content="Cross-Sections">
+    <meta property="article:tag" content="Cubes">
+    <meta property="article:tag" content="Mathematics">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Cross-Sections of Cubes &amp; Prisms">
+<meta name="twitter:description" content="AMC 10 Geometry: Cross-Sections of Cubes &amp; Prisms">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Notes",
+      "item": "https://xhx.github.io/notes/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Mathematics Notes",
+      "item": "https://xhx.github.io/notes/math/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "AMC Problems",
+      "item": "https://xhx.github.io/notes/math/amc/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "AMC 10",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "AMC 10 Geometry Mastery Guide",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/geometry/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "AMC 10 Geometry Topic Guides",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  7 ,
+      "name": "Cross-Sections of Cubes \u0026 Prisms",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/cross-sections-cubes-prisms/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Cross-Sections of Cubes \u0026 Prisms",
+  "name": "Cross-Sections of Cubes \u0026 Prisms",
+  "description": "AMC 10 Geometry: Cross-Sections of Cubes \u0026 Prisms",
+  "keywords": [
+    "amc10", "geometry", "3d", "cross-sections", "cubes", "mathematics"
+  ],
+  "articleBody": "#16 – Cross-Sections of Cubes \u0026 Prisms A single slanted plane can slice a cube (or right prism) into elegant polygons—triangles, rectangles, pentagons, and the famous regular hexagon. AMC questions usually want the area or perimeter of that slice, or occasionally to recognize the shape.\n(The 3-D plot illustrates the classic “mid-mid-mid” cut: a plane through the midpoints of three edges emanating from one vertex of a unit cube. The intersection is a regular hexagon.)\n1 Key Observations \u0026 Tricks Scenario Polygon produced Why / How to prove Plane through three pairwise skew edges sharing a vertex Regular hexagon All six edge–plane intersections are equidistant from the vertex; symmetry of cube forces equal edges \u0026 angles. Plane through three vertices, one from each pair of opposite faces (e.g.\\ $(1,0,0),(0,1,0),(0,0,1)$) Equilateral triangle Coordinates satisfy $x+y+z=1$. Plane parallel to a face cuts prism Rectangle (or congruent face) Obvious parallelism. Plane through opposite edges of a cube Rectangle whose sides are face-diagonals Cross-section is the “unfolded elevator.” Vector method:\nGive cube corners coordinates (0/1’s). Write plane $ax+by+cz=d$. Intersect with each of the 12 edges; keep $0 \\leq t \\leq 1$ points. Collect \u0026 sort: polygon vertices; use dot-products for side lengths. 2 Canonical AMC Prompts \u0026 Fast Routes Typical wording Tool “Plane cuts cube through midpoints of three edges that meet at a vertex; find the area” Regular hexagon with side $s=\\tfrac{\\sqrt3}{2}$; area $=\\tfrac{3\\sqrt3}{2}s^{2}$. For unit cube $s=\\tfrac{\\sqrt2}{2}$ → area $\\tfrac{3\\sqrt3}{4}$. “Plane through $(1,0,0),(0,1,0),(0,0,1)$” Equilateral triangle of side $\\sqrt2$; area $= \\tfrac{\\sqrt3}{4}( \\sqrt2 )^{2}= \\tfrac{\\sqrt3}{2}$. “Slice a $2 \\times 3 \\times 6$ prism by plane joining three non-adjacent vertices” Treat as box: coordinates; compute using 3-D distance + Heron. “Cross-section is a rectangle; find its perimeter in terms of $a,b,c$” Recognize faces; diagonal rectangle sides $=\\sqrt{a^{2}+b^{2}}$ etc. 3 Worked Example A – Regular Hexagon Slice A unit cube is cut by a plane through the midpoints of three edges that share a vertex.\nFind the area of the cross-section.\nCoordinates of midpoints: $M_1(½,0,0), M_2(0,½,0), M_3(0,0,½)$.\nPlane: $x + y + z = ½$.\nPlane meets each of the other nine edges; symmetry ⇒ regular hexagon.\nSide length $s$: distance between $M_1$ and intersection on edge $(1,0,0) !\\to!(1,1,0)$.\nPoint solves $1 + t = ½\\Rightarrow t=-½$ ⇒ actually choose $M_1$ to $(½, 0, 0) \\to (0, ½, 0)$ distance\n$s=\\sqrt{(½)^{2}+(½)^{2}} = \\tfrac{\\sqrt2}{2}$.\nArea hexagon $= \\tfrac{3\\sqrt3}{2}s^{2}= \\tfrac{3\\sqrt3}{2}\\cdot \\tfrac{1}{2}= \\boxed{\\tfrac{3\\sqrt3}{4}}$.\nAMC answer list invariably includes that value.\n4 Worked Example B – Triangle Through Three Face Centers In a $4 \\times 4 \\times 4$ cube, a plane goes through the centers of three faces that meet at one vertex. What is the cross-section’s perimeter?\nFace centers at $(2,0,0),(0,2,0),(0,0,2)$. Triangle is equilateral of side $s=4$. Perimeter $=12$. (Scaling by edge length is often quicker than re-deriving.)\n5 Recognition \u0026 Speed Tips Hint in problem Instant recall “Midpoints of three edges out of a vertex” Regular hexagon—memorize area $\\tfrac{3\\sqrt3}{4},a^{2}$ for edge $a$. “Centers of three faces meeting at a vertex” Equilateral triangle—side $=\\sqrt2,a$. “Plane through opposite edges” Rectangle with sides $=$ face diagonals. Many symmetric coordinates given Use $x+y+z=\\text{const}$ plane and symmetry. Quick Drill What polygon appears if you slice a cube through the midpoints of a pair of opposite edges?\nAnswer: a rectangle whose sides are face diagonals.\nUnit cube, plane $x+y+z=1$. Area?\n(Hint: triangle, compute directly.)\nWith these patterns, AMC cross-section problems become a matter of pattern matching plus a dab of Pythagoras.\n",
+  "wordCount" : "568",
+  "inLanguage": "en",
+  "datePublished": "2024-01-01T00:00:00Z",
+  "dateModified": "2024-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Xiaohui Xie"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/cross-sections-cubes-prisms/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Xiaohui Xie's Site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xhx.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/">Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/geometry/">AMC 10 Geometry Mastery Guide</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/">AMC 10 Geometry Topic Guides</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Cross-Sections of Cubes &amp; Prisms
+    </h1>
+    <div class="post-description">
+      AMC 10 Geometry: Cross-Sections of Cubes &amp; Prisms
+    </div>
+    <div class="post-meta"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="16--cross-sections-of-cubes--prisms">#16 – Cross-Sections of Cubes &amp; Prisms<a hidden class="anchor" aria-hidden="true" href="#16--cross-sections-of-cubes--prisms">#</a></h1>
+<p>A single slanted plane can slice a cube (or right prism) into elegant polygons—triangles, rectangles, pentagons, <em>and</em> the famous regular hexagon.  AMC questions usually want the <strong>area</strong> or <strong>perimeter</strong> of that slice, or occasionally to recognize the shape.</p>
+<p><em>(The 3-D plot illustrates the classic &ldquo;mid-mid-mid&rdquo; cut: a plane through the midpoints of three edges emanating from one vertex of a unit cube.  The intersection is a <strong>regular hexagon</strong>.)</em></p>
+<hr>
+<h3 id="1-key-observations--tricks">1 Key Observations &amp; Tricks<a hidden class="anchor" aria-hidden="true" href="#1-key-observations--tricks">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Scenario</th>
+          <th>Polygon produced</th>
+          <th>Why / How to prove</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Plane through three pairwise skew edges sharing a vertex</td>
+          <td><strong>Regular hexagon</strong></td>
+          <td>All six edge–plane intersections are equidistant from the vertex; symmetry of cube forces equal edges &amp; angles.</td>
+      </tr>
+      <tr>
+          <td>Plane through three vertices, one from each pair of opposite faces (e.g.\ $(1,0,0),(0,1,0),(0,0,1)$)</td>
+          <td><strong>Equilateral triangle</strong></td>
+          <td>Coordinates satisfy $x+y+z=1$.</td>
+      </tr>
+      <tr>
+          <td>Plane parallel to a face cuts prism</td>
+          <td>Rectangle (or congruent face)</td>
+          <td>Obvious parallelism.</td>
+      </tr>
+      <tr>
+          <td>Plane through opposite edges of a cube</td>
+          <td><strong>Rectangle</strong> whose sides are face-diagonals</td>
+          <td>Cross-section is the &ldquo;unfolded elevator.&rdquo;</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Vector method:</strong></p>
+<ol>
+<li>Give cube corners coordinates (0/1&rsquo;s).</li>
+<li>Write plane $ax+by+cz=d$.</li>
+<li>Intersect with each of the 12 edges; keep $0 \leq t \leq 1$ points.</li>
+<li>Collect &amp; sort: polygon vertices; use dot-products for side lengths.</li>
+</ol>
+<hr>
+<h3 id="2-canonical-amc-prompts--fast-routes">2 Canonical AMC Prompts &amp; Fast Routes<a hidden class="anchor" aria-hidden="true" href="#2-canonical-amc-prompts--fast-routes">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Typical wording</th>
+          <th>Tool</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>&ldquo;Plane cuts cube through midpoints of three edges that meet at a vertex; find the area&rdquo;</td>
+          <td>Regular hexagon with side $s=\tfrac{\sqrt3}{2}$; area $=\tfrac{3\sqrt3}{2}s^{2}$. For unit cube $s=\tfrac{\sqrt2}{2}$ → area $\tfrac{3\sqrt3}{4}$.</td>
+      </tr>
+      <tr>
+          <td>&ldquo;Plane through $(1,0,0),(0,1,0),(0,0,1)$&rdquo;</td>
+          <td>Equilateral triangle of side $\sqrt2$; area $= \tfrac{\sqrt3}{4}( \sqrt2 )^{2}= \tfrac{\sqrt3}{2}$.</td>
+      </tr>
+      <tr>
+          <td>&ldquo;Slice a $2 \times 3 \times 6$ prism by plane joining three non-adjacent vertices&rdquo;</td>
+          <td>Treat as box: coordinates; compute using 3-D distance + Heron.</td>
+      </tr>
+      <tr>
+          <td>&ldquo;Cross-section is a rectangle; find its perimeter in terms of $a,b,c$&rdquo;</td>
+          <td>Recognize faces; diagonal rectangle sides $=\sqrt{a^{2}+b^{2}}$ etc.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="3-worked-example-a--regular-hexagon-slice">3 Worked Example A – Regular Hexagon Slice<a hidden class="anchor" aria-hidden="true" href="#3-worked-example-a--regular-hexagon-slice">#</a></h3>
+<blockquote>
+<p>A unit cube is cut by a plane through the midpoints of three edges that share a vertex.</p>
+<p>Find the area of the cross-section.</p></blockquote>
+<ol>
+<li>
+<p>Coordinates of midpoints: $M_1(½,0,0), M_2(0,½,0), M_3(0,0,½)$.</p>
+<p>Plane: $x + y + z = ½$.</p>
+</li>
+<li>
+<p>Plane meets <strong>each</strong> of the other nine edges; symmetry ⇒ regular hexagon.</p>
+</li>
+<li>
+<p>Side length $s$: distance between $M_1$ and intersection on edge $(1,0,0) !\to!(1,1,0)$.</p>
+<p>Point solves $1 + t = ½\Rightarrow t=-½$ ⇒ actually choose $M_1$ to $(½, 0, 0) \to (0, ½, 0)$ distance</p>
+<p>$s=\sqrt{(½)^{2}+(½)^{2}} = \tfrac{\sqrt2}{2}$.</p>
+</li>
+<li>
+<p>Area hexagon $= \tfrac{3\sqrt3}{2}s^{2}= \tfrac{3\sqrt3}{2}\cdot \tfrac{1}{2}= \boxed{\tfrac{3\sqrt3}{4}}$.</p>
+</li>
+</ol>
+<p>AMC answer list invariably includes that value.</p>
+<hr>
+<h3 id="4-worked-example-b--triangle-through-three-face-centers">4 Worked Example B – Triangle Through Three Face Centers<a hidden class="anchor" aria-hidden="true" href="#4-worked-example-b--triangle-through-three-face-centers">#</a></h3>
+<blockquote>
+<p>In a $4 \times 4 \times 4$ cube, a plane goes through the centers of three faces that meet at one vertex.  What is the cross-section&rsquo;s perimeter?</p></blockquote>
+<ol>
+<li>Face centers at $(2,0,0),(0,2,0),(0,0,2)$.</li>
+<li>Triangle is equilateral of side $s=4$.</li>
+<li>Perimeter $=12$.</li>
+</ol>
+<p>(Scaling by edge length is often quicker than re-deriving.)</p>
+<hr>
+<h3 id="5-recognition--speed-tips">5 Recognition &amp; Speed Tips<a hidden class="anchor" aria-hidden="true" href="#5-recognition--speed-tips">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Hint in problem</th>
+          <th>Instant recall</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>&ldquo;Midpoints of three edges out of a vertex&rdquo;</td>
+          <td>Regular hexagon—memorize area $\tfrac{3\sqrt3}{4},a^{2}$ for edge $a$.</td>
+      </tr>
+      <tr>
+          <td>&ldquo;Centers of three faces meeting at a vertex&rdquo;</td>
+          <td>Equilateral triangle—side $=\sqrt2,a$.</td>
+      </tr>
+      <tr>
+          <td>&ldquo;Plane through opposite edges&rdquo;</td>
+          <td>Rectangle with sides $=$ face diagonals.</td>
+      </tr>
+      <tr>
+          <td>Many symmetric coordinates given</td>
+          <td>Use $x+y+z=\text{const}$ plane and symmetry.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="quick-drill">Quick Drill<a hidden class="anchor" aria-hidden="true" href="#quick-drill">#</a></h3>
+<ol>
+<li>
+<p><strong>What polygon appears if you slice a cube through the midpoints of a pair of opposite edges?</strong></p>
+<p><em>Answer: a rectangle whose sides are face diagonals.</em></p>
+</li>
+<li>
+<p><strong>Unit cube, plane $x+y+z=1$. Area?</strong></p>
+<p>(Hint: triangle, compute directly.)</p>
+</li>
+</ol>
+<p>With these patterns, AMC cross-section problems become a matter of pattern matching plus a dab of Pythagoras.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://xhx.github.io/tags/amc10/">Amc10</a></li>
+      <li><a href="https://xhx.github.io/tags/geometry/">Geometry</a></li>
+      <li><a href="https://xhx.github.io/tags/3d/">3d</a></li>
+      <li><a href="https://xhx.github.io/tags/cross-sections/">Cross-Sections</a></li>
+      <li><a href="https://xhx.github.io/tags/cubes/">Cubes</a></li>
+      <li><a href="https://xhx.github.io/tags/mathematics/">Mathematics</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

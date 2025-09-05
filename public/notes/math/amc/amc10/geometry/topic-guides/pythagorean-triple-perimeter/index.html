@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Pythagorean-Triple Perimeter &amp; Area Problems | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="amc10, geometry, pythagorean, triples, perimeter, mathematics">
+<meta name="description" content="AMC 10 Geometry: Pythagorean-Triple Perimeter &amp; Area Problems">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/pythagorean-triple-perimeter/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xhx.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/pythagorean-triple-perimeter/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+<meta property="og:url" content="https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/pythagorean-triple-perimeter/">
+  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
+  <meta property="og:title" content="Pythagorean-Triple Perimeter & Area Problems">
+  <meta property="og:description" content="AMC 10 Geometry: Pythagorean-Triple Perimeter &amp; Area Problems">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-01-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-01-01T00:00:00+00:00">
+    <meta property="article:tag" content="Amc10">
+    <meta property="article:tag" content="Geometry">
+    <meta property="article:tag" content="Pythagorean">
+    <meta property="article:tag" content="Triples">
+    <meta property="article:tag" content="Perimeter">
+    <meta property="article:tag" content="Mathematics">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Pythagorean-Triple Perimeter &amp; Area Problems">
+<meta name="twitter:description" content="AMC 10 Geometry: Pythagorean-Triple Perimeter &amp; Area Problems">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Notes",
+      "item": "https://xhx.github.io/notes/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Mathematics Notes",
+      "item": "https://xhx.github.io/notes/math/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "AMC Problems",
+      "item": "https://xhx.github.io/notes/math/amc/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "AMC 10",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "AMC 10 Geometry Mastery Guide",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/geometry/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "AMC 10 Geometry Topic Guides",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  7 ,
+      "name": "Pythagorean-Triple Perimeter \u0026 Area Problems",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/pythagorean-triple-perimeter/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Pythagorean-Triple Perimeter \u0026 Area Problems",
+  "name": "Pythagorean-Triple Perimeter \u0026 Area Problems",
+  "description": "AMC 10 Geometry: Pythagorean-Triple Perimeter \u0026 Area Problems",
+  "keywords": [
+    "amc10", "geometry", "pythagorean", "triples", "perimeter", "mathematics"
+  ],
+  "articleBody": "#2 – Pythagorean-Triple Perimeter \u0026 Area Problems AMC setters love integer-length right triangles. Spotting a hidden Pythagorean triple lets you compute everything (area, perimeter, altitude, inradius, circumscribed radius …) in seconds.\n1 Why they matter A primitive Pythagorean triple $(a,b,c)$ satisfies\n$$a^{2}+b^{2}=c^{2},\\qquad \\gcd(a,b,c)=1 .$$\nOnce you identify $a,b,c$, key quantities pop out immediately:\nQuantity Formula Example (3-4-5) Perimeter $P=a+b+c$ $3+4+5=12$ Area $A=\\tfrac12 ab$ $\\frac12(3)(4)=6$ Inradius $r=\\dfrac{a+b-c}{2}$ $r=1$ Altitude to hyp. $h=\\dfrac{ab}{c}$ $h=\\dfrac{12}{5}=2.4$ These neat integers and simple fractions align perfectly with AMC answer choices.\n2 Top triples to memorize $(3,4,5),; (5,12,13),; (7,24,25),; (8,15,17),; (9,40,41),; (12,35,37),; (20,21,29)$\nAMC 10 rarely ventures beyond these because they keep arithmetic clean.\n3 Classic AMC disguises Disguise How to unmask the triple Rectangle diagonal has integer length; sides often form a triple. Isosceles trapezoid with legs perpendicular to bases → pick out right triangle. Circle with integer radius \u0026 points on axes: the distance between points can be $\\sqrt{\\text{integer}}$ that squares into a triple. 3-D box: a face diagonal (or space diagonal) matches a hypotenuse of a known triple like $3^{2}+4^{2}=5^{2}$. 4 Worked Example A (2019 AMC 10A #13 style) A rectangle has integer side lengths and diagonal $10$.\nWhat is its area?\nRecognize $6^{2}+8^{2}=10^{2}$.\nSo sides are $6$ and $8$; area $=48$.\n(Trick: no need to list every factor of 100; the only primitive triple with hypotenuse 10 is 6-8-10.)\n5 Worked Example B (Perimeter trap) In right $\\triangle ABC$ with $\\angle C=90^{\\circ}$, the altitude from $C$ to $\\overline{AB}$ has length $6$ and divides $AB$ into segments of lengths $8$ and $18$.\nFind the perimeter of $\\triangle ABC$.\nIf $CD\\perp AB,; AD=8,; DB=18$.\nRight-triangle altitude theorem: $CD^{2}=AD\\cdot DB$.\nCheck: $6^{2}=36=8\\cdot18=144$ ? False ⇒ numbers are scaled. Instead, note that $AD:DB = AC^{2}:BC^{2}$ (similarity). Let $AC= x,; BC = y$. Then $\\dfrac{8}{18} = \\dfrac{x^{2}}{y^{2}}\\Rightarrow \\dfrac{4}{9}=\\dfrac{x^{2}}{y^{2}}\\Rightarrow x:y=2:3$.\nHypotenuse $AB=8+18=26$. So scale factor $k$ satisfies\n$(2k)^{2}+(3k)^{2}=26^{2}\\Longrightarrow 4k^{2}+9k^{2}=13k^{2}=676\\Rightarrow k^{2}=52\\Rightarrow k=2\\sqrt{13}$.\nPerimeter $= 2k+3k+26 = 5k+26 = 10\\sqrt{13}+26$.\nAlthough radical appears, the 2-3-√13 ratio came from the underlying primitive triple $(2,3,\\sqrt{13}),$ scaled to meet the integer hypotenuse 26.\n6 Recognition checklist Is the hypotenuse an even integer ≤ 65 ? ⇒ Only a few candidate triples exist. Do two sides differ by 1? ⇒ Likely 20,21,29 or its multiple. Product of two numbers is a perfect square in an altitude-theorem setup? Triple lurking. Perfect squares + perfect squares in the expression of areas/perimeters: see if difference is a square. ",
+  "wordCount" : "400",
+  "inLanguage": "en",
+  "datePublished": "2024-01-01T00:00:00Z",
+  "dateModified": "2024-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Xiaohui Xie"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/pythagorean-triple-perimeter/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Xiaohui Xie's Site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xhx.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/">Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/geometry/">AMC 10 Geometry Mastery Guide</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/">AMC 10 Geometry Topic Guides</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Pythagorean-Triple Perimeter &amp; Area Problems
+    </h1>
+    <div class="post-description">
+      AMC 10 Geometry: Pythagorean-Triple Perimeter &amp; Area Problems
+    </div>
+    <div class="post-meta"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="2--pythagorean-triple-perimeter--area-problems">#2 – Pythagorean-Triple Perimeter &amp; Area Problems<a hidden class="anchor" aria-hidden="true" href="#2--pythagorean-triple-perimeter--area-problems">#</a></h1>
+<p>AMC setters love integer-length right triangles. Spotting a hidden Pythagorean triple lets you compute <em>everything</em> (area, perimeter, altitude, inradius, circumscribed radius …) in seconds.</p>
+<hr>
+<h3 id="1-why-they-matter">1 Why they matter<a hidden class="anchor" aria-hidden="true" href="#1-why-they-matter">#</a></h3>
+<p>A <strong>primitive Pythagorean triple</strong> $(a,b,c)$ satisfies</p>
+<p>$$a^{2}+b^{2}=c^{2},\qquad \gcd(a,b,c)=1 .$$</p>
+<p>Once you identify $a,b,c$, key quantities pop out immediately:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Quantity</th>
+          <th>Formula</th>
+          <th>Example (3-4-5)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Perimeter</td>
+          <td>$P=a+b+c$</td>
+          <td>$3+4+5=12$</td>
+      </tr>
+      <tr>
+          <td>Area</td>
+          <td>$A=\tfrac12 ab$</td>
+          <td>$\frac12(3)(4)=6$</td>
+      </tr>
+      <tr>
+          <td>Inradius</td>
+          <td>$r=\dfrac{a+b-c}{2}$</td>
+          <td>$r=1$</td>
+      </tr>
+      <tr>
+          <td>Altitude to hyp.</td>
+          <td>$h=\dfrac{ab}{c}$</td>
+          <td>$h=\dfrac{12}{5}=2.4$</td>
+      </tr>
+  </tbody>
+</table>
+<p>These neat integers and simple fractions align perfectly with AMC answer choices.</p>
+<hr>
+<h3 id="2-top-triples-to-memorize">2 Top triples to memorize<a hidden class="anchor" aria-hidden="true" href="#2-top-triples-to-memorize">#</a></h3>
+<p>$(3,4,5),; (5,12,13),; (7,24,25),; (8,15,17),; (9,40,41),; (12,35,37),; (20,21,29)$</p>
+<p>AMC 10 rarely ventures beyond these because they keep arithmetic clean.</p>
+<hr>
+<h3 id="3-classic-amc-disguises">3 Classic AMC disguises<a hidden class="anchor" aria-hidden="true" href="#3-classic-amc-disguises">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Disguise</th>
+          <th>How to unmask the triple</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Rectangle diagonal</strong> has integer length; sides often form a triple.</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td><strong>Isosceles trapezoid</strong> with legs perpendicular to bases → pick out right triangle.</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td><strong>Circle with integer radius &amp; points on axes</strong>: the distance between points can be $\sqrt{\text{integer}}$ that squares into a triple.</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td><strong>3-D box</strong>: a face diagonal (or space diagonal) matches a hypotenuse of a known triple like $3^{2}+4^{2}=5^{2}$.</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="4-worked-example-a-2019-amc-10a-13-style">4 Worked Example A (2019 AMC 10A #13 style)<a hidden class="anchor" aria-hidden="true" href="#4-worked-example-a-2019-amc-10a-13-style">#</a></h3>
+<blockquote>
+<p>A rectangle has integer side lengths and diagonal $10$.</p>
+<p>What is its area?</p></blockquote>
+<p>Recognize $6^{2}+8^{2}=10^{2}$.</p>
+<p>So sides are $6$ and $8$; area $=48$.</p>
+<p><em>(Trick: no need to list every factor of 100; the only primitive triple with hypotenuse 10 is 6-8-10.)</em></p>
+<hr>
+<h3 id="5-worked-example-b-perimeter-trap">5 Worked Example B (Perimeter trap)<a hidden class="anchor" aria-hidden="true" href="#5-worked-example-b-perimeter-trap">#</a></h3>
+<blockquote>
+<p>In right $\triangle ABC$ with $\angle C=90^{\circ}$, the altitude from $C$ to $\overline{AB}$ has length $6$ and divides $AB$ into segments of lengths $8$ and $18$.</p>
+<p>Find the perimeter of $\triangle ABC$.</p></blockquote>
+<ol>
+<li>
+<p>If $CD\perp AB,; AD=8,; DB=18$.</p>
+</li>
+<li>
+<p>Right-triangle altitude theorem: $CD^{2}=AD\cdot DB$.</p>
+<ul>
+<li>Check: $6^{2}=36=8\cdot18=144$ ? False ⇒ numbers are scaled.</li>
+<li>Instead, note that $AD:DB = AC^{2}:BC^{2}$ (similarity).</li>
+</ul>
+</li>
+<li>
+<p>Let $AC= x,; BC = y$. Then $\dfrac{8}{18} = \dfrac{x^{2}}{y^{2}}\Rightarrow \dfrac{4}{9}=\dfrac{x^{2}}{y^{2}}\Rightarrow x:y=2:3$.</p>
+</li>
+<li>
+<p>Hypotenuse $AB=8+18=26$. So scale factor $k$ satisfies</p>
+<p>$(2k)^{2}+(3k)^{2}=26^{2}\Longrightarrow 4k^{2}+9k^{2}=13k^{2}=676\Rightarrow k^{2}=52\Rightarrow k=2\sqrt{13}$.</p>
+</li>
+<li>
+<p>Perimeter $= 2k+3k+26 = 5k+26 = 10\sqrt{13}+26$.</p>
+</li>
+</ol>
+<p>Although radical appears, the <strong>2-3-√13 ratio</strong> came from the underlying primitive triple $(2,3,\sqrt{13}),$ scaled to meet the integer hypotenuse 26.</p>
+<hr>
+<h3 id="6-recognition-checklist">6 Recognition checklist<a hidden class="anchor" aria-hidden="true" href="#6-recognition-checklist">#</a></h3>
+<ul>
+<li><strong>Is the hypotenuse an even integer ≤ 65 ?</strong> ⇒ Only a few candidate triples exist.</li>
+<li><strong>Do two sides differ by 1?</strong> ⇒ Likely 20,21,29 or its multiple.</li>
+<li><strong>Product of two numbers is a perfect square</strong> in an altitude-theorem setup? Triple lurking.</li>
+<li><strong>Perfect squares + perfect squares in the expression</strong> of areas/perimeters: see if difference is a square.</li>
+</ul>
+<hr>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://xhx.github.io/tags/amc10/">Amc10</a></li>
+      <li><a href="https://xhx.github.io/tags/geometry/">Geometry</a></li>
+      <li><a href="https://xhx.github.io/tags/pythagorean/">Pythagorean</a></li>
+      <li><a href="https://xhx.github.io/tags/triples/">Triples</a></li>
+      <li><a href="https://xhx.github.io/tags/perimeter/">Perimeter</a></li>
+      <li><a href="https://xhx.github.io/tags/mathematics/">Mathematics</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

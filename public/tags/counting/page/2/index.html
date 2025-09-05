@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Counting | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="">
+<meta name="description" content="Personal website of Xiaohui Xie featuring mathematics, teaching, and research">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="https://xhx.github.io/tags/counting/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xhx.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://xhx.github.io/tags/counting/index.xml">
+<link rel="alternate" hreflang="en" href="https://xhx.github.io/tags/counting/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+<meta property="og:url" content="https://xhx.github.io/tags/counting/">
+  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
+  <meta property="og:title" content="Counting">
+  <meta property="og:description" content="Personal website of Xiaohui Xie featuring mathematics, teaching, and research">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Counting">
+<meta name="twitter:description" content="Personal website of Xiaohui Xie featuring mathematics, teaching, and research">
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/tags/">Tags</a></div>
+  <h1>
+    Counting
+    <a href="/tags/counting/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Recurrences &amp; Generating Functions
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🔄 Recurrences &amp; Generating Functions Advanced AMC-12 techniques for solving complex counting problems.
+🎯 Key Ideas Recurrence Relations A way to define a sequence by relating each term to previous terms.
+Generating Functions A way to encode a sequence as coefficients of a power series.
+When to Use Complex counting problems with constraints Problems involving sequences or patterns AMC-12 level problems 💡 Micro-Examples Basic Recurrence Problem: How many ways can you climb $n$ stairs if you can take 1 or 2 steps at a time? Solution: $a_n = a_{n-1} &#43; a_{n-2}$ with $a_1 = 1, a_2 = 2$ (Fibonacci sequence) Generating Function Problem: How many ways can you make change for $n$ cents using pennies, nickels, and dimes? Solution: $(1 &#43; x &#43; x^2 &#43; \cdots)(1 &#43; x^5 &#43; x^{10} &#43; \cdots)(1 &#43; x^{10} &#43; x^{20} &#43; \cdots)$ ⚠️ Common Traps &amp; Fixes Trap: Using recurrences when simple counting works Wrong: “How many ways to arrange 5 people in a line?” = Recurrence Right: $5! = 120$ (simple counting) Trap: Forgetting initial conditions Wrong: “Fibonacci sequence” = $F_n = F_{n-1} &#43; F_{n-2}$ (missing initial conditions) Right: $F_n = F_{n-1} &#43; F_{n-2}$ with $F_1 = 1, F_2 = 1$ 🏆 AMC-Style Worked Example Problem: How many ways can you tile a $2 \times n$ rectangle with $1 \times 2$ dominoes?
+...</p>
+  </div>
+  <footer class="entry-footer">2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Recurrences & Generating Functions" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/recurrences-gf/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Seating &amp; Restrictions
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>💺 Seating &amp; Restrictions Problems involving arranging people or objects with adjacency, spacing, or other constraints.
+🎯 Recognition Cues Keywords: “sit together”, “adjacent”, “next to”, “between”, “spacing” Setup: People around a table, in a line, or in specific positions Constraints: Who can sit where, who must be together, who must be apart 📋 Solution Template Identify the constraint type:
+Adjacency (must sit together) Spacing (must be apart) Fixed positions Gender/role restrictions Apply the appropriate method:
+...</p>
+  </div>
+  <footer class="entry-footer">2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Seating & Restrictions" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/seatings-restrictions/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Word Rearrangements
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>📝 Word Rearrangements Problems involving arranging letters with repetition, position constraints, and other restrictions.
+🎯 Recognition Cues Keywords: “arrange letters”, “rearrange”, “anagram”, “word”, “string” Setup: Letters with or without repetition Constraints: Specific positions, first/last letters, adjacency, patterns 📋 Solution Template Identify the letter types:
+All distinct letters Some repeated letters Indistinguishable letters Apply the appropriate formula:
+All distinct: $n!$ arrangements Some repeated: $\frac{n!}{n_1!n_2!\cdots n_k!}$ (multinomial) Indistinguishable: $\binom{n}{k}$ (choose positions) Apply constraints:
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Word Rearrangements" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/word-rearrangements/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Committees &amp; Conditions
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>👥 Committees &amp; Conditions Problems involving selecting people for roles with various constraints and requirements.
+🎯 Recognition Cues Keywords: “choose”, “select”, “committee”, “team”, “president”, “vice-president” Setup: Selecting people from a group for specific roles Constraints: Gender requirements, role assignments, leadership positions 📋 Solution Template Identify the selection type:
+Ordered selection: Roles matter (president ≠ vice-president) Unordered selection: Roles don’t matter (committee members) Mixed: Some roles matter, others don’t Apply the appropriate method:
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Committees & Conditions" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/committees-and-conditions/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Balls in Bins
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🏀 Balls in Bins Problems involving distributing identical objects into containers with various constraints.
+🎯 Recognition Cues Keywords: “distribute”, “identical”, “balls”, “bins”, “boxes”, “containers” Setup: Identical objects being placed into distinct containers Constraints: Minimum/maximum per container, total number constraints 📋 Solution Template Identify the constraint type:
+No constraints: Use stars and bars directly Minimum per container: Use substitution Maximum per container: Use inclusion-exclusion Mixed constraints: Combine methods Apply the appropriate formula:
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Balls in Bins" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/balls-in-bins/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">At Least/At Most
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>⚖️ At Least/At Most Problems involving “at least” and “at most” constraints, solved using complement counting or inclusion-exclusion.
+🎯 Recognition Cues Keywords: “at least”, “at most”, “at most”, “no more than”, “at least one”, “exactly” Setup: Counting with constraints on minimum or maximum occurrences Constraints: Numerical bounds on counts or probabilities 📋 Solution Template Identify the constraint type:
+At least: Use complement counting (total - “less than”) At most: Use complement counting (total - “more than”) Exactly: Direct counting or inclusion-exclusion Choose the appropriate method:
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to At Least/At Most" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/at-least-at-most/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Grid Paths
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🗺️ Grid Paths Problems involving counting paths on a grid with various constraints and restrictions.
+🎯 Recognition Cues Keywords: “path”, “walk”, “grid”, “lattice”, “right and up”, “diagonal” Setup: Moving on a grid from one point to another Constraints: Blocked squares, diagonal moves, specific directions 📋 Solution Template Identify the path type:
+Basic lattice path: Only right and up moves Diagonal path: Includes diagonal moves Blocked path: Some squares are off-limits Apply the appropriate method:
+...</p>
+  </div>
+  <footer class="entry-footer">2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Grid Paths" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/grid-paths/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Derangements
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🔄 Derangements Permutations where no element appears in its original position, solved using inclusion-exclusion.
+🎯 Recognition Cues Keywords: “derangement”, “no fixed points”, “no one in original position”, “hat problem” Setup: Arranging objects so none are in their original position Constraints: All elements must be moved from their original positions 📋 Solution Template Identify the derangement problem:
+All elements must move: No element in original position Some elements must move: Use inclusion-exclusion Mixed constraints: Combine derangements with other constraints Apply the appropriate method:
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Derangements" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/derangements/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Circular Permutations
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🔄 Circular Permutations Arranging objects in a circle with considerations for rotation and reflection symmetry.
+🎯 Recognition Cues Keywords: “around a table”, “in a circle”, “on a ring”, “circular”, “round” Setup: Objects arranged in a circular pattern Constraints: Rotation symmetry, reflection symmetry, fixed positions 📋 Solution Template Identify the symmetry type:
+Rotation only: Use $(n-1)!$ formula Rotation &#43; reflection: Use $\frac{(n-1)!}{2}$ formula Fixed positions: Fix some elements, arrange the rest Apply the appropriate method:
+...</p>
+  </div>
+  <footer class="entry-footer">2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Circular Permutations" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/circular-permutations/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Digit Counting
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🔢 Digit Counting Problems involving counting numbers based on their digits, divisibility rules, and base representations.
+🎯 Recognition Cues Keywords: “digits”, “divisible by”, “base”, “leading zeros”, “palindrome” Setup: Numbers with specific digit properties Constraints: Digit sums, divisibility, base conversions 📋 Solution Template Identify the digit property:
+Divisibility: Use divisibility rules Digit sum: Use digit counting techniques Base representation: Use base conversion methods Apply the appropriate method:
+Divisibility: Use modular arithmetic Digit sum: Use generating functions or casework Base representation: Use place value system Check for special cases:
+...</p>
+  </div>
+  <footer class="entry-footer">2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Digit Counting" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/digit-counting/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://xhx.github.io/tags/counting/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="https://xhx.github.io/tags/counting/page/3/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

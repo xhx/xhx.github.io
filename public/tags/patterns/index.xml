@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Patterns on Xiaohui Xie&#39;s Site</title>
+    <link>https://xhx.github.io/tags/patterns/</link>
+    <description>Recent content in Patterns on Xiaohui Xie&#39;s Site</description>
+    <generator>Hugo -- 0.149.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xhx.github.io/tags/patterns/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Top 20 AMC 10 Geometry Problem Types</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/problem-types/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/problem-types/</guid>
+      <description>Master these essential problem patterns for AMC 10 geometry success</description>
+    </item>
+  </channel>
+</rss>

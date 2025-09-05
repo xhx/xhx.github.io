@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Counting &amp; Probability Mastery Guide | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Counting, Probability, Combinatorics, Study Guide">
+<meta name="description" content="Comprehensive AMC 10 &amp; AMC 12 counting and probability study guide with problem patterns, formulas, and strategies.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xhx.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/index.xml">
+<link rel="alternate" hreflang="en" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+<meta property="og:url" content="https://xhx.github.io/notes/math/amc/amc10/counting-probability/">
+  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
+  <meta property="og:title" content="Counting & Probability Mastery Guide">
+  <meta property="og:description" content="Comprehensive AMC 10 &amp; AMC 12 counting and probability study guide with problem patterns, formulas, and strategies.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Counting &amp; Probability Mastery Guide">
+<meta name="twitter:description" content="Comprehensive AMC 10 &amp; AMC 12 counting and probability study guide with problem patterns, formulas, and strategies.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Notes",
+      "item": "https://xhx.github.io/notes/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Mathematics Notes",
+      "item": "https://xhx.github.io/notes/math/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "AMC Problems",
+      "item": "https://xhx.github.io/notes/math/amc/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "AMC 10",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Counting \u0026 Probability Mastery Guide",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/"
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/">Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/">AMC 10</a></div>
+  <h1>
+    Counting &amp; Probability Mastery Guide
+    <a href="/notes/math/amc/amc10/counting-probability/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+  <div class="post-description">
+    Comprehensive AMC 10 &amp; AMC 12 counting and probability study guide with problem patterns, formulas, and strategies.
+  </div>
+</header>
+<div class="post-content"><h1 id="-counting--probability-mastery-guide">🎯 Counting &amp; Probability Mastery Guide<a hidden class="anchor" aria-hidden="true" href="#-counting--probability-mastery-guide">#</a></h1>
+<p>Welcome to your complete <strong>AMC 10 &amp; AMC 12 Counting &amp; Probability</strong> study resource! This guide is designed to take you from basic principles to contest-ready problem-solving strategies.</p>
+<h2 id="-navigation-map">🗺️ Navigation Map<a hidden class="anchor" aria-hidden="true" href="#-navigation-map">#</a></h2>
+<h3 id="-reference-materials">📘 Reference Materials<a hidden class="anchor" aria-hidden="true" href="#-reference-materials">#</a></h3>
+<ul>
+<li><strong><a href="01-reference/scope-map">Scope Map</a></strong> - AMC 10 vs AMC 12 topic coverage</li>
+<li><strong><a href="01-reference/notation-cheatsheet">Notation Cheatsheet</a></strong> - Essential symbols and formulas</li>
+<li><strong><a href="01-reference/concept-atlas">Concept Atlas</a></strong> - Quick primers on all topics</li>
+</ul>
+<h3 id="-core-topics">🧭 Core Topics<a hidden class="anchor" aria-hidden="true" href="#-core-topics">#</a></h3>
+<ul>
+<li><strong><a href="02-topics/counting-principles">Counting Principles</a></strong> - Sum, product, complement rules</li>
+<li><strong><a href="02-topics/permutations-combinations">Permutations &amp; Combinations</a></strong> - Arrangements and selections</li>
+<li><strong><a href="02-topics/stars-and-bars">Stars &amp; Bars</a></strong> - Integer solution counting</li>
+<li><strong><a href="02-topics/inclusion-exclusion">Inclusion-Exclusion</a></strong> - Overlapping set counting</li>
+<li><strong><a href="02-topics/probability-basics">Probability Basics</a></strong> - Conditional probability and independence</li>
+<li><strong><a href="02-topics/expected-value">Expected Value</a></strong> - Linearity and indicators</li>
+</ul>
+<h3 id="-problem-patterns">🧩 Problem Patterns<a hidden class="anchor" aria-hidden="true" href="#-problem-patterns">#</a></h3>
+<ul>
+<li><strong><a href="03-problem-types/seatings-restrictions">Seating &amp; Restrictions</a></strong> - Adjacency and spacing problems</li>
+<li><strong><a href="03-problem-types/word-rearrangements">Word Rearrangements</a></strong> - Letter arrangements with constraints</li>
+<li><strong><a href="03-problem-types/grid-paths">Grid Paths</a></strong> - Lattice path counting</li>
+<li><strong><a href="03-problem-types/at-least-at-most">At Least/At Most</a></strong> - Complement and PIE strategies</li>
+</ul>
+<h3 id="-quick-reference">📏 Quick Reference<a hidden class="anchor" aria-hidden="true" href="#-quick-reference">#</a></h3>
+<ul>
+<li><strong><a href="04-formulas/essential-formulas">Essential Formulas</a></strong> - Complete formula bank</li>
+<li><strong><a href="05-tips/problem-solving-tips">Problem-Solving Tips</a></strong> - Strategies and checklists</li>
+</ul>
+<h2 id="-how-to-use-this-guide">🎯 How to Use This Guide<a hidden class="anchor" aria-hidden="true" href="#-how-to-use-this-guide">#</a></h2>
+<ol>
+<li><strong>Start with Reference</strong> - Check the scope map to see what&rsquo;s tested at your level</li>
+<li><strong>Master Core Topics</strong> - Work through each topic systematically</li>
+<li><strong>Practice Patterns</strong> - Use problem types to recognize common setups</li>
+<li><strong>Memorize Formulas</strong> - Keep the essential formulas handy</li>
+<li><strong>Apply Strategies</strong> - Use the tips section for problem-solving approaches</li>
+</ol>
+<h2 id="-contest-strategy">🏆 Contest Strategy<a hidden class="anchor" aria-hidden="true" href="#-contest-strategy">#</a></h2>
+<ul>
+<li><strong>AMC 10</strong>: Focus on basic counting, simple probability, and fundamental formulas</li>
+<li><strong>AMC 12</strong>: Add advanced topics like generating functions, complex probability distributions</li>
+<li><strong>Time Management</strong>: Use symmetry and complement principles to avoid casework</li>
+<li><strong>Common Traps</strong>: Watch for indistinguishable objects, circular arrangements, and replacement vs. no-replacement</li>
+</ul>
+<hr>
+<p><em>Ready to master counting and probability? Start with the <a href="01-reference/">Reference Materials</a> or jump directly to <a href="02-topics/">Core Topics</a>.</em></p>
+
+
+</div>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Reference Materials
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>📘 Reference Materials Essential reference materials for AMC counting and probability problems. Use these as quick lookups while studying or during contests.
+📋 Quick Navigation Scope Map - AMC 10 vs AMC 12 topic coverage matrix Notation Cheatsheet - Symbols, operations, and probability notation Concept Atlas - One-paragraph primers on all major topics 🎯 How to Use This Section Before studying: Check the scope map to see what’s tested at your level While learning: Use the notation cheatsheet for symbol meanings During practice: Reference the concept atlas for quick topic refreshers Contest prep: Bookmark the most relevant pages for your level 📚 Study Flow Start with the Scope Map to understand what’s expected Review the Notation Cheatsheet to learn the language Use the Concept Atlas for topic-specific primers Return here for quick lookups during practice Next: Scope Map → Notation Cheatsheet → Concept Atlas
+...</p>
+  </div>
+  <footer class="entry-footer">1 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Reference Materials" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Core Topics
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🧭 Core Topics Master the fundamental counting and probability concepts that form the foundation of AMC problems.
+📚 Topic Overview 🔢 Basic Counting Counting Principles - Addition, multiplication, and complement rules Permutations &amp; Combinations - Arrangements and selections Binomial &amp; Multinomial - Advanced counting identities 🎯 Advanced Counting Inclusion-Exclusion - Overlapping set counting Pigeonhole Principle - Bounds and existence proofs Stars &amp; Bars - Integer solution counting Symmetry &amp; Invariance - Reducing cases through symmetry 🎲 Probability Probability Basics - Conditional probability and independence Expected Value - Linearity and indicators Distributions - Binomial, geometric, and hypergeometric 🔄 Advanced Topics Recurrences &amp; Generating Functions - AMC 12 advanced techniques 🎯 Study Strategy Start with Basic Counting - Master the fundamental principles Practice Permutations &amp; Combinations - These appear in most problems Learn Advanced Counting - Essential for harder AMC problems Master Probability - Critical for both AMC 10 and 12 Explore Advanced Topics - For AMC 12 and challenging problems 📊 Topic Dependencies graph TD A[Counting Principles] --&gt; B[Permutations &amp; Combinations] B --&gt; C[Binomial &amp; Multinomial] A --&gt; D[Inclusion-Exclusion] A --&gt; E[Stars &amp; Bars] B --&gt; F[Probability Basics] F --&gt; G[Expected Value] F --&gt; H[Distributions] C --&gt; I[Recurrences &amp; GF] E --&gt; I 🏆 Contest Tips AMC 10: Focus on basic counting, permutations/combinations, and simple probability AMC 12: Add advanced counting techniques, expected value, and distributions Time management: Use symmetry and complement principles to avoid casework Common traps: Watch for indistinguishable objects and replacement vs. no-replacement Start with Counting Principles or jump to Permutations &amp; Combinations
+...</p>
+  </div>
+  <footer class="entry-footer">2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Core Topics" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Problem Types
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🧩 Problem Types A comprehensive catalog of common AMC counting and probability problem patterns with recognition cues and solution templates.
+📚 Problem Type Overview 🔢 Basic Counting Patterns Seating &amp; Restrictions - Adjacency and spacing problems Word Rearrangements - Letter arrangements with constraints Committees &amp; Conditions - Selection with roles and constraints Balls in Bins - Integer solutions and distribution problems 🎯 Advanced Counting Patterns At Least/At Most - Complement and inclusion-exclusion strategies Grid Paths - Lattice walks with restrictions Circular Permutations - Ring arrangements and reflections Derangements - No element in original position 🎲 Probability Patterns Urn, Coin &amp; String Problems - Replacement vs. no-replacement Expected Counts - Indicator variables and linearity Conditional Chains - Total probability and Bayes Symmetry Probability - Random choices via symmetry 🔍 Specialized Patterns Hypergeo vs Binomial - Distribution recognition Digit Counting - Divisibility and base representations 🎯 How to Use This Section Recognition: Learn the cues that identify each problem type Template: Follow the solution template for each type Practice: Work through the AMC-style examples Pitfalls: Study common mistakes and how to avoid them 📊 Problem Type Matrix Problem Type AMC 10 AMC 12 Key Technique Seating &amp; Restrictions ✅ Core ✅ Core Adjacency method Word Rearrangements ✅ Core ✅ Core Permutations with repetition Committees &amp; Conditions ✅ Core ✅ Core Combinations with constraints Balls in Bins ⚠️ Stretch ✅ Often Stars and bars At Least/At Most ⚠️ Stretch ✅ Often Complement counting Grid Paths ✅ Often ✅ Core Lattice path counting Circular Permutations ⚠️ Stretch ✅ Often $(n-1)!$ formula Derangements ❌ No ✅ Stretch Inclusion-exclusion Expected Counts ❌ No ✅ Often Linearity of expectation Conditional Chains ⚠️ Stretch ✅ Often Total probability 🏆 Contest Strategy AMC 10: Focus on basic counting patterns and simple probability AMC 12: Master all patterns, especially advanced counting and probability Recognition: Practice identifying problem types quickly Templates: Memorize solution approaches for common types Start with Seating &amp; Restrictions or Word Rearrangements
+...</p>
+  </div>
+  <footer class="entry-footer">2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Problem Types" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Essential Formulas
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>📏 Essential Formulas Complete formula bank for AMC counting and probability problems with usage notes and micro-examples.
+📚 Formula Categories 🔢 Basic Counting Addition Principle: $|A \cup B| = |A| &#43; |B| - |A \cap B|$ Multiplication Principle: $|A \times B| = |A| \cdot |B|$ Complement: $|A^c| = |S| - |A|$ 🔄 Permutations &amp; Combinations Permutations: $P(n,k) = \frac{n!}{(n-k)!}$ Combinations: $\binom{n}{k} = \frac{n!}{k!(n-k)!}$ Circular permutations: $(n-1)!$ (no reflection) or $\frac{(n-1)!}{2}$ (with reflection) Multinomial: $\binom{n}{k_1,k_2,\ldots,k_r} = \frac{n!}{k_1!k_2!\cdots k_r!}$ 🎯 Advanced Counting Stars and bars (nonnegative): $\binom{n&#43;k-1}{k-1}$ Stars and bars (positive): $\binom{n-1}{k-1}$ Inclusion-exclusion (2 sets): $|A \cup B| = |A| &#43; |B| - |A \cap B|$ Inclusion-exclusion (3 sets): $|A \cup B \cup C| = |A| &#43; |B| &#43; |C| - |A \cap B| - |A \cap C| - |B \cap C| &#43; |A \cap B \cap C|$ Pigeonhole bound: At least $\lceil \frac{n}{k} \rceil$ objects in one box 🎲 Probability Basic probability: $P(A) = \frac{\text{favorable outcomes}}{\text{total outcomes}}$ Conditional probability: $P(A \mid B) = \frac{P(A \cap B)}{P(B)}$ Independence: $P(A \cap B) = P(A)P(B)$ Law of total probability: $P(A) = \sum_i P(A \mid B_i)P(B_i)$ Bayes’ theorem: $P(B_i \mid A) = \frac{P(A \mid B_i)P(B_i)}{P(A)}$ 📊 Expected Value Expected value: $\mathbb{E}[X] = \sum_x x \cdot P(X = x)$ Linearity: $\mathbb{E}[X &#43; Y] = \mathbb{E}[X] &#43; \mathbb{E}[Y]$ Indicators: $\mathbb{E}[I_A] = P(A)$ 📈 Distributions Binomial: $P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$, $\mathbb{E}[X] = np$ Geometric: $P(X = k) = (1-p)^{k-1} p$, $\mathbb{E}[X] = \frac{1}{p}$ Hypergeometric: $P(X = k) = \frac{\binom{K}{k}\binom{N-K}{n-k}}{\binom{N}{n}}$ 🔄 Special Arrangements Derangements: $!n = n! \sum_{k=0}^{n} \frac{(-1)^k}{k!}$ 🎯 How to Use This Section Quick Reference: Use as a lookup table during practice Contest Prep: Memorize the most common formulas Problem Solving: Identify which formula applies to your problem Verification: Check your work against these formulas 📊 Formula Priority by Level AMC 10 Essential Basic counting principles Permutations and combinations Basic probability Simple expected value AMC 12 Essential Everything from AMC 10 Advanced counting (stars and bars, inclusion-exclusion) Expected value and linearity Probability distributions Next: Essential Formulas → Problem-Solving Tips
+...</p>
+  </div>
+  <footer class="entry-footer">2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Essential Formulas" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/04-formulas/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Problem-Solving Tips
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🧠 Problem-Solving Tips Heuristics, checklists, and strategies for solving AMC counting and probability problems efficiently.
+📚 Tip Categories 🎯 Recognition Strategies Problem Type Identification: Quick cues to identify problem patterns Constraint Analysis: How to spot and handle different types of constraints Symmetry Detection: When and how to use symmetry principles 🔧 Solution Techniques Complement Counting: When to use “total - unwanted” approach Casework Discipline: How to organize and avoid overcounting Indicator Variables: Using linearity of expectation effectively ⚠️ Common Pitfalls Overcounting Alarms: Warning signs of double-counting Indistinguishable Items: When objects are the same vs. different Replacement Confusion: With vs. without replacement scenarios 🏆 Contest Strategy Time Management: How to allocate time effectively Problem Prioritization: Which problems to tackle first Answer Verification: Quick sanity checks for your solutions 🎯 How to Use This Section Before Practice: Review the recognition strategies During Practice: Use the solution techniques After Practice: Check against the common pitfalls Contest Day: Apply the contest strategy 📊 Tip Priority by Level AMC 10 Essential Basic recognition strategies Simple solution techniques Common pitfall avoidance Time management basics AMC 12 Essential Advanced recognition strategies Complex solution techniques Advanced pitfall avoidance Sophisticated contest strategy Next: Problem-Solving Tips → Back to Topics
+...</p>
+  </div>
+  <footer class="entry-footer">1 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Problem-Solving Tips" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/05-tips/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/">
+      «&nbsp;Prev&nbsp;
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

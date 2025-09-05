@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Probability Distributions | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Probability, Distributions, Binomial">
+<meta name="description" content="Binomial, geometric, negative binomial, and hypergeometric distributions with AMC examples.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/distributions/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xhx.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/distributions/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+<meta property="og:url" content="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/distributions/">
+  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
+  <meta property="og:title" content="Probability Distributions">
+  <meta property="og:description" content="Binomial, geometric, negative binomial, and hypergeometric distributions with AMC examples.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:tag" content="Amc10">
+    <meta property="article:tag" content="AMC12">
+    <meta property="article:tag" content="Probability">
+    <meta property="article:tag" content="Distributions">
+    <meta property="article:tag" content="Binomial">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Probability Distributions">
+<meta name="twitter:description" content="Binomial, geometric, negative binomial, and hypergeometric distributions with AMC examples.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Notes",
+      "item": "https://xhx.github.io/notes/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Mathematics Notes",
+      "item": "https://xhx.github.io/notes/math/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "AMC Problems",
+      "item": "https://xhx.github.io/notes/math/amc/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "AMC 10",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Counting \u0026 Probability Mastery Guide",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Core Topics",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  7 ,
+      "name": "Probability Distributions",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/distributions/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Probability Distributions",
+  "name": "Probability Distributions",
+  "description": "Binomial, geometric, negative binomial, and hypergeometric distributions with AMC examples.",
+  "keywords": [
+    "AMC10", "AMC12", "Probability", "Distributions", "Binomial"
+  ],
+  "articleBody": "📈 Probability Distributions Common probability models that frequently appear in AMC problems.\n🎯 Key Ideas Binomial Distribution Counts successes in $n$ independent trials with probability $p$ of success each. $$P(X = k) = \\binom{n}{k} p^k (1-p)^{n-k}$$ $$\\mathbb{E}[X] = np, \\quad \\text{Var}(X) = np(1-p)$$\nGeometric Distribution Counts trials until first success in independent trials with probability $p$ of success. $$P(X = k) = (1-p)^{k-1} p$$ $$\\mathbb{E}[X] = \\frac{1}{p}, \\quad \\text{Var}(X) = \\frac{1-p}{p^2}$$\nHypergeometric Distribution Counts successes in sampling without replacement from a finite population. $$P(X = k) = \\frac{\\binom{K}{k}\\binom{N-K}{n-k}}{\\binom{N}{n}}$$ where $N$ = total population, $K$ = successes in population, $n$ = sample size.\n💡 Micro-Examples Binomial Distribution Problem: What’s the probability of exactly 3 heads in 5 coin flips? Solution: $P(X = 3) = \\binom{5}{3} \\left(\\frac{1}{2}\\right)^3 \\left(\\frac{1}{2}\\right)^2 = \\frac{10}{32} = \\frac{5}{16}$ Geometric Distribution Problem: What’s the probability the first 6 appears on the 4th die roll? Solution: $P(X = 4) = \\left(\\frac{5}{6}\\right)^3 \\cdot \\frac{1}{6} = \\frac{125}{1296}$ Hypergeometric Distribution Problem: What’s the probability of exactly 2 red balls in 5 draws from an urn with 10 red and 15 blue balls? Solution: $P(X = 2) = \\frac{\\binom{10}{2}\\binom{15}{3}}{\\binom{25}{5}} = \\frac{45 \\cdot 455}{53130} = \\frac{20475}{53130} = \\frac{1365}{3542}$ ⚠️ Common Traps \u0026 Fixes Trap: Confusing binomial and hypergeometric Wrong: “Drawing 5 cards with replacement” = Hypergeometric Right: “Drawing 5 cards with replacement” = Binomial (with replacement) Trap: Forgetting the “until first success” in geometric Wrong: “What’s the probability of exactly 3 failures before success?” = Geometric Right: “What’s the probability of exactly 3 failures before success?” = Geometric with $k = 4$ Trap: Misapplying hypergeometric formula Wrong: “What’s the probability of exactly 2 aces in 5 cards?” = $\\frac{\\binom{4}{2}\\binom{48}{3}}{\\binom{52}{5}}$ Right: This is actually correct! $N = 52$, $K = 4$, $n = 5$, $k = 2$. 🏆 AMC-Style Worked Example Problem: A bag contains 6 red balls and 4 blue balls. You draw 3 balls without replacement. What’s the expected number of red balls?\nSolution:\nMethod 1: Using hypergeometric distribution\n$N = 10$, $K = 6$, $n = 3$ $\\mathbb{E}[X] = n \\cdot \\frac{K}{N} = 3 \\cdot \\frac{6}{10} = \\frac{18}{10} = 1.8$ Method 2: Using indicators\nLet $I_i$ be 1 if ball $i$ is red, 0 otherwise $\\mathbb{E}[\\text{red balls}] = \\mathbb{E}[I_1 + I_2 + I_3] = 3 \\cdot \\frac{6}{10} = 1.8$ Key insight: Both methods give the same answer! The hypergeometric approach is often more direct.\n🔗 Related Topics Probability Basics - Foundation for distributions Expected Value - Expected values of distributions Hypergeo vs Binomial - When to use which distribution Next: Symmetry \u0026 Invariance → Recurrences \u0026 GF\n",
+  "wordCount" : "424",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Xiaohui Xie"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/distributions/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Xiaohui Xie's Site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xhx.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/">Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/">Counting &amp; Probability Mastery Guide</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/">Core Topics</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Probability Distributions
+    </h1>
+    <div class="post-description">
+      Binomial, geometric, negative binomial, and hypergeometric distributions with AMC examples.
+    </div>
+    <div class="post-meta">2 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-probability-distributions" aria-label="📈 Probability Distributions">📈 Probability Distributions</a><ul>
+                        
+                <li>
+                    <a href="#-key-ideas" aria-label="🎯 Key Ideas">🎯 Key Ideas</a><ul>
+                        
+                <li>
+                    <a href="#binomial-distribution" aria-label="Binomial Distribution">Binomial Distribution</a></li>
+                <li>
+                    <a href="#geometric-distribution" aria-label="Geometric Distribution">Geometric Distribution</a></li>
+                <li>
+                    <a href="#hypergeometric-distribution" aria-label="Hypergeometric Distribution">Hypergeometric Distribution</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-micro-examples" aria-label="💡 Micro-Examples">💡 Micro-Examples</a><ul>
+                        
+                <li>
+                    <a href="#binomial-distribution-1" aria-label="Binomial Distribution">Binomial Distribution</a></li>
+                <li>
+                    <a href="#geometric-distribution-1" aria-label="Geometric Distribution">Geometric Distribution</a></li>
+                <li>
+                    <a href="#hypergeometric-distribution-1" aria-label="Hypergeometric Distribution">Hypergeometric Distribution</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-common-traps--fixes" aria-label="⚠️ Common Traps &amp; Fixes">⚠️ Common Traps &amp; Fixes</a><ul>
+                        
+                <li>
+                    <a href="#trap-confusing-binomial-and-hypergeometric" aria-label="Trap: Confusing binomial and hypergeometric">Trap: Confusing binomial and hypergeometric</a></li>
+                <li>
+                    <a href="#trap-forgetting-the-until-first-success-in-geometric" aria-label="Trap: Forgetting the &ldquo;until first success&rdquo; in geometric">Trap: Forgetting the &ldquo;until first success&rdquo; in geometric</a></li>
+                <li>
+                    <a href="#trap-misapplying-hypergeometric-formula" aria-label="Trap: Misapplying hypergeometric formula">Trap: Misapplying hypergeometric formula</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-amc-style-worked-example" aria-label="🏆 AMC-Style Worked Example">🏆 AMC-Style Worked Example</a></li>
+                <li>
+                    <a href="#-related-topics" aria-label="🔗 Related Topics">🔗 Related Topics</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-probability-distributions">📈 Probability Distributions<a hidden class="anchor" aria-hidden="true" href="#-probability-distributions">#</a></h1>
+<p>Common probability models that frequently appear in AMC problems.</p>
+<h2 id="-key-ideas">🎯 Key Ideas<a hidden class="anchor" aria-hidden="true" href="#-key-ideas">#</a></h2>
+<h3 id="binomial-distribution">Binomial Distribution<a hidden class="anchor" aria-hidden="true" href="#binomial-distribution">#</a></h3>
+<p>Counts successes in $n$ independent trials with probability $p$ of success each.
+$$P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$$
+$$\mathbb{E}[X] = np, \quad \text{Var}(X) = np(1-p)$$</p>
+<h3 id="geometric-distribution">Geometric Distribution<a hidden class="anchor" aria-hidden="true" href="#geometric-distribution">#</a></h3>
+<p>Counts trials until first success in independent trials with probability $p$ of success.
+$$P(X = k) = (1-p)^{k-1} p$$
+$$\mathbb{E}[X] = \frac{1}{p}, \quad \text{Var}(X) = \frac{1-p}{p^2}$$</p>
+<h3 id="hypergeometric-distribution">Hypergeometric Distribution<a hidden class="anchor" aria-hidden="true" href="#hypergeometric-distribution">#</a></h3>
+<p>Counts successes in sampling without replacement from a finite population.
+$$P(X = k) = \frac{\binom{K}{k}\binom{N-K}{n-k}}{\binom{N}{n}}$$
+where $N$ = total population, $K$ = successes in population, $n$ = sample size.</p>
+<h2 id="-micro-examples">💡 Micro-Examples<a hidden class="anchor" aria-hidden="true" href="#-micro-examples">#</a></h2>
+<h3 id="binomial-distribution-1">Binomial Distribution<a hidden class="anchor" aria-hidden="true" href="#binomial-distribution-1">#</a></h3>
+<ul>
+<li><strong>Problem</strong>: What&rsquo;s the probability of exactly 3 heads in 5 coin flips?</li>
+<li><strong>Solution</strong>: $P(X = 3) = \binom{5}{3} \left(\frac{1}{2}\right)^3 \left(\frac{1}{2}\right)^2 = \frac{10}{32} = \frac{5}{16}$</li>
+</ul>
+<h3 id="geometric-distribution-1">Geometric Distribution<a hidden class="anchor" aria-hidden="true" href="#geometric-distribution-1">#</a></h3>
+<ul>
+<li><strong>Problem</strong>: What&rsquo;s the probability the first 6 appears on the 4th die roll?</li>
+<li><strong>Solution</strong>: $P(X = 4) = \left(\frac{5}{6}\right)^3 \cdot \frac{1}{6} = \frac{125}{1296}$</li>
+</ul>
+<h3 id="hypergeometric-distribution-1">Hypergeometric Distribution<a hidden class="anchor" aria-hidden="true" href="#hypergeometric-distribution-1">#</a></h3>
+<ul>
+<li><strong>Problem</strong>: What&rsquo;s the probability of exactly 2 red balls in 5 draws from an urn with 10 red and 15 blue balls?</li>
+<li><strong>Solution</strong>: $P(X = 2) = \frac{\binom{10}{2}\binom{15}{3}}{\binom{25}{5}} = \frac{45 \cdot 455}{53130} = \frac{20475}{53130} = \frac{1365}{3542}$</li>
+</ul>
+<h2 id="-common-traps--fixes">⚠️ Common Traps &amp; Fixes<a hidden class="anchor" aria-hidden="true" href="#-common-traps--fixes">#</a></h2>
+<h3 id="trap-confusing-binomial-and-hypergeometric"><strong>Trap</strong>: Confusing binomial and hypergeometric<a hidden class="anchor" aria-hidden="true" href="#trap-confusing-binomial-and-hypergeometric">#</a></h3>
+<ul>
+<li><strong>Wrong</strong>: &ldquo;Drawing 5 cards with replacement&rdquo; = Hypergeometric</li>
+<li><strong>Right</strong>: &ldquo;Drawing 5 cards with replacement&rdquo; = Binomial (with replacement)</li>
+</ul>
+<h3 id="trap-forgetting-the-until-first-success-in-geometric"><strong>Trap</strong>: Forgetting the &ldquo;until first success&rdquo; in geometric<a hidden class="anchor" aria-hidden="true" href="#trap-forgetting-the-until-first-success-in-geometric">#</a></h3>
+<ul>
+<li><strong>Wrong</strong>: &ldquo;What&rsquo;s the probability of exactly 3 failures before success?&rdquo; = Geometric</li>
+<li><strong>Right</strong>: &ldquo;What&rsquo;s the probability of exactly 3 failures before success?&rdquo; = Geometric with $k = 4$</li>
+</ul>
+<h3 id="trap-misapplying-hypergeometric-formula"><strong>Trap</strong>: Misapplying hypergeometric formula<a hidden class="anchor" aria-hidden="true" href="#trap-misapplying-hypergeometric-formula">#</a></h3>
+<ul>
+<li><strong>Wrong</strong>: &ldquo;What&rsquo;s the probability of exactly 2 aces in 5 cards?&rdquo; = $\frac{\binom{4}{2}\binom{48}{3}}{\binom{52}{5}}$</li>
+<li><strong>Right</strong>: This is actually correct! $N = 52$, $K = 4$, $n = 5$, $k = 2$.</li>
+</ul>
+<h2 id="-amc-style-worked-example">🏆 AMC-Style Worked Example<a hidden class="anchor" aria-hidden="true" href="#-amc-style-worked-example">#</a></h2>
+<p><strong>Problem</strong>: A bag contains 6 red balls and 4 blue balls. You draw 3 balls without replacement. What&rsquo;s the expected number of red balls?</p>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>
+<p><strong>Method 1</strong>: Using hypergeometric distribution</p>
+<ul>
+<li>$N = 10$, $K = 6$, $n = 3$</li>
+<li>$\mathbb{E}[X] = n \cdot \frac{K}{N} = 3 \cdot \frac{6}{10} = \frac{18}{10} = 1.8$</li>
+</ul>
+</li>
+<li>
+<p><strong>Method 2</strong>: Using indicators</p>
+<ul>
+<li>Let $I_i$ be 1 if ball $i$ is red, 0 otherwise</li>
+<li>$\mathbb{E}[\text{red balls}] = \mathbb{E}[I_1 + I_2 + I_3] = 3 \cdot \frac{6}{10} = 1.8$</li>
+</ul>
+</li>
+</ul>
+<p><strong>Key insight</strong>: Both methods give the same answer! The hypergeometric approach is often more direct.</p>
+<h2 id="-related-topics">🔗 Related Topics<a hidden class="anchor" aria-hidden="true" href="#-related-topics">#</a></h2>
+<ul>
+<li><strong><a href="probability-basics">Probability Basics</a></strong> - Foundation for distributions</li>
+<li><strong><a href="expected-value">Expected Value</a></strong> - Expected values of distributions</li>
+<li><strong><a href="03-problem-types/hypergeo-vs-binomial">Hypergeo vs Binomial</a></strong> - When to use which distribution</li>
+</ul>
+<hr>
+<p><em>Next: <a href="symmetry-invariance">Symmetry &amp; Invariance</a> → <a href="recurrences-gf">Recurrences &amp; GF</a></em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://xhx.github.io/tags/amc10/">Amc10</a></li>
+      <li><a href="https://xhx.github.io/tags/amc12/">AMC12</a></li>
+      <li><a href="https://xhx.github.io/tags/probability/">Probability</a></li>
+      <li><a href="https://xhx.github.io/tags/distributions/">Distributions</a></li>
+      <li><a href="https://xhx.github.io/tags/binomial/">Binomial</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

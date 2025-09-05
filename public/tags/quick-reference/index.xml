@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Quick-Reference on Xiaohui Xie&#39;s Site</title>
+    <link>http://localhost:1313/tags/quick-reference/</link>
+    <description>Recent content in Quick-Reference on Xiaohui Xie&#39;s Site</description>
+    <generator>Hugo -- 0.149.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/quick-reference/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quick Reference</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/geometry/quick-reference/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/quick-reference/</guid>
+      <description>Essential formulas, strategies, and pattern recognition for AMC 10 geometry</description>
+    </item>
+  </channel>
+</rss>

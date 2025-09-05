@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Pigeonhole Principle | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Counting, Pigeonhole, Bounds">
+<meta name="description" content="Bounds, colorings, and existence proofs using the pigeonhole principle with tight examples.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/pigeonhole/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xhx.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/pigeonhole/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+<meta property="og:url" content="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/pigeonhole/">
+  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
+  <meta property="og:title" content="Pigeonhole Principle">
+  <meta property="og:description" content="Bounds, colorings, and existence proofs using the pigeonhole principle with tight examples.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:tag" content="Amc10">
+    <meta property="article:tag" content="AMC12">
+    <meta property="article:tag" content="Counting">
+    <meta property="article:tag" content="Pigeonhole">
+    <meta property="article:tag" content="Bounds">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Pigeonhole Principle">
+<meta name="twitter:description" content="Bounds, colorings, and existence proofs using the pigeonhole principle with tight examples.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Notes",
+      "item": "https://xhx.github.io/notes/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Mathematics Notes",
+      "item": "https://xhx.github.io/notes/math/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "AMC Problems",
+      "item": "https://xhx.github.io/notes/math/amc/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "AMC 10",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Counting \u0026 Probability Mastery Guide",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Core Topics",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  7 ,
+      "name": "Pigeonhole Principle",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/pigeonhole/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Pigeonhole Principle",
+  "name": "Pigeonhole Principle",
+  "description": "Bounds, colorings, and existence proofs using the pigeonhole principle with tight examples.",
+  "keywords": [
+    "AMC10", "AMC12", "Counting", "Pigeonhole", "Bounds"
+  ],
+  "articleBody": "🕳️ Pigeonhole Principle A simple but powerful principle for proving existence results and finding bounds.\n🎯 Key Ideas Basic Pigeonhole Principle If you have more pigeons than holes, at least one hole must contain multiple pigeons.\nFormal statement: If $n$ objects are placed into $k$ boxes with $n \u003e k$, then at least one box contains more than one object.\nGeneralized Pigeonhole Principle If $n$ objects are placed into $k$ boxes, then at least one box contains at least $\\lceil \\frac{n}{k} \\rceil$ objects.\n💡 Micro-Examples Basic Example Problem: Prove that in any group of 13 people, at least two have the same birthday month. Solution: 13 people (pigeons) into 12 months (holes). Since $13 \u003e 12$, at least one month has at least 2 people. Generalized Example Problem: In a group of 25 people, how many must share the same birthday month? Solution: 25 people into 12 months. At least one month has at least $\\lceil \\frac{25}{12} \\rceil = 3$ people. Divisibility Example Problem: Show that among any 51 integers, two have the same remainder when divided by 50. Solution: 51 integers (pigeons) into 50 possible remainders (holes). Since $51 \u003e 50$, at least two integers have the same remainder. ⚠️ Common Traps \u0026 Fixes Trap: Using the wrong number of holes Wrong: “In a group of 13 people, at least two have the same birthday” (365 holes, not 12) Right: “In a group of 13 people, at least two have the same birthday month” (12 holes) Trap: Forgetting the ceiling function Wrong: “In 25 people, at least $\\frac{25}{12} = 2.08$ share a birthday month” Right: “In 25 people, at least $\\lceil \\frac{25}{12} \\rceil = 3$ share a birthday month” Trap: Confusing existence with counting Wrong: “How many people must share a birthday month?” = “At least how many people must share a birthday month?” Right: The pigeonhole principle gives existence, not exact counts. 🏆 AMC-Style Worked Example Problem: What is the minimum number of people needed to guarantee that at least 3 people have the same birthday month?\nSolution:\nStep 1: We want at least 3 people in the same month Step 2: Use the generalized pigeonhole principle Step 3: We need $\\lceil \\frac{n}{12} \\rceil \\geq 3$ Step 4: This means $\\frac{n}{12} \u003e 2$, so $n \u003e 24$ Step 5: The minimum $n$ is 25 Answer: 25 people Key insight: The generalized pigeonhole principle gives tight bounds!\n🔗 Related Topics Counting Principles - Foundation for existence proofs Symmetry \u0026 Invariance - Alternative approaches to existence Bounds \u0026 Limits - Advanced pigeonhole applications Next: Stars \u0026 Bars → Probability Basics\n",
+  "wordCount" : "430",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Xiaohui Xie"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/pigeonhole/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Xiaohui Xie's Site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xhx.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/">Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/">Counting &amp; Probability Mastery Guide</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/">Core Topics</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Pigeonhole Principle
+    </h1>
+    <div class="post-description">
+      Bounds, colorings, and existence proofs using the pigeonhole principle with tight examples.
+    </div>
+    <div class="post-meta">3 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-pigeonhole-principle" aria-label="🕳️ Pigeonhole Principle">🕳️ Pigeonhole Principle</a><ul>
+                        
+                <li>
+                    <a href="#-key-ideas" aria-label="🎯 Key Ideas">🎯 Key Ideas</a><ul>
+                        
+                <li>
+                    <a href="#basic-pigeonhole-principle" aria-label="Basic Pigeonhole Principle">Basic Pigeonhole Principle</a></li>
+                <li>
+                    <a href="#generalized-pigeonhole-principle" aria-label="Generalized Pigeonhole Principle">Generalized Pigeonhole Principle</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-micro-examples" aria-label="💡 Micro-Examples">💡 Micro-Examples</a><ul>
+                        
+                <li>
+                    <a href="#basic-example" aria-label="Basic Example">Basic Example</a></li>
+                <li>
+                    <a href="#generalized-example" aria-label="Generalized Example">Generalized Example</a></li>
+                <li>
+                    <a href="#divisibility-example" aria-label="Divisibility Example">Divisibility Example</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-common-traps--fixes" aria-label="⚠️ Common Traps &amp; Fixes">⚠️ Common Traps &amp; Fixes</a><ul>
+                        
+                <li>
+                    <a href="#trap-using-the-wrong-number-of-holes" aria-label="Trap: Using the wrong number of holes">Trap: Using the wrong number of holes</a></li>
+                <li>
+                    <a href="#trap-forgetting-the-ceiling-function" aria-label="Trap: Forgetting the ceiling function">Trap: Forgetting the ceiling function</a></li>
+                <li>
+                    <a href="#trap-confusing-existence-with-counting" aria-label="Trap: Confusing existence with counting">Trap: Confusing existence with counting</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-amc-style-worked-example" aria-label="🏆 AMC-Style Worked Example">🏆 AMC-Style Worked Example</a></li>
+                <li>
+                    <a href="#-related-topics" aria-label="🔗 Related Topics">🔗 Related Topics</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-pigeonhole-principle">🕳️ Pigeonhole Principle<a hidden class="anchor" aria-hidden="true" href="#-pigeonhole-principle">#</a></h1>
+<p>A simple but powerful principle for proving existence results and finding bounds.</p>
+<h2 id="-key-ideas">🎯 Key Ideas<a hidden class="anchor" aria-hidden="true" href="#-key-ideas">#</a></h2>
+<h3 id="basic-pigeonhole-principle">Basic Pigeonhole Principle<a hidden class="anchor" aria-hidden="true" href="#basic-pigeonhole-principle">#</a></h3>
+<p>If you have more pigeons than holes, at least one hole must contain multiple pigeons.</p>
+<p><strong>Formal statement</strong>: If $n$ objects are placed into $k$ boxes with $n &gt; k$, then at least one box contains more than one object.</p>
+<h3 id="generalized-pigeonhole-principle">Generalized Pigeonhole Principle<a hidden class="anchor" aria-hidden="true" href="#generalized-pigeonhole-principle">#</a></h3>
+<p>If $n$ objects are placed into $k$ boxes, then at least one box contains at least $\lceil \frac{n}{k} \rceil$ objects.</p>
+<h2 id="-micro-examples">💡 Micro-Examples<a hidden class="anchor" aria-hidden="true" href="#-micro-examples">#</a></h2>
+<h3 id="basic-example">Basic Example<a hidden class="anchor" aria-hidden="true" href="#basic-example">#</a></h3>
+<ul>
+<li><strong>Problem</strong>: Prove that in any group of 13 people, at least two have the same birthday month.</li>
+<li><strong>Solution</strong>: 13 people (pigeons) into 12 months (holes). Since $13 &gt; 12$, at least one month has at least 2 people.</li>
+</ul>
+<h3 id="generalized-example">Generalized Example<a hidden class="anchor" aria-hidden="true" href="#generalized-example">#</a></h3>
+<ul>
+<li><strong>Problem</strong>: In a group of 25 people, how many must share the same birthday month?</li>
+<li><strong>Solution</strong>: 25 people into 12 months. At least one month has at least $\lceil \frac{25}{12} \rceil = 3$ people.</li>
+</ul>
+<h3 id="divisibility-example">Divisibility Example<a hidden class="anchor" aria-hidden="true" href="#divisibility-example">#</a></h3>
+<ul>
+<li><strong>Problem</strong>: Show that among any 51 integers, two have the same remainder when divided by 50.</li>
+<li><strong>Solution</strong>: 51 integers (pigeons) into 50 possible remainders (holes). Since $51 &gt; 50$, at least two integers have the same remainder.</li>
+</ul>
+<h2 id="-common-traps--fixes">⚠️ Common Traps &amp; Fixes<a hidden class="anchor" aria-hidden="true" href="#-common-traps--fixes">#</a></h2>
+<h3 id="trap-using-the-wrong-number-of-holes"><strong>Trap</strong>: Using the wrong number of holes<a hidden class="anchor" aria-hidden="true" href="#trap-using-the-wrong-number-of-holes">#</a></h3>
+<ul>
+<li><strong>Wrong</strong>: &ldquo;In a group of 13 people, at least two have the same birthday&rdquo; (365 holes, not 12)</li>
+<li><strong>Right</strong>: &ldquo;In a group of 13 people, at least two have the same birthday month&rdquo; (12 holes)</li>
+</ul>
+<h3 id="trap-forgetting-the-ceiling-function"><strong>Trap</strong>: Forgetting the ceiling function<a hidden class="anchor" aria-hidden="true" href="#trap-forgetting-the-ceiling-function">#</a></h3>
+<ul>
+<li><strong>Wrong</strong>: &ldquo;In 25 people, at least $\frac{25}{12} = 2.08$ share a birthday month&rdquo;</li>
+<li><strong>Right</strong>: &ldquo;In 25 people, at least $\lceil \frac{25}{12} \rceil = 3$ share a birthday month&rdquo;</li>
+</ul>
+<h3 id="trap-confusing-existence-with-counting"><strong>Trap</strong>: Confusing existence with counting<a hidden class="anchor" aria-hidden="true" href="#trap-confusing-existence-with-counting">#</a></h3>
+<ul>
+<li><strong>Wrong</strong>: &ldquo;How many people must share a birthday month?&rdquo; = &ldquo;At least how many people must share a birthday month?&rdquo;</li>
+<li><strong>Right</strong>: The pigeonhole principle gives existence, not exact counts.</li>
+</ul>
+<h2 id="-amc-style-worked-example">🏆 AMC-Style Worked Example<a hidden class="anchor" aria-hidden="true" href="#-amc-style-worked-example">#</a></h2>
+<p><strong>Problem</strong>: What is the minimum number of people needed to guarantee that at least 3 people have the same birthday month?</p>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li><strong>Step 1</strong>: We want at least 3 people in the same month</li>
+<li><strong>Step 2</strong>: Use the generalized pigeonhole principle</li>
+<li><strong>Step 3</strong>: We need $\lceil \frac{n}{12} \rceil \geq 3$</li>
+<li><strong>Step 4</strong>: This means $\frac{n}{12} &gt; 2$, so $n &gt; 24$</li>
+<li><strong>Step 5</strong>: The minimum $n$ is 25</li>
+<li><strong>Answer</strong>: 25 people</li>
+</ul>
+<p><strong>Key insight</strong>: The generalized pigeonhole principle gives tight bounds!</p>
+<h2 id="-related-topics">🔗 Related Topics<a hidden class="anchor" aria-hidden="true" href="#-related-topics">#</a></h2>
+<ul>
+<li><strong><a href="counting-principles">Counting Principles</a></strong> - Foundation for existence proofs</li>
+<li><strong><a href="symmetry-invariance">Symmetry &amp; Invariance</a></strong> - Alternative approaches to existence</li>
+<li><strong><a href="03-problem-types/bounds-problems">Bounds &amp; Limits</a></strong> - Advanced pigeonhole applications</li>
+</ul>
+<hr>
+<p><em>Next: <a href="stars-and-bars">Stars &amp; Bars</a> → <a href="probability-basics">Probability Basics</a></em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://xhx.github.io/tags/amc10/">Amc10</a></li>
+      <li><a href="https://xhx.github.io/tags/amc12/">AMC12</a></li>
+      <li><a href="https://xhx.github.io/tags/counting/">Counting</a></li>
+      <li><a href="https://xhx.github.io/tags/pigeonhole/">Pigeonhole</a></li>
+      <li><a href="https://xhx.github.io/tags/bounds/">Bounds</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

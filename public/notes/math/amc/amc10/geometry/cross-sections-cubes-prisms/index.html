@@ -5,11 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Xiaohui Xie&#39;s Site</title>
-<meta name="keywords" content="">
-<meta name="description" content="#16 – Cross-Sections of Cubes &amp; Prisms
-A single slanted plane can slice a cube (or right prism) into elegant polygons—triangles, rectangles, pentagons, and the famous regular hexagon.  AMC questions usually want the area or perimeter of that slice, or occasionally to recognize the shape.
-(The 3-D plot illustrates the classic “mid-mid-mid” cut: a plane through the midpoints of three edges emanating from one vertex of a unit cube.  The intersection is a regular hexagon.)">
+<title>Cross-Sections of Cubes &amp; Prisms | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="amc10, geometry, 3d, cross-sections, cubes, mathematics">
+<meta name="description" content="AMC 10 Geometry: Cross-Sections of Cubes &amp; Prisms">
 <meta name="author" content="Xiaohui Xie">
 <link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/geometry/cross-sections-cubes-prisms/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
@@ -122,19 +120,22 @@ A single slanted plane can slice a cube (or right prism) into elegant polygons�
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/">Geometry</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/">AMC 10 Geometry Mastery Guide</a></div>
     <h1 class="post-title entry-hint-parent">
-      
+      Cross-Sections of Cubes &amp; Prisms
     </h1>
-    <div class="post-meta">3 min&nbsp;·&nbsp;Xiaohui Xie
+    <div class="post-description">
+      AMC 10 Geometry: Cross-Sections of Cubes &amp; Prisms
+    </div>
+    <div class="post-meta"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Xiaohui Xie
 
 </div>
   </header> 
   <div class="post-content"><h1 id="16--cross-sections-of-cubes--prisms">#16 – Cross-Sections of Cubes &amp; Prisms<a hidden class="anchor" aria-hidden="true" href="#16--cross-sections-of-cubes--prisms">#</a></h1>
 <p>A single slanted plane can slice a cube (or right prism) into elegant polygons—triangles, rectangles, pentagons, <em>and</em> the famous regular hexagon.  AMC questions usually want the <strong>area</strong> or <strong>perimeter</strong> of that slice, or occasionally to recognize the shape.</p>
-<p><em>(The 3-D plot illustrates the classic “mid-mid-mid” cut: a plane through the midpoints of three edges emanating from one vertex of a unit cube.  The intersection is a <strong>regular hexagon</strong>.)</em></p>
+<p><em>(The 3-D plot illustrates the classic &ldquo;mid-mid-mid&rdquo; cut: a plane through the midpoints of three edges emanating from one vertex of a unit cube.  The intersection is a <strong>regular hexagon</strong>.)</em></p>
 <hr>
-<h3 id="1key-observations--tricks">1 Key Observations &amp; Tricks<a hidden class="anchor" aria-hidden="true" href="#1key-observations--tricks">#</a></h3>
+<h3 id="1-key-observations--tricks">1 Key Observations &amp; Tricks<a hidden class="anchor" aria-hidden="true" href="#1-key-observations--tricks">#</a></h3>
 <table>
   <thead>
       <tr>
@@ -150,9 +151,9 @@ A single slanted plane can slice a cube (or right prism) into elegant polygons�
           <td>All six edge–plane intersections are equidistant from the vertex; symmetry of cube forces equal edges &amp; angles.</td>
       </tr>
       <tr>
-          <td>Plane through three vertices, one from each pair of opposite faces (e.g.\ (1,0,0),(0,1,0),(0,0,1)(1,0,0),(0,1,0),(0,0,1))</td>
+          <td>Plane through three vertices, one from each pair of opposite faces (e.g.\ $(1,0,0),(0,1,0),(0,0,1)$)</td>
           <td><strong>Equilateral triangle</strong></td>
-          <td>Coordinates satisfy x+y+z=1x+y+z=1.</td>
+          <td>Coordinates satisfy $x+y+z=1$.</td>
       </tr>
       <tr>
           <td>Plane parallel to a face cuts prism</td>
@@ -162,19 +163,19 @@ A single slanted plane can slice a cube (or right prism) into elegant polygons�
       <tr>
           <td>Plane through opposite edges of a cube</td>
           <td><strong>Rectangle</strong> whose sides are face-diagonals</td>
-          <td>Cross-section is the “unfolded elevator.”</td>
+          <td>Cross-section is the &ldquo;unfolded elevator.&rdquo;</td>
       </tr>
   </tbody>
 </table>
 <p><strong>Vector method:</strong></p>
 <ol>
-<li>Give cube corners coordinates (0/1’s).</li>
-<li>Write plane ax+by+cz=dax+by+cz=d.</li>
-<li>Intersect with each of the 12 edges; keep 0 ≤ t ≤ 1 points.</li>
+<li>Give cube corners coordinates (0/1&rsquo;s).</li>
+<li>Write plane $ax+by+cz=d$.</li>
+<li>Intersect with each of the 12 edges; keep $0 \leq t \leq 1$ points.</li>
 <li>Collect &amp; sort: polygon vertices; use dot-products for side lengths.</li>
 </ol>
 <hr>
-<h3 id="2canonical-amc-prompts--fast-routes">2 Canonical AMC Prompts &amp; Fast Routes<a hidden class="anchor" aria-hidden="true" href="#2canonical-amc-prompts--fast-routes">#</a></h3>
+<h3 id="2-canonical-amc-prompts--fast-routes">2 Canonical AMC Prompts &amp; Fast Routes<a hidden class="anchor" aria-hidden="true" href="#2-canonical-amc-prompts--fast-routes">#</a></h3>
 <table>
   <thead>
       <tr>
@@ -184,58 +185,58 @@ A single slanted plane can slice a cube (or right prism) into elegant polygons�
   </thead>
   <tbody>
       <tr>
-          <td>“Plane cuts cube through midpoints of three edges that meet at a vertex; find the area”</td>
-          <td>Regular hexagon with side s=32s=\tfrac{\sqrt3}{2}; area =332s2=\tfrac{3\sqrt3}{2}s^{2}. For unit cube s=22s=\tfrac{\sqrt2}{2} → area 334\tfrac{3\sqrt3}{4}.</td>
+          <td>&ldquo;Plane cuts cube through midpoints of three edges that meet at a vertex; find the area&rdquo;</td>
+          <td>Regular hexagon with side $s=\tfrac{\sqrt3}{2}$; area $=\tfrac{3\sqrt3}{2}s^{2}$. For unit cube $s=\tfrac{\sqrt2}{2}$ → area $\tfrac{3\sqrt3}{4}$.</td>
       </tr>
       <tr>
-          <td>“Plane through (1,0,0),(0,1,0),(0,0,1)(1,0,0),(0,1,0),(0,0,1)”</td>
-          <td>Equilateral triangle of side 2\sqrt2; area =34(2)2=32=\tfrac{\sqrt3}{4}( \sqrt2 )^{2}= \tfrac{\sqrt3}{2}.</td>
+          <td>&ldquo;Plane through $(1,0,0),(0,1,0),(0,0,1)$&rdquo;</td>
+          <td>Equilateral triangle of side $\sqrt2$; area $= \tfrac{\sqrt3}{4}( \sqrt2 )^{2}= \tfrac{\sqrt3}{2}$.</td>
       </tr>
       <tr>
-          <td>“Slice a 2×3×62\times3\times6 prism by plane joining three non-adjacent vertices”</td>
+          <td>&ldquo;Slice a $2 \times 3 \times 6$ prism by plane joining three non-adjacent vertices&rdquo;</td>
           <td>Treat as box: coordinates; compute using 3-D distance + Heron.</td>
       </tr>
       <tr>
-          <td>“Cross-section is a rectangle; find its perimeter in terms of a,b,ca,b,c”</td>
-          <td>Recognize faces; diagonal rectangle sides =a2+b2=\sqrt{a^{2}+b^{2}} etc.</td>
+          <td>&ldquo;Cross-section is a rectangle; find its perimeter in terms of $a,b,c$&rdquo;</td>
+          <td>Recognize faces; diagonal rectangle sides $=\sqrt{a^{2}+b^{2}}$ etc.</td>
       </tr>
   </tbody>
 </table>
 <hr>
-<h3 id="3worked-example-a--regular-hexagon-slice">3 Worked Example A – Regular Hexagon Slice<a hidden class="anchor" aria-hidden="true" href="#3worked-example-a--regular-hexagon-slice">#</a></h3>
+<h3 id="3-worked-example-a--regular-hexagon-slice">3 Worked Example A – Regular Hexagon Slice<a hidden class="anchor" aria-hidden="true" href="#3-worked-example-a--regular-hexagon-slice">#</a></h3>
 <blockquote>
 <p>A unit cube is cut by a plane through the midpoints of three edges that share a vertex.</p>
 <p>Find the area of the cross-section.</p></blockquote>
 <ol>
 <li>
-<p>Coordinates of midpoints: M1(½,0,0),M2(0,½,0),M3(0,0,½)M_1(½,0,0), M_2(0,½,0), M_3(0,0,½).</p>
-<p>Plane: x+y+z=½.x + y + z = ½.</p>
+<p>Coordinates of midpoints: $M_1(½,0,0), M_2(0,½,0), M_3(0,0,½)$.</p>
+<p>Plane: $x + y + z = ½$.</p>
 </li>
 <li>
 <p>Plane meets <strong>each</strong> of the other nine edges; symmetry ⇒ regular hexagon.</p>
 </li>
 <li>
-<p>Side length ss: distance between M1M_1 and intersection on edge (1,0,0) ⁣→ ⁣(1,1,0)(1,0,0)!\to!(1,1,0).</p>
-<p>Point solves 1+t=½⇒t=−½1 + t = ½\Rightarrow t=-½ ⇒ actually choose M1M_1 to (½,0,0)→(0,½,0)(½, 0, 0) \to (0, ½, 0) distance</p>
-<p>s=(½)2+(½)2=22.s=\sqrt{(½)^{2}+(½)^{2}} = \tfrac{\sqrt2}{2}.</p>
+<p>Side length $s$: distance between $M_1$ and intersection on edge $(1,0,0) !\to!(1,1,0)$.</p>
+<p>Point solves $1 + t = ½\Rightarrow t=-½$ ⇒ actually choose $M_1$ to $(½, 0, 0) \to (0, ½, 0)$ distance</p>
+<p>$s=\sqrt{(½)^{2}+(½)^{2}} = \tfrac{\sqrt2}{2}$.</p>
 </li>
 <li>
-<p>Area hexagon =332s2=332⋅12=334.= \tfrac{3\sqrt3}{2}s^{2}= \tfrac{3\sqrt3}{2}\cdot \tfrac{1}{2}= \boxed{\tfrac{3\sqrt3}{4}}.</p>
+<p>Area hexagon $= \tfrac{3\sqrt3}{2}s^{2}= \tfrac{3\sqrt3}{2}\cdot \tfrac{1}{2}= \boxed{\tfrac{3\sqrt3}{4}}$.</p>
 </li>
 </ol>
 <p>AMC answer list invariably includes that value.</p>
 <hr>
-<h3 id="4worked-example-b--triangle-through-three-face-centers">4 Worked Example B – Triangle Through Three Face Centers<a hidden class="anchor" aria-hidden="true" href="#4worked-example-b--triangle-through-three-face-centers">#</a></h3>
+<h3 id="4-worked-example-b--triangle-through-three-face-centers">4 Worked Example B – Triangle Through Three Face Centers<a hidden class="anchor" aria-hidden="true" href="#4-worked-example-b--triangle-through-three-face-centers">#</a></h3>
 <blockquote>
-<p>In a 4×4×44\times4\times4 cube, a plane goes through the centers of three faces that meet at one vertex.  What is the cross-section’s perimeter?</p></blockquote>
+<p>In a $4 \times 4 \times 4$ cube, a plane goes through the centers of three faces that meet at one vertex.  What is the cross-section&rsquo;s perimeter?</p></blockquote>
 <ol>
-<li>Face centers at (2,0,0),(0,2,0),(0,0,2)(2,0,0),(0,2,0),(0,0,2).</li>
-<li>Triangle is equilateral of side s=4s=4.</li>
-<li>Perimeter =12.=12.</li>
+<li>Face centers at $(2,0,0),(0,2,0),(0,0,2)$.</li>
+<li>Triangle is equilateral of side $s=4$.</li>
+<li>Perimeter $=12$.</li>
 </ol>
 <p>(Scaling by edge length is often quicker than re-deriving.)</p>
 <hr>
-<h3 id="5recognition--speed-tips">5 Recognition &amp; Speed Tips<a hidden class="anchor" aria-hidden="true" href="#5recognition--speed-tips">#</a></h3>
+<h3 id="5-recognition--speed-tips">5 Recognition &amp; Speed Tips<a hidden class="anchor" aria-hidden="true" href="#5-recognition--speed-tips">#</a></h3>
 <table>
   <thead>
       <tr>
@@ -245,20 +246,20 @@ A single slanted plane can slice a cube (or right prism) into elegant polygons�
   </thead>
   <tbody>
       <tr>
-          <td>“Midpoints of three edges out of a vertex”</td>
-          <td>Regular hexagon—memorize area 334 a2\tfrac{3\sqrt3}{4},a^{2} for edge aa.</td>
+          <td>&ldquo;Midpoints of three edges out of a vertex&rdquo;</td>
+          <td>Regular hexagon—memorize area $\tfrac{3\sqrt3}{4},a^{2}$ for edge $a$.</td>
       </tr>
       <tr>
-          <td>“Centers of three faces meeting at a vertex”</td>
-          <td>Equilateral triangle—side =2 a=\sqrt2,a.</td>
+          <td>&ldquo;Centers of three faces meeting at a vertex&rdquo;</td>
+          <td>Equilateral triangle—side $=\sqrt2,a$.</td>
       </tr>
       <tr>
-          <td>“Plane through opposite edges”</td>
-          <td>Rectangle with sides = face diagonals.</td>
+          <td>&ldquo;Plane through opposite edges&rdquo;</td>
+          <td>Rectangle with sides $=$ face diagonals.</td>
       </tr>
       <tr>
           <td>Many symmetric coordinates given</td>
-          <td>Use x+y+z=constx+y+z=\text{const} plane and symmetry.</td>
+          <td>Use $x+y+z=\text{const}$ plane and symmetry.</td>
       </tr>
   </tbody>
 </table>
@@ -270,7 +271,7 @@ A single slanted plane can slice a cube (or right prism) into elegant polygons�
 <p><em>Answer: a rectangle whose sides are face diagonals.</em></p>
 </li>
 <li>
-<p><strong>Unit cube, plane x+y+z=1x+y+z=1. Area?</strong></p>
+<p><strong>Unit cube, plane $x+y+z=1$. Area?</strong></p>
 <p>(Hint: triangle, compute directly.)</p>
 </li>
 </ol>
@@ -281,6 +282,12 @@ A single slanted plane can slice a cube (or right prism) into elegant polygons�
 
   <footer class="post-footer">
     <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">Amc10</a></li>
+      <li><a href="http://localhost:1313/tags/geometry/">Geometry</a></li>
+      <li><a href="http://localhost:1313/tags/3d/">3d</a></li>
+      <li><a href="http://localhost:1313/tags/cross-sections/">Cross-Sections</a></li>
+      <li><a href="http://localhost:1313/tags/cubes/">Cubes</a></li>
+      <li><a href="http://localhost:1313/tags/mathematics/">Mathematics</a></li>
     </ul>
 
   </footer>

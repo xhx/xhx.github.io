@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Euclidean Algorithm | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="amc10, amc12, euclidean-algorithm, gcd, number-theory, mathematics">
+<meta name="description" content="Master the Euclidean algorithm for finding GCD efficiently">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/number-theory/topic-guides/euclidean-algorithm/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/number-theory/topic-guides/euclidean-algorithm/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/number-theory/topic-guides/">Topic Guides</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Euclidean Algorithm
+    </h1>
+    <div class="post-description">
+      Master the Euclidean algorithm for finding GCD efficiently
+    </div>
+    <div class="post-meta"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="-euclidean-algorithm">🔢 Euclidean Algorithm<a hidden class="anchor" aria-hidden="true" href="#-euclidean-algorithm">#</a></h1>
+<p>Master the Euclidean algorithm for finding GCD efficiently in AMC 10/12 problems.</p>
+<h2 id="-what-is-the-euclidean-algorithm">🎯 What is the Euclidean Algorithm?<a hidden class="anchor" aria-hidden="true" href="#-what-is-the-euclidean-algorithm">#</a></h2>
+<p>The Euclidean algorithm is an efficient method for finding the greatest common divisor (GCD) of two integers. It&rsquo;s based on the principle that $\gcd(a,b) = \gcd(b, a \bmod b)$.</p>
+<h2 id="-the-algorithm">🔍 The Algorithm<a hidden class="anchor" aria-hidden="true" href="#-the-algorithm">#</a></h2>
+<h3 id="basic-steps">Basic Steps<a hidden class="anchor" aria-hidden="true" href="#basic-steps">#</a></h3>
+<ol>
+<li><strong>Start with two positive integers</strong> $a$ and $b$ where $a \geq b$</li>
+<li><strong>Apply the recurrence relation</strong>: $\gcd(a,b) = \gcd(b, a \bmod b)$</li>
+<li><strong>Continue until</strong> one of the numbers becomes 0</li>
+<li><strong>The non-zero number</strong> is the GCD</li>
+</ol>
+<h3 id="example-find-gcd48-18">Example: Find $\gcd(48, 18)$<a hidden class="anchor" aria-hidden="true" href="#example-find-gcd48-18">#</a></h3>
+<pre tabindex="0"><code>Step 1: gcd(48, 18) = gcd(18, 48 mod 18) = gcd(18, 12)
+Step 2: gcd(18, 12) = gcd(12, 18 mod 12) = gcd(12, 6)
+Step 3: gcd(12, 6) = gcd(6, 12 mod 6) = gcd(6, 0)
+Step 4: gcd(6, 0) = 6
+</code></pre><p><strong>Answer</strong>: $\gcd(48, 18) = 6$</p>
+<h2 id="-extended-euclidean-algorithm">📊 Extended Euclidean Algorithm<a hidden class="anchor" aria-hidden="true" href="#-extended-euclidean-algorithm">#</a></h2>
+<p>The extended Euclidean algorithm not only finds the GCD but also finds integers $x$ and $y$ such that $\gcd(a,b) = ax + by$ (Bézout&rsquo;s identity).</p>
+<h3 id="example-find-gcd48-18-and-express-it-as-48x--18y">Example: Find $\gcd(48, 18)$ and express it as $48x + 18y$<a hidden class="anchor" aria-hidden="true" href="#example-find-gcd48-18-and-express-it-as-48x--18y">#</a></h3>
+<p><strong>Step-by-step solution</strong>:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Step</th>
+          <th>a</th>
+          <th>b</th>
+          <th>q</th>
+          <th>r</th>
+          <th>x</th>
+          <th>y</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>48</td>
+          <td>18</td>
+          <td>2</td>
+          <td>12</td>
+          <td>1</td>
+          <td>-2</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>18</td>
+          <td>12</td>
+          <td>1</td>
+          <td>6</td>
+          <td>-1</td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>12</td>
+          <td>6</td>
+          <td>2</td>
+          <td>0</td>
+          <td>2</td>
+          <td>-5</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>6</td>
+          <td>0</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Working backwards</strong>:</p>
+<ul>
+<li>From step 3: $6 = 12 - 2 \cdot 6 = 12 - 2 \cdot (18 - 1 \cdot 12) = 3 \cdot 12 - 2 \cdot 18$</li>
+<li>From step 1: $12 = 48 - 2 \cdot 18$</li>
+<li>Substituting: $6 = 3 \cdot (48 - 2 \cdot 18) - 2 \cdot 18 = 3 \cdot 48 - 8 \cdot 18$</li>
+</ul>
+<p><strong>Answer</strong>: $\gcd(48, 18) = 6 = 3 \cdot 48 + (-8) \cdot 18$</p>
+<h2 id="-applications-in-amc-problems">🎯 Applications in AMC Problems<a hidden class="anchor" aria-hidden="true" href="#-applications-in-amc-problems">#</a></h2>
+<h3 id="1-solving-linear-diophantine-equations">1. Solving Linear Diophantine Equations<a hidden class="anchor" aria-hidden="true" href="#1-solving-linear-diophantine-equations">#</a></h3>
+<p><strong>Problem</strong>: Find all integer solutions to $48x + 18y = 6$</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Check if $\gcd(48, 18) = 6$ divides 6 ✓</li>
+<li>Find particular solution: $x_0 = 3, y_0 = -8$</li>
+<li>General solution: $x = 3 + \frac{18}{6}t = 3 + 3t$, $y = -8 - \frac{48}{6}t = -8 - 8t$</li>
+</ol>
+<h3 id="2-finding-modular-inverses">2. Finding Modular Inverses<a hidden class="anchor" aria-hidden="true" href="#2-finding-modular-inverses">#</a></h3>
+<p><strong>Problem</strong>: Find the modular inverse of 18 modulo 48</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Use extended Euclidean algorithm</li>
+<li>Find $x$ such that $18x \equiv 1 \pmod{48}$</li>
+<li>From above: $3 \cdot 48 + (-8) \cdot 18 = 6$</li>
+<li>Multiply by $\frac{1}{6}$: $\frac{1}{6} \cdot 48 + (-\frac{4}{3}) \cdot 18 = 1$</li>
+<li>Since $\gcd(18, 48) = 6 \neq 1$, no inverse exists</li>
+</ol>
+<h3 id="3-simplifying-fractions">3. Simplifying Fractions<a hidden class="anchor" aria-hidden="true" href="#3-simplifying-fractions">#</a></h3>
+<p><strong>Problem</strong>: Simplify $\frac{48}{18}$</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Find $\gcd(48, 18) = 6$</li>
+<li>Divide both numerator and denominator by 6</li>
+<li>$\frac{48}{18} = \frac{8}{3}$</li>
+</ol>
+<h2 id="-speed-techniques">⚡ Speed Techniques<a hidden class="anchor" aria-hidden="true" href="#-speed-techniques">#</a></h2>
+<h3 id="quick-recognition">Quick Recognition<a hidden class="anchor" aria-hidden="true" href="#quick-recognition">#</a></h3>
+<ol>
+<li><strong>Consecutive integers</strong>: $\gcd(n, n+1) = 1$</li>
+<li><strong>Even and odd</strong>: $\gcd(2n, 2n+1) = 1$</li>
+<li><strong>Powers of 2</strong>: $\gcd(2^a, 2^b) = 2^{\min(a,b)}$</li>
+<li><strong>Prime factors</strong>: If $p$ is prime, $\gcd(p, n) = 1$ or $p$</li>
+</ol>
+<h3 id="mental-math-shortcuts">Mental Math Shortcuts<a hidden class="anchor" aria-hidden="true" href="#mental-math-shortcuts">#</a></h3>
+<ol>
+<li><strong>Small numbers</strong>: Use prime factorization</li>
+<li><strong>Large numbers</strong>: Use Euclidean algorithm</li>
+<li><strong>Patterns</strong>: Look for common factors first</li>
+</ol>
+<h2 id="-common-problem-types">🧠 Common Problem Types<a hidden class="anchor" aria-hidden="true" href="#-common-problem-types">#</a></h2>
+<h3 id="type-1-find-gcd-of-two-numbers">Type 1: Find GCD of two numbers<a hidden class="anchor" aria-hidden="true" href="#type-1-find-gcd-of-two-numbers">#</a></h3>
+<p><strong>Strategy</strong>: Apply Euclidean algorithm directly</p>
+<p><strong>Example</strong>: Find $\gcd(123456, 789012)$
+<strong>Solution</strong>:</p>
+<pre tabindex="0"><code>gcd(123456, 789012) = gcd(789012, 123456) = gcd(123456, 789012 mod 123456)
+= gcd(123456, 123456) = 123456
+</code></pre><h3 id="type-2-solve-diophantine-equations">Type 2: Solve Diophantine equations<a hidden class="anchor" aria-hidden="true" href="#type-2-solve-diophantine-equations">#</a></h3>
+<p><strong>Strategy</strong>: Use extended Euclidean algorithm</p>
+<p><strong>Example</strong>: Find all positive integer solutions to $15x + 25y = 100$
+<strong>Solution</strong>:</p>
+<ol>
+<li>$\gcd(15, 25) = 5$ and $5 \mid 100$ ✓</li>
+<li>Particular solution: $x = 5, y = 1$</li>
+<li>General solution: $x = 5 + 5t, y = 1 - 3t$ for $t \geq 0$</li>
+</ol>
+<h3 id="type-3-find-modular-inverses">Type 3: Find modular inverses<a hidden class="anchor" aria-hidden="true" href="#type-3-find-modular-inverses">#</a></h3>
+<p><strong>Strategy</strong>: Use extended Euclidean algorithm</p>
+<p><strong>Example</strong>: Find $15^{-1} \pmod{26}$
+<strong>Solution</strong>:</p>
+<ol>
+<li>$\gcd(15, 26) = 1$ ✓</li>
+<li>Extended algorithm gives: $1 = 7 \cdot 15 + (-4) \cdot 26$</li>
+<li>$15^{-1} \equiv 7 \pmod{26}$</li>
+</ol>
+<h2 id="-common-mistakes-to-avoid">🚨 Common Mistakes to Avoid<a hidden class="anchor" aria-hidden="true" href="#-common-mistakes-to-avoid">#</a></h2>
+<ol>
+<li><strong>Wrong order</strong>: Make sure $a \geq b$ initially</li>
+<li><strong>Sign errors</strong>: Be careful with negative numbers</li>
+<li><strong>Forgetting to check existence</strong>: For Diophantine equations, check if $\gcd(a,b) \mid c$</li>
+<li><strong>Calculation errors</strong>: Double-check your arithmetic</li>
+</ol>
+<h2 id="-practice-problems">📚 Practice Problems<a hidden class="anchor" aria-hidden="true" href="#-practice-problems">#</a></h2>
+<h3 id="easy">Easy<a hidden class="anchor" aria-hidden="true" href="#easy">#</a></h3>
+<ol>
+<li>Find $\gcd(24, 36)$</li>
+<li>Find $\gcd(17, 13)$</li>
+<li>Find $\gcd(100, 25)$</li>
+</ol>
+<h3 id="medium">Medium<a hidden class="anchor" aria-hidden="true" href="#medium">#</a></h3>
+<ol>
+<li>Find all integer solutions to $12x + 18y = 30$</li>
+<li>Find the modular inverse of 7 modulo 19</li>
+<li>Simplify $\frac{84}{126}$</li>
+</ol>
+<h3 id="hard">Hard<a hidden class="anchor" aria-hidden="true" href="#hard">#</a></h3>
+<ol>
+<li>Find all positive integer solutions to $21x + 35y = 105$</li>
+<li>Find the smallest positive integer $x$ such that $15x \equiv 1 \pmod{26}$</li>
+<li>Find $\gcd(2^{100} - 1, 2^{50} - 1)$</li>
+</ol>
+<h2 id="-related-concepts">🔗 Related Concepts<a hidden class="anchor" aria-hidden="true" href="#-related-concepts">#</a></h2>
+<ul>
+<li><strong>Bézout&rsquo;s Identity</strong>: $\gcd(a,b) = ax + by$ for some integers $x, y$</li>
+<li><strong>Linear Diophantine Equations</strong>: $ax + by = c$ has solutions iff $\gcd(a,b) \mid c$</li>
+<li><strong>Modular Inverses</strong>: $a^{-1} \pmod{m}$ exists iff $\gcd(a,m) = 1$</li>
+<li><strong>LCM Relationship</strong>: $\gcd(a,b) \cdot \text{lcm}(a,b) = ab$</li>
+</ul>
+<hr>
+<h2 id="-related-resources">📚 Related Resources<a hidden class="anchor" aria-hidden="true" href="#-related-resources">#</a></h2>
+<ul>
+<li><a href="../essential-formulas">🔢 Essential Formulas</a> - Complete formula reference</li>
+<li><a href="../problem-solving-tips">💡 Problem-Solving Tips</a> - Strategies and techniques</li>
+<li><a href="../problem-types">🎯 Problem Types</a> - Complete list of essential problem patterns</li>
+<li><a href="../reference-guide">📖 Reference Guide</a> - Comprehensive number theory reference</li>
+</ul>
+<hr>
+<p><em>Master the Euclidean algorithm and you&rsquo;ll be able to solve many GCD-related problems efficiently!</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">Amc10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/euclidean-algorithm/">Euclidean-Algorithm</a></li>
+      <li><a href="http://localhost:1313/tags/gcd/">Gcd</a></li>
+      <li><a href="http://localhost:1313/tags/number-theory/">Number-Theory</a></li>
+      <li><a href="http://localhost:1313/tags/mathematics/">Mathematics</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

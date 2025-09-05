@@ -51,14 +51,15 @@ Application of deep learning to computational genomics and biomedical challenges
 
 ## 📚 Research & Publications
 
-Please see **[Google Scholar](https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID&sortby=pubdate)** for research projects ongoing in his group and search for recent publications.
+Our research spans cutting-edge topics in AI/ML, Computer Vision, and AI for Science. Explore our latest publications, ongoing projects, and open-source contributions through the links below. 
+<!-- Visit our **[Google Scholar](https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID&sortby=pubdate)** profile for recent publications, check out the **[XIE Lab GitHub](https://github.com/uci-cbcl)** repository for open-source research code. -->
 
 <div style="display: flex; gap: 1.2rem; flex-wrap: wrap; margin: 1.5rem 0; justify-content: center;">
   <a href="https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID&sortby=pubdate" style="display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.8rem 1.6rem; background: #4285f4; color: white; text-decoration: none; border-radius: 10px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 3px 12px rgba(66, 133, 244, 0.25);">
     <img src="/images/Google_Scholar_logo.svg.png" alt="Google Scholar" width="24" height="24" style="display: inline-block;">
     Google Scholar
   </a>
-  <a href="https://www.ics.uci.edu/~xhx/" style="display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.8rem 1.6rem; background: #ff6b35; color: white; text-decoration: none; border-radius: 10px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 3px 12px rgba(255, 107, 53, 0.25);">
+  <a href="https://www.ics.uci.edu/~xhx/" style="display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.8rem 1.6rem; background: #6b7280; color: white; text-decoration: none; border-radius: 10px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 3px 12px rgba(107, 114, 128, 0.25);">
     <img src="/images/University_of_California,_Irvine_logo.svg" alt="UC Irvine" width="24" height="24" style="display: inline-block;">
     UC Irvine Profile
   </a>
@@ -68,15 +69,7 @@ Please see **[Google Scholar](https://scholar.google.com/citations?user=YOUR_GOO
   </a>
 </div>
 
----
-<!-- 
-## 📖 Teaching and Research Notes
 
-- **[Notes](/notes/)** - Organized notes and reference materials
-- **[Self-Attention Mechanisms](/notes/ai/ml/self-attention-approx/)** - Deep learning attention mechanisms
-- **[LSH Attention](/notes/ai/ml/lsh-attention/)** - Locality-sensitive hashing for attention
-- **[AMC Problems](/notes/math/amc/)** - American Mathematics Competitions
- -->
 
 ---
 

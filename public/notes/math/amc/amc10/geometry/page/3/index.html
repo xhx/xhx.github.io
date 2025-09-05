@@ -5,9 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Geometry | Xiaohui Xie&#39;s Site</title>
-<meta name="keywords" content="amc10, geometry, mathematics, competition">
-<meta name="description" content="AMC 10 Geometry topics and techniques">
+<title>AMC 10 Geometry Mastery Guide | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="amc10, geometry, mathematics, competition, problem-solving">
+<meta name="description" content="Complete guide to AMC 10 geometry: essential concepts, problem-solving strategies, and comprehensive practice materials for competition success.">
 <meta name="author" content="Xiaohui Xie">
 <link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/geometry/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
@@ -120,7 +120,7 @@
 <main class="main"> 
 <header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10</a></div>
   <h1>
-    Geometry
+    AMC 10 Geometry Mastery Guide
     <a href="/notes/math/amc/amc10/geometry/index.xml" title="RSS" aria-label="RSS">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
         stroke-linecap="round" stroke-linejoin="round" height="23">
@@ -131,214 +131,247 @@
     </a>
   </h1>
   <div class="post-description">
-    AMC 10 Geometry topics and techniques
+    Complete guide to AMC 10 geometry: essential concepts, problem-solving strategies, and comprehensive practice materials for competition success.
   </div>
 </header>
-<div class="post-content"><h1 id="-geometry">📐 Geometry<a hidden class="anchor" aria-hidden="true" href="#-geometry">#</a></h1>
-<aside>
-<p>💡</p>
-<p><a href="Geometry%20Knowledge%20Points%20230936cc221480f5a4e6c5b1f29e122e.md">Geometry Knowledge Points</a></p>
-</aside>
-<p><a href="knowledge-point">Knowledge Point Summary</a></p>
-<h3 id="top-20-classical-amc-10-geometry-problem-types">Top 20 Classical AMC 10 Geometry Problem Types<a hidden class="anchor" aria-hidden="true" href="#top-20-classical-amc-10-geometry-problem-types">#</a></h3>
-<table>
-  <thead>
-      <tr>
-          <th>#</th>
-          <th>Problem Archetype (What you’re asked)</th>
-          <th>Hall-mark Strategy / Fact</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>1</td>
-          <td><strong>Hidden 30-60-90 or 45-45-90 triangle</strong></td>
-          <td>Recognize special right-triangle ratios to finish in one step.</td>
-      </tr>
-      <tr>
-          <td>2</td>
-          <td><strong>Pythagorean-triple perimeter/area</strong></td>
-          <td>Spot integer triples (3-4-5, 5-12-13, 8-15-17, …) embedded in a diagram.</td>
-      </tr>
-      <tr>
-          <td>3</td>
-          <td><strong>Altitude drops ⇒ similar triangles</strong></td>
-          <td>Use AA similarity from an altitude or angle bisector in a right/acute triangle.</td>
-      </tr>
-      <tr>
-          <td>4</td>
-          <td><strong>Inradius of a right triangle</strong></td>
-          <td>Apply $r=\dfrac{a+b-c}{2}$ or $A=rs$ to find the radius or a side.</td>
-      </tr>
-      <tr>
-          <td>5</td>
-          <td><strong>Circumradius with Extended Law of Sines</strong></td>
-          <td>Use $R=\dfrac{a}{2\sin A}$ (often with a 60° or 120° angle).</td>
-      </tr>
-      <tr>
-          <td>6</td>
-          <td><strong>Power of a Point (tangent–secant / chord–chord)</strong></td>
-          <td>Set up $PT^{2}=PA!\cdot!PB$. or $AE ⁣⋅ ⁣EC=BE ⁣⋅ ⁣ED\quad AE!\cdot!EC=BE!\cdot!ED$</td>
-      </tr>
-      <tr>
-          <td>7</td>
-          <td><strong>Cyclic quadrilateral angle chase</strong></td>
-          <td>Opposite angles sum to 180°, inscribed-angle theorem gives the rest.</td>
-      </tr>
-      <tr>
-          <td>8</td>
-          <td><strong>Mid-segment in a trapezoid/triangle</strong></td>
-          <td>Midpoints create parallel lines; mid-segment length is average of bases.</td>
-      </tr>
-      <tr>
-          <td>9</td>
-          <td><strong>Area by Shoelace on lattice vertices</strong></td>
-          <td>Quick determinant gives half-integer area of a polygon in the grid.</td>
-      </tr>
-      <tr>
-          <td>10</td>
-          <td><strong>Coordinate-bash distance or slope</strong></td>
-          <td>Place key points at convenient coordinates, then use distance/slope formulas.</td>
-      </tr>
-      <tr>
-          <td>11</td>
-          <td><strong>Similar polygons via parallel lines</strong></td>
-          <td>Parallel lines induce similar triangles; solve for lengths or ratios.</td>
-      </tr>
-      <tr>
-          <td>12</td>
-          <td><strong>Angle-bisector theorem ratio</strong></td>
-          <td>Internal or external bisector splits opposite side proportionally.</td>
-      </tr>
-      <tr>
-          <td>13</td>
-          <td><strong>Cevians concurrency (Ceva / mass points)</strong></td>
-          <td>Ratios on sides imply concurrency or find segment lengths.</td>
-      </tr>
-      <tr>
-          <td>14</td>
-          <td><strong>Circle tangent to two lines &amp; a circle (incircle/excircle)</strong></td>
-          <td>Center lies on angle bisector; set up right triangles for radius/coordinates.</td>
-      </tr>
-      <tr>
-          <td>15</td>
-          <td><strong>Three-dimensional box diagonal / face diagonal</strong></td>
-          <td>Compute $d=\sqrt{a^{2}+b^{2}+c^{2}}$ or $\sqrt{a^{2}+b^{2}}$ after unfolding.</td>
-      </tr>
-      <tr>
-          <td>16</td>
-          <td><strong>Cross-section of cube/prism</strong></td>
-          <td>Slice produces a familiar 2-D shape; use similar triangles to get area/perimeter.</td>
-      </tr>
-      <tr>
-          <td>17</td>
-          <td><strong>Cyclic ratio problems with Ptolemy</strong></td>
-          <td>In quadrilateral ABCDABCD, use AC⋅BD=AB⋅CD+BC⋅DAAC·BD = AB·CD + BC·DA to solve for an unknown.</td>
-      </tr>
-      <tr>
-          <td>18</td>
-          <td><strong>Nested squares/triangles (infinite geometric area)</strong></td>
-          <td>Recurring similarity yields a geometric series for total area or perimeter.</td>
-      </tr>
-      <tr>
-          <td>19</td>
-          <td><strong>Rotation/spiral similarity “pinwheel”</strong></td>
-          <td>Two equal-length chords imply a 90° rotation or a spiral similarity point.</td>
-      </tr>
-      <tr>
-          <td>20</td>
-          <td><strong>Geometric probability (dartboard regions)</strong></td>
-          <td>Ratio of areas/lengths in a circle, square, or triangle gives probability.</td>
-      </tr>
-  </tbody>
-</table>
-<p><a href="#1%20%E2%80%93%20Hidden%2030-60-90%20and%2045-45-90%20Triangles%20228936cc22148068b5c3c5a3f1e5ec5e.md">#1 – Hidden 30-60-90 and 45-45-90 Triangles</a></p>
-<p><a href="#2%20%E2%80%93%20Pythagorean-Triple%20Perimeter%20&amp;%20Area%20Problems%20227936cc221480efb074cf38933639b6.md"> #2 – Pythagorean-Triple Perimeter &amp; Area Problems</a></p>
-<p><a href="#3%20%E2%80%93%20Altitude%E2%80%93Created%20Similar%20Triangles%20227936cc22148020af80c3367bff7190.md">#3 – Altitude–Created Similar Triangles</a></p>
-<p><a href="#4%20%E2%80%93%20Inradius%20of%20a%20Right%20Triangle%20227936cc221480d29ac3db6b99d1c2f8.md">#4 – Inradius of a Right Triangle</a></p>
-<p><a href="#5%20%E2%80%93%20Circumradius%20via%20the%20Extended%20Law%20of%20Sines%20228936cc221480658f3dc927377ac1ba.md">#5 – Circumradius via the <strong>Extended Law of Sines</strong></a></p>
-<p><a href="#6%20%E2%80%93%20Power%20of%20a%20Point%20(PoP)%20Tangent%E2%80%93Secant%20&amp;%20Chord%20228936cc2214806da66ec0e14683e2cc.md">#6 – <strong>Power of a Point</strong> (PoP): Tangent–Secant &amp; Chord–Chord</a></p>
-<p><a href="#7%20%E2%80%93%20Cyclic-Quadrilateral%20Angle%20Chases%20228936cc221480bea3a5f4d83237044f.md">#7 – Cyclic-Quadrilateral Angle Chases</a></p>
-<p><a href="#8%20%E2%80%93%20Mid-Segments%20in%20Triangles%20and%20Trapezoids%20227936cc22148097850dfaec46a2fdea.md"> #8 – Mid-Segments in Triangles and Trapezoids</a></p>
-<p><a href="#9%20%E2%80%93%20Shoelace%20(Coordinate-Polygon)%20Area%20228936cc2214804fbd9ad732c7ba8b5b.md">#9 – Shoelace (Coordinate-Polygon) Area</a></p>
-<p><a href="#10%20%E2%80%93%20Coordinate-Bash%20Distance,%20Slope,%20and%20Midpoin%20228936cc221480cea7a1eb1f02b55096.md">#10 – <em>Coordinate-Bash</em> Distance, Slope, and Midpoint Tricks</a></p>
-<p><a href="#11%20Similar%20Triangles%20via%20a%20Parallel%20Line%20228936cc2214807bab3ed517e371cb93.md">#11 Similar Triangles via a Parallel Line</a></p>
-<p><a href="#12%20%E2%80%93%20Angle-Bisector%20Theorem%20&amp;%20Its%20AMC%20Uses%20228936cc22148065a49df8a15425ec74.md">#12 – Angle-Bisector Theorem &amp; Its AMC Uses</a></p>
-<p><a href="#13%20%E2%80%93%20Cevians,%20Concurrency,%20and%20Mass-Points%20228936cc22148070be8ceedcd26fb8c5.md">#13 – Cevians, Concurrency, and Mass-Points</a></p>
-<p><a href="#14%20%E2%80%93%20Circle%20Tangent%20to%20Two%20Lines%20and%20a%20Circle%20228936cc221480639ea1c2c8ddaf8a20.md"> #14 – Circle Tangent to Two Lines <strong>and</strong> a Circle</a></p>
-<p>[#15 – Box &amp; Prism Diagonals (3-D Pythagorean Nightmares Made Easy)](#15%20%E2%80%93%20Box%20&amp;%20Prism%20Diagonals%20(3-D%20Pythagorean%20Night%20228936cc221480a5950cf455441a55ed.md)</p>
-<p><a href="#16%20%E2%80%93%20Cross-Sections%20of%20Cubes%20&amp;%20Prisms%20228936cc221480a39fdad889f3caa8cb.md"> #16 – Cross-Sections of Cubes &amp; Prisms</a></p>
-<p>[#17 – Cyclic-Quadrilateral Length Ratios (Ptolemy’s Theorem Power-Ups)](#17%20%E2%80%93%20Cyclic-Quadrilateral%20Length%20Ratios%20(Ptolemy%E2%80%99%20228936cc2214804f9697e057a5429a43.md)</p>
-<p><a href="#18%20%E2%80%93%20Nested%20Similar%20Figures%20&amp;%20Infinite%20Geometric%20%20228936cc2214806a8a66c3c76b6fd3db.md">#18 – Nested Similar Figures &amp; Infinite Geometric Sums</a></p>
-<p><a href="#19%20%E2%80%93%20Spiral%20Similarity%20&amp;%20%E2%80%9CPinwheel%E2%80%9D%20Constructions%20228936cc22148055ae0df053441ee5fa.md">#19 – Spiral Similarity &amp; “Pinwheel” Constructions</a></p>
-<p><a href="#20%20%E2%80%93%20Geometric%20Probability%20228936cc2214805aa217c0bbcc9d5977.md">#20 – Geometric Probability </a></p>
-<p><a href="Transformations%20&amp;%20Symmetry%20228936cc22148006b094eecfc9716d19.md">Transformations &amp; Symmetry</a></p>
-
+<div class="post-content"><h1 id="-amc-10-geometry-mastery-guide">📐 AMC 10 Geometry Mastery Guide<a hidden class="anchor" aria-hidden="true" href="#-amc-10-geometry-mastery-guide">#</a></h1>
+<p>Welcome to the comprehensive AMC 10 Geometry section! This guide provides everything you need to master geometry for the AMC 10 competition, from fundamental concepts to advanced problem-solving strategies.</p>
+<h2 id="-quick-navigation">🎯 Quick Navigation<a hidden class="anchor" aria-hidden="true" href="#-quick-navigation">#</a></h2>
+<div class="quick-nav">
+  <div class="nav-section">
+    <h3>📚 Study Materials</h3>
+    <ul>
+      <li><a href="#comprehensive-reference">📖 Complete Reference Guide</a></li>
+      <li><a href="problem-types">🎯 Top 20 Problem Types</a></li>
+      <li><a href="topic-guides">📝 Detailed Topic Guides</a></li>
+    </ul>
+  </div>
+  <div class="nav-section">
+    <h3>⚡ Quick Reference</h3>
+    <ul>
+      <li><a href="quick-reference#essential-formulas">🔢 Key Formulas</a></li>
+      <li><a href="quick-reference#problem-solving-tips">💡 Strategy Tips</a></li>
+      <li><a href="quick-reference#common-patterns">🔍 Pattern Recognition</a></li>
+    </ul>
+  </div>
+  <div class="nav-section">
+    <h3>🔗 Direct Access</h3>
+    <ul>
+      <li><a href="reference-guide">📚 Open Reference Guide</a></li>
+      <li><a href="study-strategy">🎯 Study Strategy</a></li>
+      <li><a href="quick-reference">⚡ Quick Reference</a></li>
+    </ul>
+  </div>
+</div>
+<hr>
+<h2 id="comprehensive-reference">📖 Comprehensive Reference Guide<a hidden class="anchor" aria-hidden="true" href="#comprehensive-reference">#</a></h2>
+<div class="featured-content">
+  <!-- <h2>📚 [Complete AMC 10 Geometry Reference Guide](reference-guide)</h2> -->
+  <p><strong>Your one-stop resource for all geometry concepts!</strong></p>
+  <div style="text-align: center; margin: 20px 0;">
+    <a href="reference-guide" style="display: inline-block; background: #0066cc; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px;">
+      📖 View Complete Reference Guide
+    </a>
+  </div>
+  <p>This comprehensive guide contains:</p>
+  <ul>
+    <li>🔺 <strong>[Triangle Fundamentals](reference-guide#1-triangle-fundamentals)</strong> - Properties, formulas, and special triangles</li>
+    <li>🎯 <strong>[Triangle Centers & Special Lines](reference-guide#2-triangle-centers--special-lines)</strong> - Centroid, incenter, circumcenter, and orthocenter</li>
+    <li>⭕ <strong>[Circle Properties & Theorems](reference-guide#3-circle-properties--theorems)</strong> - Inscribed angles, cyclic quadrilaterals, power of a point</li>
+    <li>📐 <strong>[Polygon Properties](reference-guide#4-polygon-properties)</strong> - Regular polygons, angle formulas, area calculations</li>
+    <li>📦 <strong>[3D Geometry & Solids](reference-guide#5-3d-geometry--solids)</strong> - Volume and surface area formulas</li>
+    <li>📊 <strong>[Coordinate Geometry](reference-guide#6-coordinate-geometry)</strong> - Distance, slope, and the shoelace theorem</li>
+  </ul>
+</div>
+<hr>
+<h2 id="-top-20-problem-types">🎯 Top 20 Problem Types<a hidden class="anchor" aria-hidden="true" href="#-top-20-problem-types">#</a></h2>
+<div class="problem-types-preview">
+  <h2>Master These Essential Problem Patterns</h2>
+  <p>These are the most frequently appearing geometry problem types in AMC 10. Master these patterns and you'll be well-prepared for the competition!</p>
+  <div style="text-align: center; margin: 20px 0;">
+    <a href="problem-types" style="display: inline-block; background: #28a745; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px;">
+      🎯 View All 20 Problem Types
+    </a>
+  </div>
+  <div class="difficulty-preview">
+    <div class="difficulty-card">
+      <h4>🟢 Easy Problems (3 types)</h4>
+      <p>Special triangles, Pythagorean triples, mid-segments</p>
+    </div>
+    <div class="difficulty-card">
+      <h4>🟡 Medium Problems (12 types)</h4>
+      <p>Similarity, circles, coordinate geometry, 3D problems</p>
+    </div>
+    <div class="difficulty-card">
+      <h4>🔴 Hard Problems (5 types)</h4>
+      <p>Concurrency, advanced similarity, infinite series</p>
+    </div>
+  </div>
+</div>
+<hr>
+<h2 id="-detailed-topic-guides">📝 Detailed Topic Guides<a hidden class="anchor" aria-hidden="true" href="#-detailed-topic-guides">#</a></h2>
+<div class="topic-guides-preview">
+  <h2>Comprehensive Study Materials</h2>
+  <p>In-depth guides for each geometry topic with study materials and practice links.</p>
+  <div style="text-align: center; margin: 20px 0;">
+    <a href="topic-guides" style="display: inline-block; background: #17a2b8; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px;">
+      📝 Browse All Topic Guides
+    </a>
+  </div>
+  <div class="topic-categories">
+    <div class="category-card">
+      <h4>🔺 Triangle Fundamentals</h4>
+      <p>9 comprehensive guides covering special triangles, similarity, and triangle properties</p>
+    </div>
+    <div class="category-card">
+      <h4>⭕ Circle Properties</h4>
+      <p>4 detailed guides on power of a point, cyclic quadrilaterals, and circle theorems</p>
+    </div>
+    <div class="category-card">
+      <h4>📊 Coordinate & 3D Geometry</h4>
+      <p>4 guides covering coordinate geometry, 3D problems, and cross-sections</p>
+    </div>
+    <div class="category-card">
+      <h4>🎲 Advanced Topics</h4>
+      <p>4 guides on infinite series, transformations, and geometric probability</p>
+    </div>
+  </div>
+</div>
+<hr>
+<h2 id="-quick-reference">⚡ Quick Reference<a hidden class="anchor" aria-hidden="true" href="#-quick-reference">#</a></h2>
+<div class="quick-reference-preview">
+  <h2>Essential Formulas and Strategies</h2>
+  <p>Key formulas, problem-solving tips, and pattern recognition for rapid problem-solving.</p>
+  <div style="text-align: center; margin: 20px 0;">
+    <a href="quick-reference" style="display: inline-block; background: #ffc107; color: black; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px;">
+      ⚡ Open Quick Reference
+    </a>
+  </div>
+  <div class="reference-highlights">
+    <div class="highlight-card">
+      <h4>🔢 Essential Formulas</h4>
+      <p>Triangle area, special right triangles, circle properties, power of a point</p>
+    </div>
+    <div class="highlight-card">
+      <h4>💡 Problem-Solving Tips</h4>
+      <p>Look for special triangles, use coordinate geometry, check for cyclic quadrilaterals</p>
+    </div>
+    <div class="highlight-card">
+      <h4>🔍 Pattern Recognition</h4>
+      <p>Hidden right triangles, Pythagorean triples, similar triangles, power of a point</p>
+    </div>
+  </div>
+</div>
+<hr>
+<h2 id="-study-strategy">🎯 Study Strategy<a hidden class="anchor" aria-hidden="true" href="#-study-strategy">#</a></h2>
+<div class="study-strategy-preview">
+  <h2>Effective Preparation Plan</h2>
+  <p>Step-by-step strategies for mastering AMC 10 geometry and achieving competition success.</p>
+  <div style="text-align: center; margin: 20px 0;">
+    <a href="study-strategy" style="display: inline-block; background: #6f42c1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px;">
+      🎯 View Study Strategy
+    </a>
+  </div>
+  <div class="strategy-phases">
+    <div class="phase-card">
+      <h4>📚 Phase 1: Foundation (Weeks 1-2)</h4>
+      <p>Master basic properties and memorize essential formulas</p>
+    </div>
+    <div class="phase-card">
+      <h4>🎯 Phase 2: Problem Types (Weeks 3-6)</h4>
+      <p>Practice all 20 problem patterns systematically</p>
+    </div>
+    <div class="phase-card">
+      <h4>🚀 Phase 3: Advanced Practice (Weeks 7-8)</h4>
+      <p>Speed practice and competition preparation</p>
+    </div>
+  </div>
+</div>
+<hr>
+<div style="text-align: center; margin: 30px 0; padding: 20px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #0066cc;">
+  <h3 style="margin-top: 0; color: #0066cc;">🚀 Ready to Master AMC 10 Geometry?</h3>
+  <p style="margin: 15px 0; font-size: 16px;">Start with the comprehensive reference guide and work through the detailed topic guides above!</p>
+  <a href="reference-guide" style="display: inline-block; background: #0066cc; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px; margin: 10px;">
+    📚 Open Reference Guide
+  </a>
+  <a href="problem-types" style="display: inline-block; background: #28a745; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px; margin: 10px;">
+    🎯 Browse Problem Types
+  </a>
+</div>
 
 </div>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">
+    <h2 class="entry-hint-parent">Top 20 AMC 10 Geometry Problem Types
     </h2>
   </header>
   <div class="entry-content">
-    <p>#2 – Pythagorean-Triple Perimeter &amp; Area Problems AMC setters love integer-length right triangles. Spotting a hidden Pythagorean triple lets you compute everything (area, perimeter, altitude, inradius, circumscribed radius …) in seconds.
-1 Why they matter A primitive Pythagorean triple (a,b,c)(a,b,c) satisfies
-$$ a^{2}&#43;b^{2}=c^{2},\qquad \gcd(a,b,c)=1 . $$
-Once you identify $a,b,c$, key quantities pop out immediately:
-Quantity Formula Example (3-4-5) Perimeter $P=a&#43;b&#43;c$ $3&#43;4&#43;5=12$ Area $A=\tfrac12 ab$ $\frac12(3)(4)=6$ Inradius $r=\dfrac{a&#43;b-c}{2}$ $r=1$ Altitude to hyp. $h=\dfrac{ab}{c}$ $h=\dfrac{12}{5}=2.4$ These neat integers and simple fractions align perfectly with AMC answer choices.
+    <p>🎯 Top 20 AMC 10 Geometry Problem Types Master These Essential Problem Patterns
+These are the most frequently appearing geometry problem types in AMC 10. Master these patterns and you’ll be well-prepared for the competition!
+# Problem Type Key Strategy Difficulty 1 Hidden 30-60-90 and 45-45-90 triangles Recognize special right-triangle ratios to finish in one step 🟢 Easy 2 Pythagorean-triple perimeter/area Spot integer triples (3-4-5, 5-12-13, 8-15-17, …) embedded in diagrams 🟢 Easy 3 Altitude drops ⇒ similar triangles Use AA similarity from altitude or angle bisector in right/acute triangles 🟡 Medium 4 Inradius of a right triangle Apply $r=\dfrac{a&#43;b-c}{2}$ or $A=rs$ to find radius or side 🟡 Medium 5 Circumradius with Extended Law of Sines Use $R=\dfrac{a}{2\sin A}$ (often with 60° or 120° angles) 🟡 Medium 6 Power of a Point (tangent–secant / chord–chord) Set up $PT^{2}=PA\!\cdot\!PB$ or $AE\!\cdot\!EC=BE\!\cdot\!ED$ 🟡 Medium 7 Cyclic quadrilateral angle chase Opposite angles sum to 180°; inscribed-angle theorem gives the rest 🟡 Medium 8 Mid-segment in trapezoid/triangle Midpoints create parallel lines; mid-segment length is average of bases 🟢 Easy 9 Area by Shoelace on lattice vertices Quick determinant gives half-integer area of polygon in grid 🟡 Medium 10 Coordinate-bash distance or slope Place key points at convenient coordinates; use distance/slope formulas 🟡 Medium 11 Similar polygons via parallel lines Parallel lines induce similar triangles; solve for lengths or ratios 🟡 Medium 12 Angle-bisector theorem ratio Internal or external bisector splits opposite side proportionally 🟡 Medium 13 Cevians concurrency (Ceva / mass points) Ratios on sides imply concurrency or find segment lengths 🔴 Hard 14 Circle tangent to two lines &amp; a circle Center lies on angle bisector; set up right triangles for radius/coordinates 🔴 Hard 15 Three-dimensional box diagonal / face diagonal Compute $d=\sqrt{a^{2}&#43;b^{2}&#43;c^{2}}$ or $\sqrt{a^{2}&#43;b^{2}}$ after unfolding 🟡 Medium 16 Cross-section of cube/prism Slice produces familiar 2-D shape; use similar triangles for area/perimeter 🟡 Medium 17 Cyclic ratio problems with Ptolemy Use $AC\!\cdot\!BD = AB\!\cdot\!CD &#43; BC\!\cdot\!DA$ to solve for unknowns 🔴 Hard 18 Nested squares/triangles (infinite geometric area) Recurring similarity yields geometric series for total area or perimeter 🔴 Hard 19 Rotation/spiral similarity &#34;pinwheel&#34; Two equal-length chords imply 90° rotation or spiral similarity point 🔴 Hard 20 Geometric probability (dartboard regions) Ratio of areas/lengths in circle, square, or triangle gives probability 🟡 Medium 🎯 How to Use This Guide Start with Easy Problems - Master the 🟢 Easy problems first (types 1, 2, 8) Progress to Medium - Work through 🟡 Medium difficulty problems (types 3-7, 9-12, 15-16, 20) Tackle Hard Problems - Challenge yourself with 🔴 Hard problems (types 13-14, 17-19) Practice Regularly - Solve problems from each category to build confidence 📚 Related Resources 📖 Complete Reference Guide - Comprehensive geometry formulas and theorems 📝 Detailed Topic Guides - In-depth guides for each problem type ⚡ Quick Reference - Essential formulas and strategies 🎯 Study Strategy - How to effectively prepare for AMC 10 Master these 20 problem patterns and you’ll be well-prepared for any AMC 10 geometry question!
 ...</p>
   </div>
-  <footer class="entry-footer">2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
-  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/notes/math/amc/amc10/geometry/pythagorean-triple-perimeter/"></a>
+  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Top 20 AMC 10 Geometry Problem Types" href="http://localhost:1313/notes/math/amc/amc10/geometry/problem-types/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>#9 – Shoelace (Coordinate-Polygon) Area On the AMC 10 you’ll often see a polygon whose vertices have small integer coordinates. Instead of decomposing into triangles, you can compute its area in seconds with the shoelace formula.
-1 Shoelace Formula (a.k.a. Gauss’s area formula) For a simple polygon with vertices
-$$ (x_1,y_1),(x_2,y_2),\dots,(x_n,y_n) \quad\text{listed counter-clockwise}, $$
-the area is
-$$ A=\frac12\Bigl|,(x_1y_2&#43;x_2y_3&#43;\dots&#43;x_ny_1) ;-;(y_1x_2&#43;y_2x_3&#43;\dots&#43;y_nx_1)\Bigr|. $$
-Visually, you “criss-cross” the coordinates like lacing a shoe.
-...</p>
-  </div>
-  <footer class="entry-footer">2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
-  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/notes/math/amc/amc10/geometry/shoelace-coordinate-polygon/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>#11 Similar Triangles via a Parallel Line The entire engine here is the Basic Proportionality (Thales) Theorem and its converse. Once you see a line segment parallel to one side of a triangle — or a pair of parallels cutting two transversals — you can write proportional ratios without further justification. That instantly unlocks lengths, areas, and sometimes concurrency.
-1 Core Statements Version Hypotheses Conclusion Internal (common) In △ABC \triangle ABC a line through AA meets BCBC at EE and DD is any point on ACAC such that DE∥BC DE \parallel BC. ADAC = AEAB = DEBC.\displaystyle \frac{AD}{AC} ;=; \frac{AE}{AB} ;=; \frac{DE}{BC}.The two triangles are similar: △ADE∼△ABC \triangle ADE \sim \triangle ABC. Converse A point D∈ACD\in AC and a point E∈ABE\in AB satisfy ADAC=AEAB \dfrac{AD}{AC}=\dfrac{AE}{AB}. The line DEDE is parallel to BCBC. External DEDE meets the extension of BCBC beyond CC and is parallel to BCBC. Directed-length version: ADAC=AEAB \displaystyle \frac{AD}{AC}=\frac{AE}{AB} but one segment is negative. Mnemonic: parallel → proportion; proportion → parallel.
-...</p>
-  </div>
-  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
-  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/notes/math/amc/amc10/geometry/similar-triangles-parallel-line/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">
+    <h2 class="entry-hint-parent">Transformations &amp; Symmetry
     </h2>
   </header>
   <div class="entry-content">
     <p>Transformations &amp; Symmetry (translations · rotations · reflections · dilations)
 On the AMC 10, problems that look like long angle-chases often crash-land to a single sentence once you recognize what motion takes one figure to another. Every isometry preserves length and angle; a dilation multiplies every length by the same factor—and nothing else changes. That’s the whole game.
-1 The Four Plane Isometries Motion Algebra / coordinates Typical AMC “tell” What stays equal Translation ⁣(h,k)!(h,k) (x,y)→(x&#43;h,y&#43;k)(x,y)\to(x&#43;h,y&#43;k) Parallel arrows, “slides 5 cm right and 2 cm up” All lengths, all angles, slopes Rotation (center OO, angle θ\theta) complex form z→O&#43;(z−O)eiθz\to O&#43;(z-O)e^{i\theta} “turns 120° about OO”, regular-polygon steps Lengths, angles, orientation clockwise ↔ counter Reflection (across line ℓ\ell) fold line; in complex plane z→zˉz\to\bar z after axis change Mirror picture, right-angle tick marks at the mirror Lengths, angles, orientation reversed Glide reflection reflection ∘ translation Rare on AMC 10 Lengths, angles All four are rigid motions—they keep every distance and every angle measure exactly the same.
+1 The Four Plane Isometries Motion Algebra / coordinates Typical AMC “tell” What stays equal Translation $(h,k)$ $(x,y)\to(x&#43;h,y&#43;k)$ Parallel arrows, “slides 5 cm right and 2 cm up” All lengths, all angles, slopes Rotation (center $O$, angle $\theta$) complex form $z\to O&#43;(z-O)e^{i\theta}$ “turns 120° about $O$”, regular-polygon steps Lengths, angles, orientation clockwise ↔ counter Reflection (across line $\ell$) fold line; in complex plane $z\to\bar z$ after axis change Mirror picture, right-angle tick marks at the mirror Lengths, angles, orientation reversed Glide reflection reflection ∘ translation Rare on AMC 10 Lengths, angles All four are rigid motions—they keep every distance and every angle measure exactly the same.
 ...</p>
   </div>
-  <footer class="entry-footer">4 min&nbsp;·&nbsp;Xiaohui Xie</footer>
-  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/notes/math/amc/amc10/geometry/transformations-symmetry/"></a>
+  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Transformations & Symmetry" href="http://localhost:1313/notes/math/amc/amc10/geometry/transformations-symmetry/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Angle-Bisector Theorem &amp; Its AMC Uses
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>#12 – Angle-Bisector Theorem &amp; Its AMC Uses The internal angle-bisector theorem says that in $\triangle ABC$
+an angle bisector from $A$ meeting $BC$ at $D$ satisfies
+$$\boxed{;\dfrac{BD}{DC} = \dfrac{AB}{AC};}.$$
+(The code-generated figure shows the bisector $AD$ and the proportionality it creates.)
+1 Internal vs. External Forms Bisector type Statement Internal (usual) $\displaystyle \frac{BD}{DC} = \frac{AB}{AC}$ External (bisects exterior angle at $A$) $\displaystyle \frac{BD}{DC} = \frac{AB}{AC}$ but $D$ lies outside $BC$; one segment is negative in directed-length form. For AMC work you almost always use the internal version.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Angle-Bisector Theorem & Its AMC Uses" href="http://localhost:1313/notes/math/amc/amc10/geometry/angle-bisector-theorem/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Box &amp; Prism Diagonals (3-D Pythagorean)
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>#15 – Box &amp; Prism Diagonals (3-D Pythagorean Nightmares Made Easy) AMC setters love to drop a right‐rectangular prism (a “box”) into the problem because every diagonal length reduces to one or two straight applications of $a^{2}&#43;b^{2}=c^{2}$.
+Diagonal Formula (edges $a,b,c$) Memory cue Face diagonal on the $ab$-face $d_{ab}= \sqrt{a^{2}&#43;b^{2}}$ 2-D Pythag on one face Space (body) diagonal of the box $D=\sqrt{a^{2}&#43;b^{2}&#43;c^{2}}$ Pythag twice (face ⇒ space) (Replace $a,b,c$ with whichever edge trio the problem gives.)
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Box & Prism Diagonals (3-D Pythagorean)" href="http://localhost:1313/notes/math/amc/amc10/geometry/box-prism-diagonals-3d/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+  </header>
+  <div class="entry-content">
+    <p>📐 AMC 10 Geometry — Complete Reference Guide This comprehensive guide contains all the essential geometry concepts, theorems, and formulas needed for AMC 10 competition mathematics. Each section is organized by topic with clear explanations, visual diagrams, and practical applications.
+📋 Table of Contents Triangle Fundamentals - Basic properties, area formulas, special triangles, and midsegments Triangle Centers &amp; Special Lines - Centroid, incenter, circumcenter, and important theorems Circle Properties &amp; Theorems - Inscribed angles, cyclic quadrilaterals, and power of a point Polygon Properties - Regular polygons, angle formulas, area calculations, and trapezoid midsegments 3D Geometry &amp; Solids - Volume and surface area formulas for common 3D shapes Coordinate Geometry - Distance, slope, circles, and the shoelace theorem 1. Triangle Fundamentals Essential properties and formulas for working with triangles in competition problems
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-09-03 00:00:00 +0000 UTC'>September 3, 2025</span>&nbsp;·&nbsp;9 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Complete AMC 10 Geometry Reference Guide" href="http://localhost:1313/notes/math/amc/amc10/geometry/reference-guide/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

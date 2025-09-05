@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Floor and Fractional Part Functions | Xiaohui Xie&#39;s Site</title>
 <meta name="keywords" content="">
 <meta name="description" content="A reference on floor functions, fractional parts, identities, and problem-solving strategies. Includes AMC/AIME-style examples.">
 <meta name="author" content="Compiled by ChatGPT">
-<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/algebra/floor-fractional-part/">
+<link rel="canonical" href="https://xhx.github.io/notes/math/amc/amc10/algebra/floor-fractional-part/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://xhx.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/algebra/floor-fractional-part/">
+<link rel="alternate" hreflang="en" href="https://xhx.github.io/notes/math/amc/amc10/algebra/floor-fractional-part/">
 <noscript>
     <style>
         #theme-toggle,
@@ -70,7 +70,97 @@
         });"></script>
 
 
+<meta property="og:url" content="https://xhx.github.io/notes/math/amc/amc10/algebra/floor-fractional-part/">
+  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
+  <meta property="og:title" content="Floor and Fractional Part Functions">
+  <meta property="og:description" content="A reference on floor functions, fractional parts, identities, and problem-solving strategies. Includes AMC/AIME-style examples.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-09-02T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-09-02T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Floor and Fractional Part Functions">
+<meta name="twitter:description" content="A reference on floor functions, fractional parts, identities, and problem-solving strategies. Includes AMC/AIME-style examples.">
 
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Notes",
+      "item": "https://xhx.github.io/notes/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Mathematics Notes",
+      "item": "https://xhx.github.io/notes/math/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "AMC Problems",
+      "item": "https://xhx.github.io/notes/math/amc/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "AMC 10",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Algebra",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/algebra/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Floor and Fractional Part Functions",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/algebra/floor-fractional-part/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Floor and Fractional Part Functions",
+  "name": "Floor and Fractional Part Functions",
+  "description": "A reference on floor functions, fractional parts, identities, and problem-solving strategies. Includes AMC/AIME-style examples.",
+  "keywords": [
+    
+  ],
+  "articleBody": "🔢 Floor and Fractional Part Functions 🟦 Understanding Floor and Fractional Part Given a real number $x$, we define:\nFloor function $\\lfloor x \\rfloor$: the greatest integer less than or equal to $x$. Fractional part ${x}$: the decimal part after removing the integer part. Example For $x = 6.2$:\n$$ \\lfloor 6.2 \\rfloor = 6, \\quad {6.2} = 6.2 - \\lfloor 6.2 \\rfloor = 0.2 $$\n✨ Key Identities Floor + Fractional Part Identity For any real number $x$:\n$$ {x} + \\lfloor x \\rfloor = x $$\nThis identity allows switching between floor and fractional part expressions.\nUseful Note $$ 0 \\leq {x} \u003c 1 $$\nThe fractional part is always non-negative and strictly less than 1. This is crucial when bounding expressions in problems. 📋 Quick Reference Table Symbol Meaning Properties $\\lfloor x \\rfloor$ Floor (integer part) Always an integer ${x}$ Fractional part $0 \\leq {x} \u003c 1$ Identity Relation ${x} + \\lfloor x \\rfloor = x$ 🛠️ Standard Moves in Problem Solving Introduce $x = n + t$\nLet $n = \\lfloor x \\rfloor$ (integer) and $t = {x}$ with $0 \\leq t \u003c 1$. Rewrite every floor\nExample:\n$$\\lfloor kx \\rfloor = \\lfloor k(n+t) \\rfloor = kn + \\lfloor kt \\rfloor.$$ Isolate integer vs. fractional parts\nCollect integers together, then analyze the bounded fractional part. Use bounds to finish\nSince $0 \\leq t \u003c 1$, $\\lfloor kt \\rfloor$ has only a few possible values. Check these cases to solve. 🧮 Example (AMC-style) Problem.\nFind $\\lfloor x \\rfloor$ if\n$$ \\lfloor 3x \\rfloor + \\lfloor 4x \\rfloor = 100. $$\nStep 1: Set $x = n + t$ Let $n = \\lfloor x \\rfloor$, $t = {x}$, $0 \\leq t \u003c 1$.\nStep 2: Rewrite floors [ \\begin{aligned} \\lfloor 3x \\rfloor \u0026= 3n + \\lfloor 3t \\rfloor, \\ \\lfloor 4x \\rfloor \u0026= 4n + \\lfloor 4t \\rfloor. \\end{aligned} ]\nSo:\n$$ 7n + \\big(\\lfloor 3t \\rfloor + \\lfloor 4t \\rfloor\\big) = 100. $$\nStep 3: Possible values of $\\lfloor 3t \\rfloor + \\lfloor 4t \\rfloor$ Interval for $t$ $\\lfloor 3t \\rfloor$ $\\lfloor 4t \\rfloor$ Sum $[0, \\tfrac14)$ 0 0 0 $[\\tfrac14, \\tfrac13)$ 0 1 1 $[\\tfrac13, \\tfrac12)$ 1 1 2 $[\\tfrac12, \\tfrac23)$ 1 2 3 $[\\tfrac23, \\tfrac34)$ 2 2 4 $[\\tfrac34, 1)$ 2 3 5 Thus $S = \\lfloor 3t \\rfloor + \\lfloor 4t \\rfloor \\in {0,1,2,3,4,5}$.\nStep 4: Solve for $n$ Equation: $7n + S = 100$.\nSo $7n = 100 - S$ must be divisible by 7.\nSince $100 \\equiv 2 \\pmod{7}$, we need $S \\equiv 2 \\pmod{7}$.\nThe only valid $S$ is 2.\nTherefore:\n$$ 7n = 100 - 2 = 98 \\quad \\Longrightarrow \\quad n = 14. $$\nAnswer:\n$$\\lfloor x \\rfloor = 14$$ ✅\n📌 Take-away Patterns to Memorize If you see … Strategy A sum/difference of floors Rewrite as $kn + \\lfloor kt \\rfloor$ and bound the leftovers. A floor plus fractional part Use $\\lfloor x \\rfloor = x - {x}$ to simplify. A nested fractional part like ${kx}$ Expand: ${kx} = kx - \\lfloor kx \\rfloor$. ✅ End of Floor Functions Reference ",
+  "wordCount" : "512",
+  "inLanguage": "en",
+  "datePublished": "2025-09-02T00:00:00Z",
+  "dateModified": "2025-09-02T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Compiled by ChatGPT"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xhx.github.io/notes/math/amc/amc10/algebra/floor-fractional-part/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Xiaohui Xie's Site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xhx.github.io/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -88,7 +178,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -120,7 +210,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/algebra/">Algebra</a></div>
+    <div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/">Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/algebra/">Algebra</a></div>
     <h1 class="post-title entry-hint-parent">
       Floor and Fractional Part Functions
     </h1>
@@ -343,7 +433,7 @@ $$\lfloor x \rfloor = 14$$ ✅</p>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
 
     
 </footer>

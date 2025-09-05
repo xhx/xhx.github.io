@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Nested Similar Figures &amp; Infinite Geometric Sums | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="amc10, geometry, nested, similar, infinite-sums, mathematics">
+<meta name="description" content="AMC 10 Geometry: Nested Similar Figures &amp; Infinite Geometric Sums">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/nested-similar-figures/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xhx.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/nested-similar-figures/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+<meta property="og:url" content="https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/nested-similar-figures/">
+  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
+  <meta property="og:title" content="Nested Similar Figures & Infinite Geometric Sums">
+  <meta property="og:description" content="AMC 10 Geometry: Nested Similar Figures &amp; Infinite Geometric Sums">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-01-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-01-01T00:00:00+00:00">
+    <meta property="article:tag" content="Amc10">
+    <meta property="article:tag" content="Geometry">
+    <meta property="article:tag" content="Nested">
+    <meta property="article:tag" content="Similar">
+    <meta property="article:tag" content="Infinite-Sums">
+    <meta property="article:tag" content="Mathematics">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Nested Similar Figures &amp; Infinite Geometric Sums">
+<meta name="twitter:description" content="AMC 10 Geometry: Nested Similar Figures &amp; Infinite Geometric Sums">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Notes",
+      "item": "https://xhx.github.io/notes/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Mathematics Notes",
+      "item": "https://xhx.github.io/notes/math/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "AMC Problems",
+      "item": "https://xhx.github.io/notes/math/amc/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "AMC 10",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "AMC 10 Geometry Mastery Guide",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/geometry/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "AMC 10 Geometry Topic Guides",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  7 ,
+      "name": "Nested Similar Figures \u0026 Infinite Geometric Sums",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/nested-similar-figures/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Nested Similar Figures \u0026 Infinite Geometric Sums",
+  "name": "Nested Similar Figures \u0026 Infinite Geometric Sums",
+  "description": "AMC 10 Geometry: Nested Similar Figures \u0026 Infinite Geometric Sums",
+  "keywords": [
+    "amc10", "geometry", "nested", "similar", "infinite-sums", "mathematics"
+  ],
+  "articleBody": "#18 – Nested Similar Figures \u0026 Infinite Geometric Sums (“Russian-doll” squares, triangles, circles, …)\nWhenever a problem says “repeat the construction forever,” look for a constant scale factor $k$ between successive shapes.\nAll linear measures shrink by $k$, areas by $k^{2}$, and volumes (rare on AMC 10) by $k^{3}$.\nThat turns the total length/area/volume into a one-line geometric-series sum.\nQuantity $n$-th copy Infinite total Side / radius / perimeter $L_n = k^{,n}L_0$ $L_{\\infty} = \\dfrac{L_0}{1-k}$ Area $A_n = k^{2n}A_0$ $A_{\\infty} = \\dfrac{A_0}{1-k^{2}}$ Volume $V_n = k^{3n}V_0$ $V_{\\infty} = \\dfrac{V_0}{1-k^{3}}$ 1 Three AMC-Style Archetypes Construction Shrink factor $k$ AMC “tell” Square-inside-square whose vertices touch the side midpoints (rotated 45°) $k=\\dfrac{1}{\\sqrt2}$ in side, so $k^{2}=\\dfrac12$ in area Midpoint wording + picture of a tilted square Inside-similar-triangle (each joins the midpoints of the previous one) $k=\\dfrac12$ in side, so $k^{2}=\\dfrac14$ in area “Connect midpoints of the sides to form new triangle” Incircle chain in a right triangle (or semicircle) $k=\\dfrac{a+b-c}{a+b+c}$ for a right triangle with legs $a,b$ Mentions successive circles tangent to legs and to the previous circle 2 Worked Examples Example A (Squares at midpoints – area) A square of side $10$ cm has a second square whose vertices are the mid-points of the sides of the first square, and so on without end. Find the total area.\nSide factor $k=\\dfrac{1}{\\sqrt2}$ ⇒ area factor $k^{2}=\\tfrac12$.\nInfinite sum\n$$A_{\\infty}= \\frac{A_0}{1-k^{2}} = \\frac{10^{2}}{1-\\tfrac12} = \\frac{100}{\\tfrac12} = \\boxed{200\\text{ cm}^{2}}. $$\nExample B (Incircle ladder – perimeters) A $6!-!8!-!10$ right triangle has its incircle, then in the corner between the incircle and the legs another circle tangent to both legs and the first circle, and so on forever. What is the sum of the circumferences?\nOriginal inradius $r_0 = \\dfrac{6+8-10}{2}=2$.\nScale factor $k=\\dfrac{r_1}{r_0} =\\dfrac{6+8-10}{6+8+10}=\\dfrac{4}{24}=\\tfrac16$.\nCircumference sum\n$$C_{\\infty}= \\frac{2\\pi r_0}{1-k} = \\frac{4\\pi}{1-\\tfrac16} = \\frac{4\\pi}{\\tfrac56} = \\boxed{\\tfrac{24\\pi}{5}}. $$\n(Notice the AMC-friendly clean fraction.)\n3 General “One-Glance” Strategy Spot the similarity. Each new figure is a scaled copy of the previous one—identify $k$.\nDecide whether you need lengths or areas.\nWrite the geometric series $S=\\dfrac{\\text{first term}}{1-r}$ with\n$r=k$ for line-type quantities, $r=k^{2}$ for areas.\nReduce the arithmetic—contest writers usually choose numbers so denominators cancel.\nQuick Drill (check your mastery) Triangles: An equilateral triangle of side $12$ cm has triangles drawn on the middle third of each side (Koch flake start). What is the infinite total perimeter? (Answer: $P_{\\infty}=12\\bigl(1+\\sum_{n\\ge1}(\\tfrac43)^{n}\\bigr)=\\tfrac{12}{1-\\tfrac43}=+\\infty$; perimeter actually diverges—spot the trap!) Squares rotated 45° inside a $14$ cm square (midpoint construction). Total area? (Answer: $14^{2}/(1-\\tfrac12)=392$.) Circle ladder inside a $5!-!12!-!13$ triangle. Find $k$ and the sum of radii. Master these infinite-series shortcuts and a whole class of AMC geometry problems collapses to four lines.\n",
+  "wordCount" : "437",
+  "inLanguage": "en",
+  "datePublished": "2024-01-01T00:00:00Z",
+  "dateModified": "2024-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Xiaohui Xie"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/nested-similar-figures/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Xiaohui Xie's Site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xhx.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/">Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/geometry/">AMC 10 Geometry Mastery Guide</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/">AMC 10 Geometry Topic Guides</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Nested Similar Figures &amp; Infinite Geometric Sums
+    </h1>
+    <div class="post-description">
+      AMC 10 Geometry: Nested Similar Figures &amp; Infinite Geometric Sums
+    </div>
+    <div class="post-meta"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="18--nested-similar-figures--infinite-geometric-sums">#18 – Nested Similar Figures &amp; Infinite Geometric Sums<a hidden class="anchor" aria-hidden="true" href="#18--nested-similar-figures--infinite-geometric-sums">#</a></h1>
+<p><em>(&ldquo;Russian-doll&rdquo; squares, triangles, circles, …)</em></p>
+<p>Whenever a problem says &ldquo;repeat the construction forever,&rdquo; look for a <strong>constant scale factor $k$</strong> between successive shapes.</p>
+<p>All linear measures shrink by $k$, areas by $k^{2}$, and volumes (rare on AMC 10) by $k^{3}$.</p>
+<p>That turns the total length/area/volume into a one-line geometric-series sum.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Quantity</th>
+          <th>$n$-th copy</th>
+          <th>Infinite total</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Side / radius / perimeter</td>
+          <td>$L_n = k^{,n}L_0$</td>
+          <td>$L_{\infty} = \dfrac{L_0}{1-k}$</td>
+      </tr>
+      <tr>
+          <td>Area</td>
+          <td>$A_n = k^{2n}A_0$</td>
+          <td>$A_{\infty} = \dfrac{A_0}{1-k^{2}}$</td>
+      </tr>
+      <tr>
+          <td>Volume</td>
+          <td>$V_n = k^{3n}V_0$</td>
+          <td>$V_{\infty} = \dfrac{V_0}{1-k^{3}}$</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="1-three-amc-style-archetypes">1 Three AMC-Style Archetypes<a hidden class="anchor" aria-hidden="true" href="#1-three-amc-style-archetypes">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Construction</th>
+          <th>Shrink factor $k$</th>
+          <th>AMC &ldquo;tell&rdquo;</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Square-inside-square</strong> whose vertices touch the side midpoints (rotated 45°)</td>
+          <td>$k=\dfrac{1}{\sqrt2}$ in side, so $k^{2}=\dfrac12$ in area</td>
+          <td>Midpoint wording + picture of a tilted square</td>
+      </tr>
+      <tr>
+          <td><strong>Inside-similar-triangle</strong> (each joins the midpoints of the previous one)</td>
+          <td>$k=\dfrac12$ in side, so $k^{2}=\dfrac14$ in area</td>
+          <td>&ldquo;Connect midpoints of the sides to form new triangle&rdquo;</td>
+      </tr>
+      <tr>
+          <td><strong>Incircle chain</strong> in a right triangle (or semicircle)</td>
+          <td>$k=\dfrac{a+b-c}{a+b+c}$ for a right triangle with legs $a,b$</td>
+          <td>Mentions successive circles tangent to legs and to the previous circle</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="2-worked-examples">2 Worked Examples<a hidden class="anchor" aria-hidden="true" href="#2-worked-examples">#</a></h2>
+<h3 id="example-a-squares-at-midpoints--area">Example A (Squares at midpoints – area)<a hidden class="anchor" aria-hidden="true" href="#example-a-squares-at-midpoints--area">#</a></h3>
+<blockquote>
+<p>A square of side $10$ cm has a second square whose vertices are the mid-points of the sides of the first square, and so on without end.  Find the total area.</p></blockquote>
+<ul>
+<li>
+<p>Side factor $k=\dfrac{1}{\sqrt2}$ ⇒ area factor $k^{2}=\tfrac12$.</p>
+</li>
+<li>
+<p>Infinite sum</p>
+<p>$$A_{\infty}= \frac{A_0}{1-k^{2}}
+= \frac{10^{2}}{1-\tfrac12}
+= \frac{100}{\tfrac12}
+= \boxed{200\text{ cm}^{2}}.
+$$</p>
+</li>
+</ul>
+<hr>
+<h3 id="example-b-incircle-ladder--perimeters">Example B (Incircle ladder – perimeters)<a hidden class="anchor" aria-hidden="true" href="#example-b-incircle-ladder--perimeters">#</a></h3>
+<blockquote>
+<p>A $6!-!8!-!10$ right triangle has its incircle, then in the corner between the incircle and the legs another circle tangent to both legs and the first circle, and so on forever.  What is the sum of the circumferences?</p></blockquote>
+<ul>
+<li>
+<p>Original inradius $r_0 = \dfrac{6+8-10}{2}=2$.</p>
+</li>
+<li>
+<p>Scale factor $k=\dfrac{r_1}{r_0} =\dfrac{6+8-10}{6+8+10}=\dfrac{4}{24}=\tfrac16$.</p>
+</li>
+<li>
+<p>Circumference sum</p>
+<p>$$C_{\infty}= \frac{2\pi r_0}{1-k}
+= \frac{4\pi}{1-\tfrac16}
+= \frac{4\pi}{\tfrac56}
+= \boxed{\tfrac{24\pi}{5}}.
+$$</p>
+</li>
+</ul>
+<p><em>(Notice the AMC-friendly clean fraction.)</em></p>
+<hr>
+<h2 id="3-general-one-glance-strategy">3 General &ldquo;One-Glance&rdquo; Strategy<a hidden class="anchor" aria-hidden="true" href="#3-general-one-glance-strategy">#</a></h2>
+<ol>
+<li>
+<p><strong>Spot the similarity.</strong> Each new figure is a scaled copy of the previous one—identify $k$.</p>
+</li>
+<li>
+<p><strong>Decide whether you need lengths or areas.</strong></p>
+</li>
+<li>
+<p><strong>Write the geometric series</strong> $S=\dfrac{\text{first term}}{1-r}$ with</p>
+<p>$r=k$ for line-type quantities, $r=k^{2}$ for areas.</p>
+</li>
+<li>
+<p><strong>Reduce the arithmetic</strong>—contest writers usually choose numbers so denominators cancel.</p>
+</li>
+</ol>
+<hr>
+<h3 id="quick-drill-check-your-mastery">Quick Drill (check your mastery)<a hidden class="anchor" aria-hidden="true" href="#quick-drill-check-your-mastery">#</a></h3>
+<ol>
+<li><strong>Triangles</strong>: An equilateral triangle of side $12$ cm has triangles drawn on the middle third of each side (Koch flake start). What is the infinite total <em>perimeter</em>? <em>(Answer: $P_{\infty}=12\bigl(1+\sum_{n\ge1}(\tfrac43)^{n}\bigr)=\tfrac{12}{1-\tfrac43}=+\infty$; perimeter actually diverges—spot the trap!)</em></li>
+<li><strong>Squares rotated 45°</strong> inside a $14$ cm square (midpoint construction). Total <em>area</em>? <em>(Answer: $14^{2}/(1-\tfrac12)=392$.)</em></li>
+<li><strong>Circle ladder</strong> inside a $5!-!12!-!13$ triangle. Find $k$ and the sum of radii.</li>
+</ol>
+<p>Master these infinite-series shortcuts and a whole class of AMC geometry problems collapses to four lines.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://xhx.github.io/tags/amc10/">Amc10</a></li>
+      <li><a href="https://xhx.github.io/tags/geometry/">Geometry</a></li>
+      <li><a href="https://xhx.github.io/tags/nested/">Nested</a></li>
+      <li><a href="https://xhx.github.io/tags/similar/">Similar</a></li>
+      <li><a href="https://xhx.github.io/tags/infinite-sums/">Infinite-Sums</a></li>
+      <li><a href="https://xhx.github.io/tags/mathematics/">Mathematics</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

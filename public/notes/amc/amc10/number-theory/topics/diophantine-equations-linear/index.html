@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Linear Diophantine Equations | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Number Theory, Diophantine, Linear">
+<meta name="description" content="Solving ax &#43; by = c, coin problems, and parameterization techniques.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/amc/amc10/number-theory/topics/diophantine-equations-linear/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/amc/amc10/number-theory/topics/diophantine-equations-linear/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/amc/amc10/number-theory/">Number Theory Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/amc/amc10/number-theory/topics/">Core Topics</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Linear Diophantine Equations
+    </h1>
+    <div class="post-description">
+      Solving ax &#43; by = c, coin problems, and parameterization techniques.
+    </div>
+    <div class="post-meta">3 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-linear-diophantine-equations" aria-label="🔢 Linear Diophantine Equations">🔢 Linear Diophantine Equations</a><ul>
+                        
+                <li>
+                    <a href="#-key-ideas" aria-label="🎯 Key Ideas">🎯 Key Ideas</a></li>
+                <li>
+                    <a href="#-core-concepts" aria-label="🔢 Core Concepts">🔢 Core Concepts</a><ul>
+                        
+                <li>
+                    <a href="#existence-of-solutions" aria-label="Existence of Solutions">Existence of Solutions</a></li>
+                <li>
+                    <a href="#finding-one-solution" aria-label="Finding One Solution">Finding One Solution</a></li>
+                <li>
+                    <a href="#parameterizing-all-solutions" aria-label="Parameterizing All Solutions">Parameterizing All Solutions</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-coin-problems" aria-label="🪙 Coin Problems">🪙 Coin Problems</a></li>
+                <li>
+                    <a href="#-amc-style-worked-example" aria-label="🎯 AMC-Style Worked Example">🎯 AMC-Style Worked Example</a></li>
+                <li>
+                    <a href="#-common-traps--fixes" aria-label="⚠️ Common Traps &amp; Fixes">⚠️ Common Traps &amp; Fixes</a></li>
+                <li>
+                    <a href="#-quick-techniques" aria-label="⚡ Quick Techniques">⚡ Quick Techniques</a><ul>
+                        
+                <li>
+                    <a href="#small-cases" aria-label="Small Cases">Small Cases</a></li>
+                <li>
+                    <a href="#parameterization-shortcuts" aria-label="Parameterization Shortcuts">Parameterization Shortcuts</a></li>
+                <li>
+                    <a href="#special-cases" aria-label="Special Cases">Special Cases</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-linear-diophantine-equations">🔢 Linear Diophantine Equations<a hidden class="anchor" aria-hidden="true" href="#-linear-diophantine-equations">#</a></h1>
+<p>Finding integer solutions to linear equations: the foundation of many AMC problems involving combinations and constraints.</p>
+<h2 id="-key-ideas">🎯 Key Ideas<a hidden class="anchor" aria-hidden="true" href="#-key-ideas">#</a></h2>
+<p><strong>Linear Diophantine equations</strong> are equations of the form $ax + by = c$ where we seek integer solutions $(x,y)$. The key insight is that solutions exist if and only if $\gcd(a,b)$ divides $c$. When solutions exist, we can parameterize them using the extended Euclidean algorithm.</p>
+<h2 id="-core-concepts">🔢 Core Concepts<a hidden class="anchor" aria-hidden="true" href="#-core-concepts">#</a></h2>
+<h3 id="existence-of-solutions">Existence of Solutions<a hidden class="anchor" aria-hidden="true" href="#existence-of-solutions">#</a></h3>
+<p>The equation $ax + by = c$ has integer solutions if and only if $\gcd(a,b) \mid c$.</p>
+<p><strong>Example</strong>: $3x + 6y = 9$ has solutions because $\gcd(3,6) = 3$ and $3 \mid 9$
+<strong>Example</strong>: $3x + 6y = 10$ has no solutions because $\gcd(3,6) = 3$ and $3 \nmid 10$</p>
+<h3 id="finding-one-solution">Finding One Solution<a hidden class="anchor" aria-hidden="true" href="#finding-one-solution">#</a></h3>
+<p>Use the <strong>extended Euclidean algorithm</strong> to find integers $x_0, y_0$ such that $ax_0 + by_0 = \gcd(a,b)$, then scale up.</p>
+<p><strong>Example</strong>: Find one solution to $3x + 6y = 9$</p>
+<ul>
+<li>$\gcd(3,6) = 3$, so we need $3x + 6y = 3$</li>
+<li>One solution: $x = 1, y = 0$ gives $3(1) + 6(0) = 3$</li>
+<li>Scale up: $x = 3, y = 0$ gives $3(3) + 6(0) = 9$</li>
+</ul>
+<h3 id="parameterizing-all-solutions">Parameterizing All Solutions<a hidden class="anchor" aria-hidden="true" href="#parameterizing-all-solutions">#</a></h3>
+<p>If $(x_0, y_0)$ is one solution to $ax + by = c$, then all solutions are:
+$$x = x_0 + \frac{b}{\gcd(a,b)} \cdot t, \quad y = y_0 - \frac{a}{\gcd(a,b)} \cdot t$$
+where $t$ is any integer.</p>
+<p><strong>Example</strong>: All solutions to $3x + 6y = 9$ are:</p>
+<ul>
+<li>$x = 3 + 2t, y = 0 - t$ for any integer $t$</li>
+</ul>
+<h2 id="-coin-problems">🪙 Coin Problems<a hidden class="anchor" aria-hidden="true" href="#-coin-problems">#</a></h2>
+<p>A classic application: &ldquo;How many ways can you make $c$ cents using $a$-cent and $b$-cent coins?&rdquo;</p>
+<p><strong>Strategy</strong>:</p>
+<ol>
+<li><strong>Set up equation</strong>: $ax + by = c$ where $x, y \geq 0$</li>
+<li><strong>Check existence</strong>: $\gcd(a,b) \mid c$</li>
+<li><strong>Find parameterization</strong>: Use the general solution</li>
+<li><strong>Apply constraints</strong>: $x \geq 0, y \geq 0$</li>
+<li><strong>Count solutions</strong>: Find range of $t$ that gives non-negative solutions</li>
+</ol>
+<h2 id="-amc-style-worked-example">🎯 AMC-Style Worked Example<a hidden class="anchor" aria-hidden="true" href="#-amc-style-worked-example">#</a></h2>
+<p><strong>Problem</strong>: How many ways can you make 15 cents using 3-cent and 5-cent coins?</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li><strong>Set up</strong>: $3x + 5y = 15$ where $x, y \geq 0$</li>
+<li><strong>Check</strong>: $\gcd(3,5) = 1$ and $1 \mid 15$ ✓</li>
+<li><strong>Find one solution</strong>: $x = 0, y = 3$ gives $3(0) + 5(3) = 15$</li>
+<li><strong>Parameterize</strong>: $x = 0 + 5t, y = 3 - 3t$</li>
+<li><strong>Apply constraints</strong>: $x = 5t \geq 0$ and $y = 3 - 3t \geq 0$</li>
+<li><strong>Solve</strong>: $t \geq 0$ and $t \leq 1$, so $t = 0, 1$</li>
+<li><strong>Solutions</strong>: $(0,3)$ and $(5,0)$</li>
+</ol>
+<p><strong>Answer</strong>: $2$ ways</p>
+<h2 id="-common-traps--fixes">⚠️ Common Traps &amp; Fixes<a hidden class="anchor" aria-hidden="true" href="#-common-traps--fixes">#</a></h2>
+<p><strong>Trap</strong>: Forgetting to check if solutions exist</p>
+<ul>
+<li><strong>Fix</strong>: Always verify that $\gcd(a,b) \mid c$ before proceeding</li>
+</ul>
+<p><strong>Trap</strong>: Not applying non-negativity constraints in coin problems</p>
+<ul>
+<li><strong>Fix</strong>: Remember that you can&rsquo;t have negative numbers of coins</li>
+</ul>
+<p><strong>Trap</strong>: Confusing the parameterization signs</p>
+<ul>
+<li><strong>Fix</strong>: The signs alternate: $x = x_0 + \frac{b}{d}t$, $y = y_0 - \frac{a}{d}t$</li>
+</ul>
+<h2 id="-quick-techniques">⚡ Quick Techniques<a hidden class="anchor" aria-hidden="true" href="#-quick-techniques">#</a></h2>
+<h3 id="small-cases">Small Cases<a hidden class="anchor" aria-hidden="true" href="#small-cases">#</a></h3>
+<ul>
+<li>Try small values of $x$ or $y$ first</li>
+<li>Look for patterns in the solutions</li>
+<li>Use symmetry when possible</li>
+</ul>
+<h3 id="parameterization-shortcuts">Parameterization Shortcuts<a hidden class="anchor" aria-hidden="true" href="#parameterization-shortcuts">#</a></h3>
+<ul>
+<li>If $\gcd(a,b) = 1$, then the step size is $b$ for $x$ and $a$ for $y$</li>
+<li>For coin problems, the number of solutions is often small</li>
+<li>Use the constraint $x, y \geq 0$ to bound the parameter $t$</li>
+</ul>
+<h3 id="special-cases">Special Cases<a hidden class="anchor" aria-hidden="true" href="#special-cases">#</a></h3>
+<ul>
+<li>If $a = 1$: $x = c - by$ for any integer $y$</li>
+<li>If $b = 1$: $y = c - ax$ for any integer $x$</li>
+<li>If $a = b$: $a(x + y) = c$, so $a \mid c$ and $x + y = \frac{c}{a}$</li>
+</ul>
+<hr>
+<p><strong>Previous</strong>: <a href="congruences-and-modular-arithmetic">Congruences &amp; Modular Arithmetic</a> | <strong>Next</strong>: <a href="diophantine-equations-quadratic">Quadratic Diophantine Equations</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">Amc10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/number-theory/">Number-Theory</a></li>
+      <li><a href="http://localhost:1313/tags/diophantine/">Diophantine</a></li>
+      <li><a href="http://localhost:1313/tags/linear/">Linear</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

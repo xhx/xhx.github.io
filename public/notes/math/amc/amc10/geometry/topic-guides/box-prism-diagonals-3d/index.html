@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Box &amp; Prism Diagonals (3-D Pythagorean) | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="amc10, geometry, 3d, diagonals, pythagorean, mathematics">
+<meta name="description" content="AMC 10 Geometry: Box &amp; Prism Diagonals (3-D Pythagorean)">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/box-prism-diagonals-3d/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xhx.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/box-prism-diagonals-3d/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+<meta property="og:url" content="https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/box-prism-diagonals-3d/">
+  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
+  <meta property="og:title" content="Box & Prism Diagonals (3-D Pythagorean)">
+  <meta property="og:description" content="AMC 10 Geometry: Box &amp; Prism Diagonals (3-D Pythagorean)">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-01-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-01-01T00:00:00+00:00">
+    <meta property="article:tag" content="Amc10">
+    <meta property="article:tag" content="Geometry">
+    <meta property="article:tag" content="3d">
+    <meta property="article:tag" content="Diagonals">
+    <meta property="article:tag" content="Pythagorean">
+    <meta property="article:tag" content="Mathematics">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Box &amp; Prism Diagonals (3-D Pythagorean)">
+<meta name="twitter:description" content="AMC 10 Geometry: Box &amp; Prism Diagonals (3-D Pythagorean)">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Notes",
+      "item": "https://xhx.github.io/notes/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Mathematics Notes",
+      "item": "https://xhx.github.io/notes/math/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "AMC Problems",
+      "item": "https://xhx.github.io/notes/math/amc/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "AMC 10",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "AMC 10 Geometry Mastery Guide",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/geometry/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "AMC 10 Geometry Topic Guides",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  7 ,
+      "name": "Box \u0026 Prism Diagonals (3-D Pythagorean)",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/box-prism-diagonals-3d/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Box \u0026 Prism Diagonals (3-D Pythagorean)",
+  "name": "Box \u0026 Prism Diagonals (3-D Pythagorean)",
+  "description": "AMC 10 Geometry: Box \u0026 Prism Diagonals (3-D Pythagorean)",
+  "keywords": [
+    "amc10", "geometry", "3d", "diagonals", "pythagorean", "mathematics"
+  ],
+  "articleBody": "#15 – Box \u0026 Prism Diagonals (3-D Pythagorean Nightmares Made Easy) AMC setters love to drop a right‐rectangular prism (a “box”) into the problem because every diagonal length reduces to one or two straight applications of $a^{2}+b^{2}=c^{2}$.\nDiagonal Formula (edges $a,b,c$) Memory cue Face diagonal on the $ab$-face $d_{ab}= \\sqrt{a^{2}+b^{2}}$ 2-D Pythag on one face Space (body) diagonal of the box $D=\\sqrt{a^{2}+b^{2}+c^{2}}$ Pythag twice (face ⇒ space) (Replace $a,b,c$ with whichever edge trio the problem gives.)\n1 Why the AMC 10 Loves Boxes Clean integers: Edges are often triples like $3,4,12$ so $D=\\sqrt{169}=13$. Two-step Pythag means no trig—perfect for a 1-minute calculation. Pairs with 3-D coordinate bashes: Place one corner at $(0,0,0)$ and another at $(a,b,c)$; distance formula does the work. 2 Canonical Prompts \u0026 One-Line Tactics Prompt wording Quick move “Find the length of the diagonal of a $2 \\times 3 \\times 6$ box.” $\\sqrt{2^{2}+3^{2}+6^{2}} = 7$. “Line joins the midpoints of two opposite edges; find its length.” Draw right triangle whose legs are half-diagonals. “Shortest path along faces for ant from one vertex to opposite.” Unfold two faces into a rectangle; single 2-D Pythag. “Sphere just fits inside the box.” Radius $=\\tfrac12D$ (for body diagonal fit) or $\\tfrac12\\min{a,b,c}$ (inscribed touching faces). 3 Worked Example A – Straight Space Diagonal A rectangular prism has edges $4,7,10$. What is the length of its space diagonal?\n$$D = \\sqrt{4^{2}+7^{2}+10^{2}} = \\sqrt{16+49+100} = \\sqrt{165}.$$\n(AMC choices would list $\\sqrt{165}$ directly.)\n4 Worked Example B – Mid-Edge to Opposite Mid-Edge In a $6 \\times 8 \\times 10$ box, $M$ is midpoint of edge along $6$ and $N$ is midpoint of the opposite parallel edge.\nFind $MN$.\nThe vector from $M$ to $N$ is $(6,8,10)/2=(3,4,5)$.\nSo $MN=\\sqrt{3^{2}+4^{2}+5^{2}} = \\sqrt{50} = 5\\sqrt2$.\n(Notice the half-edges create another famous triple.)\n5 Worked Example C – “Ant Path” (Face Unfold) An ant starts at one bottom corner of a $3 \\times 4 \\times 12$ box and walks the shortest path on the surface to the opposite top corner. How far does it walk?\nUnfold the $4 \\times 12$ and $3 \\times 12$ faces into a $(4+3) \\times 12 = 7 \\times 12$ rectangle.\nDiagonal length $=\\sqrt{7^{2}+12^{2}}=\\sqrt{49+144}=13$.\n(Same answer as the space diagonal of a 3–4–12 box—AMC delight.)\n6 Quick Recognition \u0026 Error Checks Checklist Reason “Opposite vertices” inside the prism? → space diagonal. Just apply the 3-term root. “Midpoints” sprinkled? → lengths often halve; see if a 3-D triple emerges. If answer options include square roots of sums of three squares, space diagonal is near-certain. Talking about surface path? Unfold two faces into a 2-D rectangle first. Mini-Drill Diagonal of a $5 \\times 12 \\times 13$ prism: $\\sqrt{5^{2}+12^{2}+13^{2}}=\\sqrt{338}$. Length of segment from $(0,0,0)$ to $(2,3,6)$: that is the space diagonal of a $2 \\times 3 \\times 6$ box → $7$. Sphere fits snugly touching all six faces of a $4 \\times 6 \\times 8$ box: radius $=2$ (half the smallest edge). Master these two-step Pythag tricks and every 3-D diagonal problem on the AMC falls in seconds.\n",
+  "wordCount" : "500",
+  "inLanguage": "en",
+  "datePublished": "2024-01-01T00:00:00Z",
+  "dateModified": "2024-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Xiaohui Xie"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/box-prism-diagonals-3d/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Xiaohui Xie's Site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xhx.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/">Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/geometry/">AMC 10 Geometry Mastery Guide</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/">AMC 10 Geometry Topic Guides</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Box &amp; Prism Diagonals (3-D Pythagorean)
+    </h1>
+    <div class="post-description">
+      AMC 10 Geometry: Box &amp; Prism Diagonals (3-D Pythagorean)
+    </div>
+    <div class="post-meta"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="15--box--prism-diagonals-3-d-pythagorean-nightmares-made-easy">#15 – Box &amp; Prism Diagonals (3-D Pythagorean Nightmares Made Easy)<a hidden class="anchor" aria-hidden="true" href="#15--box--prism-diagonals-3-d-pythagorean-nightmares-made-easy">#</a></h1>
+<p>AMC setters love to drop a right‐rectangular prism (a &ldquo;box&rdquo;) into the problem because every diagonal length reduces to one or two straight applications of $a^{2}+b^{2}=c^{2}$.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Diagonal</th>
+          <th>Formula (edges $a,b,c$)</th>
+          <th>Memory cue</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Face diagonal</strong> on the $ab$-face</td>
+          <td>$d_{ab}= \sqrt{a^{2}+b^{2}}$</td>
+          <td>2-D Pythag on one face</td>
+      </tr>
+      <tr>
+          <td><strong>Space (body) diagonal</strong> of the box</td>
+          <td>$D=\sqrt{a^{2}+b^{2}+c^{2}}$</td>
+          <td>Pythag twice (face ⇒ space)</td>
+      </tr>
+  </tbody>
+</table>
+<p><em>(Replace $a,b,c$ with whichever edge trio the problem gives.)</em></p>
+<hr>
+<h3 id="1-why-the-amc-10-loves-boxes">1 Why the AMC 10 Loves Boxes<a hidden class="anchor" aria-hidden="true" href="#1-why-the-amc-10-loves-boxes">#</a></h3>
+<ul>
+<li><strong>Clean integers:</strong> Edges are often triples like $3,4,12$ so $D=\sqrt{169}=13$.</li>
+<li><strong>Two-step Pythag means no trig</strong>—perfect for a 1-minute calculation.</li>
+<li><strong>Pairs with 3-D coordinate bashes:</strong> Place one corner at $(0,0,0)$ and another at $(a,b,c)$; distance formula does the work.</li>
+</ul>
+<hr>
+<h3 id="2-canonical-prompts--one-line-tactics">2 Canonical Prompts &amp; One-Line Tactics<a hidden class="anchor" aria-hidden="true" href="#2-canonical-prompts--one-line-tactics">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Prompt wording</th>
+          <th>Quick move</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>&ldquo;Find the length of the diagonal of a $2 \times 3 \times 6$ box.&rdquo;</td>
+          <td>$\sqrt{2^{2}+3^{2}+6^{2}} = 7$.</td>
+      </tr>
+      <tr>
+          <td>&ldquo;Line joins the midpoints of two opposite edges; find its length.&rdquo;</td>
+          <td>Draw right triangle whose legs are half-diagonals.</td>
+      </tr>
+      <tr>
+          <td>&ldquo;Shortest path along faces for ant from one vertex to opposite.&rdquo;</td>
+          <td>Unfold two faces into a rectangle; single 2-D Pythag.</td>
+      </tr>
+      <tr>
+          <td>&ldquo;Sphere just fits inside the box.&rdquo;</td>
+          <td>Radius $=\tfrac12D$ (for body diagonal fit) or $\tfrac12\min{a,b,c}$ (inscribed touching faces).</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="3-worked-example-a--straight-space-diagonal">3 Worked Example A – Straight Space Diagonal<a hidden class="anchor" aria-hidden="true" href="#3-worked-example-a--straight-space-diagonal">#</a></h3>
+<blockquote>
+<p>A rectangular prism has edges $4,7,10$.  What is the length of its space diagonal?</p></blockquote>
+<p>$$D = \sqrt{4^{2}+7^{2}+10^{2}}
+= \sqrt{16+49+100}
+= \sqrt{165}.$$</p>
+<p><em>(AMC choices would list $\sqrt{165}$ directly.)</em></p>
+<hr>
+<h3 id="4-worked-example-b--mid-edge-to-opposite-mid-edge">4 Worked Example B – Mid-Edge to Opposite Mid-Edge<a hidden class="anchor" aria-hidden="true" href="#4-worked-example-b--mid-edge-to-opposite-mid-edge">#</a></h3>
+<blockquote>
+<p>In a $6 \times 8 \times 10$ box, $M$ is midpoint of edge along $6$ and $N$ is midpoint of the opposite parallel edge.</p>
+<p>Find $MN$.</p></blockquote>
+<p>The vector from $M$ to $N$ is $(6,8,10)/2=(3,4,5)$.</p>
+<p>So $MN=\sqrt{3^{2}+4^{2}+5^{2}} = \sqrt{50} = 5\sqrt2$.</p>
+<p><em>(Notice the half-edges create another famous triple.)</em></p>
+<hr>
+<h3 id="5-worked-example-c--ant-path-face-unfold">5 Worked Example C – &ldquo;Ant Path&rdquo; (Face Unfold)<a hidden class="anchor" aria-hidden="true" href="#5-worked-example-c--ant-path-face-unfold">#</a></h3>
+<blockquote>
+<p>An ant starts at one bottom corner of a $3 \times 4 \times 12$ box and walks the shortest path on the surface to the opposite top corner.  How far does it walk?</p></blockquote>
+<p>Unfold the $4 \times 12$ and $3 \times 12$ faces into a $(4+3) \times 12 = 7 \times 12$ rectangle.</p>
+<p>Diagonal length $=\sqrt{7^{2}+12^{2}}=\sqrt{49+144}=13$.</p>
+<p><em>(Same answer as the space diagonal of a 3–4–12 box—AMC delight.)</em></p>
+<hr>
+<h3 id="6-quick-recognition--error-checks">6 Quick Recognition &amp; Error Checks<a hidden class="anchor" aria-hidden="true" href="#6-quick-recognition--error-checks">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Checklist</th>
+          <th>Reason</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>&ldquo;Opposite vertices&rdquo; inside the prism? → space diagonal.</td>
+          <td>Just apply the 3-term root.</td>
+      </tr>
+      <tr>
+          <td>&ldquo;Midpoints&rdquo; sprinkled? → lengths often halve; see if a 3-D triple emerges.</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>If answer options include square roots of sums of <strong>three</strong> squares, space diagonal is near-certain.</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Talking about <strong>surface path</strong>?  Unfold two faces into a 2-D rectangle first.</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="mini-drill">Mini-Drill<a hidden class="anchor" aria-hidden="true" href="#mini-drill">#</a></h3>
+<ol>
+<li><strong>Diagonal of a $5 \times 12 \times 13$ prism:</strong> $\sqrt{5^{2}+12^{2}+13^{2}}=\sqrt{338}$.</li>
+<li><strong>Length of segment from $(0,0,0)$ to $(2,3,6)$:</strong> that <strong>is</strong> the space diagonal of a $2 \times 3 \times 6$ box → $7$.</li>
+<li><strong>Sphere fits snugly touching all six faces of a $4 \times 6 \times 8$ box:</strong> radius $=2$ (half the smallest edge).</li>
+</ol>
+<p>Master these two-step Pythag tricks and every 3-D diagonal problem on the AMC falls in seconds.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://xhx.github.io/tags/amc10/">Amc10</a></li>
+      <li><a href="https://xhx.github.io/tags/geometry/">Geometry</a></li>
+      <li><a href="https://xhx.github.io/tags/3d/">3d</a></li>
+      <li><a href="https://xhx.github.io/tags/diagonals/">Diagonals</a></li>
+      <li><a href="https://xhx.github.io/tags/pythagorean/">Pythagorean</a></li>
+      <li><a href="https://xhx.github.io/tags/mathematics/">Mathematics</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

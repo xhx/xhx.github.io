@@ -2,11 +2,123 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Probability on Xiaohui Xie&#39;s Site</title>
-    <link>http://localhost:1313/tags/probability/</link>
+    <link>https://xhx.github.io/tags/probability/</link>
     <description>Recent content in Probability on Xiaohui Xie&#39;s Site</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/probability/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xhx.github.io/tags/probability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Geometric Probability</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/geometric-probability/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/geometric-probability/</guid>
+      <description>AMC 10 Geometry: Geometric Probability</description>
+    </item>
+    <item>
+      <title>AMC 10 vs AMC 12 Scope Map</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/scope-map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/scope-map/</guid>
+      <description>Complete matrix showing which counting and probability topics are tested at each AMC level.</description>
+    </item>
+    <item>
+      <title>Notation Cheatsheet</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/notation-cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/notation-cheatsheet/</guid>
+      <description>Essential symbols, operations, and probability notation for AMC counting and probability problems.</description>
+    </item>
+    <item>
+      <title>Concept Atlas</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/concept-atlas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/concept-atlas/</guid>
+      <description>One-paragraph primers on all major counting and probability topics with AMC appearance cues.</description>
+    </item>
+    <item>
+      <title>Probability Basics</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/probability-basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/probability-basics/</guid>
+      <description>Conditional probability, independence, law of total probability, and Bayes&amp;#39; theorem with AMC examples.</description>
+    </item>
+    <item>
+      <title>Expected Value</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/expected-value/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/expected-value/</guid>
+      <description>Linearity of expectation, indicator variables, and expected counts with AMC examples.</description>
+    </item>
+    <item>
+      <title>Probability Distributions</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/distributions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/distributions/</guid>
+      <description>Binomial, geometric, negative binomial, and hypergeometric distributions with AMC examples.</description>
+    </item>
+    <item>
+      <title>Symmetry &amp; Invariance</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/symmetry-invariance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/symmetry-invariance/</guid>
+      <description>Using symmetry to reduce cases, invariance principles, and when to apply these techniques.</description>
+    </item>
+    <item>
+      <title>At Least/At Most</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/at-least-at-most/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/at-least-at-most/</guid>
+      <description>Complement counting vs. inclusion-exclusion for &amp;#39;at least&amp;#39; and &amp;#39;at most&amp;#39; problems.</description>
+    </item>
+    <item>
+      <title>Urn, Coin &amp; String Problems</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/urn-coin-strings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/urn-coin-strings/</guid>
+      <description>Replacement vs. no-replacement, runs, and sequential probability problems.</description>
+    </item>
+    <item>
+      <title>Expected Counts</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/expected-counts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/expected-counts/</guid>
+      <description>Using indicator variables and linearity of expectation for expected count problems.</description>
+    </item>
+    <item>
+      <title>Conditional Chains</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/conditional-chains/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/conditional-chains/</guid>
+      <description>Total probability, Bayes&amp;#39; theorem, and complex conditional probability sequences.</description>
+    </item>
+    <item>
+      <title>Symmetry Probability</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/symmetry-probability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/symmetry-probability/</guid>
+      <description>Using symmetry to find probabilities without explicit counting, especially for random choices.</description>
+    </item>
+    <item>
+      <title>Hypergeo vs Binomial</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/hypergeo-vs-binomial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/hypergeo-vs-binomial/</guid>
+      <description>Recognizing when to use hypergeometric vs binomial distributions and applying the correct formulas.</description>
+    </item>
+    <item>
+      <title>Essential Formulas</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/04-formulas/essential-formulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/04-formulas/essential-formulas/</guid>
+      <description>Complete formula bank with usage notes and micro-examples for AMC counting and probability.</description>
+    </item>
+    <item>
+      <title>Problem-Solving Tips</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/05-tips/problem-solving-tips/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/05-tips/problem-solving-tips/</guid>
+      <description>Comprehensive heuristics, checklists, and strategies for AMC counting and probability problems.</description>
+    </item>
   </channel>
 </rss>

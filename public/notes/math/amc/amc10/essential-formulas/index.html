@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Essential Formulas | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="amc10, amc12, number-theory, formulas, mathematics">
+<meta name="description" content="Comprehensive collection of essential number theory formulas for AMC 10/12">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/essential-formulas/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/essential-formulas/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Essential Formulas
+    </h1>
+    <div class="post-description">
+      Comprehensive collection of essential number theory formulas for AMC 10/12
+    </div>
+    <div class="post-meta"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="-essential-formulas">🔢 Essential Formulas<a hidden class="anchor" aria-hidden="true" href="#-essential-formulas">#</a></h1>
+<p>Comprehensive collection of essential number theory formulas for AMC 10/12 success.</p>
+<h2 id="-divisibility--primes">🔢 Divisibility &amp; Primes<a hidden class="anchor" aria-hidden="true" href="#-divisibility--primes">#</a></h2>
+<div class="formula-grid">
+  <div class="formula-card">
+    <h4>🔢 Divisibility Rules</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">Last digit is even</span>
+        <span class="description">Divisible by 2</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">Sum of digits divisible by 3</span>
+        <span class="description">Divisible by 3</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">Last 2 digits divisible by 4</span>
+        <span class="description">Divisible by 4</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">Last digit is 0 or 5</span>
+        <span class="description">Divisible by 5</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">Divisible by both 2 and 3</span>
+        <span class="description">Divisible by 6</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">Last 3 digits divisible by 8</span>
+        <span class="description">Divisible by 8</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">Sum of digits divisible by 9</span>
+        <span class="description">Divisible by 9</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">Alternating sum divisible by 11</span>
+        <span class="description">Divisible by 11</span>
+      </div>
+    </div>
+  </div>
+  <div class="formula-card">
+    <h4>🔢 Prime Properties</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$p \mid ab \Rightarrow p \mid a$ or $p \mid b$</span>
+        <span class="description">Prime divisibility</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\gcd(a,b) = 1$ if $a,b$ are consecutive</span>
+        <span class="description">Consecutive integers</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$n!$ has $\sum_{k=1}^{\infty} \lfloor \frac{n}{p^k} \rfloor$ factors of $p$</span>
+        <span class="description">Legendre's formula</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$(p-1)! \equiv -1 \pmod{p}$</span>
+        <span class="description">Wilson's theorem</span>
+      </div>
+    </div>
+  </div>
+  <div class="formula-card">
+    <h4>🔢 GCD & LCM</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$\gcd(a,b) = \gcd(b, a \bmod b)$</span>
+        <span class="description">Euclidean algorithm</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\gcd(a,b) \cdot \text{lcm}(a,b) = ab$</span>
+        <span class="description">GCD-LCM relationship</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\gcd(a,b) = ax + by$ for some $x,y$</span>
+        <span class="description">Bézout's identity</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\gcd(a,b,c) = \gcd(\gcd(a,b), c)$</span>
+        <span class="description">GCD associativity</span>
+      </div>
+    </div>
+  </div>
+  <div class="formula-card">
+    <h4>🔢 Factorization</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$n = p_1^{a_1} p_2^{a_2} \cdots p_k^{a_k}$</span>
+        <span class="description">Prime factorization</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\sigma(n) = \prod_{i=1}^k \frac{p_i^{a_i+1}-1}{p_i-1}$</span>
+        <span class="description">Sum of divisors</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\phi(n) = n \prod_{p \mid n} (1 - \frac{1}{p})$</span>
+        <span class="description">Euler's totient</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\tau(n) = \prod_{i=1}^k (a_i + 1)$</span>
+        <span class="description">Number of divisors</span>
+      </div>
+    </div>
+  </div>
+</div>
+<h2 id="-modular-arithmetic">🔢 Modular Arithmetic<a hidden class="anchor" aria-hidden="true" href="#-modular-arithmetic">#</a></h2>
+<div class="formula-grid">
+  <div class="formula-card">
+    <h4>🔢 Basic Operations</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$(a + b) \bmod m = ((a \bmod m) + (b \bmod m)) \bmod m$</span>
+        <span class="description">Addition</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$(a - b) \bmod m = ((a \bmod m) - (b \bmod m)) \bmod m$</span>
+        <span class="description">Subtraction</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$(a \cdot b) \bmod m = ((a \bmod m) \cdot (b \bmod m)) \bmod m$</span>
+        <span class="description">Multiplication</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$a^n \bmod m = (a \bmod m)^n \bmod m$</span>
+        <span class="description">Exponentiation</span>
+      </div>
+    </div>
+  </div>
+  <div class="formula-card">
+    <h4>🔢 Fermat's Little Theorem</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$a^{p-1} \equiv 1 \pmod{p}$</span>
+        <span class="description">For prime $p$, $\gcd(a,p) = 1$</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$a^p \equiv a \pmod{p}$</span>
+        <span class="description">For any integer $a$ and prime $p$</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$a^{-1} \equiv a^{p-2} \pmod{p}$</span>
+        <span class="description">Modular inverse</span>
+      </div>
+    </div>
+  </div>
+  <div class="formula-card">
+    <h4>🔢 Euler's Theorem</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$a^{\phi(n)} \equiv 1 \pmod{n}$</span>
+        <span class="description">For $\gcd(a,n) = 1$</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$a^{\phi(n)+1} \equiv a \pmod{n}$</span>
+        <span class="description">General form</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\phi(p^k) = p^k - p^{k-1}$</span>
+        <span class="description">For prime power</span>
+      </div>
+    </div>
+  </div>
+  <div class="formula-card">
+    <h4>🔢 Chinese Remainder Theorem</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$x \equiv a_1 \pmod{m_1}$</span>
+        <span class="description">System of congruences</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$x \equiv a_2 \pmod{m_2}$</span>
+        <span class="description">with $\gcd(m_1, m_2) = 1$</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$x \equiv a_1 \cdot m_2 \cdot m_2^{-1} + a_2 \cdot m_1 \cdot m_1^{-1} \pmod{m_1 m_2}$</span>
+        <span class="description">Solution formula</span>
+      </div>
+    </div>
+  </div>
+</div>
+<h2 id="-diophantine-equations">🔢 Diophantine Equations<a hidden class="anchor" aria-hidden="true" href="#-diophantine-equations">#</a></h2>
+<div class="formula-grid">
+  <div class="formula-card">
+    <h4>🔢 Linear Diophantine</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$ax + by = c$ has solutions iff $\gcd(a,b) \mid c$</span>
+        <span class="description">Existence condition</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$x = x_0 + \frac{b}{\gcd(a,b)} \cdot t$</span>
+        <span class="description">General solution</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$y = y_0 - \frac{a}{\gcd(a,b)} \cdot t$</span>
+        <span class="description">General solution</span>
+      </div>
+    </div>
+  </div>
+  <div class="formula-card">
+    <h4>🔢 Pell's Equation</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$x^2 - Dy^2 = 1$</span>
+        <span class="description">Basic form</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$(x_1 + y_1\sqrt{D})^n = x_n + y_n\sqrt{D}$</span>
+        <span class="description">Recursive solution</span>
+      </div>
+    </div>
+  </div>
+  <div class="formula-card">
+    <h4>🔢 Pythagorean Triples</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$a = m^2 - n^2$</span>
+        <span class="description">Primitive triple</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$b = 2mn$</span>
+        <span class="description">Primitive triple</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$c = m^2 + n^2$</span>
+        <span class="description">Primitive triple</span>
+      </div>
+    </div>
+  </div>
+  <div class="formula-card">
+    <h4>🔢 Chicken McNugget</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$g(a,b) = ab - a - b$</span>
+        <span class="description">Frobenius number</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$g(a,b,c) = \frac{1}{2}(\sqrt{abc(a+b+c)} - a - b - c)$</span>
+        <span class="description">Three variables</span>
+      </div>
+    </div>
+  </div>
+</div>
+<h2 id="-sequences--series">🔢 Sequences &amp; Series<a hidden class="anchor" aria-hidden="true" href="#-sequences--series">#</a></h2>
+<div class="formula-grid">
+  <div class="formula-card">
+    <h4>🔢 Arithmetic Sequences</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$a_n = a_1 + (n-1)d$</span>
+        <span class="description">General term</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$S_n = \frac{n}{2}(a_1 + a_n)$</span>
+        <span class="description">Sum of first $n$ terms</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$S_n = \frac{n}{2}[2a_1 + (n-1)d]$</span>
+        <span class="description">Alternative sum formula</span>
+      </div>
+    </div>
+  </div>
+  <div class="formula-card">
+    <h4>🔢 Geometric Sequences</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$a_n = a_1 \cdot r^{n-1}$</span>
+        <span class="description">General term</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$S_n = \frac{a_1(1-r^n)}{1-r}$</span>
+        <span class="description">Sum of first $n$ terms</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$S_{\infty} = \frac{a_1}{1-r}$ for $|r| < 1$</span>
+        <span class="description">Infinite sum</span>
+      </div>
+    </div>
+  </div>
+  <div class="formula-card">
+    <h4>🔢 Fibonacci Sequence</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$F_n = F_{n-1} + F_{n-2}$</span>
+        <span class="description">Recurrence relation</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$F_n = \frac{\phi^n - \psi^n}{\sqrt{5}}$</span>
+        <span class="description">Binet's formula</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\gcd(F_m, F_n) = F_{\gcd(m,n)}$</span>
+        <span class="description">GCD property</span>
+      </div>
+    </div>
+  </div>
+  <div class="formula-card">
+    <h4>🔢 Sum Formulas</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$\sum_{k=1}^n k = \frac{n(n+1)}{2}$</span>
+        <span class="description">Sum of integers</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\sum_{k=1}^n k^2 = \frac{n(n+1)(2n+1)}{6}$</span>
+        <span class="description">Sum of squares</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\sum_{k=1}^n k^3 = \left(\frac{n(n+1)}{2}\right)^2$</span>
+        <span class="description">Sum of cubes</span>
+      </div>
+    </div>
+  </div>
+</div>
+<h2 id="-base-systems">🔢 Base Systems<a hidden class="anchor" aria-hidden="true" href="#-base-systems">#</a></h2>
+<div class="formula-grid">
+  <div class="formula-card">
+    <h4>🔢 Base Conversion</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$n = d_k \cdot b^k + d_{k-1} \cdot b^{k-1} + \cdots + d_0$</span>
+        <span class="description">Base $b$ representation</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$d_i \in \{0, 1, 2, \ldots, b-1\}$</span>
+        <span class="description">Digit constraints</span>
+      </div>
+    </div>
+  </div>
+  <div class="formula-card">
+    <h4>🔢 Binary Operations</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$a \oplus b = (a + b) \bmod 2$</span>
+        <span class="description">XOR operation</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$a \land b = \min(a, b)$</span>
+        <span class="description">AND operation</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$a \lor b = \max(a, b)$</span>
+        <span class="description">OR operation</span>
+      </div>
+    </div>
+  </div>
+</div>
+<h2 id="-mental-math-shortcuts">🧠 Mental Math Shortcuts<a hidden class="anchor" aria-hidden="true" href="#-mental-math-shortcuts">#</a></h2>
+<h3 id="common-calculations">Common Calculations<a hidden class="anchor" aria-hidden="true" href="#common-calculations">#</a></h3>
+<ul>
+<li><strong>$\pi \approx 3.1416$</strong> or <strong>$\frac{22}{7}$</strong> for rough estimates</li>
+<li><strong>$e \approx 2.718$</strong> (occasionally needed)</li>
+<li><strong>Golden ratio</strong>: $\phi = \frac{1+\sqrt{5}}{2} \approx 1.618$</li>
+<li><strong>$\sqrt{2} \approx 1.414$</strong>, <strong>$\sqrt{3} \approx 1.732$</strong></li>
+</ul>
+<h3 id="prime-recognition">Prime Recognition<a hidden class="anchor" aria-hidden="true" href="#prime-recognition">#</a></h3>
+<ul>
+<li><strong>Primes under 100</strong>: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97</li>
+<li><strong>Twin primes</strong>: (3,5), (5,7), (11,13), (17,19), (29,31), (41,43), (59,61), (71,73)</li>
+<li><strong>Mersenne primes</strong>: $2^p - 1$ where $p$ is prime</li>
+</ul>
+<h3 id="modular-arithmetic-tricks">Modular Arithmetic Tricks<a hidden class="anchor" aria-hidden="true" href="#modular-arithmetic-tricks">#</a></h3>
+<ul>
+<li><strong>$a^n \bmod 10$</strong>: Look at last digit patterns</li>
+<li><strong>$a^n \bmod 4$</strong>: Depends only on $a \bmod 4$ and $n \bmod 2$</li>
+<li><strong>$a^n \bmod 9$</strong>: Same as sum of digits of $a^n$</li>
+</ul>
+<hr>
+<h2 id="-related-resources">📚 Related Resources<a hidden class="anchor" aria-hidden="true" href="#-related-resources">#</a></h2>
+<ul>
+<li><a href="problem-solving-tips">💡 Problem-Solving Tips</a> - Strategies and techniques</li>
+<li><a href="problem-types">🎯 Problem Types</a> - Complete list of essential problem patterns</li>
+<li><a href="reference-guide">📖 Reference Guide</a> - Comprehensive number theory reference</li>
+<li><a href="topic-guides">📝 Topic Guides</a> - Detailed coverage of specific topics</li>
+</ul>
+<hr>
+<p><em>Master these formulas and you&rsquo;ll have the mathematical foundation needed for AMC 10/12 number theory success!</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">Amc10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/number-theory/">Number-Theory</a></li>
+      <li><a href="http://localhost:1313/tags/formulas/">Formulas</a></li>
+      <li><a href="http://localhost:1313/tags/mathematics/">Mathematics</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

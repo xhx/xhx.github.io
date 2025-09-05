@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Essential Formulas | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Number Theory, Formulas, Reference">
+<meta name="description" content="Complete formula bank with usage examples and micro-examples for AMC number theory.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/amc/amc10/number-theory/formulas/essential-formulas/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/amc/amc10/number-theory/formulas/essential-formulas/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/amc/amc10/number-theory/">Number Theory Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/amc/amc10/number-theory/formulas/">Essential Formulas</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Essential Formulas
+    </h1>
+    <div class="post-description">
+      Complete formula bank with usage examples and micro-examples for AMC number theory.
+    </div>
+    <div class="post-meta">4 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-essential-formulas" aria-label="📏 Essential Formulas">📏 Essential Formulas</a><ul>
+                        
+                <li>
+                    <a href="#-basic-divisibility" aria-label="🔢 Basic Divisibility">🔢 Basic Divisibility</a><ul>
+                        
+                <li>
+                    <a href="#euclidean-algorithm" aria-label="Euclidean Algorithm">Euclidean Algorithm</a></li>
+                <li>
+                    <a href="#b%c3%a9zouts-identity" aria-label="Bézout&rsquo;s Identity">Bézout&rsquo;s Identity</a></li>
+                <li>
+                    <a href="#fundamental-relationship" aria-label="Fundamental Relationship">Fundamental Relationship</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-modular-arithmetic" aria-label="🔄 Modular Arithmetic">🔄 Modular Arithmetic</a><ul>
+                        
+                <li>
+                    <a href="#fermats-little-theorem" aria-label="Fermat&rsquo;s Little Theorem">Fermat&rsquo;s Little Theorem</a></li>
+                <li>
+                    <a href="#eulers-theorem" aria-label="Euler&rsquo;s Theorem">Euler&rsquo;s Theorem</a></li>
+                <li>
+                    <a href="#chinese-remainder-theorem" aria-label="Chinese Remainder Theorem">Chinese Remainder Theorem</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-divisor-functions" aria-label="📊 Divisor Functions">📊 Divisor Functions</a><ul>
+                        
+                <li>
+                    <a href="#number-of-divisors" aria-label="Number of Divisors">Number of Divisors</a></li>
+                <li>
+                    <a href="#sum-of-divisors" aria-label="Sum of Divisors">Sum of Divisors</a></li>
+                <li>
+                    <a href="#eulers-totient-function" aria-label="Euler&rsquo;s Totient Function">Euler&rsquo;s Totient Function</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-diophantine-equations" aria-label="🔺 Diophantine Equations">🔺 Diophantine Equations</a><ul>
+                        
+                <li>
+                    <a href="#pythagorean-triples" aria-label="Pythagorean Triples">Pythagorean Triples</a></li>
+                <li>
+                    <a href="#linear-diophantine-solutions" aria-label="Linear Diophantine Solutions">Linear Diophantine Solutions</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-special-functions" aria-label="📈 Special Functions">📈 Special Functions</a><ul>
+                        
+                <li>
+                    <a href="#legendres-formula" aria-label="Legendre&rsquo;s Formula">Legendre&rsquo;s Formula</a></li>
+                <li>
+                    <a href="#order-function" aria-label="Order Function">Order Function</a></li>
+                <li>
+                    <a href="#valuation-function" aria-label="Valuation Function">Valuation Function</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-reference-tables" aria-label="⚡ Quick Reference Tables">⚡ Quick Reference Tables</a><ul>
+                        
+                <li>
+                    <a href="#common-totient-values" aria-label="Common Totient Values">Common Totient Values</a></li>
+                <li>
+                    <a href="#common-orders-modulo-small-primes" aria-label="Common Orders Modulo Small Primes">Common Orders Modulo Small Primes</a></li>
+                <li>
+                    <a href="#divisibility-tests" aria-label="Divisibility Tests">Divisibility Tests</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-essential-formulas">📏 Essential Formulas<a hidden class="anchor" aria-hidden="true" href="#-essential-formulas">#</a></h1>
+<p>Complete formula bank for AMC number theory with usage examples and micro-examples.</p>
+<h2 id="-basic-divisibility">🔢 Basic Divisibility<a hidden class="anchor" aria-hidden="true" href="#-basic-divisibility">#</a></h2>
+<h3 id="euclidean-algorithm">Euclidean Algorithm<a hidden class="anchor" aria-hidden="true" href="#euclidean-algorithm">#</a></h3>
+<p>$$\gcd(a,b) = \gcd(b, a \bmod b)$$</p>
+<p><strong>Usage</strong>: Compute GCD efficiently
+<strong>Example</strong>: $\gcd(48,18) = \gcd(18,12) = \gcd(12,6) = 6$</p>
+<h3 id="bézouts-identity">Bézout&rsquo;s Identity<a hidden class="anchor" aria-hidden="true" href="#bézouts-identity">#</a></h3>
+<p>If $\gcd(a,b) = d$, then there exist integers $x,y$ such that:
+$$ax + by = d$$</p>
+<p><strong>Usage</strong>: Find solutions to linear Diophantine equations
+<strong>Example</strong>: $\gcd(12,18) = 6$, and $12(-1) + 18(1) = 6$</p>
+<h3 id="fundamental-relationship">Fundamental Relationship<a hidden class="anchor" aria-hidden="true" href="#fundamental-relationship">#</a></h3>
+<p>$$ab = \gcd(a,b) \cdot \operatorname{lcm}(a,b)$$</p>
+<p><strong>Usage</strong>: Relate GCD and LCM
+<strong>Example</strong>: $12 \cdot 18 = 216 = \gcd(12,18) \cdot \operatorname{lcm}(12,18) = 6 \cdot 36$</p>
+<h2 id="-modular-arithmetic">🔄 Modular Arithmetic<a hidden class="anchor" aria-hidden="true" href="#-modular-arithmetic">#</a></h2>
+<h3 id="fermats-little-theorem">Fermat&rsquo;s Little Theorem<a hidden class="anchor" aria-hidden="true" href="#fermats-little-theorem">#</a></h3>
+<p>For prime $p$ and integer $a$ with $\gcd(a,p) = 1$:
+$$a^{p-1} \equiv 1 \pmod{p}$$</p>
+<p><strong>Usage</strong>: Reduce large exponents modulo primes
+<strong>Example</strong>: $2^6 \equiv 1 \pmod{7}$ because $7$ is prime and $\gcd(2,7) = 1$</p>
+<h3 id="eulers-theorem">Euler&rsquo;s Theorem<a hidden class="anchor" aria-hidden="true" href="#eulers-theorem">#</a></h3>
+<p>For positive integer $m$ and integer $a$ with $\gcd(a,m) = 1$:
+$$a^{\varphi(m)} \equiv 1 \pmod{m}$$</p>
+<p><strong>Usage</strong>: Reduce large exponents modulo composite numbers
+<strong>Example</strong>: $3^4 \equiv 1 \pmod{10}$ because $\varphi(10) = 4$ and $\gcd(3,10) = 1$</p>
+<h3 id="chinese-remainder-theorem">Chinese Remainder Theorem<a hidden class="anchor" aria-hidden="true" href="#chinese-remainder-theorem">#</a></h3>
+<p>If $m_1, m_2, \ldots, m_k$ are pairwise coprime, then the system:
+$$x \equiv a_1 \pmod{m_1}, \quad x \equiv a_2 \pmod{m_2}, \quad \ldots, \quad x \equiv a_k \pmod{m_k}$$
+has a unique solution modulo $M = m_1 m_2 \cdots m_k$.</p>
+<p><strong>Usage</strong>: Solve systems of congruences
+<strong>Example</strong>: $x \equiv 2 \pmod{3}$ and $x \equiv 3 \pmod{5}$ has solution $x \equiv 8 \pmod{15}$</p>
+<h2 id="-divisor-functions">📊 Divisor Functions<a hidden class="anchor" aria-hidden="true" href="#-divisor-functions">#</a></h2>
+<h3 id="number-of-divisors">Number of Divisors<a hidden class="anchor" aria-hidden="true" href="#number-of-divisors">#</a></h3>
+<p>If $n = p_1^{e_1} p_2^{e_2} \cdots p_k^{e_k}$, then:
+$$\tau(n) = (e_1 + 1)(e_2 + 1) \cdots (e_k + 1)$$</p>
+<p><strong>Usage</strong>: Count positive divisors
+<strong>Example</strong>: $\tau(12) = \tau(2^2 \cdot 3^1) = (2+1)(1+1) = 6$</p>
+<h3 id="sum-of-divisors">Sum of Divisors<a hidden class="anchor" aria-hidden="true" href="#sum-of-divisors">#</a></h3>
+<p>If $n = p_1^{e_1} p_2^{e_2} \cdots p_k^{e_k}$, then:
+$$\sigma(n) = \prod_{i=1}^k \frac{p_i^{e_i+1} - 1}{p_i - 1}$$</p>
+<p><strong>Usage</strong>: Sum all positive divisors
+<strong>Example</strong>: $\sigma(12) = \frac{2^3-1}{2-1} \cdot \frac{3^2-1}{3-1} = 7 \cdot 4 = 28$</p>
+<h3 id="eulers-totient-function">Euler&rsquo;s Totient Function<a hidden class="anchor" aria-hidden="true" href="#eulers-totient-function">#</a></h3>
+<p>If $n = p_1^{e_1} p_2^{e_2} \cdots p_k^{e_k}$, then:
+$$\varphi(n) = n \prod_{i=1}^k \left(1 - \frac{1}{p_i}\right)$$</p>
+<p><strong>Usage</strong>: Count numbers coprime to $n$
+<strong>Example</strong>: $\varphi(12) = 12(1-\frac{1}{2})(1-\frac{1}{3}) = 12 \cdot \frac{1}{2} \cdot \frac{2}{3} = 4$</p>
+<h2 id="-diophantine-equations">🔺 Diophantine Equations<a hidden class="anchor" aria-hidden="true" href="#-diophantine-equations">#</a></h2>
+<h3 id="pythagorean-triples">Pythagorean Triples<a hidden class="anchor" aria-hidden="true" href="#pythagorean-triples">#</a></h3>
+<p>All primitive Pythagorean triples $(a,b,c)$ can be written as:
+$$a = m^2 - n^2, \quad b = 2mn, \quad c = m^2 + n^2$$
+where $m &gt; n &gt; 0$, $\gcd(m,n) = 1$, and exactly one of $m,n$ is even.</p>
+<p><strong>Usage</strong>: Generate Pythagorean triples
+<strong>Example</strong>: $m=2, n=1$ gives $(3,4,5)$</p>
+<h3 id="linear-diophantine-solutions">Linear Diophantine Solutions<a hidden class="anchor" aria-hidden="true" href="#linear-diophantine-solutions">#</a></h3>
+<p>If $(x_0, y_0)$ is one solution to $ax + by = c$, then all solutions are:
+$$x = x_0 + \frac{b}{\gcd(a,b)} \cdot t, \quad y = y_0 - \frac{a}{\gcd(a,b)} \cdot t$$
+where $t$ is any integer.</p>
+<p><strong>Usage</strong>: Parameterize all solutions
+<strong>Example</strong>: For $3x + 6y = 9$, if $(3,0)$ is one solution, then all solutions are $x = 3 + 2t, y = -t$</p>
+<h2 id="-special-functions">📈 Special Functions<a hidden class="anchor" aria-hidden="true" href="#-special-functions">#</a></h2>
+<h3 id="legendres-formula">Legendre&rsquo;s Formula<a hidden class="anchor" aria-hidden="true" href="#legendres-formula">#</a></h3>
+<p>For prime $p$ and positive integer $n$:
+$$v_p(n!) = \sum_{k \geq 1} \left\lfloor \frac{n}{p^k} \right\rfloor$$</p>
+<p><strong>Usage</strong>: Find highest power of $p$ dividing $n!$
+<strong>Example</strong>: $v_2(10!) = \left\lfloor \frac{10}{2} \right\rfloor + \left\lfloor \frac{10}{4} \right\rfloor + \left\lfloor \frac{10}{8} \right\rfloor = 5 + 2 + 1 = 8$</p>
+<h3 id="order-function">Order Function<a hidden class="anchor" aria-hidden="true" href="#order-function">#</a></h3>
+<p>The order of $a$ modulo $m$, $\operatorname{ord}_m(a)$, is the smallest positive integer $k$ such that $a^k \equiv 1 \pmod{m}$.</p>
+<p><strong>Usage</strong>: Find cycle lengths in modular arithmetic
+<strong>Example</strong>: $\operatorname{ord}_7(3) = 6$ because $3^6 \equiv 1 \pmod{7}$ and no smaller positive power works</p>
+<h3 id="valuation-function">Valuation Function<a hidden class="anchor" aria-hidden="true" href="#valuation-function">#</a></h3>
+<p>For prime $p$ and positive integer $n$, $v_p(n)$ is the highest power of $p$ dividing $n$.</p>
+<p><strong>Usage</strong>: Find prime power factors
+<strong>Example</strong>: $v_2(24) = 3$ because $2^3 \mid 24$ but $2^4 \nmid 24$</p>
+<h2 id="-quick-reference-tables">⚡ Quick Reference Tables<a hidden class="anchor" aria-hidden="true" href="#-quick-reference-tables">#</a></h2>
+<h3 id="common-totient-values">Common Totient Values<a hidden class="anchor" aria-hidden="true" href="#common-totient-values">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>$n$</th>
+          <th>$\varphi(n)$</th>
+          <th>$n$</th>
+          <th>$\varphi(n)$</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>6</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>1</td>
+          <td>7</td>
+          <td>6</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>2</td>
+          <td>8</td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>2</td>
+          <td>9</td>
+          <td>6</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>4</td>
+          <td>10</td>
+          <td>4</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="common-orders-modulo-small-primes">Common Orders Modulo Small Primes<a hidden class="anchor" aria-hidden="true" href="#common-orders-modulo-small-primes">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Base</th>
+          <th>Mod 3</th>
+          <th>Mod 5</th>
+          <th>Mod 7</th>
+          <th>Mod 11</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>2</td>
+          <td>2</td>
+          <td>4</td>
+          <td>3</td>
+          <td>10</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>1</td>
+          <td>4</td>
+          <td>6</td>
+          <td>5</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>-</td>
+          <td>1</td>
+          <td>6</td>
+          <td>5</td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td>-</td>
+          <td>-</td>
+          <td>1</td>
+          <td>10</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="divisibility-tests">Divisibility Tests<a hidden class="anchor" aria-hidden="true" href="#divisibility-tests">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Divisor</th>
+          <th>Test</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>2</td>
+          <td>Last digit even</td>
+          <td>1234 ✓, 1235 ✗</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>Sum of digits divisible by 3</td>
+          <td>123 ✓ (1+2+3=6)</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>Last digit 0 or 5</td>
+          <td>1230 ✓, 1234 ✗</td>
+      </tr>
+      <tr>
+          <td>9</td>
+          <td>Sum of digits divisible by 9</td>
+          <td>1233 ✓ (1+2+3+3=9)</td>
+      </tr>
+      <tr>
+          <td>11</td>
+          <td>Alternating sum divisible by 11</td>
+          <td>121 ✓ (1-2+1=0)</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<p><strong>Previous</strong>: <a href="_index">Formulas Overview</a> | <strong>Next</strong>: <a href="../tips/problem-solving-tips">Problem-Solving Tips</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">Amc10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/number-theory/">Number-Theory</a></li>
+      <li><a href="http://localhost:1313/tags/formulas/">Formulas</a></li>
+      <li><a href="http://localhost:1313/tags/reference/">Reference</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

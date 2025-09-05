@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Laws of Sines &amp; Cosines | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Precalculus, Trigonometry, Triangles">
+<meta name="description" content="Triangle solving, area calculations, and the ambiguous case for AMC geometry problems.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/precalculus/amc10/topics/laws-of-sines-and-cosines/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/precalculus/amc10/topics/laws-of-sines-and-cosines/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/precalculus/amc10/">Precalculus Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/precalculus/amc10/topics/">Topic Guides</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Laws of Sines &amp; Cosines
+    </h1>
+    <div class="post-description">
+      Triangle solving, area calculations, and the ambiguous case for AMC geometry problems.
+    </div>
+    <div class="post-meta">4 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-laws-of-sines--cosines" aria-label="📐 Laws of Sines &amp; Cosines">📐 Laws of Sines &amp; Cosines</a><ul>
+                        
+                <li>
+                    <a href="#-key-ideas" aria-label="🎯 Key Ideas">🎯 Key Ideas</a></li>
+                <li>
+                    <a href="#-law-of-sines" aria-label="📐 Law of Sines">📐 Law of Sines</a><ul>
+                        
+                <li>
+                    <a href="#formula" aria-label="Formula">Formula</a></li>
+                <li>
+                    <a href="#when-to-use" aria-label="When to Use">When to Use</a></li>
+                <li>
+                    <a href="#example-solve-triangle-with-a--30-b--45-a--10" aria-label="Example: Solve triangle with $A = 30°$, $B = 45°$, $a = 10$">Example: Solve triangle with $A = 30°$, $B = 45°$, $a = 10$</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-law-of-cosines" aria-label="📐 Law of Cosines">📐 Law of Cosines</a><ul>
+                        
+                <li>
+                    <a href="#formula-1" aria-label="Formula">Formula</a></li>
+                <li>
+                    <a href="#when-to-use-1" aria-label="When to Use">When to Use</a></li>
+                <li>
+                    <a href="#example-solve-triangle-with-a--5-b--7-c--60" aria-label="Example: Solve triangle with $a = 5$, $b = 7$, $C = 60°$">Example: Solve triangle with $a = 5$, $b = 7$, $C = 60°$</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-ambiguous-case-ssa" aria-label="⚠️ Ambiguous Case (SSA)">⚠️ Ambiguous Case (SSA)</a><ul>
+                        
+                <li>
+                    <a href="#decision-process" aria-label="Decision Process">Decision Process</a></li>
+                <li>
+                    <a href="#example-solve-triangle-with-a--8-b--10-a--30" aria-label="Example: Solve triangle with $a = 8$, $b = 10$, $A = 30°$">Example: Solve triangle with $a = 8$, $b = 10$, $A = 30°$</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-area-formulas" aria-label="📊 Area Formulas">📊 Area Formulas</a><ul>
+                        
+                <li>
+                    <a href="#standard-area-formula" aria-label="Standard Area Formula">Standard Area Formula</a></li>
+                <li>
+                    <a href="#herons-formula-when-all-three-sides-known" aria-label="Heron&rsquo;s Formula (when all three sides known)">Heron&rsquo;s Formula (when all three sides known)</a></li>
+                <li>
+                    <a href="#example-find-area-of-triangle-with-a--6-b--8-c--45" aria-label="Example: Find area of triangle with $a = 6$, $b = 8$, $C = 45°$">Example: Find area of triangle with $a = 6$, $b = 8$, $C = 45°$</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-amc-style-worked-example" aria-label="🎯 AMC-Style Worked Example">🎯 AMC-Style Worked Example</a></li>
+                <li>
+                    <a href="#-common-traps--fixes" aria-label="🔍 Common Traps &amp; Fixes">🔍 Common Traps &amp; Fixes</a><ul>
+                        
+                <li>
+                    <a href="#trap-forgetting-the-ambiguous-case" aria-label="Trap: Forgetting the ambiguous case">Trap: Forgetting the ambiguous case</a></li>
+                <li>
+                    <a href="#trap-wrong-angle-in-law-of-cosines" aria-label="Trap: Wrong angle in Law of Cosines">Trap: Wrong angle in Law of Cosines</a></li>
+                <li>
+                    <a href="#trap-using-wrong-area-formula" aria-label="Trap: Using wrong area formula">Trap: Using wrong area formula</a></li>
+                <li>
+                    <a href="#trap-angle-sum-not-180" aria-label="Trap: Angle sum not 180°">Trap: Angle sum not 180°</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-reference" aria-label="📋 Quick Reference">📋 Quick Reference</a><ul>
+                        
+                <li>
+                    <a href="#law-of-sines" aria-label="Law of Sines">Law of Sines</a></li>
+                <li>
+                    <a href="#law-of-cosines" aria-label="Law of Cosines">Law of Cosines</a></li>
+                <li>
+                    <a href="#area-formulas" aria-label="Area Formulas">Area Formulas</a></li>
+                <li>
+                    <a href="#ambiguous-case-ssa" aria-label="Ambiguous Case (SSA)">Ambiguous Case (SSA)</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-laws-of-sines--cosines">📐 Laws of Sines &amp; Cosines<a hidden class="anchor" aria-hidden="true" href="#-laws-of-sines--cosines">#</a></h1>
+<p>Essential for solving non-right triangles. These laws extend trigonometry beyond right triangles and are frequently tested on AMC.</p>
+<h2 id="-key-ideas">🎯 Key Ideas<a hidden class="anchor" aria-hidden="true" href="#-key-ideas">#</a></h2>
+<p><strong>Law of Sines</strong>: Relates sides and angles in any triangle: $\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}$</p>
+<p><strong>Law of Cosines</strong>: Generalizes the Pythagorean theorem: $c^2 = a^2 + b^2 - 2ab\cos C$</p>
+<p><strong>Area Formula</strong>: $A = \frac{1}{2}ab\sin C$ (most useful area formula for AMC)</p>
+<h2 id="-law-of-sines">📐 Law of Sines<a hidden class="anchor" aria-hidden="true" href="#-law-of-sines">#</a></h2>
+<h3 id="formula">Formula<a hidden class="anchor" aria-hidden="true" href="#formula">#</a></h3>
+<p>$$\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}$$</p>
+<h3 id="when-to-use">When to Use<a hidden class="anchor" aria-hidden="true" href="#when-to-use">#</a></h3>
+<ul>
+<li><strong>AAS</strong> (Angle-Angle-Side): Two angles and one side</li>
+<li><strong>ASA</strong> (Angle-Side-Angle): Two angles and included side</li>
+<li><strong>SSA</strong> (Side-Side-Angle): Two sides and non-included angle (ambiguous case)</li>
+</ul>
+<h3 id="example-solve-triangle-with-a--30-b--45-a--10">Example: Solve triangle with $A = 30°$, $B = 45°$, $a = 10$<a hidden class="anchor" aria-hidden="true" href="#example-solve-triangle-with-a--30-b--45-a--10">#</a></h3>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li><strong>Find third angle</strong>: $C = 180° - 30° - 45° = 105°$</li>
+<li><strong>Apply Law of Sines</strong>: $\frac{10}{\sin 30°} = \frac{b}{\sin 45°} = \frac{c}{\sin 105°}$</li>
+<li><strong>Solve for $b$</strong>: $b = \frac{10 \sin 45°}{\sin 30°} = \frac{10 \cdot \frac{\sqrt{2}}{2}}{\frac{1}{2}} = 10\sqrt{2}$</li>
+<li><strong>Solve for $c$</strong>: $c = \frac{10 \sin 105°}{\sin 30°} = \frac{10 \sin 105°}{\frac{1}{2}} = 20\sin 105°$</li>
+</ol>
+<h2 id="-law-of-cosines">📐 Law of Cosines<a hidden class="anchor" aria-hidden="true" href="#-law-of-cosines">#</a></h2>
+<h3 id="formula-1">Formula<a hidden class="anchor" aria-hidden="true" href="#formula-1">#</a></h3>
+<p>$$c^2 = a^2 + b^2 - 2ab\cos C$$</p>
+<h3 id="when-to-use-1">When to Use<a hidden class="anchor" aria-hidden="true" href="#when-to-use-1">#</a></h3>
+<ul>
+<li><strong>SSS</strong> (Side-Side-Side): Three sides given</li>
+<li><strong>SAS</strong> (Side-Angle-Side): Two sides and included angle</li>
+</ul>
+<h3 id="example-solve-triangle-with-a--5-b--7-c--60">Example: Solve triangle with $a = 5$, $b = 7$, $C = 60°$<a hidden class="anchor" aria-hidden="true" href="#example-solve-triangle-with-a--5-b--7-c--60">#</a></h3>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li><strong>Apply Law of Cosines</strong>: $c^2 = 5^2 + 7^2 - 2(5)(7)\cos 60°$</li>
+<li><strong>Calculate</strong>: $c^2 = 25 + 49 - 70 \cdot \frac{1}{2} = 74 - 35 = 39$</li>
+<li><strong>Solve</strong>: $c = \sqrt{39}$</li>
+<li><strong>Find other angles using Law of Sines</strong>: $\frac{5}{\sin A} = \frac{\sqrt{39}}{\sin 60°}$</li>
+</ol>
+<h2 id="-ambiguous-case-ssa">⚠️ Ambiguous Case (SSA)<a hidden class="anchor" aria-hidden="true" href="#-ambiguous-case-ssa">#</a></h2>
+<p>When given two sides and a non-included angle, there may be:</p>
+<ul>
+<li><strong>No solution</strong> (side too short)</li>
+<li><strong>One solution</strong> (right triangle or side just long enough)</li>
+<li><strong>Two solutions</strong> (side long enough to form two different triangles)</li>
+</ul>
+<h3 id="decision-process">Decision Process<a hidden class="anchor" aria-hidden="true" href="#decision-process">#</a></h3>
+<p>For triangle with sides $a, b$ and angle $A$ opposite side $a$:</p>
+<ol>
+<li><strong>Calculate height</strong>: $h = b\sin A$</li>
+<li><strong>Compare $a$ with $h$</strong>:
+<ul>
+<li>If $a &lt; h$: <strong>No solution</strong></li>
+<li>If $a = h$: <strong>One solution</strong> (right triangle)</li>
+<li>If $h &lt; a &lt; b$: <strong>Two solutions</strong></li>
+<li>If $a \geq b$: <strong>One solution</strong></li>
+</ul>
+</li>
+</ol>
+<h3 id="example-solve-triangle-with-a--8-b--10-a--30">Example: Solve triangle with $a = 8$, $b = 10$, $A = 30°$<a hidden class="anchor" aria-hidden="true" href="#example-solve-triangle-with-a--8-b--10-a--30">#</a></h3>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li><strong>Calculate height</strong>: $h = 10\sin 30° = 10 \cdot \frac{1}{2} = 5$</li>
+<li><strong>Compare</strong>: $a = 8 &gt; h = 5$ and $a = 8 &lt; b = 10$, so <strong>two solutions</strong></li>
+<li><strong>Find angle $B$</strong>: $\sin B = \frac{b\sin A}{a} = \frac{10 \sin 30°}{8} = \frac{5}{8}$</li>
+<li><strong>Two possible angles</strong>: $B_1 = \arcsin\frac{5}{8}$ and $B_2 = 180° - \arcsin\frac{5}{8}$</li>
+<li><strong>Complete both triangles</strong> using Law of Sines</li>
+</ol>
+<h2 id="-area-formulas">📊 Area Formulas<a hidden class="anchor" aria-hidden="true" href="#-area-formulas">#</a></h2>
+<h3 id="standard-area-formula">Standard Area Formula<a hidden class="anchor" aria-hidden="true" href="#standard-area-formula">#</a></h3>
+<p>$$A = \frac{1}{2}ab\sin C$$</p>
+<h3 id="herons-formula-when-all-three-sides-known">Heron&rsquo;s Formula (when all three sides known)<a hidden class="anchor" aria-hidden="true" href="#herons-formula-when-all-three-sides-known">#</a></h3>
+<p>$$A = \sqrt{s(s-a)(s-b)(s-c)} \text{ where } s = \frac{a+b+c}{2}$$</p>
+<h3 id="example-find-area-of-triangle-with-a--6-b--8-c--45">Example: Find area of triangle with $a = 6$, $b = 8$, $C = 45°$<a hidden class="anchor" aria-hidden="true" href="#example-find-area-of-triangle-with-a--6-b--8-c--45">#</a></h3>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>$A = \frac{1}{2} \cdot 6 \cdot 8 \cdot \sin 45° = \frac{1}{2} \cdot 48 \cdot \frac{\sqrt{2}}{2} = 12\sqrt{2}$</li>
+</ul>
+<h2 id="-amc-style-worked-example">🎯 AMC-Style Worked Example<a hidden class="anchor" aria-hidden="true" href="#-amc-style-worked-example">#</a></h2>
+<p><strong>Problem</strong>: In triangle $ABC$, $a = 7$, $b = 8$, and $c = 9$. Find the area and all angles.</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>
+<p><strong>Find area using Heron&rsquo;s formula</strong>:</p>
+<ul>
+<li>$s = \frac{7+8+9}{2} = 12$</li>
+<li>$A = \sqrt{12(12-7)(12-8)(12-9)} = \sqrt{12 \cdot 5 \cdot 4 \cdot 3} = \sqrt{720} = 12\sqrt{5}$</li>
+</ul>
+</li>
+<li>
+<p><strong>Find angles using Law of Cosines</strong>:</p>
+<ul>
+<li>$\cos A = \frac{b^2 + c^2 - a^2}{2bc} = \frac{8^2 + 9^2 - 7^2}{2 \cdot 8 \cdot 9} = \frac{64 + 81 - 49}{144} = \frac{96}{144} = \frac{2}{3}$</li>
+<li>$A = \arccos\frac{2}{3}$</li>
+<li>Similarly: $\cos B = \frac{7^2 + 9^2 - 8^2}{2 \cdot 7 \cdot 9} = \frac{49 + 81 - 64}{126} = \frac{66}{126} = \frac{11}{21}$</li>
+<li>$B = \arccos\frac{11}{21}$</li>
+<li>$C = 180° - A - B$</li>
+</ul>
+</li>
+</ol>
+<p><strong>Answer</strong>: Area = $12\sqrt{5}$, angles = $\arccos\frac{2}{3}$, $\arccos\frac{11}{21}$, and $180° - A - B$</p>
+<h2 id="-common-traps--fixes">🔍 Common Traps &amp; Fixes<a hidden class="anchor" aria-hidden="true" href="#-common-traps--fixes">#</a></h2>
+<h3 id="trap-forgetting-the-ambiguous-case"><strong>Trap</strong>: Forgetting the ambiguous case<a hidden class="anchor" aria-hidden="true" href="#trap-forgetting-the-ambiguous-case">#</a></h3>
+<p><strong>Fix</strong>: Always check if SSA case has 0, 1, or 2 solutions before solving.</p>
+<h3 id="trap-wrong-angle-in-law-of-cosines"><strong>Trap</strong>: Wrong angle in Law of Cosines<a hidden class="anchor" aria-hidden="true" href="#trap-wrong-angle-in-law-of-cosines">#</a></h3>
+<p><strong>Fix</strong>: The angle must be opposite the side you&rsquo;re solving for: $c^2 = a^2 + b^2 - 2ab\cos C$.</p>
+<h3 id="trap-using-wrong-area-formula"><strong>Trap</strong>: Using wrong area formula<a hidden class="anchor" aria-hidden="true" href="#trap-using-wrong-area-formula">#</a></h3>
+<p><strong>Fix</strong>: Use $A = \frac{1}{2}ab\sin C$ when you have two sides and included angle.</p>
+<h3 id="trap-angle-sum-not-180"><strong>Trap</strong>: Angle sum not 180°<a hidden class="anchor" aria-hidden="true" href="#trap-angle-sum-not-180">#</a></h3>
+<p><strong>Fix</strong>: Always verify that $A + B + C = 180°$ in your final answer.</p>
+<h2 id="-quick-reference">📋 Quick Reference<a hidden class="anchor" aria-hidden="true" href="#-quick-reference">#</a></h2>
+<h3 id="law-of-sines">Law of Sines<a hidden class="anchor" aria-hidden="true" href="#law-of-sines">#</a></h3>
+<p>$$\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}$$</p>
+<h3 id="law-of-cosines">Law of Cosines<a hidden class="anchor" aria-hidden="true" href="#law-of-cosines">#</a></h3>
+<p>$$c^2 = a^2 + b^2 - 2ab\cos C$$</p>
+<h3 id="area-formulas">Area Formulas<a hidden class="anchor" aria-hidden="true" href="#area-formulas">#</a></h3>
+<ul>
+<li>$A = \frac{1}{2}ab\sin C$ (two sides and included angle)</li>
+<li>$A = \sqrt{s(s-a)(s-b)(s-c)}$ (three sides, $s = \frac{a+b+c}{2}$)</li>
+</ul>
+<h3 id="ambiguous-case-ssa">Ambiguous Case (SSA)<a hidden class="anchor" aria-hidden="true" href="#ambiguous-case-ssa">#</a></h3>
+<ul>
+<li>$a &lt; b\sin A$: No solution</li>
+<li>$a = b\sin A$: One solution (right triangle)</li>
+<li>$b\sin A &lt; a &lt; b$: Two solutions</li>
+<li>$a \geq b$: One solution</li>
+</ul>
+<hr>
+<p><strong>Prev</strong>: <a href="/precalculus/topics/trig-identities-and-equations">Trig Identities &amp; Equations</a><br>
+<strong>Next</strong>: <a href="/precalculus/topics/complex-numbers">Complex Numbers</a><br>
+<strong>Back to</strong>: <a href="/precalculus/topics/">Topic Guides</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">Amc10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">Amc12</a></li>
+      <li><a href="http://localhost:1313/tags/precalculus/">Precalculus</a></li>
+      <li><a href="http://localhost:1313/tags/trigonometry/">Trigonometry</a></li>
+      <li><a href="http://localhost:1313/tags/triangles/">Triangles</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

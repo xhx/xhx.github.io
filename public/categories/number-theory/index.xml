@@ -9,39 +9,144 @@
     <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/number-theory/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Chinese Remainder Theorem (CRT)</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/chinese-remainder-theorem/</link>
+      <title>Complete Reference Guide</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/reference-guide/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/chinese-remainder-theorem/</guid>
-      <description>Chinese Remainder Theorem and its applications in AMC 10</description>
+      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/reference-guide/</guid>
+      <description>Comprehensive number theory reference for AMC 10/12</description>
+    </item>
+    <item>
+      <title>Divisibility Rules</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/topic-guides/divisibility-rules/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/topic-guides/divisibility-rules/</guid>
+      <description>Master all divisibility tests for AMC 10/12 number theory</description>
+    </item>
+    <item>
+      <title>Essential Formulas</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/essential-formulas/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/essential-formulas/</guid>
+      <description>Comprehensive collection of essential number theory formulas for AMC 10/12</description>
+    </item>
+    <item>
+      <title>Euclidean Algorithm</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/topic-guides/euclidean-algorithm/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/topic-guides/euclidean-algorithm/</guid>
+      <description>Master the Euclidean algorithm for finding GCD efficiently</description>
+    </item>
+    <item>
+      <title>Fermat&#39;s Little Theorem</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/topic-guides/fermats-little-theorem/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/topic-guides/fermats-little-theorem/</guid>
+      <description>Master Fermat&amp;#39;s Little Theorem for AMC 10/12 modular arithmetic</description>
+    </item>
+    <item>
+      <title>Problem-Solving Tips</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/problem-solving-tips/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/problem-solving-tips/</guid>
+      <description>Essential strategies, techniques, and tips for AMC 10/12 number theory success</description>
+    </item>
+    <item>
+      <title>Top 20 AMC 10/12 Number Theory Problem Types</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/problem-types/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/problem-types/</guid>
+      <description>Essential problem patterns for AMC 10/12 number theory success</description>
+    </item>
+    <item>
+      <title>Euclidean Algorithm</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/euclidean-algorithm/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/euclidean-algorithm/</guid>
+      <description>Extended Euclidean Algorithm for finding GCD and solving linear Diophantine equations</description>
+    </item>
+    <item>
+      <title>Congruence Problems</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/congruence-problems/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/congruence-problems/</guid>
+      <description>AMC-style congruence problems and Chinese Remainder Theorem applications</description>
     </item>
     <item>
       <title>LCM &amp; GCD</title>
       <link>http://localhost:1313/notes/math/amc/amc10/number-theory/lcm-gcd/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/lcm-gcd/</guid>
-      <description>Least Common Multiple and Greatest Common Divisor for AMC 10</description>
+      <description>Least Common Multiple and Greatest Common Divisor for AMC 10/12</description>
     </item>
     <item>
-      <title>Modular Operation</title>
+      <title>Modular Arithmetic</title>
       <link>http://localhost:1313/notes/math/amc/amc10/number-theory/modular-operation/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/modular-operation/</guid>
-      <description>Modular arithmetic operations for AMC 10</description>
+      <description>Modular arithmetic operations for AMC 10/12</description>
     </item>
     <item>
       <title>Advanced Number Theory</title>
       <link>http://localhost:1313/notes/math/amc/amc10/number-theory/number-theory-advanced/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/number-theory-advanced/</guid>
-      <description>Advanced number theory topics for AMC 10</description>
+      <description>Advanced number theory topics for AMC 10/12</description>
+    </item>
+    <item>
+      <title>Chinese Remainder Theorem (CRT)</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/chinese-remainder-theorem/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/chinese-remainder-theorem/</guid>
+      <description>Chinese Remainder Theorem and its applications in AMC 10/12</description>
     </item>
     <item>
       <title>Number Theory Problems</title>
       <link>http://localhost:1313/notes/math/amc/amc10/number-theory/number-theory-problems/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/number-theory-problems/</guid>
-      <description>Number theory practice problems for AMC 10</description>
+      <description>Number theory practice problems for AMC 10/12</description>
+    </item>
+    <item>
+      <title>Linear Diophantine Equations</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/linear-diophantine-equations/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/linear-diophantine-equations/</guid>
+      <description>Complete guide to solving linear Diophantine equations for AMC 10/12</description>
+    </item>
+    <item>
+      <title>Quadratic Diophantine Equations</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/quadratic-diophantine-equations/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/quadratic-diophantine-equations/</guid>
+      <description>Solving two-variable quadratic Diophantine equations for AMC 10/12</description>
+    </item>
+    <item>
+      <title>Bézout&#39;s Identity</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/bezouts-identity/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/bezouts-identity/</guid>
+      <description>Bézout&amp;#39;s Identity and its applications in AMC 10/12 number theory</description>
+    </item>
+    <item>
+      <title>Chicken McNugget Theorem</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/chicken-mcnugget-theorem/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/chicken-mcnugget-theorem/</guid>
+      <description>Frobenius coin problem and Chicken McNugget Theorem for AMC 10/12</description>
+    </item>
+    <item>
+      <title>Wilson&#39;s Theorem</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/wilsons-theorem/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/wilsons-theorem/</guid>
+      <description>Wilson&amp;#39;s Theorem and its applications in AMC 10/12 number theory</description>
+    </item>
+    <item>
+      <title>Legendre&#39;s Formula</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/legendres-formula/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/legendres-formula/</guid>
+      <description>Legendre&amp;#39;s Formula for counting prime factors in factorials for AMC 10/12</description>
     </item>
   </channel>
 </rss>

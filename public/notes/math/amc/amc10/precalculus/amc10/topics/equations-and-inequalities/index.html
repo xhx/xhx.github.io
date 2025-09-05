@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Equations &amp; Inequalities | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Precalculus, Equations, Inequalities">
+<meta name="description" content="Absolute value equations, systems, and inequality techniques including AM-GM for AMC preparation.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/precalculus/amc10/topics/equations-and-inequalities/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/precalculus/amc10/topics/equations-and-inequalities/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/precalculus/amc10/">Precalculus Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/precalculus/amc10/topics/">Topic Guides</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Equations &amp; Inequalities
+    </h1>
+    <div class="post-description">
+      Absolute value equations, systems, and inequality techniques including AM-GM for AMC preparation.
+    </div>
+    <div class="post-meta">4 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-equations--inequalities" aria-label="📊 Equations &amp; Inequalities">📊 Equations &amp; Inequalities</a><ul>
+                        
+                <li>
+                    <a href="#-key-ideas" aria-label="🎯 Key Ideas">🎯 Key Ideas</a></li>
+                <li>
+                    <a href="#-absolute-value-equations" aria-label="📐 Absolute Value Equations">📐 Absolute Value Equations</a><ul>
+                        
+                <li>
+                    <a href="#basic-strategy" aria-label="Basic Strategy">Basic Strategy</a></li>
+                <li>
+                    <a href="#example-2x---3--7" aria-label="Example: $|2x - 3| = 7$">Example: $|2x - 3| = 7$</a></li>
+                <li>
+                    <a href="#pitfall-extraneous-solutions" aria-label="Pitfall: Extraneous Solutions">Pitfall: Extraneous Solutions</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-systems-of-equations" aria-label="🔄 Systems of Equations">🔄 Systems of Equations</a><ul>
+                        
+                <li>
+                    <a href="#substitution-method" aria-label="Substitution Method">Substitution Method</a></li>
+                <li>
+                    <a href="#elimination-method" aria-label="Elimination Method">Elimination Method</a></li>
+                <li>
+                    <a href="#example-solve-begincases-x--y--5--2x---y--1-endcases" aria-label="Example: Solve $\begin{cases} x &#43; y = 5 \ 2x - y = 1 \end{cases}$">Example: Solve $\begin{cases} x + y = 5 \ 2x - y = 1 \end{cases}$</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-am-gm-inequality" aria-label="⚖️ AM-GM Inequality">⚖️ AM-GM Inequality</a><ul>
+                        
+                <li>
+                    <a href="#applications" aria-label="Applications">Applications</a></li>
+                <li>
+                    <a href="#example-find-minimum-of-x--frac1x-for-x--0" aria-label="Example: Find minimum of $x &#43; \frac{1}{x}$ for $x &gt; 0$">Example: Find minimum of $x + \frac{1}{x}$ for $x &gt; 0$</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-amc-style-worked-example" aria-label="🎯 AMC-Style Worked Example">🎯 AMC-Style Worked Example</a></li>
+                <li>
+                    <a href="#-common-traps--fixes" aria-label="🔍 Common Traps &amp; Fixes">🔍 Common Traps &amp; Fixes</a><ul>
+                        
+                <li>
+                    <a href="#trap-forgetting-to-check-case-constraints" aria-label="Trap: Forgetting to check case constraints">Trap: Forgetting to check case constraints</a></li>
+                <li>
+                    <a href="#trap-extraneous-solutions-from-squaring" aria-label="Trap: Extraneous solutions from squaring">Trap: Extraneous solutions from squaring</a></li>
+                <li>
+                    <a href="#trap-wrong-am-gm-application" aria-label="Trap: Wrong AM-GM application">Trap: Wrong AM-GM application</a></li>
+                <li>
+                    <a href="#trap-missing-solutions-in-systems" aria-label="Trap: Missing solutions in systems">Trap: Missing solutions in systems</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-reference" aria-label="📋 Quick Reference">📋 Quick Reference</a><ul>
+                        
+                <li>
+                    <a href="#absolute-value-properties" aria-label="Absolute Value Properties">Absolute Value Properties</a></li>
+                <li>
+                    <a href="#am-gm-special-cases" aria-label="AM-GM Special Cases">AM-GM Special Cases</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-equations--inequalities">📊 Equations &amp; Inequalities<a hidden class="anchor" aria-hidden="true" href="#-equations--inequalities">#</a></h1>
+<p>Mastering equation solving and inequality techniques is crucial for AMC success. This includes absolute value, systems, and advanced inequality methods.</p>
+<h2 id="-key-ideas">🎯 Key Ideas<a hidden class="anchor" aria-hidden="true" href="#-key-ideas">#</a></h2>
+<p><strong>Absolute Value</strong>: $|x| = \begin{cases} x &amp; \text{if } x \geq 0 \ -x &amp; \text{if } x &lt; 0 \end{cases}$</p>
+<p><strong>Systems</strong>: Multiple equations with multiple variables. Common methods: substitution, elimination, graphing.</p>
+<p><strong>Inequalities</strong>: AM-GM inequality and other techniques for optimization problems.</p>
+<h2 id="-absolute-value-equations">📐 Absolute Value Equations<a hidden class="anchor" aria-hidden="true" href="#-absolute-value-equations">#</a></h2>
+<h3 id="basic-strategy">Basic Strategy<a hidden class="anchor" aria-hidden="true" href="#basic-strategy">#</a></h3>
+<ol>
+<li><strong>Isolate</strong> the absolute value expression</li>
+<li><strong>Split</strong> into two cases: positive and negative</li>
+<li><strong>Solve</strong> each case separately</li>
+<li><strong>Check</strong> solutions in original equation</li>
+</ol>
+<h3 id="example-2x---3--7">Example: $|2x - 3| = 7$<a hidden class="anchor" aria-hidden="true" href="#example-2x---3--7">#</a></h3>
+<ol>
+<li>Already isolated: $|2x - 3| = 7$</li>
+<li>Split: $2x - 3 = 7$ or $2x - 3 = -7$</li>
+<li>Solve: $2x = 10$ or $2x = -4$</li>
+<li>Solutions: $x = 5$ or $x = -2$</li>
+<li>Check: $|2(5) - 3| = |7| = 7$ ✓ and $|2(-2) - 3| = |-7| = 7$ ✓</li>
+</ol>
+<h3 id="pitfall-extraneous-solutions"><strong>Pitfall</strong>: Extraneous Solutions<a hidden class="anchor" aria-hidden="true" href="#pitfall-extraneous-solutions">#</a></h3>
+<p>Always check solutions! Some may not work in the original equation.</p>
+<h2 id="-systems-of-equations">🔄 Systems of Equations<a hidden class="anchor" aria-hidden="true" href="#-systems-of-equations">#</a></h2>
+<h3 id="substitution-method">Substitution Method<a hidden class="anchor" aria-hidden="true" href="#substitution-method">#</a></h3>
+<ol>
+<li>Solve one equation for one variable</li>
+<li>Substitute into other equation(s)</li>
+<li>Solve for remaining variable(s)</li>
+<li>Back-substitute to find all variables</li>
+</ol>
+<h3 id="elimination-method">Elimination Method<a hidden class="anchor" aria-hidden="true" href="#elimination-method">#</a></h3>
+<ol>
+<li>Multiply equations to get same coefficients</li>
+<li>Add/subtract to eliminate one variable</li>
+<li>Solve for remaining variable(s)</li>
+<li>Back-substitute</li>
+</ol>
+<h3 id="example-solve-begincases-x--y--5--2x---y--1-endcases">Example: Solve $\begin{cases} x + y = 5 \ 2x - y = 1 \end{cases}$<a hidden class="anchor" aria-hidden="true" href="#example-solve-begincases-x--y--5--2x---y--1-endcases">#</a></h3>
+<p><strong>By Elimination</strong>:</p>
+<ol>
+<li>Add equations: $(x + y) + (2x - y) = 5 + 1$</li>
+<li>Simplify: $3x = 6$, so $x = 2$</li>
+<li>Substitute: $2 + y = 5$, so $y = 3$</li>
+<li>Solution: $(2, 3)$</li>
+</ol>
+<h2 id="-am-gm-inequality">⚖️ AM-GM Inequality<a hidden class="anchor" aria-hidden="true" href="#-am-gm-inequality">#</a></h2>
+<p><strong>Statement</strong>: For positive real numbers $a_1, a_2, \ldots, a_n$:
+$$\frac{a_1 + a_2 + \cdots + a_n}{n} \geq \sqrt[n]{a_1 a_2 \cdots a_n}$$</p>
+<p><strong>Equality</strong>: Holds when all numbers are equal.</p>
+<h3 id="applications">Applications<a hidden class="anchor" aria-hidden="true" href="#applications">#</a></h3>
+<ul>
+<li><strong>Optimization</strong>: Find maximum/minimum values</li>
+<li><strong>Proofs</strong>: Establish bounds and relationships</li>
+<li><strong>Problem Solving</strong>: Recognize when AM-GM applies</li>
+</ul>
+<h3 id="example-find-minimum-of-x--frac1x-for-x--0">Example: Find minimum of $x + \frac{1}{x}$ for $x &gt; 0$<a hidden class="anchor" aria-hidden="true" href="#example-find-minimum-of-x--frac1x-for-x--0">#</a></h3>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Apply AM-GM to $x$ and $\frac{1}{x}$:
+$$\frac{x + \frac{1}{x}}{2} \geq \sqrt{x \cdot \frac{1}{x}} = \sqrt{1} = 1$$</li>
+<li>Multiply by 2: $x + \frac{1}{x} \geq 2$</li>
+<li>Equality when $x = \frac{1}{x}$, so $x = 1$</li>
+<li><strong>Minimum value is 2, achieved when $x = 1$</strong></li>
+</ol>
+<h2 id="-amc-style-worked-example">🎯 AMC-Style Worked Example<a hidden class="anchor" aria-hidden="true" href="#-amc-style-worked-example">#</a></h2>
+<p><strong>Problem</strong>: Find all real solutions to $|x^2 - 4| = 3x$.</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>
+<p><strong>Case 1</strong>: $x^2 - 4 \geq 0$ (i.e., $x \leq -2$ or $x \geq 2$)</p>
+<ul>
+<li>Then $|x^2 - 4| = x^2 - 4$</li>
+<li>Equation: $x^2 - 4 = 3x$</li>
+<li>Rearrange: $x^2 - 3x - 4 = 0$</li>
+<li>Factor: $(x-4)(x+1) = 0$</li>
+<li>Solutions: $x = 4$ or $x = -1$</li>
+<li>Check constraints: $x = 4$ works (since $4 \geq 2$), but $x = -1$ doesn&rsquo;t (since $-1$ is not $\leq -2$ or $\geq 2$)</li>
+</ul>
+</li>
+<li>
+<p><strong>Case 2</strong>: $x^2 - 4 &lt; 0$ (i.e., $-2 &lt; x &lt; 2$)</p>
+<ul>
+<li>Then $|x^2 - 4| = -(x^2 - 4) = 4 - x^2$</li>
+<li>Equation: $4 - x^2 = 3x$</li>
+<li>Rearrange: $x^2 + 3x - 4 = 0$</li>
+<li>Factor: $(x+4)(x-1) = 0$</li>
+<li>Solutions: $x = -4$ or $x = 1$</li>
+<li>Check constraints: $x = 1$ works (since $-2 &lt; 1 &lt; 2$), but $x = -4$ doesn&rsquo;t (since $-4$ is not in $(-2, 2)$)</li>
+</ul>
+</li>
+<li>
+<p><strong>Final Answer</strong>: $x = 4$ and $x = 1$</p>
+</li>
+</ol>
+<h2 id="-common-traps--fixes">🔍 Common Traps &amp; Fixes<a hidden class="anchor" aria-hidden="true" href="#-common-traps--fixes">#</a></h2>
+<h3 id="trap-forgetting-to-check-case-constraints"><strong>Trap</strong>: Forgetting to check case constraints<a hidden class="anchor" aria-hidden="true" href="#trap-forgetting-to-check-case-constraints">#</a></h3>
+<p><strong>Fix</strong>: Always verify that solutions satisfy the original case conditions.</p>
+<h3 id="trap-extraneous-solutions-from-squaring"><strong>Trap</strong>: Extraneous solutions from squaring<a hidden class="anchor" aria-hidden="true" href="#trap-extraneous-solutions-from-squaring">#</a></h3>
+<p><strong>Fix</strong>: Check all solutions in the original equation.</p>
+<h3 id="trap-wrong-am-gm-application"><strong>Trap</strong>: Wrong AM-GM application<a hidden class="anchor" aria-hidden="true" href="#trap-wrong-am-gm-application">#</a></h3>
+<p><strong>Fix</strong>: Ensure all numbers are positive before applying AM-GM.</p>
+<h3 id="trap-missing-solutions-in-systems"><strong>Trap</strong>: Missing solutions in systems<a hidden class="anchor" aria-hidden="true" href="#trap-missing-solutions-in-systems">#</a></h3>
+<p><strong>Fix</strong>: Check all possible combinations and don&rsquo;t assume unique solutions.</p>
+<h2 id="-quick-reference">📋 Quick Reference<a hidden class="anchor" aria-hidden="true" href="#-quick-reference">#</a></h2>
+<h3 id="absolute-value-properties">Absolute Value Properties<a hidden class="anchor" aria-hidden="true" href="#absolute-value-properties">#</a></h3>
+<ul>
+<li>$|a| \geq 0$ (always non-negative)</li>
+<li>$|a| = |-a|$ (symmetric)</li>
+<li>$|ab| = |a||b|$ (multiplicative)</li>
+<li>$|a + b| \leq |a| + |b|$ (triangle inequality)</li>
+</ul>
+<h3 id="am-gm-special-cases">AM-GM Special Cases<a hidden class="anchor" aria-hidden="true" href="#am-gm-special-cases">#</a></h3>
+<ul>
+<li>Two variables: $\frac{a + b}{2} \geq \sqrt{ab}$</li>
+<li>Three variables: $\frac{a + b + c}{3} \geq \sqrt[3]{abc}$</li>
+<li>Equality when all variables are equal</li>
+</ul>
+<hr>
+<p><strong>Prev</strong>: <a href="/precalculus/topics/functions-and-transformations">Functions &amp; Transformations</a><br>
+<strong>Next</strong>: <a href="/precalculus/topics/polynomials-and-rational-functions">Polynomials &amp; Rational Functions</a><br>
+<strong>Back to</strong>: <a href="/precalculus/topics/">Topic Guides</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">Amc10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">Amc12</a></li>
+      <li><a href="http://localhost:1313/tags/precalculus/">Precalculus</a></li>
+      <li><a href="http://localhost:1313/tags/equations/">Equations</a></li>
+      <li><a href="http://localhost:1313/tags/inequalities/">Inequalities</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

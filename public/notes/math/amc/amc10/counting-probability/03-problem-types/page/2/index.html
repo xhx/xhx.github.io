@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Problem Types | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Counting, Probability, Problem Types">
+<meta name="description" content="Pattern catalog of common AMC counting and probability problem types with recognition cues and solution templates.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xhx.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/index.xml">
+<link rel="alternate" hreflang="en" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+<meta property="og:url" content="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/">
+  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
+  <meta property="og:title" content="Problem Types">
+  <meta property="og:description" content="Pattern catalog of common AMC counting and probability problem types with recognition cues and solution templates.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Problem Types">
+<meta name="twitter:description" content="Pattern catalog of common AMC counting and probability problem types with recognition cues and solution templates.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Notes",
+      "item": "https://xhx.github.io/notes/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Mathematics Notes",
+      "item": "https://xhx.github.io/notes/math/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "AMC Problems",
+      "item": "https://xhx.github.io/notes/math/amc/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "AMC 10",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Counting \u0026 Probability Mastery Guide",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Problem Types",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/"
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/">Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/">Counting &amp; Probability Mastery Guide</a></div>
+  <h1>
+    Problem Types
+    <a href="/notes/math/amc/amc10/counting-probability/03-problem-types/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+  <div class="post-description">
+    Pattern catalog of common AMC counting and probability problem types with recognition cues and solution templates.
+  </div>
+</header>
+<div class="post-content"><h1 id="-problem-types">🧩 Problem Types<a hidden class="anchor" aria-hidden="true" href="#-problem-types">#</a></h1>
+<p>A comprehensive catalog of common AMC counting and probability problem patterns with recognition cues and solution templates.</p>
+<h2 id="-problem-type-overview">📚 Problem Type Overview<a hidden class="anchor" aria-hidden="true" href="#-problem-type-overview">#</a></h2>
+<h3 id="-basic-counting-patterns">🔢 Basic Counting Patterns<a hidden class="anchor" aria-hidden="true" href="#-basic-counting-patterns">#</a></h3>
+<ul>
+<li><strong><a href="seatings-restrictions">Seating &amp; Restrictions</a></strong> - Adjacency and spacing problems</li>
+<li><strong><a href="word-rearrangements">Word Rearrangements</a></strong> - Letter arrangements with constraints</li>
+<li><strong><a href="committees-and-conditions">Committees &amp; Conditions</a></strong> - Selection with roles and constraints</li>
+<li><strong><a href="balls-in-bins">Balls in Bins</a></strong> - Integer solutions and distribution problems</li>
+</ul>
+<h3 id="-advanced-counting-patterns">🎯 Advanced Counting Patterns<a hidden class="anchor" aria-hidden="true" href="#-advanced-counting-patterns">#</a></h3>
+<ul>
+<li><strong><a href="at-least-at-most">At Least/At Most</a></strong> - Complement and inclusion-exclusion strategies</li>
+<li><strong><a href="grid-paths">Grid Paths</a></strong> - Lattice walks with restrictions</li>
+<li><strong><a href="circular-permutations">Circular Permutations</a></strong> - Ring arrangements and reflections</li>
+<li><strong><a href="derangements">Derangements</a></strong> - No element in original position</li>
+</ul>
+<h3 id="-probability-patterns">🎲 Probability Patterns<a hidden class="anchor" aria-hidden="true" href="#-probability-patterns">#</a></h3>
+<ul>
+<li><strong><a href="urn-coin-strings">Urn, Coin &amp; String Problems</a></strong> - Replacement vs. no-replacement</li>
+<li><strong><a href="expected-counts">Expected Counts</a></strong> - Indicator variables and linearity</li>
+<li><strong><a href="conditional-chains">Conditional Chains</a></strong> - Total probability and Bayes</li>
+<li><strong><a href="symmetry-probability">Symmetry Probability</a></strong> - Random choices via symmetry</li>
+</ul>
+<h3 id="-specialized-patterns">🔍 Specialized Patterns<a hidden class="anchor" aria-hidden="true" href="#-specialized-patterns">#</a></h3>
+<ul>
+<li><strong><a href="hypergeo-vs-binomial">Hypergeo vs Binomial</a></strong> - Distribution recognition</li>
+<li><strong><a href="digit-counting">Digit Counting</a></strong> - Divisibility and base representations</li>
+</ul>
+<h2 id="-how-to-use-this-section">🎯 How to Use This Section<a hidden class="anchor" aria-hidden="true" href="#-how-to-use-this-section">#</a></h2>
+<ol>
+<li><strong>Recognition</strong>: Learn the cues that identify each problem type</li>
+<li><strong>Template</strong>: Follow the solution template for each type</li>
+<li><strong>Practice</strong>: Work through the AMC-style examples</li>
+<li><strong>Pitfalls</strong>: Study common mistakes and how to avoid them</li>
+</ol>
+<h2 id="-problem-type-matrix">📊 Problem Type Matrix<a hidden class="anchor" aria-hidden="true" href="#-problem-type-matrix">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Problem Type</th>
+          <th>AMC 10</th>
+          <th>AMC 12</th>
+          <th>Key Technique</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Seating &amp; Restrictions</td>
+          <td>✅ Core</td>
+          <td>✅ Core</td>
+          <td>Adjacency method</td>
+      </tr>
+      <tr>
+          <td>Word Rearrangements</td>
+          <td>✅ Core</td>
+          <td>✅ Core</td>
+          <td>Permutations with repetition</td>
+      </tr>
+      <tr>
+          <td>Committees &amp; Conditions</td>
+          <td>✅ Core</td>
+          <td>✅ Core</td>
+          <td>Combinations with constraints</td>
+      </tr>
+      <tr>
+          <td>Balls in Bins</td>
+          <td>⚠️ Stretch</td>
+          <td>✅ Often</td>
+          <td>Stars and bars</td>
+      </tr>
+      <tr>
+          <td>At Least/At Most</td>
+          <td>⚠️ Stretch</td>
+          <td>✅ Often</td>
+          <td>Complement counting</td>
+      </tr>
+      <tr>
+          <td>Grid Paths</td>
+          <td>✅ Often</td>
+          <td>✅ Core</td>
+          <td>Lattice path counting</td>
+      </tr>
+      <tr>
+          <td>Circular Permutations</td>
+          <td>⚠️ Stretch</td>
+          <td>✅ Often</td>
+          <td>$(n-1)!$ formula</td>
+      </tr>
+      <tr>
+          <td>Derangements</td>
+          <td>❌ No</td>
+          <td>✅ Stretch</td>
+          <td>Inclusion-exclusion</td>
+      </tr>
+      <tr>
+          <td>Expected Counts</td>
+          <td>❌ No</td>
+          <td>✅ Often</td>
+          <td>Linearity of expectation</td>
+      </tr>
+      <tr>
+          <td>Conditional Chains</td>
+          <td>⚠️ Stretch</td>
+          <td>✅ Often</td>
+          <td>Total probability</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-contest-strategy">🏆 Contest Strategy<a hidden class="anchor" aria-hidden="true" href="#-contest-strategy">#</a></h2>
+<ul>
+<li><strong>AMC 10</strong>: Focus on basic counting patterns and simple probability</li>
+<li><strong>AMC 12</strong>: Master all patterns, especially advanced counting and probability</li>
+<li><strong>Recognition</strong>: Practice identifying problem types quickly</li>
+<li><strong>Templates</strong>: Memorize solution approaches for common types</li>
+</ul>
+<hr>
+<p><em>Start with <a href="seatings-restrictions">Seating &amp; Restrictions</a> or <a href="word-rearrangements">Word Rearrangements</a></em></p>
+
+
+</div>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Circular Permutations
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🔄 Circular Permutations Arranging objects in a circle with considerations for rotation and reflection symmetry.
+🎯 Recognition Cues Keywords: “around a table”, “in a circle”, “on a ring”, “circular”, “round” Setup: Objects arranged in a circular pattern Constraints: Rotation symmetry, reflection symmetry, fixed positions 📋 Solution Template Identify the symmetry type:
+Rotation only: Use $(n-1)!$ formula Rotation &#43; reflection: Use $\frac{(n-1)!}{2}$ formula Fixed positions: Fix some elements, arrange the rest Apply the appropriate method:
+...</p>
+  </div>
+  <footer class="entry-footer">2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Circular Permutations" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/circular-permutations/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Symmetry Probability
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🔄 Symmetry Probability Using symmetry principles to find probabilities without explicit counting, especially for random choices.
+🎯 Recognition Cues Keywords: “random”, “symmetry”, “equally likely”, “uniform”, “fair” Setup: Random selection or arrangement with symmetry Constraints: All outcomes equally likely, symmetric situations 📋 Solution Template Identify the symmetry:
+Equal probability: All outcomes equally likely Symmetric positions: Equivalent positions in arrangement Symmetric choices: Equivalent choices in selection Apply symmetry principles:
+Equal probability: $P(\text{event}) = \frac{\text{favorable outcomes}}{\text{total outcomes}}$ Symmetric positions: Use relative positions Symmetric choices: Use relative probabilities Check for common patterns:
+...</p>
+  </div>
+  <footer class="entry-footer">2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Symmetry Probability" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/symmetry-probability/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Hypergeo vs Binomial
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🎯 Hypergeo vs Binomial Recognizing when to use hypergeometric vs binomial distributions and applying the correct formulas.
+🎯 Recognition Cues Keywords: “with replacement”, “without replacement”, “drawing”, “sampling” Setup: Drawing objects from a population Constraints: Replacement vs. no-replacement, population size 📋 Solution Template Identify the sampling type:
+With replacement: Use binomial distribution Without replacement: Use hypergeometric distribution Large population: Binomial approximation may apply Apply the appropriate formula:
+Binomial: $P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$ Hypergeometric: $P(X = k) = \frac{\binom{K}{k}\binom{N-K}{n-k}}{\binom{N}{n}}$ Check for approximations:
+...</p>
+  </div>
+  <footer class="entry-footer">2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Hypergeo vs Binomial" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/hypergeo-vs-binomial/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Digit Counting
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🔢 Digit Counting Problems involving counting numbers based on their digits, divisibility rules, and base representations.
+🎯 Recognition Cues Keywords: “digits”, “divisible by”, “base”, “leading zeros”, “palindrome” Setup: Numbers with specific digit properties Constraints: Digit sums, divisibility, base conversions 📋 Solution Template Identify the digit property:
+Divisibility: Use divisibility rules Digit sum: Use digit counting techniques Base representation: Use base conversion methods Apply the appropriate method:
+Divisibility: Use modular arithmetic Digit sum: Use generating functions or casework Base representation: Use place value system Check for special cases:
+...</p>
+  </div>
+  <footer class="entry-footer">2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Digit Counting" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/digit-counting/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/">
+      «&nbsp;Prev&nbsp;
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

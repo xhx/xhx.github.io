@@ -5,50 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Xiaohui Xie&#39;s Site</title>
-<meta name="keywords" content="">
-<meta name="description" content="Transformations &amp; Symmetry
-(translations · rotations · reflections · dilations)
-On the AMC 10, problems that look like long angle-chases often crash-land to a single sentence once you recognize what motion takes one figure to another.  Every isometry preserves length and angle; a dilation multiplies every length by the same factor—and nothing else changes.  That’s the whole game.
-
-1 The Four Plane Isometries
-
-  
-      
-          Motion
-          Algebra / coordinates
-          Typical AMC “tell”
-          What stays equal
-      
-  
-  
-      
-          Translation  ⁣(h,k)!(h,k)
-          (x,y)→(x&#43;h,y&#43;k)(x,y)\to(x&#43;h,y&#43;k)
-          Parallel arrows, “slides 5 cm right and 2 cm up”
-          All lengths, all angles, slopes
-      
-      
-          Rotation (center OO, angle θ\theta)
-          complex form  z→O&#43;(z−O)eiθz\to O&#43;(z-O)e^{i\theta}
-          “turns 120° about OO”, regular-polygon steps
-          Lengths, angles, orientation clockwise ↔ counter
-      
-      
-          Reflection (across line ℓ\ell)
-          fold line; in complex plane z→zˉz\to\bar z after axis change
-          Mirror picture, right-angle tick marks at the mirror
-          Lengths, angles, orientation reversed
-      
-      
-          Glide reflection
-          reflection ∘ translation
-          Rare on AMC 10
-          Lengths, angles
-      
-  
-
-All four are rigid motions—they keep every distance and every angle measure exactly the same.">
+<title>Transformations &amp; Symmetry | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="amc10, geometry, transformations, symmetry, isometries, mathematics">
+<meta name="description" content="AMC 10 Geometry: Transformations &amp; Symmetry">
 <meta name="author" content="Xiaohui Xie">
 <link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/geometry/transformations-symmetry/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
@@ -161,44 +120,47 @@ All four are rigid motions—they keep every distance and every angle measure ex
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/">Geometry</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/">AMC 10 Geometry Mastery Guide</a></div>
     <h1 class="post-title entry-hint-parent">
-      
+      Transformations &amp; Symmetry
     </h1>
-    <div class="post-meta">4 min&nbsp;·&nbsp;Xiaohui Xie
+    <div class="post-description">
+      AMC 10 Geometry: Transformations &amp; Symmetry
+    </div>
+    <div class="post-meta"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Xiaohui Xie
 
 </div>
   </header> 
   <div class="post-content"><h1 id="transformations--symmetry">Transformations &amp; Symmetry<a hidden class="anchor" aria-hidden="true" href="#transformations--symmetry">#</a></h1>
 <p><em>(translations · rotations · reflections · dilations)</em></p>
-<p>On the AMC 10, problems that look like long angle-chases often crash-land to a single sentence once you recognize <strong>what motion takes one figure to another</strong>.  Every isometry preserves length and angle; a dilation multiplies every length by the same factor—and nothing else changes.  That’s the whole game.</p>
+<p>On the AMC 10, problems that look like long angle-chases often crash-land to a single sentence once you recognize <strong>what motion takes one figure to another</strong>.  Every isometry preserves length and angle; a dilation multiplies every length by the same factor—and nothing else changes.  That&rsquo;s the whole game.</p>
 <hr>
-<h2 id="1the-four-plane-isometries">1 The Four Plane Isometries<a hidden class="anchor" aria-hidden="true" href="#1the-four-plane-isometries">#</a></h2>
+<h2 id="1-the-four-plane-isometries">1 The Four Plane Isometries<a hidden class="anchor" aria-hidden="true" href="#1-the-four-plane-isometries">#</a></h2>
 <table>
   <thead>
       <tr>
           <th>Motion</th>
           <th>Algebra / coordinates</th>
-          <th>Typical AMC “tell”</th>
+          <th>Typical AMC &ldquo;tell&rdquo;</th>
           <th>What stays equal</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td><strong>Translation</strong>  ⁣(h,k)!(h,k)</td>
-          <td>(x,y)→(x+h,y+k)(x,y)\to(x+h,y+k)</td>
-          <td>Parallel arrows, “slides 5 cm right and 2 cm up”</td>
+          <td><strong>Translation</strong>  $(h,k)$</td>
+          <td>$(x,y)\to(x+h,y+k)$</td>
+          <td>Parallel arrows, &ldquo;slides 5 cm right and 2 cm up&rdquo;</td>
           <td>All lengths, all angles, slopes</td>
       </tr>
       <tr>
-          <td><strong>Rotation</strong> (center OO, angle θ\theta)</td>
-          <td>complex form  z→O+(z−O)eiθz\to O+(z-O)e^{i\theta}</td>
-          <td>“turns 120° about OO”, regular-polygon steps</td>
+          <td><strong>Rotation</strong> (center $O$, angle $\theta$)</td>
+          <td>complex form  $z\to O+(z-O)e^{i\theta}$</td>
+          <td>&ldquo;turns 120° about $O$&rdquo;, regular-polygon steps</td>
           <td>Lengths, angles, orientation clockwise ↔ counter</td>
       </tr>
       <tr>
-          <td><strong>Reflection</strong> (across line ℓ\ell)</td>
-          <td>fold line; in complex plane z→zˉz\to\bar z after axis change</td>
+          <td><strong>Reflection</strong> (across line $\ell$)</td>
+          <td>fold line; in complex plane $z\to\bar z$ after axis change</td>
           <td>Mirror picture, right-angle tick marks at the mirror</td>
           <td>Lengths, angles, <strong>orientation reversed</strong></td>
       </tr>
@@ -212,21 +174,21 @@ All four are rigid motions—they keep every distance and every angle measure ex
 </table>
 <p>All four are <strong>rigid motions</strong>—they keep every distance and every angle measure exactly the same.</p>
 <hr>
-<h2 id="2dilations--spiral-similarities">2 Dilations &amp; Spiral Similarities<a hidden class="anchor" aria-hidden="true" href="#2dilations--spiral-similarities">#</a></h2>
+<h2 id="2-dilations--spiral-similarities">2 Dilations &amp; Spiral Similarities<a hidden class="anchor" aria-hidden="true" href="#2-dilations--spiral-similarities">#</a></h2>
 <ul>
 <li>
-<p><strong>Dilation</strong> (center OO, scale k&gt;0k&gt;0)</p>
-<p>(x,y)↦(Ox+k(x−Ox),  Oy+k(y−Oy))(x,y)\mapsto \bigl(O_x+k(x-O_x),;O_y+k(y-O_y)\bigr); multiplies every length by kk, keeps every angle.</p>
+<p><strong>Dilation</strong> (center $O$, scale $k&gt;0$)</p>
+<p>$(x,y)\mapsto \bigl(O_x+k(x-O_x),;O_y+k(y-O_y)\bigr)$; multiplies every length by $k$, keeps every angle.</p>
 </li>
 <li>
-<p><strong>Spiral similarity</strong> = rotation ∘ dilation about the same center SS.</p>
-<p>Turns segment ABAB into A′B′A&rsquo;B&rsquo; with</p>
-<p>SA′SA=SB′SB=k\dfrac{SA&rsquo;}{SA}=\dfrac{SB&rsquo;}{SB}=k and ∠A′SB′=∠ASB\angle A&rsquo;SB&rsquo;=\angle ASB.</p>
+<p><strong>Spiral similarity</strong> = rotation ∘ dilation about the same center $S$.</p>
+<p>Turns segment $AB$ into $A&rsquo;B&rsquo;$ with</p>
+<p>$\dfrac{SA&rsquo;}{SA}=\dfrac{SB&rsquo;}{SB}=k$ and $\angle A&rsquo;SB&rsquo;=\angle ASB$.</p>
 <p>(Pinwheel tricks—see Problem #19.)</p>
 </li>
 </ul>
 <hr>
-<h2 id="3fast-id-cheat-table">3 Fast-ID Cheat Table<a hidden class="anchor" aria-hidden="true" href="#3fast-id-cheat-table">#</a></h2>
+<h2 id="3-fast-id-cheat-table">3 Fast-ID Cheat Table<a hidden class="anchor" aria-hidden="true" href="#3-fast-id-cheat-table">#</a></h2>
 <table>
   <thead>
       <tr>
@@ -247,14 +209,14 @@ All four are rigid motions—they keep every distance and every angle measure ex
           <td>Radius distances equal; center = intersection of perp. bisectors of two image pairs.</td>
       </tr>
       <tr>
-          <td>Shape “flipped” over a line</td>
+          <td>Shape &ldquo;flipped&rdquo; over a line</td>
           <td><strong>Reflection</strong></td>
           <td>That line is the perpendicular bisector of any segment joining a point and its image.</td>
       </tr>
       <tr>
           <td>Same shape, different size, same center</td>
           <td><strong>Dilation</strong></td>
-          <td>Ratio of any distance from center = kk.</td>
+          <td>Ratio of any distance from center $= k$.</td>
       </tr>
       <tr>
           <td>Equal non-adjacent chords or sides in a circle</td>
@@ -264,7 +226,7 @@ All four are rigid motions—they keep every distance and every angle measure ex
   </tbody>
 </table>
 <hr>
-<h2 id="4classic-amc-moves">4 Classic AMC Moves<a hidden class="anchor" aria-hidden="true" href="#4classic-amc-moves">#</a></h2>
+<h2 id="4-classic-amc-moves">4 Classic AMC Moves<a hidden class="anchor" aria-hidden="true" href="#4-classic-amc-moves">#</a></h2>
 <table>
   <thead>
       <tr>
@@ -274,39 +236,39 @@ All four are rigid motions—they keep every distance and every angle measure ex
   </thead>
   <tbody>
       <tr>
-          <td>“Square ABCD is rotated 90° about A sending B to E. Find EC.”</td>
-          <td>Rotation ⇒ AB=AEAB=AE and ∠BAE=90°∠BAE=90°; use right triangle ABE.</td>
+          <td>&ldquo;Square $ABCD$ is rotated 90° about $A$ sending $B$ to $E$. Find $EC$.&rdquo;</td>
+          <td>Rotation ⇒ $AB=AE$ and $\angle BAE=90°$; use right triangle $ABE$.</td>
       </tr>
       <tr>
-          <td>“Regular heptagon—smallest rotation mapping vertex A to D?”</td>
-          <td>360°⋅3/7=15427°360° · 3/7 = 154 \frac{2}{7}°.</td>
+          <td>&ldquo;Regular heptagon—smallest rotation mapping vertex $A$ to $D$?&rdquo;</td>
+          <td>$360° \cdot 3/7 = 154 \frac{2}{7}°$.</td>
       </tr>
       <tr>
-          <td>“Triangle with reflection over its altitude gives a kite; find area.”</td>
+          <td>&ldquo;Triangle with reflection over its altitude gives a kite; find area.&rdquo;</td>
           <td>Reflection duplicates area; kite area = 2 × triangle area.</td>
       </tr>
       <tr>
-          <td>“Dilate about O by 3 sends P to Q; how far is Q from O?”</td>
-          <td>OQ=3⋅OPOQ = 3·OP.</td>
+          <td>&ldquo;Dilate about $O$ by 3 sends $P$ to $Q$; how far is $Q$ from $O$?&rdquo;</td>
+          <td>$OQ=3\cdot OP$.</td>
       </tr>
   </tbody>
 </table>
 <hr>
-<h2 id="5two-worked-amc-style-examples">5 Two Worked AMC-Style Examples<a hidden class="anchor" aria-hidden="true" href="#5two-worked-amc-style-examples">#</a></h2>
-<h3 id="example-arotation-center--unknown-length">Example A (Rotation center &amp; unknown length)<a hidden class="anchor" aria-hidden="true" href="#example-arotation-center--unknown-length">#</a></h3>
-<p>A right-isosceles triangle with legs 5 cm is rotated 90∘90^{\circ} about a point OO so that one vertex moves to another.  Find OO’s distance to that vertex.</p>
+<h2 id="5-two-worked-amc-style-examples">5 Two Worked AMC-Style Examples<a hidden class="anchor" aria-hidden="true" href="#5-two-worked-amc-style-examples">#</a></h2>
+<h3 id="example-a-rotation-center--unknown-length">Example A (Rotation center &amp; unknown length)<a hidden class="anchor" aria-hidden="true" href="#example-a-rotation-center--unknown-length">#</a></h3>
+<p>A right-isosceles triangle with legs 5 cm is rotated $90^{\circ}$ about a point $O$ so that one vertex moves to another.  Find $O$&rsquo;s distance to that vertex.</p>
 <blockquote>
 <p>Solution.</p>
-<p>In a right-isosceles, hypotenuse =52=5\sqrt2.  The vertex rotation is a quarter-turn, so it subtends a 90° arc of a circle centered at OO.  Chord length =52=5\sqrt2.  For a 90° subtended chord, radius R=chord2=5R=\dfrac{\text{chord}}{\sqrt2}= \boxed{5}.</p></blockquote>
+<p>In a right-isosceles, hypotenuse $=5\sqrt2$.  The vertex rotation is a quarter-turn, so it subtends a 90° arc of a circle centered at $O$.  Chord length $=5\sqrt2$.  For a 90° subtended chord, radius $R=\dfrac{\text{chord}}{\sqrt2}= \boxed{5}$.</p></blockquote>
 <hr>
-<h3 id="example-btranslation-on-a-grid">Example B (Translation on a grid)<a hidden class="anchor" aria-hidden="true" href="#example-btranslation-on-a-grid">#</a></h3>
-<p>The vector ⟨7,−3⟩\langle7,-3\rangle moves lattice point A(2,5)A(2,5) to BB.  After a second identical translation, what are the coordinates of the image of AA?</p>
+<h3 id="example-b-translation-on-a-grid">Example B (Translation on a grid)<a hidden class="anchor" aria-hidden="true" href="#example-b-translation-on-a-grid">#</a></h3>
+<p>The vector $\langle7,-3\rangle$ moves lattice point $A(2,5)$ to $B$.  After a second identical translation, what are the coordinates of the image of $A$?</p>
 <blockquote>
 <p>Solution.</p>
-<p>One slide: B(9,2)B(9,2).  Two slides: add again ⇒ C(16,−1)C(16,-1).</p></blockquote>
+<p>One slide: $B(9,2)$.  Two slides: add again ⇒ $C(16,-1)$.</p></blockquote>
 <p>AMC answer choices are often there already.</p>
 <hr>
-<h2 id="6symmetry-quick-ref">6 Symmetry Quick-Ref<a hidden class="anchor" aria-hidden="true" href="#6symmetry-quick-ref">#</a></h2>
+<h2 id="6-symmetry-quick-ref">6 Symmetry Quick-Ref<a hidden class="anchor" aria-hidden="true" href="#6-symmetry-quick-ref">#</a></h2>
 <table>
   <thead>
       <tr>
@@ -324,8 +286,8 @@ All four are rigid motions—they keep every distance and every angle measure ex
           <td>4 rotations (90° steps) + 4 reflections</td>
       </tr>
       <tr>
-          <td>Regular nn-gon</td>
-          <td>nn rotations + nn reflections (unless nn odd → nn reflections)</td>
+          <td>Regular $n$-gon</td>
+          <td>$n$ rotations + $n$ reflections (unless $n$ odd → $n$ reflections)</td>
       </tr>
       <tr>
           <td>Circle</td>
@@ -333,22 +295,28 @@ All four are rigid motions—they keep every distance and every angle measure ex
       </tr>
   </tbody>
 </table>
-<p>Probability questions often ask “what’s the probability a random rotation sends the figure onto itself?” — it’s # symmetry rotations360∘/smallest rotation\dfrac{\text{# symmetry rotations}}{360^\circ/\text{smallest rotation}}.</p>
+<p>Probability questions often ask &ldquo;what&rsquo;s the probability a random rotation sends the figure onto itself?&rdquo; — it&rsquo;s $\dfrac{\text{# symmetry rotations}}{360^\circ/\text{smallest rotation}}$.</p>
 <hr>
-<h2 id="7final-speed-checklist">7 Final Speed Checklist<a hidden class="anchor" aria-hidden="true" href="#7final-speed-checklist">#</a></h2>
+<h2 id="7-final-speed-checklist">7 Final Speed Checklist<a hidden class="anchor" aria-hidden="true" href="#7-final-speed-checklist">#</a></h2>
 <ol>
-<li><strong>Label images first.</strong> The sequence A→A′,B→B′A\to A&rsquo;, B\to B&rsquo; tells you the motion.</li>
+<li><strong>Label images first.</strong> The sequence $A\to A&rsquo;, B\to B&rsquo;$ tells you the motion.</li>
 <li><strong>Draw the center or mirror line.</strong> A two-second sketch prevents wrong triangles.</li>
 <li><strong>Convert to vectors for dilations/translations</strong> (easier arithmetic than slope-intercept).</li>
 <li><strong>Remember right-triangle &amp; rotation = isosceles triangle</strong> radius trick.</li>
 </ol>
-<p>Master these transformation cues and the AMC 10 “motion” problems shrink to two or three clean lines of geometry.</p>
+<p>Master these transformation cues and the AMC 10 &ldquo;motion&rdquo; problems shrink to two or three clean lines of geometry.</p>
 
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">Amc10</a></li>
+      <li><a href="http://localhost:1313/tags/geometry/">Geometry</a></li>
+      <li><a href="http://localhost:1313/tags/transformations/">Transformations</a></li>
+      <li><a href="http://localhost:1313/tags/symmetry/">Symmetry</a></li>
+      <li><a href="http://localhost:1313/tags/isometries/">Isometries</a></li>
+      <li><a href="http://localhost:1313/tags/mathematics/">Mathematics</a></li>
     </ul>
 
   </footer>

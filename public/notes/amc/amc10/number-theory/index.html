@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Number Theory Mastery Guide | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Number Theory, Study Guide, Math">
+<meta name="description" content="Comprehensive AMC 10 &amp; AMC 12 number theory study guide with topics, problem types, formulas, and tips.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/amc/amc10/number-theory/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/notes/amc/amc10/number-theory/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/amc/amc10/number-theory/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a></div>
+  <h1>
+    Number Theory Mastery Guide
+    <a href="/notes/amc/amc10/number-theory/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+  <div class="post-description">
+    Comprehensive AMC 10 &amp; AMC 12 number theory study guide with topics, problem types, formulas, and tips.
+  </div>
+</header>
+<div class="post-content"><h1 id="-number-theory-mastery-guide">🔢 Number Theory Mastery Guide<a hidden class="anchor" aria-hidden="true" href="#-number-theory-mastery-guide">#</a></h1>
+<p>Welcome to your comprehensive <strong>Number Theory</strong> study guide for AMC 10 &amp; AMC 12! This guide is designed to take you from basic concepts to contest-ready problem-solving strategies.</p>
+<h2 id="-what-youll-master">🎯 What You&rsquo;ll Master<a hidden class="anchor" aria-hidden="true" href="#-what-youll-master">#</a></h2>
+<ul>
+<li><strong>Core Concepts</strong>: Divisibility, congruences, modular arithmetic, and prime factorization</li>
+<li><strong>Advanced Topics</strong>: Chinese Remainder Theorem, Diophantine equations, and order theory</li>
+<li><strong>Problem Patterns</strong>: Recognition cues and solution templates for common AMC problem types</li>
+<li><strong>Essential Formulas</strong>: Quick reference with usage examples</li>
+<li><strong>Strategic Tips</strong>: Timing, heuristics, and common pitfalls to avoid</li>
+</ul>
+<h2 id="-study-path">🗺️ Study Path<a hidden class="anchor" aria-hidden="true" href="#-study-path">#</a></h2>
+<h3 id="-reference-materials">🗂️ Reference Materials<a hidden class="anchor" aria-hidden="true" href="#-reference-materials">#</a></h3>
+<ul>
+<li><strong><a href="reference/scope-map">Scope Map</a></strong>: AMC 10 vs AMC 12 topic coverage</li>
+<li><strong><a href="reference/notation-cheatsheet">Notation Cheatsheet</a></strong>: Symbols and conventions</li>
+<li><strong><a href="reference/concept-atlas">Concept Atlas</a></strong>: Quick primers for each area</li>
+</ul>
+<h3 id="-core-topics">📖 Core Topics<a hidden class="anchor" aria-hidden="true" href="#-core-topics">#</a></h3>
+<ul>
+<li><strong><a href="topics/divisibility-basics">Divisibility Basics</a></strong>: Primes, GCD/LCM, Euclidean algorithm</li>
+<li><strong><a href="topics/congruences-and-modular-arithmetic">Congruences &amp; Modular Arithmetic</a></strong>: Residues, inverses, solving congruences</li>
+<li><strong><a href="topics/fermat-euler-orders">Fermat, Euler &amp; Orders</a></strong>: FLT, Euler&rsquo;s theorem, order theory</li>
+<li><strong><a href="topics/chinese-remainder-theorem">Chinese Remainder Theorem</a></strong>: Solving systems of congruences</li>
+<li><strong><a href="topics/diophantine-equations-linear">Linear Diophantine Equations</a></strong>: Coin problems and parameterization</li>
+<li><strong><a href="topics/diophantine-equations-quadratic">Quadratic Diophantine Equations</a></strong>: Pythagorean triples, sum of squares</li>
+<li><strong><a href="topics/factorization-and-valuation">Factorization &amp; Valuation</a></strong>: Prime powers, Legendre&rsquo;s formula</li>
+<li><strong><a href="topics/divisor-functions">Divisor Functions</a></strong>: τ(n), σ(n), multiplicativity</li>
+<li><strong><a href="topics/binomial-and-number-theory">Binomial &amp; Number Theory</a></strong>: Divisibility patterns, Lucas theorem</li>
+<li><strong><a href="topics/digit-and-base-problems">Digit &amp; Base Problems</a></strong>: Base conversion, divisibility tests</li>
+<li><strong><a href="topics/invariants-and-parity">Invariants &amp; Parity</a></strong>: Parity arguments, coloring techniques</li>
+<li><strong><a href="topics/pigeonhole-in-number-theory">Pigeonhole in Number Theory</a></strong>: Subset sums, residue classes</li>
+</ul>
+<h3 id="-problem-types">🧩 Problem Types<a hidden class="anchor" aria-hidden="true" href="#-problem-types">#</a></h3>
+<ul>
+<li><strong><a href="problem-types/remainders-and-last-digits">Remainders &amp; Last Digits</a></strong>: Modular cycles and patterns</li>
+<li><strong><a href="problem-types/systems-of-congruences">Systems of Congruences</a></strong>: CRT applications</li>
+<li><strong><a href="problem-types/counting-divisors-sum-of-divisors">Counting Divisors &amp; Sums</a></strong>: Formula applications</li>
+<li><strong><a href="problem-types/gcd-lcm-constraints">GCD/LCM Constraints</a></strong>: Relationship problems</li>
+<li><strong><a href="problem-types/linear-diophantine-forms">Linear Diophantine Forms</a></strong>: Parameterization techniques</li>
+<li><strong><a href="problem-types/coin-frobenius-lite">Coin &amp; Frobenius Problems</a></strong>: Reachability questions</li>
+<li><strong><a href="problem-types/pythagorean-triples">Pythagorean Triples</a></strong>: Parametrization and properties</li>
+<li><strong><a href="problem-types/factorials-and-trailing-zeros">Factorials &amp; Trailing Zeros</a></strong>: Legendre applications</li>
+<li><strong><a href="problem-types/digit-sum-and-divisibility-tests">Digit Sum &amp; Divisibility Tests</a></strong>: Casting out nines</li>
+<li><strong><a href="problem-types/binomial-divisibility-patterns">Binomial Divisibility</a></strong>: p-adic techniques</li>
+<li><strong><a href="problem-types/residue-classes-by-cases">Residue Classes by Cases</a></strong>: Case analysis strategies</li>
+<li><strong><a href="problem-types/pigeonhole-subset-sum-multiples">Pigeonhole Subset Sums</a></strong>: Classic applications</li>
+</ul>
+<h3 id="-quick-reference">📏 Quick Reference<a hidden class="anchor" aria-hidden="true" href="#-quick-reference">#</a></h3>
+<ul>
+<li><strong><a href="formulas/essential-formulas">Essential Formulas</a></strong>: Complete formula bank with examples</li>
+</ul>
+<h3 id="-strategic-tips">💡 Strategic Tips<a hidden class="anchor" aria-hidden="true" href="#-strategic-tips">#</a></h3>
+<ul>
+<li><strong><a href="tips/problem-solving-tips">Problem-Solving Tips</a></strong>: Heuristics, checklists, and timing strategies</li>
+</ul>
+<h2 id="-getting-started">🚀 Getting Started<a hidden class="anchor" aria-hidden="true" href="#-getting-started">#</a></h2>
+<ol>
+<li><strong>Begin with Reference</strong>: Check the <a href="reference/scope-map">scope map</a> to understand AMC 10 vs AMC 12 coverage</li>
+<li><strong>Study Core Topics</strong>: Work through topics in order, focusing on your target contest level</li>
+<li><strong>Practice Problem Types</strong>: Use the pattern catalog to recognize and solve common problem structures</li>
+<li><strong>Master Formulas</strong>: Keep the <a href="formulas/essential-formulas">essential formulas</a> handy during practice</li>
+<li><strong>Apply Strategic Tips</strong>: Use the <a href="tips/problem-solving-tips">problem-solving tips</a> to improve your contest performance</li>
+</ol>
+<h2 id="-contest-strategy">🎯 Contest Strategy<a hidden class="anchor" aria-hidden="true" href="#-contest-strategy">#</a></h2>
+<ul>
+<li><strong>AMC 10</strong>: Focus on divisibility, basic congruences, and simple Diophantine equations</li>
+<li><strong>AMC 12</strong>: Add Chinese Remainder Theorem, advanced modular arithmetic, and order theory</li>
+<li><strong>Timing</strong>: Spend 2-3 minutes max on number theory problems; use modular arithmetic shortcuts</li>
+<li><strong>Pattern Recognition</strong>: Look for cycles, parity, and factorization opportunities</li>
+</ul>
+<hr>
+<p><strong>Next</strong>: Start with <a href="reference/scope-map">Scope Map</a> to understand the coverage differences between AMC 10 and AMC 12.</p>
+
+
+</div>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Reference Materials
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>📚 Reference Materials Essential reference materials for AMC number theory preparation. Use these as quick lookup guides during practice and contests.
+🧭 Navigation Scope Map: AMC 10 vs AMC 12 topic coverage matrix Notation Cheatsheet: Symbols, conventions, and usage cues Concept Atlas: One-paragraph primers with AMC appearance notes 🎯 How to Use This Section Before studying: Check the scope map to prioritize topics for your target contest During practice: Use the notation cheatsheet for quick symbol lookup For review: Browse the concept atlas for quick refreshers on key ideas 📋 Quick Access Topic AMC 10 AMC 12 Quick Reference Divisibility ✅ Core ✅ Core Notation Congruences ✅ Core ✅ Core Concept Atlas CRT ❌ ✅ Often Scope Map Orders ⚠️ Stretch ✅ Core Concept Atlas Next: Check the Scope Map to understand topic coverage differences.
+...</p>
+  </div>
+  <footer class="entry-footer">1 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Reference Materials" href="http://localhost:1313/notes/amc/amc10/number-theory/reference/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Core Topics
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>📚 Core Topics Essential number theory topics organized by difficulty and contest importance. Study these in order for maximum effectiveness.
+🎯 Study Order Phase 1: Foundations (AMC 10 Essential) Divisibility Basics - Primes, GCD/LCM, Euclidean algorithm Congruences &amp; Modular Arithmetic - Residues, inverses, solving congruences Linear Diophantine Equations - Coin problems, parameterization Quadratic Diophantine Equations - Pythagorean triples, sum of squares Digit &amp; Base Problems - Base conversion, divisibility tests Invariants &amp; Parity - Parity arguments, coloring techniques Pigeonhole in Number Theory - Subset sums, residue classes Phase 2: Intermediate (AMC 12 Core) Fermat, Euler &amp; Orders - FLT, Euler’s theorem, order theory Chinese Remainder Theorem - Systems of congruences Factorization &amp; Valuation - Prime powers, Legendre’s formula Divisor Functions - τ(n), σ(n), multiplicativity Phase 3: Advanced (AMC 12 Stretch) Binomial &amp; Number Theory - Divisibility patterns, Lucas theorem 📊 Topic Matrix Topic AMC 10 AMC 12 Difficulty Key Techniques Divisibility Basics ✅ Core ✅ Core Easy Euclidean algorithm, factoring Congruences ✅ Core ✅ Core Easy-Medium Modular arithmetic, inverses Linear Diophantine ✅ Core ✅ Core Medium Parameterization, bounds Quadratic Diophantine ✅ Core ✅ Core Medium Parametrization, constraints Digit &amp; Base ✅ Core ✅ Core Easy-Medium Base conversion, tests Invariants &amp; Parity ✅ Core ✅ Core Medium Case analysis, contradiction Pigeonhole ✅ Core ✅ Core Medium-Hard Counting, existence proofs Fermat, Euler &amp; Orders ⚠️ Stretch ✅ Core Medium-Hard Cycle analysis, exponents CRT ❌ ✅ Often Hard System solving, combination Factorization &amp; Valuation ❌ ✅ Often Medium-Hard Prime powers, Legendre Divisor Functions ⚠️ Stretch ✅ Often Medium Multiplicativity, formulas Binomial &amp; NT ❌ ⚠️ Stretch Hard Lucas theorem, p-adic 🎯 Learning Objectives By the end of Phase 1, you should be able to: Find GCD and LCM of any two numbers Solve basic congruence equations Parameterize solutions to linear Diophantine equations Find Pythagorean triples and solve sum-of-squares problems Convert between bases and apply divisibility tests Use parity and invariants to prove impossibility Apply pigeonhole principle to number theory problems By the end of Phase 2, you should be able to: Use Fermat’s Little Theorem and Euler’s theorem Find orders and analyze modular cycles Solve systems of congruences using CRT Apply Legendre’s formula to factorial problems Compute divisor functions using multiplicativity By the end of Phase 3, you should be able to: Apply Lucas theorem to binomial coefficient problems Use p-adic valuation techniques Solve complex modular arithmetic problems 🚀 Quick Start New to number theory? Start with Divisibility Basics Comfortable with basics? Jump to Congruences &amp; Modular Arithmetic Preparing for AMC 12? Focus on Fermat, Euler &amp; Orders and Chinese Remainder Theorem Next: Begin with Divisibility Basics to build your foundation.
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Core Topics" href="http://localhost:1313/notes/amc/amc10/number-theory/topics/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Problem Types
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🧩 Problem Types A pattern catalog for recognizing and solving common AMC number theory problems. Each pattern includes recognition cues, solution templates, and worked examples.
+🎯 Pattern Categories 🔄 Modular Arithmetic Patterns Remainders &amp; Last Digits: Cycles, orders, modular patterns Systems of Congruences: CRT applications, pairwise coprime Residue Classes by Cases: Case analysis, symmetry pruning 🔢 Divisibility &amp; Factorization Patterns Counting Divisors &amp; Sums: Formula applications, prime exponents GCD/LCM Constraints: Relationship problems, parameterization Factorials &amp; Trailing Zeros: Legendre applications, extremal exponents 🔺 Diophantine Patterns Linear Diophantine Forms: Parameterization techniques, bounds Coin &amp; Frobenius Problems: Reachability questions, two-coin case Pythagorean Triples: Parametrization, primitive vs non-primitive 🔢 Specialized Patterns Digit Sum &amp; Divisibility Tests: Casting out nines, base conversion Binomial Divisibility: p-adic techniques, Lucas theorem Pigeonhole Subset Sums: Classic applications, existence proofs 🎯 How to Use This Section Recognition: Learn the key phrases and problem structures that signal each pattern Template: Follow the solution template for systematic problem-solving Practice: Work through the examples to internalize the techniques Variants: Study the common variations and pitfalls 📊 Pattern Difficulty Matrix Pattern AMC 10 AMC 12 Recognition Difficulty Solution Difficulty Remainders &amp; Last Digits ✅ Core ✅ Core Easy Easy-Medium Systems of Congruences ❌ ✅ Often Medium Hard Counting Divisors ⚠️ Stretch ✅ Often Easy Medium GCD/LCM Constraints ✅ Core ✅ Core Medium Medium Linear Diophantine ✅ Core ✅ Core Easy Medium Pythagorean Triples ✅ Core ✅ Core Easy Medium Digit Sum &amp; Tests ✅ Core ✅ Core Easy Easy Pigeonhole Subset Sums ✅ Core ✅ Core Medium Medium-Hard 🚀 Quick Recognition Guide 🔍 Look for These Phrases “Find the remainder when…” → Remainders &amp; Last Digits “How many positive divisors…” → Counting Divisors &amp; Sums “Find all pairs $(x,y)$ such that…” → Linear Diophantine Forms “How many ways can you make…” → Coin &amp; Frobenius Problems “Find the last digit of…” → Remainders &amp; Last Digits “Prove that among any $n$ integers…” → Pigeonhole Subset Sums ⚡ Quick Solution Strategies Modular arithmetic → Look for cycles and use Fermat/Euler Divisibility → Factor and use formulas Integer solutions → Parameterize and apply constraints Existence proofs → Use pigeonhole principle or invariants Next: Start with Remainders &amp; Last Digits for the most common pattern.
+...</p>
+  </div>
+  <footer class="entry-footer">2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Problem Types" href="http://localhost:1313/notes/amc/amc10/number-theory/problem-types/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Essential Formulas
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>📏 Essential Formulas Quick reference for the most important number theory formulas used in AMC contests. Each formula includes usage notes and micro-examples.
+🎯 How to Use This Section During practice: Keep this page open for quick formula lookup Before contests: Review all formulas to ensure familiarity For specific topics: Use the cross-references to related sections 📋 Formula Categories 🔢 Basic Divisibility Euclidean Algorithm: $\gcd(a,b) = \gcd(b, a \bmod b)$ Bézout’s Identity: $ax &#43; by = \gcd(a,b)$ has solutions Fundamental Relationship: $ab = \gcd(a,b) \cdot \operatorname{lcm}(a,b)$ 🔄 Modular Arithmetic Fermat’s Little Theorem: $a^{p-1} \equiv 1 \pmod{p}$ for prime $p$ Euler’s Theorem: $a^{\varphi(m)} \equiv 1 \pmod{m}$ when $\gcd(a,m) = 1$ Chinese Remainder Theorem: Unique solution for pairwise coprime moduli 📊 Divisor Functions Number of Divisors: $\tau(n) = \prod(e_i &#43; 1)$ where $n = \prod p_i^{e_i}$ Sum of Divisors: $\sigma(n) = \prod\frac{p_i^{e_i&#43;1}-1}{p_i-1}$ Euler’s Totient: $\varphi(n) = n\prod(1 - \frac{1}{p_i})$ for distinct primes $p_i$ 🔺 Diophantine Equations Pythagorean Triples: $a = m^2-n^2, b = 2mn, c = m^2&#43;n^2$ Linear Diophantine: $ax &#43; by = c$ has solutions iff $\gcd(a,b) \mid c$ Parameterization: $x = x_0 &#43; \frac{b}{d}t, y = y_0 - \frac{a}{d}t$ 📈 Special Functions Legendre’s Formula: $v_p(n!) = \sum_{k \geq 1} \left\lfloor \frac{n}{p^k} \right\rfloor$ Order Function: $\operatorname{ord}_m(a)$ is smallest $k$ with $a^k \equiv 1 \pmod{m}$ Valuation Function: $v_p(n)$ is highest power of $p$ dividing $n$ 🚀 Quick Access Formula Type AMC 10 AMC 12 Quick Reference Basic Divisibility ✅ Essential ✅ Essential Essential Formulas Modular Arithmetic ⚠️ Useful ✅ Essential Essential Formulas Divisor Functions ⚠️ Useful ✅ Essential Essential Formulas Diophantine ✅ Essential ✅ Essential Essential Formulas Special Functions ❌ ✅ Essential Essential Formulas Next: Browse the Essential Formulas for complete formula reference.
+...</p>
+  </div>
+  <footer class="entry-footer">2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Essential Formulas" href="http://localhost:1313/notes/amc/amc10/number-theory/formulas/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Problem-Solving Tips
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>💡 Problem-Solving Tips Strategic tips, heuristics, and checklists to improve your AMC number theory problem-solving skills.
+🎯 How to Use This Section Before contests: Review the strategic checklists During practice: Apply the heuristics to build intuition For specific problems: Use the decision trees and recognition cues 📋 Tip Categories 🧠 Strategic Thinking Modular arithmetic mindset: Always consider working modulo small numbers Parity and residues first: Check for contradictions quickly Factor first: Look for difference of squares, cubes, and cyclotomic hints Orders and cycles: Reduce exponents with $\varphi(m)$ and look for periods ⚡ Quick Techniques Mod pick strategy: Try small primes (2,3,5,7,9,11) and their LCM CRT mindset: Solve mod prime powers, then combine Digit/base shortcuts: Guard leading zeros, apply casting out nines Valuation thinking: Compare highest power of $p$ dividing each side 🎯 Contest Strategy Timing: Spend 2-3 minutes max on number theory problems Pattern recognition: Look for cycles, parity, and factorization opportunities Algebra explosion: If algebra gets messy, switch to modular view or parity Test tiny cases: Use small examples to verify your approach 🚀 Quick Decision Trees For Remainder Problems Is the modulus prime? → Use Fermat’s Little Theorem Is the modulus composite? → Use Euler’s theorem or CRT Is the exponent large? → Look for cycles or reduce modulo $\varphi(m)$ Is the base special? → Use known patterns (powers of 2, 3, etc.) For Divisibility Problems Is it about divisors? → Use $\tau(n)$ and $\sigma(n)$ formulas Is it about prime powers? → Use Legendre’s formula or valuation Is it about GCD/LCM? → Use Euclidean algorithm and relationships Is it about factorials? → Use Legendre’s formula for trailing zeros For Diophantine Problems Is it linear? → Check $\gcd(a,b) \mid c$ and parameterize Is it quadratic? → Look for Pythagorean triples or sum of squares Are there constraints? → Apply bounds and count solutions Is it about existence? → Use pigeonhole principle or invariants ⚠️ Common Pitfalls Modular Arithmetic Pitfalls Don’t divide without checking: Ensure $\gcd(a,m) = 1$ for modular inverses Remember to reduce: Always reduce intermediate results modulo the base Watch the signs: Modular arithmetic can give negative results Divisibility Pitfalls Check the direction: $a \mid b$ means $b$ is divisible by $a$ Don’t confuse GCD and LCM: GCD is greatest, LCM is least Verify your formulas: Double-check divisor function calculations Contest Pitfalls Don’t overcomplicate: Use the simplest approach that works Check your work: Verify with small examples Manage time: Don’t spend too long on any single problem Next: Study the Problem-Solving Tips for detailed strategies.
+...</p>
+  </div>
+  <footer class="entry-footer">2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Problem-Solving Tips" href="http://localhost:1313/notes/amc/amc10/number-theory/tips/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -2,11 +2,164 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Counting on Xiaohui Xie&#39;s Site</title>
-    <link>http://localhost:1313/tags/counting/</link>
+    <link>https://xhx.github.io/tags/counting/</link>
     <description>Recent content in Counting on Xiaohui Xie&#39;s Site</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/counting/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://xhx.github.io/tags/counting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AMC 10 vs AMC 12 Scope Map</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/scope-map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/scope-map/</guid>
+      <description>Complete matrix showing which counting and probability topics are tested at each AMC level.</description>
+    </item>
+    <item>
+      <title>Notation Cheatsheet</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/notation-cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/notation-cheatsheet/</guid>
+      <description>Essential symbols, operations, and probability notation for AMC counting and probability problems.</description>
+    </item>
+    <item>
+      <title>Concept Atlas</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/concept-atlas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/concept-atlas/</guid>
+      <description>One-paragraph primers on all major counting and probability topics with AMC appearance cues.</description>
+    </item>
+    <item>
+      <title>Counting Principles</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/counting-principles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/counting-principles/</guid>
+      <description>Fundamental counting rules: addition, multiplication, and complement principles with AMC examples.</description>
+    </item>
+    <item>
+      <title>Permutations &amp; Combinations</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/permutations-combinations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/permutations-combinations/</guid>
+      <description>Arrangements and selections with repetition, circular arrangements, and indistinguishable objects.</description>
+    </item>
+    <item>
+      <title>Binomial &amp; Multinomial</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/binomial-multinomial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/binomial-multinomial/</guid>
+      <description>Advanced counting identities including Vandermonde&amp;#39;s identity, hockey stick identity, and multinomial coefficients.</description>
+    </item>
+    <item>
+      <title>Inclusion-Exclusion Principle</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/inclusion-exclusion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/inclusion-exclusion/</guid>
+      <description>Counting elements in unions of sets with 2-3 sets, &amp;#39;at least/at most&amp;#39; problems, and common pitfalls.</description>
+    </item>
+    <item>
+      <title>Pigeonhole Principle</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/pigeonhole/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/pigeonhole/</guid>
+      <description>Bounds, colorings, and existence proofs using the pigeonhole principle with tight examples.</description>
+    </item>
+    <item>
+      <title>Stars &amp; Bars</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/stars-and-bars/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/stars-and-bars/</guid>
+      <description>Counting integer solutions to equations with nonnegative, positive, and bounded constraints.</description>
+    </item>
+    <item>
+      <title>Symmetry &amp; Invariance</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/symmetry-invariance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/symmetry-invariance/</guid>
+      <description>Using symmetry to reduce cases, invariance principles, and when to apply these techniques.</description>
+    </item>
+    <item>
+      <title>Recurrences &amp; Generating Functions</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/recurrences-gf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/recurrences-gf/</guid>
+      <description>Light AMC-12 recognition cues for recurrence relations and generating functions.</description>
+    </item>
+    <item>
+      <title>Seating &amp; Restrictions</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/seatings-restrictions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/seatings-restrictions/</guid>
+      <description>Adjacency and spacing problems with gaps method and common constraint patterns.</description>
+    </item>
+    <item>
+      <title>Word Rearrangements</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/word-rearrangements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/word-rearrangements/</guid>
+      <description>Letter arrangements with repeats, position constraints, and first/last letter restrictions.</description>
+    </item>
+    <item>
+      <title>Committees &amp; Conditions</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/committees-and-conditions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/committees-and-conditions/</guid>
+      <description>Selection problems with roles, gender requirements, leadership positions, and other constraints.</description>
+    </item>
+    <item>
+      <title>Balls in Bins</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/balls-in-bins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/balls-in-bins/</guid>
+      <description>Integer solutions and distribution problems using stars and bars with bounds and constraints.</description>
+    </item>
+    <item>
+      <title>At Least/At Most</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/at-least-at-most/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/at-least-at-most/</guid>
+      <description>Complement counting vs. inclusion-exclusion for &amp;#39;at least&amp;#39; and &amp;#39;at most&amp;#39; problems.</description>
+    </item>
+    <item>
+      <title>Grid Paths</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/grid-paths/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/grid-paths/</guid>
+      <description>Lattice path counting with blockages, diagonal moves, and symmetry techniques.</description>
+    </item>
+    <item>
+      <title>Derangements</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/derangements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/derangements/</guid>
+      <description>Permutations with no fixed points using inclusion-exclusion and the derangement formula.</description>
+    </item>
+    <item>
+      <title>Circular Permutations</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/circular-permutations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/circular-permutations/</guid>
+      <description>Ring arrangements with reflection symmetry and AMC conventions for circular problems.</description>
+    </item>
+    <item>
+      <title>Digit Counting</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/digit-counting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/digit-counting/</guid>
+      <description>Divisibility rules, base representations, leading zeros, and digit-based counting problems.</description>
+    </item>
+    <item>
+      <title>Essential Formulas</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/04-formulas/essential-formulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/04-formulas/essential-formulas/</guid>
+      <description>Complete formula bank with usage notes and micro-examples for AMC counting and probability.</description>
+    </item>
+    <item>
+      <title>Problem-Solving Tips</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/05-tips/problem-solving-tips/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/05-tips/problem-solving-tips/</guid>
+      <description>Comprehensive heuristics, checklists, and strategies for AMC counting and probability problems.</description>
+    </item>
   </channel>
 </rss>

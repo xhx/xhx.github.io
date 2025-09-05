@@ -1,40 +1,89 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Number-Theory on Xiaohui Xie&#39;s Site</title>
-    <link>http://localhost:1313/tags/number-theory/</link>
-    <description>Recent content in Number-Theory on Xiaohui Xie&#39;s Site</description>
+    <title>Number Theory on Xiaohui Xie&#39;s Site</title>
+    <link>https://xhx.github.io/tags/number-theory/</link>
+    <description>Recent content in Number Theory on Xiaohui Xie&#39;s Site</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/number-theory/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xhx.github.io/tags/number-theory/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>LCM &amp; GCD</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/lcm-gcd/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/lcm-gcd/</guid>
-      <description>Least Common Multiple and Greatest Common Divisor for AMC 10</description>
+      <title>AMC 10 vs AMC 12 Scope Map</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/reference/scope-map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/reference/scope-map/</guid>
+      <description>Complete coverage matrix showing which number theory topics appear in AMC 10 vs AMC 12.</description>
     </item>
     <item>
-      <title>Modular Operation</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/modular-operation/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/modular-operation/</guid>
-      <description>Modular arithmetic operations for AMC 10</description>
+      <title>Notation Cheatsheet</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/reference/notation-cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/reference/notation-cheatsheet/</guid>
+      <description>Quick reference for number theory symbols, conventions, and usage cues.</description>
     </item>
     <item>
-      <title>Advanced Number Theory</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/number-theory-advanced/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/number-theory-advanced/</guid>
-      <description>Advanced number theory topics for AMC 10</description>
+      <title>Concept Atlas</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/reference/concept-atlas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/reference/concept-atlas/</guid>
+      <description>One-paragraph primers for each number theory area with AMC appearance notes.</description>
     </item>
     <item>
-      <title>Number Theory Problems</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/number-theory-problems/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/number-theory-problems/</guid>
-      <description>Number theory practice problems for AMC 10</description>
+      <title>Divisibility Basics</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/divisibility-basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/divisibility-basics/</guid>
+      <description>Primes, GCD/LCM, Euclidean algorithm, and fundamental divisibility concepts.</description>
+    </item>
+    <item>
+      <title>Congruences &amp; Modular Arithmetic</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/congruences-and-modular-arithmetic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/congruences-and-modular-arithmetic/</guid>
+      <description>Residues, modular inverses, solving linear congruences, and quick patterns.</description>
+    </item>
+    <item>
+      <title>Linear Diophantine Equations</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/diophantine-equations-linear/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/diophantine-equations-linear/</guid>
+      <description>Solving ax &#43; by = c, coin problems, and parameterization techniques.</description>
+    </item>
+    <item>
+      <title>Quadratic Diophantine Equations</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/diophantine-equations-quadratic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/diophantine-equations-quadratic/</guid>
+      <description>Pythagorean triples, sum of squares, and quadratic forms in number theory.</description>
+    </item>
+    <item>
+      <title>Fermat, Euler &amp; Orders</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/fermat-euler-orders/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/fermat-euler-orders/</guid>
+      <description>Fermat&amp;#39;s Little Theorem, Euler&amp;#39;s theorem, order theory, and last digit problems.</description>
+    </item>
+    <item>
+      <title>Remainders &amp; Last Digits</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/problem-types/remainders-and-last-digits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/problem-types/remainders-and-last-digits/</guid>
+      <description>Pattern for modular cycles, orders, and last digit problems in AMC contests.</description>
+    </item>
+    <item>
+      <title>Essential Formulas</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/formulas/essential-formulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/formulas/essential-formulas/</guid>
+      <description>Complete formula bank with usage examples and micro-examples for AMC number theory.</description>
+    </item>
+    <item>
+      <title>Problem-Solving Tips</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/tips/problem-solving-tips/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/tips/problem-solving-tips/</guid>
+      <description>Detailed heuristics, checklists, and timing strategies for AMC number theory.</description>
     </item>
   </channel>
 </rss>

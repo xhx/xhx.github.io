@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Complex Numbers | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC12, Precalculus, Complex Numbers, Polar Form, De Moivre">
+<meta name="description" content="Algebra, polar form, De Moivre&#39;s theorem, and roots of unity for AMC 12 complex number problems.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/complex-numbers/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xhx.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/complex-numbers/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+<meta property="og:url" content="https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/complex-numbers/">
+  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
+  <meta property="og:title" content="Complex Numbers">
+  <meta property="og:description" content="Algebra, polar form, De Moivre&#39;s theorem, and roots of unity for AMC 12 complex number problems.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:tag" content="AMC12">
+    <meta property="article:tag" content="Precalculus">
+    <meta property="article:tag" content="Complex Numbers">
+    <meta property="article:tag" content="Polar Form">
+    <meta property="article:tag" content="De Moivre">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Complex Numbers">
+<meta name="twitter:description" content="Algebra, polar form, De Moivre&#39;s theorem, and roots of unity for AMC 12 complex number problems.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Notes",
+      "item": "https://xhx.github.io/notes/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Mathematics Notes",
+      "item": "https://xhx.github.io/notes/math/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "AMC Problems",
+      "item": "https://xhx.github.io/notes/math/amc/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "AMC 10",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Precalculus Mastery Guide",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/precalculus/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Topic Guides",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  7 ,
+      "name": "Complex Numbers",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/complex-numbers/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Complex Numbers",
+  "name": "Complex Numbers",
+  "description": "Algebra, polar form, De Moivre's theorem, and roots of unity for AMC 12 complex number problems.",
+  "keywords": [
+    "AMC12", "Precalculus", "Complex Numbers", "Polar Form", "De Moivre"
+  ],
+  "articleBody": "🌀 Complex Numbers Complex numbers extend real numbers and are essential for AMC 12. Master algebra, polar form, and De Moivre’s theorem.\n🎯 Key Ideas Definition: Complex numbers have form $z = a + bi$ where $i = \\sqrt{-1}$ and $a, b \\in \\mathbb{R}$.\nPolar Form: $z = re^{i\\theta} = r(\\cos\\theta + i\\sin\\theta)$ where $r = |z|$ and $\\theta = \\arg(z)$.\nDe Moivre’s Theorem: $(re^{i\\theta})^n = r^n e^{in\\theta}$ for integer $n$.\n🔢 Complex Algebra Basic Operations Addition: $(a + bi) + (c + di) = (a + c) + (b + d)i$ Subtraction: $(a + bi) - (c + di) = (a - c) + (b - d)i$ Multiplication: $(a + bi)(c + di) = (ac - bd) + (ad + bc)i$ Division: $\\frac{a + bi}{c + di} = \\frac{(a + bi)(c - di)}{c^2 + d^2}$ Example: Simplify $(2 + 3i)(1 - 2i)$ Solution:\n$(2 + 3i)(1 - 2i) = 2(1) + 2(-2i) + 3i(1) + 3i(-2i)$ $= 2 - 4i + 3i - 6i^2$ $= 2 - i - 6(-1)$ (since $i^2 = -1$) $= 2 - i + 6 = 8 - i$ 📐 Modulus and Argument Modulus (Magnitude) $$|z| = |a + bi| = \\sqrt{a^2 + b^2}$$\nArgument (Angle) $$\\arg(z) = \\arctan\\left(\\frac{b}{a}\\right) \\text{ (with quadrant consideration)}$$\nExample: Find modulus and argument of $z = 1 + i$ Solution:\nModulus: $|z| = \\sqrt{1^2 + 1^2} = \\sqrt{2}$ Argument: $\\arg(z) = \\arctan(1) = \\frac{\\pi}{4}$ (first quadrant) 🌀 Polar Form Conversion to Polar $$z = a + bi = re^{i\\theta} = r(\\cos\\theta + i\\sin\\theta)$$\nwhere $r = |z| = \\sqrt{a^2 + b^2}$ and $\\theta = \\arg(z)$.\nConversion from Polar $$z = re^{i\\theta} = r\\cos\\theta + ir\\sin\\theta$$\nExample: Convert $z = 2 + 2\\sqrt{3}i$ to polar form Solution:\nModulus: $r = \\sqrt{2^2 + (2\\sqrt{3})^2} = \\sqrt{4 + 12} = \\sqrt{16} = 4$ Argument: $\\theta = \\arctan\\left(\\frac{2\\sqrt{3}}{2}\\right) = \\arctan(\\sqrt{3}) = \\frac{\\pi}{3}$ Polar form: $z = 4e^{i\\pi/3} = 4(\\cos\\frac{\\pi}{3} + i\\sin\\frac{\\pi}{3})$ ⚡ De Moivre’s Theorem Statement For complex number $z = re^{i\\theta}$ and integer $n$: $$z^n = (re^{i\\theta})^n = r^n e^{in\\theta} = r^n(\\cos(n\\theta) + i\\sin(n\\theta))$$\nApplications Powers: Calculate $z^n$ easily Roots: Find $n$-th roots of complex numbers Trig identities: Derive multiple angle formulas Example: Calculate $(1 + i)^6$ Solution:\nConvert to polar: $1 + i = \\sqrt{2}e^{i\\pi/4}$ Apply De Moivre’s: $(1 + i)^6 = (\\sqrt{2})^6 e^{i6\\pi/4} = 8e^{i3\\pi/2}$ Convert back: $8e^{i3\\pi/2} = 8(\\cos\\frac{3\\pi}{2} + i\\sin\\frac{3\\pi}{2}) = 8(0 + i(-1)) = -8i$ 🌟 Roots of Unity Definition The $n$-th roots of unity are solutions to $z^n = 1$.\nFormula $$\\omega_k = e^{i2\\pi k/n} = \\cos\\left(\\frac{2\\pi k}{n}\\right) + i\\sin\\left(\\frac{2\\pi k}{n}\\right)$$\nfor $k = 0, 1, 2, \\ldots, n-1$.\nProperties Sum: $\\omega_0 + \\omega_1 + \\cdots + \\omega_{n-1} = 0$ Product: $\\omega_0 \\omega_1 \\cdots \\omega_{n-1} = (-1)^{n-1}$ Geometric: Form regular $n$-gon on unit circle Example: Find all 4th roots of unity Solution:\n$\\omega_k = e^{i2\\pi k/4} = e^{i\\pi k/2}$ for $k = 0, 1, 2, 3$ $\\omega_0 = e^{i0} = 1$ $\\omega_1 = e^{i\\pi/2} = i$ $\\omega_2 = e^{i\\pi} = -1$ $\\omega_3 = e^{i3\\pi/2} = -i$ Roots: $1, i, -1, -i$ 🔄 Complex Conjugate Definition For $z = a + bi$, the conjugate is $\\overline{z} = a - bi$.\nProperties $z + \\overline{z} = 2a$ (twice real part) $z - \\overline{z} = 2bi$ (twice imaginary part) $z \\cdot \\overline{z} = |z|^2 = a^2 + b^2$ $\\overline{z_1 + z_2} = \\overline{z_1} + \\overline{z_2}$ $\\overline{z_1 z_2} = \\overline{z_1} \\cdot \\overline{z_2}$ 🎯 AMC-Style Worked Example Problem: Find all complex numbers $z$ such that $z^3 = -8$.\nSolution:\nWrite in polar form: $-8 = 8e^{i\\pi}$ Find all cube roots: $z_k = 8^{1/3} e^{i(\\pi + 2\\pi k)/3}$ for $k = 0, 1, 2$ Calculate each root: $z_0 = 2e^{i\\pi/3} = 2(\\cos\\frac{\\pi}{3} + i\\sin\\frac{\\pi}{3}) = 2(\\frac{1}{2} + i\\frac{\\sqrt{3}}{2}) = 1 + i\\sqrt{3}$ $z_1 = 2e^{i\\pi} = 2(\\cos\\pi + i\\sin\\pi) = 2(-1 + i \\cdot 0) = -2$ $z_2 = 2e^{i5\\pi/3} = 2(\\cos\\frac{5\\pi}{3} + i\\sin\\frac{5\\pi}{3}) = 2(\\frac{1}{2} - i\\frac{\\sqrt{3}}{2}) = 1 - i\\sqrt{3}$ Answer: $z = -2, 1 + i\\sqrt{3}, 1 - i\\sqrt{3}$\n🔍 Common Traps \u0026 Fixes Trap: Wrong quadrant in argument Fix: Use $\\arctan$ but adjust by $\\pi$ for quadrants II and III.\nTrap: Forgetting all roots of unity Fix: Remember there are $n$ distinct $n$-th roots, not just one.\nTrap: Confusing polar and rectangular forms Fix: $re^{i\\theta} = r(\\cos\\theta + i\\sin\\theta)$, not $r + i\\theta$.\nTrap: Wrong sign in complex multiplication Fix: Remember $i^2 = -1$ when expanding $(a + bi)(c + di)$.\n📋 Quick Reference Essential Formulas $|a + bi| = \\sqrt{a^2 + b^2}$ $\\arg(a + bi) = \\arctan\\frac{b}{a}$ (with quadrant check) $re^{i\\theta} = r(\\cos\\theta + i\\sin\\theta)$ $(re^{i\\theta})^n = r^n e^{in\\theta}$ Roots of Unity $n$-th roots: $\\omega_k = e^{i2\\pi k/n}$ for $k = 0, 1, \\ldots, n-1$ Sum: $\\sum_{k=0}^{n-1} \\omega_k = 0$ Complex Conjugate $\\overline{a + bi} = a - bi$ $z \\cdot \\overline{z} = |z|^2$ Prev: Laws of Sines \u0026 Cosines\nNext: Complex Plane Geometry\nBack to: Topic Guides\n",
+  "wordCount" : "811",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Xiaohui Xie"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/complex-numbers/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Xiaohui Xie's Site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xhx.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/">Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/precalculus/">Precalculus Mastery Guide</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/">Topic Guides</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Complex Numbers
+    </h1>
+    <div class="post-description">
+      Algebra, polar form, De Moivre&#39;s theorem, and roots of unity for AMC 12 complex number problems.
+    </div>
+    <div class="post-meta">4 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-complex-numbers" aria-label="🌀 Complex Numbers">🌀 Complex Numbers</a><ul>
+                        
+                <li>
+                    <a href="#-key-ideas" aria-label="🎯 Key Ideas">🎯 Key Ideas</a></li>
+                <li>
+                    <a href="#-complex-algebra" aria-label="🔢 Complex Algebra">🔢 Complex Algebra</a><ul>
+                        
+                <li>
+                    <a href="#basic-operations" aria-label="Basic Operations">Basic Operations</a></li>
+                <li>
+                    <a href="#example-simplify-2--3i1---2i" aria-label="Example: Simplify $(2 &#43; 3i)(1 - 2i)$">Example: Simplify $(2 + 3i)(1 - 2i)$</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-modulus-and-argument" aria-label="📐 Modulus and Argument">📐 Modulus and Argument</a><ul>
+                        
+                <li>
+                    <a href="#modulus-magnitude" aria-label="Modulus (Magnitude)">Modulus (Magnitude)</a></li>
+                <li>
+                    <a href="#argument-angle" aria-label="Argument (Angle)">Argument (Angle)</a></li>
+                <li>
+                    <a href="#example-find-modulus-and-argument-of-z--1--i" aria-label="Example: Find modulus and argument of $z = 1 &#43; i$">Example: Find modulus and argument of $z = 1 + i$</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-polar-form" aria-label="🌀 Polar Form">🌀 Polar Form</a><ul>
+                        
+                <li>
+                    <a href="#conversion-to-polar" aria-label="Conversion to Polar">Conversion to Polar</a></li>
+                <li>
+                    <a href="#conversion-from-polar" aria-label="Conversion from Polar">Conversion from Polar</a></li>
+                <li>
+                    <a href="#example-convert-z--2--2sqrt3i-to-polar-form" aria-label="Example: Convert $z = 2 &#43; 2\sqrt{3}i$ to polar form">Example: Convert $z = 2 + 2\sqrt{3}i$ to polar form</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-de-moivres-theorem" aria-label="⚡ De Moivre&rsquo;s Theorem">⚡ De Moivre&rsquo;s Theorem</a><ul>
+                        
+                <li>
+                    <a href="#statement" aria-label="Statement">Statement</a></li>
+                <li>
+                    <a href="#applications" aria-label="Applications">Applications</a></li>
+                <li>
+                    <a href="#example-calculate-1--i6" aria-label="Example: Calculate $(1 &#43; i)^6$">Example: Calculate $(1 + i)^6$</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-roots-of-unity" aria-label="🌟 Roots of Unity">🌟 Roots of Unity</a><ul>
+                        
+                <li>
+                    <a href="#definition" aria-label="Definition">Definition</a></li>
+                <li>
+                    <a href="#formula" aria-label="Formula">Formula</a></li>
+                <li>
+                    <a href="#properties" aria-label="Properties">Properties</a></li>
+                <li>
+                    <a href="#example-find-all-4th-roots-of-unity" aria-label="Example: Find all 4th roots of unity">Example: Find all 4th roots of unity</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-complex-conjugate" aria-label="🔄 Complex Conjugate">🔄 Complex Conjugate</a><ul>
+                        
+                <li>
+                    <a href="#definition-1" aria-label="Definition">Definition</a></li>
+                <li>
+                    <a href="#properties-1" aria-label="Properties">Properties</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-amc-style-worked-example" aria-label="🎯 AMC-Style Worked Example">🎯 AMC-Style Worked Example</a></li>
+                <li>
+                    <a href="#-common-traps--fixes" aria-label="🔍 Common Traps &amp; Fixes">🔍 Common Traps &amp; Fixes</a><ul>
+                        
+                <li>
+                    <a href="#trap-wrong-quadrant-in-argument" aria-label="Trap: Wrong quadrant in argument">Trap: Wrong quadrant in argument</a></li>
+                <li>
+                    <a href="#trap-forgetting-all-roots-of-unity" aria-label="Trap: Forgetting all roots of unity">Trap: Forgetting all roots of unity</a></li>
+                <li>
+                    <a href="#trap-confusing-polar-and-rectangular-forms" aria-label="Trap: Confusing polar and rectangular forms">Trap: Confusing polar and rectangular forms</a></li>
+                <li>
+                    <a href="#trap-wrong-sign-in-complex-multiplication" aria-label="Trap: Wrong sign in complex multiplication">Trap: Wrong sign in complex multiplication</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-reference" aria-label="📋 Quick Reference">📋 Quick Reference</a><ul>
+                        
+                <li>
+                    <a href="#essential-formulas" aria-label="Essential Formulas">Essential Formulas</a></li>
+                <li>
+                    <a href="#roots-of-unity" aria-label="Roots of Unity">Roots of Unity</a></li>
+                <li>
+                    <a href="#complex-conjugate" aria-label="Complex Conjugate">Complex Conjugate</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-complex-numbers">🌀 Complex Numbers<a hidden class="anchor" aria-hidden="true" href="#-complex-numbers">#</a></h1>
+<p>Complex numbers extend real numbers and are essential for AMC 12. Master algebra, polar form, and De Moivre&rsquo;s theorem.</p>
+<h2 id="-key-ideas">🎯 Key Ideas<a hidden class="anchor" aria-hidden="true" href="#-key-ideas">#</a></h2>
+<p><strong>Definition</strong>: Complex numbers have form $z = a + bi$ where $i = \sqrt{-1}$ and $a, b \in \mathbb{R}$.</p>
+<p><strong>Polar Form</strong>: $z = re^{i\theta} = r(\cos\theta + i\sin\theta)$ where $r = |z|$ and $\theta = \arg(z)$.</p>
+<p><strong>De Moivre&rsquo;s Theorem</strong>: $(re^{i\theta})^n = r^n e^{in\theta}$ for integer $n$.</p>
+<h2 id="-complex-algebra">🔢 Complex Algebra<a hidden class="anchor" aria-hidden="true" href="#-complex-algebra">#</a></h2>
+<h3 id="basic-operations">Basic Operations<a hidden class="anchor" aria-hidden="true" href="#basic-operations">#</a></h3>
+<ul>
+<li><strong>Addition</strong>: $(a + bi) + (c + di) = (a + c) + (b + d)i$</li>
+<li><strong>Subtraction</strong>: $(a + bi) - (c + di) = (a - c) + (b - d)i$</li>
+<li><strong>Multiplication</strong>: $(a + bi)(c + di) = (ac - bd) + (ad + bc)i$</li>
+<li><strong>Division</strong>: $\frac{a + bi}{c + di} = \frac{(a + bi)(c - di)}{c^2 + d^2}$</li>
+</ul>
+<h3 id="example-simplify-2--3i1---2i">Example: Simplify $(2 + 3i)(1 - 2i)$<a hidden class="anchor" aria-hidden="true" href="#example-simplify-2--3i1---2i">#</a></h3>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>$(2 + 3i)(1 - 2i) = 2(1) + 2(-2i) + 3i(1) + 3i(-2i)$</li>
+<li>$= 2 - 4i + 3i - 6i^2$</li>
+<li>$= 2 - i - 6(-1)$ (since $i^2 = -1$)</li>
+<li>$= 2 - i + 6 = 8 - i$</li>
+</ul>
+<h2 id="-modulus-and-argument">📐 Modulus and Argument<a hidden class="anchor" aria-hidden="true" href="#-modulus-and-argument">#</a></h2>
+<h3 id="modulus-magnitude">Modulus (Magnitude)<a hidden class="anchor" aria-hidden="true" href="#modulus-magnitude">#</a></h3>
+<p>$$|z| = |a + bi| = \sqrt{a^2 + b^2}$$</p>
+<h3 id="argument-angle">Argument (Angle)<a hidden class="anchor" aria-hidden="true" href="#argument-angle">#</a></h3>
+<p>$$\arg(z) = \arctan\left(\frac{b}{a}\right) \text{ (with quadrant consideration)}$$</p>
+<h3 id="example-find-modulus-and-argument-of-z--1--i">Example: Find modulus and argument of $z = 1 + i$<a hidden class="anchor" aria-hidden="true" href="#example-find-modulus-and-argument-of-z--1--i">#</a></h3>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li><strong>Modulus</strong>: $|z| = \sqrt{1^2 + 1^2} = \sqrt{2}$</li>
+<li><strong>Argument</strong>: $\arg(z) = \arctan(1) = \frac{\pi}{4}$ (first quadrant)</li>
+</ul>
+<h2 id="-polar-form">🌀 Polar Form<a hidden class="anchor" aria-hidden="true" href="#-polar-form">#</a></h2>
+<h3 id="conversion-to-polar">Conversion to Polar<a hidden class="anchor" aria-hidden="true" href="#conversion-to-polar">#</a></h3>
+<p>$$z = a + bi = re^{i\theta} = r(\cos\theta + i\sin\theta)$$</p>
+<p>where $r = |z| = \sqrt{a^2 + b^2}$ and $\theta = \arg(z)$.</p>
+<h3 id="conversion-from-polar">Conversion from Polar<a hidden class="anchor" aria-hidden="true" href="#conversion-from-polar">#</a></h3>
+<p>$$z = re^{i\theta} = r\cos\theta + ir\sin\theta$$</p>
+<h3 id="example-convert-z--2--2sqrt3i-to-polar-form">Example: Convert $z = 2 + 2\sqrt{3}i$ to polar form<a hidden class="anchor" aria-hidden="true" href="#example-convert-z--2--2sqrt3i-to-polar-form">#</a></h3>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li><strong>Modulus</strong>: $r = \sqrt{2^2 + (2\sqrt{3})^2} = \sqrt{4 + 12} = \sqrt{16} = 4$</li>
+<li><strong>Argument</strong>: $\theta = \arctan\left(\frac{2\sqrt{3}}{2}\right) = \arctan(\sqrt{3}) = \frac{\pi}{3}$</li>
+<li><strong>Polar form</strong>: $z = 4e^{i\pi/3} = 4(\cos\frac{\pi}{3} + i\sin\frac{\pi}{3})$</li>
+</ul>
+<h2 id="-de-moivres-theorem">⚡ De Moivre&rsquo;s Theorem<a hidden class="anchor" aria-hidden="true" href="#-de-moivres-theorem">#</a></h2>
+<h3 id="statement">Statement<a hidden class="anchor" aria-hidden="true" href="#statement">#</a></h3>
+<p>For complex number $z = re^{i\theta}$ and integer $n$:
+$$z^n = (re^{i\theta})^n = r^n e^{in\theta} = r^n(\cos(n\theta) + i\sin(n\theta))$$</p>
+<h3 id="applications">Applications<a hidden class="anchor" aria-hidden="true" href="#applications">#</a></h3>
+<ul>
+<li><strong>Powers</strong>: Calculate $z^n$ easily</li>
+<li><strong>Roots</strong>: Find $n$-th roots of complex numbers</li>
+<li><strong>Trig identities</strong>: Derive multiple angle formulas</li>
+</ul>
+<h3 id="example-calculate-1--i6">Example: Calculate $(1 + i)^6$<a hidden class="anchor" aria-hidden="true" href="#example-calculate-1--i6">#</a></h3>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li><strong>Convert to polar</strong>: $1 + i = \sqrt{2}e^{i\pi/4}$</li>
+<li><strong>Apply De Moivre&rsquo;s</strong>: $(1 + i)^6 = (\sqrt{2})^6 e^{i6\pi/4} = 8e^{i3\pi/2}$</li>
+<li><strong>Convert back</strong>: $8e^{i3\pi/2} = 8(\cos\frac{3\pi}{2} + i\sin\frac{3\pi}{2}) = 8(0 + i(-1)) = -8i$</li>
+</ol>
+<h2 id="-roots-of-unity">🌟 Roots of Unity<a hidden class="anchor" aria-hidden="true" href="#-roots-of-unity">#</a></h2>
+<h3 id="definition">Definition<a hidden class="anchor" aria-hidden="true" href="#definition">#</a></h3>
+<p>The $n$-th roots of unity are solutions to $z^n = 1$.</p>
+<h3 id="formula">Formula<a hidden class="anchor" aria-hidden="true" href="#formula">#</a></h3>
+<p>$$\omega_k = e^{i2\pi k/n} = \cos\left(\frac{2\pi k}{n}\right) + i\sin\left(\frac{2\pi k}{n}\right)$$</p>
+<p>for $k = 0, 1, 2, \ldots, n-1$.</p>
+<h3 id="properties">Properties<a hidden class="anchor" aria-hidden="true" href="#properties">#</a></h3>
+<ul>
+<li><strong>Sum</strong>: $\omega_0 + \omega_1 + \cdots + \omega_{n-1} = 0$</li>
+<li><strong>Product</strong>: $\omega_0 \omega_1 \cdots \omega_{n-1} = (-1)^{n-1}$</li>
+<li><strong>Geometric</strong>: Form regular $n$-gon on unit circle</li>
+</ul>
+<h3 id="example-find-all-4th-roots-of-unity">Example: Find all 4th roots of unity<a hidden class="anchor" aria-hidden="true" href="#example-find-all-4th-roots-of-unity">#</a></h3>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>$\omega_k = e^{i2\pi k/4} = e^{i\pi k/2}$ for $k = 0, 1, 2, 3$</li>
+<li>$\omega_0 = e^{i0} = 1$</li>
+<li>$\omega_1 = e^{i\pi/2} = i$</li>
+<li>$\omega_2 = e^{i\pi} = -1$</li>
+<li>$\omega_3 = e^{i3\pi/2} = -i$</li>
+<li><strong>Roots</strong>: $1, i, -1, -i$</li>
+</ul>
+<h2 id="-complex-conjugate">🔄 Complex Conjugate<a hidden class="anchor" aria-hidden="true" href="#-complex-conjugate">#</a></h2>
+<h3 id="definition-1">Definition<a hidden class="anchor" aria-hidden="true" href="#definition-1">#</a></h3>
+<p>For $z = a + bi$, the conjugate is $\overline{z} = a - bi$.</p>
+<h3 id="properties-1">Properties<a hidden class="anchor" aria-hidden="true" href="#properties-1">#</a></h3>
+<ul>
+<li>$z + \overline{z} = 2a$ (twice real part)</li>
+<li>$z - \overline{z} = 2bi$ (twice imaginary part)</li>
+<li>$z \cdot \overline{z} = |z|^2 = a^2 + b^2$</li>
+<li>$\overline{z_1 + z_2} = \overline{z_1} + \overline{z_2}$</li>
+<li>$\overline{z_1 z_2} = \overline{z_1} \cdot \overline{z_2}$</li>
+</ul>
+<h2 id="-amc-style-worked-example">🎯 AMC-Style Worked Example<a hidden class="anchor" aria-hidden="true" href="#-amc-style-worked-example">#</a></h2>
+<p><strong>Problem</strong>: Find all complex numbers $z$ such that $z^3 = -8$.</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li><strong>Write in polar form</strong>: $-8 = 8e^{i\pi}$</li>
+<li><strong>Find all cube roots</strong>: $z_k = 8^{1/3} e^{i(\pi + 2\pi k)/3}$ for $k = 0, 1, 2$</li>
+<li><strong>Calculate each root</strong>:
+<ul>
+<li>$z_0 = 2e^{i\pi/3} = 2(\cos\frac{\pi}{3} + i\sin\frac{\pi}{3}) = 2(\frac{1}{2} + i\frac{\sqrt{3}}{2}) = 1 + i\sqrt{3}$</li>
+<li>$z_1 = 2e^{i\pi} = 2(\cos\pi + i\sin\pi) = 2(-1 + i \cdot 0) = -2$</li>
+<li>$z_2 = 2e^{i5\pi/3} = 2(\cos\frac{5\pi}{3} + i\sin\frac{5\pi}{3}) = 2(\frac{1}{2} - i\frac{\sqrt{3}}{2}) = 1 - i\sqrt{3}$</li>
+</ul>
+</li>
+</ol>
+<p><strong>Answer</strong>: $z = -2, 1 + i\sqrt{3}, 1 - i\sqrt{3}$</p>
+<h2 id="-common-traps--fixes">🔍 Common Traps &amp; Fixes<a hidden class="anchor" aria-hidden="true" href="#-common-traps--fixes">#</a></h2>
+<h3 id="trap-wrong-quadrant-in-argument"><strong>Trap</strong>: Wrong quadrant in argument<a hidden class="anchor" aria-hidden="true" href="#trap-wrong-quadrant-in-argument">#</a></h3>
+<p><strong>Fix</strong>: Use $\arctan$ but adjust by $\pi$ for quadrants II and III.</p>
+<h3 id="trap-forgetting-all-roots-of-unity"><strong>Trap</strong>: Forgetting all roots of unity<a hidden class="anchor" aria-hidden="true" href="#trap-forgetting-all-roots-of-unity">#</a></h3>
+<p><strong>Fix</strong>: Remember there are $n$ distinct $n$-th roots, not just one.</p>
+<h3 id="trap-confusing-polar-and-rectangular-forms"><strong>Trap</strong>: Confusing polar and rectangular forms<a hidden class="anchor" aria-hidden="true" href="#trap-confusing-polar-and-rectangular-forms">#</a></h3>
+<p><strong>Fix</strong>: $re^{i\theta} = r(\cos\theta + i\sin\theta)$, not $r + i\theta$.</p>
+<h3 id="trap-wrong-sign-in-complex-multiplication"><strong>Trap</strong>: Wrong sign in complex multiplication<a hidden class="anchor" aria-hidden="true" href="#trap-wrong-sign-in-complex-multiplication">#</a></h3>
+<p><strong>Fix</strong>: Remember $i^2 = -1$ when expanding $(a + bi)(c + di)$.</p>
+<h2 id="-quick-reference">📋 Quick Reference<a hidden class="anchor" aria-hidden="true" href="#-quick-reference">#</a></h2>
+<h3 id="essential-formulas">Essential Formulas<a hidden class="anchor" aria-hidden="true" href="#essential-formulas">#</a></h3>
+<ul>
+<li>$|a + bi| = \sqrt{a^2 + b^2}$</li>
+<li>$\arg(a + bi) = \arctan\frac{b}{a}$ (with quadrant check)</li>
+<li>$re^{i\theta} = r(\cos\theta + i\sin\theta)$</li>
+<li>$(re^{i\theta})^n = r^n e^{in\theta}$</li>
+</ul>
+<h3 id="roots-of-unity">Roots of Unity<a hidden class="anchor" aria-hidden="true" href="#roots-of-unity">#</a></h3>
+<ul>
+<li>$n$-th roots: $\omega_k = e^{i2\pi k/n}$ for $k = 0, 1, \ldots, n-1$</li>
+<li>Sum: $\sum_{k=0}^{n-1} \omega_k = 0$</li>
+</ul>
+<h3 id="complex-conjugate">Complex Conjugate<a hidden class="anchor" aria-hidden="true" href="#complex-conjugate">#</a></h3>
+<ul>
+<li>$\overline{a + bi} = a - bi$</li>
+<li>$z \cdot \overline{z} = |z|^2$</li>
+</ul>
+<hr>
+<p><strong>Prev</strong>: <a href="/notes/math/amc/amc10/precalculus/topics/laws-of-sines-and-cosines">Laws of Sines &amp; Cosines</a><br>
+<strong>Next</strong>: <a href="/notes/math/amc/amc10/precalculus/topics/complex-plane-geometry">Complex Plane Geometry</a><br>
+<strong>Back to</strong>: <a href="/notes/math/amc/amc10/precalculus/topics/">Topic Guides</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://xhx.github.io/tags/amc12/">AMC12</a></li>
+      <li><a href="https://xhx.github.io/tags/precalculus/">Precalculus</a></li>
+      <li><a href="https://xhx.github.io/tags/complex-numbers/">Complex Numbers</a></li>
+      <li><a href="https://xhx.github.io/tags/polar-form/">Polar Form</a></li>
+      <li><a href="https://xhx.github.io/tags/de-moivre/">De Moivre</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

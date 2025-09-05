@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Symmetry Probability | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Probability, Symmetry, Random">
+<meta name="description" content="Using symmetry to find probabilities without explicit counting, especially for random choices.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/symmetry-probability/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xhx.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/symmetry-probability/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+<meta property="og:url" content="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/symmetry-probability/">
+  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
+  <meta property="og:title" content="Symmetry Probability">
+  <meta property="og:description" content="Using symmetry to find probabilities without explicit counting, especially for random choices.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:tag" content="Amc10">
+    <meta property="article:tag" content="AMC12">
+    <meta property="article:tag" content="Probability">
+    <meta property="article:tag" content="Symmetry">
+    <meta property="article:tag" content="Random">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Symmetry Probability">
+<meta name="twitter:description" content="Using symmetry to find probabilities without explicit counting, especially for random choices.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Notes",
+      "item": "https://xhx.github.io/notes/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Mathematics Notes",
+      "item": "https://xhx.github.io/notes/math/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "AMC Problems",
+      "item": "https://xhx.github.io/notes/math/amc/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "AMC 10",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Counting \u0026 Probability Mastery Guide",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Problem Types",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  7 ,
+      "name": "Symmetry Probability",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/symmetry-probability/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Symmetry Probability",
+  "name": "Symmetry Probability",
+  "description": "Using symmetry to find probabilities without explicit counting, especially for random choices.",
+  "keywords": [
+    "AMC10", "AMC12", "Probability", "Symmetry", "Random"
+  ],
+  "articleBody": "🔄 Symmetry Probability Using symmetry principles to find probabilities without explicit counting, especially for random choices.\n🎯 Recognition Cues Keywords: “random”, “symmetry”, “equally likely”, “uniform”, “fair” Setup: Random selection or arrangement with symmetry Constraints: All outcomes equally likely, symmetric situations 📋 Solution Template Identify the symmetry:\nEqual probability: All outcomes equally likely Symmetric positions: Equivalent positions in arrangement Symmetric choices: Equivalent choices in selection Apply symmetry principles:\nEqual probability: $P(\\text{event}) = \\frac{\\text{favorable outcomes}}{\\text{total outcomes}}$ Symmetric positions: Use relative positions Symmetric choices: Use relative probabilities Check for common patterns:\nRandom permutations Random selections Random arrangements 💡 Micro-Examples Equal Probability Problem: What’s the probability that a random 3-digit number has its digits in increasing order? Solution: $\\frac{1}{3!} = \\frac{1}{6}$ (only 1 out of 6 permutations is increasing) Symmetric Positions Problem: What’s the probability that a random person in a line of 10 people is in the middle position? Solution: $\\frac{1}{10}$ (all positions equally likely) Random Permutations Problem: What’s the probability that a random permutation of ${1,2,3,4,5}$ has 1 in the first position? Solution: $\\frac{1}{5}$ (all positions equally likely for 1) ⚠️ Common Pitfalls \u0026 Variants Pitfall: Assuming symmetry when it doesn’t exist Wrong: “Random 3-digit number” = All numbers equally likely Right: Check if the selection process is truly uniform. Pitfall: Forgetting to account for all outcomes Wrong: “Probability of increasing digits” = $\\frac{1}{2}$ (only considering increasing vs. decreasing) Right: $\\frac{1}{3!} = \\frac{1}{6}$ (considering all permutations) Pitfall: Misapplying symmetry in non-symmetric situations Wrong: “Probability of heads” = $\\frac{1}{2}$ (always true for fair coins) Right: This is actually correct! But make sure the symmetry assumption is valid. 🏆 AMC-Style Worked Example Problem: What’s the probability that a random permutation of ${1,2,3,4,5}$ has exactly 2 fixed points?\nSolution:\nStep 1: Total permutations = $5! = 120$ Step 2: Choose 2 positions to be fixed: $\\binom{5}{2} = 10$ ways Step 3: The remaining 3 elements must form a derangement Step 4: Number of derangements of 3 elements = $!3 = 2$ Step 5: Total ways = $10 \\cdot 2 = 20$ Step 6: Probability = $\\frac{20}{120} = \\frac{1}{6}$ Key insight: Use symmetry to avoid casework on which specific elements are fixed!\n🔗 Related Topics Probability Basics - Foundation for probability Symmetry \u0026 Invariance - Symmetry principles Permutations \u0026 Combinations - Counting for probability Next: Hypergeo vs Binomial → Digit Counting\n",
+  "wordCount" : "385",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Xiaohui Xie"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/symmetry-probability/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Xiaohui Xie's Site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xhx.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/">Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/">Counting &amp; Probability Mastery Guide</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/">Problem Types</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Symmetry Probability
+    </h1>
+    <div class="post-description">
+      Using symmetry to find probabilities without explicit counting, especially for random choices.
+    </div>
+    <div class="post-meta">2 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-symmetry-probability" aria-label="🔄 Symmetry Probability">🔄 Symmetry Probability</a><ul>
+                        
+                <li>
+                    <a href="#-recognition-cues" aria-label="🎯 Recognition Cues">🎯 Recognition Cues</a></li>
+                <li>
+                    <a href="#-solution-template" aria-label="📋 Solution Template">📋 Solution Template</a></li>
+                <li>
+                    <a href="#-micro-examples" aria-label="💡 Micro-Examples">💡 Micro-Examples</a><ul>
+                        
+                <li>
+                    <a href="#equal-probability" aria-label="Equal Probability">Equal Probability</a></li>
+                <li>
+                    <a href="#symmetric-positions" aria-label="Symmetric Positions">Symmetric Positions</a></li>
+                <li>
+                    <a href="#random-permutations" aria-label="Random Permutations">Random Permutations</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-common-pitfalls--variants" aria-label="⚠️ Common Pitfalls &amp; Variants">⚠️ Common Pitfalls &amp; Variants</a><ul>
+                        
+                <li>
+                    <a href="#pitfall-assuming-symmetry-when-it-doesnt-exist" aria-label="Pitfall: Assuming symmetry when it doesn&rsquo;t exist">Pitfall: Assuming symmetry when it doesn&rsquo;t exist</a></li>
+                <li>
+                    <a href="#pitfall-forgetting-to-account-for-all-outcomes" aria-label="Pitfall: Forgetting to account for all outcomes">Pitfall: Forgetting to account for all outcomes</a></li>
+                <li>
+                    <a href="#pitfall-misapplying-symmetry-in-non-symmetric-situations" aria-label="Pitfall: Misapplying symmetry in non-symmetric situations">Pitfall: Misapplying symmetry in non-symmetric situations</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-amc-style-worked-example" aria-label="🏆 AMC-Style Worked Example">🏆 AMC-Style Worked Example</a></li>
+                <li>
+                    <a href="#-related-topics" aria-label="🔗 Related Topics">🔗 Related Topics</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-symmetry-probability">🔄 Symmetry Probability<a hidden class="anchor" aria-hidden="true" href="#-symmetry-probability">#</a></h1>
+<p>Using symmetry principles to find probabilities without explicit counting, especially for random choices.</p>
+<h2 id="-recognition-cues">🎯 Recognition Cues<a hidden class="anchor" aria-hidden="true" href="#-recognition-cues">#</a></h2>
+<ul>
+<li><strong>Keywords</strong>: &ldquo;random&rdquo;, &ldquo;symmetry&rdquo;, &ldquo;equally likely&rdquo;, &ldquo;uniform&rdquo;, &ldquo;fair&rdquo;</li>
+<li><strong>Setup</strong>: Random selection or arrangement with symmetry</li>
+<li><strong>Constraints</strong>: All outcomes equally likely, symmetric situations</li>
+</ul>
+<h2 id="-solution-template">📋 Solution Template<a hidden class="anchor" aria-hidden="true" href="#-solution-template">#</a></h2>
+<ol>
+<li>
+<p><strong>Identify the symmetry</strong>:</p>
+<ul>
+<li><strong>Equal probability</strong>: All outcomes equally likely</li>
+<li><strong>Symmetric positions</strong>: Equivalent positions in arrangement</li>
+<li><strong>Symmetric choices</strong>: Equivalent choices in selection</li>
+</ul>
+</li>
+<li>
+<p><strong>Apply symmetry principles</strong>:</p>
+<ul>
+<li><strong>Equal probability</strong>: $P(\text{event}) = \frac{\text{favorable outcomes}}{\text{total outcomes}}$</li>
+<li><strong>Symmetric positions</strong>: Use relative positions</li>
+<li><strong>Symmetric choices</strong>: Use relative probabilities</li>
+</ul>
+</li>
+<li>
+<p><strong>Check for common patterns</strong>:</p>
+<ul>
+<li>Random permutations</li>
+<li>Random selections</li>
+<li>Random arrangements</li>
+</ul>
+</li>
+</ol>
+<h2 id="-micro-examples">💡 Micro-Examples<a hidden class="anchor" aria-hidden="true" href="#-micro-examples">#</a></h2>
+<h3 id="equal-probability">Equal Probability<a hidden class="anchor" aria-hidden="true" href="#equal-probability">#</a></h3>
+<ul>
+<li><strong>Problem</strong>: What&rsquo;s the probability that a random 3-digit number has its digits in increasing order?</li>
+<li><strong>Solution</strong>: $\frac{1}{3!} = \frac{1}{6}$ (only 1 out of 6 permutations is increasing)</li>
+</ul>
+<h3 id="symmetric-positions">Symmetric Positions<a hidden class="anchor" aria-hidden="true" href="#symmetric-positions">#</a></h3>
+<ul>
+<li><strong>Problem</strong>: What&rsquo;s the probability that a random person in a line of 10 people is in the middle position?</li>
+<li><strong>Solution</strong>: $\frac{1}{10}$ (all positions equally likely)</li>
+</ul>
+<h3 id="random-permutations">Random Permutations<a hidden class="anchor" aria-hidden="true" href="#random-permutations">#</a></h3>
+<ul>
+<li><strong>Problem</strong>: What&rsquo;s the probability that a random permutation of ${1,2,3,4,5}$ has 1 in the first position?</li>
+<li><strong>Solution</strong>: $\frac{1}{5}$ (all positions equally likely for 1)</li>
+</ul>
+<h2 id="-common-pitfalls--variants">⚠️ Common Pitfalls &amp; Variants<a hidden class="anchor" aria-hidden="true" href="#-common-pitfalls--variants">#</a></h2>
+<h3 id="pitfall-assuming-symmetry-when-it-doesnt-exist"><strong>Pitfall</strong>: Assuming symmetry when it doesn&rsquo;t exist<a hidden class="anchor" aria-hidden="true" href="#pitfall-assuming-symmetry-when-it-doesnt-exist">#</a></h3>
+<ul>
+<li><strong>Wrong</strong>: &ldquo;Random 3-digit number&rdquo; = All numbers equally likely</li>
+<li><strong>Right</strong>: Check if the selection process is truly uniform.</li>
+</ul>
+<h3 id="pitfall-forgetting-to-account-for-all-outcomes"><strong>Pitfall</strong>: Forgetting to account for all outcomes<a hidden class="anchor" aria-hidden="true" href="#pitfall-forgetting-to-account-for-all-outcomes">#</a></h3>
+<ul>
+<li><strong>Wrong</strong>: &ldquo;Probability of increasing digits&rdquo; = $\frac{1}{2}$ (only considering increasing vs. decreasing)</li>
+<li><strong>Right</strong>: $\frac{1}{3!} = \frac{1}{6}$ (considering all permutations)</li>
+</ul>
+<h3 id="pitfall-misapplying-symmetry-in-non-symmetric-situations"><strong>Pitfall</strong>: Misapplying symmetry in non-symmetric situations<a hidden class="anchor" aria-hidden="true" href="#pitfall-misapplying-symmetry-in-non-symmetric-situations">#</a></h3>
+<ul>
+<li><strong>Wrong</strong>: &ldquo;Probability of heads&rdquo; = $\frac{1}{2}$ (always true for fair coins)</li>
+<li><strong>Right</strong>: This is actually correct! But make sure the symmetry assumption is valid.</li>
+</ul>
+<h2 id="-amc-style-worked-example">🏆 AMC-Style Worked Example<a hidden class="anchor" aria-hidden="true" href="#-amc-style-worked-example">#</a></h2>
+<p><strong>Problem</strong>: What&rsquo;s the probability that a random permutation of ${1,2,3,4,5}$ has exactly 2 fixed points?</p>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li><strong>Step 1</strong>: Total permutations = $5! = 120$</li>
+<li><strong>Step 2</strong>: Choose 2 positions to be fixed: $\binom{5}{2} = 10$ ways</li>
+<li><strong>Step 3</strong>: The remaining 3 elements must form a derangement</li>
+<li><strong>Step 4</strong>: Number of derangements of 3 elements = $!3 = 2$</li>
+<li><strong>Step 5</strong>: Total ways = $10 \cdot 2 = 20$</li>
+<li><strong>Step 6</strong>: Probability = $\frac{20}{120} = \frac{1}{6}$</li>
+</ul>
+<p><strong>Key insight</strong>: Use symmetry to avoid casework on which specific elements are fixed!</p>
+<h2 id="-related-topics">🔗 Related Topics<a hidden class="anchor" aria-hidden="true" href="#-related-topics">#</a></h2>
+<ul>
+<li><strong><a href="02-topics/probability-basics">Probability Basics</a></strong> - Foundation for probability</li>
+<li><strong><a href="02-topics/symmetry-invariance">Symmetry &amp; Invariance</a></strong> - Symmetry principles</li>
+<li><strong><a href="02-topics/permutations-combinations">Permutations &amp; Combinations</a></strong> - Counting for probability</li>
+</ul>
+<hr>
+<p><em>Next: <a href="hypergeo-vs-binomial">Hypergeo vs Binomial</a> → <a href="digit-counting">Digit Counting</a></em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://xhx.github.io/tags/amc10/">Amc10</a></li>
+      <li><a href="https://xhx.github.io/tags/amc12/">AMC12</a></li>
+      <li><a href="https://xhx.github.io/tags/probability/">Probability</a></li>
+      <li><a href="https://xhx.github.io/tags/symmetry/">Symmetry</a></li>
+      <li><a href="https://xhx.github.io/tags/random/">Random</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -134,14 +134,64 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Euclidean Algorithm
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🔢 Euclidean Algorithm Master the Euclidean algorithm for finding GCD efficiently in AMC 10/12 problems.
+🎯 What is the Euclidean Algorithm? The Euclidean algorithm is an efficient method for finding the greatest common divisor (GCD) of two integers. It’s based on the principle that $\gcd(a,b) = \gcd(b, a \bmod b)$.
+🔍 The Algorithm Basic Steps Start with two positive integers $a$ and $b$ where $a \geq b$ Apply the recurrence relation: $\gcd(a,b) = \gcd(b, a \bmod b)$ Continue until one of the numbers becomes 0 The non-zero number is the GCD Example: Find $\gcd(48, 18)$ Step 1: gcd(48, 18) = gcd(18, 48 mod 18) = gcd(18, 12) Step 2: gcd(18, 12) = gcd(12, 18 mod 12) = gcd(12, 6) Step 3: gcd(12, 6) = gcd(6, 12 mod 6) = gcd(6, 0) Step 4: gcd(6, 0) = 6 Answer: $\gcd(48, 18) = 6$
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Euclidean Algorithm" href="http://localhost:1313/notes/math/amc/amc10/number-theory/topic-guides/euclidean-algorithm/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Euclidean Algorithm
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Euclidean Algorithm 🔧 What Is It? The Extended Euclidean Algorithm not only computes the greatest common divisor (GCD) of two integers $a$ and $b$, but also finds integers $x$ and $y$ such that:
+$$\boxed{ax &#43; by = \gcd(a, b)}$$
+This is called Bézout’s identity, and it’s essential for:
+Solving equations like $ax&#43;by=c$ Finding modular inverses: solving $ax \equiv 1 \pmod{m}$ 🧮 Step-by-Step Example Let’s find integers $x$ and $y$ such that:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Euclidean Algorithm" href="http://localhost:1313/notes/math/amc/amc10/number-theory/euclidean-algorithm/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LCM &amp; GCD
     </h2>
   </header>
   <div class="entry-content">
-    <p>LCM &amp; GCD </p>
+    <p>LCM &amp; GCD Greatest Common Divisor (GCD) The greatest common divisor of two integers $a$ and $b$, denoted $\gcd(a,b)$, is the largest positive integer that divides both $a$ and $b$.
+Properties $\gcd(a,b) = \gcd(b,a)$ $\gcd(a,b) = \gcd(a, b \bmod a)$ (Euclidean algorithm) $\gcd(a,b) = \gcd(a, b - ka)$ for any integer $k$ $\gcd(a,b,c) = \gcd(\gcd(a,b), c)$ Euclidean Algorithm To find $\gcd(a,b)$ where $a \geq b$:
+Divide $a$ by $b$ to get remainder $r$ Replace $a$ with $b$ and $b$ with $r$ Repeat until $r = 0$ The last non-zero remainder is the GCD Least Common Multiple (LCM) The least common multiple of two integers $a$ and $b$, denoted $\text{lcm}(a,b)$, is the smallest positive integer that is divisible by both $a$ and $b$.
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
   <a class="entry-link" aria-label="post link to LCM & GCD" href="http://localhost:1313/notes/math/amc/amc10/number-theory/lcm-gcd/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Bézout&#39;s Identity
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Bézout’s Identity Bézout’s Identity (also known as Bézout’s Lemma) is a result in number theory that expresses a relationship between two integers and their greatest common divisor (GCD).
+Statement If $a$ and $b$ are two integers, and $\gcd(a, b)$ is their greatest common divisor, then there exist integers $x$ and $y$ (called Bézout coefficients) such that:
+$$a \cdot x &#43; b \cdot y = \gcd(a, b)$$
+In other words, the greatest common divisor of $a$ and $b$ can be written as a linear combination of $a$ and $b$ with integer coefficients.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Bézout&#39;s Identity" href="http://localhost:1313/notes/math/amc/amc10/number-theory/bezouts-identity/"></a>
 </article>
     </main>
     

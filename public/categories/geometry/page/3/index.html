@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Geometry | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="">
+<meta name="description" content="Personal website of Xiaohui Xie featuring mathematics, teaching, and research">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="https://xhx.github.io/categories/geometry/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xhx.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://xhx.github.io/categories/geometry/index.xml">
+<link rel="alternate" hreflang="en" href="https://xhx.github.io/categories/geometry/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+<meta property="og:url" content="https://xhx.github.io/categories/geometry/">
+  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
+  <meta property="og:title" content="Geometry">
+  <meta property="og:description" content="Personal website of Xiaohui Xie featuring mathematics, teaching, and research">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Geometry">
+<meta name="twitter:description" content="Personal website of Xiaohui Xie featuring mathematics, teaching, and research">
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/categories/">Categories</a></div>
+  <h1>
+    Geometry
+    <a href="/categories/geometry/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Transformations &amp; Symmetry
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Transformations &amp; Symmetry (translations · rotations · reflections · dilations)
+On the AMC 10, problems that look like long angle-chases often crash-land to a single sentence once you recognize what motion takes one figure to another. Every isometry preserves length and angle; a dilation multiplies every length by the same factor—and nothing else changes. That’s the whole game.
+1 The Four Plane Isometries Motion Algebra / coordinates Typical AMC “tell” What stays equal Translation $(h,k)$ $(x,y)\to(x&#43;h,y&#43;k)$ Parallel arrows, “slides 5 cm right and 2 cm up” All lengths, all angles, slopes Rotation (center $O$, angle $\theta$) complex form $z\to O&#43;(z-O)e^{i\theta}$ “turns 120° about $O$”, regular-polygon steps Lengths, angles, orientation clockwise ↔ counter Reflection (across line $\ell$) fold line; in complex plane $z\to\bar z$ after axis change Mirror picture, right-angle tick marks at the mirror Lengths, angles, orientation reversed Glide reflection reflection ∘ translation Rare on AMC 10 Lengths, angles All four are rigid motions—they keep every distance and every angle measure exactly the same.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Transformations & Symmetry" href="https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/transformations-symmetry/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Angle-Bisector Theorem &amp; Its AMC Uses
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>#12 – Angle-Bisector Theorem &amp; Its AMC Uses The internal angle-bisector theorem says that in $\triangle ABC$
+an angle bisector from $A$ meeting $BC$ at $D$ satisfies
+$$\boxed{;\dfrac{BD}{DC} = \dfrac{AB}{AC};}.$$
+(The code-generated figure shows the bisector $AD$ and the proportionality it creates.)
+1 Internal vs. External Forms Bisector type Statement Internal (usual) $\displaystyle \frac{BD}{DC} = \frac{AB}{AC}$ External (bisects exterior angle at $A$) $\displaystyle \frac{BD}{DC} = \frac{AB}{AC}$ but $D$ lies outside $BC$; one segment is negative in directed-length form. For AMC work you almost always use the internal version.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Angle-Bisector Theorem & Its AMC Uses" href="https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/angle-bisector-theorem/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Essential Formulas
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 📐 Triangle Formulas 📐 Area Formulas $A = \frac{1}{2}bh$ base-height $A = \frac{1}{2}ab\sin C$ SAS $A = \sqrt{s(s-a)(s-b)(s-c)}$ Heron&#39;s $A = \frac{abc}{4R}$ circumradius 🔺 Special Right Triangles $1 : \sqrt{3} : 2$ 30-60-90 $1 : 1 : \sqrt{2}$ 45-45-90 $3 : 4 : 5$ 3-4-5 $5 : 12 : 13$ 5-12-13 ⚡ Triangle Centers $\frac{2}{3}$ from vertex Centroid $r = \frac{A}{s}$ Inradius $R = \frac{abc}{4A}$ Circumradius $h = \frac{2A}{a}$ Altitude 📏 Triangle Inequalities $a &#43; b &gt; c$ triangle inequality $|a - b| &lt; c$ reverse inequality $a^2 &#43; b^2 &gt; c^2$ acute triangle $a^2 &#43; b^2 = c^2$ right triangle $a^2 &#43; b^2 &lt; c^2$ obtuse triangle ⭕ Circle Formulas ⭕ Basic Circle Properties $A = \pi r^2$ Area $C = 2\pi r$ Circumference $s = r\theta$ Arc Length $A = \frac{1}{2}r^2\theta$ Sector Area ⚡ Power of a Point $PT^2 = PA \cdot PB$ Tangent-Secant $AE \cdot EC = BE \cdot ED$ Chord-Chord $PA \cdot PB = PC \cdot PD$ Secant-Secant 📐 Circle Angles $\angle = \frac{1}{2}$ arc Inscribed $\angle =$ arc Central $\angle = \frac{1}{2}$ arc Tangent-Chord $90°$ Angle in Semicircle 🔗 Circle Theorems $AC \cdot BD = AB \cdot CD &#43; BC \cdot DA$ Ptolemy&#39;s For hexagon in circle Pascal&#39;s From point to circumcircle Simson Line 📐 Trigonometry Formulas 📐 Basic Trig Ratios $\sin \theta = \frac{\text{opp}}{\text{hyp}}$ sine $\cos \theta = \frac{\text{adj}}{\text{hyp}}$ cosine $\tan \theta = \frac{\text{opp}}{\text{adj}}$ tangent $\cot \theta = \frac{1}{\tan \theta}$ cotangent ⭐ Special Angles $\sin 30° = \frac{1}{2}$ 30° $\cos 30° = \frac{\sqrt{3}}{2}$ 30° $\sin 45° = \frac{\sqrt{2}}{2}$ 45° $\cos 45° = \frac{\sqrt{2}}{2}$ 45° $\sin 60° = \frac{\sqrt{3}}{2}$ 60° $\cos 60° = \frac{1}{2}$ 60° 🔗 Trig Identities $\sin^2 \theta &#43; \cos^2 \theta = 1$ Pythagorean $1 &#43; \tan^2 \theta = \sec^2 \theta$ secant $1 &#43; \cot^2 \theta = \csc^2 \theta$ cosecant $\sin(90° - \theta) = \cos \theta$ complementary ➕ Sum &amp; Difference $\sin(A \pm B) = \sin A \cos B \pm \cos A \sin B$ sine $\cos(A \pm B) = \cos A \cos B \mp \sin A \sin B$ cosine $\tan(A \pm B) = \frac{\tan A \pm \tan B}{1 \mp \tan A \tan B}$ tangent ✂️ Half Angle $\sin \frac{\theta}{2} = \pm\sqrt{\frac{1 - \cos \theta}{2}}$ sine $\cos \frac{\theta}{2} = \pm\sqrt{\frac{1 &#43; \cos \theta}{2}}$ cosine $\tan \frac{\theta}{2} = \frac{1 - \cos \theta}{\sin \theta}$ tangent ⚖️ Law of Sines &amp; Cosines $\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R$ Law of Sines $c^2 = a^2 &#43; b^2 - 2ab\cos C$ Law of Cosines $A = \frac{1}{2}ab\sin C$ Area (SAS) 📊 Polygon Formulas Quadrilaterals Rectangle: $A = lw$, $P = 2(l&#43;w)$
+Square: $A = s^2$, $P = 4s$
+Parallelogram: $A = bh$
+Rhombus: $A = \frac{1}{2}d_1d_2$
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Essential Formulas" href="https://xhx.github.io/notes/math/amc/amc10/geometry/essential-formulas/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Box &amp; Prism Diagonals (3-D Pythagorean)
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>#15 – Box &amp; Prism Diagonals (3-D Pythagorean Nightmares Made Easy) AMC setters love to drop a right‐rectangular prism (a “box”) into the problem because every diagonal length reduces to one or two straight applications of $a^{2}&#43;b^{2}=c^{2}$.
+Diagonal Formula (edges $a,b,c$) Memory cue Face diagonal on the $ab$-face $d_{ab}= \sqrt{a^{2}&#43;b^{2}}$ 2-D Pythag on one face Space (body) diagonal of the box $D=\sqrt{a^{2}&#43;b^{2}&#43;c^{2}}$ Pythag twice (face ⇒ space) (Replace $a,b,c$ with whichever edge trio the problem gives.)
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Box & Prism Diagonals (3-D Pythagorean)" href="https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/box-prism-diagonals-3d/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Problem-Solving Tips
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 🔍 Pattern Recognition Common Patterns to Look For Special triangles - 30-60-90, 45-45-90, and Pythagorean triples Hidden right triangles in complex diagrams Similar triangles created by altitudes, parallel lines, or angle bisectors Cyclic quadrilaterals - opposite angles sum to 180° Power of a point relationships in circle problems Symmetry - look for reflectional or rotational symmetry Quick Recognition Techniques Look for right angles - Often hidden in complex figures Check for parallel lines - Creates similar triangles Identify special angles - 30°, 45°, 60°, 90°, 120°, 135°, 150° Spot Pythagorean triples - (3,4,5), (5,12,13), (7,24,25), (8,15,17) Find cyclic quadrilaterals - Look for four points on a circle 📐 Coordinate Geometry Approach When to Use Coordinates When stuck - If other methods aren’t working Complex figures - Multiple intersecting lines and circles Distance problems - When you need exact measurements Angle problems - When you need precise angle calculations Area problems - When you have vertex coordinates Coordinate Strategy Choose origin wisely - Place at a vertex or center of symmetry Align axes - Along lines of symmetry or important lines Use simple coordinates - Avoid fractions when possible Check answer choices - Look for hints about coordinate values Apply shoelace formula - For polygon areas with known vertices Common Coordinate Setups Right triangle: Place right angle at origin, legs along axes Circle: Center at origin, or use $(x-h)^2 &#43; (y-k)^2 = r^2$ Regular polygon: Center at origin, one vertex on positive x-axis Parallelogram: Three vertices at origin and on axes ⚡ Speed Techniques Quick Recognition Memorize common values: $\sin 30° = \frac{1}{2}$, $\cos 45° = \frac{\sqrt{2}}{2}$ Special angle values: 30°, 45°, 60°, 90°, 120°, 135°, 150° Integer solutions: AMC problems often have clean, integer answers Answer choice analysis: Look for patterns in the given options Estimation: Round numbers to get approximate answers quickly Mental Math Shortcuts $\sqrt{2} \approx 1.414$, $\sqrt{3} \approx 1.732$ $\pi \approx 3.1416$ or $\frac{22}{7}$ for rough estimates Common fractions: $\frac{1}{3} = 0.333…$, $\frac{1}{4} = 0.25$, etc. Pythagorean triples: (3,4,5), (5,12,13), (7,24,25), (8,15,17), (9,40,41) 🎯 Problem-Solving Workflow Step-by-Step Approach Read carefully - Identify what’s given and what’s asked Draw a diagram - Visual representation reveals relationships Look for patterns - Special triangles, similar figures, cyclic quadrilaterals Try coordinate geometry - When other methods fail Check your work - Verify answer makes sense Time Management Strategy Easy problems (1-10): 1-2 minutes each Medium problems (11-20): 2-4 minutes each Hard problems (21-25): 4-6 minutes each Skip if stuck - Return to difficult problems later Use answer choices - Sometimes you can work backwards 📊 Difficulty Indicators &amp; Problem Types 🟢 Easy (Problems 1-10) Basic area/perimeter calculations Special right triangles (30-60-90, 45-45-90) Simple coordinate geometry Basic circle properties Elementary similarity 🟡 Medium (Problems 11-20) Angle chasing with parallel lines Power of a point applications Similarity in complex diagrams 3D geometry (surface area, volume) Coordinate geometry with circles Trigonometry applications 🔴 Hard (Problems 21-25) Advanced similarity and concurrency Complex angle chasing Power of a point in difficult configurations Advanced coordinate geometry Multiple theorem applications Construction problems ⚠️ Common Mistakes to Avoid 🔍 Conceptual Errors Confusing similarity and congruence - Similarity requires proportional sides, congruence requires equal sides Mixing up inscribed and central angles - Inscribed angle = $\frac{1}{2}$ × central angle Forgetting units - Always check if answer should be in degrees, radians, or other units Sign errors in coordinate geometry - Double-check positive/negative directions 📐 Calculation Mistakes Wrong Pythagorean theorem application - Only works for right triangles Incorrect special triangle ratios - 30-60-90 is $1:\sqrt{3}:2$, not $1:2:\sqrt{3}$ Angle measurement confusion - Radians vs degrees, especially in trigonometry Shoelace formula errors - Remember to take absolute value and divide by 2 🎯 Strategic Errors Overcomplicating simple problems - Try basic approaches first Not drawing diagrams - Visual representation is crucial Skipping verification - Check if answer makes geometric sense Time management - Don’t spend too long on one problem 🚀 Advanced Strategies Multiple Approach Method Try synthetic geometry first - Look for similar triangles, power of a point Switch to coordinates - If synthetic approach gets complicated Use trigonometry - For angle and side length problems Apply advanced theorems - Ceva’s, Menelaus’s, Ptolemy’s when appropriate Answer Choice Strategy Look for patterns - Are answers in a specific range? Work backwards - Plug in answer choices to see which works Eliminate obviously wrong - Use estimation to rule out choices Check units - Make sure your answer has the right units Diagram Drawing Tips Draw to scale - Helps with estimation Label everything - Points, angles, lengths Use different colors - For different types of lines Draw auxiliary lines - Altitudes, angle bisectors, parallel lines Show right angles - Mark them clearly 💡 Final Tips for Success Practice regularly - Consistent practice builds pattern recognition Time yourself - Learn to work efficiently under time pressure Review mistakes - Understand why you got problems wrong Stay calm - Don’t panic if you don’t immediately see the solution Use this reference - Keep it handy during practice and review sessions 📚 Related Resources 📐 Essential Formulas - Complete formula reference 🎯 Problem Types - Complete list of essential problem patterns 📖 Reference Guide - Comprehensive geometry reference 📝 Topic Guides - Detailed coverage of specific topics Master these problem-solving strategies and you’ll be well-equipped to tackle any AMC 10 geometry problem!
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Problem-Solving Tips" href="https://xhx.github.io/notes/math/amc/amc10/geometry/problem-solving-tips/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Advanced Geometry
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Geometry Problems
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Advanced Geometry" href="https://xhx.github.io/notes/math/amc/amc10/geometry/geometry-advanced/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://xhx.github.io/categories/geometry/page/2/">
+      «&nbsp;Prev&nbsp;
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

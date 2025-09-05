@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Concept Atlas | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Counting, Probability, Concepts">
+<meta name="description" content="One-paragraph primers on all major counting and probability topics with AMC appearance cues.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/concept-atlas/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xhx.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/concept-atlas/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+<meta property="og:url" content="https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/concept-atlas/">
+  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
+  <meta property="og:title" content="Concept Atlas">
+  <meta property="og:description" content="One-paragraph primers on all major counting and probability topics with AMC appearance cues.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:tag" content="Amc10">
+    <meta property="article:tag" content="AMC12">
+    <meta property="article:tag" content="Counting">
+    <meta property="article:tag" content="Probability">
+    <meta property="article:tag" content="Concepts">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Concept Atlas">
+<meta name="twitter:description" content="One-paragraph primers on all major counting and probability topics with AMC appearance cues.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Notes",
+      "item": "https://xhx.github.io/notes/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Mathematics Notes",
+      "item": "https://xhx.github.io/notes/math/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "AMC Problems",
+      "item": "https://xhx.github.io/notes/math/amc/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "AMC 10",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Counting \u0026 Probability Mastery Guide",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Reference Materials",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  7 ,
+      "name": "Concept Atlas",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/concept-atlas/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Concept Atlas",
+  "name": "Concept Atlas",
+  "description": "One-paragraph primers on all major counting and probability topics with AMC appearance cues.",
+  "keywords": [
+    "AMC10", "AMC12", "Counting", "Probability", "Concepts"
+  ],
+  "articleBody": "🗺️ Concept Atlas Quick primers on all major counting and probability topics with AMC appearance cues.\n🔢 Basic Counting Principles Addition Principle When counting objects that can be categorized into mutually exclusive groups, add the counts of each group. AMC appearance: “How many ways can you choose a red or blue ball?” or “How many students are in math or science club?”\nMultiplication Principle When counting sequences of choices where each choice is independent, multiply the number of choices at each step. AMC appearance: “How many ways can you arrange 3 letters and 2 numbers?” or “How many different meals can you order?”\nComplement Counting Instead of counting what you want, count what you don’t want and subtract from the total. AMC appearance: “At least one” problems, “How many ways have no consecutive heads?” or “How many arrangements avoid certain patterns?”\n🔄 Permutations \u0026 Combinations Permutations Arrangements of objects where order matters. Use $P(n,k) = \\frac{n!}{(n-k)!}$ for arrangements of $k$ objects from $n$. AMC appearance: “How many ways can you arrange 4 people in a line?” or “How many 3-digit numbers can you make?”\nCombinations Selections of objects where order doesn’t matter. Use $\\binom{n}{k} = \\frac{n!}{k!(n-k)!}$ for selections of $k$ objects from $n$. AMC appearance: “How many ways can you choose 3 people from 10?” or “How many committees can you form?”\nPermutations with Repetition Arrangements where objects can be repeated. Use $n^k$ for $k$ positions with $n$ choices each. AMC appearance: “How many 4-letter words can you make from {A,B,C}?” or “How many license plates with 3 letters and 2 numbers?”\nCombinations with Repetition Selections where objects can be chosen multiple times. Use stars and bars: $\\binom{n+k-1}{k}$. AMC appearance: “How many ways can you distribute 10 identical candies to 3 children?” or “How many solutions to $x_1 + x_2 + x_3 = 10$ with $x_i \\geq 0$?”\n🎯 Advanced Counting Inclusion-Exclusion Principle For counting elements in unions of sets, add individual counts, subtract intersections of pairs, add intersections of triples, etc. AMC appearance: “How many numbers from 1 to 100 are divisible by 2 or 3?” or “How many students take math or science or both?”\nPigeonhole Principle If you have more pigeons than holes, at least one hole must contain multiple pigeons. AMC appearance: “Prove that in any group of 13 people, at least two have the same birthday month” or “Show that among 51 integers, two have the same remainder when divided by 50.”\nStars and Bars Method for counting non-negative integer solutions to equations like $x_1 + x_2 + \\cdots + x_k = n$. AMC appearance: “How many ways can you distribute 10 identical balls into 4 boxes?” or “How many solutions to $a + b + c = 15$ with $a,b,c \\geq 0$?”\n🎲 Probability Basics Basic Probability The probability of an event is the ratio of favorable outcomes to total outcomes. AMC appearance: “What’s the probability of rolling a 6?” or “What’s the probability of drawing a red card?”\nConditional Probability The probability of event $A$ given that event $B$ has occurred: $P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}$. AMC appearance: “Given that a card is red, what’s the probability it’s a heart?” or “Given that a student passed the test, what’s the probability they studied?”\nIndependence Events $A$ and $B$ are independent if $P(A \\cap B) = P(A)P(B)$. AMC appearance: “Are consecutive coin flips independent?” or “Are drawing two cards with replacement independent?”\nLaw of Total Probability For mutually exclusive and exhaustive events $B_i$: $P(A) = \\sum_i P(A \\mid B_i)P(B_i)$. AMC appearance: “What’s the probability of rain given weather forecasts?” or “What’s the probability of a positive test result?”\n📊 Expected Value Expected Value Definition The weighted average of all possible outcomes: $\\mathbb{E}[X] = \\sum_x x \\cdot P(X = x)$. AMC appearance: “What’s the expected value of a dice roll?” or “What’s the expected number of heads in 10 flips?”\nLinearity of Expectation For any random variables $X$ and $Y$: $\\mathbb{E}[X + Y] = \\mathbb{E}[X] + \\mathbb{E}[Y]$. AMC appearance: “What’s the expected number of aces in a 5-card hand?” or “What’s the expected number of matches in a matching problem?”\nIndicator Variables Binary variables that are 1 if an event occurs, 0 otherwise. AMC appearance: “What’s the expected number of fixed points in a random permutation?” or “What’s the expected number of runs in a coin sequence?”\n📈 Probability Distributions Binomial Distribution Counts successes in $n$ independent trials with probability $p$ of success each. AMC appearance: “What’s the probability of exactly 3 heads in 5 flips?” or “What’s the probability of exactly 2 aces in 5 cards?”\nGeometric Distribution Counts trials until first success in independent trials with probability $p$ of success. AMC appearance: “What’s the probability the first 6 appears on the 4th roll?” or “What’s the expected number of flips until first heads?”\nHypergeometric Distribution Counts successes in sampling without replacement from a finite population. AMC appearance: “What’s the probability of exactly 2 red balls in 5 draws from an urn with 10 red and 15 blue balls?”\n🔄 Special Arrangements Derangements Permutations where no element appears in its original position. AMC appearance: “How many ways can you arrange 5 people so no one sits in their assigned seat?” or “What’s the probability of a derangement?”\nCircular Permutations Arrangements in a circle where rotations are considered the same. AMC appearance: “How many ways can you seat 6 people around a round table?” or “How many ways can you arrange 5 beads on a bracelet?”\n🎯 Problem Recognition Cues Seating Problems Look for adjacency constraints, spacing requirements, or special positions. AMC appearance: “How many ways can you seat 5 people so A and B sit together?” or “How many ways can you arrange 6 people so no two men sit together?”\nWord Rearrangements Look for letter arrangements with restrictions on positions or repetitions. AMC appearance: “How many ways can you arrange the letters in ‘MISSISSIPPI’?” or “How many 5-letter words can you make with no repeated letters?”\nCommittee Selection Look for role assignments, gender requirements, or leadership positions. AMC appearance: “How many ways can you choose a president and vice-president from 10 people?” or “How many committees of 4 can you form with at least one woman?”\nGrid Paths Look for lattice walks with restrictions or blockages. AMC appearance: “How many ways can you walk from (0,0) to (5,3) moving only right and up?” or “How many paths avoid the diagonal?”\nNext: Counting Principles → Permutations \u0026 Combinations\n",
+  "wordCount" : "1076",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Xiaohui Xie"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/concept-atlas/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Xiaohui Xie's Site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xhx.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/">Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/">Counting &amp; Probability Mastery Guide</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/">Reference Materials</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Concept Atlas
+    </h1>
+    <div class="post-description">
+      One-paragraph primers on all major counting and probability topics with AMC appearance cues.
+    </div>
+    <div class="post-meta">6 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-concept-atlas" aria-label="🗺️ Concept Atlas">🗺️ Concept Atlas</a><ul>
+                        
+                <li>
+                    <a href="#-basic-counting-principles" aria-label="🔢 Basic Counting Principles">🔢 Basic Counting Principles</a><ul>
+                        
+                <li>
+                    <a href="#addition-principle" aria-label="Addition Principle">Addition Principle</a></li>
+                <li>
+                    <a href="#multiplication-principle" aria-label="Multiplication Principle">Multiplication Principle</a></li>
+                <li>
+                    <a href="#complement-counting" aria-label="Complement Counting">Complement Counting</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-permutations--combinations" aria-label="🔄 Permutations &amp; Combinations">🔄 Permutations &amp; Combinations</a><ul>
+                        
+                <li>
+                    <a href="#permutations" aria-label="Permutations">Permutations</a></li>
+                <li>
+                    <a href="#combinations" aria-label="Combinations">Combinations</a></li>
+                <li>
+                    <a href="#permutations-with-repetition" aria-label="Permutations with Repetition">Permutations with Repetition</a></li>
+                <li>
+                    <a href="#combinations-with-repetition" aria-label="Combinations with Repetition">Combinations with Repetition</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-advanced-counting" aria-label="🎯 Advanced Counting">🎯 Advanced Counting</a><ul>
+                        
+                <li>
+                    <a href="#inclusion-exclusion-principle" aria-label="Inclusion-Exclusion Principle">Inclusion-Exclusion Principle</a></li>
+                <li>
+                    <a href="#pigeonhole-principle" aria-label="Pigeonhole Principle">Pigeonhole Principle</a></li>
+                <li>
+                    <a href="#stars-and-bars" aria-label="Stars and Bars">Stars and Bars</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-probability-basics" aria-label="🎲 Probability Basics">🎲 Probability Basics</a><ul>
+                        
+                <li>
+                    <a href="#basic-probability" aria-label="Basic Probability">Basic Probability</a></li>
+                <li>
+                    <a href="#conditional-probability" aria-label="Conditional Probability">Conditional Probability</a></li>
+                <li>
+                    <a href="#independence" aria-label="Independence">Independence</a></li>
+                <li>
+                    <a href="#law-of-total-probability" aria-label="Law of Total Probability">Law of Total Probability</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-expected-value" aria-label="📊 Expected Value">📊 Expected Value</a><ul>
+                        
+                <li>
+                    <a href="#expected-value-definition" aria-label="Expected Value Definition">Expected Value Definition</a></li>
+                <li>
+                    <a href="#linearity-of-expectation" aria-label="Linearity of Expectation">Linearity of Expectation</a></li>
+                <li>
+                    <a href="#indicator-variables" aria-label="Indicator Variables">Indicator Variables</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-probability-distributions" aria-label="📈 Probability Distributions">📈 Probability Distributions</a><ul>
+                        
+                <li>
+                    <a href="#binomial-distribution" aria-label="Binomial Distribution">Binomial Distribution</a></li>
+                <li>
+                    <a href="#geometric-distribution" aria-label="Geometric Distribution">Geometric Distribution</a></li>
+                <li>
+                    <a href="#hypergeometric-distribution" aria-label="Hypergeometric Distribution">Hypergeometric Distribution</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-special-arrangements" aria-label="🔄 Special Arrangements">🔄 Special Arrangements</a><ul>
+                        
+                <li>
+                    <a href="#derangements" aria-label="Derangements">Derangements</a></li>
+                <li>
+                    <a href="#circular-permutations" aria-label="Circular Permutations">Circular Permutations</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-problem-recognition-cues" aria-label="🎯 Problem Recognition Cues">🎯 Problem Recognition Cues</a><ul>
+                        
+                <li>
+                    <a href="#seating-problems" aria-label="Seating Problems">Seating Problems</a></li>
+                <li>
+                    <a href="#word-rearrangements" aria-label="Word Rearrangements">Word Rearrangements</a></li>
+                <li>
+                    <a href="#committee-selection" aria-label="Committee Selection">Committee Selection</a></li>
+                <li>
+                    <a href="#grid-paths" aria-label="Grid Paths">Grid Paths</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-concept-atlas">🗺️ Concept Atlas<a hidden class="anchor" aria-hidden="true" href="#-concept-atlas">#</a></h1>
+<p>Quick primers on all major counting and probability topics with AMC appearance cues.</p>
+<h2 id="-basic-counting-principles">🔢 Basic Counting Principles<a hidden class="anchor" aria-hidden="true" href="#-basic-counting-principles">#</a></h2>
+<h3 id="addition-principle">Addition Principle<a hidden class="anchor" aria-hidden="true" href="#addition-principle">#</a></h3>
+<p>When counting objects that can be categorized into mutually exclusive groups, add the counts of each group. <strong>AMC appearance</strong>: &ldquo;How many ways can you choose a red or blue ball?&rdquo; or &ldquo;How many students are in math or science club?&rdquo;</p>
+<h3 id="multiplication-principle">Multiplication Principle<a hidden class="anchor" aria-hidden="true" href="#multiplication-principle">#</a></h3>
+<p>When counting sequences of choices where each choice is independent, multiply the number of choices at each step. <strong>AMC appearance</strong>: &ldquo;How many ways can you arrange 3 letters and 2 numbers?&rdquo; or &ldquo;How many different meals can you order?&rdquo;</p>
+<h3 id="complement-counting">Complement Counting<a hidden class="anchor" aria-hidden="true" href="#complement-counting">#</a></h3>
+<p>Instead of counting what you want, count what you don&rsquo;t want and subtract from the total. <strong>AMC appearance</strong>: &ldquo;At least one&rdquo; problems, &ldquo;How many ways have no consecutive heads?&rdquo; or &ldquo;How many arrangements avoid certain patterns?&rdquo;</p>
+<h2 id="-permutations--combinations">🔄 Permutations &amp; Combinations<a hidden class="anchor" aria-hidden="true" href="#-permutations--combinations">#</a></h2>
+<h3 id="permutations">Permutations<a hidden class="anchor" aria-hidden="true" href="#permutations">#</a></h3>
+<p>Arrangements of objects where order matters. Use $P(n,k) = \frac{n!}{(n-k)!}$ for arrangements of $k$ objects from $n$. <strong>AMC appearance</strong>: &ldquo;How many ways can you arrange 4 people in a line?&rdquo; or &ldquo;How many 3-digit numbers can you make?&rdquo;</p>
+<h3 id="combinations">Combinations<a hidden class="anchor" aria-hidden="true" href="#combinations">#</a></h3>
+<p>Selections of objects where order doesn&rsquo;t matter. Use $\binom{n}{k} = \frac{n!}{k!(n-k)!}$ for selections of $k$ objects from $n$. <strong>AMC appearance</strong>: &ldquo;How many ways can you choose 3 people from 10?&rdquo; or &ldquo;How many committees can you form?&rdquo;</p>
+<h3 id="permutations-with-repetition">Permutations with Repetition<a hidden class="anchor" aria-hidden="true" href="#permutations-with-repetition">#</a></h3>
+<p>Arrangements where objects can be repeated. Use $n^k$ for $k$ positions with $n$ choices each. <strong>AMC appearance</strong>: &ldquo;How many 4-letter words can you make from {A,B,C}?&rdquo; or &ldquo;How many license plates with 3 letters and 2 numbers?&rdquo;</p>
+<h3 id="combinations-with-repetition">Combinations with Repetition<a hidden class="anchor" aria-hidden="true" href="#combinations-with-repetition">#</a></h3>
+<p>Selections where objects can be chosen multiple times. Use stars and bars: $\binom{n+k-1}{k}$. <strong>AMC appearance</strong>: &ldquo;How many ways can you distribute 10 identical candies to 3 children?&rdquo; or &ldquo;How many solutions to $x_1 + x_2 + x_3 = 10$ with $x_i \geq 0$?&rdquo;</p>
+<h2 id="-advanced-counting">🎯 Advanced Counting<a hidden class="anchor" aria-hidden="true" href="#-advanced-counting">#</a></h2>
+<h3 id="inclusion-exclusion-principle">Inclusion-Exclusion Principle<a hidden class="anchor" aria-hidden="true" href="#inclusion-exclusion-principle">#</a></h3>
+<p>For counting elements in unions of sets, add individual counts, subtract intersections of pairs, add intersections of triples, etc. <strong>AMC appearance</strong>: &ldquo;How many numbers from 1 to 100 are divisible by 2 or 3?&rdquo; or &ldquo;How many students take math or science or both?&rdquo;</p>
+<h3 id="pigeonhole-principle">Pigeonhole Principle<a hidden class="anchor" aria-hidden="true" href="#pigeonhole-principle">#</a></h3>
+<p>If you have more pigeons than holes, at least one hole must contain multiple pigeons. <strong>AMC appearance</strong>: &ldquo;Prove that in any group of 13 people, at least two have the same birthday month&rdquo; or &ldquo;Show that among 51 integers, two have the same remainder when divided by 50.&rdquo;</p>
+<h3 id="stars-and-bars">Stars and Bars<a hidden class="anchor" aria-hidden="true" href="#stars-and-bars">#</a></h3>
+<p>Method for counting non-negative integer solutions to equations like $x_1 + x_2 + \cdots + x_k = n$. <strong>AMC appearance</strong>: &ldquo;How many ways can you distribute 10 identical balls into 4 boxes?&rdquo; or &ldquo;How many solutions to $a + b + c = 15$ with $a,b,c \geq 0$?&rdquo;</p>
+<h2 id="-probability-basics">🎲 Probability Basics<a hidden class="anchor" aria-hidden="true" href="#-probability-basics">#</a></h2>
+<h3 id="basic-probability">Basic Probability<a hidden class="anchor" aria-hidden="true" href="#basic-probability">#</a></h3>
+<p>The probability of an event is the ratio of favorable outcomes to total outcomes. <strong>AMC appearance</strong>: &ldquo;What&rsquo;s the probability of rolling a 6?&rdquo; or &ldquo;What&rsquo;s the probability of drawing a red card?&rdquo;</p>
+<h3 id="conditional-probability">Conditional Probability<a hidden class="anchor" aria-hidden="true" href="#conditional-probability">#</a></h3>
+<p>The probability of event $A$ given that event $B$ has occurred: $P(A \mid B) = \frac{P(A \cap B)}{P(B)}$. <strong>AMC appearance</strong>: &ldquo;Given that a card is red, what&rsquo;s the probability it&rsquo;s a heart?&rdquo; or &ldquo;Given that a student passed the test, what&rsquo;s the probability they studied?&rdquo;</p>
+<h3 id="independence">Independence<a hidden class="anchor" aria-hidden="true" href="#independence">#</a></h3>
+<p>Events $A$ and $B$ are independent if $P(A \cap B) = P(A)P(B)$. <strong>AMC appearance</strong>: &ldquo;Are consecutive coin flips independent?&rdquo; or &ldquo;Are drawing two cards with replacement independent?&rdquo;</p>
+<h3 id="law-of-total-probability">Law of Total Probability<a hidden class="anchor" aria-hidden="true" href="#law-of-total-probability">#</a></h3>
+<p>For mutually exclusive and exhaustive events $B_i$: $P(A) = \sum_i P(A \mid B_i)P(B_i)$. <strong>AMC appearance</strong>: &ldquo;What&rsquo;s the probability of rain given weather forecasts?&rdquo; or &ldquo;What&rsquo;s the probability of a positive test result?&rdquo;</p>
+<h2 id="-expected-value">📊 Expected Value<a hidden class="anchor" aria-hidden="true" href="#-expected-value">#</a></h2>
+<h3 id="expected-value-definition">Expected Value Definition<a hidden class="anchor" aria-hidden="true" href="#expected-value-definition">#</a></h3>
+<p>The weighted average of all possible outcomes: $\mathbb{E}[X] = \sum_x x \cdot P(X = x)$. <strong>AMC appearance</strong>: &ldquo;What&rsquo;s the expected value of a dice roll?&rdquo; or &ldquo;What&rsquo;s the expected number of heads in 10 flips?&rdquo;</p>
+<h3 id="linearity-of-expectation">Linearity of Expectation<a hidden class="anchor" aria-hidden="true" href="#linearity-of-expectation">#</a></h3>
+<p>For any random variables $X$ and $Y$: $\mathbb{E}[X + Y] = \mathbb{E}[X] + \mathbb{E}[Y]$. <strong>AMC appearance</strong>: &ldquo;What&rsquo;s the expected number of aces in a 5-card hand?&rdquo; or &ldquo;What&rsquo;s the expected number of matches in a matching problem?&rdquo;</p>
+<h3 id="indicator-variables">Indicator Variables<a hidden class="anchor" aria-hidden="true" href="#indicator-variables">#</a></h3>
+<p>Binary variables that are 1 if an event occurs, 0 otherwise. <strong>AMC appearance</strong>: &ldquo;What&rsquo;s the expected number of fixed points in a random permutation?&rdquo; or &ldquo;What&rsquo;s the expected number of runs in a coin sequence?&rdquo;</p>
+<h2 id="-probability-distributions">📈 Probability Distributions<a hidden class="anchor" aria-hidden="true" href="#-probability-distributions">#</a></h2>
+<h3 id="binomial-distribution">Binomial Distribution<a hidden class="anchor" aria-hidden="true" href="#binomial-distribution">#</a></h3>
+<p>Counts successes in $n$ independent trials with probability $p$ of success each. <strong>AMC appearance</strong>: &ldquo;What&rsquo;s the probability of exactly 3 heads in 5 flips?&rdquo; or &ldquo;What&rsquo;s the probability of exactly 2 aces in 5 cards?&rdquo;</p>
+<h3 id="geometric-distribution">Geometric Distribution<a hidden class="anchor" aria-hidden="true" href="#geometric-distribution">#</a></h3>
+<p>Counts trials until first success in independent trials with probability $p$ of success. <strong>AMC appearance</strong>: &ldquo;What&rsquo;s the probability the first 6 appears on the 4th roll?&rdquo; or &ldquo;What&rsquo;s the expected number of flips until first heads?&rdquo;</p>
+<h3 id="hypergeometric-distribution">Hypergeometric Distribution<a hidden class="anchor" aria-hidden="true" href="#hypergeometric-distribution">#</a></h3>
+<p>Counts successes in sampling without replacement from a finite population. <strong>AMC appearance</strong>: &ldquo;What&rsquo;s the probability of exactly 2 red balls in 5 draws from an urn with 10 red and 15 blue balls?&rdquo;</p>
+<h2 id="-special-arrangements">🔄 Special Arrangements<a hidden class="anchor" aria-hidden="true" href="#-special-arrangements">#</a></h2>
+<h3 id="derangements">Derangements<a hidden class="anchor" aria-hidden="true" href="#derangements">#</a></h3>
+<p>Permutations where no element appears in its original position. <strong>AMC appearance</strong>: &ldquo;How many ways can you arrange 5 people so no one sits in their assigned seat?&rdquo; or &ldquo;What&rsquo;s the probability of a derangement?&rdquo;</p>
+<h3 id="circular-permutations">Circular Permutations<a hidden class="anchor" aria-hidden="true" href="#circular-permutations">#</a></h3>
+<p>Arrangements in a circle where rotations are considered the same. <strong>AMC appearance</strong>: &ldquo;How many ways can you seat 6 people around a round table?&rdquo; or &ldquo;How many ways can you arrange 5 beads on a bracelet?&rdquo;</p>
+<h2 id="-problem-recognition-cues">🎯 Problem Recognition Cues<a hidden class="anchor" aria-hidden="true" href="#-problem-recognition-cues">#</a></h2>
+<h3 id="seating-problems">Seating Problems<a hidden class="anchor" aria-hidden="true" href="#seating-problems">#</a></h3>
+<p>Look for adjacency constraints, spacing requirements, or special positions. <strong>AMC appearance</strong>: &ldquo;How many ways can you seat 5 people so A and B sit together?&rdquo; or &ldquo;How many ways can you arrange 6 people so no two men sit together?&rdquo;</p>
+<h3 id="word-rearrangements">Word Rearrangements<a hidden class="anchor" aria-hidden="true" href="#word-rearrangements">#</a></h3>
+<p>Look for letter arrangements with restrictions on positions or repetitions. <strong>AMC appearance</strong>: &ldquo;How many ways can you arrange the letters in &lsquo;MISSISSIPPI&rsquo;?&rdquo; or &ldquo;How many 5-letter words can you make with no repeated letters?&rdquo;</p>
+<h3 id="committee-selection">Committee Selection<a hidden class="anchor" aria-hidden="true" href="#committee-selection">#</a></h3>
+<p>Look for role assignments, gender requirements, or leadership positions. <strong>AMC appearance</strong>: &ldquo;How many ways can you choose a president and vice-president from 10 people?&rdquo; or &ldquo;How many committees of 4 can you form with at least one woman?&rdquo;</p>
+<h3 id="grid-paths">Grid Paths<a hidden class="anchor" aria-hidden="true" href="#grid-paths">#</a></h3>
+<p>Look for lattice walks with restrictions or blockages. <strong>AMC appearance</strong>: &ldquo;How many ways can you walk from (0,0) to (5,3) moving only right and up?&rdquo; or &ldquo;How many paths avoid the diagonal?&rdquo;</p>
+<hr>
+<p><em>Next: <a href="02-topics/counting-principles">Counting Principles</a> → <a href="02-topics/permutations-combinations">Permutations &amp; Combinations</a></em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://xhx.github.io/tags/amc10/">Amc10</a></li>
+      <li><a href="https://xhx.github.io/tags/amc12/">AMC12</a></li>
+      <li><a href="https://xhx.github.io/tags/counting/">Counting</a></li>
+      <li><a href="https://xhx.github.io/tags/probability/">Probability</a></li>
+      <li><a href="https://xhx.github.io/tags/concepts/">Concepts</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

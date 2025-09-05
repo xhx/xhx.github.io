@@ -2,374 +2,1256 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Xiaohui Xie&#39;s Site</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://xhx.github.io/tags/</link>
     <description>Recent content in Tags on Xiaohui Xie&#39;s Site</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://xhx.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3d</title>
-      <link>http://localhost:1313/tags/3d/</link>
+      <link>https://xhx.github.io/tags/3d/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/3d/</guid>
+      <guid>https://xhx.github.io/tags/3d/</guid>
       <description></description>
     </item>
     <item>
       <title>Absolute-Value-Inequality</title>
-      <link>http://localhost:1313/tags/absolute-value-inequality/</link>
+      <link>https://xhx.github.io/tags/absolute-value-inequality/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/absolute-value-inequality/</guid>
+      <guid>https://xhx.github.io/tags/absolute-value-inequality/</guid>
       <description></description>
     </item>
     <item>
       <title>Advanced</title>
-      <link>http://localhost:1313/tags/advanced/</link>
+      <link>https://xhx.github.io/tags/advanced/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/advanced/</guid>
+      <guid>https://xhx.github.io/tags/advanced/</guid>
       <description></description>
     </item>
     <item>
       <title>Algebra</title>
-      <link>http://localhost:1313/tags/algebra/</link>
+      <link>https://xhx.github.io/tags/algebra/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/algebra/</guid>
+      <guid>https://xhx.github.io/tags/algebra/</guid>
       <description></description>
     </item>
     <item>
       <title>Altitude</title>
-      <link>http://localhost:1313/tags/altitude/</link>
+      <link>https://xhx.github.io/tags/altitude/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/altitude/</guid>
+      <guid>https://xhx.github.io/tags/altitude/</guid>
       <description></description>
     </item>
     <item>
       <title>Am-Gm-Bounding-Inequality</title>
-      <link>http://localhost:1313/tags/am-gm-bounding-inequality/</link>
+      <link>https://xhx.github.io/tags/am-gm-bounding-inequality/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/am-gm-bounding-inequality/</guid>
+      <guid>https://xhx.github.io/tags/am-gm-bounding-inequality/</guid>
       <description></description>
     </item>
     <item>
       <title>Amc10</title>
-      <link>http://localhost:1313/tags/amc10/</link>
+      <link>https://xhx.github.io/tags/amc10/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/amc10/</guid>
+      <guid>https://xhx.github.io/tags/amc10/</guid>
       <description></description>
     </item>
     <item>
       <title>Angle-Bisector</title>
-      <link>http://localhost:1313/tags/angle-bisector/</link>
+      <link>https://xhx.github.io/tags/angle-bisector/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/angle-bisector/</guid>
+      <guid>https://xhx.github.io/tags/angle-bisector/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Angles</title>
+      <link>https://xhx.github.io/tags/angles/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/angles/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Areas</title>
+      <link>https://xhx.github.io/tags/areas/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/areas/</guid>
       <description></description>
     </item>
     <item>
       <title>Binomial-Theorem-Coefficient</title>
-      <link>http://localhost:1313/tags/binomial-theorem-coefficient/</link>
+      <link>https://xhx.github.io/tags/binomial-theorem-coefficient/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/binomial-theorem-coefficient/</guid>
+      <guid>https://xhx.github.io/tags/binomial-theorem-coefficient/</guid>
       <description></description>
     </item>
     <item>
-      <title>Chinese-Remainder-Theorem</title>
-      <link>http://localhost:1313/tags/chinese-remainder-theorem/</link>
+      <title>Cevians</title>
+      <link>https://xhx.github.io/tags/cevians/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/chinese-remainder-theorem/</guid>
+      <guid>https://xhx.github.io/tags/cevians/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Circles</title>
+      <link>https://xhx.github.io/tags/circles/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/circles/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Circumradius</title>
+      <link>https://xhx.github.io/tags/circumradius/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/circumradius/</guid>
       <description></description>
     </item>
     <item>
       <title>Combinatorics</title>
-      <link>http://localhost:1313/tags/combinatorics/</link>
+      <link>https://xhx.github.io/tags/combinatorics/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/combinatorics/</guid>
+      <guid>https://xhx.github.io/tags/combinatorics/</guid>
       <description></description>
     </item>
     <item>
       <title>Competition</title>
-      <link>http://localhost:1313/tags/competition/</link>
+      <link>https://xhx.github.io/tags/competition/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/competition/</guid>
+      <guid>https://xhx.github.io/tags/competition/</guid>
       <description></description>
     </item>
     <item>
-      <title>Counting</title>
-      <link>http://localhost:1313/tags/counting/</link>
+      <title>Concurrency</title>
+      <link>https://xhx.github.io/tags/concurrency/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/counting/</guid>
+      <guid>https://xhx.github.io/tags/concurrency/</guid>
       <description></description>
     </item>
     <item>
-      <title>Crt</title>
-      <link>http://localhost:1313/tags/crt/</link>
+      <title>Coordinate</title>
+      <link>https://xhx.github.io/tags/coordinate/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/crt/</guid>
+      <guid>https://xhx.github.io/tags/coordinate/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cross-Sections</title>
+      <link>https://xhx.github.io/tags/cross-sections/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/cross-sections/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cubes</title>
+      <link>https://xhx.github.io/tags/cubes/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/cubes/</guid>
       <description></description>
     </item>
     <item>
       <title>Curriculum</title>
-      <link>http://localhost:1313/tags/curriculum/</link>
+      <link>https://xhx.github.io/tags/curriculum/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/curriculum/</guid>
+      <guid>https://xhx.github.io/tags/curriculum/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cyclic</title>
+      <link>https://xhx.github.io/tags/cyclic/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/cyclic/</guid>
       <description></description>
     </item>
     <item>
       <title>Diagonals</title>
-      <link>http://localhost:1313/tags/diagonals/</link>
+      <link>https://xhx.github.io/tags/diagonals/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/diagonals/</guid>
+      <guid>https://xhx.github.io/tags/diagonals/</guid>
       <description></description>
     </item>
     <item>
       <title>Digit-Sum-Divisibility-11</title>
-      <link>http://localhost:1313/tags/digit-sum-divisibility-11/</link>
+      <link>https://xhx.github.io/tags/digit-sum-divisibility-11/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/digit-sum-divisibility-11/</guid>
+      <guid>https://xhx.github.io/tags/digit-sum-divisibility-11/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Distance</title>
+      <link>https://xhx.github.io/tags/distance/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/distance/</guid>
       <description></description>
     </item>
     <item>
       <title>Find-Least-Positive-Integer</title>
-      <link>http://localhost:1313/tags/find-least-positive-integer/</link>
+      <link>https://xhx.github.io/tags/find-least-positive-integer/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/find-least-positive-integer/</guid>
+      <guid>https://xhx.github.io/tags/find-least-positive-integer/</guid>
       <description></description>
     </item>
     <item>
       <title>Floor-Function</title>
-      <link>http://localhost:1313/tags/floor-function/</link>
+      <link>https://xhx.github.io/tags/floor-function/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/floor-function/</guid>
+      <guid>https://xhx.github.io/tags/floor-function/</guid>
       <description></description>
     </item>
     <item>
       <title>Floor-Sum-Grouping</title>
-      <link>http://localhost:1313/tags/floor-sum-grouping/</link>
+      <link>https://xhx.github.io/tags/floor-sum-grouping/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/floor-sum-grouping/</guid>
+      <guid>https://xhx.github.io/tags/floor-sum-grouping/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Formulas</title>
+      <link>https://xhx.github.io/tags/formulas/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/formulas/</guid>
       <description></description>
     </item>
     <item>
       <title>Functional-Equation-Plug-X</title>
-      <link>http://localhost:1313/tags/functional-equation-plug-x/</link>
+      <link>https://xhx.github.io/tags/functional-equation-plug-x/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/functional-equation-plug-x/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Gcd</title>
-      <link>http://localhost:1313/tags/gcd/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/gcd/</guid>
+      <guid>https://xhx.github.io/tags/functional-equation-plug-x/</guid>
       <description></description>
     </item>
     <item>
       <title>Geometry</title>
-      <link>http://localhost:1313/tags/geometry/</link>
+      <link>https://xhx.github.io/tags/geometry/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/geometry/</guid>
+      <guid>https://xhx.github.io/tags/geometry/</guid>
       <description></description>
     </item>
     <item>
-      <title>Inclusion-Exclusion</title>
-      <link>http://localhost:1313/tags/inclusion-exclusion/</link>
+      <title>Infinite-Sums</title>
+      <link>https://xhx.github.io/tags/infinite-sums/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/inclusion-exclusion/</guid>
+      <guid>https://xhx.github.io/tags/infinite-sums/</guid>
       <description></description>
     </item>
     <item>
-      <title>Lcm</title>
-      <link>http://localhost:1313/tags/lcm/</link>
+      <title>Inradius</title>
+      <link>https://xhx.github.io/tags/inradius/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/lcm/</guid>
+      <guid>https://xhx.github.io/tags/inradius/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Isometries</title>
+      <link>https://xhx.github.io/tags/isometries/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/isometries/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Law-of-Sines</title>
+      <link>https://xhx.github.io/tags/law-of-sines/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/law-of-sines/</guid>
       <description></description>
     </item>
     <item>
       <title>Linear-Recursion-Explicit</title>
-      <link>http://localhost:1313/tags/linear-recursion-explicit/</link>
+      <link>https://xhx.github.io/tags/linear-recursion-explicit/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/linear-recursion-explicit/</guid>
+      <guid>https://xhx.github.io/tags/linear-recursion-explicit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mass-Points</title>
+      <link>https://xhx.github.io/tags/mass-points/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/mass-points/</guid>
       <description></description>
     </item>
     <item>
       <title>Mathematics</title>
-      <link>http://localhost:1313/tags/mathematics/</link>
+      <link>https://xhx.github.io/tags/mathematics/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/mathematics/</guid>
+      <guid>https://xhx.github.io/tags/mathematics/</guid>
       <description></description>
     </item>
     <item>
-      <title>Miscellaneous</title>
-      <link>http://localhost:1313/tags/miscellaneous/</link>
+      <title>Mid-Segments</title>
+      <link>https://xhx.github.io/tags/mid-segments/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/miscellaneous/</guid>
+      <guid>https://xhx.github.io/tags/mid-segments/</guid>
       <description></description>
     </item>
     <item>
-      <title>Modular-Arithmetic</title>
-      <link>http://localhost:1313/tags/modular-arithmetic/</link>
+      <title>Nested</title>
+      <link>https://xhx.github.io/tags/nested/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/modular-arithmetic/</guid>
+      <guid>https://xhx.github.io/tags/nested/</guid>
       <description></description>
     </item>
     <item>
       <title>Newton-Sum-Symmetric</title>
-      <link>http://localhost:1313/tags/newton-sum-symmetric/</link>
+      <link>https://xhx.github.io/tags/newton-sum-symmetric/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/newton-sum-symmetric/</guid>
+      <guid>https://xhx.github.io/tags/newton-sum-symmetric/</guid>
       <description></description>
     </item>
     <item>
-      <title>Number-Theory</title>
-      <link>http://localhost:1313/tags/number-theory/</link>
+      <title>Number Theory</title>
+      <link>https://xhx.github.io/tags/number-theory/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/number-theory/</guid>
+      <guid>https://xhx.github.io/tags/number-theory/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Parallel</title>
+      <link>https://xhx.github.io/tags/parallel/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/parallel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Patterns</title>
+      <link>https://xhx.github.io/tags/patterns/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/patterns/</guid>
       <description></description>
     </item>
     <item>
       <title>Perfect-Square-Discriminant</title>
-      <link>http://localhost:1313/tags/perfect-square-discriminant/</link>
+      <link>https://xhx.github.io/tags/perfect-square-discriminant/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/perfect-square-discriminant/</guid>
+      <guid>https://xhx.github.io/tags/perfect-square-discriminant/</guid>
       <description></description>
     </item>
     <item>
-      <title>Pie</title>
-      <link>http://localhost:1313/tags/pie/</link>
+      <title>Perimeter</title>
+      <link>https://xhx.github.io/tags/perimeter/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/pie/</guid>
+      <guid>https://xhx.github.io/tags/perimeter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Polygon</title>
+      <link>https://xhx.github.io/tags/polygon/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/polygon/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Power-of-Point</title>
+      <link>https://xhx.github.io/tags/power-of-point/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/power-of-point/</guid>
       <description></description>
     </item>
     <item>
       <title>Practice</title>
-      <link>http://localhost:1313/tags/practice/</link>
+      <link>https://xhx.github.io/tags/practice/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/practice/</guid>
+      <guid>https://xhx.github.io/tags/practice/</guid>
       <description></description>
     </item>
     <item>
-      <title>Precalculus</title>
-      <link>http://localhost:1313/tags/precalculus/</link>
+      <title>Preparation</title>
+      <link>https://xhx.github.io/tags/preparation/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/precalculus/</guid>
+      <guid>https://xhx.github.io/tags/preparation/</guid>
       <description></description>
     </item>
     <item>
       <title>Probability</title>
-      <link>http://localhost:1313/tags/probability/</link>
+      <link>https://xhx.github.io/tags/probability/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/probability/</guid>
+      <guid>https://xhx.github.io/tags/probability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Problem Types</title>
+      <link>https://xhx.github.io/tags/problem-types/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/problem-types/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem-Solving</title>
-      <link>http://localhost:1313/tags/problem-solving/</link>
+      <link>https://xhx.github.io/tags/problem-solving/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/problem-solving/</guid>
+      <guid>https://xhx.github.io/tags/problem-solving/</guid>
       <description></description>
     </item>
     <item>
       <title>Problems</title>
-      <link>http://localhost:1313/tags/problems/</link>
+      <link>https://xhx.github.io/tags/problems/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/problems/</guid>
+      <guid>https://xhx.github.io/tags/problems/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Proportionality</title>
+      <link>https://xhx.github.io/tags/proportionality/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/proportionality/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ptolemy</title>
+      <link>https://xhx.github.io/tags/ptolemy/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/ptolemy/</guid>
       <description></description>
     </item>
     <item>
       <title>Pythagorean</title>
-      <link>http://localhost:1313/tags/pythagorean/</link>
+      <link>https://xhx.github.io/tags/pythagorean/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/pythagorean/</guid>
+      <guid>https://xhx.github.io/tags/pythagorean/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quadrilateral</title>
+      <link>https://xhx.github.io/tags/quadrilateral/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/quadrilateral/</guid>
       <description></description>
     </item>
     <item>
       <title>Radical-Exponent-Manipulation</title>
-      <link>http://localhost:1313/tags/radical-exponent-manipulation/</link>
+      <link>https://xhx.github.io/tags/radical-exponent-manipulation/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/radical-exponent-manipulation/</guid>
+      <guid>https://xhx.github.io/tags/radical-exponent-manipulation/</guid>
       <description></description>
     </item>
     <item>
       <title>Remainder-Theorem-Synthetic</title>
-      <link>http://localhost:1313/tags/remainder-theorem-synthetic/</link>
+      <link>https://xhx.github.io/tags/remainder-theorem-synthetic/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/remainder-theorem-synthetic/</guid>
+      <guid>https://xhx.github.io/tags/remainder-theorem-synthetic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Right-Triangle</title>
+      <link>https://xhx.github.io/tags/right-triangle/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/right-triangle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Right-Triangles</title>
+      <link>https://xhx.github.io/tags/right-triangles/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/right-triangles/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Secant</title>
+      <link>https://xhx.github.io/tags/secant/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/secant/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shoelace</title>
+      <link>https://xhx.github.io/tags/shoelace/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/shoelace/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Similar</title>
+      <link>https://xhx.github.io/tags/similar/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/similar/</guid>
       <description></description>
     </item>
     <item>
       <title>Similar-Triangles</title>
-      <link>http://localhost:1313/tags/similar-triangles/</link>
+      <link>https://xhx.github.io/tags/similar-triangles/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/similar-triangles/</guid>
+      <guid>https://xhx.github.io/tags/similar-triangles/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Slope</title>
+      <link>https://xhx.github.io/tags/slope/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/slope/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Special-Triangles</title>
+      <link>https://xhx.github.io/tags/special-triangles/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/special-triangles/</guid>
       <description></description>
     </item>
     <item>
       <title>Strategies</title>
-      <link>http://localhost:1313/tags/strategies/</link>
+      <link>https://xhx.github.io/tags/strategies/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/strategies/</guid>
+      <guid>https://xhx.github.io/tags/strategies/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Study-Materials</title>
+      <link>https://xhx.github.io/tags/study-materials/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/study-materials/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Study-Strategy</title>
+      <link>https://xhx.github.io/tags/study-strategy/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/study-strategy/</guid>
       <description></description>
     </item>
     <item>
       <title>Syllabus</title>
-      <link>http://localhost:1313/tags/syllabus/</link>
+      <link>https://xhx.github.io/tags/syllabus/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/syllabus/</guid>
+      <guid>https://xhx.github.io/tags/syllabus/</guid>
       <description></description>
     </item>
     <item>
       <title>Symmetric-Sum-Identity-Cubics</title>
-      <link>http://localhost:1313/tags/symmetric-sum-identity-cubics/</link>
+      <link>https://xhx.github.io/tags/symmetric-sum-identity-cubics/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/symmetric-sum-identity-cubics/</guid>
+      <guid>https://xhx.github.io/tags/symmetric-sum-identity-cubics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Symmetry</title>
+      <link>https://xhx.github.io/tags/symmetry/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/symmetry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tangency</title>
+      <link>https://xhx.github.io/tags/tangency/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/tangency/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tangent</title>
+      <link>https://xhx.github.io/tags/tangent/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/tangent/</guid>
       <description></description>
     </item>
     <item>
       <title>Techniques</title>
-      <link>http://localhost:1313/tags/techniques/</link>
+      <link>https://xhx.github.io/tags/techniques/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/techniques/</guid>
+      <guid>https://xhx.github.io/tags/techniques/</guid>
       <description></description>
     </item>
     <item>
       <title>Telescoping-Partial-Fraction</title>
-      <link>http://localhost:1313/tags/telescoping-partial-fraction/</link>
+      <link>https://xhx.github.io/tags/telescoping-partial-fraction/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/telescoping-partial-fraction/</guid>
+      <guid>https://xhx.github.io/tags/telescoping-partial-fraction/</guid>
       <description></description>
     </item>
     <item>
       <title>Theorem</title>
-      <link>http://localhost:1313/tags/theorem/</link>
+      <link>https://xhx.github.io/tags/theorem/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/theorem/</guid>
+      <guid>https://xhx.github.io/tags/theorem/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tips</title>
+      <link>https://xhx.github.io/tags/tips/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/tips/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Topic-Guides</title>
+      <link>https://xhx.github.io/tags/topic-guides/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/topic-guides/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Transformations</title>
+      <link>https://xhx.github.io/tags/transformations/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/transformations/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Trapezoids</title>
+      <link>https://xhx.github.io/tags/trapezoids/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/trapezoids/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Triangles</title>
+      <link>https://xhx.github.io/tags/triangles/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/triangles/</guid>
       <description></description>
     </item>
     <item>
       <title>Tricks</title>
-      <link>http://localhost:1313/tags/tricks/</link>
+      <link>https://xhx.github.io/tags/tricks/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/tricks/</guid>
+      <guid>https://xhx.github.io/tags/tricks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Triples</title>
+      <link>https://xhx.github.io/tags/triples/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/triples/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AM-GM</title>
+      <link>https://xhx.github.io/tags/am-gm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/am-gm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AMC12</title>
+      <link>https://xhx.github.io/tags/amc12/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/amc12/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>At Least</title>
+      <link>https://xhx.github.io/tags/at-least/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/at-least/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>At Most</title>
+      <link>https://xhx.github.io/tags/at-most/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/at-most/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Balls in Bins</title>
+      <link>https://xhx.github.io/tags/balls-in-bins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/balls-in-bins/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bayes</title>
+      <link>https://xhx.github.io/tags/bayes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/bayes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Binomial</title>
+      <link>https://xhx.github.io/tags/binomial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/binomial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bounds</title>
+      <link>https://xhx.github.io/tags/bounds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/bounds/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Circular</title>
+      <link>https://xhx.github.io/tags/circular/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/circular/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Coin</title>
+      <link>https://xhx.github.io/tags/coin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/coin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Combinations</title>
+      <link>https://xhx.github.io/tags/combinations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/combinations/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Committees</title>
+      <link>https://xhx.github.io/tags/committees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/committees/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Complex Numbers</title>
+      <link>https://xhx.github.io/tags/complex-numbers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/complex-numbers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Concepts</title>
+      <link>https://xhx.github.io/tags/concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/concepts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Conditional</title>
+      <link>https://xhx.github.io/tags/conditional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/conditional/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Congruences</title>
+      <link>https://xhx.github.io/tags/congruences/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/congruences/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Conics</title>
+      <link>https://xhx.github.io/tags/conics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/conics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Coordinate Geometry</title>
+      <link>https://xhx.github.io/tags/coordinate-geometry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/coordinate-geometry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Counting</title>
+      <link>https://xhx.github.io/tags/counting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/counting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cycles</title>
+      <link>https://xhx.github.io/tags/cycles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/cycles/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>De Moivre</title>
+      <link>https://xhx.github.io/tags/de-moivre/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/de-moivre/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Derangements</title>
+      <link>https://xhx.github.io/tags/derangements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/derangements/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Digits</title>
+      <link>https://xhx.github.io/tags/digits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/digits/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Diophantine</title>
+      <link>https://xhx.github.io/tags/diophantine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/diophantine/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Distributions</title>
+      <link>https://xhx.github.io/tags/distributions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/distributions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Divisibility</title>
+      <link>https://xhx.github.io/tags/divisibility/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/divisibility/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dot Product</title>
+      <link>https://xhx.github.io/tags/dot-product/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/dot-product/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Equations</title>
+      <link>https://xhx.github.io/tags/equations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/equations/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Euler</title>
+      <link>https://xhx.github.io/tags/euler/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/euler/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Expected Value</title>
+      <link>https://xhx.github.io/tags/expected-value/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/expected-value/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Exponents</title>
+      <link>https://xhx.github.io/tags/exponents/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/exponents/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fermat</title>
+      <link>https://xhx.github.io/tags/fermat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/fermat/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Functional Equations</title>
+      <link>https://xhx.github.io/tags/functional-equations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/functional-equations/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Functions</title>
+      <link>https://xhx.github.io/tags/functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/functions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Generating Functions</title>
+      <link>https://xhx.github.io/tags/generating-functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/generating-functions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Grid Paths</title>
+      <link>https://xhx.github.io/tags/grid-paths/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/grid-paths/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Heuristics</title>
+      <link>https://xhx.github.io/tags/heuristics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/heuristics/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>http://localhost:1313/tags/hugo/</link>
+      <link>https://xhx.github.io/tags/hugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/hugo/</guid>
+      <guid>https://xhx.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hypergeometric</title>
+      <link>https://xhx.github.io/tags/hypergeometric/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/hypergeometric/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Identities</title>
+      <link>https://xhx.github.io/tags/identities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/identities/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inclusion-Exclusion</title>
+      <link>https://xhx.github.io/tags/inclusion-exclusion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/inclusion-exclusion/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Independence</title>
+      <link>https://xhx.github.io/tags/independence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/independence/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Indicators</title>
+      <link>https://xhx.github.io/tags/indicators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/indicators/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inequalities</title>
+      <link>https://xhx.github.io/tags/inequalities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/inequalities/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Integer Solutions</title>
+      <link>https://xhx.github.io/tags/integer-solutions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/integer-solutions/</guid>
       <description></description>
     </item>
     <item>
       <title>Introduction</title>
-      <link>http://localhost:1313/tags/introduction/</link>
+      <link>https://xhx.github.io/tags/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/introduction/</guid>
+      <guid>https://xhx.github.io/tags/introduction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Invariants</title>
+      <link>https://xhx.github.io/tags/invariants/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/invariants/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Last Digits</title>
+      <link>https://xhx.github.io/tags/last-digits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/last-digits/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lattice</title>
+      <link>https://xhx.github.io/tags/lattice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/lattice/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linear</title>
+      <link>https://xhx.github.io/tags/linear/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/linear/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Logarithms</title>
+      <link>https://xhx.github.io/tags/logarithms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/logarithms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Math</title>
+      <link>https://xhx.github.io/tags/math/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/math/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Modular Arithmetic</title>
+      <link>https://xhx.github.io/tags/modular-arithmetic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/modular-arithmetic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Multinomial</title>
+      <link>https://xhx.github.io/tags/multinomial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/multinomial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Notation</title>
+      <link>https://xhx.github.io/tags/notation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/notation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Orders</title>
+      <link>https://xhx.github.io/tags/orders/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/orders/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Permutations</title>
+      <link>https://xhx.github.io/tags/permutations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/permutations/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PIE</title>
+      <link>https://xhx.github.io/tags/pie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/pie/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pigeonhole</title>
+      <link>https://xhx.github.io/tags/pigeonhole/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/pigeonhole/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Polar Form</title>
+      <link>https://xhx.github.io/tags/polar-form/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/polar-form/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Polynomials</title>
+      <link>https://xhx.github.io/tags/polynomials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/polynomials/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Precalculus</title>
+      <link>https://xhx.github.io/tags/precalculus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/precalculus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Primes</title>
+      <link>https://xhx.github.io/tags/primes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/primes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Principles</title>
+      <link>https://xhx.github.io/tags/principles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/principles/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Projections</title>
+      <link>https://xhx.github.io/tags/projections/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/projections/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quadratic</title>
+      <link>https://xhx.github.io/tags/quadratic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/quadratic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Random</title>
+      <link>https://xhx.github.io/tags/random/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/random/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rational Functions</title>
+      <link>https://xhx.github.io/tags/rational-functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/rational-functions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rearrangements</title>
+      <link>https://xhx.github.io/tags/rearrangements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/rearrangements/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Recurrences</title>
+      <link>https://xhx.github.io/tags/recurrences/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/recurrences/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reference</title>
+      <link>https://xhx.github.io/tags/reference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/reference/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Remainders</title>
+      <link>https://xhx.github.io/tags/remainders/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/remainders/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Restrictions</title>
+      <link>https://xhx.github.io/tags/restrictions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/restrictions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rotations</title>
+      <link>https://xhx.github.io/tags/rotations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/rotations/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scope</title>
+      <link>https://xhx.github.io/tags/scope/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/scope/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Seating</title>
+      <link>https://xhx.github.io/tags/seating/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/seating/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Selection</title>
+      <link>https://xhx.github.io/tags/selection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/selection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sequences</title>
+      <link>https://xhx.github.io/tags/sequences/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/sequences/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Series</title>
+      <link>https://xhx.github.io/tags/series/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/series/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Stars and Bars</title>
+      <link>https://xhx.github.io/tags/stars-and-bars/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/stars-and-bars/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Strategy</title>
+      <link>https://xhx.github.io/tags/strategy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/strategy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Strings</title>
+      <link>https://xhx.github.io/tags/strings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/strings/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Study Guide</title>
+      <link>https://xhx.github.io/tags/study-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/study-guide/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Substitutions</title>
+      <link>https://xhx.github.io/tags/substitutions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/substitutions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Topics</title>
+      <link>https://xhx.github.io/tags/topics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/topics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Trigonometry</title>
+      <link>https://xhx.github.io/tags/trigonometry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/trigonometry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Unit Circle</title>
+      <link>https://xhx.github.io/tags/unit-circle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/unit-circle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Urn</title>
+      <link>https://xhx.github.io/tags/urn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/urn/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vectors</title>
+      <link>https://xhx.github.io/tags/vectors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/vectors/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vieta</title>
+      <link>https://xhx.github.io/tags/vieta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/vieta/</guid>
       <description></description>
     </item>
     <item>
       <title>Website</title>
-      <link>http://localhost:1313/tags/website/</link>
+      <link>https://xhx.github.io/tags/website/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/website/</guid>
+      <guid>https://xhx.github.io/tags/website/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Words</title>
+      <link>https://xhx.github.io/tags/words/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/tags/words/</guid>
       <description></description>
     </item>
   </channel>

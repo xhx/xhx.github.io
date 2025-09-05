@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Notation on Xiaohui Xie&#39;s Site</title>
+    <link>https://xhx.github.io/tags/notation/</link>
+    <description>Recent content in Notation on Xiaohui Xie&#39;s Site</description>
+    <generator>Hugo -- 0.149.0</generator>
+    <language>en-us</language>
+    <atom:link href="https://xhx.github.io/tags/notation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notation Cheatsheet</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/notation-cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/notation-cheatsheet/</guid>
+      <description>Essential symbols, operations, and probability notation for AMC counting and probability problems.</description>
+    </item>
+    <item>
+      <title>Notation Cheatsheet</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/notation-cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/notation-cheatsheet/</guid>
+      <description>Essential symbols, functions, and mathematical notation for AMC precalculus problems.</description>
+    </item>
+    <item>
+      <title>Notation Cheatsheet</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/reference/notation-cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/reference/notation-cheatsheet/</guid>
+      <description>Quick reference for number theory symbols, conventions, and usage cues.</description>
+    </item>
+  </channel>
+</rss>

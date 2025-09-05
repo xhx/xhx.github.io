@@ -134,15 +134,32 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Congruence Problems
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Congruence Problems Example (AMC-style) Problem. Find the least positive integer $n$ such that
+$$n \equiv 5 \pmod{7}, \quad n \equiv 4 \pmod{9}, \quad n &gt; 100$$
+(A very similar setup has appeared multiple times on the AMC 10.)
+1. Translate the statement into congruences The phrase “least positive integer $n$ such that …” almost always leads to modular arithmetic constraints plus a size bound:
+$n \equiv 5 \pmod{7}$ (“remainder 5 when divided by 7”) $n \equiv 4 \pmod{9}$ (“remainder 4 when divided by 9”) $n &gt; 100$ (the bounding inequality) 2. Solve the congruences first (ignore the bound for a moment) Take the simpler modulus (7) and write
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Congruence Problems" href="http://localhost:1313/notes/math/amc/amc10/number-theory/congruence-problems/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Chinese Remainder Theorem (CRT)
     </h2>
   </header>
   <div class="entry-content">
     <p>Chinese Remainder Theorem (CRT) The Chinese Remainder Theorem (CRT) is a powerful tool in number theory that lets you solve systems of modular congruences when the moduli are pairwise coprime.
-🔷 Chinese Remainder Theorem (Statement) Let m1,m2,…,mkm_1, m_2, \dots, m_k be pairwise coprime positive integers (i.e., gcd⁡(mi,mj)=1\gcd(m_i, m_j) = 1 for all i≠ji \ne j).
-Let a1,a2,…,aka_1, a_2, \dots, a_k be any integers.
+Chinese Remainder Theorem (Statement) Let $m_1, m_2, \ldots, m_k$ be pairwise coprime positive integers (i.e., $\gcd(m_i, m_j) = 1$ for all $i \neq j$).
+Let $a_1, a_2, \ldots, a_k$ be any integers.
 Then the system of congruences:
-{x≡a1mod m1x≡a2mod m2⋮x≡akmod mk\begin{cases} x \equiv a_1 \mod m_1 \ x \equiv a_2 \mod m_2 \ \vdots \ x \equiv a_k \mod m_k \ \end{cases}
+$$\begin{cases} x \equiv a_1 \pmod{m_1} \ x \equiv a_2 \pmod{m_2} \ \vdots \ x \equiv a_k \pmod{m_k} \end{cases}$$
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Xiaohui Xie</footer>

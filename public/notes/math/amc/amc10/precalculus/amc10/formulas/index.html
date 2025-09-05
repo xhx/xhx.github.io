@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Essential Formulas | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Precalculus, Formulas, Reference">
+<meta name="description" content="Quick reference for all essential precalculus formulas with usage examples.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/precalculus/amc10/formulas/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/notes/math/amc/amc10/precalculus/amc10/formulas/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/precalculus/amc10/formulas/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/precalculus/amc10/">Precalculus Mastery Guide</a></div>
+  <h1>
+    Essential Formulas
+    <a href="/notes/math/amc/amc10/precalculus/amc10/formulas/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+  <div class="post-description">
+    Quick reference for all essential precalculus formulas with usage examples.
+  </div>
+</header>
+<div class="post-content"><h1 id="-essential-formulas">📏 Essential Formulas<a hidden class="anchor" aria-hidden="true" href="#-essential-formulas">#</a></h1>
+<p>Quick reference for all essential precalculus formulas with usage examples and micro-examples.</p>
+<h2 id="-how-to-use-this-section">🎯 How to Use This Section<a hidden class="anchor" aria-hidden="true" href="#-how-to-use-this-section">#</a></h2>
+<ol>
+<li><strong>Quick Lookup</strong> - Find formulas by topic</li>
+<li><strong>Usage Examples</strong> - See how each formula applies</li>
+<li><strong>Memory Aids</strong> - Use patterns to remember formulas</li>
+<li><strong>Practice</strong> - Apply formulas to AMC problems</li>
+</ol>
+<h2 id="-formula-categories">📚 Formula Categories<a hidden class="anchor" aria-hidden="true" href="#-formula-categories">#</a></h2>
+<h3 id="-complete-formula-bank">🔢 <a href="/precalculus/formulas/essential-formulas">Complete Formula Bank</a><a hidden class="anchor" aria-hidden="true" href="#-complete-formula-bank">#</a></h3>
+<p>Comprehensive collection of all essential formulas organized by topic.</p>
+<h2 id="-quick-formula-finder">🎯 Quick Formula Finder<a hidden class="anchor" aria-hidden="true" href="#-quick-formula-finder">#</a></h2>
+<h3 id="functions--transformations"><strong>Functions &amp; Transformations</strong><a hidden class="anchor" aria-hidden="true" href="#functions--transformations">#</a></h3>
+<ul>
+<li>Domain restrictions, inverse functions, composition</li>
+<li>Transformations: shifts, scales, reflections</li>
+</ul>
+<h3 id="polynomials--rational-functions"><strong>Polynomials &amp; Rational Functions</strong><a hidden class="anchor" aria-hidden="true" href="#polynomials--rational-functions">#</a></h3>
+<ul>
+<li>Vieta&rsquo;s formulas, remainder theorem, factoring</li>
+<li>Asymptotes, partial fractions</li>
+</ul>
+<h3 id="exponents--logarithms"><strong>Exponents &amp; Logarithms</strong><a hidden class="anchor" aria-hidden="true" href="#exponents--logarithms">#</a></h3>
+<ul>
+<li>Laws of exponents, logarithm properties</li>
+<li>Change of base, growth/decay formulas</li>
+</ul>
+<h3 id="trigonometry"><strong>Trigonometry</strong><a hidden class="anchor" aria-hidden="true" href="#trigonometry">#</a></h3>
+<ul>
+<li>Unit circle values, identities, laws of sines/cosines</li>
+<li>Addition formulas, double/half angles</li>
+</ul>
+<h3 id="complex-numbers"><strong>Complex Numbers</strong><a hidden class="anchor" aria-hidden="true" href="#complex-numbers">#</a></h3>
+<ul>
+<li>Polar form, De Moivre&rsquo;s theorem, roots of unity</li>
+<li>Complex arithmetic, geometric interpretations</li>
+</ul>
+<h3 id="sequences--series"><strong>Sequences &amp; Series</strong><a hidden class="anchor" aria-hidden="true" href="#sequences--series">#</a></h3>
+<ul>
+<li>Arithmetic/geometric sequences, telescoping</li>
+<li>Binomial theorem, partial sums</li>
+</ul>
+<h3 id="coordinate-geometry"><strong>Coordinate Geometry</strong><a hidden class="anchor" aria-hidden="true" href="#coordinate-geometry">#</a></h3>
+<ul>
+<li>Distance, midpoint, line equations</li>
+<li>Circle equations, area formulas</li>
+</ul>
+<h3 id="inequalities"><strong>Inequalities</strong><a hidden class="anchor" aria-hidden="true" href="#inequalities">#</a></h3>
+<ul>
+<li>AM-GM, Cauchy-Schwarz, triangle inequality</li>
+<li>Optimization techniques</li>
+</ul>
+<h2 id="-formula-usage-tips">💡 Formula Usage Tips<a hidden class="anchor" aria-hidden="true" href="#-formula-usage-tips">#</a></h2>
+<ol>
+<li><strong>Memorize the essentials</strong> - Focus on most frequently used formulas</li>
+<li><strong>Understand the context</strong> - Know when to apply each formula</li>
+<li><strong>Practice applications</strong> - Work through examples to build fluency</li>
+<li><strong>Check your work</strong> - Verify formulas are applied correctly</li>
+</ol>
+<h2 id="-study-strategy">📋 Study Strategy<a hidden class="anchor" aria-hidden="true" href="#-study-strategy">#</a></h2>
+<ul>
+<li><strong>Week 1</strong>: Master basic formulas (functions, polynomials, trig basics)</li>
+<li><strong>Week 2</strong>: Add advanced formulas (complex numbers, sequences, inequalities)</li>
+<li><strong>Week 3</strong>: Practice applications and problem-solving</li>
+<li><strong>Week 4</strong>: Review and refine formula usage</li>
+</ul>
+<hr>
+<p><strong>Next</strong>: <a href="/precalculus/formulas/essential-formulas">Complete Formula Bank</a></p>
+
+
+</div>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Complete Formula Bank
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>📏 Complete Formula Bank Comprehensive collection of all essential precalculus formulas with usage examples and micro-examples.
+🔄 Functions &amp; Transformations Domain Restrictions Square roots: $\sqrt{f(x)}$ requires $f(x) \geq 0$ Logarithms: $\log_a f(x)$ requires $f(x) &gt; 0$ and $a &gt; 0, a \neq 1$ Fractions: $\frac{f(x)}{g(x)}$ requires $g(x) \neq 0$ Example: Domain of $\sqrt{x-2} &#43; \log(x&#43;1)$ is $x \geq 2$ and $x &gt; -1$ → $x \geq 2$
+Function Composition $(f \circ g)(x) = f(g(x))$ (apply $g$ first, then $f$) $(f \circ g)^{-1} = g^{-1} \circ f^{-1}$ (reverse order for inverses) Example: If $f(x) = x^2$ and $g(x) = x&#43;1$, then $(f \circ g)(x) = f(x&#43;1) = (x&#43;1)^2$
+...</p>
+  </div>
+  <footer class="entry-footer">6 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Complete Formula Bank" href="http://localhost:1313/notes/math/amc/amc10/precalculus/amc10/formulas/essential-formulas/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

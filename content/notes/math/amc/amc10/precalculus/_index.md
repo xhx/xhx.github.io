@@ -1,19 +1,63 @@
 ---
-title: "Precalculus / Miscellaneous"
-description: "AMC 10 Precalculus and miscellaneous topics"
-date: 2024-01-01
+title: "Precalculus Mastery Guide"
+description: "Comprehensive AMC 10 & AMC 12 precalculus preparation with visual guides, problem patterns, and essential formulas."
+tags: ["AMC10","AMC12","Precalculus","Study Guide","Mathematics"]
+weight: 1
 draft: false
-type: "notes"
-categories: ["math", "amc", "precalculus"]
-tags: ["amc10", "precalculus", "miscellaneous", "mathematics", "competition"]
-weight: 5
+ShowToc: true
 ---
 
-# 📏 Precalculus / Miscellaneous
+# 🎯 Precalculus Mastery Guide
 
-- Sequences and series (arithmetic, geometric)
-- Functions and functional equations
-- Logarithms (rarely)
-- Complex numbers (basic)
-- Vectors (basic)
-- Logic and set notation (basic)
+Welcome to your comprehensive **AMC 10 & AMC 12 Precalculus** preparation hub! This guide is designed to take you from basic concepts to competition-ready problem-solving mastery.
+
+## 🗺️ Quick Navigation
+
+### 📚 [Reference Materials](/notes/math/amc/amc10/precalculus/reference/)
+- **Scope Map**: AMC 10 vs AMC 12 topic coverage
+- **Notation Cheatsheet**: Essential symbols and conventions
+- **Concept Atlas**: Quick primers on all major topics
+
+### 🧭 [Topic Guides](/notes/math/amc/amc10/precalculus/topics/)
+Core precalculus concepts with AMC-focused examples:
+- **Functions & Transformations** - domains, ranges, inverses, shifts
+- **Equations & Inequalities** - absolute value, systems, AM-GM
+- **Polynomials & Rational Functions** - Vieta's formulas, asymptotes
+- **Exponents & Logarithms** - laws, change-of-base, growth/decay
+- **Trigonometry** - unit circle, identities, laws of sines/cosines
+- **Complex Numbers** - algebra, polar form, De Moivre's theorem
+- **Sequences & Series** - arithmetic/geometric, telescoping
+- **Coordinate Geometry** - lines, circles, conics (AMC 12)
+
+### 🧩 [Problem Types](/notes/math/amc/amc10/precalculus/problem-types/)
+Pattern recognition and solution templates:
+- **Trig Equations & Identities** - solving strategies
+- **Logarithm & Exponential** - equation solving techniques
+- **Polynomial Manipulation** - Vieta's, remainder theorem
+- **Complex Number Geometry** - rotations, loci, roots of unity
+- **Inequality Techniques** - AM-GM, Cauchy-Schwarz
+
+### 📏 [Essential Formulas](/notes/math/amc/amc10/precalculus/formulas/)
+Quick reference for all key formulas with usage examples.
+
+### 💡 [Problem-Solving Tips](/notes/math/amc/amc10/precalculus/tips/)
+Strategic approaches, checklists, and timing advice.
+
+## 🎯 How to Use This Guide
+
+1. **Start with Reference** - Get familiar with notation and scope
+2. **Study Topics** - Work through each topic systematically
+3. **Practice Patterns** - Use problem types to recognize common patterns
+4. **Memorize Formulas** - Keep essential formulas at your fingertips
+5. **Apply Tips** - Use strategic approaches during practice
+
+## 🏆 AMC Success Strategy
+
+- **AMC 10**: Focus on core topics, master basic techniques
+- **AMC 12**: Add advanced topics, develop sophisticated problem-solving
+- **Practice**: Work through past problems using these patterns
+- **Timing**: Learn to recognize and apply techniques quickly
+
+---
+
+**Ready to begin?** Start with the [Reference Materials](/notes/math/amc/amc10/precalculus/reference/) to understand the scope, then dive into [Topic Guides](/notes/math/amc/amc10/precalculus/topics/) for detailed study.

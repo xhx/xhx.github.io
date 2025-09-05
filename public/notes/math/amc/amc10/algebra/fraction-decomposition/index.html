@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Fraction (Partial) Decomposition | Xiaohui Xie&#39;s Site</title>
 <meta name="keywords" content="">
 <meta name="description" content="A structured guide to partial fraction decomposition: linear, repeated, and quadratic factors. Includes method, examples, and applications.">
 <meta name="author" content="Compiled by ChatGPT">
-<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/algebra/fraction-decomposition/">
+<link rel="canonical" href="https://xhx.github.io/notes/math/amc/amc10/algebra/fraction-decomposition/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://xhx.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/algebra/fraction-decomposition/">
+<link rel="alternate" hreflang="en" href="https://xhx.github.io/notes/math/amc/amc10/algebra/fraction-decomposition/">
 <noscript>
     <style>
         #theme-toggle,
@@ -70,7 +70,97 @@
         });"></script>
 
 
+<meta property="og:url" content="https://xhx.github.io/notes/math/amc/amc10/algebra/fraction-decomposition/">
+  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
+  <meta property="og:title" content="Fraction (Partial) Decomposition">
+  <meta property="og:description" content="A structured guide to partial fraction decomposition: linear, repeated, and quadratic factors. Includes method, examples, and applications.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-09-02T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-09-02T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Fraction (Partial) Decomposition">
+<meta name="twitter:description" content="A structured guide to partial fraction decomposition: linear, repeated, and quadratic factors. Includes method, examples, and applications.">
 
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Notes",
+      "item": "https://xhx.github.io/notes/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Mathematics Notes",
+      "item": "https://xhx.github.io/notes/math/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "AMC Problems",
+      "item": "https://xhx.github.io/notes/math/amc/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "AMC 10",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Algebra",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/algebra/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Fraction (Partial) Decomposition",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/algebra/fraction-decomposition/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Fraction (Partial) Decomposition",
+  "name": "Fraction (Partial) Decomposition",
+  "description": "A structured guide to partial fraction decomposition: linear, repeated, and quadratic factors. Includes method, examples, and applications.",
+  "keywords": [
+    
+  ],
+  "articleBody": "➗ Fraction Decomposition Fraction decomposition is a method of expressing a complex rational function as a sum of simpler fractions.\nThis technique, commonly known as partial fraction decomposition, is particularly useful in:\nCalculus → integrating rational functions Algebra → simplifying rational expressions Number theory \u0026 competitions → telescoping sums 📝 General Process Factor the denominator completely. Decompose the fraction into simpler terms according to the factors. Solve for the unknown coefficients by equating coefficients or substituting values of $x$. 📘 Types of Denominators and Decomposition 1. Linear Factors If the denominator has distinct linear factors $(x+a)$:\n$$ \\frac{x + 2}{(x + 1)(x + 3)} = \\frac{A}{x + 1} + \\frac{B}{x + 3} $$\nHere $A$ and $B$ are constants to determine.\n2. Repeated Linear Factors If a linear factor is repeated:\n$$ \\frac{x - 4}{(x + 1)(x + 2)^2} = \\frac{A}{x + 1} + \\frac{B}{x + 2} + \\frac{C}{(x + 2)^2} $$\nThe power $(x+2)^2$ requires terms for both first and second powers.\n3. Higher-Order (Quadratic) Factors If the denominator includes irreducible quadratic factors (cannot be factored over reals):\n$$ \\frac{x^2 + 3x - 5}{(x - 2)(x^2 + 16)} = \\frac{A}{x - 2} + \\frac{Bx + C}{x^2 + 16} $$\nFor quadratic denominators, the numerator must be linear ($Bx+C$). 🔎 General Method Factorize the denominator into linear and irreducible quadratic factors. Set up decomposition: For each linear $(x-a)$ → term $\\tfrac{A}{x-a}$. For repeated $(x-a)^n$ → include $\\tfrac{A}{x-a}, \\tfrac{B}{(x-a)^2}, \\dots, \\tfrac{C}{(x-a)^n}$. For irreducible $x^2+bx+c$ → include $\\tfrac{Bx+C}{x^2+bx+c}$. Clear denominators by multiplying through. Solve for coefficients: Equating coefficients of powers of $x$, or Plugging in strategic values of $x$. 🧮 Example Problem Decompose:\n$$ \\frac{2x^2 + 5x + 7}{(x - 1)(x^2 + 1)}. $$\nStep 1: Factor denominator Denominator = $(x - 1)(x^2 + 1)$\n$(x-1)$ is linear $(x^2+1)$ is irreducible quadratic Step 2: Set up decomposition $$ \\frac{2x^2 + 5x + 7}{(x - 1)(x^2 + 1)} = \\frac{A}{x - 1} + \\frac{Bx + C}{x^2 + 1} $$\nStep 3: Clear denominators Multiply both sides by $(x-1)(x^2+1)$:\n$$ 2x^2 + 5x + 7 = A(x^2+1) + (Bx + C)(x-1) $$\nStep 4: Expand \u0026 Collect $$ 2x^2 + 5x + 7 = A(x^2+1) + (Bx^2 - Bx + Cx - C) $$\n$$ = (A + B)x^2 + (C - B)x + (A - C) $$\nStep 5: Compare coefficients Match coefficients with LHS $2x^2 + 5x + 7$:\n$A + B = 2$ $C - B = 5$ $A - C = 7$ Solve this system to find $A, B, C$.\n📌 Applications Simplifying rational expressions in algebra contests Evaluating telescoping sums Integration of rational functions in calculus Solving differential equations ✅ Summary Partial fraction decomposition rewrites:\n$$ \\frac{P(x)}{Q(x)} $$\ninto a sum of simpler terms, making algebra and calculus problems much easier.\n🔑 Remember:\nFactor the denominator. Assign terms according to factor type (linear, repeated, quadratic). Solve for constants. ",
+  "wordCount" : "479",
+  "inLanguage": "en",
+  "datePublished": "2025-09-02T00:00:00Z",
+  "dateModified": "2025-09-02T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Compiled by ChatGPT"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xhx.github.io/notes/math/amc/amc10/algebra/fraction-decomposition/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Xiaohui Xie's Site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xhx.github.io/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -88,7 +178,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -120,7 +210,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/algebra/">Algebra</a></div>
+    <div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/">Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/algebra/">Algebra</a></div>
     <h1 class="post-title entry-hint-parent">
       Fraction (Partial) Decomposition
     </h1>
@@ -266,7 +356,7 @@ $$</p>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
 
     
 </footer>

@@ -1,256 +1,809 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Geometry on Xiaohui Xie&#39;s Site</title>
-    <link>http://localhost:1313/notes/math/amc/amc10/geometry/</link>
-    <description>Recent content in Geometry on Xiaohui Xie&#39;s Site</description>
+    <title>AMC 10 Geometry Mastery Guide on Xiaohui Xie&#39;s Site</title>
+    <link>https://xhx.github.io/notes/math/amc/amc10/geometry/</link>
+    <description>Recent content in AMC 10 Geometry Mastery Guide on Xiaohui Xie&#39;s Site</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 03 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/notes/math/amc/amc10/geometry/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://xhx.github.io/notes/math/amc/amc10/geometry/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Absolute‑Value Inequality</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/problems/absolute-value-inequality/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/absolute-value-inequality/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/problems/absolute-value-inequality/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/absolute-value-inequality/</guid>
       <description>AMC 10 Algebra: Absolute‑Value Inequality</description>
     </item>
     <item>
       <title>Altitude–Created Similar Triangles</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/altitude-created-similar-triangles/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/altitude-created-similar-triangles/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/altitude-created-similar-triangles/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/altitude-created-similar-triangles/</guid>
       <description>AMC 10 Geometry: Altitude–Created Similar Triangles</description>
     </item>
     <item>
       <title>AM–GM / Bounding Inequality Technique</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/problems/am-gm-bounding-inequality/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/am-gm-bounding-inequality/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/problems/am-gm-bounding-inequality/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/am-gm-bounding-inequality/</guid>
       <description>AMC 10 Algebra: AM–GM / Bounding Inequality Technique</description>
     </item>
     <item>
       <title>Binomial‑Theorem Coefficient Technique</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/problems/binomial-theorem-coefficient/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/binomial-theorem-coefficient/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/problems/binomial-theorem-coefficient/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/binomial-theorem-coefficient/</guid>
       <description>AMC 10 Algebra: Binomial‑Theorem Coefficient Technique</description>
     </item>
     <item>
-      <title>Digit-Sum &amp; Divisibility-by-11 Technique</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/problems/digit-sum-divisibility-11/</link>
+      <title>Cevians, Concurrency, and Mass-Points</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/cevians-concurrency-mass-points/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/problems/digit-sum-divisibility-11/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/cevians-concurrency-mass-points/</guid>
+      <description>AMC 10 Geometry: Cevians, Concurrency, and Mass-Points</description>
+    </item>
+    <item>
+      <title>Circle Tangent to Two Lines and a Circle</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/circle-tangent-two-lines/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/circle-tangent-two-lines/</guid>
+      <description>AMC 10 Geometry: Circle Tangent to Two Lines and a Circle</description>
+    </item>
+    <item>
+      <title>Circumradius via the Extended Law of Sines</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/circumradius-extended-law-sines/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/circumradius-extended-law-sines/</guid>
+      <description>AMC 10 Geometry: Circumradius via the Extended Law of Sines</description>
+    </item>
+    <item>
+      <title>Coordinate-Bash Distance, Slope, and Midpoint Tricks</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/coordinate-bash-distance-slope/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/coordinate-bash-distance-slope/</guid>
+      <description>AMC 10 Geometry: Coordinate-Bash Distance, Slope, and Midpoint Tricks</description>
+    </item>
+    <item>
+      <title>Cross-Sections of Cubes &amp; Prisms</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/cross-sections-cubes-prisms/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/cross-sections-cubes-prisms/</guid>
+      <description>AMC 10 Geometry: Cross-Sections of Cubes &amp;amp; Prisms</description>
+    </item>
+    <item>
+      <title>Cyclic-Quadrilateral Angle Chases</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/cyclic-quadrilateral-angle-chases/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/cyclic-quadrilateral-angle-chases/</guid>
+      <description>AMC 10 Geometry: Cyclic-Quadrilateral Angle Chases</description>
+    </item>
+    <item>
+      <title>Cyclic-Quadrilateral Length Ratios (Ptolemy&#39;s Theorem Power-Ups)</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/cyclic-quadrilateral-length-ratios/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/cyclic-quadrilateral-length-ratios/</guid>
+      <description>AMC 10 Geometry: Cyclic-Quadrilateral Length Ratios (Ptolemy&amp;#39;s Theorem Power-Ups)</description>
+    </item>
+    <item>
+      <title>Detailed Topic Guides</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/topic-guides/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/topic-guides/</guid>
+      <description>Comprehensive guides for each AMC 10 geometry topic with study materials and practice links</description>
+    </item>
+    <item>
+      <title>Digit-Sum &amp; Divisibility-by-11 Technique</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/digit-sum-divisibility-11/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/digit-sum-divisibility-11/</guid>
       <description>AMC 10 Algebra: Digit-Sum &amp;amp; Divisibility-by-11 Technique</description>
     </item>
     <item>
       <title>Find Least Positive Integer</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/problems/find-least-positive-integer/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/find-least-positive-integer/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/problems/find-least-positive-integer/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/find-least-positive-integer/</guid>
       <description>AMC 10 Algebra: Find Least Positive Integer</description>
     </item>
     <item>
       <title>Floor Function Bounding</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/problems/floor-function-bounding/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/floor-function-bounding/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/problems/floor-function-bounding/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/floor-function-bounding/</guid>
       <description>AMC 10 Algebra: Floor function bounding techniques</description>
     </item>
     <item>
       <title>Floor‑Sum Grouping by Perfect Squares</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/problems/floor-sum-grouping/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/floor-sum-grouping/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/problems/floor-sum-grouping/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/floor-sum-grouping/</guid>
       <description>AMC 10 Algebra: Floor‑Sum Grouping by Perfect Squares</description>
     </item>
     <item>
       <title>Functional‑Equation “Plug x &amp; 1 − x” Technique</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/problems/functional-equation-plug-x/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/functional-equation-plug-x/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/problems/functional-equation-plug-x/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/functional-equation-plug-x/</guid>
       <description>AMC 10 Algebra: Functional‑Equation “Plug x &amp;amp; 1 − x” Technique</description>
     </item>
     <item>
-      <title>Linear Recursion → Explicit Formula Technique</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/problems/linear-recursion-explicit/</link>
+      <title>Geometric Probability</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/geometric-probability/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/problems/linear-recursion-explicit/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/geometric-probability/</guid>
+      <description>AMC 10 Geometry: Geometric Probability</description>
+    </item>
+    <item>
+      <title>Hidden 30-60-90 and 45-45-90 Triangles</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/hidden-triangles-30-60-90/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/hidden-triangles-30-60-90/</guid>
+      <description>AMC 10 Geometry: Hidden 30-60-90 and 45-45-90 Triangles</description>
+    </item>
+    <item>
+      <title>Inradius of a Right Triangle</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/inradius-right-triangle/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/inradius-right-triangle/</guid>
+      <description>AMC 10 Geometry: Inradius of a Right Triangle</description>
+    </item>
+    <item>
+      <title>Linear Recursion → Explicit Formula Technique</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/linear-recursion-explicit/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/linear-recursion-explicit/</guid>
       <description>AMC 10 Algebra: Linear Recursion → Explicit Formula Technique</description>
     </item>
     <item>
-      <title>Newton‑Sum / Symmetric‑Sum Technique</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/problems/newton-sum-symmetric/</link>
+      <title>Mid-Segments in Triangles and Trapezoids</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/mid-segments-triangles-trapezoids/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/problems/newton-sum-symmetric/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/mid-segments-triangles-trapezoids/</guid>
+      <description>AMC 10 Geometry: Mid-Segments in Triangles and Trapezoids</description>
+    </item>
+    <item>
+      <title>Nested Similar Figures &amp; Infinite Geometric Sums</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/nested-similar-figures/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/nested-similar-figures/</guid>
+      <description>AMC 10 Geometry: Nested Similar Figures &amp;amp; Infinite Geometric Sums</description>
+    </item>
+    <item>
+      <title>Newton‑Sum / Symmetric‑Sum Technique</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/newton-sum-symmetric/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/newton-sum-symmetric/</guid>
       <description>AMC 10 Algebra: Newton‑Sum / Symmetric‑Sum Technique</description>
     </item>
     <item>
       <title>Perfect‑Square Discriminant / Factor‑Pair Technique</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/problems/perfect-square-discriminant/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/perfect-square-discriminant/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/problems/perfect-square-discriminant/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/perfect-square-discriminant/</guid>
       <description>AMC 10 Algebra: Perfect‑Square Discriminant / Factor‑Pair Technique</description>
     </item>
     <item>
-      <title>Radical‑Exponent Manipulation / “Sum‑of‑Cubes” Trick</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/problems/radical-exponent-manipulation/</link>
+      <title>Power of a Point (PoP): Tangent–Secant &amp; Chord–Chord</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/power-of-point-tangent-secant/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/problems/radical-exponent-manipulation/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/power-of-point-tangent-secant/</guid>
+      <description>AMC 10 Geometry: Power of a Point (PoP): Tangent–Secant &amp;amp; Chord–Chord</description>
+    </item>
+    <item>
+      <title>Pythagorean-Triple Perimeter &amp; Area Problems</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/pythagorean-triple-perimeter/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/pythagorean-triple-perimeter/</guid>
+      <description>AMC 10 Geometry: Pythagorean-Triple Perimeter &amp;amp; Area Problems</description>
+    </item>
+    <item>
+      <title>Radical‑Exponent Manipulation / “Sum‑of‑Cubes” Trick</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/radical-exponent-manipulation/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/radical-exponent-manipulation/</guid>
       <description>AMC 10 Algebra: Radical‑Exponent Manipulation / “Sum‑of‑Cubes” Trick</description>
     </item>
     <item>
       <title>Remainder‑Theorem / Synthetic‑Division Technique</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/problems/remainder-theorem-synthetic/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/remainder-theorem-synthetic/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/problems/remainder-theorem-synthetic/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/remainder-theorem-synthetic/</guid>
       <description>AMC 10 Algebra: Remainder‑Theorem / Synthetic‑Division Technique</description>
     </item>
     <item>
-      <title>Symmetric‑Sum Identity for Cubics</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/problems/symmetric-sum-identity-cubics/</link>
+      <title>Shoelace (Coordinate-Polygon) Area</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/shoelace-coordinate-polygon/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/problems/symmetric-sum-identity-cubics/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/shoelace-coordinate-polygon/</guid>
+      <description>AMC 10 Geometry: Shoelace (Coordinate-Polygon) Area</description>
+    </item>
+    <item>
+      <title>Similar Triangles via a Parallel Line</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/similar-triangles-parallel-line/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/similar-triangles-parallel-line/</guid>
+      <description>AMC 10 Geometry: Similar Triangles via a Parallel Line</description>
+    </item>
+    <item>
+      <title>Study Strategy</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/study-strategy/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/study-strategy/</guid>
+      <description>Effective strategies for mastering AMC 10 geometry and achieving competition success</description>
+    </item>
+    <item>
+      <title>Symmetric‑Sum Identity for Cubics</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/symmetric-sum-identity-cubics/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/symmetric-sum-identity-cubics/</guid>
       <description>AMC 10 Algebra: Symmetric‑Sum Identity for Cubics</description>
     </item>
     <item>
       <title>Telescoping Partial‑Fraction Technique</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/problems/telescoping-partial-fraction/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/telescoping-partial-fraction/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/problems/telescoping-partial-fraction/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/telescoping-partial-fraction/</guid>
       <description>AMC 10 Algebra: Telescoping Partial‑Fraction Technique</description>
     </item>
     <item>
-      <title>Angle-Bisector Theorem &amp; Its AMC Uses</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/angle-bisector-theorem/</link>
+      <title>Top 20 AMC 10 Geometry Problem Types</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/problem-types/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/angle-bisector-theorem/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/problem-types/</guid>
+      <description>Master these essential problem patterns for AMC 10 geometry success</description>
+    </item>
+    <item>
+      <title>Transformations &amp; Symmetry</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/transformations-symmetry/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/transformations-symmetry/</guid>
+      <description>AMC 10 Geometry: Transformations &amp;amp; Symmetry</description>
+    </item>
+    <item>
+      <title>Angle-Bisector Theorem &amp; Its AMC Uses</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/angle-bisector-theorem/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/angle-bisector-theorem/</guid>
       <description>AMC 10 Geometry: Angle-Bisector Theorem &amp;amp; Its AMC Uses</description>
     </item>
     <item>
-      <title>Box &amp; Prism Diagonals (3-D Pythagorean)</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/box-prism-diagonals-3d/</link>
+      <title>Essential Formulas</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/essential-formulas/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/box-prism-diagonals-3d/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/essential-formulas/</guid>
+      <description>Comprehensive collection of essential geometry formulas for AMC 10</description>
+    </item>
+    <item>
+      <title>Box &amp; Prism Diagonals (3-D Pythagorean)</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/box-prism-diagonals-3d/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/box-prism-diagonals-3d/</guid>
       <description>AMC 10 Geometry: Box &amp;amp; Prism Diagonals (3-D Pythagorean)</description>
     </item>
     <item>
-      <title>AMC 10 Syllabus</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/syllabus/</link>
+      <title>Problem-Solving Tips</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/problem-solving-tips/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/syllabus/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/problem-solving-tips/</guid>
+      <description>Essential strategies, techniques, and tips for AMC 10 geometry success</description>
+    </item>
+    <item>
+      <title>AMC 10 Syllabus</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/syllabus/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/syllabus/</guid>
       <description>A comprehensive topic-by-topic syllabus for AMC 10</description>
     </item>
     <item>
-      <title>Chinese Remainder Theorem (CRT)</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/chinese-remainder-theorem/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/chinese-remainder-theorem/</guid>
-      <description>Chinese Remainder Theorem and its applications in AMC 10</description>
-    </item>
-    <item>
-      <title>Advanced Combinatorics</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/counting-prob/combinatorics-advanced/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/counting-prob/combinatorics-advanced/</guid>
-      <description>Advanced combinatorics topics for AMC 10</description>
-    </item>
-    <item>
       <title>Advanced Geometry</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/geometry-advanced/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/geometry-advanced/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/geometry-advanced/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/geometry-advanced/</guid>
       <description>Advanced geometry topics for AMC 10</description>
     </item>
     <item>
-      <title>LCM &amp; GCD</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/lcm-gcd/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/lcm-gcd/</guid>
-      <description>Least Common Multiple and Greatest Common Divisor for AMC 10</description>
+      <title>AMC 10 vs AMC 12 Scope Map</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/scope-map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/scope-map/</guid>
+      <description>Complete matrix showing which counting and probability topics are tested at each AMC level.</description>
     </item>
     <item>
-      <title>Modular Operation</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/modular-operation/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/modular-operation/</guid>
-      <description>Modular arithmetic operations for AMC 10</description>
+      <title>AMC Scope Map</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/scope-map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/scope-map/</guid>
+      <description>Comprehensive matrix showing AMC 10 vs AMC 12 precalculus topic coverage and testing frequency.</description>
     </item>
     <item>
-      <title>Advanced Number Theory</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/number-theory-advanced/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/number-theory-advanced/</guid>
-      <description>Advanced number theory topics for AMC 10</description>
+      <title>Notation Cheatsheet</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/notation-cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/notation-cheatsheet/</guid>
+      <description>Essential symbols, operations, and probability notation for AMC counting and probability problems.</description>
     </item>
     <item>
-      <title>Number Theory Problems</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/number-theory-problems/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/number-theory-problems/</guid>
-      <description>Number theory practice problems for AMC 10</description>
+      <title>Notation Cheatsheet</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/notation-cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/notation-cheatsheet/</guid>
+      <description>Essential symbols, functions, and mathematical notation for AMC precalculus problems.</description>
     </item>
     <item>
-      <title>Principle of Inclusion-Exclusion (PIE)</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/counting-prob/principle-of-inclusion-exclusion/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/counting-prob/principle-of-inclusion-exclusion/</guid>
-      <description>Principle of Inclusion-Exclusion and its applications in AMC 10</description>
+      <title>Concept Atlas</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/concept-atlas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/concept-atlas/</guid>
+      <description>One-paragraph primers on all major counting and probability topics with AMC appearance cues.</description>
+    </item>
+    <item>
+      <title>Concept Atlas</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/concept-atlas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/concept-atlas/</guid>
+      <description>One-paragraph primers on all major precalculus topics with AMC application notes.</description>
     </item>
     <item>
       <title>Practice Problems</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/problems/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/problems/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/problems/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/problems/</guid>
       <description>Practice problems for AMC 10 across all topics</description>
     </item>
     <item>
       <title>Problem Solving Tricks</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/tricks/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/tricks/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/tricks/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/tricks/</guid>
       <description>Useful tricks and techniques for AMC 10 problem solving</description>
     </item>
     <item>
-      <title>HS Geometry Study Pack — Text &#43; SVG Diagrams</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/knowledge-point/</link>
+      <title>Counting Principles</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/counting-principles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/counting-principles/</guid>
+      <description>Fundamental counting rules: addition, multiplication, and complement principles with AMC examples.</description>
+    </item>
+    <item>
+      <title>Functions &amp; Transformations</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/functions-and-transformations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/functions-and-transformations/</guid>
+      <description>Domains, ranges, inverses, shifts, scales, and symmetry in functions for AMC preparation.</description>
+    </item>
+    <item>
+      <title>Equations &amp; Inequalities</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/equations-and-inequalities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/equations-and-inequalities/</guid>
+      <description>Absolute value equations, systems, and inequality techniques including AM-GM for AMC preparation.</description>
+    </item>
+    <item>
+      <title>Permutations &amp; Combinations</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/permutations-combinations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/permutations-combinations/</guid>
+      <description>Arrangements and selections with repetition, circular arrangements, and indistinguishable objects.</description>
+    </item>
+    <item>
+      <title>Binomial &amp; Multinomial</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/binomial-multinomial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/binomial-multinomial/</guid>
+      <description>Advanced counting identities including Vandermonde&amp;#39;s identity, hockey stick identity, and multinomial coefficients.</description>
+    </item>
+    <item>
+      <title>Polynomials &amp; Rational Functions</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/polynomials-and-rational-functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/polynomials-and-rational-functions/</guid>
+      <description>Factoring, Vieta&amp;#39;s formulas, asymptotes, and partial fractions for AMC polynomial problems.</description>
+    </item>
+    <item>
+      <title>Exponents &amp; Logarithms</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/exponents-and-logarithms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/exponents-and-logarithms/</guid>
+      <description>Laws, change-of-base, equation solving, and growth/decay applications for AMC preparation.</description>
+    </item>
+    <item>
+      <title>Inclusion-Exclusion Principle</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/inclusion-exclusion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/inclusion-exclusion/</guid>
+      <description>Counting elements in unions of sets with 2-3 sets, &amp;#39;at least/at most&amp;#39; problems, and common pitfalls.</description>
+    </item>
+    <item>
+      <title>Pigeonhole Principle</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/pigeonhole/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/pigeonhole/</guid>
+      <description>Bounds, colorings, and existence proofs using the pigeonhole principle with tight examples.</description>
+    </item>
+    <item>
+      <title>Trigonometry Basics</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/trigonometry-basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/trigonometry-basics/</guid>
+      <description>Unit circle, special angles, and right triangle relationships for AMC trigonometry problems.</description>
+    </item>
+    <item>
+      <title>Stars &amp; Bars</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/stars-and-bars/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/stars-and-bars/</guid>
+      <description>Counting integer solutions to equations with nonnegative, positive, and bounded constraints.</description>
+    </item>
+    <item>
+      <title>Trig Identities &amp; Equations</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/trig-identities-and-equations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/trig-identities-and-equations/</guid>
+      <description>Addition formulas, double/half angles, sum-to-product, and inverse trig functions for AMC problems.</description>
+    </item>
+    <item>
+      <title>Laws of Sines &amp; Cosines</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/laws-of-sines-and-cosines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/laws-of-sines-and-cosines/</guid>
+      <description>Triangle solving, area calculations, and the ambiguous case for AMC geometry problems.</description>
+    </item>
+    <item>
+      <title>Probability Basics</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/probability-basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/probability-basics/</guid>
+      <description>Conditional probability, independence, law of total probability, and Bayes&amp;#39; theorem with AMC examples.</description>
+    </item>
+    <item>
+      <title>Complex Numbers</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/complex-numbers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/complex-numbers/</guid>
+      <description>Algebra, polar form, De Moivre&amp;#39;s theorem, and roots of unity for AMC 12 complex number problems.</description>
+    </item>
+    <item>
+      <title>Expected Value</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/expected-value/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/expected-value/</guid>
+      <description>Linearity of expectation, indicator variables, and expected counts with AMC examples.</description>
+    </item>
+    <item>
+      <title>Complex Plane Geometry</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/complex-plane-geometry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/complex-plane-geometry/</guid>
+      <description>Rotations, loci, and geometric applications in the complex plane for AMC 12 problems.</description>
+    </item>
+    <item>
+      <title>Probability Distributions</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/distributions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/distributions/</guid>
+      <description>Binomial, geometric, negative binomial, and hypergeometric distributions with AMC examples.</description>
+    </item>
+    <item>
+      <title>Sequences &amp; Series</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/sequences-and-series/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/sequences-and-series/</guid>
+      <description>Arithmetic, geometric, telescoping, and partial sums for AMC sequence problems.</description>
+    </item>
+    <item>
+      <title>Symmetry &amp; Invariance</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/symmetry-invariance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/symmetry-invariance/</guid>
+      <description>Using symmetry to reduce cases, invariance principles, and when to apply these techniques.</description>
+    </item>
+    <item>
+      <title>Binomial Theorem &amp; Series</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/binomial-theorem-and-series/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/binomial-theorem-and-series/</guid>
+      <description>Binomial expansions, coefficients, and estimation techniques for AMC problems.</description>
+    </item>
+    <item>
+      <title>Recurrences &amp; Generating Functions</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/recurrences-gf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/recurrences-gf/</guid>
+      <description>Light AMC-12 recognition cues for recurrence relations and generating functions.</description>
+    </item>
+    <item>
+      <title>Coordinate Geometry</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/coordinate-geometry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/coordinate-geometry/</guid>
+      <description>Lines, circles, distance, and basic conic sections for AMC coordinate geometry problems.</description>
+    </item>
+    <item>
+      <title>Vectors (Light)</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/vectors-light/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/vectors-light/</guid>
+      <description>2D vectors, dot product, and projections for AMC 12 vector problems.</description>
+    </item>
+    <item>
+      <title>Functional Equations (Light)</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/functional-equations-light/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/functional-equations-light/</guid>
+      <description>Substitutions, invariants, and simple AMC 12 functional equation patterns.</description>
+    </item>
+    <item>
+      <title>Seating &amp; Restrictions</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/seatings-restrictions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/seatings-restrictions/</guid>
+      <description>Adjacency and spacing problems with gaps method and common constraint patterns.</description>
+    </item>
+    <item>
+      <title>Solving Trig Equations</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/solving-trig-equations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/solving-trig-equations/</guid>
+      <description>Pattern recognition and solution strategies for trigonometric equations in AMC problems.</description>
+    </item>
+    <item>
+      <title>Logarithm Equations &amp; Inequalities</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/logarithm-equations-and-inequalities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/logarithm-equations-and-inequalities/</guid>
+      <description>Pattern recognition and solution strategies for logarithmic equations and inequalities in AMC problems.</description>
+    </item>
+    <item>
+      <title>Word Rearrangements</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/word-rearrangements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/word-rearrangements/</guid>
+      <description>Letter arrangements with repeats, position constraints, and first/last letter restrictions.</description>
+    </item>
+    <item>
+      <title>Committees &amp; Conditions</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/committees-and-conditions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/committees-and-conditions/</guid>
+      <description>Selection problems with roles, gender requirements, leadership positions, and other constraints.</description>
+    </item>
+    <item>
+      <title>Polynomial Roots &amp; Vieta</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/polynomial-roots-and-vieta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/polynomial-roots-and-vieta/</guid>
+      <description>Pattern recognition and solution strategies for polynomial root problems using Vieta&amp;#39;s formulas.</description>
+    </item>
+    <item>
+      <title>Balls in Bins</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/balls-in-bins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/balls-in-bins/</guid>
+      <description>Integer solutions and distribution problems using stars and bars with bounds and constraints.</description>
+    </item>
+    <item>
+      <title>Inequalities AM-GM &amp; Cauchy</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/inequalities-amgm-cauchy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/inequalities-amgm-cauchy/</guid>
+      <description>Pattern recognition and solution strategies for inequality problems using AM-GM and Cauchy-Schwarz.</description>
+    </item>
+    <item>
+      <title>At Least/At Most</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/at-least-at-most/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/at-least-at-most/</guid>
+      <description>Complement counting vs. inclusion-exclusion for &amp;#39;at least&amp;#39; and &amp;#39;at most&amp;#39; problems.</description>
+    </item>
+    <item>
+      <title>Grid Paths</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/grid-paths/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/grid-paths/</guid>
+      <description>Lattice path counting with blockages, diagonal moves, and symmetry techniques.</description>
+    </item>
+    <item>
+      <title>Urn, Coin &amp; String Problems</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/urn-coin-strings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/urn-coin-strings/</guid>
+      <description>Replacement vs. no-replacement, runs, and sequential probability problems.</description>
+    </item>
+    <item>
+      <title>Expected Counts</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/expected-counts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/expected-counts/</guid>
+      <description>Using indicator variables and linearity of expectation for expected count problems.</description>
+    </item>
+    <item>
+      <title>Conditional Chains</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/conditional-chains/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/conditional-chains/</guid>
+      <description>Total probability, Bayes&amp;#39; theorem, and complex conditional probability sequences.</description>
+    </item>
+    <item>
+      <title>Derangements</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/derangements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/derangements/</guid>
+      <description>Permutations with no fixed points using inclusion-exclusion and the derangement formula.</description>
+    </item>
+    <item>
+      <title>Circular Permutations</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/circular-permutations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/circular-permutations/</guid>
+      <description>Ring arrangements with reflection symmetry and AMC conventions for circular problems.</description>
+    </item>
+    <item>
+      <title>Complete Formula Bank</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/formulas/essential-formulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/formulas/essential-formulas/</guid>
+      <description>Comprehensive collection of all essential precalculus formulas with usage examples.</description>
+    </item>
+    <item>
+      <title>Symmetry Probability</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/symmetry-probability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/symmetry-probability/</guid>
+      <description>Using symmetry to find probabilities without explicit counting, especially for random choices.</description>
+    </item>
+    <item>
+      <title>Hypergeo vs Binomial</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/hypergeo-vs-binomial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/hypergeo-vs-binomial/</guid>
+      <description>Recognizing when to use hypergeometric vs binomial distributions and applying the correct formulas.</description>
+    </item>
+    <item>
+      <title>Digit Counting</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/digit-counting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/digit-counting/</guid>
+      <description>Divisibility rules, base representations, leading zeros, and digit-based counting problems.</description>
+    </item>
+    <item>
+      <title>Complete Problem-Solving Guide</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/tips/problem-solving-tips/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/tips/problem-solving-tips/</guid>
+      <description>Comprehensive strategies, checklists, and timing advice for AMC precalculus success.</description>
+    </item>
+    <item>
+      <title>Essential Formulas</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/04-formulas/essential-formulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/04-formulas/essential-formulas/</guid>
+      <description>Complete formula bank with usage notes and micro-examples for AMC counting and probability.</description>
+    </item>
+    <item>
+      <title>Problem-Solving Tips</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/05-tips/problem-solving-tips/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/05-tips/problem-solving-tips/</guid>
+      <description>Comprehensive heuristics, checklists, and strategies for AMC counting and probability problems.</description>
+    </item>
+    <item>
+      <title>AMC 10 vs AMC 12 Scope Map</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/reference/scope-map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/reference/scope-map/</guid>
+      <description>Complete coverage matrix showing which number theory topics appear in AMC 10 vs AMC 12.</description>
+    </item>
+    <item>
+      <title>Notation Cheatsheet</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/reference/notation-cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/reference/notation-cheatsheet/</guid>
+      <description>Quick reference for number theory symbols, conventions, and usage cues.</description>
+    </item>
+    <item>
+      <title>Concept Atlas</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/reference/concept-atlas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/reference/concept-atlas/</guid>
+      <description>One-paragraph primers for each number theory area with AMC appearance notes.</description>
+    </item>
+    <item>
+      <title>Divisibility Basics</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/divisibility-basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/divisibility-basics/</guid>
+      <description>Primes, GCD/LCM, Euclidean algorithm, and fundamental divisibility concepts.</description>
+    </item>
+    <item>
+      <title>Congruences &amp; Modular Arithmetic</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/congruences-and-modular-arithmetic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/congruences-and-modular-arithmetic/</guid>
+      <description>Residues, modular inverses, solving linear congruences, and quick patterns.</description>
+    </item>
+    <item>
+      <title>Linear Diophantine Equations</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/diophantine-equations-linear/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/diophantine-equations-linear/</guid>
+      <description>Solving ax &#43; by = c, coin problems, and parameterization techniques.</description>
+    </item>
+    <item>
+      <title>Quadratic Diophantine Equations</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/diophantine-equations-quadratic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/diophantine-equations-quadratic/</guid>
+      <description>Pythagorean triples, sum of squares, and quadratic forms in number theory.</description>
+    </item>
+    <item>
+      <title>Fermat, Euler &amp; Orders</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/fermat-euler-orders/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/fermat-euler-orders/</guid>
+      <description>Fermat&amp;#39;s Little Theorem, Euler&amp;#39;s theorem, order theory, and last digit problems.</description>
+    </item>
+    <item>
+      <title>Remainders &amp; Last Digits</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/problem-types/remainders-and-last-digits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/problem-types/remainders-and-last-digits/</guid>
+      <description>Pattern for modular cycles, orders, and last digit problems in AMC contests.</description>
+    </item>
+    <item>
+      <title>Essential Formulas</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/formulas/essential-formulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/formulas/essential-formulas/</guid>
+      <description>Complete formula bank with usage examples and micro-examples for AMC number theory.</description>
+    </item>
+    <item>
+      <title>Problem-Solving Tips</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/tips/problem-solving-tips/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/tips/problem-solving-tips/</guid>
+      <description>Detailed heuristics, checklists, and timing strategies for AMC number theory.</description>
+    </item>
+    <item>
+      <title>Complete AMC 10 Geometry Reference Guide</title>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/reference-guide/</link>
       <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/knowledge-point/</guid>
-      <description>Extracted theorems and identities with PaperMod-compatible SVG diagrams.</description>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/reference-guide/</guid>
+      <description>Comprehensive collection of essential geometry theorems, formulas, and problem-solving strategies for AMC 10 competition mathematics.</description>
     </item>
     <item>
       <title>Floor and Fractional Part Functions</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/floor-fractional-part/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/algebra/floor-fractional-part/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/floor-fractional-part/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/algebra/floor-fractional-part/</guid>
       <description>A reference on floor functions, fractional parts, identities, and problem-solving strategies. Includes AMC/AIME-style examples.</description>
     </item>
     <item>
       <title>Fraction (Partial) Decomposition</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/fraction-decomposition/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/algebra/fraction-decomposition/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/fraction-decomposition/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/algebra/fraction-decomposition/</guid>
       <description>A structured guide to partial fraction decomposition: linear, repeated, and quadratic factors. Includes method, examples, and applications.</description>
     </item>
     <item>
       <title>Mathematical Formula Reference</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/formula-reference/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/algebra/formula-reference/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/formula-reference/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/algebra/formula-reference/</guid>
       <description>A structured formula sheet covering exponents, binomials, inequalities, logarithms, polynomials, summation formulas, and key theorems.</description>
     </item>
     <item>
       <title>Sequences and Series Reference</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/algebra/sequences/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/algebra/sequences/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/algebra/sequences/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/algebra/sequences/</guid>
       <description>Formulas and examples for arithmetic, geometric, and special sequences. Includes AMC/AIME-style tricks and telescoping sums.</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/counting-prob/combinatorial-identities-225936cc221481cfaaa9e883a23b9009/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/combinatorial-identities-225936cc221481cfaaa9e883a23b9009/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/counting-prob/combinatorial-identities-225936cc221481cfaaa9e883a23b9009/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/combinatorial-identities-225936cc221481cfaaa9e883a23b9009/</guid>
       <description>&lt;h1 id=&#34;combinatorial-identities&#34;&gt;Combinatorial Identities&lt;/h1&gt;
 &lt;p&gt;Combinatorial identities are a common topic on the &lt;strong&gt;AMC 10&lt;/strong&gt; (American Mathematics Competitions) exams, where problems often test your ability to count in different ways or apply well-known identities. Here are several combinatorial identities and principles that are frequently tested in such competitions:&lt;/p&gt;
 &lt;h3 id=&#34;1-basic-counting-principles&#34;&gt;1. &lt;strong&gt;Basic Counting Principles&lt;/strong&gt;&lt;/h3&gt;
@@ -269,9 +822,9 @@ This is often used to expand binomials and calculate specific terms.&lt;/p&gt;</
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/counting-prob/conditional-probability-225936cc2214817ebf46e74d1c6902df/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/conditional-probability-225936cc2214817ebf46e74d1c6902df/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/counting-prob/conditional-probability-225936cc2214817ebf46e74d1c6902df/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/conditional-probability-225936cc2214817ebf46e74d1c6902df/</guid>
       <description>&lt;h1 id=&#34;conditional-probability&#34;&gt;Conditional Probability&lt;/h1&gt;
 &lt;p&gt;Conditional probability is a key concept that appears frequently in competitions like the AMC and AIME. It deals with finding the probability of an event occurring, given that a certain condition is already true.&lt;/p&gt;
 &lt;h3 id=&#34;example-471&#34;&gt;Example 4.7.1:&lt;/h3&gt;
@@ -280,9 +833,9 @@ This is often used to expand binomials and calculate specific terms.&lt;/p&gt;</
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/counting-prob/geometric-probability-225936cc221481eb9b58dbd99d6b573c/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/geometric-probability-225936cc221481eb9b58dbd99d6b573c/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/counting-prob/geometric-probability-225936cc221481eb9b58dbd99d6b573c/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/geometric-probability-225936cc221481eb9b58dbd99d6b573c/</guid>
       <description>&lt;h1 id=&#34;geometric-probability&#34;&gt;Geometric Probability&lt;/h1&gt;
 &lt;p&gt;Geometric probability is used when dealing with problems where the number of possible outcomes is infinite or uncountable, and involves using areas, lengths, or volumes to calculate probabilities. Instead of counting discrete outcomes, we compute probabilities by comparing geometric measures.&lt;/p&gt;
 &lt;h3 id=&#34;concept&#34;&gt;Concept:&lt;/h3&gt;
@@ -290,9 +843,9 @@ This is often used to expand binomials and calculate specific terms.&lt;/p&gt;</
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/counting-prob/path-counting-225936cc221481bd978dec5ba57e8a28/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/path-counting-225936cc221481bd978dec5ba57e8a28/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/counting-prob/path-counting-225936cc221481bd978dec5ba57e8a28/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/path-counting-225936cc221481bd978dec5ba57e8a28/</guid>
       <description>&lt;h1 id=&#34;path-counting&#34;&gt;Path Counting&lt;/h1&gt;
 &lt;p&gt;If we want to move from $(0, 0)$ to $(m, n)$, and we can only move up or to the right, we need to determine how many distinct paths exist.&lt;/p&gt;
 &lt;h3 id=&#34;path-details&#34;&gt;Path Details:&lt;/h3&gt;
@@ -304,9 +857,9 @@ This is often used to expand binomials and calculate specific terms.&lt;/p&gt;</
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/counting-prob/principle-of-inclusion-and-exclusion-pie-225936cc2214811681e2e364d7b7cd2d/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/principle-of-inclusion-and-exclusion-pie-225936cc2214811681e2e364d7b7cd2d/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/counting-prob/principle-of-inclusion-and-exclusion-pie-225936cc2214811681e2e364d7b7cd2d/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/principle-of-inclusion-and-exclusion-pie-225936cc2214811681e2e364d7b7cd2d/</guid>
       <description>&lt;h1 id=&#34;principle-of-inclusion-and-exclusion-pie&#34;&gt;Principle of Inclusion and Exclusion (PIE)&lt;/h1&gt;
 &lt;p&gt;The &lt;strong&gt;Principle of Inclusion and Exclusion (PIE)&lt;/strong&gt; is a fundamental concept in combinatorics that helps to calculate the number of elements in the union of multiple sets, especially when these sets overlap. It is particularly useful in problems where direct counting leads to overcounting due to overlapping regions.&lt;/p&gt;
 &lt;h3 id=&#34;principle-of-inclusion-and-exclusion-pie-formula&#34;&gt;Principle of Inclusion and Exclusion (PIE) Formula:&lt;/h3&gt;
@@ -314,9 +867,9 @@ This is often used to expand binomials and calculate specific terms.&lt;/p&gt;</
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/counting-prob/problems-225936cc2214813aae07cf86e5bb408e/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/problems-225936cc2214813aae07cf86e5bb408e/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/counting-prob/problems-225936cc2214813aae07cf86e5bb408e/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/problems-225936cc2214813aae07cf86e5bb408e/</guid>
       <description>&lt;h1 id=&#34;problems&#34;&gt;Problems&lt;/h1&gt;
 &lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;Problems%20225936cc2214813aae07cf86e5bb408e/image.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;Problems%20225936cc2214813aae07cf86e5bb408e/image%201.png&#34;&gt;&lt;/p&gt;
@@ -348,9 +901,9 @@ This is often used to expand binomials and calculate specific terms.&lt;/p&gt;</
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/counting-prob/problems-on-combinatorics-225936cc221481b886c3c85789e9eb1a/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/problems-on-combinatorics-225936cc221481b886c3c85789e9eb1a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/counting-prob/problems-on-combinatorics-225936cc221481b886c3c85789e9eb1a/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/problems-on-combinatorics-225936cc221481b886c3c85789e9eb1a/</guid>
       <description>&lt;h1 id=&#34;problems-on-combinatorics&#34;&gt;Problems on Combinatorics&lt;/h1&gt;
 &lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;Problems%20225936cc2214813aae07cf86e5bb408e/image.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;Problems%20225936cc2214813aae07cf86e5bb408e/image%201.png&#34;&gt;&lt;/p&gt;
@@ -369,9 +922,9 @@ This is often used to expand binomials and calculate specific terms.&lt;/p&gt;</
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/counting-prob/rearranging-letters-with-repetitions-225936cc221481c8a92ed02a4ad79af3/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/rearranging-letters-with-repetitions-225936cc221481c8a92ed02a4ad79af3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/counting-prob/rearranging-letters-with-repetitions-225936cc221481c8a92ed02a4ad79af3/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/rearranging-letters-with-repetitions-225936cc221481c8a92ed02a4ad79af3/</guid>
       <description>&lt;h1 id=&#34;rearranging-letters-with-repetitions&#34;&gt;Rearranging Letters with Repetitions&lt;/h1&gt;
 &lt;p&gt;The problem you&amp;rsquo;re describing is a classic combinatorics question about counting the number of ways to rearrange letters of a word when some of the letters are repeated.&lt;/p&gt;
 &lt;h3 id=&#34;formula-for-rearranging-letters-with-repetitions&#34;&gt;Formula for Rearranging Letters with Repetitions:&lt;/h3&gt;
@@ -386,9 +939,9 @@ This is often used to expand binomials and calculate specific terms.&lt;/p&gt;</
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/counting-prob/recursion-225936cc22148180b6fae3d1f06fbed4/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/recursion-225936cc22148180b6fae3d1f06fbed4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/counting-prob/recursion-225936cc22148180b6fae3d1f06fbed4/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/recursion-225936cc22148180b6fae3d1f06fbed4/</guid>
       <description>&lt;h1 id=&#34;recursion&#34;&gt;Recursion&lt;/h1&gt;
 &lt;p&gt;Recursion is a crucial topic on AMC and especially the AIME. For the elite programmers, they might find this topic similar to dynamic programming or many algorithms that they have seen.&lt;/p&gt;
 &lt;p&gt;Recursion reduces a harder problem into a smaller problem and relates it to larger numbers by setting up a relationship.&lt;/p&gt;
@@ -396,9 +949,9 @@ This is often used to expand binomials and calculate specific terms.&lt;/p&gt;</
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/counting-prob/stars-and-bars-225936cc2214815490abfcb1a722588d/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/stars-and-bars-225936cc2214815490abfcb1a722588d/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/counting-prob/stars-and-bars-225936cc2214815490abfcb1a722588d/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/stars-and-bars-225936cc2214815490abfcb1a722588d/</guid>
       <description>&lt;h1 id=&#34;stars-and-bars&#34;&gt;Stars and Bars&lt;/h1&gt;
 &lt;h3 id=&#34;find-the-number-of-ways-to-distribute-n-identical-objects-to-k-people&#34;&gt;Find the number of ways to distribute $n$ identical objects to $k$ people.&lt;/h3&gt;
 &lt;p&gt;The &lt;strong&gt;Stars and Bars&lt;/strong&gt; method is a combinatorial technique used to solve problems that involve distributing indistinguishable objects (like stars) into distinguishable groups (like bins). It helps find the number of ways to solve equations where the variables represent non-negative or positive integers.&lt;/p&gt;
@@ -407,337 +960,9 @@ This is often used to expand binomials and calculate specific terms.&lt;/p&gt;</
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/cevians-concurrency-mass-points/</link>
+      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/geometry-knowledge-points/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/cevians-concurrency-mass-points/</guid>
-      <description>&lt;h1 id=&#34;13--cevians-concurrency-and-mass-points&#34;&gt;#13 – Cevians, Concurrency, and Mass-Points&lt;/h1&gt;
-&lt;p&gt;Three line segments drawn from the vertices of a triangle to the opposite sides are called &lt;strong&gt;cevians&lt;/strong&gt;.  When they all meet at one point we say they are &lt;em&gt;concurrent&lt;/em&gt;.  AMC 10 geometry loves to test this via two intertwined tools:&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Tool&lt;/th&gt;
-          &lt;th&gt;Core statement&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Ceva’s Theorem&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;For concurrent cevians AD,BE,CFAD, BE, CF in △ABC\triangle ABC with D∈BC, E∈CA, F∈ABD\in BC,\ E\in CA,\ F\in AB,  BDDC⋅CEEA⋅AFFB=1.\displaystyle \frac{BD}{DC}\cdot\frac{CE}{EA}\cdot\frac{AF}{FB}=1.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Mass Points&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;Assign “masses” at vertices so each cevian balances its opposite side; segment ratios follow from center-of-mass rules.&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;img alt=&#34;output (2).png&#34; loading=&#34;lazy&#34; src=&#34;#13%20%E2%80%93%20Cevians,%20Concurrency,%20and%20Mass-Points%20228936cc22148070be8ceedcd26fb8c5/output_(2).png&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/circle-tangent-two-lines/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/circle-tangent-two-lines/</guid>
-      <description>&lt;h1 id=&#34;14--circle-tangent-to-two-lines-and-a-circle&#34;&gt;#14 – Circle Tangent to Two Lines and a Circle&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;(Incircle/Excircle &amp;amp; “Kissing-circle” Set-ups)&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;AMC 10 loves configurations where a circle must squeeze between two intersecting (or parallel) lines &lt;strong&gt;and&lt;/strong&gt; kiss another circle.  Recognizing the &lt;strong&gt;angle-bisector&lt;/strong&gt; location of centers and the simple &lt;strong&gt;sum / difference of radii&lt;/strong&gt; rule collapses the algebra.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;output (3).png&#34; loading=&#34;lazy&#34; src=&#34;#14%20%E2%80%93%20Circle%20Tangent%20to%20Two%20Lines%20and%20a%20Circle%20228936cc221480639ea1c2c8ddaf8a20/output_(3).png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;(The plot shows two lines ℓ₁, ℓ₂ making a&lt;/em&gt; $60^{\circ}$ &lt;em&gt;wedge.
-A small blue circle of radius rr and a larger orange circle of radius RR both touch &lt;strong&gt;each line&lt;/strong&gt; and also each other; their centers lie on the angle bisector.)&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/circumradius-extended-law-sines/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/circumradius-extended-law-sines/</guid>
-      <description>&lt;h1 id=&#34;5--circumradius-via-the-extended-law-of-sines&#34;&gt;#5 – Circumradius via the Extended Law of Sines&lt;/h1&gt;
-&lt;p&gt;For any triangle △ABC\triangle ABC with side lengths a=BCa=BC, b=CAb=CA, c=ABc=AB and opposite angles A,B,CA,B,C, the &lt;strong&gt;circumradius&lt;/strong&gt; RR satisfies&lt;/p&gt;
-&lt;p&gt;R  =  a2sin⁡A  =  b2sin⁡B  =  c2sin⁡C  .\boxed{ ;R ;=; \frac{a}{2\sin A};=;\frac{b}{2\sin B};=;\frac{c}{2\sin C}; } .&lt;/p&gt;
-&lt;p&gt;Because each expression involves only &lt;strong&gt;one&lt;/strong&gt; side and &lt;strong&gt;one&lt;/strong&gt; angle, many AMC problems collapse to a single plug-and-solve step.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;1quick-reference-facts&#34;&gt;1 Quick-Reference Facts&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Situation&lt;/th&gt;
-          &lt;th&gt;Fast formula&lt;/th&gt;
-          &lt;th&gt;Why useful on AMC&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Right triangle (C=90∘C=90^{\circ})&lt;/td&gt;
-          &lt;td&gt;R=hypotenuse2R=\dfrac{\text{hypotenuse}}{2}&lt;/td&gt;
-          &lt;td&gt;No trig needed once you spot the right angle.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Angle 60∘60^{\circ} present&lt;/td&gt;
-          &lt;td&gt;R=opposite side3R = \dfrac{\text{opposite side}}{\sqrt{3}}&lt;/td&gt;
-          &lt;td&gt;sin⁡60∘=32\sin60^{\circ}= \tfrac{\sqrt3}{2}.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Equilateral ss&lt;/td&gt;
-          &lt;td&gt;R=s3R=\dfrac{s}{\sqrt3}&lt;/td&gt;
-          &lt;td&gt;Plug 60∘60^{\circ} for any side.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Isosceles with vertex AA&lt;/td&gt;
-          &lt;td&gt;Use R=a2sin⁡AR=\dfrac{a}{2\sin A} directly; aa often the non-repeated side given.&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;2canonical-amc-prompt-patterns&#34;&gt;2 Canonical AMC Prompt Patterns&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Wording cue&lt;/th&gt;
-          &lt;th&gt;One-line move&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;“Circumcircle radius?” with one side + one angle&lt;/td&gt;
-          &lt;td&gt;Apply R=a2sin⁡AR = \dfrac{a}{2\sin A}.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;“Right triangle; find diameter of circumcircle”&lt;/td&gt;
-          &lt;td&gt;Diameter =2R==2R = hypotenuse.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;“Find side length given circumradius RR and angle”&lt;/td&gt;
-          &lt;td&gt;Rearrange a=2Rsin⁡Aa = 2R\sin A.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;“Circle through the vertices has radius …”&lt;/td&gt;
-          &lt;td&gt;Treat that as RR; invoke extended law to relate unknown side.&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;3worked-example-a--direct-plug&#34;&gt;3 Worked Example A – Direct Plug&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;In △ABC\triangle ABC, BC=8BC=8 and ∠A=45∘\angle A = 45^{\circ}.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/coordinate-bash-distance-slope/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/coordinate-bash-distance-slope/</guid>
-      <description>&lt;h1 id=&#34;10--coordinate-bash-distance-slope-and-midpoint-tricks&#34;&gt;#10 – Coordinate-Bash Distance, Slope, and Midpoint Tricks&lt;/h1&gt;
-&lt;p&gt;A classic AMC 10 rescue tactic is to &lt;strong&gt;drop the whole figure on an (x,y)(x,y) grid&lt;/strong&gt; so every requested length or angle reduces to a distance, slope, or dot-product calculation.  Done well it’s a 3-line bash that beats pages of synthetic geometry.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;1go-to-coordinate-formulas&#34;&gt;1 Go-to Coordinate Formulas&lt;/h3&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Quantity&lt;/th&gt;
-          &lt;th&gt;Formula&lt;/th&gt;
-          &lt;th&gt;Contest Mnemonic&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Distance&lt;/strong&gt; between $(x_1,y_1)$ and $(x_2,y_2)$&lt;/td&gt;
-          &lt;td&gt;$d=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$&lt;/td&gt;
-          &lt;td&gt;“Pythag on ∆x, ∆y”&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Slope&lt;/strong&gt; of line through those points&lt;/td&gt;
-          &lt;td&gt;$m=\dfrac{y_2-y_1}{x_2-x_1}$ (undefined if vertical)&lt;/td&gt;
-          &lt;td&gt;Rise ÷ run&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Midpoint&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;$\bigl(,\dfrac{x_1+x_2}{2},\dfrac{y_1+y_2}{2}\bigr)$&lt;/td&gt;
-          &lt;td&gt;Average the coords&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Point–line distance&lt;/strong&gt; (for a point $P(x_0, y_0)$ to line $Ax+By+C=0$&lt;/td&gt;
-          &lt;td&gt;$\dfrac{&lt;/td&gt;
-          &lt;td&gt;Ax_0+By_0+C&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Perpendicular/parallel test&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;two lines with slopes $m_1,m_2$: $m_1m_2=-1$ ⟺ perpendicular&lt;/td&gt;
-          &lt;td&gt;Negative reciprocal&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;Keep these at reflex level; AMC timing hinges on them.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/cross-sections-cubes-prisms/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/cross-sections-cubes-prisms/</guid>
-      <description>&lt;h1 id=&#34;16--cross-sections-of-cubes--prisms&#34;&gt;#16 – Cross-Sections of Cubes &amp;amp; Prisms&lt;/h1&gt;
-&lt;p&gt;A single slanted plane can slice a cube (or right prism) into elegant polygons—triangles, rectangles, pentagons, &lt;em&gt;and&lt;/em&gt; the famous regular hexagon.  AMC questions usually want the &lt;strong&gt;area&lt;/strong&gt; or &lt;strong&gt;perimeter&lt;/strong&gt; of that slice, or occasionally to recognize the shape.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;(The 3-D plot illustrates the classic “mid-mid-mid” cut: a plane through the midpoints of three edges emanating from one vertex of a unit cube.  The intersection is a &lt;strong&gt;regular hexagon&lt;/strong&gt;.)&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/cyclic-quadrilateral-angle-chases/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/cyclic-quadrilateral-angle-chases/</guid>
-      <description>&lt;h1 id=&#34;7--cyclic-quadrilateral-angle-chases&#34;&gt;#7 – Cyclic-Quadrilateral Angle Chases&lt;/h1&gt;
-&lt;p&gt;The picture shows a quadrilateral ABCDABCD with all four vertices on one circle.&lt;/p&gt;
-&lt;p&gt;Draw in the diagonals ACAC and BDBD and two facts do 90 % of the AMC work:&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Fact&lt;/th&gt;
-          &lt;th&gt;How to use it&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Opposite angles supplement&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;∠A+∠C=∠B+∠D=180∘\angle A + \angle C = \angle B + \angle D = 180^\circ.  Spot a single angle → its opposite is “180 – that.”&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Inscribed-angle equality&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;Angles that subtend the &lt;em&gt;same arc&lt;/em&gt; are equal (e.g. ∠BAD=∠BCD\angle BAD = \angle BCD, both cut arc BDBD).  Lets you port a known angle across the quad.&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;1rapid-fire-examples&#34;&gt;1 Rapid-Fire Examples&lt;/h3&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Given&lt;/th&gt;
-          &lt;th&gt;Find&lt;/th&gt;
-          &lt;th&gt;One-liner&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;∠A=70∘,∠B=85∘\angle A = 70^\circ, \angle B = 85^\circ&lt;/td&gt;
-          &lt;td&gt;∠C\angle C&lt;/td&gt;
-          &lt;td&gt;C=180−70=110∘.C = 180 - 70 = 110^\circ.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;AB=CDAB=CD (equal chords)&lt;/td&gt;
-          &lt;td&gt;Show ∠ACB=∠CAD\angle ACB = \angle CAD&lt;/td&gt;
-          &lt;td&gt;Equal chords ⇒ equal arcs ⇒ equal inscribed angles.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;∠BAD=30∘,∠CBD=34∘\angle BAD = 30^\circ, \angle CBD = 34^\circ&lt;/td&gt;
-          &lt;td&gt;∠BCD\angle BCD&lt;/td&gt;
-          &lt;td&gt;Use equal-arc idea twice; often collapses because two equal angles sum to the supplementary opposite.&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;2ptolemy-sneak-peek&#34;&gt;2 Ptolemy Sneak Peek&lt;/h3&gt;
-&lt;p&gt;Once lengths show up, &lt;strong&gt;Ptolemy’s Theorem&lt;/strong&gt; kicks in: AC⋅BD=AB⋅CD+BC⋅DAAC\cdot BD = AB\cdot CD + BC\cdot DA.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/cyclic-quadrilateral-length-ratios/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/cyclic-quadrilateral-length-ratios/</guid>
-      <description>&lt;h1 id=&#34;17--cyclic-quadrilateral-length-ratios-ptolemys-theorem-power-ups&#34;&gt;#17 – Cyclic-Quadrilateral Length Ratios (Ptolemy’s Theorem Power-Ups)&lt;/h1&gt;
-&lt;p&gt;Whenever four points A,B,C,DA,B,C,D lie on one circle (in that order), &lt;strong&gt;Ptolemy’s Theorem&lt;/strong&gt; ties together the six segment lengths:&lt;/p&gt;
-&lt;p&gt;AC⋅BD  =  AB⋅CD  +  BC⋅DA.  \boxed{;AC\cdot BD ;=; AB\cdot CD ;+; BC\cdot DA.;}&lt;/p&gt;
-&lt;p&gt;It converts three known edges/diagonals into the fourth with just a bit of algebra, so AMC 10 setters use it to hide “one-step” numeric solves or to force nice integer lengths.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/geometric-probability/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/geometric-probability/</guid>
-      <description>&lt;h1 id=&#34;20--geometric-probability&#34;&gt;#20 – Geometric Probability&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;(“A dart lands at random…” “Choose a point uniformly in the region…”)&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;The AMC 10 almost always interprets “random point” to mean &lt;strong&gt;uniform distribution over area (2-D) or length (1-D).&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;That turns the probability into&lt;/p&gt;
-&lt;p&gt;P=favorable measuretotal measure  \boxed{;\displaystyle P
-=\frac{\text{favorable measure}}{\text{total measure}};}&lt;/p&gt;
-&lt;p&gt;with “measure” = area, length, or sometimes angle.&lt;/p&gt;
-&lt;p&gt;Your job is purely &lt;strong&gt;geometry.&lt;/strong&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;1standard-playbook&#34;&gt;1 Standard Playbook&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Region Type&lt;/th&gt;
-          &lt;th&gt;Fast tactic&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Circles / rings&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;Use radii → areas scale with r2r^{2}.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Squares / rectangles&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;Scale with side lengths; sub-rectangles drop out instantly.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Triangles&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;Slice with parallel lines → similar-triangle area ratios.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Lattice grid dartboards&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;Shoelace or Pick’s Theorem for exact half-integer areas.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Random chord or angle location&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;Switch to polar coordinates or angle measure.&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;2canonical-amc-prompts--one-line-solutions&#34;&gt;2 Canonical AMC Prompts &amp;amp; One-Line Solutions&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Wording&lt;/th&gt;
-          &lt;th&gt;One-liner&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;“Dartboard is circle of radius 55; what’s the probability it lands within 11 of the center?”&lt;/td&gt;
-          &lt;td&gt;P=π ⁣⋅ ⁣12π ⁣⋅ ⁣52=125.P=\dfrac{\pi!\cdot!1^{2}}{\pi!\cdot!5^{2}}=\dfrac1{25}.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;“Point in unit square; probability x+y&amp;lt;1x+y&amp;lt;1.”&lt;/td&gt;
-          &lt;td&gt;That inequality cuts the square in half ⇒ P=12.P=\tfrac12.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;“Choose point in △ABC\triangle ABC; probability it’s closer to ABAB than ACAC.”&lt;/td&gt;
-          &lt;td&gt;Bisector is a line through the vertex ⇒ area ratio =12.=\tfrac12.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;“Pick point in circle; what’s probability the triangle made with center has area &amp;lt;k&amp;lt;k?”&lt;/td&gt;
-          &lt;td&gt;Area ∝ r2r^{2}; threshold radius r0⇒P=(r0/R)2.r_0\Rightarrow P=(r_0/R)^{2}.&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;3worked-example-a--ring-hit&#34;&gt;3 Worked Example A – Ring Hit&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A dart hits a dartboard shaped like an annulus with inner radius 22 cm and outer radius 55 cm.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/problems-225936cc2214818b989cc5d523338813/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/problems-225936cc2214818b989cc5d523338813/</guid>
-      <description>&lt;h1 id=&#34;problems&#34;&gt;Problems&lt;/h1&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;Problems%20225936cc2214818b989cc5d523338813/image.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;Problems%20225936cc2214818b989cc5d523338813/image%201.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;Problems%20225936cc2214818b989cc5d523338813/image%202.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;Problems%20225936cc2214818b989cc5d523338813/image%203.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;Problems%20225936cc2214818b989cc5d523338813/image%204.png&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/geometry-knowledge-points/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/geometry-knowledge-points/</guid>
+      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/geometry-knowledge-points/</guid>
       <description>&lt;h1 id=&#34;geometry-knowledge-points&#34;&gt;Geometry Knowledge Points&lt;/h1&gt;
 &lt;h1 id=&#34;angles&#34;&gt;Angles&lt;/h1&gt;
 &lt;p&gt;&lt;img alt=&#34;Screenshot 2025-07-14 at 4.51.38\u202fPM.png&#34; loading=&#34;lazy&#34; src=&#34;Geometry%20Knowledge%20Points%20230936cc221480f5a4e6c5b1f29e122e/Screenshot_2025-07-14_at_4.51.38_PM.png&#34;&gt;&lt;/p&gt;
@@ -789,645 +1014,17 @@ A small blue circle of radius rr and a larger orange circle of radius RR both to
 &lt;p&gt;&lt;img alt=&#34;Screenshot 2025-07-14 at 4.58.21\u202fPM.png&#34; loading=&#34;lazy&#34; src=&#34;Geometry%20Knowledge%20Points%20230936cc221480f5a4e6c5b1f29e122e/Screenshot_2025-07-14_at_4.58.21_PM.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/hidden-triangles-30-60-90/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/hidden-triangles-30-60-90/</guid>
-      <description>&lt;h1 id=&#34;1--hidden-30-60-90-and-45-45-90-triangles&#34;&gt;#1 – Hidden 30-60-90 and 45-45-90 Triangles&lt;/h1&gt;
-&lt;p&gt;Special-right triangles are AMC 10 “Easter eggs.” Find one and the arithmetic collapses:&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Triangle&lt;/th&gt;
-          &lt;th&gt;Angles&lt;/th&gt;
-          &lt;th&gt;Side-length ratio&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;30-60-90&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;30∘,60∘,90∘30^\circ, 60^\circ, 90^\circ&lt;/td&gt;
-          &lt;td&gt;1:3:21 : \sqrt3 : 2&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;45-45-90&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;45∘,45∘,90∘45^\circ, 45^\circ, 90^\circ&lt;/td&gt;
-          &lt;td&gt;1:1:21 : 1 : \sqrt2&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;Once you identify &lt;strong&gt;any&lt;/strong&gt; side, multiply by the fixed ratio and you’re done.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;1where-they-hide-on-the-amc&#34;&gt;1 Where They Hide on the AMC&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Clue in the diagram&lt;/th&gt;
-          &lt;th&gt;Why a special triangle appears&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Altitude of an equilateral triangle&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;Drops a 60∘60^\circ angle into two 30‐60‐9030‐60‐90 halves.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Diagonal of a square or a rectangle cut in half&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;Diagonal of a square makes a 45−45−9045-45-90.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Radius drawn to a tangent in a regular hexagon&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;60° geometry at each vertex → half-angles of 30°.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;One side is an integer, another is twice that integer&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;Looks like the 1:21:2 legs of a 30-60-90.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;A 2\sqrt2 or 3\sqrt3 pops up “for no reason”&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;Those radicals are the trademarks of these two triangles.&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;2speed-recognition-flowchart&#34;&gt;2 Speed-Recognition Flowchart&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;See a right angle?&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/inradius-right-triangle/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/inradius-right-triangle/</guid>
-      <description>&lt;h1 id=&#34;4--inradius-of-a-right-triangle&#34;&gt;#4 – Inradius of a Right Triangle&lt;/h1&gt;
-&lt;p&gt;A right triangle’s incircle (inscribed circle) hands you a &lt;em&gt;linear&lt;/em&gt; relationship among the three side lengths—perfect for quick AMC tricks.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;1-key-facts--formulas&#34;&gt;1 Key Facts &amp;amp; Formulas&lt;/h3&gt;
-&lt;p&gt;Let the legs be a,ba,b and the hypotenuse cc.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Area in two ways&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;ab2=rs,s=a+b+c2 (semiperimeter)\frac{ab}{2}=rs,\qquad s=\frac{a+b+c}{2}\ (\text{semiperimeter})&lt;/p&gt;
-&lt;p&gt;gives&lt;/p&gt;
-&lt;p&gt;r=a+b−c2 .\boxed{,r=\dfrac{a+b-c}{2},}.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Contact lengths&lt;/strong&gt; (where the circle touches sides)&lt;/p&gt;
-&lt;p&gt;The incircle touches each leg at a point that is rr units from the right‐angle vertex.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/mid-segments-triangles-trapezoids/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/mid-segments-triangles-trapezoids/</guid>
-      <description>&lt;h1 id=&#34;8--mid-segments-in-triangles-and-trapezoids&#34;&gt;#8 – Mid-Segments in Triangles and Trapezoids&lt;/h1&gt;
-&lt;p&gt;A &lt;strong&gt;mid-segment&lt;/strong&gt; joins the midpoints of two sides.&lt;/p&gt;
-&lt;p&gt;Its power comes from two parallelism facts:&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Shape&lt;/th&gt;
-          &lt;th&gt;Mid-segment facts&lt;/th&gt;
-          &lt;th&gt;Length formula&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Triangle&lt;/strong&gt; $ABC$ with midpoints DD on ABAB and EE on ACAC&lt;/td&gt;
-          &lt;td&gt;$DE\parallel BC$&lt;/td&gt;
-          &lt;td&gt;$DE=\tfrac12,BC$&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Trapezoid&lt;/strong&gt; $ABCD$ with bases $AB\parallel CD$ and midpoints $E$ on $AD$, $F$ on $BC$&lt;/td&gt;
-          &lt;td&gt;$EF\parallel AB\parallel CD$&lt;/td&gt;
-          &lt;td&gt;$EF=\dfrac{AB+CD}{2}$&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;img alt=&#34;output.png&#34; loading=&#34;lazy&#34; src=&#34;#8%20%E2%80%93%20Mid-Segments%20in%20Triangles%20and%20Trapezoids%20227936cc22148097850dfaec46a2fdea/output.png&#34;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;1why-amc-10-loves-mid-segments&#34;&gt;1 Why AMC 10 Loves Mid-Segments&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Clean ratios:&lt;/strong&gt; Half or average of integer bases keeps answers “nice.”&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Instant area results:&lt;/strong&gt; Two similar triangles appear, giving area ratios of 1:31:3 or 1:41:4.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Parallel lines generate equal angles,&lt;/strong&gt; bootstrapping similarity for bonus angle-chase questions.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;2classic-amc-patterns&#34;&gt;2 Classic AMC Patterns&lt;/h3&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Prompt&lt;/th&gt;
-          &lt;th&gt;One-step move&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;“Midpoints of two sides are joined; find length xx.”&lt;/td&gt;
-          &lt;td&gt;Translate directly to 12\tfrac12 or average formula.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;“Find area of the small region bounded by the mid-segment.”&lt;/td&gt;
-          &lt;td&gt;Use similarity (ratio 1:41:4 in a triangle, 1:21:2 stripe in a trapezoid).&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;“Show that two angles are equal after drawing mid-segment.”&lt;/td&gt;
-          &lt;td&gt;Mid-segment ∥ base ⇒ alternate interior angles match.&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;3worked-example-a--triangle-length&#34;&gt;3 Worked Example A – Triangle Length&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;In △ABC\triangle ABC, BC=14BC=14.  Points DD and EE are the midpoints of ABAB and ACAC.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/nested-similar-figures/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/nested-similar-figures/</guid>
-      <description>&lt;h1 id=&#34;18--nested-similar-figures--infinite-geometric-sums&#34;&gt;#18 – Nested Similar Figures &amp;amp; Infinite Geometric Sums&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;(“Russian-doll” squares, triangles, circles, …)&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Whenever a problem says “repeat the construction forever,” look for a &lt;strong&gt;constant scale factor kk&lt;/strong&gt; between successive shapes.&lt;/p&gt;
-&lt;p&gt;All linear measures shrink by kk, areas by k2k^{2}, and volumes (rare on AMC 10) by k3k^{3}.&lt;/p&gt;
-&lt;p&gt;That turns the total length/area/volume into a one-line geometric-series sum.&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Quantity&lt;/th&gt;
-          &lt;th&gt;nn-th copy&lt;/th&gt;
-          &lt;th&gt;Infinite total&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Side / radius / perimeter&lt;/td&gt;
-          &lt;td&gt;Ln=k nL0L_n = k^{,n}L_0&lt;/td&gt;
-          &lt;td&gt;L∞=L01−kL_{\infty} = \dfrac{L_0}{1-k}&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Area&lt;/td&gt;
-          &lt;td&gt;An=k2nA0A_n = k^{2n}A_0&lt;/td&gt;
-          &lt;td&gt;A∞=A01−k2A_{\infty} = \dfrac{A_0}{1-k^{2}}&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Volume&lt;/td&gt;
-          &lt;td&gt;Vn=k3nV0V_n = k^{3n}V_0&lt;/td&gt;
-          &lt;td&gt;V∞=V01−k3V_{\infty} = \dfrac{V_0}{1-k^{3}}&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;1three-amc-style-archetypes&#34;&gt;1 Three AMC-Style Archetypes&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Construction&lt;/th&gt;
-          &lt;th&gt;Shrink factor kk&lt;/th&gt;
-          &lt;th&gt;AMC “tell”&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Square-inside-square&lt;/strong&gt; whose vertices touch the side midpoints (rotated 45°)&lt;/td&gt;
-          &lt;td&gt;k=12k=\dfrac{1}{\sqrt2} in side, so k2=12k^{2}=\dfrac12 in area&lt;/td&gt;
-          &lt;td&gt;Midpoint wording + picture of a tilted square&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Inside-similar-triangle&lt;/strong&gt; (each joins the midpoints of the previous one)&lt;/td&gt;
-          &lt;td&gt;k=12k=\dfrac12 in side, so k2=14k^{2}=\dfrac14 in area&lt;/td&gt;
-          &lt;td&gt;“Connect midpoints of the sides to form new triangle”&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Incircle chain&lt;/strong&gt; in a right triangle (or semicircle)&lt;/td&gt;
-          &lt;td&gt;k=a+b−ca+b+ck=\dfrac{a+b-c}{a+b+c} for a right triangle with legs a,ba,b&lt;/td&gt;
-          &lt;td&gt;Mentions successive circles tangent to legs and to the previous circle&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;2worked-examples&#34;&gt;2 Worked Examples&lt;/h2&gt;
-&lt;h3 id=&#34;example-asquares-at-midpoints--area&#34;&gt;Example A (Squares at midpoints – area)&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A square of side 1010 cm has a second square whose vertices are the mid-points of the sides of the first square, and so on without end.  Find the total area.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/power-of-point-tangent-secant/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/power-of-point-tangent-secant/</guid>
-      <description>&lt;h1 id=&#34;6--power-of-a-point-pop-tangentsecant--chordchord&#34;&gt;#6 – Power of a Point (PoP): Tangent–Secant &amp;amp; Chord–Chord&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;(See the diagram: navy chords AB,CDAB, CD intersect at PP.
-A tangent at TT and a secant S ⁣E ⁣FS!E!F illustrate the other two PoP forms.)&lt;/em&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;1master-formulas&#34;&gt;1 Master Formulas&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Configuration&lt;/th&gt;
-          &lt;th&gt;Statement&lt;/th&gt;
-          &lt;th&gt;Mnemonic&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Chord–Chord&lt;/strong&gt; (inside)&lt;/td&gt;
-          &lt;td&gt;PA⋅PB  =  PC⋅PDPA \cdot PB ;=; PC \cdot PD&lt;/td&gt;
-          &lt;td&gt;“Product of the two chunks”&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Secant–Secant&lt;/strong&gt; (outside)&lt;/td&gt;
-          &lt;td&gt;SA⋅SB  =  SC⋅SDSA\cdot SB ;=; SC\cdot SD&lt;/td&gt;
-          &lt;td&gt;whole × outer = whole × outer&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Tangent–Secant&lt;/strong&gt; (outside)&lt;/td&gt;
-          &lt;td&gt;ST2  =  SE⋅SFST^{2} ;=; SE\cdot SF&lt;/td&gt;
-          &lt;td&gt;tangent² = outer × whole&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;em&gt;(Labels match the graphic: PP inside, SS outside, tangent point TT.)&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/pythagorean-triple-perimeter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/pythagorean-triple-perimeter/</guid>
-      <description>&lt;h1 id=&#34;2--pythagorean-triple-perimeter--area-problems&#34;&gt;#2 – Pythagorean-Triple Perimeter &amp;amp; Area Problems&lt;/h1&gt;
-&lt;p&gt;AMC setters love integer-length right triangles. Spotting a hidden Pythagorean triple lets you compute &lt;em&gt;everything&lt;/em&gt; (area, perimeter, altitude, inradius, circumscribed radius …) in seconds.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;1why-they-matter&#34;&gt;1 Why they matter&lt;/h3&gt;
-&lt;p&gt;A &lt;strong&gt;primitive Pythagorean triple&lt;/strong&gt; (a,b,c)(a,b,c) satisfies&lt;/p&gt;
-&lt;p&gt;$$
-a^{2}+b^{2}=c^{2},\qquad \gcd(a,b,c)=1 .
-$$&lt;/p&gt;
-&lt;p&gt;Once you identify $a,b,c$, key quantities pop out immediately:&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Quantity&lt;/th&gt;
-          &lt;th&gt;Formula&lt;/th&gt;
-          &lt;th&gt;Example (3-4-5)&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Perimeter&lt;/td&gt;
-          &lt;td&gt;$P=a+b+c$&lt;/td&gt;
-          &lt;td&gt;$3+4+5=12$&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Area&lt;/td&gt;
-          &lt;td&gt;$A=\tfrac12 ab$&lt;/td&gt;
-          &lt;td&gt;$\frac12(3)(4)=6$&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Inradius&lt;/td&gt;
-          &lt;td&gt;$r=\dfrac{a+b-c}{2}$&lt;/td&gt;
-          &lt;td&gt;$r=1$&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Altitude to hyp.&lt;/td&gt;
-          &lt;td&gt;$h=\dfrac{ab}{c}$&lt;/td&gt;
-          &lt;td&gt;$h=\dfrac{12}{5}=2.4$&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;These neat integers and simple fractions align perfectly with AMC answer choices.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/shoelace-coordinate-polygon/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/shoelace-coordinate-polygon/</guid>
-      <description>&lt;h1 id=&#34;9--shoelace-coordinate-polygon-area&#34;&gt;#9 – Shoelace (Coordinate-Polygon) Area&lt;/h1&gt;
-&lt;p&gt;On the AMC 10 you’ll often see a polygon whose vertices have small integer coordinates. Instead of decomposing into triangles, you can compute its area in seconds with the &lt;strong&gt;shoelace formula&lt;/strong&gt;.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;1shoelace-formula-aka-gausss-area-formula&#34;&gt;1 Shoelace Formula (a.k.a. Gauss’s area formula)&lt;/h3&gt;
-&lt;p&gt;For a simple polygon with vertices&lt;/p&gt;
-&lt;p&gt;$$
-(x_1,y_1),(x_2,y_2),\dots,(x_n,y_n) \quad\text{listed counter-clockwise},
-$$&lt;/p&gt;
-&lt;p&gt;the area is&lt;/p&gt;
-&lt;p&gt;$$
-A=\frac12\Bigl|,(x_1y_2+x_2y_3+\dots+x_ny_1)
-;-;(y_1x_2+y_2x_3+\dots+y_nx_1)\Bigr|.
-$$&lt;/p&gt;
-&lt;p&gt;Visually, you “criss-cross” the coordinates like lacing a shoe.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/similar-triangles-parallel-line/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/similar-triangles-parallel-line/</guid>
-      <description>&lt;h1 id=&#34;11-similar-triangles-via-a-parallel-line&#34;&gt;#11 Similar Triangles via a Parallel Line&lt;/h1&gt;
-&lt;p&gt;The entire engine here is the &lt;strong&gt;Basic Proportionality (Thales) Theorem&lt;/strong&gt; and its converse.  Once you see a line segment parallel to one side of a triangle — or a pair of parallels cutting two transversals — you can write proportional ratios without further justification.  That instantly unlocks lengths, areas, and sometimes concurrency.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;1core-statements&#34;&gt;1 Core Statements&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Version&lt;/th&gt;
-          &lt;th&gt;Hypotheses&lt;/th&gt;
-          &lt;th&gt;Conclusion&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Internal (common)&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;In △ABC \triangle ABC a line through AA meets BCBC at EE and DD is any point on ACAC such that DE∥BC DE \parallel BC.&lt;/td&gt;
-          &lt;td&gt;ADAC  =  AEAB  =  DEBC.\displaystyle \frac{AD}{AC} ;=; \frac{AE}{AB} ;=; \frac{DE}{BC}.The two triangles are similar: △ADE∼△ABC \triangle ADE \sim \triangle ABC.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Converse&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;A point D∈ACD\in AC and a point E∈ABE\in AB satisfy ADAC=AEAB \dfrac{AD}{AC}=\dfrac{AE}{AB}.&lt;/td&gt;
-          &lt;td&gt;The line DEDE is parallel to BCBC.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;External&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;DEDE meets the extension of BCBC beyond CC and is parallel to BCBC.&lt;/td&gt;
-          &lt;td&gt;Directed-length version: ADAC=AEAB \displaystyle \frac{AD}{AC}=\frac{AE}{AB} but one segment is negative.&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;em&gt;Mnemonic:&lt;/em&gt; &lt;strong&gt;parallel → proportion; proportion → parallel.&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/transformations-symmetry/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/transformations-symmetry/</guid>
-      <description>&lt;h1 id=&#34;transformations--symmetry&#34;&gt;Transformations &amp;amp; Symmetry&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;(translations · rotations · reflections · dilations)&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;On the AMC 10, problems that look like long angle-chases often crash-land to a single sentence once you recognize &lt;strong&gt;what motion takes one figure to another&lt;/strong&gt;.  Every isometry preserves length and angle; a dilation multiplies every length by the same factor—and nothing else changes.  That’s the whole game.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;1the-four-plane-isometries&#34;&gt;1 The Four Plane Isometries&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Motion&lt;/th&gt;
-          &lt;th&gt;Algebra / coordinates&lt;/th&gt;
-          &lt;th&gt;Typical AMC “tell”&lt;/th&gt;
-          &lt;th&gt;What stays equal&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Translation&lt;/strong&gt;  ⁣(h,k)!(h,k)&lt;/td&gt;
-          &lt;td&gt;(x,y)→(x+h,y+k)(x,y)\to(x+h,y+k)&lt;/td&gt;
-          &lt;td&gt;Parallel arrows, “slides 5 cm right and 2 cm up”&lt;/td&gt;
-          &lt;td&gt;All lengths, all angles, slopes&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Rotation&lt;/strong&gt; (center OO, angle θ\theta)&lt;/td&gt;
-          &lt;td&gt;complex form  z→O+(z−O)eiθz\to O+(z-O)e^{i\theta}&lt;/td&gt;
-          &lt;td&gt;“turns 120° about OO”, regular-polygon steps&lt;/td&gt;
-          &lt;td&gt;Lengths, angles, orientation clockwise ↔ counter&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Reflection&lt;/strong&gt; (across line ℓ\ell)&lt;/td&gt;
-          &lt;td&gt;fold line; in complex plane z→zˉz\to\bar z after axis change&lt;/td&gt;
-          &lt;td&gt;Mirror picture, right-angle tick marks at the mirror&lt;/td&gt;
-          &lt;td&gt;Lengths, angles, &lt;strong&gt;orientation reversed&lt;/strong&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Glide reflection&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;reflection ∘ translation&lt;/td&gt;
-          &lt;td&gt;Rare on AMC 10&lt;/td&gt;
-          &lt;td&gt;Lengths, angles&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;All four are &lt;strong&gt;rigid motions&lt;/strong&gt;—they keep every distance and every angle measure exactly the same.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/euclidean-algorithm-225936cc2214805ba505f13a1370e436/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/euclidean-algorithm-225936cc2214805ba505f13a1370e436/</guid>
-      <description>&lt;h1 id=&#34;euclidean-algorithm&#34;&gt;Euclidean Algorithm&lt;/h1&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-what-is-it&#34;&gt;🔧 What Is It?&lt;/h2&gt;
-&lt;p&gt;The &lt;strong&gt;Extended Euclidean Algorithm&lt;/strong&gt; not only computes the &lt;strong&gt;greatest common divisor (GCD)&lt;/strong&gt; of two integers $a$ and $b$, but also finds integers $x$ and $y$ such that:&lt;/p&gt;
-&lt;p&gt;$$
-\boxed{ax + by = \gcd(a, b)}
-$$&lt;/p&gt;
-&lt;p&gt;This is called &lt;strong&gt;Bézout&amp;rsquo;s identity&lt;/strong&gt;, and it’s essential for:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Solving equations like&lt;/p&gt;
-&lt;p&gt;$$
-ax+by=c
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Finding modular inverses: solving&lt;/p&gt;
-&lt;p&gt;$$
-ax \equiv 1 \pmod{m}
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-step-by-step-example&#34;&gt;🧮 Step-by-Step Example:&lt;/h2&gt;
-&lt;p&gt;Let’s find integers $x$ and $y$ such that:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/example-amcstyle-232936cc221480d1a1c6fc501aeff43e/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/example-amcstyle-232936cc221480d1a1c6fc501aeff43e/</guid>
-      <description>&lt;h1 id=&#34;exampleamcstyle&#34;&gt;Example (AMC‑style)&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Problem.&lt;/p&gt;
-&lt;p&gt;Find the least positive integer $n$ such that&lt;/p&gt;
-&lt;p&gt;$$
-n\equiv 5\pmod 7,\qquad n\equiv 4\pmod 9,\qquad n&amp;gt;100.
-$$&lt;/p&gt;
-&lt;p&gt;(A very similar setup has appeared multiple times on the AMC 10.)&lt;/p&gt;&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;1translate-the-statement-into-congruences&#34;&gt;1 Translate the statement into congruences&lt;/h2&gt;
-&lt;p&gt;The phrase “least positive integer nn such that …” almost always leads to &lt;strong&gt;modular‐arithmetic&lt;/strong&gt; constraints plus a size bound:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;n≡5(mod7)n\equiv 5\pmod 7 (“remainder 5 when divided by 7”)&lt;/li&gt;
-&lt;li&gt;n≡4(mod9)n\equiv 4\pmod 9 (“remainder 4 when divided by 9”)&lt;/li&gt;
-&lt;li&gt;n&amp;gt;100n&amp;gt;100 (the bounding inequality)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;2solve-the-congruences-first-ignore-the-bound-for-a-moment&#34;&gt;2 Solve the congruences first (ignore the bound for a moment)&lt;/h2&gt;
-&lt;p&gt;Take the simpler modulus (7) and write&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/linear-diophantine-equation-225936cc2214801da4f8f86ec7c58ecc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/linear-diophantine-equation-225936cc2214801da4f8f86ec7c58ecc/</guid>
-      <description>&lt;h1 id=&#34;linear-diophantine-equation&#34;&gt;Linear Diophantine equation&lt;/h1&gt;
-&lt;p&gt;Here&amp;rsquo;s a &lt;strong&gt;complete guide&lt;/strong&gt; on how to solve the linear Diophantine equation:&lt;/p&gt;
-&lt;p&gt;$$
-\boxed{ax + by = c}
-$$&lt;/p&gt;
-&lt;p&gt;Where $a, b, c$ are &lt;strong&gt;given integers&lt;/strong&gt;, and we want to find &lt;strong&gt;integer solutions&lt;/strong&gt; $x, y$.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-step-1-check-for-solvability&#34;&gt;✅ Step 1: Check for Solvability&lt;/h2&gt;
-&lt;p&gt;A solution exists &lt;strong&gt;if and only if&lt;/strong&gt;:&lt;/p&gt;
-&lt;p&gt;$$
-\boxed{\gcd(a, b) \mid c}
-$$&lt;/p&gt;
-&lt;p&gt;Let $d = \gcd(a, b)$. If $d \nmid c$, then &lt;strong&gt;no integer solutions&lt;/strong&gt; exist.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/b%C3%A9zouts-identity-225936cc221481f3b93fdb3e434dce85/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/b%C3%A9zouts-identity-225936cc221481f3b93fdb3e434dce85/</guid>
-      <description>&lt;h1 id=&#34;bézouts-identity&#34;&gt;Bézout&amp;rsquo;s Identity&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Bézout&amp;rsquo;s Identity&lt;/strong&gt; (also known as &lt;strong&gt;Bézout&amp;rsquo;s Lemma&lt;/strong&gt;) is a result in number theory that expresses a relationship between two integers and their greatest common divisor (GCD).&lt;/p&gt;
-&lt;h3 id=&#34;statement&#34;&gt;Statement:&lt;/h3&gt;
-&lt;p&gt;If ( a ) and ( b ) are two integers, and ( \gcd(a, b) ) is their greatest common divisor, then there exist integers ( x ) and ( y ) (called &lt;strong&gt;Bézout coefficients&lt;/strong&gt;) such that:&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;a \cdot x + b \cdot y = \gcd(a, b)&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/chicken-mcnugget-theorem-225936cc221481a5a9dbcd136a90e0eb/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/chicken-mcnugget-theorem-225936cc221481a5a9dbcd136a90e0eb/</guid>
-      <description>&lt;h1 id=&#34;chicken-mcnugget-theorem&#34;&gt;Chicken McNugget Theorem&lt;/h1&gt;
-&lt;p&gt;If you can only purchase McNuggets in packs of size $a$ and $b$ (where $a$ and $b$ are relatively prime, meaning their greatest common divisor is 1), the largest number of McNuggets that you &lt;strong&gt;cannot&lt;/strong&gt; purchase is given by:&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;\text{Largest Unreachable Number} = ab - a - b&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;This is known as the &lt;strong&gt;Frobenius number&lt;/strong&gt; for two numbers, where: $a$ and $b$ are relatively prime positive integers.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/chinese-reminder-theorem-225936cc221481c4b9daf164aa1366bc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/chinese-reminder-theorem-225936cc221481c4b9daf164aa1366bc/</guid>
-      <description>&lt;h1 id=&#34;chinese-reminder-theorem&#34;&gt;Chinese Reminder Theorem&lt;/h1&gt;
-&lt;p&gt;The &lt;strong&gt;Chinese Remainder Theorem (CRT)&lt;/strong&gt; is a result in number theory that allows us to solve systems of simultaneous congruences (modular equations) with different moduli, provided the moduli are pairwise coprime (i.e., the greatest common divisor of any pair of moduli is 1).&lt;/p&gt;
-&lt;h3 id=&#34;statement&#34;&gt;Statement:&lt;/h3&gt;
-&lt;p&gt;Let $n_1, n_2, \dots, n_k$ be pairwise coprime integers (i.e., $\gcd(n_i, n_j) = 1$ for all $i\ne j$). Consider a system of congruences:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/eulers-theorem-225936cc221481f8aa1bd10f5a3fee79/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/eulers-theorem-225936cc221481f8aa1bd10f5a3fee79/</guid>
-      <description>&lt;h1 id=&#34;eulers-theorem&#34;&gt;Euler’s Theorem&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Euler’s Theorem&lt;/strong&gt; is a fundamental result in number theory that generalizes Fermat&amp;rsquo;s Little Theorem and plays an important role in modular arithmetic, particularly in cryptography (e.g., RSA encryption). It relates the modular exponentiation of a number and Euler&amp;rsquo;s totient function.&lt;/p&gt;
-&lt;h3 id=&#34;statement&#34;&gt;Statement:&lt;/h3&gt;
-&lt;p&gt;If ( a ) and ( n ) are two &lt;strong&gt;coprime&lt;/strong&gt; integers (i.e., ( \gcd(a, n) = 1 )), then:&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;a^{\phi(n)} \equiv 1 \pmod{n}&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;Where ( \phi(n) ) is &lt;strong&gt;Euler&amp;rsquo;s totient function&lt;/strong&gt;, which counts the number of integers less than ( n ) that are coprime with ( n ).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/legendres-formula-225936cc221481fab28de2336e5169e0/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/legendres-formula-225936cc221481fab28de2336e5169e0/</guid>
-      <description>&lt;h1 id=&#34;legendres-formula&#34;&gt;Legendre&amp;rsquo;s formula&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Legendre&amp;rsquo;s Theorem&lt;/strong&gt; (or &lt;strong&gt;Legendre&amp;rsquo;s formula&lt;/strong&gt;) is a result in number theory that gives a way to find the largest power of a prime number ( p ) that divides a factorial ( n! ). This theorem is useful in combinatorics, modular arithmetic, and prime factorization problems.&lt;/p&gt;
-&lt;h3 id=&#34;formal-statement&#34;&gt;Formal Statement:&lt;/h3&gt;
-&lt;p&gt;Legendre&amp;rsquo;s formula for the exponent of a prime ( p ) in the factorization of ( n! ) (the factorial of ( n )) is given by:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/problems-225936cc221481858579cea56052a635/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/problems-225936cc221481858579cea56052a635/</guid>
-      <description>&lt;h1 id=&#34;problems&#34;&gt;Problems&lt;/h1&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;Problems%20225936cc221481858579cea56052a635/image.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;../Number%20Theory%20Problems%20225936cc2214811298a7c6877ef47024/image.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;Problems%20225936cc221481858579cea56052a635/image%201.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;../Number%20Theory%20Problems%20225936cc2214811298a7c6877ef47024/image%201.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;../Number%20Theory%20Problems%20225936cc2214811298a7c6877ef47024/image%202.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;../Number%20Theory%20Problems%20225936cc2214811298a7c6877ef47024/image%203.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;../Number%20Theory%20Problems%20225936cc2214811298a7c6877ef47024/image%204.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;../Number%20Theory%20Problems%20225936cc2214811298a7c6877ef47024/image%205.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;../Number%20Theory%20Problems%20225936cc2214811298a7c6877ef47024/image%206.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;../Number%20Theory%20Problems%20225936cc2214811298a7c6877ef47024/image%207.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;../Number%20Theory%20Problems%20225936cc2214811298a7c6877ef47024/image%208.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;../Number%20Theory%20Problems%20225936cc2214811298a7c6877ef47024/image%209.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;../Number%20Theory%20Problems%20225936cc2214811298a7c6877ef47024/image%2010.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;Problems%20225936cc221481858579cea56052a635/image%202.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Find the smallest positive integer greater than 100 that leaves a remainder of 5 when
-divided by 9 and leaves a remainder of 4 when divided by 17.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;Problems%20225936cc221481858579cea56052a635/image%203.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;Problems%20225936cc221481858579cea56052a635/image%204.png&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/wilsons-theorem-225936cc2214817c996dcd67702aa115/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/wilsons-theorem-225936cc2214817c996dcd67702aa115/</guid>
-      <description>&lt;h1 id=&#34;wilsons-theorem&#34;&gt;Wilson&amp;rsquo;s Theorem&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Wilson&amp;rsquo;s Theorem&lt;/strong&gt; is a result in number theory that characterizes prime numbers using factorials and modular arithmetic. It provides a criterion to test whether a number is prime.&lt;/p&gt;
-&lt;h3 id=&#34;statement&#34;&gt;Statement:&lt;/h3&gt;
-&lt;p&gt;A positive integer ( p ) is prime if and only if:&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;(p - 1)! \equiv -1 \pmod{p}&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;This means that if ( p ) is a prime number, the factorial of ( (p - 1) ) is congruent to ( -1 ) modulo ( p ). Equivalently, you can write:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/solving-twovariable-quadratic-diophantine-equatio-233936cc22148078a2bfdeaa093955d3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/solving-twovariable-quadratic-diophantine-equatio-233936cc22148078a2bfdeaa093955d3/</guid>
-      <description>&lt;h1 id=&#34;solving-twovariable-quadratic-diophantine-equation&#34;&gt;Solving two‑variable quadratic Diophantine equation&lt;/h1&gt;
-&lt;p&gt;$$
-x^{2}+Bxy+C y^{2}+Dx+Ey+F=0,
-\qquad A,B,C,D,E,F\in\mathbb Z.
-$$&lt;/p&gt;
-&lt;p&gt;The aim is to decide &lt;strong&gt;(i)&lt;/strong&gt; whether integer solutions exist and &lt;strong&gt;(ii)&lt;/strong&gt; how to list them all (finite or infinite).&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;1-normalize-and-check-easy-obstructions&#34;&gt;1. Normalize and check easy obstructions&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Step&lt;/th&gt;
-          &lt;th&gt;What to do&lt;/th&gt;
-          &lt;th&gt;Why&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;(a) Clear denominators / GCD&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;Multiply both sides by a common factor so all coefficients are integers with $\gcd=1$.&lt;/td&gt;
-          &lt;td&gt;Keeps later modular work clean.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;(b) Reduce mod small bases&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;Test mod 2, 4, 3, 5, 8, 11…&lt;/td&gt;
-          &lt;td&gt;Often rules out entire families quickly.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;(c) Look for obvious factorisation&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;Does the LHS factor nicely? (e.g. SFFT: $xy+mx+ny = (x+n)(y+m)-mn)$.&lt;/td&gt;
-          &lt;td&gt;Turns the job into divisor–counting.&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Example. xy+4y=5x+20xy+4y=5x+20 → (x−4)(y+5)=0(x-4)(y+5) = 0 after shifting terms (classic Simon).&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>LSH Attention: Multiple Hyperplanes and Bucketing</title>
-      <link>http://localhost:1313/notes/ai/ml/lsh-attention/</link>
+      <link>https://xhx.github.io/notes/ai/ml/lsh-attention/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/ai/ml/lsh-attention/</guid>
+      <guid>https://xhx.github.io/notes/ai/ml/lsh-attention/</guid>
       <description>Understanding how multiple random hyperplanes create better locality-sensitive hashing for attention mechanisms</description>
     </item>
     <item>
       <title>Self-Attention Approximation Methods</title>
-      <link>http://localhost:1313/notes/ai/ml/self-attention-approx/</link>
+      <link>https://xhx.github.io/notes/ai/ml/self-attention-approx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/ai/ml/self-attention-approx/</guid>
+      <guid>https://xhx.github.io/notes/ai/ml/self-attention-approx/</guid>
       <description>Efficient attention mechanisms including kernelization, low-rank approximations, and structured sparsity</description>
     </item>
   </channel>

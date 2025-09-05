@@ -9,11 +9,32 @@
     <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/gcd/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Euclidean Algorithm</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/topic-guides/euclidean-algorithm/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/topic-guides/euclidean-algorithm/</guid>
+      <description>Master the Euclidean algorithm for finding GCD efficiently</description>
+    </item>
+    <item>
+      <title>Euclidean Algorithm</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/euclidean-algorithm/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/euclidean-algorithm/</guid>
+      <description>Extended Euclidean Algorithm for finding GCD and solving linear Diophantine equations</description>
+    </item>
+    <item>
       <title>LCM &amp; GCD</title>
       <link>http://localhost:1313/notes/math/amc/amc10/number-theory/lcm-gcd/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/lcm-gcd/</guid>
-      <description>Least Common Multiple and Greatest Common Divisor for AMC 10</description>
+      <description>Least Common Multiple and Greatest Common Divisor for AMC 10/12</description>
+    </item>
+    <item>
+      <title>Bézout&#39;s Identity</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/number-theory/bezouts-identity/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/amc/amc10/number-theory/bezouts-identity/</guid>
+      <description>Bézout&amp;#39;s Identity and its applications in AMC 10/12 number theory</description>
     </item>
   </channel>
 </rss>

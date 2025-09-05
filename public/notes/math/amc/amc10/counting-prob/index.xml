@@ -156,13 +156,6 @@
       <description>Advanced combinatorics topics for AMC 10</description>
     </item>
     <item>
-      <title>Advanced Geometry</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/geometry-advanced/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/geometry-advanced/</guid>
-      <description>Advanced geometry topics for AMC 10</description>
-    </item>
-    <item>
       <title>LCM &amp; GCD</title>
       <link>http://localhost:1313/notes/math/amc/amc10/number-theory/lcm-gcd/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
@@ -212,11 +205,11 @@
       <description>Useful tricks and techniques for AMC 10 problem solving</description>
     </item>
     <item>
-      <title>HS Geometry Study Pack — Text &#43; SVG Diagrams</title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/knowledge-point/</link>
+      <title>Complete AMC 10 Geometry Reference Guide</title>
+      <link>http://localhost:1313/notes/math/amc/amc10/geometry/knowledge-points/</link>
       <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/knowledge-point/</guid>
-      <description>Extracted theorems and identities with PaperMod-compatible SVG diagrams.</description>
+      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/knowledge-points/</guid>
+      <description>Comprehensive collection of essential geometry theorems, formulas, and problem-solving strategies for AMC 10 competition mathematics.</description>
     </item>
     <item>
       <title>Floor and Fractional Part Functions</title>
@@ -430,7 +423,13 @@ This is often used to expand binomials and calculate specific terms.&lt;/p&gt;</
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;img alt=&#34;output (2).png&#34; loading=&#34;lazy&#34; src=&#34;#13%20%E2%80%93%20Cevians,%20Concurrency,%20and%20Mass-Points%20228936cc22148070be8ceedcd26fb8c5/output_(2).png&#34;&gt;&lt;/p&gt;</description>
+&lt;hr&gt;
+&lt;h3 id=&#34;1cevas-theorem--forward--converse&#34;&gt;1 Ceva’s Theorem – Forward &amp;amp; Converse&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Forward:&lt;/strong&gt; If AD,BE,CFAD,BE,CF concur ⇒ the product of directed ratios equals 1.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Converse:&lt;/strong&gt; If the product of ratios equals 1 ⇒ the three cevians meet at a single point.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Mnemonic:&lt;/em&gt; “∏(side pieces)=1\displaystyle \prod \text{(side pieces)} = 1” when cevians concur.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -720,73 +719,6 @@ A small blue circle of radius rr and a larger orange circle of radius RR both to
 &lt;h2 id=&#34;3worked-example-a--ring-hit&#34;&gt;3 Worked Example A – Ring Hit&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;A dart hits a dartboard shaped like an annulus with inner radius 22 cm and outer radius 55 cm.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/problems-225936cc2214818b989cc5d523338813/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/problems-225936cc2214818b989cc5d523338813/</guid>
-      <description>&lt;h1 id=&#34;problems&#34;&gt;Problems&lt;/h1&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;Problems%20225936cc2214818b989cc5d523338813/image.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;Problems%20225936cc2214818b989cc5d523338813/image%201.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;Problems%20225936cc2214818b989cc5d523338813/image%202.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;Problems%20225936cc2214818b989cc5d523338813/image%203.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;Problems%20225936cc2214818b989cc5d523338813/image%204.png&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/math/amc/amc10/geometry/geometry-knowledge-points/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/amc/amc10/geometry/geometry-knowledge-points/</guid>
-      <description>&lt;h1 id=&#34;geometry-knowledge-points&#34;&gt;Geometry Knowledge Points&lt;/h1&gt;
-&lt;h1 id=&#34;angles&#34;&gt;Angles&lt;/h1&gt;
-&lt;p&gt;&lt;img alt=&#34;Screenshot 2025-07-14 at 4.51.38\u202fPM.png&#34; loading=&#34;lazy&#34; src=&#34;Geometry%20Knowledge%20Points%20230936cc221480f5a4e6c5b1f29e122e/Screenshot_2025-07-14_at_4.51.38_PM.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Screenshot 2025-07-15 at 10.47.39\u202fAM.png&#34; loading=&#34;lazy&#34; src=&#34;Geometry%20Knowledge%20Points%20230936cc221480f5a4e6c5b1f29e122e/Screenshot_2025-07-15_at_10.47.39_AM.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Screenshot 2025-07-14 at 4.52.33\u202fPM.png&#34; loading=&#34;lazy&#34; src=&#34;Geometry%20Knowledge%20Points%20230936cc221480f5a4e6c5b1f29e122e/Screenshot_2025-07-14_at_4.52.33_PM.png&#34;&gt;&lt;/p&gt;
-&lt;h1 id=&#34;triangles&#34;&gt;Triangles&lt;/h1&gt;
-&lt;h3 id=&#34;special-triangles&#34;&gt;Special Triangles&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;Screenshot 2025-07-14 at 4.56.56\u202fPM.png&#34; loading=&#34;lazy&#34; src=&#34;Geometry%20Knowledge%20Points%20230936cc221480f5a4e6c5b1f29e122e/Screenshot_2025-07-14_at_4.56.56_PM.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Screenshot 2025-07-14 at 4.53.09\u202fPM.png&#34; loading=&#34;lazy&#34; src=&#34;Geometry%20Knowledge%20Points%20230936cc221480f5a4e6c5b1f29e122e/Screenshot_2025-07-14_at_4.53.09_PM.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Screenshot 2025-07-14 at 4.57.17\u202fPM.png&#34; loading=&#34;lazy&#34; src=&#34;Geometry%20Knowledge%20Points%20230936cc221480f5a4e6c5b1f29e122e/Screenshot_2025-07-14_at_4.57.17_PM.png&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;important-pythagorean-triples&#34;&gt;Important Pythagorean Triples&lt;/h3&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;3&lt;/th&gt;
-          &lt;th&gt;4&lt;/th&gt;
-          &lt;th&gt;5&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;5&lt;/td&gt;
-          &lt;td&gt;12&lt;/td&gt;
-          &lt;td&gt;13&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;7&lt;/td&gt;
-          &lt;td&gt;24&lt;/td&gt;
-          &lt;td&gt;25&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;8&lt;/td&gt;
-          &lt;td&gt;15&lt;/td&gt;
-          &lt;td&gt;17&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;9&lt;/td&gt;
-          &lt;td&gt;40&lt;/td&gt;
-          &lt;td&gt;41&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;img alt=&#34;Screenshot 2025-07-14 at 4.57.56\u202fPM.png&#34; loading=&#34;lazy&#34; src=&#34;Geometry%20Knowledge%20Points%20230936cc221480f5a4e6c5b1f29e122e/Screenshot_2025-07-14_at_4.57.56_PM.png&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;inscribed--circumscribed-circles&#34;&gt;Inscribed &amp;amp; Circumscribed Circles&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;Screenshot 2025-07-14 at 4.53.37\u202fPM.png&#34; loading=&#34;lazy&#34; src=&#34;Geometry%20Knowledge%20Points%20230936cc221480f5a4e6c5b1f29e122e/Screenshot_2025-07-14_at_4.53.37_PM.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Screenshot 2025-07-14 at 4.53.48\u202fPM.png&#34; loading=&#34;lazy&#34; src=&#34;Geometry%20Knowledge%20Points%20230936cc221480f5a4e6c5b1f29e122e/Screenshot_2025-07-14_at_4.53.48_PM.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Screenshot 2025-07-14 at 4.54.05\u202fPM.png&#34; loading=&#34;lazy&#34; src=&#34;Geometry%20Knowledge%20Points%20230936cc221480f5a4e6c5b1f29e122e/Screenshot_2025-07-14_at_4.54.05_PM.png&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;ratios&#34;&gt;Ratios&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;Screenshot 2025-07-14 at 4.58.21\u202fPM.png&#34; loading=&#34;lazy&#34; src=&#34;Geometry%20Knowledge%20Points%20230936cc221480f5a4e6c5b1f29e122e/Screenshot_2025-07-14_at_4.58.21_PM.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>

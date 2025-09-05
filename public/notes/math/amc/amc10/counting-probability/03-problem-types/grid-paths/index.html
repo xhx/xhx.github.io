@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Grid Paths | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Counting, Grid Paths, Lattice">
+<meta name="description" content="Lattice path counting with blockages, diagonal moves, and symmetry techniques.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/grid-paths/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xhx.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/grid-paths/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+<meta property="og:url" content="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/grid-paths/">
+  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
+  <meta property="og:title" content="Grid Paths">
+  <meta property="og:description" content="Lattice path counting with blockages, diagonal moves, and symmetry techniques.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:tag" content="Amc10">
+    <meta property="article:tag" content="AMC12">
+    <meta property="article:tag" content="Counting">
+    <meta property="article:tag" content="Grid Paths">
+    <meta property="article:tag" content="Lattice">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Grid Paths">
+<meta name="twitter:description" content="Lattice path counting with blockages, diagonal moves, and symmetry techniques.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Notes",
+      "item": "https://xhx.github.io/notes/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Mathematics Notes",
+      "item": "https://xhx.github.io/notes/math/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "AMC Problems",
+      "item": "https://xhx.github.io/notes/math/amc/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "AMC 10",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "Counting \u0026 Probability Mastery Guide",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "Problem Types",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  7 ,
+      "name": "Grid Paths",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/grid-paths/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Grid Paths",
+  "name": "Grid Paths",
+  "description": "Lattice path counting with blockages, diagonal moves, and symmetry techniques.",
+  "keywords": [
+    "AMC10", "AMC12", "Counting", "Grid Paths", "Lattice"
+  ],
+  "articleBody": "🗺️ Grid Paths Problems involving counting paths on a grid with various constraints and restrictions.\n🎯 Recognition Cues Keywords: “path”, “walk”, “grid”, “lattice”, “right and up”, “diagonal” Setup: Moving on a grid from one point to another Constraints: Blocked squares, diagonal moves, specific directions 📋 Solution Template Identify the path type:\nBasic lattice path: Only right and up moves Diagonal path: Includes diagonal moves Blocked path: Some squares are off-limits Apply the appropriate method:\nBasic lattice: Use $\\binom{m+n}{n}$ formula Diagonal: Use modified formula or recursion Blocked: Use inclusion-exclusion or dynamic programming Check for symmetry:\nReflection symmetry Rotation symmetry Diagonal symmetry 💡 Micro-Examples Basic Lattice Path Problem: How many ways can you walk from (0,0) to (3,2) moving only right and up? Solution: $\\binom{3+2}{2} = \\binom{5}{2} = 10$ ways Diagonal Path Problem: How many ways can you walk from (0,0) to (3,2) moving right, up, or diagonally up-right? Solution: Use recursion: $a_{i,j} = a_{i-1,j} + a_{i,j-1} + a_{i-1,j-1}$ Blocked Path Problem: How many ways can you walk from (0,0) to (3,2) avoiding the square (1,1)? Solution: Total paths - Paths through (1,1) = $\\binom{5}{2} - \\binom{2}{1} \\cdot \\binom{2}{1} = 10 - 4 = 6$ ⚠️ Common Pitfalls \u0026 Variants Pitfall: Forgetting to account for blocked squares Wrong: “Path from (0,0) to (3,2) avoiding (1,1)” = $\\binom{5}{2}$ Right: Total - Paths through (1,1) = $\\binom{5}{2} - \\binom{2}{1} \\cdot \\binom{2}{1}$ Pitfall: Confusing lattice paths with general paths Wrong: “Path from (0,0) to (3,2)” = $3! \\cdot 2! = 12$ ways Right: $\\binom{5}{2} = 10$ ways (lattice path formula) Pitfall: Misapplying diagonal path formulas Wrong: “Diagonal path from (0,0) to (3,2)” = $\\binom{5}{2}$ Right: Use recursion or modified formula for diagonal moves 🏆 AMC-Style Worked Example Problem: How many ways can you walk from (0,0) to (4,3) moving only right and up, avoiding the squares (1,1) and (2,2)?\nSolution:\nStep 1: Total paths from (0,0) to (4,3): $\\binom{7}{3} = 35$ Step 2: Paths through (1,1): $\\binom{2}{1} \\cdot \\binom{4}{2} = 2 \\cdot 6 = 12$ Step 3: Paths through (2,2): $\\binom{4}{2} \\cdot \\binom{2}{1} = 6 \\cdot 2 = 12$ Step 4: Paths through both (1,1) and (2,2): $\\binom{2}{1} \\cdot \\binom{2}{1} \\cdot \\binom{2}{1} = 8$ Step 5: By inclusion-exclusion: $35 - 12 - 12 + 8 = 19$ Key insight: Use inclusion-exclusion for multiple blocked squares!\n🔗 Related Topics Permutations \u0026 Combinations - Foundation for path counting Inclusion-Exclusion - Essential for blocked paths Symmetry \u0026 Invariance - Symmetry in path problems Next: Urn, Coin \u0026 String Problems → Expected Counts\n",
+  "wordCount" : "414",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Xiaohui Xie"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/grid-paths/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Xiaohui Xie's Site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xhx.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/">Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/">Counting &amp; Probability Mastery Guide</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/">Problem Types</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Grid Paths
+    </h1>
+    <div class="post-description">
+      Lattice path counting with blockages, diagonal moves, and symmetry techniques.
+    </div>
+    <div class="post-meta">2 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-grid-paths" aria-label="🗺️ Grid Paths">🗺️ Grid Paths</a><ul>
+                        
+                <li>
+                    <a href="#-recognition-cues" aria-label="🎯 Recognition Cues">🎯 Recognition Cues</a></li>
+                <li>
+                    <a href="#-solution-template" aria-label="📋 Solution Template">📋 Solution Template</a></li>
+                <li>
+                    <a href="#-micro-examples" aria-label="💡 Micro-Examples">💡 Micro-Examples</a><ul>
+                        
+                <li>
+                    <a href="#basic-lattice-path" aria-label="Basic Lattice Path">Basic Lattice Path</a></li>
+                <li>
+                    <a href="#diagonal-path" aria-label="Diagonal Path">Diagonal Path</a></li>
+                <li>
+                    <a href="#blocked-path" aria-label="Blocked Path">Blocked Path</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-common-pitfalls--variants" aria-label="⚠️ Common Pitfalls &amp; Variants">⚠️ Common Pitfalls &amp; Variants</a><ul>
+                        
+                <li>
+                    <a href="#pitfall-forgetting-to-account-for-blocked-squares" aria-label="Pitfall: Forgetting to account for blocked squares">Pitfall: Forgetting to account for blocked squares</a></li>
+                <li>
+                    <a href="#pitfall-confusing-lattice-paths-with-general-paths" aria-label="Pitfall: Confusing lattice paths with general paths">Pitfall: Confusing lattice paths with general paths</a></li>
+                <li>
+                    <a href="#pitfall-misapplying-diagonal-path-formulas" aria-label="Pitfall: Misapplying diagonal path formulas">Pitfall: Misapplying diagonal path formulas</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-amc-style-worked-example" aria-label="🏆 AMC-Style Worked Example">🏆 AMC-Style Worked Example</a></li>
+                <li>
+                    <a href="#-related-topics" aria-label="🔗 Related Topics">🔗 Related Topics</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-grid-paths">🗺️ Grid Paths<a hidden class="anchor" aria-hidden="true" href="#-grid-paths">#</a></h1>
+<p>Problems involving counting paths on a grid with various constraints and restrictions.</p>
+<h2 id="-recognition-cues">🎯 Recognition Cues<a hidden class="anchor" aria-hidden="true" href="#-recognition-cues">#</a></h2>
+<ul>
+<li><strong>Keywords</strong>: &ldquo;path&rdquo;, &ldquo;walk&rdquo;, &ldquo;grid&rdquo;, &ldquo;lattice&rdquo;, &ldquo;right and up&rdquo;, &ldquo;diagonal&rdquo;</li>
+<li><strong>Setup</strong>: Moving on a grid from one point to another</li>
+<li><strong>Constraints</strong>: Blocked squares, diagonal moves, specific directions</li>
+</ul>
+<h2 id="-solution-template">📋 Solution Template<a hidden class="anchor" aria-hidden="true" href="#-solution-template">#</a></h2>
+<ol>
+<li>
+<p><strong>Identify the path type</strong>:</p>
+<ul>
+<li><strong>Basic lattice path</strong>: Only right and up moves</li>
+<li><strong>Diagonal path</strong>: Includes diagonal moves</li>
+<li><strong>Blocked path</strong>: Some squares are off-limits</li>
+</ul>
+</li>
+<li>
+<p><strong>Apply the appropriate method</strong>:</p>
+<ul>
+<li><strong>Basic lattice</strong>: Use $\binom{m+n}{n}$ formula</li>
+<li><strong>Diagonal</strong>: Use modified formula or recursion</li>
+<li><strong>Blocked</strong>: Use inclusion-exclusion or dynamic programming</li>
+</ul>
+</li>
+<li>
+<p><strong>Check for symmetry</strong>:</p>
+<ul>
+<li>Reflection symmetry</li>
+<li>Rotation symmetry</li>
+<li>Diagonal symmetry</li>
+</ul>
+</li>
+</ol>
+<h2 id="-micro-examples">💡 Micro-Examples<a hidden class="anchor" aria-hidden="true" href="#-micro-examples">#</a></h2>
+<h3 id="basic-lattice-path">Basic Lattice Path<a hidden class="anchor" aria-hidden="true" href="#basic-lattice-path">#</a></h3>
+<ul>
+<li><strong>Problem</strong>: How many ways can you walk from (0,0) to (3,2) moving only right and up?</li>
+<li><strong>Solution</strong>: $\binom{3+2}{2} = \binom{5}{2} = 10$ ways</li>
+</ul>
+<h3 id="diagonal-path">Diagonal Path<a hidden class="anchor" aria-hidden="true" href="#diagonal-path">#</a></h3>
+<ul>
+<li><strong>Problem</strong>: How many ways can you walk from (0,0) to (3,2) moving right, up, or diagonally up-right?</li>
+<li><strong>Solution</strong>: Use recursion: $a_{i,j} = a_{i-1,j} + a_{i,j-1} + a_{i-1,j-1}$</li>
+</ul>
+<h3 id="blocked-path">Blocked Path<a hidden class="anchor" aria-hidden="true" href="#blocked-path">#</a></h3>
+<ul>
+<li><strong>Problem</strong>: How many ways can you walk from (0,0) to (3,2) avoiding the square (1,1)?</li>
+<li><strong>Solution</strong>: Total paths - Paths through (1,1) = $\binom{5}{2} - \binom{2}{1} \cdot \binom{2}{1} = 10 - 4 = 6$</li>
+</ul>
+<h2 id="-common-pitfalls--variants">⚠️ Common Pitfalls &amp; Variants<a hidden class="anchor" aria-hidden="true" href="#-common-pitfalls--variants">#</a></h2>
+<h3 id="pitfall-forgetting-to-account-for-blocked-squares"><strong>Pitfall</strong>: Forgetting to account for blocked squares<a hidden class="anchor" aria-hidden="true" href="#pitfall-forgetting-to-account-for-blocked-squares">#</a></h3>
+<ul>
+<li><strong>Wrong</strong>: &ldquo;Path from (0,0) to (3,2) avoiding (1,1)&rdquo; = $\binom{5}{2}$</li>
+<li><strong>Right</strong>: Total - Paths through (1,1) = $\binom{5}{2} - \binom{2}{1} \cdot \binom{2}{1}$</li>
+</ul>
+<h3 id="pitfall-confusing-lattice-paths-with-general-paths"><strong>Pitfall</strong>: Confusing lattice paths with general paths<a hidden class="anchor" aria-hidden="true" href="#pitfall-confusing-lattice-paths-with-general-paths">#</a></h3>
+<ul>
+<li><strong>Wrong</strong>: &ldquo;Path from (0,0) to (3,2)&rdquo; = $3! \cdot 2! = 12$ ways</li>
+<li><strong>Right</strong>: $\binom{5}{2} = 10$ ways (lattice path formula)</li>
+</ul>
+<h3 id="pitfall-misapplying-diagonal-path-formulas"><strong>Pitfall</strong>: Misapplying diagonal path formulas<a hidden class="anchor" aria-hidden="true" href="#pitfall-misapplying-diagonal-path-formulas">#</a></h3>
+<ul>
+<li><strong>Wrong</strong>: &ldquo;Diagonal path from (0,0) to (3,2)&rdquo; = $\binom{5}{2}$</li>
+<li><strong>Right</strong>: Use recursion or modified formula for diagonal moves</li>
+</ul>
+<h2 id="-amc-style-worked-example">🏆 AMC-Style Worked Example<a hidden class="anchor" aria-hidden="true" href="#-amc-style-worked-example">#</a></h2>
+<p><strong>Problem</strong>: How many ways can you walk from (0,0) to (4,3) moving only right and up, avoiding the squares (1,1) and (2,2)?</p>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li><strong>Step 1</strong>: Total paths from (0,0) to (4,3): $\binom{7}{3} = 35$</li>
+<li><strong>Step 2</strong>: Paths through (1,1): $\binom{2}{1} \cdot \binom{4}{2} = 2 \cdot 6 = 12$</li>
+<li><strong>Step 3</strong>: Paths through (2,2): $\binom{4}{2} \cdot \binom{2}{1} = 6 \cdot 2 = 12$</li>
+<li><strong>Step 4</strong>: Paths through both (1,1) and (2,2): $\binom{2}{1} \cdot \binom{2}{1} \cdot \binom{2}{1} = 8$</li>
+<li><strong>Step 5</strong>: By inclusion-exclusion: $35 - 12 - 12 + 8 = 19$</li>
+</ul>
+<p><strong>Key insight</strong>: Use inclusion-exclusion for multiple blocked squares!</p>
+<h2 id="-related-topics">🔗 Related Topics<a hidden class="anchor" aria-hidden="true" href="#-related-topics">#</a></h2>
+<ul>
+<li><strong><a href="02-topics/permutations-combinations">Permutations &amp; Combinations</a></strong> - Foundation for path counting</li>
+<li><strong><a href="02-topics/inclusion-exclusion">Inclusion-Exclusion</a></strong> - Essential for blocked paths</li>
+<li><strong><a href="02-topics/symmetry-invariance">Symmetry &amp; Invariance</a></strong> - Symmetry in path problems</li>
+</ul>
+<hr>
+<p><em>Next: <a href="urn-coin-strings">Urn, Coin &amp; String Problems</a> → <a href="expected-counts">Expected Counts</a></em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://xhx.github.io/tags/amc10/">Amc10</a></li>
+      <li><a href="https://xhx.github.io/tags/amc12/">AMC12</a></li>
+      <li><a href="https://xhx.github.io/tags/counting/">Counting</a></li>
+      <li><a href="https://xhx.github.io/tags/grid-paths/">Grid Paths</a></li>
+      <li><a href="https://xhx.github.io/tags/lattice/">Lattice</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

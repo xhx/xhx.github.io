@@ -2,742 +2,1545 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/algebra/problems/absolute-value-inequality/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/absolute-value-inequality/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/algebra/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/algebra/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/algebra/problems/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/geometry/altitude-created-similar-triangles/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/altitude-created-similar-triangles/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/algebra/problems/am-gm-bounding-inequality/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/am-gm-bounding-inequality/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/algebra/problems/binomial-theorem-coefficient/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/algebra/problems/digit-sum-divisibility-11/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/binomial-theorem-coefficient/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/algebra/problems/find-least-positive-integer/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/cevians-concurrency-mass-points/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/algebra/problems/floor-function-bounding/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/circle-tangent-two-lines/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/algebra/problems/floor-sum-grouping/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/circumradius-extended-law-sines/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/algebra/problems/functional-equation-plug-x/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/coordinate-bash-distance-slope/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/algebra/problems/linear-recursion-explicit/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/cross-sections-cubes-prisms/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/algebra/problems/newton-sum-symmetric/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/cyclic-quadrilateral-angle-chases/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/algebra/problems/perfect-square-discriminant/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/cyclic-quadrilateral-length-ratios/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/algebra/problems/radical-exponent-manipulation/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/topic-guides/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/algebra/problems/remainder-theorem-synthetic/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/digit-sum-divisibility-11/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/algebra/problems/symmetric-sum-identity-cubics/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/find-least-positive-integer/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/algebra/problems/telescoping-partial-fraction/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/floor-function-bounding/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/geometry/angle-bisector-theorem/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/floor-sum-grouping/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/geometry/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/functional-equation-plug-x/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/geometry/box-prism-diagonals-3d/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/geometric-probability/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/number-theory/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/hidden-triangles-30-60-90/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/counting-prob/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/inradius-right-triangle/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/precalculus/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/linear-recursion-explicit/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/misc/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/mid-segments-triangles-trapezoids/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/syllabus/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/nested-similar-figures/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/number-theory/chinese-remainder-theorem/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/newton-sum-symmetric/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/counting-prob/combinatorics-advanced/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/perfect-square-discriminant/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/ai/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/geometry/geometry-advanced/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/power-of-point-tangent-secant/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/number-theory/lcm-gcd/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/pythagorean-triple-perimeter/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/number-theory/modular-operation/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/radical-exponent-manipulation/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/number-theory/number-theory-advanced/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/remainder-theorem-synthetic/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/number-theory/number-theory-problems/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/shoelace-coordinate-polygon/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/counting-prob/principle-of-inclusion-exclusion/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/similar-triangles-parallel-line/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/problems/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/study-strategy/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/tricks/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/symmetric-sum-identity-cubics/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/telescoping-partial-fraction/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/problem-types/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/transformations-symmetry/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/angle-bisector-theorem/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/essential-formulas/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/box-prism-diagonals-3d/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/problem-solving-tips/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/misc/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/syllabus/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/ai/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/geometry-advanced/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/scope-map/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/scope-map/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/notation-cheatsheet/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/notation-cheatsheet/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/concept-atlas/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/concept-atlas/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/problems/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/tricks/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/counting-principles/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/functions-and-transformations/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/equations-and-inequalities/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/permutations-combinations/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/binomial-multinomial/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/polynomials-and-rational-functions/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/exponents-and-logarithms/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/inclusion-exclusion/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/pigeonhole/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/trigonometry-basics/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/stars-and-bars/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/trig-identities-and-equations/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/laws-of-sines-and-cosines/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/probability-basics/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/complex-numbers/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/expected-value/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/complex-plane-geometry/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/distributions/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/sequences-and-series/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/symmetry-invariance/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/binomial-theorem-and-series/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/recurrences-gf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/coordinate-geometry/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/vectors-light/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/functional-equations-light/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/seatings-restrictions/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/solving-trig-equations/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/logarithm-equations-and-inequalities/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/word-rearrangements/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/committees-and-conditions/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/polynomial-roots-and-vieta/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/balls-in-bins/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/inequalities-amgm-cauchy/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/at-least-at-most/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/grid-paths/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/urn-coin-strings/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/expected-counts/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/conditional-chains/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/derangements/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/formulas/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/circular-permutations/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/formulas/essential-formulas/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/symmetry-probability/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/hypergeo-vs-binomial/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/digit-counting/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/04-formulas/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/tips/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/precalculus/tips/problem-solving-tips/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/04-formulas/essential-formulas/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/05-tips/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/05-tips/problem-solving-tips/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/number-theory/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/number-theory/reference/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/number-theory/reference/scope-map/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/number-theory/reference/notation-cheatsheet/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/number-theory/reference/concept-atlas/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/divisibility-basics/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/congruences-and-modular-arithmetic/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/diophantine-equations-linear/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/diophantine-equations-quadratic/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/fermat-euler-orders/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/number-theory/problem-types/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/number-theory/problem-types/remainders-and-last-digits/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/number-theory/formulas/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/number-theory/formulas/essential-formulas/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/number-theory/tips/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/number-theory/tips/problem-solving-tips/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/math/amc/</loc>
     <lastmod>2025-09-03T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/geometry/knowledge-point/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/reference-guide/</loc>
     <lastmod>2025-09-03T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/</loc>
+    <loc>https://xhx.github.io/notes/math/</loc>
     <lastmod>2025-09-03T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/</loc>
+    <loc>https://xhx.github.io/notes/</loc>
     <lastmod>2025-09-03T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://xhx.github.io/</loc>
     <lastmod>2025-09-03T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/algebra/floor-fractional-part/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/algebra/floor-fractional-part/</loc>
     <lastmod>2025-09-02T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/algebra/fraction-decomposition/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/algebra/fraction-decomposition/</loc>
     <lastmod>2025-09-02T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/algebra/formula-reference/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/algebra/formula-reference/</loc>
     <lastmod>2025-09-02T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/algebra/sequences/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/algebra/sequences/</loc>
     <lastmod>2025-09-02T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/3d/</loc>
+    <loc>https://xhx.github.io/tags/3d/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/absolute-value-inequality/</loc>
+    <loc>https://xhx.github.io/tags/absolute-value-inequality/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/advanced/</loc>
+    <loc>https://xhx.github.io/tags/advanced/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/algebra/</loc>
+    <loc>https://xhx.github.io/categories/algebra/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/algebra/</loc>
+    <loc>https://xhx.github.io/tags/algebra/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/altitude/</loc>
+    <loc>https://xhx.github.io/tags/altitude/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/am-gm-bounding-inequality/</loc>
+    <loc>https://xhx.github.io/tags/am-gm-bounding-inequality/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/amc/</loc>
+    <loc>https://xhx.github.io/categories/amc/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/amc10/</loc>
+    <loc>https://xhx.github.io/tags/amc10/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/angle-bisector/</loc>
+    <loc>https://xhx.github.io/tags/angle-bisector/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/binomial-theorem-coefficient/</loc>
+    <loc>https://xhx.github.io/tags/angles/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://xhx.github.io/tags/areas/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/chinese-remainder-theorem/</loc>
+    <loc>https://xhx.github.io/tags/binomial-theorem-coefficient/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/combinatorics/</loc>
+    <loc>https://xhx.github.io/categories/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/combinatorics/</loc>
+    <loc>https://xhx.github.io/tags/cevians/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/competition/</loc>
+    <loc>https://xhx.github.io/tags/circles/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/counting/</loc>
+    <loc>https://xhx.github.io/tags/circumradius/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/crt/</loc>
+    <loc>https://xhx.github.io/tags/combinatorics/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/curriculum/</loc>
+    <loc>https://xhx.github.io/tags/competition/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/diagonals/</loc>
+    <loc>https://xhx.github.io/tags/concurrency/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/digit-sum-divisibility-11/</loc>
+    <loc>https://xhx.github.io/tags/coordinate/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/find-least-positive-integer/</loc>
+    <loc>https://xhx.github.io/tags/cross-sections/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/floor-function/</loc>
+    <loc>https://xhx.github.io/tags/cubes/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/floor-sum-grouping/</loc>
+    <loc>https://xhx.github.io/tags/curriculum/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/functional-equation-plug-x/</loc>
+    <loc>https://xhx.github.io/tags/cyclic/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/gcd/</loc>
+    <loc>https://xhx.github.io/tags/diagonals/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/geometry/</loc>
+    <loc>https://xhx.github.io/tags/digit-sum-divisibility-11/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/geometry/</loc>
+    <loc>https://xhx.github.io/tags/distance/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/inclusion-exclusion/</loc>
+    <loc>https://xhx.github.io/tags/find-least-positive-integer/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/lcm/</loc>
+    <loc>https://xhx.github.io/tags/floor-function/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/linear-recursion-explicit/</loc>
+    <loc>https://xhx.github.io/tags/floor-sum-grouping/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/math/</loc>
+    <loc>https://xhx.github.io/tags/formulas/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/mathematics/</loc>
+    <loc>https://xhx.github.io/tags/functional-equation-plug-x/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/miscellaneous/</loc>
+    <loc>https://xhx.github.io/categories/geometry/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/modular-arithmetic/</loc>
+    <loc>https://xhx.github.io/tags/geometry/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/newton-sum-symmetric/</loc>
+    <loc>https://xhx.github.io/tags/infinite-sums/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/number-theory/</loc>
+    <loc>https://xhx.github.io/tags/inradius/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/number-theory/</loc>
+    <loc>https://xhx.github.io/tags/isometries/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/perfect-square-discriminant/</loc>
+    <loc>https://xhx.github.io/tags/law-of-sines/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/pie/</loc>
+    <loc>https://xhx.github.io/tags/linear-recursion-explicit/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/practice/</loc>
+    <loc>https://xhx.github.io/tags/mass-points/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/precalculus/</loc>
+    <loc>https://xhx.github.io/categories/math/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/precalculus/</loc>
+    <loc>https://xhx.github.io/tags/mathematics/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/probability/</loc>
+    <loc>https://xhx.github.io/tags/mid-segments/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/problem-solving/</loc>
+    <loc>https://xhx.github.io/tags/nested/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/problems/</loc>
+    <loc>https://xhx.github.io/tags/newton-sum-symmetric/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/problems/</loc>
+    <loc>https://xhx.github.io/tags/number-theory/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/pythagorean/</loc>
+    <loc>https://xhx.github.io/tags/parallel/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/radical-exponent-manipulation/</loc>
+    <loc>https://xhx.github.io/tags/patterns/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/remainder-theorem-synthetic/</loc>
+    <loc>https://xhx.github.io/tags/perfect-square-discriminant/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/similar-triangles/</loc>
+    <loc>https://xhx.github.io/tags/perimeter/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/strategies/</loc>
+    <loc>https://xhx.github.io/tags/polygon/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/strategies/</loc>
+    <loc>https://xhx.github.io/tags/power-of-point/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/syllabus/</loc>
+    <loc>https://xhx.github.io/tags/practice/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/syllabus/</loc>
+    <loc>https://xhx.github.io/tags/preparation/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/symmetric-sum-identity-cubics/</loc>
+    <loc>https://xhx.github.io/tags/probability/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://xhx.github.io/tags/problem-types/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/techniques/</loc>
+    <loc>https://xhx.github.io/tags/problem-solving/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/telescoping-partial-fraction/</loc>
+    <loc>https://xhx.github.io/categories/problems/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/theorem/</loc>
+    <loc>https://xhx.github.io/tags/problems/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/tricks/</loc>
+    <loc>https://xhx.github.io/tags/proportionality/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/counting-prob/combinatorial-identities-225936cc221481cfaaa9e883a23b9009/</loc>
+    <loc>https://xhx.github.io/tags/ptolemy/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/counting-prob/conditional-probability-225936cc2214817ebf46e74d1c6902df/</loc>
+    <loc>https://xhx.github.io/tags/pythagorean/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/counting-prob/geometric-probability-225936cc221481eb9b58dbd99d6b573c/</loc>
+    <loc>https://xhx.github.io/tags/quadrilateral/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/counting-prob/path-counting-225936cc221481bd978dec5ba57e8a28/</loc>
+    <loc>https://xhx.github.io/tags/radical-exponent-manipulation/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/counting-prob/principle-of-inclusion-and-exclusion-pie-225936cc2214811681e2e364d7b7cd2d/</loc>
+    <loc>https://xhx.github.io/tags/remainder-theorem-synthetic/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/counting-prob/problems-225936cc2214813aae07cf86e5bb408e/</loc>
+    <loc>https://xhx.github.io/tags/right-triangle/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/counting-prob/problems-on-combinatorics-225936cc221481b886c3c85789e9eb1a/</loc>
+    <loc>https://xhx.github.io/tags/right-triangles/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/counting-prob/rearranging-letters-with-repetitions-225936cc221481c8a92ed02a4ad79af3/</loc>
+    <loc>https://xhx.github.io/tags/secant/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/counting-prob/recursion-225936cc22148180b6fae3d1f06fbed4/</loc>
+    <loc>https://xhx.github.io/tags/shoelace/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/counting-prob/stars-and-bars-225936cc2214815490abfcb1a722588d/</loc>
+    <loc>https://xhx.github.io/tags/similar/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/geometry/cevians-concurrency-mass-points/</loc>
+    <loc>https://xhx.github.io/tags/similar-triangles/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/geometry/circle-tangent-two-lines/</loc>
+    <loc>https://xhx.github.io/tags/slope/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/geometry/circumradius-extended-law-sines/</loc>
+    <loc>https://xhx.github.io/tags/special-triangles/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/geometry/coordinate-bash-distance-slope/</loc>
+    <loc>https://xhx.github.io/categories/strategies/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/geometry/cross-sections-cubes-prisms/</loc>
+    <loc>https://xhx.github.io/tags/strategies/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/geometry/cyclic-quadrilateral-angle-chases/</loc>
+    <loc>https://xhx.github.io/tags/study-materials/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/geometry/cyclic-quadrilateral-length-ratios/</loc>
+    <loc>https://xhx.github.io/tags/study-strategy/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/geometry/geometric-probability/</loc>
+    <loc>https://xhx.github.io/categories/syllabus/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/geometry/problems-225936cc2214818b989cc5d523338813/</loc>
+    <loc>https://xhx.github.io/tags/syllabus/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/geometry/geometry-knowledge-points/</loc>
+    <loc>https://xhx.github.io/tags/symmetric-sum-identity-cubics/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/geometry/hidden-triangles-30-60-90/</loc>
+    <loc>https://xhx.github.io/tags/symmetry/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/geometry/inradius-right-triangle/</loc>
+    <loc>https://xhx.github.io/tags/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/geometry/mid-segments-triangles-trapezoids/</loc>
+    <loc>https://xhx.github.io/tags/tangency/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/geometry/nested-similar-figures/</loc>
+    <loc>https://xhx.github.io/tags/tangent/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/geometry/power-of-point-tangent-secant/</loc>
+    <loc>https://xhx.github.io/tags/techniques/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/geometry/pythagorean-triple-perimeter/</loc>
+    <loc>https://xhx.github.io/tags/telescoping-partial-fraction/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/geometry/shoelace-coordinate-polygon/</loc>
+    <loc>https://xhx.github.io/tags/theorem/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/geometry/similar-triangles-parallel-line/</loc>
+    <loc>https://xhx.github.io/tags/tips/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/geometry/transformations-symmetry/</loc>
+    <loc>https://xhx.github.io/tags/topic-guides/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/number-theory/euclidean-algorithm-225936cc2214805ba505f13a1370e436/</loc>
+    <loc>https://xhx.github.io/tags/transformations/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/number-theory/example-amcstyle-232936cc221480d1a1c6fc501aeff43e/</loc>
+    <loc>https://xhx.github.io/tags/trapezoids/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/number-theory/linear-diophantine-equation-225936cc2214801da4f8f86ec7c58ecc/</loc>
+    <loc>https://xhx.github.io/tags/triangles/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/number-theory/b%C3%A9zouts-identity-225936cc221481f3b93fdb3e434dce85/</loc>
+    <loc>https://xhx.github.io/tags/tricks/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/number-theory/chicken-mcnugget-theorem-225936cc221481a5a9dbcd136a90e0eb/</loc>
+    <loc>https://xhx.github.io/tags/triples/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/number-theory/chinese-reminder-theorem-225936cc221481c4b9daf164aa1366bc/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/combinatorial-identities-225936cc221481cfaaa9e883a23b9009/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/number-theory/eulers-theorem-225936cc221481f8aa1bd10f5a3fee79/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/conditional-probability-225936cc2214817ebf46e74d1c6902df/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/number-theory/legendres-formula-225936cc221481fab28de2336e5169e0/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/geometric-probability-225936cc221481eb9b58dbd99d6b573c/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/number-theory/problems-225936cc221481858579cea56052a635/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/path-counting-225936cc221481bd978dec5ba57e8a28/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/number-theory/wilsons-theorem-225936cc2214817c996dcd67702aa115/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/principle-of-inclusion-and-exclusion-pie-225936cc2214811681e2e364d7b7cd2d/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/math/amc/amc10/number-theory/solving-twovariable-quadratic-diophantine-equatio-233936cc22148078a2bfdeaa093955d3/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/problems-225936cc2214813aae07cf86e5bb408e/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/general/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/problems-on-combinatorics-225936cc221481b886c3c85789e9eb1a/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/hello-world/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/rearranging-letters-with-repetitions-225936cc221481c8a92ed02a4ad79af3/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/hugo/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/recursion-225936cc22148180b6fae3d1f06fbed4/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/introduction/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/counting-probability/stars-and-bars-225936cc2214815490abfcb1a722588d/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/ai/ml/lsh-attention/</loc>
+    <loc>https://xhx.github.io/notes/math/amc/amc10/geometry/geometry-knowledge-points/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/ai/ml/</loc>
+    <loc>https://xhx.github.io/tags/am-gm/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/my-post/</loc>
+    <loc>https://xhx.github.io/tags/amc12/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://xhx.github.io/tags/at-least/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/notes/ai/ml/self-attention-approx/</loc>
+    <loc>https://xhx.github.io/tags/at-most/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/website/</loc>
+    <loc>https://xhx.github.io/tags/balls-in-bins/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/bayes/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/binomial/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/bounds/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/circular/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/coin/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/combinations/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/committees/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/complex-numbers/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/concepts/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/conditional/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/congruences/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/conics/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/coordinate-geometry/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/counting/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/cycles/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/de-moivre/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/derangements/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/digits/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/diophantine/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/distributions/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/divisibility/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/dot-product/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/equations/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/euler/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/expected-value/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/exponents/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/fermat/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/functional-equations/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/functions/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/categories/general/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/generating-functions/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/grid-paths/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/posts/hello-world/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/heuristics/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/hugo/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/hypergeometric/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/identities/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/inclusion-exclusion/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/independence/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/indicators/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/inequalities/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/integer-solutions/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/introduction/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/invariants/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/last-digits/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/lattice/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/linear/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/logarithms/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/ai/ml/lsh-attention/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/ai/ml/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/math/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/modular-arithmetic/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/multinomial/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/posts/my-post/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/notation/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/orders/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/permutations/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/pie/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/pigeonhole/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/polar-form/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/polynomials/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/posts/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/precalculus/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/primes/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/principles/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/projections/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/quadratic/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/random/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/rational-functions/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/rearrangements/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/recurrences/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/reference/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/remainders/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/restrictions/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/rotations/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/scope/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/seating/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/selection/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/notes/ai/ml/self-attention-approx/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/sequences/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/series/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/stars-and-bars/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/strategy/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/strings/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/study-guide/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/substitutions/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/topics/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/trigonometry/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/unit-circle/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/urn/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/vectors/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/vieta/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/website/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://xhx.github.io/tags/words/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

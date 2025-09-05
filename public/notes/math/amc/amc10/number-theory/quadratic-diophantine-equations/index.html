@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Quadratic Diophantine Equations | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="amc10, amc12, diophantine-equations, quadratic, mathematics">
+<meta name="description" content="Solving two-variable quadratic Diophantine equations for AMC 10/12">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/number-theory/quadratic-diophantine-equations/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/number-theory/quadratic-diophantine-equations/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/number-theory/">Number Theory Mastery Guide</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Quadratic Diophantine Equations
+    </h1>
+    <div class="post-description">
+      Solving two-variable quadratic Diophantine equations for AMC 10/12
+    </div>
+    <div class="post-meta"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="quadratic-diophantine-equations">Quadratic Diophantine Equations<a hidden class="anchor" aria-hidden="true" href="#quadratic-diophantine-equations">#</a></h1>
+<p>Solving two-variable quadratic Diophantine equations of the form:</p>
+<p>$$x^{2}+Bxy+Cy^{2}+Dx+Ey+F=0, \qquad A,B,C,D,E,F\in\mathbb{Z}$$</p>
+<p>The aim is to decide <strong>(i)</strong> whether integer solutions exist and <strong>(ii)</strong> how to list them all (finite or infinite).</p>
+<hr>
+<h2 id="1-normalize-and-check-easy-obstructions">1. Normalize and Check Easy Obstructions<a hidden class="anchor" aria-hidden="true" href="#1-normalize-and-check-easy-obstructions">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Step</th>
+          <th>What to do</th>
+          <th>Why</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>(a) Clear denominators / GCD</strong></td>
+          <td>Multiply both sides by a common factor so all coefficients are integers with $\gcd=1$.</td>
+          <td>Keeps later modular work clean.</td>
+      </tr>
+      <tr>
+          <td><strong>(b) Reduce mod small bases</strong></td>
+          <td>Test mod 2, 4, 3, 5, 8, 11…</td>
+          <td>Often rules out entire families quickly.</td>
+      </tr>
+      <tr>
+          <td><strong>(c) Look for obvious factorisation</strong></td>
+          <td>Does the LHS factor nicely? (e.g. SFFT: $xy+mx+ny = (x+n)(y+m)-mn$).</td>
+          <td>Turns the job into divisor–counting.</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p><strong>Example</strong>: $xy+4y=5x+20$ → $(x-4)(y+5)=0$ after shifting terms (classic Simon).</p></blockquote>
+<hr>
+<h2 id="2-treat-it-as-a-quadratic-in-one-variable">2. Treat it as a Quadratic in One Variable<a hidden class="anchor" aria-hidden="true" href="#2-treat-it-as-a-quadratic-in-one-variable">#</a></h2>
+<p>Rewrite as</p>
+<p>$$(\text{quadratic in }x)=0 \quad\text{or}\quad (\text{quadratic in }y)=0$$</p>
+<p>then use the fact that a quadratic has an integer root <strong>iff its discriminant is a <em>perfect square</em></strong>.</p>
+<h3 id="quick-template">Quick Template<a hidden class="anchor" aria-hidden="true" href="#quick-template">#</a></h3>
+<p>$$Ax^{2} + (By+ D)x + (Cy^{2} + Ey + F)=0$$</p>
+<ul>
+<li>
+<p><strong>Discriminant in $x$:</strong></p>
+<p>$$\Delta(y)= (By+D)^{2}-4A(Cy^{2}+Ey+F)$$</p>
+</li>
+<li>
+<p>Require $\Delta(y)=k^{2}$ for some integer $k$.</p>
+</li>
+<li>
+<p>This turns the problem into <strong>another quadratic Diophantine equation</strong> in $y,k$ but without the $xy$ term, which is usually easier.</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Example</strong>: $x^2-5y^2=1$: discriminant in $x$ is $20y^2+4$.</p>
+<p>Setting $20y^2+4=k^2$ produces a Pell-type curve.</p></blockquote>
+<hr>
+<h2 id="3-complete-the-square-and-rotate-if-necessary">3. Complete the Square and Rotate if Necessary<a hidden class="anchor" aria-hidden="true" href="#3-complete-the-square-and-rotate-if-necessary">#</a></h2>
+<p>If an $xy$-term remains after step 2, diagonalize the quadratic part.</p>
+<ol>
+<li>Compute the <strong>discriminant</strong> $\Delta=B^{2}-4AC$.</li>
+<li>If $|\Delta|=1,2,3,\dots$ isn&rsquo;t a perfect square, perform the substitution</li>
+</ol>
+<p>$$x = u\cos\theta - v\sin\theta, \quad y = u\sin\theta + v\cos\theta$$</p>
+<p>(integral matrix with determinant ±1) that removes $uv$.</p>
+<p>This reduces the curve to a <strong>generalized Pell</strong> form</p>
+<p>$$a u^{2}-b v^{2}=N$$</p>
+<p>Standard Pell machinery (continued fractions, fundamental solutions) then gives an infinite parametrization or shows that none exist.</p>
+<hr>
+<h2 id="4-bounding--descent-for-positive-definite-forms">4. Bounding &amp; Descent for Positive-Definite Forms<a hidden class="anchor" aria-hidden="true" href="#4-bounding--descent-for-positive-definite-forms">#</a></h2>
+<p>When $A&gt;0, C&gt;0, \Delta&lt;0$, the quadratic part is positive-definite:</p>
+<p>$$Ax^{2}+Bxy+Cy^{2} \ge \lambda (x^{2}+y^{2})$$</p>
+<p>for some $\lambda&gt;0$. Then</p>
+<p>$$|Dx+Ey+F| \le \text{constant}$$</p>
+<p>forces $|x|,|y|$ below a modest bound, converting the search to a <strong>finite brute-force scan</strong>.</p>
+<p>Tiny &ldquo;infinite-descent&rdquo; tweaks (iterate the equation to build smaller solutions) can finish off the last stubborn cases.</p>
+<hr>
+<h2 id="5-summary-flowchart">5. Summary Flowchart<a hidden class="anchor" aria-hidden="true" href="#5-summary-flowchart">#</a></h2>
+<ol>
+<li><strong>Factor?</strong> ⇒ divisor-count.</li>
+<li><strong>Quadratic-in-one-variable?</strong> ⇒ perfect-square discriminant.</li>
+<li><strong>Mixed term left?</strong> ⇒ rotate/complete square ⇒ Pell-type.</li>
+<li><strong>Positive-definite?</strong> ⇒ bound variables ⇒ finite scan.</li>
+<li><strong>Otherwise</strong> use descent, modular refinements, or parametrization tricks (e.g. Vieta jumping for $x^{2}-Dy^{2}=N$).</li>
+</ol>
+<hr>
+<h2 id="mini-example-using-the-template">Mini-Example Using the Template<a hidden class="anchor" aria-hidden="true" href="#mini-example-using-the-template">#</a></h2>
+<p>Solve in integers:</p>
+<p>$$x^{2}-3xy+2y^{2}=1$$</p>
+<p><strong>(i) Treat as quadratic in $x$:</strong></p>
+<p>$$x^{2}-(3y)x+(2y^{2}-1)=0$$</p>
+<p>Discriminant $\Delta(y)=9y^{2}-4(2y^{2}-1)=y^{2}+4$.</p>
+<p>Set $y^{2}+4=k^{2}$.</p>
+<p>This is a Pythagorean-triple condition. Write</p>
+<p>$$k^{2}-y^{2}=4 \Longrightarrow (k-y)(k+y)=4$$</p>
+<p>Because 4 has factor pairs $(1,4),(2,2),(4,1)$ (and their negatives), we get the small list $y=\pm1, 0$.</p>
+<p>Plugging each into the quadratic gives the six integer solutions</p>
+<p>$$(x,y)=(1,0), (-1,0), (2,1), (1,1), (-2,-1), (-1,-1)$$</p>
+<p>All follow directly from the perfect-square discriminant trick—no Pell curve required here.</p>
+<hr>
+<h2 id="take-away">Take-away<a hidden class="anchor" aria-hidden="true" href="#take-away">#</a></h2>
+<p>Most AMC/AIME-level quadratic Diophantine problems break under one of three hammers:</p>
+<ol>
+<li><strong>Factor to a rectangle</strong> (Simon&rsquo;s trick).</li>
+<li><strong>Quadratic-in-one-variable → perfect-square discriminant.</strong></li>
+<li><strong>Complete square → Pell-type</strong> (use continued fractions or bounding to finish).</li>
+</ol>
+<p>Keep these three pathways in mind and you can tackle almost every &ldquo;mixed-quadratic Diophantine&rdquo; that contest writers throw at you.</p>
+<hr>
+<h2 id="-related-resources">📚 Related Resources<a hidden class="anchor" aria-hidden="true" href="#-related-resources">#</a></h2>
+<ul>
+<li><a href="essential-formulas">🔢 Essential Formulas</a> - Complete formula reference</li>
+<li><a href="problem-solving-tips">💡 Problem-Solving Tips</a> - Strategies and techniques</li>
+<li><a href="problem-types">🎯 Problem Types</a> - Complete list of essential problem patterns</li>
+<li><a href="reference-guide">📖 Reference Guide</a> - Comprehensive number theory reference</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">Amc10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/diophantine-equations/">Diophantine-Equations</a></li>
+      <li><a href="http://localhost:1313/tags/quadratic/">Quadratic</a></li>
+      <li><a href="http://localhost:1313/tags/mathematics/">Mathematics</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

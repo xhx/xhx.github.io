@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Probability | Xiaohui Xie&#39;s Site</title>
 <meta name="keywords" content="">
 <meta name="description" content="Personal website of Xiaohui Xie featuring mathematics, teaching, and research">
 <meta name="author" content="Xiaohui Xie">
-<link rel="canonical" href="http://localhost:1313/tags/probability/">
+<link rel="canonical" href="https://xhx.github.io/tags/probability/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://xhx.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/probability/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/probability/">
+<link rel="alternate" type="application/rss+xml" href="https://xhx.github.io/tags/probability/index.xml">
+<link rel="alternate" hreflang="en" href="https://xhx.github.io/tags/probability/">
 <noscript>
     <style>
         #theme-toggle,
@@ -71,6 +71,15 @@
         });"></script>
 
 
+<meta property="og:url" content="https://xhx.github.io/tags/probability/">
+  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
+  <meta property="og:title" content="Probability">
+  <meta property="og:description" content="Personal website of Xiaohui Xie featuring mathematics, teaching, and research">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Probability">
+<meta name="twitter:description" content="Personal website of Xiaohui Xie featuring mathematics, teaching, and research">
 
 </head>
 
@@ -89,7 +98,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -118,7 +127,7 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/tags/">Tags</a></div>
   <h1>
     Probability
     <a href="/tags/probability/index.xml" title="RSS" aria-label="RSS">
@@ -131,10 +140,172 @@
     </a>
   </h1>
 </header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Geometric Probability
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>#20 – Geometric Probability (“A dart lands at random…” “Choose a point uniformly in the region…”)
+The AMC 10 almost always interprets “random point” to mean uniform distribution over area (2-D) or length (1-D).
+That turns the probability into
+$$\boxed{;\displaystyle P =\frac{\text{favorable measure}}{\text{total measure}};}$$
+with “measure” = area, length, or sometimes angle.
+Your job is purely geometry.
+1 Standard Playbook Region Type Fast tactic Circles / rings Use radii → areas scale with $r^{2}$. Squares / rectangles Scale with side lengths; sub-rectangles drop out instantly. Triangles Slice with parallel lines → similar-triangle area ratios. Lattice grid dartboards Shoelace or Pick’s Theorem for exact half-integer areas. Random chord or angle location Switch to polar coordinates or angle measure. 2 Canonical AMC Prompts &amp; One-Line Solutions Wording One-liner “Dartboard is circle of radius $5$; what’s the probability it lands within $1$ of the center?” $P=\dfrac{\pi!\cdot!1^{2}}{\pi!\cdot!5^{2}}=\dfrac1{25}$. “Point in unit square; probability $x&#43;y&lt;1$.” That inequality cuts the square in half ⇒ $P=\tfrac12$. “Choose point in $\triangle ABC$; probability it’s closer to $AB$ than $AC$.” Bisector is a line through the vertex ⇒ area ratio $=\tfrac12$. “Pick point in circle; what’s probability the triangle made with center has area $&lt;k$?” Area $\propto r^{2}$; threshold radius $r_0\Rightarrow P=(r_0/R)^{2}$. 3 Worked Example A – Ring Hit A dart hits a dartboard shaped like an annulus with inner radius $2$ cm and outer radius $5$ cm.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Geometric Probability" href="https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/geometric-probability/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AMC 10 vs AMC 12 Scope Map
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🗺️ AMC 10 vs AMC 12 Scope Map This matrix shows which counting and probability topics are essential for each contest level.
+Topic AMC 10 AMC 12 Notes Basic Counting Addition Principle ✅ Core ✅ Core Fundamental counting rule Multiplication Principle ✅ Core ✅ Core Sequential counting Complement Counting ✅ Core ✅ Core “At least” problems Permutations &amp; Combinations Permutations ✅ Core ✅ Core Arrangements Combinations ✅ Core ✅ Core Selections Permutations with Repetition ✅ Often ✅ Core Letters in words Combinations with Repetition ⚠️ Stretch ✅ Often Stars and bars Circular Permutations ⚠️ Stretch ✅ Often Ring arrangements Advanced Counting Inclusion-Exclusion ⚠️ Stretch ✅ Often 2-3 sets max Pigeonhole Principle ⚠️ Stretch ✅ Often Bounds and colorings Stars and Bars ⚠️ Stretch ✅ Often Integer solutions Derangements ❌ No ✅ Stretch AMC 12 only Probability Basics Basic Probability ✅ Core ✅ Core Fractions and ratios Conditional Probability ✅ Often ✅ Core Given information Independence ✅ Often ✅ Core Event relationships Law of Total Probability ⚠️ Stretch ✅ Often Tree diagrams Bayes’ Theorem ❌ No ⚠️ Stretch AMC 12 only Expected Value Expected Value Definition ⚠️ Stretch ✅ Often Weighted average Linearity of Expectation ❌ No ✅ Often AMC 12 only Indicators ❌ No ✅ Often AMC 12 only Distributions Binomial Distribution ⚠️ Stretch ✅ Often Success/failure Geometric Distribution ❌ No ⚠️ Stretch AMC 12 only Hypergeometric Distribution ❌ No ⚠️ Stretch AMC 12 only Problem Types Seating Problems ✅ Core ✅ Core Adjacency constraints Word Rearrangements ✅ Core ✅ Core Letter arrangements Committee Selection ✅ Core ✅ Core Role assignments Grid Paths ✅ Often ✅ Core Lattice walks Balls in Bins ⚠️ Stretch ✅ Often Integer solutions Digit Counting ✅ Often ✅ Core Divisibility rules 🎯 Legend ✅ Core: Essential for this level, appears frequently ✅ Often: Important but less frequent, good to know ⚠️ Stretch: Advanced topic, appears occasionally ❌ No: Not tested at this level 📊 Study Priorities AMC 10 Focus Basic counting principles (addition, multiplication, complement) Permutations and combinations (with and without repetition) Basic probability (fractions, conditional, independence) Common problem types (seating, words, committees, grids) AMC 12 Focus Everything from AMC 10 (assumed knowledge) Advanced counting (inclusion-exclusion, pigeonhole, stars and bars) Expected value and linearity Probability distributions (binomial, geometric, hypergeometric) Advanced problem types (derangements, complex probability chains) 🚀 Contest Strategy AMC 10: Master the “Core” and “Often” topics, skip “Stretch” AMC 12: Cover all “Core” and “Often” topics, study “Stretch” for harder problems Time allocation: Focus 80% of study time on “Core” topics for your level Next: Notation Cheatsheet → Concept Atlas
+...</p>
+  </div>
+  <footer class="entry-footer">2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to AMC 10 vs AMC 12 Scope Map" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/scope-map/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Notation Cheatsheet
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>📝 Notation Cheatsheet Essential symbols and notation for AMC counting and probability problems.
+🔢 Counting Notation Symbol Meaning Usage Example $n!$ Factorial Arrangements of $n$ distinct objects $4! = 4 \cdot 3 \cdot 2 \cdot 1 = 24$ $P(n,k)$ Permutations Arrangements of $k$ from $n$ $P(5,3) = 5 \cdot 4 \cdot 3 = 60$ $\binom{n}{k}$ Combinations Selections of $k$ from $n$ $\binom{5}{3} = \frac{5!}{3!2!} = 10$ $C(n,k)$ Alternative notation Same as $\binom{n}{k}$ $C(5,3) = 10$ $n^k$ Permutations with repetition $k$ choices from $n$ with replacement $3^4 = 81$ ways to choose 4 letters from {A,B,C} $\binom{n&#43;k-1}{k}$ Combinations with repetition Stars and bars formula $\binom{4&#43;3-1}{3} = \binom{6}{3} = 20$ 🎲 Probability Notation Symbol Meaning Usage Example $P(A)$ Probability of event $A$ Basic probability $P(\text{heads}) = \frac{1}{2}$ $P(A \mid B)$ Conditional probability Probability of $A$ given $B$ $P(\text{rain} \mid \text{cloudy})$ $P(A \cap B)$ Intersection Both $A$ and $B$ occur $P(\text{red and even})$ $P(A \cup B)$ Union Either $A$ or $B$ occurs $P(\text{red or even})$ $P(A^c)$ Complement $A$ does not occur $P(\text{not red}) = 1 - P(\text{red})$ $A \perp B$ Independence Events are independent $A \perp B$ means $P(A \cap B) = P(A)P(B)$ 📊 Expected Value Notation Symbol Meaning Usage Example $\mathbb{E}[X]$ Expected value Average value of random variable $X$ $\mathbb{E}[\text{dice roll}] = 3.5$ $\text{Var}(X)$ Variance Measure of spread $\text{Var}(X) = \mathbb{E}[X^2] - (\mathbb{E}[X])^2$ $\mathbb{E}[X \mid Y]$ Conditional expectation Expected value given $Y$ $\mathbb{E}[X \mid Y = y]$ $I_A$ Indicator function 1 if $A$ occurs, 0 otherwise $I_{\text{heads}} = \begin{cases} 1 &amp; \text{if heads} \ 0 &amp; \text{if tails} \end{cases}$ 🔄 Set Theory Notation Symbol Meaning Usage Example $ A $ Cardinality $A \subseteq B$ Subset Every element of $A$ is in $B$ ${1,2} \subseteq {1,2,3}$ $A \cap B$ Intersection Elements in both $A$ and $B$ ${1,2} \cap {2,3} = {2}$ $A \cup B$ Union Elements in $A$ or $B$ ${1,2} \cup {2,3} = {1,2,3}$ $A \setminus B$ Set difference Elements in $A$ but not $B$ ${1,2,3} \setminus {2} = {1,3}$ 🎯 Common Formulas Basic Counting Addition Principle: $|A \cup B| = |A| &#43; |B| - |A \cap B|$ Multiplication Principle: $|A \times B| = |A| \cdot |B|$ Complement: $|A^c| = |S| - |A|$ where $S$ is the universal set Permutations &amp; Combinations Permutations: $P(n,k) = \frac{n!}{(n-k)!}$ Combinations: $\binom{n}{k} = \frac{n!}{k!(n-k)!}$ Circular permutations: $(n-1)!$ (no reflection) or $\frac{(n-1)!}{2}$ (with reflection) Probability Basic probability: $P(A) = \frac{\text{favorable outcomes}}{\text{total outcomes}}$ Conditional probability: $P(A \mid B) = \frac{P(A \cap B)}{P(B)}$ Independence: $A \perp B$ if and only if $P(A \cap B) = P(A)P(B)$ Law of Total Probability: $P(A) = \sum_i P(A \mid B_i)P(B_i)$ Expected Value Definition: $\mathbb{E}[X] = \sum_x x \cdot P(X = x)$ Linearity: $\mathbb{E}[aX &#43; bY] = a\mathbb{E}[X] &#43; b\mathbb{E}[Y]$ Indicators: $\mathbb{E}[I_A] = P(A)$ 🚨 Common Mistakes $\binom{n}{k}$ vs $P(n,k)$: Use combinations for selections, permutations for arrangements With vs without replacement: Check if objects can be reused Distinguishable vs indistinguishable: Count identical objects differently Order matters: Permutations for ordered arrangements, combinations for unordered selections Next: Concept Atlas → Counting Principles
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Notation Cheatsheet" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/notation-cheatsheet/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Concept Atlas
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🗺️ Concept Atlas Quick primers on all major counting and probability topics with AMC appearance cues.
+🔢 Basic Counting Principles Addition Principle When counting objects that can be categorized into mutually exclusive groups, add the counts of each group. AMC appearance: “How many ways can you choose a red or blue ball?” or “How many students are in math or science club?”
+Multiplication Principle When counting sequences of choices where each choice is independent, multiply the number of choices at each step. AMC appearance: “How many ways can you arrange 3 letters and 2 numbers?” or “How many different meals can you order?”
+...</p>
+  </div>
+  <footer class="entry-footer">6 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Concept Atlas" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/concept-atlas/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Probability Basics
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🎲 Probability Basics The fundamental concepts of probability that form the foundation for all probability problems.
+🎯 Key Ideas Basic Probability The probability of an event $A$ is the ratio of favorable outcomes to total outcomes: $$P(A) = \frac{\text{number of favorable outcomes}}{\text{total number of outcomes}}$$
+Conditional Probability The probability of event $A$ given that event $B$ has occurred: $$P(A \mid B) = \frac{P(A \cap B)}{P(B)}$$
+Independence Events $A$ and $B$ are independent if: $$P(A \cap B) = P(A) \cdot P(B)$$
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Probability Basics" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/probability-basics/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Expected Value
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>📊 Expected Value The average value of a random variable and the powerful linearity property that makes many problems tractable.
+🎯 Key Ideas Expected Value Definition For a discrete random variable $X$ with possible values $x_1, x_2, \ldots, x_n$: $$\mathbb{E}[X] = \sum_{i=1}^{n} x_i \cdot P(X = x_i)$$
+Linearity of Expectation For any random variables $X$ and $Y$: $$\mathbb{E}[X &#43; Y] = \mathbb{E}[X] &#43; \mathbb{E}[Y]$$
+Indicator Variables Binary variables that are 1 if an event occurs, 0 otherwise: $$\mathbb{E}[I_A] = P(A)$$
+...</p>
+  </div>
+  <footer class="entry-footer">2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Expected Value" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/expected-value/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Probability Distributions
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>📈 Probability Distributions Common probability models that frequently appear in AMC problems.
+🎯 Key Ideas Binomial Distribution Counts successes in $n$ independent trials with probability $p$ of success each. $$P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$$ $$\mathbb{E}[X] = np, \quad \text{Var}(X) = np(1-p)$$
+Geometric Distribution Counts trials until first success in independent trials with probability $p$ of success. $$P(X = k) = (1-p)^{k-1} p$$ $$\mathbb{E}[X] = \frac{1}{p}, \quad \text{Var}(X) = \frac{1-p}{p^2}$$
+...</p>
+  </div>
+  <footer class="entry-footer">2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Probability Distributions" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/distributions/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Symmetry &amp; Invariance
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🔄 Symmetry &amp; Invariance Powerful techniques that use symmetry to simplify counting and probability problems.
+🎯 Key Ideas Symmetry in Counting When objects are indistinguishable or arrangements are equivalent, use symmetry to reduce the number of cases.
+Symmetry in Probability When all outcomes are equally likely, use symmetry to find probabilities without explicit counting.
+Invariance Principles Look for quantities that remain constant under certain operations.
+💡 Micro-Examples Symmetry in Counting Problem: How many ways can you arrange 3 red and 3 blue balls in a line? Solution: $\frac{6!}{3!3!} = 20$ ways (divide by factorials of repeated objects) Symmetry in Probability Problem: What’s the probability that a random 3-digit number has its digits in increasing order? Solution: $\frac{1}{3!} = \frac{1}{6}$ (only 1 out of 6 permutations is increasing) Invariance Problem: Start with numbers 1,2,3,4,5. Replace any two numbers with their sum. What’s the final sum? Solution: The sum is always $1&#43;2&#43;3&#43;4&#43;5 = 15$ (invariant under the operation) ⚠️ Common Traps &amp; Fixes Trap: Overcounting due to symmetry Wrong: “How many ways to arrange AABBC?” = $5! = 120$ Right: $\frac{5!}{2!2!1!} = 30$ ways (divide by factorials of repeated objects) Trap: Forgetting about reflection symmetry Wrong: “How many ways to arrange 5 beads on a bracelet?” = $5! = 120$ Right: $\frac{5!}{2} = 60$ ways (divide by 2 for reflection symmetry) Trap: Misapplying symmetry in probability Wrong: “What’s the probability of getting heads?” = $\frac{1}{2}$ (always true for fair coins) Right: This is actually correct! But make sure the symmetry assumption is valid. 🏆 AMC-Style Worked Example Problem: What’s the probability that a random permutation of ${1,2,3,4,5}$ has exactly 2 fixed points?
+...</p>
+  </div>
+  <footer class="entry-footer">2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Symmetry & Invariance" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/symmetry-invariance/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">At Least/At Most
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>⚖️ At Least/At Most Problems involving “at least” and “at most” constraints, solved using complement counting or inclusion-exclusion.
+🎯 Recognition Cues Keywords: “at least”, “at most”, “at most”, “no more than”, “at least one”, “exactly” Setup: Counting with constraints on minimum or maximum occurrences Constraints: Numerical bounds on counts or probabilities 📋 Solution Template Identify the constraint type:
+At least: Use complement counting (total - “less than”) At most: Use complement counting (total - “more than”) Exactly: Direct counting or inclusion-exclusion Choose the appropriate method:
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to At Least/At Most" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/at-least-at-most/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Urn, Coin &amp; String Problems
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🎲 Urn, Coin &amp; String Problems Classic probability problems involving urns, coins, and strings with replacement and no-replacement scenarios.
+🎯 Recognition Cues Keywords: “urn”, “bag”, “drawing”, “with replacement”, “without replacement”, “coin”, “flip”, “run” Setup: Drawing objects from containers or flipping coins Constraints: Replacement vs. no-replacement, specific sequences, runs 📋 Solution Template Identify the scenario type:
+With replacement: Each draw is independent Without replacement: Each draw affects the next Sequential: Order matters Apply the appropriate method:
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Urn, Coin & String Problems" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/urn-coin-strings/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="https://xhx.github.io/tags/probability/page/2/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
 
     
 </footer>

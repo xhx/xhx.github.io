@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Transformations &amp; Symmetry | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="amc10, geometry, transformations, symmetry, isometries, mathematics">
+<meta name="description" content="AMC 10 Geometry: Transformations &amp; Symmetry">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/transformations-symmetry/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xhx.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/transformations-symmetry/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+<meta property="og:url" content="https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/transformations-symmetry/">
+  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
+  <meta property="og:title" content="Transformations & Symmetry">
+  <meta property="og:description" content="AMC 10 Geometry: Transformations &amp; Symmetry">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-01-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-01-01T00:00:00+00:00">
+    <meta property="article:tag" content="Amc10">
+    <meta property="article:tag" content="Geometry">
+    <meta property="article:tag" content="Transformations">
+    <meta property="article:tag" content="Symmetry">
+    <meta property="article:tag" content="Isometries">
+    <meta property="article:tag" content="Mathematics">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Transformations &amp; Symmetry">
+<meta name="twitter:description" content="AMC 10 Geometry: Transformations &amp; Symmetry">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Notes",
+      "item": "https://xhx.github.io/notes/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Mathematics Notes",
+      "item": "https://xhx.github.io/notes/math/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "AMC Problems",
+      "item": "https://xhx.github.io/notes/math/amc/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "AMC 10",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  5 ,
+      "name": "AMC 10 Geometry Mastery Guide",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/geometry/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  6 ,
+      "name": "AMC 10 Geometry Topic Guides",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  7 ,
+      "name": "Transformations \u0026 Symmetry",
+      "item": "https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/transformations-symmetry/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Transformations \u0026 Symmetry",
+  "name": "Transformations \u0026 Symmetry",
+  "description": "AMC 10 Geometry: Transformations \u0026 Symmetry",
+  "keywords": [
+    "amc10", "geometry", "transformations", "symmetry", "isometries", "mathematics"
+  ],
+  "articleBody": "Transformations \u0026 Symmetry (translations · rotations · reflections · dilations)\nOn the AMC 10, problems that look like long angle-chases often crash-land to a single sentence once you recognize what motion takes one figure to another. Every isometry preserves length and angle; a dilation multiplies every length by the same factor—and nothing else changes. That’s the whole game.\n1 The Four Plane Isometries Motion Algebra / coordinates Typical AMC “tell” What stays equal Translation $(h,k)$ $(x,y)\\to(x+h,y+k)$ Parallel arrows, “slides 5 cm right and 2 cm up” All lengths, all angles, slopes Rotation (center $O$, angle $\\theta$) complex form $z\\to O+(z-O)e^{i\\theta}$ “turns 120° about $O$”, regular-polygon steps Lengths, angles, orientation clockwise ↔ counter Reflection (across line $\\ell$) fold line; in complex plane $z\\to\\bar z$ after axis change Mirror picture, right-angle tick marks at the mirror Lengths, angles, orientation reversed Glide reflection reflection ∘ translation Rare on AMC 10 Lengths, angles All four are rigid motions—they keep every distance and every angle measure exactly the same.\n2 Dilations \u0026 Spiral Similarities Dilation (center $O$, scale $k\u003e0$)\n$(x,y)\\mapsto \\bigl(O_x+k(x-O_x),;O_y+k(y-O_y)\\bigr)$; multiplies every length by $k$, keeps every angle.\nSpiral similarity = rotation ∘ dilation about the same center $S$.\nTurns segment $AB$ into $A’B’$ with\n$\\dfrac{SA’}{SA}=\\dfrac{SB’}{SB}=k$ and $\\angle A’SB’=\\angle ASB$.\n(Pinwheel tricks—see Problem #19.)\n3 Fast-ID Cheat Table Diagram clue Correct motion Instant conclusion Two congruent shapes in parallel positions Translation Their connecting segment = translation vector. Same shape rotated around a point Rotation Radius distances equal; center = intersection of perp. bisectors of two image pairs. Shape “flipped” over a line Reflection That line is the perpendicular bisector of any segment joining a point and its image. Same shape, different size, same center Dilation Ratio of any distance from center $= k$. Equal non-adjacent chords or sides in a circle Spiral similarity (Problem #19) Use to equate angles or ratios. 4 Classic AMC Moves Prompt style One-liner solution “Square $ABCD$ is rotated 90° about $A$ sending $B$ to $E$. Find $EC$.” Rotation ⇒ $AB=AE$ and $\\angle BAE=90°$; use right triangle $ABE$. “Regular heptagon—smallest rotation mapping vertex $A$ to $D$?” $360° \\cdot 3/7 = 154 \\frac{2}{7}°$. “Triangle with reflection over its altitude gives a kite; find area.” Reflection duplicates area; kite area = 2 × triangle area. “Dilate about $O$ by 3 sends $P$ to $Q$; how far is $Q$ from $O$?” $OQ=3\\cdot OP$. 5 Two Worked AMC-Style Examples Example A (Rotation center \u0026 unknown length) A right-isosceles triangle with legs 5 cm is rotated $90^{\\circ}$ about a point $O$ so that one vertex moves to another. Find $O$’s distance to that vertex.\nSolution.\nIn a right-isosceles, hypotenuse $=5\\sqrt2$. The vertex rotation is a quarter-turn, so it subtends a 90° arc of a circle centered at $O$. Chord length $=5\\sqrt2$. For a 90° subtended chord, radius $R=\\dfrac{\\text{chord}}{\\sqrt2}= \\boxed{5}$.\nExample B (Translation on a grid) The vector $\\langle7,-3\\rangle$ moves lattice point $A(2,5)$ to $B$. After a second identical translation, what are the coordinates of the image of $A$?\nSolution.\nOne slide: $B(9,2)$. Two slides: add again ⇒ $C(16,-1)$.\nAMC answer choices are often there already.\n6 Symmetry Quick-Ref Figure Symmetries Equilateral △ 3 rotations (120° steps) + 3 reflections Square 4 rotations (90° steps) + 4 reflections Regular $n$-gon $n$ rotations + $n$ reflections (unless $n$ odd → $n$ reflections) Circle Infinite rotations \u0026 reflections Probability questions often ask “what’s the probability a random rotation sends the figure onto itself?” — it’s $\\dfrac{\\text{# symmetry rotations}}{360^\\circ/\\text{smallest rotation}}$.\n7 Final Speed Checklist Label images first. The sequence $A\\to A’, B\\to B’$ tells you the motion. Draw the center or mirror line. A two-second sketch prevents wrong triangles. Convert to vectors for dilations/translations (easier arithmetic than slope-intercept). Remember right-triangle \u0026 rotation = isosceles triangle radius trick. Master these transformation cues and the AMC 10 “motion” problems shrink to two or three clean lines of geometry.\n",
+  "wordCount" : "637",
+  "inLanguage": "en",
+  "datePublished": "2024-01-01T00:00:00Z",
+  "dateModified": "2024-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Xiaohui Xie"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/transformations-symmetry/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Xiaohui Xie's Site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xhx.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/">Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/geometry/">AMC 10 Geometry Mastery Guide</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/">AMC 10 Geometry Topic Guides</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Transformations &amp; Symmetry
+    </h1>
+    <div class="post-description">
+      AMC 10 Geometry: Transformations &amp; Symmetry
+    </div>
+    <div class="post-meta"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="transformations--symmetry">Transformations &amp; Symmetry<a hidden class="anchor" aria-hidden="true" href="#transformations--symmetry">#</a></h1>
+<p><em>(translations · rotations · reflections · dilations)</em></p>
+<p>On the AMC 10, problems that look like long angle-chases often crash-land to a single sentence once you recognize <strong>what motion takes one figure to another</strong>.  Every isometry preserves length and angle; a dilation multiplies every length by the same factor—and nothing else changes.  That&rsquo;s the whole game.</p>
+<hr>
+<h2 id="1-the-four-plane-isometries">1 The Four Plane Isometries<a hidden class="anchor" aria-hidden="true" href="#1-the-four-plane-isometries">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Motion</th>
+          <th>Algebra / coordinates</th>
+          <th>Typical AMC &ldquo;tell&rdquo;</th>
+          <th>What stays equal</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Translation</strong>  $(h,k)$</td>
+          <td>$(x,y)\to(x+h,y+k)$</td>
+          <td>Parallel arrows, &ldquo;slides 5 cm right and 2 cm up&rdquo;</td>
+          <td>All lengths, all angles, slopes</td>
+      </tr>
+      <tr>
+          <td><strong>Rotation</strong> (center $O$, angle $\theta$)</td>
+          <td>complex form  $z\to O+(z-O)e^{i\theta}$</td>
+          <td>&ldquo;turns 120° about $O$&rdquo;, regular-polygon steps</td>
+          <td>Lengths, angles, orientation clockwise ↔ counter</td>
+      </tr>
+      <tr>
+          <td><strong>Reflection</strong> (across line $\ell$)</td>
+          <td>fold line; in complex plane $z\to\bar z$ after axis change</td>
+          <td>Mirror picture, right-angle tick marks at the mirror</td>
+          <td>Lengths, angles, <strong>orientation reversed</strong></td>
+      </tr>
+      <tr>
+          <td><strong>Glide reflection</strong></td>
+          <td>reflection ∘ translation</td>
+          <td>Rare on AMC 10</td>
+          <td>Lengths, angles</td>
+      </tr>
+  </tbody>
+</table>
+<p>All four are <strong>rigid motions</strong>—they keep every distance and every angle measure exactly the same.</p>
+<hr>
+<h2 id="2-dilations--spiral-similarities">2 Dilations &amp; Spiral Similarities<a hidden class="anchor" aria-hidden="true" href="#2-dilations--spiral-similarities">#</a></h2>
+<ul>
+<li>
+<p><strong>Dilation</strong> (center $O$, scale $k&gt;0$)</p>
+<p>$(x,y)\mapsto \bigl(O_x+k(x-O_x),;O_y+k(y-O_y)\bigr)$; multiplies every length by $k$, keeps every angle.</p>
+</li>
+<li>
+<p><strong>Spiral similarity</strong> = rotation ∘ dilation about the same center $S$.</p>
+<p>Turns segment $AB$ into $A&rsquo;B&rsquo;$ with</p>
+<p>$\dfrac{SA&rsquo;}{SA}=\dfrac{SB&rsquo;}{SB}=k$ and $\angle A&rsquo;SB&rsquo;=\angle ASB$.</p>
+<p>(Pinwheel tricks—see Problem #19.)</p>
+</li>
+</ul>
+<hr>
+<h2 id="3-fast-id-cheat-table">3 Fast-ID Cheat Table<a hidden class="anchor" aria-hidden="true" href="#3-fast-id-cheat-table">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Diagram clue</th>
+          <th>Correct motion</th>
+          <th>Instant conclusion</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Two congruent shapes in parallel positions</td>
+          <td><strong>Translation</strong></td>
+          <td>Their connecting segment = translation vector.</td>
+      </tr>
+      <tr>
+          <td>Same shape rotated around a point</td>
+          <td><strong>Rotation</strong></td>
+          <td>Radius distances equal; center = intersection of perp. bisectors of two image pairs.</td>
+      </tr>
+      <tr>
+          <td>Shape &ldquo;flipped&rdquo; over a line</td>
+          <td><strong>Reflection</strong></td>
+          <td>That line is the perpendicular bisector of any segment joining a point and its image.</td>
+      </tr>
+      <tr>
+          <td>Same shape, different size, same center</td>
+          <td><strong>Dilation</strong></td>
+          <td>Ratio of any distance from center $= k$.</td>
+      </tr>
+      <tr>
+          <td>Equal non-adjacent chords or sides in a circle</td>
+          <td><strong>Spiral similarity</strong> (Problem #19)</td>
+          <td>Use to equate angles or ratios.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="4-classic-amc-moves">4 Classic AMC Moves<a hidden class="anchor" aria-hidden="true" href="#4-classic-amc-moves">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Prompt style</th>
+          <th>One-liner solution</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>&ldquo;Square $ABCD$ is rotated 90° about $A$ sending $B$ to $E$. Find $EC$.&rdquo;</td>
+          <td>Rotation ⇒ $AB=AE$ and $\angle BAE=90°$; use right triangle $ABE$.</td>
+      </tr>
+      <tr>
+          <td>&ldquo;Regular heptagon—smallest rotation mapping vertex $A$ to $D$?&rdquo;</td>
+          <td>$360° \cdot 3/7 = 154 \frac{2}{7}°$.</td>
+      </tr>
+      <tr>
+          <td>&ldquo;Triangle with reflection over its altitude gives a kite; find area.&rdquo;</td>
+          <td>Reflection duplicates area; kite area = 2 × triangle area.</td>
+      </tr>
+      <tr>
+          <td>&ldquo;Dilate about $O$ by 3 sends $P$ to $Q$; how far is $Q$ from $O$?&rdquo;</td>
+          <td>$OQ=3\cdot OP$.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="5-two-worked-amc-style-examples">5 Two Worked AMC-Style Examples<a hidden class="anchor" aria-hidden="true" href="#5-two-worked-amc-style-examples">#</a></h2>
+<h3 id="example-a-rotation-center--unknown-length">Example A (Rotation center &amp; unknown length)<a hidden class="anchor" aria-hidden="true" href="#example-a-rotation-center--unknown-length">#</a></h3>
+<p>A right-isosceles triangle with legs 5 cm is rotated $90^{\circ}$ about a point $O$ so that one vertex moves to another.  Find $O$&rsquo;s distance to that vertex.</p>
+<blockquote>
+<p>Solution.</p>
+<p>In a right-isosceles, hypotenuse $=5\sqrt2$.  The vertex rotation is a quarter-turn, so it subtends a 90° arc of a circle centered at $O$.  Chord length $=5\sqrt2$.  For a 90° subtended chord, radius $R=\dfrac{\text{chord}}{\sqrt2}= \boxed{5}$.</p></blockquote>
+<hr>
+<h3 id="example-b-translation-on-a-grid">Example B (Translation on a grid)<a hidden class="anchor" aria-hidden="true" href="#example-b-translation-on-a-grid">#</a></h3>
+<p>The vector $\langle7,-3\rangle$ moves lattice point $A(2,5)$ to $B$.  After a second identical translation, what are the coordinates of the image of $A$?</p>
+<blockquote>
+<p>Solution.</p>
+<p>One slide: $B(9,2)$.  Two slides: add again ⇒ $C(16,-1)$.</p></blockquote>
+<p>AMC answer choices are often there already.</p>
+<hr>
+<h2 id="6-symmetry-quick-ref">6 Symmetry Quick-Ref<a hidden class="anchor" aria-hidden="true" href="#6-symmetry-quick-ref">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Figure</th>
+          <th>Symmetries</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Equilateral △</td>
+          <td>3 rotations (120° steps) + 3 reflections</td>
+      </tr>
+      <tr>
+          <td>Square</td>
+          <td>4 rotations (90° steps) + 4 reflections</td>
+      </tr>
+      <tr>
+          <td>Regular $n$-gon</td>
+          <td>$n$ rotations + $n$ reflections (unless $n$ odd → $n$ reflections)</td>
+      </tr>
+      <tr>
+          <td>Circle</td>
+          <td>Infinite rotations &amp; reflections</td>
+      </tr>
+  </tbody>
+</table>
+<p>Probability questions often ask &ldquo;what&rsquo;s the probability a random rotation sends the figure onto itself?&rdquo; — it&rsquo;s $\dfrac{\text{# symmetry rotations}}{360^\circ/\text{smallest rotation}}$.</p>
+<hr>
+<h2 id="7-final-speed-checklist">7 Final Speed Checklist<a hidden class="anchor" aria-hidden="true" href="#7-final-speed-checklist">#</a></h2>
+<ol>
+<li><strong>Label images first.</strong> The sequence $A\to A&rsquo;, B\to B&rsquo;$ tells you the motion.</li>
+<li><strong>Draw the center or mirror line.</strong> A two-second sketch prevents wrong triangles.</li>
+<li><strong>Convert to vectors for dilations/translations</strong> (easier arithmetic than slope-intercept).</li>
+<li><strong>Remember right-triangle &amp; rotation = isosceles triangle</strong> radius trick.</li>
+</ol>
+<p>Master these transformation cues and the AMC 10 &ldquo;motion&rdquo; problems shrink to two or three clean lines of geometry.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://xhx.github.io/tags/amc10/">Amc10</a></li>
+      <li><a href="https://xhx.github.io/tags/geometry/">Geometry</a></li>
+      <li><a href="https://xhx.github.io/tags/transformations/">Transformations</a></li>
+      <li><a href="https://xhx.github.io/tags/symmetry/">Symmetry</a></li>
+      <li><a href="https://xhx.github.io/tags/isometries/">Isometries</a></li>
+      <li><a href="https://xhx.github.io/tags/mathematics/">Mathematics</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

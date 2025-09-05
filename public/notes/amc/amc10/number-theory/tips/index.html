@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Problem-Solving Tips | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Number Theory, Tips, Strategy">
+<meta name="description" content="Strategic tips, heuristics, and checklists for AMC number theory problem-solving.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/amc/amc10/number-theory/tips/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/notes/amc/amc10/number-theory/tips/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/amc/amc10/number-theory/tips/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/amc/amc10/number-theory/">Number Theory Mastery Guide</a></div>
+  <h1>
+    Problem-Solving Tips
+    <a href="/notes/amc/amc10/number-theory/tips/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+  <div class="post-description">
+    Strategic tips, heuristics, and checklists for AMC number theory problem-solving.
+  </div>
+</header>
+<div class="post-content"><h1 id="-problem-solving-tips">💡 Problem-Solving Tips<a hidden class="anchor" aria-hidden="true" href="#-problem-solving-tips">#</a></h1>
+<p>Strategic tips, heuristics, and checklists to improve your AMC number theory problem-solving skills.</p>
+<h2 id="-how-to-use-this-section">🎯 How to Use This Section<a hidden class="anchor" aria-hidden="true" href="#-how-to-use-this-section">#</a></h2>
+<ul>
+<li><strong>Before contests</strong>: Review the strategic checklists</li>
+<li><strong>During practice</strong>: Apply the heuristics to build intuition</li>
+<li><strong>For specific problems</strong>: Use the decision trees and recognition cues</li>
+</ul>
+<h2 id="-tip-categories">📋 Tip Categories<a hidden class="anchor" aria-hidden="true" href="#-tip-categories">#</a></h2>
+<h3 id="-strategic-thinking">🧠 Strategic Thinking<a hidden class="anchor" aria-hidden="true" href="#-strategic-thinking">#</a></h3>
+<ul>
+<li><strong>Modular arithmetic mindset</strong>: Always consider working modulo small numbers</li>
+<li><strong>Parity and residues first</strong>: Check for contradictions quickly</li>
+<li><strong>Factor first</strong>: Look for difference of squares, cubes, and cyclotomic hints</li>
+<li><strong>Orders and cycles</strong>: Reduce exponents with $\varphi(m)$ and look for periods</li>
+</ul>
+<h3 id="-quick-techniques">⚡ Quick Techniques<a hidden class="anchor" aria-hidden="true" href="#-quick-techniques">#</a></h3>
+<ul>
+<li><strong>Mod pick strategy</strong>: Try small primes (2,3,5,7,9,11) and their LCM</li>
+<li><strong>CRT mindset</strong>: Solve mod prime powers, then combine</li>
+<li><strong>Digit/base shortcuts</strong>: Guard leading zeros, apply casting out nines</li>
+<li><strong>Valuation thinking</strong>: Compare highest power of $p$ dividing each side</li>
+</ul>
+<h3 id="-contest-strategy">🎯 Contest Strategy<a hidden class="anchor" aria-hidden="true" href="#-contest-strategy">#</a></h3>
+<ul>
+<li><strong>Timing</strong>: Spend 2-3 minutes max on number theory problems</li>
+<li><strong>Pattern recognition</strong>: Look for cycles, parity, and factorization opportunities</li>
+<li><strong>Algebra explosion</strong>: If algebra gets messy, switch to modular view or parity</li>
+<li><strong>Test tiny cases</strong>: Use small examples to verify your approach</li>
+</ul>
+<h2 id="-quick-decision-trees">🚀 Quick Decision Trees<a hidden class="anchor" aria-hidden="true" href="#-quick-decision-trees">#</a></h2>
+<h3 id="for-remainder-problems">For Remainder Problems<a hidden class="anchor" aria-hidden="true" href="#for-remainder-problems">#</a></h3>
+<ol>
+<li><strong>Is the modulus prime?</strong> → Use Fermat&rsquo;s Little Theorem</li>
+<li><strong>Is the modulus composite?</strong> → Use Euler&rsquo;s theorem or CRT</li>
+<li><strong>Is the exponent large?</strong> → Look for cycles or reduce modulo $\varphi(m)$</li>
+<li><strong>Is the base special?</strong> → Use known patterns (powers of 2, 3, etc.)</li>
+</ol>
+<h3 id="for-divisibility-problems">For Divisibility Problems<a hidden class="anchor" aria-hidden="true" href="#for-divisibility-problems">#</a></h3>
+<ol>
+<li><strong>Is it about divisors?</strong> → Use $\tau(n)$ and $\sigma(n)$ formulas</li>
+<li><strong>Is it about prime powers?</strong> → Use Legendre&rsquo;s formula or valuation</li>
+<li><strong>Is it about GCD/LCM?</strong> → Use Euclidean algorithm and relationships</li>
+<li><strong>Is it about factorials?</strong> → Use Legendre&rsquo;s formula for trailing zeros</li>
+</ol>
+<h3 id="for-diophantine-problems">For Diophantine Problems<a hidden class="anchor" aria-hidden="true" href="#for-diophantine-problems">#</a></h3>
+<ol>
+<li><strong>Is it linear?</strong> → Check $\gcd(a,b) \mid c$ and parameterize</li>
+<li><strong>Is it quadratic?</strong> → Look for Pythagorean triples or sum of squares</li>
+<li><strong>Are there constraints?</strong> → Apply bounds and count solutions</li>
+<li><strong>Is it about existence?</strong> → Use pigeonhole principle or invariants</li>
+</ol>
+<h2 id="-common-pitfalls">⚠️ Common Pitfalls<a hidden class="anchor" aria-hidden="true" href="#-common-pitfalls">#</a></h2>
+<h3 id="modular-arithmetic-pitfalls">Modular Arithmetic Pitfalls<a hidden class="anchor" aria-hidden="true" href="#modular-arithmetic-pitfalls">#</a></h3>
+<ul>
+<li><strong>Don&rsquo;t divide without checking</strong>: Ensure $\gcd(a,m) = 1$ for modular inverses</li>
+<li><strong>Remember to reduce</strong>: Always reduce intermediate results modulo the base</li>
+<li><strong>Watch the signs</strong>: Modular arithmetic can give negative results</li>
+</ul>
+<h3 id="divisibility-pitfalls">Divisibility Pitfalls<a hidden class="anchor" aria-hidden="true" href="#divisibility-pitfalls">#</a></h3>
+<ul>
+<li><strong>Check the direction</strong>: $a \mid b$ means $b$ is divisible by $a$</li>
+<li><strong>Don&rsquo;t confuse GCD and LCM</strong>: GCD is greatest, LCM is least</li>
+<li><strong>Verify your formulas</strong>: Double-check divisor function calculations</li>
+</ul>
+<h3 id="contest-pitfalls">Contest Pitfalls<a hidden class="anchor" aria-hidden="true" href="#contest-pitfalls">#</a></h3>
+<ul>
+<li><strong>Don&rsquo;t overcomplicate</strong>: Use the simplest approach that works</li>
+<li><strong>Check your work</strong>: Verify with small examples</li>
+<li><strong>Manage time</strong>: Don&rsquo;t spend too long on any single problem</li>
+</ul>
+<hr>
+<p><strong>Next</strong>: Study the <a href="problem-solving-tips">Problem-Solving Tips</a> for detailed strategies.</p>
+
+
+</div>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Problem-Solving Tips
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>💡 Problem-Solving Tips Detailed heuristics, checklists, and timing strategies to master AMC number theory problems.
+🧠 Strategic Thinking Modular Arithmetic Mindset Always consider working modulo small numbers first
+Why: Modular arithmetic often reveals patterns that regular arithmetic obscures How: Try mod 2, 3, 5, 7, 9, 11, or the LCM of relevant numbers Example: For $a^b \bmod m$, first reduce $a \bmod m$, then look for cycles Parity and Residues First Check for contradictions quickly using parity and small moduli
+...</p>
+  </div>
+  <footer class="entry-footer">5 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Problem-Solving Tips" href="http://localhost:1313/notes/amc/amc10/number-theory/tips/problem-solving-tips/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

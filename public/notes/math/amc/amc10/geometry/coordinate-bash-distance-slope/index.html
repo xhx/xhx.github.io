@@ -5,49 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Xiaohui Xie&#39;s Site</title>
-<meta name="keywords" content="">
-<meta name="description" content="#10 – Coordinate-Bash Distance, Slope, and Midpoint Tricks
-A classic AMC 10 rescue tactic is to drop the whole figure on an (x,y)(x,y) grid so every requested length or angle reduces to a distance, slope, or dot-product calculation.  Done well it’s a 3-line bash that beats pages of synthetic geometry.
-
-1 Go-to Coordinate Formulas
-
-  
-      
-          Quantity
-          Formula
-          Contest Mnemonic
-      
-  
-  
-      
-          Distance between $(x_1,y_1)$ and $(x_2,y_2)$
-          $d=\sqrt{(x_2-x_1)^2&#43;(y_2-y_1)^2}$
-          “Pythag on ∆x, ∆y”
-      
-      
-          Slope of line through those points
-          $m=\dfrac{y_2-y_1}{x_2-x_1}$ (undefined if vertical)
-          Rise ÷ run
-      
-      
-          Midpoint
-          $\bigl(,\dfrac{x_1&#43;x_2}{2},\dfrac{y_1&#43;y_2}{2}\bigr)$
-          Average the coords
-      
-      
-          Point–line distance (for a point $P(x_0, y_0)$ to line $Ax&#43;By&#43;C=0$
-          $\dfrac{
-          Ax_0&#43;By_0&#43;C
-      
-      
-          Perpendicular/parallel test
-          two lines with slopes $m_1,m_2$: $m_1m_2=-1$ ⟺ perpendicular
-          Negative reciprocal
-      
-  
-
-Keep these at reflex level; AMC timing hinges on them.">
+<title>Coordinate-Bash Distance, Slope, and Midpoint Tricks | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="amc10, geometry, coordinate, distance, slope, mathematics">
+<meta name="description" content="AMC 10 Geometry: Coordinate-Bash Distance, Slope, and Midpoint Tricks">
 <meta name="author" content="Xiaohui Xie">
 <link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/geometry/coordinate-bash-distance-slope/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
@@ -160,18 +120,21 @@ Keep these at reflex level; AMC timing hinges on them.">
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/">Geometry</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/">AMC 10 Geometry Mastery Guide</a></div>
     <h1 class="post-title entry-hint-parent">
-      
+      Coordinate-Bash Distance, Slope, and Midpoint Tricks
     </h1>
-    <div class="post-meta">3 min&nbsp;·&nbsp;Xiaohui Xie
+    <div class="post-description">
+      AMC 10 Geometry: Coordinate-Bash Distance, Slope, and Midpoint Tricks
+    </div>
+    <div class="post-meta"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Xiaohui Xie
 
 </div>
   </header> 
   <div class="post-content"><h1 id="10--coordinate-bash-distance-slope-and-midpoint-tricks">#10 – Coordinate-Bash Distance, Slope, and Midpoint Tricks<a hidden class="anchor" aria-hidden="true" href="#10--coordinate-bash-distance-slope-and-midpoint-tricks">#</a></h1>
-<p>A classic AMC 10 rescue tactic is to <strong>drop the whole figure on an (x,y)(x,y) grid</strong> so every requested length or angle reduces to a distance, slope, or dot-product calculation.  Done well it’s a 3-line bash that beats pages of synthetic geometry.</p>
+<p>A classic AMC 10 rescue tactic is to <strong>drop the whole figure on an $(x,y)$ grid</strong> so every requested length or angle reduces to a distance, slope, or dot-product calculation.  Done well it&rsquo;s a 3-line bash that beats pages of synthetic geometry.</p>
 <hr>
-<h3 id="1go-to-coordinate-formulas">1 Go-to Coordinate Formulas<a hidden class="anchor" aria-hidden="true" href="#1go-to-coordinate-formulas">#</a></h3>
+<h3 id="1-go-to-coordinate-formulas">1 Go-to Coordinate Formulas<a hidden class="anchor" aria-hidden="true" href="#1-go-to-coordinate-formulas">#</a></h3>
 <table>
   <thead>
       <tr>
@@ -184,7 +147,7 @@ Keep these at reflex level; AMC timing hinges on them.">
       <tr>
           <td><strong>Distance</strong> between $(x_1,y_1)$ and $(x_2,y_2)$</td>
           <td>$d=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$</td>
-          <td>“Pythag on ∆x, ∆y”</td>
+          <td>&ldquo;Pythag on ∆x, ∆y&rdquo;</td>
       </tr>
       <tr>
           <td><strong>Slope</strong> of line through those points</td>
@@ -210,7 +173,7 @@ Keep these at reflex level; AMC timing hinges on them.">
 </table>
 <p>Keep these at reflex level; AMC timing hinges on them.</p>
 <hr>
-<h3 id="2when-to-bash-vs-stay-synthetic">2 When to Bash vs. Stay Synthetic<a hidden class="anchor" aria-hidden="true" href="#2when-to-bash-vs-stay-synthetic">#</a></h3>
+<h3 id="2-when-to-bash-vs-stay-synthetic">2 When to Bash vs. Stay Synthetic<a hidden class="anchor" aria-hidden="true" href="#2-when-to-bash-vs-stay-synthetic">#</a></h3>
 <table>
   <thead>
       <tr>
@@ -239,7 +202,7 @@ Keep these at reflex level; AMC timing hinges on them.">
 </table>
 <p><strong>Rule of thumb:</strong> if you can pick coordinates that make <em>two</em> key points lie on axes or unit increments, a bash is probably quicker.</p>
 <hr>
-<h3 id="3canonical-amc-prompts--one-step-plans">3 Canonical AMC Prompts &amp; One-Step Plans<a hidden class="anchor" aria-hidden="true" href="#3canonical-amc-prompts--one-step-plans">#</a></h3>
+<h3 id="3-canonical-amc-prompts--one-step-plans">3 Canonical AMC Prompts &amp; One-Step Plans<a hidden class="anchor" aria-hidden="true" href="#3-canonical-amc-prompts--one-step-plans">#</a></h3>
 <table>
   <thead>
       <tr>
@@ -249,91 +212,97 @@ Keep these at reflex level; AMC timing hinges on them.">
   </thead>
   <tbody>
       <tr>
-          <td>“Find the area of quadrilateral ABCDABCD where A(0,0),B(6,0)A(0,0), B(6,0)…”</td>
+          <td>&ldquo;Find the area of quadrilateral $ABCD$ where $A(0,0),B(6,0)$…&rdquo;</td>
           <td>Direct shoelace or vector cross product.</td>
       </tr>
       <tr>
-          <td>“Right triangle with legs along axes”</td>
-          <td>Hypotenuse =x2+y2=\sqrt{x^2+y^2}.</td>
+          <td>&ldquo;Right triangle with legs along axes&rdquo;</td>
+          <td>Hypotenuse $=\sqrt{x^2+y^2}$.</td>
       </tr>
       <tr>
-          <td>“Midpoint of hypotenuse is equidistant from all three vertices”</td>
+          <td>&ldquo;Midpoint of hypotenuse is equidistant from all three vertices&rdquo;</td>
           <td>Translate to distance-formula equalities, solve linear system.</td>
       </tr>
       <tr>
-          <td>“Line through point making angle 45°”</td>
-          <td>Slope m=1m=1 or −1-1; write line equation, intersect.</td>
+          <td>&ldquo;Line through point making angle 45°&rdquo;</td>
+          <td>Slope $m=1$ or $-1$; write line equation, intersect.</td>
       </tr>
   </tbody>
 </table>
 <hr>
-<h3 id="4worked-example-a--midpoint--distance">4 Worked Example A – Midpoint &amp; Distance<a hidden class="anchor" aria-hidden="true" href="#4worked-example-a--midpoint--distance">#</a></h3>
+<h3 id="4-worked-example-a--midpoint--distance">4 Worked Example A – Midpoint &amp; Distance<a hidden class="anchor" aria-hidden="true" href="#4-worked-example-a--midpoint--distance">#</a></h3>
 <blockquote>
-<p>Points A(2,1)A(2,1) and B(8,7)B(8,7) are endpoints of diameter ABAB of a circle.</p>
+<p>Points $A(2,1)$ and $B(8,7)$ are endpoints of diameter $AB$ of a circle.</p>
 <p>Find the radius and equation of the circle.</p></blockquote>
 <ol>
 <li>
 <p><strong>Midpoint = center</strong></p>
-<p>C(2+82,1+72)=(5,4).C\bigl(\tfrac{2+8}{2},\tfrac{1+7}{2}\bigr)=(5,4).</p>
+<p>$C\bigl(\tfrac{2+8}{2},\tfrac{1+7}{2}\bigr)=(5,4)$.</p>
 </li>
 <li>
 <p><strong>Radius</strong></p>
-<p>r=AB2=(8−2)2+(7−1)22=36+362=622=32.r = \dfrac{AB}{2} = \dfrac{\sqrt{(8-2)^2+(7-1)^2}}{2}
-= \dfrac{\sqrt{36+36}}{2}= \dfrac{6\sqrt2}{2}=3\sqrt2.</p>
+<p>$r = \dfrac{AB}{2} = \dfrac{\sqrt{(8-2)^2+(7-1)^2}}{2}
+= \dfrac{\sqrt{36+36}}{2}= \dfrac{6\sqrt2}{2}=3\sqrt2$.</p>
 </li>
 <li>
 <p><strong>Equation</strong></p>
-<p>(x−5)2+(y−4)2=18.(x-5)^2+(y-4)^2 = 18.</p>
+<p>$(x-5)^2+(y-4)^2 = 18$.</p>
 </li>
 </ol>
 <p>Three crisp formulas—done in under a minute.</p>
 <hr>
-<h3 id="5worked-example-b--coordinate-placement-trick">5 Worked Example B – Coordinate Placement Trick<a hidden class="anchor" aria-hidden="true" href="#5worked-example-b--coordinate-placement-trick">#</a></h3>
+<h3 id="5-worked-example-b--coordinate-placement-trick">5 Worked Example B – Coordinate Placement Trick<a hidden class="anchor" aria-hidden="true" href="#5-worked-example-b--coordinate-placement-trick">#</a></h3>
 <blockquote>
-<p>In △ABC\triangle ABC with AB=13,AC=15,BC=14AB=13, AC=15, BC=14, let DD be the foot of the altitude from AA onto BC.BC.  Find BD.BD.</p></blockquote>
+<p>In $\triangle ABC$ with $AB=13,AC=15,BC=14$, let $D$ be the foot of the altitude from $A$ onto $BC$.  Find $BD$.</p></blockquote>
 <ol>
-<li><strong>Place B(0,0),C(14,0)B(0,0), C(14,0)</strong> so BCBC sits on the xxaxis (altitude’s yycoordinate is the height).</li>
-<li>Let A(x,h)A(x, h).
+<li><strong>Place $B(0,0),C(14,0)$</strong> so $BC$ sits on the $x$-axis (altitude&rsquo;s $y$-coordinate is the height).</li>
+<li>Let $A(x, h)$.
 <ul>
-<li>From AB=13AB=13: x2+h2=169x^2+h^2 = 169.</li>
-<li>From AC=15AC=15: (x−14)2+h2=225(x-14)^2+h^2 = 225.</li>
+<li>From $AB=13$: $x^2+h^2 = 169$.</li>
+<li>From $AC=15$: $(x-14)^2+h^2 = 225$.</li>
 </ul>
 </li>
-<li>Subtract: (x−14)2−x2=56⇒−28x+196=56⇒x=5.(x-14)^2 - x^2 = 56 \Rightarrow -28x+196 = 56 \Rightarrow x = 5.</li>
-<li>So BD=5.BD = 5.</li>
+<li>Subtract: $(x-14)^2 - x^2 = 56 \Rightarrow -28x+196 = 56 \Rightarrow x = 5$.</li>
+<li>So $BD=5$.</li>
 </ol>
 <p>One linear subtraction killed the quadratic—not obvious synthetically.</p>
 <hr>
-<h3 id="6vectordot-product-shortcuts-contest-level">6 Vector/Dot-Product Shortcuts (contest-level)<a hidden class="anchor" aria-hidden="true" href="#6vectordot-product-shortcuts-contest-level">#</a></h3>
+<h3 id="6-vectordot-product-shortcuts-contest-level">6 Vector/Dot-Product Shortcuts (contest-level)<a hidden class="anchor" aria-hidden="true" href="#6-vectordot-product-shortcuts-contest-level">#</a></h3>
 <ul>
 <li>
 <p><strong>Angle between vectors</strong>:</p>
-<p>cos⁡θ=u⋅v∥u∥∥v∥\cos\theta = \dfrac{\mathbf u\cdot\mathbf v}{|\mathbf u||\mathbf v|}.</p>
+<p>$\cos\theta = \dfrac{\mathbf u\cdot\mathbf v}{|\mathbf u||\mathbf v|}$.</p>
 </li>
 <li>
 <p><strong>Area of parallelogram</strong>:</p>
-<p>∥u×v∥=∣uxvy−uyvx∣|\mathbf u\times\mathbf v| = \lvert u_x v_y - u_y v_x\rvert.</p>
+<p>$|\mathbf u\times\mathbf v| = \lvert u_x v_y - u_y v_x\rvert$.</p>
 <p>Half of that is triangle area—same arithmetic as shoelace but with vectors.</p>
 </li>
 </ul>
 <p>Useful when the figure is conveniently expressed in vectors already (e.g.\ complex-number geometry).</p>
 <hr>
-<h3 id="7error-proofing--speed-checks">7 Error-Proofing &amp; Speed Checks<a hidden class="anchor" aria-hidden="true" href="#7error-proofing--speed-checks">#</a></h3>
+<h3 id="7-error-proofing--speed-checks">7 Error-Proofing &amp; Speed Checks<a hidden class="anchor" aria-hidden="true" href="#7-error-proofing--speed-checks">#</a></h3>
 <ol>
 <li><strong>Sketch first</strong>: a 5-second doodle prevents sign mistakes.</li>
 <li><strong>Watch for radicals that simplify</strong>: if the answer must be an integer, square both sides and look for cancellation.</li>
-<li><strong>Symmetry saves variables</strong>: place the perpendicular bisector or axis of symmetry on yyaxis so x=0x=0.</li>
+<li><strong>Symmetry saves variables</strong>: place the perpendicular bisector or axis of symmetry on $y$-axis so $x=0$.</li>
 <li><strong>Use fractionless equations</strong> until the final step to reduce arithmetic slips.</li>
 </ol>
 <p>Practicing five or six coordinate-bash problems builds the muscle memory to spot when a synthetic path would drag.</p>
 <hr>
-<p>Ready for <strong>Problem Type #11 – Similar Polygons via Parallel Lines</strong>, or is there another area you’d like to explore next?</p>
+<p>Ready for <strong>Problem Type #11 – Similar Polygons via Parallel Lines</strong>, or is there another area you&rsquo;d like to explore next?</p>
 
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">Amc10</a></li>
+      <li><a href="http://localhost:1313/tags/geometry/">Geometry</a></li>
+      <li><a href="http://localhost:1313/tags/coordinate/">Coordinate</a></li>
+      <li><a href="http://localhost:1313/tags/distance/">Distance</a></li>
+      <li><a href="http://localhost:1313/tags/slope/">Slope</a></li>
+      <li><a href="http://localhost:1313/tags/mathematics/">Mathematics</a></li>
     </ul>
 
   </footer>

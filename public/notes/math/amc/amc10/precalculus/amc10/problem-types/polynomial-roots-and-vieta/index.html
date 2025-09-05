@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Polynomial Roots &amp; Vieta | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Precalculus, Polynomials, Vieta">
+<meta name="description" content="Pattern recognition and solution strategies for polynomial root problems using Vieta&#39;s formulas.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/precalculus/amc10/problem-types/polynomial-roots-and-vieta/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/precalculus/amc10/problem-types/polynomial-roots-and-vieta/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/precalculus/amc10/">Precalculus Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/precalculus/amc10/problem-types/">Problem Types</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Polynomial Roots &amp; Vieta
+    </h1>
+    <div class="post-description">
+      Pattern recognition and solution strategies for polynomial root problems using Vieta&#39;s formulas.
+    </div>
+    <div class="post-meta">4 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-polynomial-roots--vieta" aria-label="🎯 Polynomial Roots &amp; Vieta">🎯 Polynomial Roots &amp; Vieta</a><ul>
+                        
+                <li>
+                    <a href="#-recognition-cues" aria-label="🎯 Recognition Cues">🎯 Recognition Cues</a></li>
+                <li>
+                    <a href="#-template-solution-4-steps" aria-label="📋 Template Solution (4 Steps)">📋 Template Solution (4 Steps)</a></li>
+                <li>
+                    <a href="#-common-patterns" aria-label="🔍 Common Patterns">🔍 Common Patterns</a><ul>
+                        
+                <li>
+                    <a href="#pattern-1-basic-vietas-application" aria-label="Pattern 1: Basic Vieta&rsquo;s Application">Pattern 1: Basic Vieta&rsquo;s Application</a></li>
+                <li>
+                    <a href="#pattern-2-higher-degree-polynomials" aria-label="Pattern 2: Higher Degree Polynomials">Pattern 2: Higher Degree Polynomials</a></li>
+                <li>
+                    <a href="#pattern-3-parameter-problems" aria-label="Pattern 3: Parameter Problems">Pattern 3: Parameter Problems</a></li>
+                <li>
+                    <a href="#pattern-4-symmetric-sums" aria-label="Pattern 4: Symmetric Sums">Pattern 4: Symmetric Sums</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-amc-style-worked-example" aria-label="🎯 AMC-Style Worked Example">🎯 AMC-Style Worked Example</a></li>
+                <li>
+                    <a href="#-common-identities" aria-label="📊 Common Identities">📊 Common Identities</a><ul>
+                        
+                <li>
+                    <a href="#quadratic-identities" aria-label="Quadratic Identities">Quadratic Identities</a></li>
+                <li>
+                    <a href="#cubic-identities" aria-label="Cubic Identities">Cubic Identities</a></li>
+                <li>
+                    <a href="#reciprocal-sums" aria-label="Reciprocal Sums">Reciprocal Sums</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-common-pitfalls" aria-label="⚠️ Common Pitfalls">⚠️ Common Pitfalls</a><ul>
+                        
+                <li>
+                    <a href="#pitfall-wrong-signs-in-vietas-formulas" aria-label="Pitfall: Wrong signs in Vieta&rsquo;s formulas">Pitfall: Wrong signs in Vieta&rsquo;s formulas</a></li>
+                <li>
+                    <a href="#pitfall-forgetting-to-check-if-roots-exist" aria-label="Pitfall: Forgetting to check if roots exist">Pitfall: Forgetting to check if roots exist</a></li>
+                <li>
+                    <a href="#pitfall-wrong-identity-application" aria-label="Pitfall: Wrong identity application">Pitfall: Wrong identity application</a></li>
+                <li>
+                    <a href="#pitfall-confusing-sum-and-product" aria-label="Pitfall: Confusing sum and product">Pitfall: Confusing sum and product</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-reference" aria-label="📋 Quick Reference">📋 Quick Reference</a><ul>
+                        
+                <li>
+                    <a href="#vietas-formulas-quadratic" aria-label="Vieta&rsquo;s Formulas (Quadratic)">Vieta&rsquo;s Formulas (Quadratic)</a></li>
+                <li>
+                    <a href="#vietas-formulas-cubic" aria-label="Vieta&rsquo;s Formulas (Cubic)">Vieta&rsquo;s Formulas (Cubic)</a></li>
+                <li>
+                    <a href="#essential-identities" aria-label="Essential Identities">Essential Identities</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-polynomial-roots--vieta">🎯 Polynomial Roots &amp; Vieta<a hidden class="anchor" aria-hidden="true" href="#-polynomial-roots--vieta">#</a></h1>
+<p>Master polynomial root problems using Vieta&rsquo;s formulas and symmetric sum techniques.</p>
+<h2 id="-recognition-cues">🎯 Recognition Cues<a hidden class="anchor" aria-hidden="true" href="#-recognition-cues">#</a></h2>
+<p><strong>Look for these patterns:</strong></p>
+<ul>
+<li>Root relationships: &ldquo;sum of roots&rdquo;, &ldquo;product of roots&rdquo;</li>
+<li>Symmetric expressions: $r_1^2 + r_2^2$, $r_1^3 + r_2^3$</li>
+<li>Parameter problems: &ldquo;find $k$ such that&hellip;&rdquo;</li>
+<li>Polynomial construction: &ldquo;find polynomial with roots&hellip;&rdquo;</li>
+<li>Coefficient relationships: &ldquo;if $ax^2 + bx + c = 0$ has roots&hellip;&rdquo;</li>
+</ul>
+<h2 id="-template-solution-4-steps">📋 Template Solution (4 Steps)<a hidden class="anchor" aria-hidden="true" href="#-template-solution-4-steps">#</a></h2>
+<ol>
+<li><strong>Identify</strong> the polynomial and its roots</li>
+<li><strong>Apply</strong> Vieta&rsquo;s formulas to find basic relationships</li>
+<li><strong>Use</strong> identities to find desired expressions</li>
+<li><strong>Check</strong> your answer makes sense</li>
+</ol>
+<h2 id="-common-patterns">🔍 Common Patterns<a hidden class="anchor" aria-hidden="true" href="#-common-patterns">#</a></h2>
+<h3 id="pattern-1-basic-vietas-application">Pattern 1: Basic Vieta&rsquo;s Application<a hidden class="anchor" aria-hidden="true" href="#pattern-1-basic-vietas-application">#</a></h3>
+<p><strong>Template</strong>: For $ax^2 + bx + c = 0$ with roots $r_1, r_2$:</p>
+<ul>
+<li>Sum: $r_1 + r_2 = -\frac{b}{a}$</li>
+<li>Product: $r_1 r_2 = \frac{c}{a}$</li>
+</ul>
+<p><strong>Example</strong>: If $x^2 - 5x + 6 = 0$ has roots $r$ and $s$, find $r^2 + s^2$</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li><strong>Vieta&rsquo;s</strong>: $r + s = 5$, $rs = 6$</li>
+<li><strong>Identity</strong>: $r^2 + s^2 = (r+s)^2 - 2rs$</li>
+<li><strong>Substitute</strong>: $r^2 + s^2 = 5^2 - 2(6) = 25 - 12 = 13$</li>
+</ol>
+<h3 id="pattern-2-higher-degree-polynomials">Pattern 2: Higher Degree Polynomials<a hidden class="anchor" aria-hidden="true" href="#pattern-2-higher-degree-polynomials">#</a></h3>
+<p><strong>Template</strong>: For $ax^3 + bx^2 + cx + d = 0$ with roots $r_1, r_2, r_3$:</p>
+<ul>
+<li>Sum: $r_1 + r_2 + r_3 = -\frac{b}{a}$</li>
+<li>Sum of products: $r_1 r_2 + r_1 r_3 + r_2 r_3 = \frac{c}{a}$</li>
+<li>Product: $r_1 r_2 r_3 = -\frac{d}{a}$</li>
+</ul>
+<p><strong>Example</strong>: If $x^3 - 6x^2 + 11x - 6 = 0$ has roots $a, b, c$, find $a^2 + b^2 + c^2$</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li><strong>Vieta&rsquo;s</strong>: $a + b + c = 6$, $ab + ac + bc = 11$, $abc = 6$</li>
+<li><strong>Identity</strong>: $a^2 + b^2 + c^2 = (a+b+c)^2 - 2(ab+ac+bc)$</li>
+<li><strong>Substitute</strong>: $a^2 + b^2 + c^2 = 6^2 - 2(11) = 36 - 22 = 14$</li>
+</ol>
+<h3 id="pattern-3-parameter-problems">Pattern 3: Parameter Problems<a hidden class="anchor" aria-hidden="true" href="#pattern-3-parameter-problems">#</a></h3>
+<p><strong>Template</strong>: Use Vieta&rsquo;s to find parameter values</p>
+<p><strong>Example</strong>: Find $k$ such that $x^2 + kx + 12 = 0$ has roots whose sum is 7</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li><strong>Vieta&rsquo;s</strong>: Sum of roots = $-k = 7$</li>
+<li><strong>Solve</strong>: $k = -7$</li>
+<li><strong>Check</strong>: Product = $12$ ✓</li>
+</ol>
+<h3 id="pattern-4-symmetric-sums">Pattern 4: Symmetric Sums<a hidden class="anchor" aria-hidden="true" href="#pattern-4-symmetric-sums">#</a></h3>
+<p><strong>Template</strong>: Use identities to express higher powers in terms of basic sums</p>
+<p><strong>Example</strong>: If $r$ and $s$ are roots of $x^2 - 3x + 1 = 0$, find $r^3 + s^3$</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li><strong>Vieta&rsquo;s</strong>: $r + s = 3$, $rs = 1$</li>
+<li><strong>Identity</strong>: $r^3 + s^3 = (r+s)^3 - 3rs(r+s)$</li>
+<li><strong>Substitute</strong>: $r^3 + s^3 = 3^3 - 3(1)(3) = 27 - 9 = 18$</li>
+</ol>
+<h2 id="-amc-style-worked-example">🎯 AMC-Style Worked Example<a hidden class="anchor" aria-hidden="true" href="#-amc-style-worked-example">#</a></h2>
+<p><strong>Problem</strong>: If $x^3 - 4x^2 + 5x - 2 = 0$ has roots $a, b, c$, find the value of $\frac{1}{a} + \frac{1}{b} + \frac{1}{c}$.</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>
+<p><strong>Vieta&rsquo;s formulas</strong>:</p>
+<ul>
+<li>$a + b + c = 4$</li>
+<li>$ab + ac + bc = 5$</li>
+<li>$abc = 2$</li>
+</ul>
+</li>
+<li>
+<p><strong>Find common denominator</strong>:</p>
+<ul>
+<li>$\frac{1}{a} + \frac{1}{b} + \frac{1}{c} = \frac{bc + ac + ab}{abc}$</li>
+</ul>
+</li>
+<li>
+<p><strong>Substitute known values</strong>:</p>
+<ul>
+<li>$\frac{1}{a} + \frac{1}{b} + \frac{1}{c} = \frac{5}{2}$</li>
+</ul>
+</li>
+</ol>
+<p><strong>Answer</strong>: $\frac{5}{2}$</p>
+<h2 id="-common-identities">📊 Common Identities<a hidden class="anchor" aria-hidden="true" href="#-common-identities">#</a></h2>
+<h3 id="quadratic-identities">Quadratic Identities<a hidden class="anchor" aria-hidden="true" href="#quadratic-identities">#</a></h3>
+<ul>
+<li>$r_1^2 + r_2^2 = (r_1 + r_2)^2 - 2r_1 r_2$</li>
+<li>$r_1^3 + r_2^3 = (r_1 + r_2)^3 - 3r_1 r_2(r_1 + r_2)$</li>
+<li>$r_1^4 + r_2^4 = (r_1^2 + r_2^2)^2 - 2(r_1 r_2)^2$</li>
+</ul>
+<h3 id="cubic-identities">Cubic Identities<a hidden class="anchor" aria-hidden="true" href="#cubic-identities">#</a></h3>
+<ul>
+<li>$r_1^2 + r_2^2 + r_3^2 = (r_1 + r_2 + r_3)^2 - 2(r_1 r_2 + r_1 r_3 + r_2 r_3)$</li>
+<li>$r_1^3 + r_2^3 + r_3^3 = (r_1 + r_2 + r_3)^3 - 3(r_1 + r_2 + r_3)(r_1 r_2 + r_1 r_3 + r_2 r_3) + 3r_1 r_2 r_3$</li>
+</ul>
+<h3 id="reciprocal-sums">Reciprocal Sums<a hidden class="anchor" aria-hidden="true" href="#reciprocal-sums">#</a></h3>
+<ul>
+<li>$\frac{1}{r_1} + \frac{1}{r_2} = \frac{r_1 + r_2}{r_1 r_2}$</li>
+<li>$\frac{1}{r_1} + \frac{1}{r_2} + \frac{1}{r_3} = \frac{r_1 r_2 + r_1 r_3 + r_2 r_3}{r_1 r_2 r_3}$</li>
+</ul>
+<h2 id="-common-pitfalls">⚠️ Common Pitfalls<a hidden class="anchor" aria-hidden="true" href="#-common-pitfalls">#</a></h2>
+<h3 id="pitfall-wrong-signs-in-vietas-formulas"><strong>Pitfall</strong>: Wrong signs in Vieta&rsquo;s formulas<a hidden class="anchor" aria-hidden="true" href="#pitfall-wrong-signs-in-vietas-formulas">#</a></h3>
+<p><strong>Fix</strong>: Remember the negative sign: sum of roots = $-\frac{b}{a}$.</p>
+<h3 id="pitfall-forgetting-to-check-if-roots-exist"><strong>Pitfall</strong>: Forgetting to check if roots exist<a hidden class="anchor" aria-hidden="true" href="#pitfall-forgetting-to-check-if-roots-exist">#</a></h3>
+<p><strong>Fix</strong>: Ensure discriminant $\geq 0$ for real roots.</p>
+<h3 id="pitfall-wrong-identity-application"><strong>Pitfall</strong>: Wrong identity application<a hidden class="anchor" aria-hidden="true" href="#pitfall-wrong-identity-application">#</a></h3>
+<p><strong>Fix</strong>: Double-check your algebraic manipulations.</p>
+<h3 id="pitfall-confusing-sum-and-product"><strong>Pitfall</strong>: Confusing sum and product<a hidden class="anchor" aria-hidden="true" href="#pitfall-confusing-sum-and-product">#</a></h3>
+<p><strong>Fix</strong>: Sum = $-\frac{b}{a}$, Product = $\frac{c}{a}$ for $ax^2 + bx + c = 0$.</p>
+<h2 id="-quick-reference">📋 Quick Reference<a hidden class="anchor" aria-hidden="true" href="#-quick-reference">#</a></h2>
+<h3 id="vietas-formulas-quadratic">Vieta&rsquo;s Formulas (Quadratic)<a hidden class="anchor" aria-hidden="true" href="#vietas-formulas-quadratic">#</a></h3>
+<p>For $ax^2 + bx + c = 0$ with roots $r_1, r_2$:</p>
+<ul>
+<li>Sum: $r_1 + r_2 = -\frac{b}{a}$</li>
+<li>Product: $r_1 r_2 = \frac{c}{a}$</li>
+</ul>
+<h3 id="vietas-formulas-cubic">Vieta&rsquo;s Formulas (Cubic)<a hidden class="anchor" aria-hidden="true" href="#vietas-formulas-cubic">#</a></h3>
+<p>For $ax^3 + bx^2 + cx + d = 0$ with roots $r_1, r_2, r_3$:</p>
+<ul>
+<li>Sum: $r_1 + r_2 + r_3 = -\frac{b}{a}$</li>
+<li>Sum of products: $r_1 r_2 + r_1 r_3 + r_2 r_3 = \frac{c}{a}$</li>
+<li>Product: $r_1 r_2 r_3 = -\frac{d}{a}$</li>
+</ul>
+<h3 id="essential-identities">Essential Identities<a hidden class="anchor" aria-hidden="true" href="#essential-identities">#</a></h3>
+<ul>
+<li>$r_1^2 + r_2^2 = (r_1 + r_2)^2 - 2r_1 r_2$</li>
+<li>$r_1^3 + r_2^3 = (r_1 + r_2)^3 - 3r_1 r_2(r_1 + r_2)$</li>
+<li>$\frac{1}{r_1} + \frac{1}{r_2} = \frac{r_1 + r_2}{r_1 r_2}$</li>
+</ul>
+<hr>
+<p><strong>Next</strong>: <a href="/precalculus/problem-types/remainder-and-factor-theorem">Remainder &amp; Factor Theorem</a><br>
+<strong>Back to</strong>: <a href="/precalculus/problem-types/">Problem Types</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">Amc10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">Amc12</a></li>
+      <li><a href="http://localhost:1313/tags/precalculus/">Precalculus</a></li>
+      <li><a href="http://localhost:1313/tags/polynomials/">Polynomials</a></li>
+      <li><a href="http://localhost:1313/tags/vieta/">Vieta</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
