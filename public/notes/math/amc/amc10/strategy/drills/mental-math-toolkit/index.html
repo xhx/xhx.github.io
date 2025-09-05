@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Mental Math Toolkit | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Mental Math, Calculations, Shortcuts">
+<meta name="description" content="Essential mental math techniques and shortcuts for fast, accurate calculations in AMC 10/12 contests.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/strategy/drills/mental-math-toolkit/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/strategy/drills/mental-math-toolkit/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/">AMC 10/12 Contest Strategy &amp; Tactics Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/drills/">Skill Drills</a></div>
+    <div class="post-meta">6 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-mental-math-toolkit" aria-label="🧮 Mental Math Toolkit">🧮 Mental Math Toolkit</a><ul>
+                        
+                <li>
+                    <a href="#-core-mental-math-skills" aria-label="🎯 Core Mental Math Skills">🎯 Core Mental Math Skills</a><ul>
+                        
+                <li>
+                    <a href="#addition--subtraction" aria-label="Addition &amp; Subtraction">Addition &amp; Subtraction</a></li>
+                <li>
+                    <a href="#multiplication" aria-label="Multiplication">Multiplication</a></li>
+                <li>
+                    <a href="#division" aria-label="Division">Division</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-fraction-mastery" aria-label="🔢 Fraction Mastery">🔢 Fraction Mastery</a><ul>
+                        
+                <li>
+                    <a href="#converting-fractions" aria-label="Converting Fractions">Converting Fractions</a></li>
+                <li>
+                    <a href="#adding--subtracting-fractions" aria-label="Adding &amp; Subtracting Fractions">Adding &amp; Subtracting Fractions</a></li>
+                <li>
+                    <a href="#multiplying--dividing-fractions" aria-label="Multiplying &amp; Dividing Fractions">Multiplying &amp; Dividing Fractions</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-percent-calculations" aria-label="📊 Percent Calculations">📊 Percent Calculations</a><ul>
+                        
+                <li>
+                    <a href="#basic-percentages" aria-label="Basic Percentages">Basic Percentages</a></li>
+                <li>
+                    <a href="#percent-applications" aria-label="Percent Applications">Percent Applications</a></li>
+                <li>
+                    <a href="#quick-percent-tricks" aria-label="Quick Percent Tricks">Quick Percent Tricks</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-perfect-squares--roots" aria-label="🔢 Perfect Squares &amp; Roots">🔢 Perfect Squares &amp; Roots</a><ul>
+                        
+                <li>
+                    <a href="#perfect-squares-to-30" aria-label="Perfect Squares to 30">Perfect Squares to 30</a></li>
+                <li>
+                    <a href="#square-root-approximations" aria-label="Square Root Approximations">Square Root Approximations</a></li>
+                <li>
+                    <a href="#square-root-tricks" aria-label="Square Root Tricks">Square Root Tricks</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-approximation-techniques" aria-label="⚡ Approximation Techniques">⚡ Approximation Techniques</a><ul>
+                        
+                <li>
+                    <a href="#rounding-strategies" aria-label="Rounding Strategies">Rounding Strategies</a></li>
+                <li>
+                    <a href="#order-of-magnitude" aria-label="Order of Magnitude">Order of Magnitude</a></li>
+                <li>
+                    <a href="#approximation-examples" aria-label="Approximation Examples">Approximation Examples</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-practice-drills" aria-label="🎯 Practice Drills">🎯 Practice Drills</a><ul>
+                        
+                <li>
+                    <a href="#5-minute-sprint-basic-arithmetic" aria-label="5-Minute Sprint: Basic Arithmetic">5-Minute Sprint: Basic Arithmetic</a></li>
+                <li>
+                    <a href="#5-minute-sprint-fractions--percents" aria-label="5-Minute Sprint: Fractions &amp; Percents">5-Minute Sprint: Fractions &amp; Percents</a></li>
+                <li>
+                    <a href="#5-minute-sprint-perfect-squares" aria-label="5-Minute Sprint: Perfect Squares">5-Minute Sprint: Perfect Squares</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-progress-tracking" aria-label="📊 Progress Tracking">📊 Progress Tracking</a><ul>
+                        
+                <li>
+                    <a href="#accuracy-targets" aria-label="Accuracy Targets">Accuracy Targets</a></li>
+                <li>
+                    <a href="#speed-targets" aria-label="Speed Targets">Speed Targets</a></li>
+                <li>
+                    <a href="#weekly-goals" aria-label="Weekly Goals">Weekly Goals</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-reference" aria-label="⚡ Quick Reference">⚡ Quick Reference</a><ul>
+                        
+                <li>
+                    <a href="#essential-techniques" aria-label="Essential Techniques:">Essential Techniques:</a></li>
+                <li>
+                    <a href="#common-values" aria-label="Common Values:">Common Values:</a></li>
+                <li>
+                    <a href="#practice-schedule" aria-label="Practice Schedule:">Practice Schedule:</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-mental-math-toolkit">🧮 Mental Math Toolkit<a hidden class="anchor" aria-hidden="true" href="#-mental-math-toolkit">#</a></h1>
+<p>Master essential mental math techniques to perform calculations quickly and accurately during the contest. Speed and accuracy in basic arithmetic will save valuable time.</p>
+<h2 id="-core-mental-math-skills">🎯 Core Mental Math Skills<a hidden class="anchor" aria-hidden="true" href="#-core-mental-math-skills">#</a></h2>
+<h3 id="addition--subtraction">Addition &amp; Subtraction<a hidden class="anchor" aria-hidden="true" href="#addition--subtraction">#</a></h3>
+<ul>
+<li><strong>Break down numbers</strong>: $47 + 38 = 47 + 30 + 8 = 77 + 8 = 85$</li>
+<li><strong>Use complements</strong>: $100 - 47 = 53$ (since $47 + 53 = 100$)</li>
+<li><strong>Round and adjust</strong>: $298 + 156 = 300 + 156 - 2 = 456 - 2 = 454$</li>
+<li><strong>Left to right</strong>: $234 + 567 = 200 + 500 + 30 + 60 + 4 + 7 = 700 + 90 + 11 = 801$</li>
+</ul>
+<h3 id="multiplication">Multiplication<a hidden class="anchor" aria-hidden="true" href="#multiplication">#</a></h3>
+<ul>
+<li><strong>Break down factors</strong>: $24 \times 15 = 24 \times 10 + 24 \times 5 = 240 + 120 = 360$</li>
+<li><strong>Use distributive property</strong>: $13 \times 17 = (10 + 3)(10 + 7) = 100 + 70 + 30 + 21 = 221$</li>
+<li><strong>Round and adjust</strong>: $19 \times 23 = 20 \times 23 - 23 = 460 - 23 = 437$</li>
+<li><strong>Use known products</strong>: $25 \times 16 = 25 \times 4 \times 4 = 100 \times 4 = 400$</li>
+</ul>
+<h3 id="division">Division<a hidden class="anchor" aria-hidden="true" href="#division">#</a></h3>
+<ul>
+<li><strong>Break down divisors</strong>: $144 \div 12 = 144 \div 4 \div 3 = 36 \div 3 = 12$</li>
+<li><strong>Use multiplication</strong>: $168 \div 14 = ?$ → $14 \times 12 = 168$, so $168 \div 14 = 12$</li>
+<li><strong>Round and adjust</strong>: $147 \div 7 = 140 \div 7 + 7 \div 7 = 20 + 1 = 21$</li>
+<li><strong>Use factors</strong>: $180 \div 15 = 180 \div 3 \div 5 = 60 \div 5 = 12$</li>
+</ul>
+<h2 id="-fraction-mastery">🔢 Fraction Mastery<a hidden class="anchor" aria-hidden="true" href="#-fraction-mastery">#</a></h2>
+<h3 id="converting-fractions">Converting Fractions<a hidden class="anchor" aria-hidden="true" href="#converting-fractions">#</a></h3>
+<ul>
+<li><strong>To decimals</strong>: $\frac{1}{8} = 0.125$, $\frac{3}{8} = 0.375$, $\frac{5}{8} = 0.625$, $\frac{7}{8} = 0.875$</li>
+<li><strong>To percents</strong>: $\frac{1}{4} = 25%$, $\frac{1}{3} \approx 33.3%$, $\frac{2}{3} \approx 66.7%$</li>
+<li><strong>Common fractions</strong>: $\frac{1}{2} = 0.5$, $\frac{1}{4} = 0.25$, $\frac{3}{4} = 0.75$</li>
+</ul>
+<h3 id="adding--subtracting-fractions">Adding &amp; Subtracting Fractions<a hidden class="anchor" aria-hidden="true" href="#adding--subtracting-fractions">#</a></h3>
+<ul>
+<li><strong>Same denominator</strong>: $\frac{3}{7} + \frac{2}{7} = \frac{5}{7}$</li>
+<li><strong>Different denominators</strong>: $\frac{1}{3} + \frac{1}{4} = \frac{4}{12} + \frac{3}{12} = \frac{7}{12}$</li>
+<li><strong>Mixed numbers</strong>: $2\frac{1}{3} + 1\frac{2}{3} = 3\frac{3}{3} = 4$</li>
+</ul>
+<h3 id="multiplying--dividing-fractions">Multiplying &amp; Dividing Fractions<a hidden class="anchor" aria-hidden="true" href="#multiplying--dividing-fractions">#</a></h3>
+<ul>
+<li><strong>Multiplication</strong>: $\frac{2}{3} \times \frac{3}{4} = \frac{6}{12} = \frac{1}{2}$</li>
+<li><strong>Division</strong>: $\frac{2}{3} \div \frac{3}{4} = \frac{2}{3} \times \frac{4}{3} = \frac{8}{9}$</li>
+<li><strong>Mixed numbers</strong>: $2\frac{1}{3} \times 1\frac{1}{2} = \frac{7}{3} \times \frac{3}{2} = \frac{21}{6} = 3\frac{1}{2}$</li>
+</ul>
+<h2 id="-percent-calculations">📊 Percent Calculations<a hidden class="anchor" aria-hidden="true" href="#-percent-calculations">#</a></h2>
+<h3 id="basic-percentages">Basic Percentages<a hidden class="anchor" aria-hidden="true" href="#basic-percentages">#</a></h3>
+<ul>
+<li><strong>10%</strong>: Move decimal one place left ($10%$ of $240 = 24$)</li>
+<li><strong>5%</strong>: Half of 10% ($5%$ of $240 = 12$)</li>
+<li><strong>1%</strong>: Move decimal two places left ($1%$ of $240 = 2.4$)</li>
+<li><strong>50%</strong>: Half the number ($50%$ of $240 = 120$)</li>
+</ul>
+<h3 id="percent-applications">Percent Applications<a hidden class="anchor" aria-hidden="true" href="#percent-applications">#</a></h3>
+<ul>
+<li><strong>Percent increase</strong>: $120$ increased by $25% = 120 + 30 = 150$</li>
+<li><strong>Percent decrease</strong>: $200$ decreased by $15% = 200 - 30 = 170$</li>
+<li><strong>Percent of percent</strong>: $20%$ of $30% = 0.2 \times 0.3 = 0.06 = 6%$</li>
+</ul>
+<h3 id="quick-percent-tricks">Quick Percent Tricks<a hidden class="anchor" aria-hidden="true" href="#quick-percent-tricks">#</a></h3>
+<ul>
+<li><strong>$12\frac{1}{2}% = \frac{1}{8}$</strong>: $12\frac{1}{2}%$ of $80 = 10$</li>
+<li><strong>$33\frac{1}{3}% = \frac{1}{3}$</strong>: $33\frac{1}{3}%$ of $90 = 30$</li>
+<li><strong>$66\frac{2}{3}% = \frac{2}{3}$</strong>: $66\frac{2}{3}%$ of $60 = 40$</li>
+</ul>
+<h2 id="-perfect-squares--roots">🔢 Perfect Squares &amp; Roots<a hidden class="anchor" aria-hidden="true" href="#-perfect-squares--roots">#</a></h2>
+<h3 id="perfect-squares-to-30">Perfect Squares to 30<a hidden class="anchor" aria-hidden="true" href="#perfect-squares-to-30">#</a></h3>
+<ul>
+<li><strong>$1^2 = 1$</strong>, <strong>$2^2 = 4$</strong>, <strong>$3^2 = 9$</strong>, <strong>$4^2 = 16$</strong>, <strong>$5^2 = 25$</strong></li>
+<li><strong>$6^2 = 36$</strong>, <strong>$7^2 = 49$</strong>, <strong>$8^2 = 64$</strong>, <strong>$9^2 = 81$</strong>, <strong>$10^2 = 100$</strong></li>
+<li><strong>$11^2 = 121$</strong>, <strong>$12^2 = 144$</strong>, <strong>$13^2 = 169$</strong>, <strong>$14^2 = 196$</strong>, <strong>$15^2 = 225$</strong></li>
+<li><strong>$16^2 = 256$</strong>, <strong>$17^2 = 289$</strong>, <strong>$18^2 = 324$</strong>, <strong>$19^2 = 361$</strong>, <strong>$20^2 = 400$</strong></li>
+</ul>
+<h3 id="square-root-approximations">Square Root Approximations<a hidden class="anchor" aria-hidden="true" href="#square-root-approximations">#</a></h3>
+<ul>
+<li><strong>$\sqrt{2} \approx 1.414$</strong>, <strong>$\sqrt{3} \approx 1.732$</strong>, <strong>$\sqrt{5} \approx 2.236$</strong></li>
+<li><strong>$\sqrt{6} \approx 2.449$</strong>, <strong>$\sqrt{7} \approx 2.646$</strong>, <strong>$\sqrt{8} \approx 2.828$</strong></li>
+<li><strong>$\sqrt{10} \approx 3.162$</strong>, <strong>$\sqrt{11} \approx 3.317$</strong>, <strong>$\sqrt{12} \approx 3.464$</strong></li>
+</ul>
+<h3 id="square-root-tricks">Square Root Tricks<a hidden class="anchor" aria-hidden="true" href="#square-root-tricks">#</a></h3>
+<ul>
+<li><strong>Perfect squares</strong>: $\sqrt{144} = 12$, $\sqrt{169} = 13$, $\sqrt{196} = 14$</li>
+<li><strong>Near perfect squares</strong>: $\sqrt{150} \approx \sqrt{144} = 12$ (actual: 12.25)</li>
+<li><strong>Estimation</strong>: $\sqrt{200} \approx \sqrt{196} = 14$ (actual: 14.14)</li>
+</ul>
+<h2 id="-approximation-techniques">⚡ Approximation Techniques<a hidden class="anchor" aria-hidden="true" href="#-approximation-techniques">#</a></h2>
+<h3 id="rounding-strategies">Rounding Strategies<a hidden class="anchor" aria-hidden="true" href="#rounding-strategies">#</a></h3>
+<ul>
+<li><strong>Round to nearest 10</strong>: $47 + 38 \approx 50 + 40 = 90$ (actual: 85)</li>
+<li><strong>Round to nearest 100</strong>: $298 + 156 \approx 300 + 200 = 500$ (actual: 454)</li>
+<li><strong>Round to nearest 1000</strong>: $1,234 + 2,567 \approx 1,000 + 3,000 = 4,000$ (actual: 3,801)</li>
+</ul>
+<h3 id="order-of-magnitude">Order of Magnitude<a hidden class="anchor" aria-hidden="true" href="#order-of-magnitude">#</a></h3>
+<ul>
+<li><strong>Powers of 10</strong>: $10^0 = 1$, $10^1 = 10$, $10^2 = 100$, $10^3 = 1,000$</li>
+<li><strong>Scientific notation</strong>: $2.5 \times 10^3 = 2,500$</li>
+<li><strong>Quick estimates</strong>: $47 \times 23 \approx 50 \times 20 = 1,000$ (actual: 1,081)</li>
+</ul>
+<h3 id="approximation-examples">Approximation Examples<a hidden class="anchor" aria-hidden="true" href="#approximation-examples">#</a></h3>
+<ul>
+<li><strong>$19 \times 21$</strong>: $20 \times 20 = 400$ (actual: 399)</li>
+<li><strong>$98 \times 102$</strong>: $100 \times 100 = 10,000$ (actual: 9,996)</li>
+<li><strong>$47 \times 53$</strong>: $50 \times 50 = 2,500$ (actual: 2,491)</li>
+</ul>
+<h2 id="-practice-drills">🎯 Practice Drills<a hidden class="anchor" aria-hidden="true" href="#-practice-drills">#</a></h2>
+<h3 id="5-minute-sprint-basic-arithmetic">5-Minute Sprint: Basic Arithmetic<a hidden class="anchor" aria-hidden="true" href="#5-minute-sprint-basic-arithmetic">#</a></h3>
+<p><strong>Target</strong>: 20 problems in 5 minutes (90%+ accuracy)</p>
+<ol>
+<li>$47 + 38 = ?$</li>
+<li>$156 - 89 = ?$</li>
+<li>$24 \times 15 = ?$</li>
+<li>$168 \div 12 = ?$</li>
+<li>$13 \times 17 = ?$</li>
+<li>$144 \div 9 = ?$</li>
+<li>$29 + 47 = ?$</li>
+<li>$203 - 87 = ?$</li>
+<li>$18 \times 25 = ?$</li>
+<li>$225 \div 15 = ?$</li>
+</ol>
+<h3 id="5-minute-sprint-fractions--percents">5-Minute Sprint: Fractions &amp; Percents<a hidden class="anchor" aria-hidden="true" href="#5-minute-sprint-fractions--percents">#</a></h3>
+<p><strong>Target</strong>: 15 problems in 5 minutes (90%+ accuracy)</p>
+<ol>
+<li>$\frac{3}{8} + \frac{1}{4} = ?$</li>
+<li>$\frac{5}{6} - \frac{1}{3} = ?$</li>
+<li>$\frac{2}{3} \times \frac{3}{4} = ?$</li>
+<li>$\frac{3}{5} \div \frac{2}{5} = ?$</li>
+<li>$25%$ of $80 = ?$</li>
+<li>$15%$ of $120 = ?$</li>
+<li>$\frac{1}{8} = ?%$</li>
+<li>$\frac{2}{3} = ?%$</li>
+<li>$12\frac{1}{2}%$ of $40 = ?$</li>
+<li>$33\frac{1}{3}%$ of $90 = ?$</li>
+</ol>
+<h3 id="5-minute-sprint-perfect-squares">5-Minute Sprint: Perfect Squares<a hidden class="anchor" aria-hidden="true" href="#5-minute-sprint-perfect-squares">#</a></h3>
+<p><strong>Target</strong>: 20 problems in 5 minutes (95%+ accuracy)</p>
+<ol>
+<li>$11^2 = ?$</li>
+<li>$12^2 = ?$</li>
+<li>$13^2 = ?$</li>
+<li>$14^2 = ?$</li>
+<li>$15^2 = ?$</li>
+<li>$16^2 = ?$</li>
+<li>$17^2 = ?$</li>
+<li>$18^2 = ?$</li>
+<li>$19^2 = ?$</li>
+<li>$20^2 = ?$</li>
+</ol>
+<h2 id="-progress-tracking">📊 Progress Tracking<a hidden class="anchor" aria-hidden="true" href="#-progress-tracking">#</a></h2>
+<h3 id="accuracy-targets">Accuracy Targets<a hidden class="anchor" aria-hidden="true" href="#accuracy-targets">#</a></h3>
+<ul>
+<li><strong>Basic arithmetic</strong>: 95%+ accuracy</li>
+<li><strong>Fractions &amp; percents</strong>: 90%+ accuracy</li>
+<li><strong>Perfect squares</strong>: 95%+ accuracy</li>
+<li><strong>Approximations</strong>: 85%+ accuracy</li>
+</ul>
+<h3 id="speed-targets">Speed Targets<a hidden class="anchor" aria-hidden="true" href="#speed-targets">#</a></h3>
+<ul>
+<li><strong>Basic arithmetic</strong>: 4 problems per minute</li>
+<li><strong>Fractions &amp; percents</strong>: 3 problems per minute</li>
+<li><strong>Perfect squares</strong>: 4 problems per minute</li>
+<li><strong>Approximations</strong>: 3 problems per minute</li>
+</ul>
+<h3 id="weekly-goals">Weekly Goals<a hidden class="anchor" aria-hidden="true" href="#weekly-goals">#</a></h3>
+<ul>
+<li><strong>Week 1</strong>: Focus on accuracy, don&rsquo;t worry about speed</li>
+<li><strong>Week 2</strong>: Maintain accuracy, increase speed by 20%</li>
+<li><strong>Week 3</strong>: Maintain accuracy, increase speed by 40%</li>
+<li><strong>Week 4</strong>: Maintain accuracy, increase speed by 60%</li>
+</ul>
+<h2 id="-quick-reference">⚡ Quick Reference<a hidden class="anchor" aria-hidden="true" href="#-quick-reference">#</a></h2>
+<h3 id="essential-techniques">Essential Techniques:<a hidden class="anchor" aria-hidden="true" href="#essential-techniques">#</a></h3>
+<ul>
+<li><strong>Break down numbers</strong>: Use distributive property</li>
+<li><strong>Round and adjust</strong>: Round to easy numbers, then adjust</li>
+<li><strong>Use complements</strong>: Find numbers that add to round numbers</li>
+<li><strong>Left to right</strong>: Add from left to right for mental math</li>
+<li><strong>Use known products</strong>: Apply multiplication facts</li>
+</ul>
+<h3 id="common-values">Common Values:<a hidden class="anchor" aria-hidden="true" href="#common-values">#</a></h3>
+<ul>
+<li><strong>$\frac{1}{8} = 0.125$</strong>, <strong>$\frac{3}{8} = 0.375$</strong>, <strong>$\frac{5}{8} = 0.625$</strong>, <strong>$\frac{7}{8} = 0.875$</strong></li>
+<li><strong>$12\frac{1}{2}% = \frac{1}{8}$</strong>, <strong>$33\frac{1}{3}% = \frac{1}{3}$</strong>, <strong>$66\frac{2}{3}% = \frac{2}{3}$</strong></li>
+<li><strong>$\sqrt{2} \approx 1.414$</strong>, <strong>$\sqrt{3} \approx 1.732$</strong>, <strong>$\sqrt{5} \approx 2.236$</strong></li>
+</ul>
+<h3 id="practice-schedule">Practice Schedule:<a hidden class="anchor" aria-hidden="true" href="#practice-schedule">#</a></h3>
+<ul>
+<li><strong>Daily</strong>: 15 minutes of mental math practice</li>
+<li><strong>Focus areas</strong>: Work on your weakest skills</li>
+<li><strong>Progressive difficulty</strong>: Increase complexity over time</li>
+<li><strong>Time pressure</strong>: Practice under time constraints</li>
+<li><strong>Accuracy first</strong>: Speed comes with accuracy</li>
+</ul>
+<hr>
+<p><strong>Next:</strong> <a href="../modular-arithmetic-sprints">Modular Arithmetic Sprints</a> | <strong>Back to:</strong> <a href="../">Strategy Guide</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/mental-math/">Mental Math</a></li>
+      <li><a href="http://localhost:1313/tags/calculations/">Calculations</a></li>
+      <li><a href="http://localhost:1313/tags/shortcuts/">Shortcuts</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

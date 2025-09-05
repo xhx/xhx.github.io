@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Angle Chase Cycles | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Geometry, Angle Chasing, Parallel Lines, Inscribed Angles, Study Guide">
+<meta name="description" content="Master angle chasing patterns: inscribed angles, parallel lines, and cyclic triggers for systematic angle finding.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/geometry/problem-types/angle-chase-cycles/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/geometry/problem-types/angle-chase-cycles/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/">Geometry Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/problem-types/">Problem Types</a></div>
+    <div class="post-meta">3 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-angle-chase-cycles" aria-label="🔄 Angle Chase Cycles">🔄 Angle Chase Cycles</a><ul>
+                        
+                <li>
+                    <a href="#-recognition-cues" aria-label="🎯 Recognition Cues">🎯 Recognition Cues</a><ul>
+                        
+                <li>
+                    <a href="#key-triggers" aria-label="Key Triggers">Key Triggers</a></li>
+                <li>
+                    <a href="#common-setups" aria-label="Common Setups">Common Setups</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-solution-template" aria-label="🧩 Solution Template">🧩 Solution Template</a><ul>
+                        
+                <li>
+                    <a href="#step-1-mark-given-angles" aria-label="Step 1: Mark Given Angles">Step 1: Mark Given Angles</a></li>
+                <li>
+                    <a href="#step-2-identify-the-pattern" aria-label="Step 2: Identify the Pattern">Step 2: Identify the Pattern</a></li>
+                <li>
+                    <a href="#step-3-follow-the-chain" aria-label="Step 3: Follow the Chain">Step 3: Follow the Chain</a></li>
+                <li>
+                    <a href="#step-4-verify" aria-label="Step 4: Verify">Step 4: Verify</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-worked-example" aria-label="🔍 Worked Example">🔍 Worked Example</a></li>
+                <li>
+                    <a href="#-common-pitfalls" aria-label="⚠️ Common Pitfalls">⚠️ Common Pitfalls</a></li>
+                <li>
+                    <a href="#-related-patterns" aria-label="🔗 Related Patterns">🔗 Related Patterns</a></li>
+                <li>
+                    <a href="#-quick-reference" aria-label="💡 Quick Reference">💡 Quick Reference</a><ul>
+                        
+                <li>
+                    <a href="#angle-relationships" aria-label="Angle Relationships">Angle Relationships</a></li>
+                <li>
+                    <a href="#common-triggers" aria-label="Common Triggers">Common Triggers</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-angle-chase-cycles">🔄 Angle Chase Cycles<a hidden class="anchor" aria-hidden="true" href="#-angle-chase-cycles">#</a></h1>
+<p>Angle chasing is one of the most common problem types in AMC geometry. Master these patterns for systematic angle finding.</p>
+<h2 id="-recognition-cues">🎯 Recognition Cues<a hidden class="anchor" aria-hidden="true" href="#-recognition-cues">#</a></h2>
+<h3 id="key-triggers">Key Triggers<a hidden class="anchor" aria-hidden="true" href="#key-triggers">#</a></h3>
+<ul>
+<li><strong>Parallel lines</strong> - Look for $\parallel$ symbols or equal corresponding angles</li>
+<li><strong>Circles</strong> - Look for inscribed angles, central angles, or cyclic quadrilaterals</li>
+<li><strong>Triangles</strong> - Look for angle sums, exterior angles, or special triangles</li>
+<li><strong>Vertical angles</strong> - Look for intersecting lines creating equal opposite angles</li>
+</ul>
+<h3 id="common-setups">Common Setups<a hidden class="anchor" aria-hidden="true" href="#common-setups">#</a></h3>
+<ul>
+<li>Lines intersecting with parallel lines</li>
+<li>Points on circles with chords or tangents</li>
+<li>Triangles with angle bisectors or altitudes</li>
+<li>Quadrilaterals with parallel sides</li>
+</ul>
+<h2 id="-solution-template">🧩 Solution Template<a hidden class="anchor" aria-hidden="true" href="#-solution-template">#</a></h2>
+<h3 id="step-1-mark-given-angles">Step 1: Mark Given Angles<a hidden class="anchor" aria-hidden="true" href="#step-1-mark-given-angles">#</a></h3>
+<ul>
+<li>Circle or highlight all given angle measures</li>
+<li>Mark equal angles with the same symbol</li>
+<li>Mark right angles with small squares</li>
+</ul>
+<h3 id="step-2-identify-the-pattern">Step 2: Identify the Pattern<a hidden class="anchor" aria-hidden="true" href="#step-2-identify-the-pattern">#</a></h3>
+<ul>
+<li><strong>Parallel lines:</strong> Use corresponding, alternate interior, or same-side interior angles</li>
+<li><strong>Circles:</strong> Use inscribed angle theorem or opposite angles in cyclic quadrilaterals</li>
+<li><strong>Triangles:</strong> Use angle sum theorem or exterior angle theorem</li>
+<li><strong>Vertical angles:</strong> Use equal opposite angles</li>
+</ul>
+<h3 id="step-3-follow-the-chain">Step 3: Follow the Chain<a hidden class="anchor" aria-hidden="true" href="#step-3-follow-the-chain">#</a></h3>
+<ul>
+<li>Start with given angles</li>
+<li>Apply the appropriate theorem</li>
+<li>Use the result to find the next angle</li>
+<li>Continue until you reach the target angle</li>
+</ul>
+<h3 id="step-4-verify">Step 4: Verify<a hidden class="anchor" aria-hidden="true" href="#step-4-verify">#</a></h3>
+<ul>
+<li>Check that all angles make geometric sense</li>
+<li>Ensure angle sums are correct</li>
+<li>Verify the final answer</li>
+</ul>
+<h2 id="-worked-example">🔍 Worked Example<a hidden class="anchor" aria-hidden="true" href="#-worked-example">#</a></h2>
+<p><strong>Problem:</strong> In the figure, $AB \parallel CD$, $\angle BAE = 40°$, and $\angle DCE = 60°$. Find $\angle AEC$.</p>
+<p><strong>Solution:</strong>
+<strong>Step 1:</strong> Mark given angles</p>
+<ul>
+<li>$\angle BAE = 40°$</li>
+<li>$\angle DCE = 60°$</li>
+<li>$AB \parallel CD$</li>
+</ul>
+<p><strong>Step 2:</strong> Identify pattern</p>
+<ul>
+<li>Parallel lines with transversal</li>
+<li>Need to find angle at intersection</li>
+</ul>
+<p><strong>Step 3:</strong> Follow the chain</p>
+<ul>
+<li>Since $AB \parallel CD$, we can use parallel line properties</li>
+<li>Draw auxiliary line $EF \parallel AB \parallel CD$ through point $E$</li>
+<li>$\angle BAE = \angle AEF = 40°$ (alternate interior angles)</li>
+<li>$\angle DCE = \angle CEF = 60°$ (alternate interior angles)</li>
+<li>$\angle AEC = \angle AEF + \angle CEF = 40° + 60° = 100°$</li>
+</ul>
+<p><strong>Step 4:</strong> Verify</p>
+<ul>
+<li>$40° + 60° = 100°$ ✓</li>
+<li>Angle makes geometric sense ✓</li>
+</ul>
+<p><strong>Answer:</strong> $\angle AEC = 100°$</p>
+<h2 id="-common-pitfalls">⚠️ Common Pitfalls<a hidden class="anchor" aria-hidden="true" href="#-common-pitfalls">#</a></h2>
+<p><strong>Pitfall:</strong> Assuming parallel lines without proof</p>
+<ul>
+<li><strong>Fix:</strong> Look for given information or use angle relationships to prove parallelism</li>
+</ul>
+<p><strong>Pitfall:</strong> Wrong angle relationships</p>
+<ul>
+<li><strong>Fix:</strong> Remember that corresponding angles are equal, alternate interior angles are equal</li>
+</ul>
+<p><strong>Pitfall:</strong> Forgetting about supplementary angles</p>
+<ul>
+<li><strong>Fix:</strong> Linear pairs sum to $180°$, same-side interior angles sum to $180°$</li>
+</ul>
+<p><strong>Pitfall:</strong> Wrong inscribed angle theorem</p>
+<ul>
+<li><strong>Fix:</strong> Inscribed angle is half the arc measure, not equal to it</li>
+</ul>
+<h2 id="-related-patterns">🔗 Related Patterns<a hidden class="anchor" aria-hidden="true" href="#-related-patterns">#</a></h2>
+<ul>
+<li><a href="similar-triangle-stacks"><strong>Similar Triangle Stacks</strong></a> - Parallel lines create similar triangles</li>
+<li><a href="cyclic-quad-setups"><strong>Cyclic Quad Setups</strong></a> - Equal subtended angles in circles</li>
+<li><a href="coordinate-kill"><strong>Coordinate Kill</strong></a> - Alternative to angle chasing</li>
+</ul>
+<h2 id="-quick-reference">💡 Quick Reference<a hidden class="anchor" aria-hidden="true" href="#-quick-reference">#</a></h2>
+<h3 id="angle-relationships">Angle Relationships<a hidden class="anchor" aria-hidden="true" href="#angle-relationships">#</a></h3>
+<ul>
+<li><strong>Parallel lines:</strong> Corresponding equal, alternate interior equal, same-side interior supplementary</li>
+<li><strong>Circles:</strong> Inscribed angle half arc, opposite angles in cyclic quad supplementary</li>
+<li><strong>Triangles:</strong> Angle sum $180°$, exterior angle equals sum of non-adjacent interior angles</li>
+<li><strong>Vertical angles:</strong> Equal opposite angles</li>
+</ul>
+<h3 id="common-triggers">Common Triggers<a hidden class="anchor" aria-hidden="true" href="#common-triggers">#</a></h3>
+<ul>
+<li><strong>$\parallel$ symbol:</strong> Look for parallel line properties</li>
+<li><strong>Circle:</strong> Look for inscribed angle theorem</li>
+<li><strong>Triangle:</strong> Look for angle sum or exterior angle theorem</li>
+<li><strong>Intersecting lines:</strong> Look for vertical angles</li>
+</ul>
+<hr>
+<p><strong>Next:</strong> <a href="similar-triangle-stacks">Similar Triangle Stacks →</a> | <strong>Prev:</strong> <a href="_index">Problem Types Overview →</a> | <strong>Back to:</strong> <a href="../">Geometry Mastery Guide →</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/geometry/">Geometry</a></li>
+      <li><a href="http://localhost:1313/tags/angle-chasing/">Angle Chasing</a></li>
+      <li><a href="http://localhost:1313/tags/parallel-lines/">Parallel Lines</a></li>
+      <li><a href="http://localhost:1313/tags/inscribed-angles/">Inscribed Angles</a></li>
+      <li><a href="http://localhost:1313/tags/study-guide/">Study Guide</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

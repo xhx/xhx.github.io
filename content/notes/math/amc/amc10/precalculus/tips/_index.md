@@ -104,3 +104,5 @@ Comprehensive collection of strategies, checklists, and timing advice.
 ---
 
 **Next**: [Complete Problem-Solving Guide](/notes/math/amc/amc10/precalculus/tips/problem-solving-tips)
+
+**Next**: [Problem-Solving Tips](problem-solving-tips) | **Back**: [Precalculus Mastery Guide](../)

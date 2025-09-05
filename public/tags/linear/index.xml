@@ -2,17 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Linear on Xiaohui Xie&#39;s Site</title>
-    <link>https://xhx.github.io/tags/linear/</link>
+    <link>http://localhost:1313/tags/linear/</link>
     <description>Recent content in Linear on Xiaohui Xie&#39;s Site</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
-    <atom:link href="https://xhx.github.io/tags/linear/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Linear Diophantine Equations</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/diophantine-equations-linear/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/topics/diophantine-equations-linear/</guid>
-      <description>Solving ax &#43; by = c, coin problems, and parameterization techniques.</description>
-    </item>
+    <atom:link href="http://localhost:1313/tags/linear/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

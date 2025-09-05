@@ -2,31 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Scope on Xiaohui Xie&#39;s Site</title>
-    <link>https://xhx.github.io/tags/scope/</link>
+    <link>http://localhost:1313/tags/scope/</link>
     <description>Recent content in Scope on Xiaohui Xie&#39;s Site</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
-    <atom:link href="https://xhx.github.io/tags/scope/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>AMC 10 vs AMC 12 Scope Map</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/scope-map/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/scope-map/</guid>
-      <description>Complete matrix showing which counting and probability topics are tested at each AMC level.</description>
-    </item>
-    <item>
-      <title>AMC Scope Map</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/scope-map/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/scope-map/</guid>
-      <description>Comprehensive matrix showing AMC 10 vs AMC 12 precalculus topic coverage and testing frequency.</description>
-    </item>
-    <item>
-      <title>AMC 10 vs AMC 12 Scope Map</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/reference/scope-map/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/reference/scope-map/</guid>
-      <description>Complete coverage matrix showing which number theory topics appear in AMC 10 vs AMC 12.</description>
-    </item>
+    <atom:link href="http://localhost:1313/tags/scope/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

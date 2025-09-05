@@ -104,4 +104,4 @@ To solve $ax \equiv b \pmod{m}$:
 
 ---
 
-**Previous**: [Divisibility Basics](divisibility-basics) | **Next**: [Linear Diophantine Equations](diophantine-equations-linear)
+**Previous**: [Divisibility Basics](../divisibility-basics) | **Next**: [Linear Diophantine Equations](../diophantine-equations-linear)

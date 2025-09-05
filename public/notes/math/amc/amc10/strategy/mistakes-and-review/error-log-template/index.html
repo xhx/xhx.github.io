@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Error Log Template | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Error Log, Tracking, Improvement">
+<meta name="description" content="Personal error taxonomy and tracking system for identifying patterns, improving performance, and tracking progress in AMC 10/12 contests.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/strategy/mistakes-and-review/error-log-template/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/strategy/mistakes-and-review/error-log-template/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/">AMC 10/12 Contest Strategy &amp; Tactics Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/mistakes-and-review/">Mistakes &amp; Review</a></div>
+    <div class="post-meta">5 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-error-log-template" aria-label="📋 Error Log Template">📋 Error Log Template</a><ul>
+                        
+                <li>
+                    <a href="#-error-taxonomy" aria-label="🎯 Error Taxonomy">🎯 Error Taxonomy</a><ul>
+                        
+                <li>
+                    <a href="#careless-errors" aria-label="Careless Errors">Careless Errors</a></li>
+                <li>
+                    <a href="#conceptual-errors" aria-label="Conceptual Errors">Conceptual Errors</a></li>
+                <li>
+                    <a href="#strategic-errors" aria-label="Strategic Errors">Strategic Errors</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-error-log-template-1" aria-label="📊 Error Log Template">📊 Error Log Template</a><ul>
+                        
+                <li>
+                    <a href="#basic-information" aria-label="Basic Information">Basic Information</a></li>
+                <li>
+                    <a href="#error-details" aria-label="Error Details">Error Details</a></li>
+                <li>
+                    <a href="#analysis" aria-label="Analysis">Analysis</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-error-log-examples" aria-label="🎯 Error Log Examples">🎯 Error Log Examples</a><ul>
+                        
+                <li>
+                    <a href="#example-1-careless-error" aria-label="Example 1: Careless Error">Example 1: Careless Error</a></li>
+                <li>
+                    <a href="#example-2-conceptual-error" aria-label="Example 2: Conceptual Error">Example 2: Conceptual Error</a></li>
+                <li>
+                    <a href="#example-3-strategic-error" aria-label="Example 3: Strategic Error">Example 3: Strategic Error</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-progress-tracking" aria-label="📈 Progress Tracking">📈 Progress Tracking</a><ul>
+                        
+                <li>
+                    <a href="#weekly-analysis" aria-label="Weekly Analysis">Weekly Analysis</a></li>
+                <li>
+                    <a href="#monthly-analysis" aria-label="Monthly Analysis">Monthly Analysis</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-error-prevention-strategies" aria-label="🎯 Error Prevention Strategies">🎯 Error Prevention Strategies</a><ul>
+                        
+                <li>
+                    <a href="#careless-error-prevention" aria-label="Careless Error Prevention">Careless Error Prevention</a></li>
+                <li>
+                    <a href="#conceptual-error-prevention" aria-label="Conceptual Error Prevention">Conceptual Error Prevention</a></li>
+                <li>
+                    <a href="#strategic-error-prevention" aria-label="Strategic Error Prevention">Strategic Error Prevention</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-reference" aria-label="⚡ Quick Reference">⚡ Quick Reference</a><ul>
+                        
+                <li>
+                    <a href="#error-logging-checklist" aria-label="Error Logging Checklist:">Error Logging Checklist:</a></li>
+                <li>
+                    <a href="#weekly-review-checklist" aria-label="Weekly Review Checklist:">Weekly Review Checklist:</a></li>
+                <li>
+                    <a href="#monthly-review-checklist" aria-label="Monthly Review Checklist:">Monthly Review Checklist:</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-error-log-template">📋 Error Log Template<a hidden class="anchor" aria-hidden="true" href="#-error-log-template">#</a></h1>
+<p>Use this systematic error tracking system to identify patterns, improve performance, and track progress over time. Consistent error logging is key to continuous improvement.</p>
+<h2 id="-error-taxonomy">🎯 Error Taxonomy<a hidden class="anchor" aria-hidden="true" href="#-error-taxonomy">#</a></h2>
+<h3 id="careless-errors">Careless Errors<a hidden class="anchor" aria-hidden="true" href="#careless-errors">#</a></h3>
+<ul>
+<li><strong>Calculation mistakes</strong>: Arithmetic errors, sign errors, order of operations</li>
+<li><strong>Reading errors</strong>: Misreading problems, missing key details, misinterpreting</li>
+<li><strong>Bubbling errors</strong>: Wrong answer choice, incomplete bubbles, stray marks</li>
+<li><strong>Time pressure</strong>: Rushing, skipping steps, not verifying</li>
+</ul>
+<h3 id="conceptual-errors">Conceptual Errors<a hidden class="anchor" aria-hidden="true" href="#conceptual-errors">#</a></h3>
+<ul>
+<li><strong>Misunderstanding</strong>: Not understanding what the problem is asking</li>
+<li><strong>Wrong approach</strong>: Using incorrect method or strategy</li>
+<li><strong>Missing knowledge</strong>: Not knowing required concepts or formulas</li>
+<li><strong>Application errors</strong>: Misapplying known concepts or formulas</li>
+</ul>
+<h3 id="strategic-errors">Strategic Errors<a hidden class="anchor" aria-hidden="true" href="#strategic-errors">#</a></h3>
+<ul>
+<li><strong>Time management</strong>: Spending too much time on one problem</li>
+<li><strong>Guessing strategy</strong>: Poor guessing decisions or not guessing when should</li>
+<li><strong>Problem selection</strong>: Choosing wrong problems to solve or skip</li>
+<li><strong>Verification</strong>: Not checking work properly or at all</li>
+</ul>
+<h2 id="-error-log-template-1">📊 Error Log Template<a hidden class="anchor" aria-hidden="true" href="#-error-log-template-1">#</a></h2>
+<h3 id="basic-information">Basic Information<a hidden class="anchor" aria-hidden="true" href="#basic-information">#</a></h3>
+<ul>
+<li><strong>Date</strong>: When the error occurred</li>
+<li><strong>Problem number</strong>: Which problem (if from practice test)</li>
+<li><strong>Problem type</strong>: Algebra, Geometry, Number Theory, Counting/Probability, Precalculus</li>
+<li><strong>Difficulty level</strong>: Easy (1-10), Medium (11-20), Hard (21-25)</li>
+<li><strong>Time spent</strong>: How long you spent on the problem</li>
+</ul>
+<h3 id="error-details">Error Details<a hidden class="anchor" aria-hidden="true" href="#error-details">#</a></h3>
+<ul>
+<li><strong>Error category</strong>: Careless, Conceptual, or Strategic</li>
+<li><strong>Specific error type</strong>: Choose from taxonomy above</li>
+<li><strong>Description</strong>: Detailed description of what went wrong</li>
+<li><strong>Correct approach</strong>: What you should have done instead</li>
+<li><strong>Root cause</strong>: Why did this error occur?</li>
+</ul>
+<h3 id="analysis">Analysis<a hidden class="anchor" aria-hidden="true" href="#analysis">#</a></h3>
+<ul>
+<li><strong>Pattern recognition</strong>: Is this a recurring error type?</li>
+<li><strong>Prevention strategy</strong>: How can you prevent this error in the future?</li>
+<li><strong>Practice needed</strong>: What specific practice would help?</li>
+<li><strong>Confidence level</strong>: How confident were you in your approach?</li>
+</ul>
+<h2 id="-error-log-examples">🎯 Error Log Examples<a hidden class="anchor" aria-hidden="true" href="#-error-log-examples">#</a></h2>
+<h3 id="example-1-careless-error">Example 1: Careless Error<a hidden class="anchor" aria-hidden="true" href="#example-1-careless-error">#</a></h3>
+<p><strong>Date</strong>: 2024-01-15
+<strong>Problem</strong>: #12 (Medium, Algebra)
+<strong>Error category</strong>: Careless
+<strong>Specific error type</strong>: Calculation mistake
+<strong>Description</strong>: Made arithmetic error in solving $2x + 3 = 11$, wrote $2x = 14$ instead of $2x = 8$
+<strong>Correct approach</strong>: Should have subtracted 3 from both sides: $2x = 8$, so $x = 4$
+<strong>Root cause</strong>: Rushed through calculation without double-checking
+<strong>Pattern recognition</strong>: This is the 3rd arithmetic error this week
+<strong>Prevention strategy</strong>: Always double-check arithmetic, use plug-back verification
+<strong>Practice needed</strong>: More mental math practice, slower calculation
+<strong>Confidence level</strong>: High (knew the method, just made arithmetic error)</p>
+<h3 id="example-2-conceptual-error">Example 2: Conceptual Error<a hidden class="anchor" aria-hidden="true" href="#example-2-conceptual-error">#</a></h3>
+<p><strong>Date</strong>: 2024-01-15
+<strong>Problem</strong>: #18 (Hard, Geometry)
+<strong>Error category</strong>: Conceptual
+<strong>Specific error type</strong>: Wrong approach
+<strong>Description</strong>: Tried to use coordinate geometry when similar triangles would have been easier
+<strong>Correct approach</strong>: Should have recognized similar triangles and used proportional relationships
+<strong>Root cause</strong>: Didn&rsquo;t recognize the similar triangle pattern
+<strong>Pattern recognition</strong>: This is the 2nd time I&rsquo;ve missed similar triangles this month
+<strong>Prevention strategy</strong>: Always look for similar triangles first in geometry problems
+<strong>Practice needed</strong>: More practice with similar triangle recognition
+<strong>Confidence level</strong>: Medium (knew coordinate geometry but not the best approach)</p>
+<h3 id="example-3-strategic-error">Example 3: Strategic Error<a hidden class="anchor" aria-hidden="true" href="#example-3-strategic-error">#</a></h3>
+<p><strong>Date</strong>: 2024-01-15
+<strong>Problem</strong>: #22 (Hard, Number Theory)
+<strong>Error category</strong>: Strategic
+<strong>Specific error type</strong>: Time management
+<strong>Description</strong>: Spent 8 minutes on this problem, should have moved on after 5 minutes
+<strong>Correct approach</strong>: Should have tried modular arithmetic for 3 minutes, then moved on
+<strong>Root cause</strong>: Got stuck and didn&rsquo;t want to give up
+<strong>Pattern recognition</strong>: This is the 4th time I&rsquo;ve spent too much time on hard problems
+<strong>Prevention strategy</strong>: Set strict time limits and stick to them
+<strong>Practice needed</strong>: Better time management, more practice with modular arithmetic
+<strong>Confidence level</strong>: Low (wasn&rsquo;t sure about the approach)</p>
+<h2 id="-progress-tracking">📈 Progress Tracking<a hidden class="anchor" aria-hidden="true" href="#-progress-tracking">#</a></h2>
+<h3 id="weekly-analysis">Weekly Analysis<a hidden class="anchor" aria-hidden="true" href="#weekly-analysis">#</a></h3>
+<ul>
+<li><strong>Total errors</strong>: Count errors by category</li>
+<li><strong>Most common error</strong>: Identify your biggest weakness</li>
+<li><strong>Improvement areas</strong>: Focus on top 3 error types</li>
+<li><strong>Progress made</strong>: Compare to previous weeks</li>
+<li><strong>Action plan</strong>: Develop specific improvement strategies</li>
+</ul>
+<h3 id="monthly-analysis">Monthly Analysis<a hidden class="anchor" aria-hidden="true" href="#monthly-analysis">#</a></h3>
+<ul>
+<li><strong>Error trends</strong>: Look for long-term patterns</li>
+<li><strong>Improvement areas</strong>: Assess progress on key weaknesses</li>
+<li><strong>New challenges</strong>: Identify emerging error types</li>
+<li><strong>Strategy adjustments</strong>: Modify approach based on results</li>
+<li><strong>Goal setting</strong>: Establish new improvement targets</li>
+</ul>
+<h2 id="-error-prevention-strategies">🎯 Error Prevention Strategies<a hidden class="anchor" aria-hidden="true" href="#-error-prevention-strategies">#</a></h2>
+<h3 id="careless-error-prevention">Careless Error Prevention<a hidden class="anchor" aria-hidden="true" href="#careless-error-prevention">#</a></h3>
+<ul>
+<li><strong>Double-check arithmetic</strong>: Always verify calculations</li>
+<li><strong>Read carefully</strong>: Take time to understand the problem</li>
+<li><strong>Use verification</strong>: Plug back answers, check units</li>
+<li><strong>Slow down</strong>: Don&rsquo;t rush through problems</li>
+<li><strong>Stay focused</strong>: Avoid distractions during practice</li>
+</ul>
+<h3 id="conceptual-error-prevention">Conceptual Error Prevention<a hidden class="anchor" aria-hidden="true" href="#conceptual-error-prevention">#</a></h3>
+<ul>
+<li><strong>Master fundamentals</strong>: Ensure strong foundation in all topics</li>
+<li><strong>Practice recognition</strong>: Work on identifying problem types</li>
+<li><strong>Study solutions</strong>: Learn from correct approaches</li>
+<li><strong>Build connections</strong>: Understand how topics relate</li>
+<li><strong>Seek help</strong>: Ask questions when confused</li>
+</ul>
+<h3 id="strategic-error-prevention">Strategic Error Prevention<a hidden class="anchor" aria-hidden="true" href="#strategic-error-prevention">#</a></h3>
+<ul>
+<li><strong>Time management</strong>: Practice with strict time limits</li>
+<li><strong>Problem selection</strong>: Learn when to skip problems</li>
+<li><strong>Guessing strategy</strong>: Master expected value calculations</li>
+<li><strong>Verification</strong>: Always check your work</li>
+<li><strong>Stay calm</strong>: Don&rsquo;t let pressure affect decisions</li>
+</ul>
+<h2 id="-quick-reference">⚡ Quick Reference<a hidden class="anchor" aria-hidden="true" href="#-quick-reference">#</a></h2>
+<h3 id="error-logging-checklist">Error Logging Checklist:<a hidden class="anchor" aria-hidden="true" href="#error-logging-checklist">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Record immediately</strong>: Don&rsquo;t wait to log errors</li>
+<li><input disabled="" type="checkbox"> <strong>Be specific</strong>: Include problem details and solution</li>
+<li><input disabled="" type="checkbox"> <strong>Categorize accurately</strong>: Use the error taxonomy</li>
+<li><input disabled="" type="checkbox"> <strong>Identify root cause</strong>: Why did this error occur?</li>
+<li><input disabled="" type="checkbox"> <strong>Plan prevention</strong>: How can you prevent this error?</li>
+<li><input disabled="" type="checkbox"> <strong>Track patterns</strong>: Look for recurring mistakes</li>
+<li><input disabled="" type="checkbox"> <strong>Set priorities</strong>: Focus on most common errors</li>
+</ul>
+<h3 id="weekly-review-checklist">Weekly Review Checklist:<a hidden class="anchor" aria-hidden="true" href="#weekly-review-checklist">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Count errors by category</strong>: Identify your biggest weaknesses</li>
+<li><input disabled="" type="checkbox"> <strong>Look for patterns</strong>: Are there recurring error types?</li>
+<li><input disabled="" type="checkbox"> <strong>Assess progress</strong>: Compare to previous weeks</li>
+<li><input disabled="" type="checkbox"> <strong>Set priorities</strong>: Focus on top 3 improvement areas</li>
+<li><input disabled="" type="checkbox"> <strong>Create action plan</strong>: Develop specific strategies</li>
+<li><input disabled="" type="checkbox"> <strong>Track progress</strong>: Monitor improvement over time</li>
+</ul>
+<h3 id="monthly-review-checklist">Monthly Review Checklist:<a hidden class="anchor" aria-hidden="true" href="#monthly-review-checklist">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Analyze trends</strong>: Look for long-term patterns</li>
+<li><input disabled="" type="checkbox"> <strong>Assess improvement</strong>: Evaluate progress on key weaknesses</li>
+<li><input disabled="" type="checkbox"> <strong>Identify new challenges</strong>: Look for emerging error types</li>
+<li><input disabled="" type="checkbox"> <strong>Adjust strategy</strong>: Modify approach based on results</li>
+<li><input disabled="" type="checkbox"> <strong>Set new goals</strong>: Establish new improvement targets</li>
+<li><input disabled="" type="checkbox"> <strong>Plan next month</strong>: Develop next month&rsquo;s strategy</li>
+</ul>
+<hr>
+<p><strong>Next:</strong> <a href="postmortem-framework">Postmortem Framework</a> | <strong>Back to:</strong> <a href="../">Strategy Guide</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/error-log/">Error Log</a></li>
+      <li><a href="http://localhost:1313/tags/tracking/">Tracking</a></li>
+      <li><a href="http://localhost:1313/tags/improvement/">Improvement</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

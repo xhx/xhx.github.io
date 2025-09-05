@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Probability Basics | Xiaohui Xie&#39;s Site</title>
 <meta name="keywords" content="AMC10, AMC12, Probability, Conditional, Independence">
 <meta name="description" content="Conditional probability, independence, law of total probability, and Bayes&#39; theorem with AMC examples.">
 <meta name="author" content="Xiaohui Xie">
-<link rel="canonical" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/probability-basics/">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/counting-probability/02-topics/probability-basics/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://xhx.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/probability-basics/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/counting-probability/02-topics/probability-basics/">
 <noscript>
     <style>
         #theme-toggle,
@@ -70,106 +70,7 @@
         });"></script>
 
 
-<meta property="og:url" content="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/probability-basics/">
-  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
-  <meta property="og:title" content="Probability Basics">
-  <meta property="og:description" content="Conditional probability, independence, law of total probability, and Bayes&#39; theorem with AMC examples.">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="notes">
-    <meta property="article:tag" content="Amc10">
-    <meta property="article:tag" content="AMC12">
-    <meta property="article:tag" content="Probability">
-    <meta property="article:tag" content="Conditional">
-    <meta property="article:tag" content="Independence">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Probability Basics">
-<meta name="twitter:description" content="Conditional probability, independence, law of total probability, and Bayes&#39; theorem with AMC examples.">
 
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Notes",
-      "item": "https://xhx.github.io/notes/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Mathematics Notes",
-      "item": "https://xhx.github.io/notes/math/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  3 ,
-      "name": "AMC Problems",
-      "item": "https://xhx.github.io/notes/math/amc/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  4 ,
-      "name": "AMC 10",
-      "item": "https://xhx.github.io/notes/math/amc/amc10/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  5 ,
-      "name": "Counting \u0026 Probability Mastery Guide",
-      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  6 ,
-      "name": "Core Topics",
-      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  7 ,
-      "name": "Probability Basics",
-      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/probability-basics/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Probability Basics",
-  "name": "Probability Basics",
-  "description": "Conditional probability, independence, law of total probability, and Bayes' theorem with AMC examples.",
-  "keywords": [
-    "AMC10", "AMC12", "Probability", "Conditional", "Independence"
-  ],
-  "articleBody": "🎲 Probability Basics The fundamental concepts of probability that form the foundation for all probability problems.\n🎯 Key Ideas Basic Probability The probability of an event $A$ is the ratio of favorable outcomes to total outcomes: $$P(A) = \\frac{\\text{number of favorable outcomes}}{\\text{total number of outcomes}}$$\nConditional Probability The probability of event $A$ given that event $B$ has occurred: $$P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}$$\nIndependence Events $A$ and $B$ are independent if: $$P(A \\cap B) = P(A) \\cdot P(B)$$\nLaw of Total Probability For mutually exclusive and exhaustive events $B_1, B_2, \\ldots, B_n$: $$P(A) = \\sum_{i=1}^{n} P(A \\mid B_i) \\cdot P(B_i)$$\n💡 Micro-Examples Basic Probability Problem: What’s the probability of rolling a 6 on a fair die? Solution: $P(6) = \\frac{1}{6}$ (1 favorable outcome out of 6 total) Conditional Probability Problem: Given that a card is red, what’s the probability it’s a heart? Solution: $P(\\text{heart} \\mid \\text{red}) = \\frac{P(\\text{heart} \\cap \\text{red})}{P(\\text{red})} = \\frac{13/52}{26/52} = \\frac{1}{2}$ Independence Problem: Are consecutive coin flips independent? Solution: Yes! $P(\\text{heads on flip 2} \\mid \\text{heads on flip 1}) = P(\\text{heads on flip 2}) = \\frac{1}{2}$ Law of Total Probability Problem: What’s the probability of rain given that 60% of days are cloudy and it rains on 30% of cloudy days? Solution: $P(\\text{rain}) = P(\\text{rain} \\mid \\text{cloudy}) \\cdot P(\\text{cloudy}) + P(\\text{rain} \\mid \\text{not cloudy}) \\cdot P(\\text{not cloudy}) = 0.3 \\cdot 0.6 + 0.1 \\cdot 0.4 = 0.22$ ⚠️ Common Traps \u0026 Fixes Trap: Confusing independence with disjointness Wrong: “If events are independent, they can’t happen together” Right: Independence means $P(A \\cap B) = P(A)P(B)$, not $P(A \\cap B) = 0$ Trap: Forgetting to check if events are mutually exclusive Wrong: “What’s the probability of rolling a 1 or 2?” = $P(1) + P(2) = \\frac{1}{6} + \\frac{1}{6} = \\frac{1}{3}$ Right: This is actually correct! Rolling 1 and rolling 2 are mutually exclusive. Trap: Misapplying conditional probability Wrong: “What’s the probability of drawing a heart given that it’s red?” = $\\frac{13}{52} = \\frac{1}{4}$ Right: $P(\\text{heart} \\mid \\text{red}) = \\frac{P(\\text{heart} \\cap \\text{red})}{P(\\text{red})} = \\frac{13/52}{26/52} = \\frac{1}{2}$ 🏆 AMC-Style Worked Example Problem: A bag contains 3 red balls and 2 blue balls. You draw 2 balls without replacement. What’s the probability that both balls are red?\nSolution:\nMethod 1: Direct counting\nTotal ways to draw 2 balls: $\\binom{5}{2} = 10$ Ways to draw 2 red balls: $\\binom{3}{2} = 3$ Probability: $\\frac{3}{10} = 0.3$ Method 2: Sequential probability\nFirst ball red: $P(\\text{first red}) = \\frac{3}{5}$ Second ball red given first red: $P(\\text{second red} \\mid \\text{first red}) = \\frac{2}{4} = \\frac{1}{2}$ Both red: $P(\\text{both red}) = \\frac{3}{5} \\cdot \\frac{1}{2} = \\frac{3}{10}$ Key insight: Both methods give the same answer! Choose the one that’s easier for the specific problem.\n🔗 Related Topics Expected Value - Building on probability concepts Distributions - Advanced probability models Conditional Chains - Complex probability sequences Next: Expected Value → Distributions\n",
-  "wordCount" : "474",
-  "inLanguage": "en",
-  "datePublished": "0001-01-01T00:00:00Z",
-  "dateModified": "0001-01-01T00:00:00Z",
-  "author":{
-    "@type": "Person",
-    "name": "Xiaohui Xie"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/probability-basics/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Xiaohui Xie's Site",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://xhx.github.io/favicon.ico"
-    }
-  }
-}
-</script>
 </head>
 
 <body class="" id="top">
@@ -187,7 +88,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -219,13 +120,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/">Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/">Counting &amp; Probability Mastery Guide</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/">Core Topics</a></div>
-    <h1 class="post-title entry-hint-parent">
-      Probability Basics
-    </h1>
-    <div class="post-description">
-      Conditional probability, independence, law of total probability, and Bayes&#39; theorem with AMC examples.
-    </div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/counting-probability/">Counting &amp; Probability Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/counting-probability/02-topics/">Core Topics</a></div>
     <div class="post-meta">3 min&nbsp;·&nbsp;Xiaohui Xie
 
 </div>
@@ -373,11 +268,11 @@ $$P(A) = \sum_{i=1}^{n} P(A \mid B_i) \cdot P(B_i)$$</p>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://xhx.github.io/tags/amc10/">Amc10</a></li>
-      <li><a href="https://xhx.github.io/tags/amc12/">AMC12</a></li>
-      <li><a href="https://xhx.github.io/tags/probability/">Probability</a></li>
-      <li><a href="https://xhx.github.io/tags/conditional/">Conditional</a></li>
-      <li><a href="https://xhx.github.io/tags/independence/">Independence</a></li>
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/probability/">Probability</a></li>
+      <li><a href="http://localhost:1313/tags/conditional/">Conditional</a></li>
+      <li><a href="http://localhost:1313/tags/independence/">Independence</a></li>
     </ul>
 
   </footer>
@@ -385,7 +280,7 @@ $$P(A) = \sum_{i=1}^{n} P(A \mid B_i) \cdot P(B_i)$$</p>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
 
     
 </footer>

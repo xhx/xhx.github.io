@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>3D Projections &amp; Sections | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC12, Geometry, 3D, Projections, Cross-sections, Study Guide">
+<meta name="description" content="Master 3D geometry: areas/lengths via projection, prism/cube cross-sections, and 3D to 2D conversion techniques.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/geometry/problem-types/3d-projections-and-sections/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/geometry/problem-types/3d-projections-and-sections/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/">Geometry Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/problem-types/">Problem Types</a></div>
+    <div class="post-meta">3 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-3d-projections--sections" aria-label="📦 3D Projections &amp; Sections">📦 3D Projections &amp; Sections</a><ul>
+                        
+                <li>
+                    <a href="#-recognition-cues" aria-label="🎯 Recognition Cues">🎯 Recognition Cues</a><ul>
+                        
+                <li>
+                    <a href="#key-triggers" aria-label="Key Triggers">Key Triggers</a></li>
+                <li>
+                    <a href="#common-setups" aria-label="Common Setups">Common Setups</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-solution-template" aria-label="🧩 Solution Template">🧩 Solution Template</a><ul>
+                        
+                <li>
+                    <a href="#step-1-identify-the-3d-figure" aria-label="Step 1: Identify the 3D Figure">Step 1: Identify the 3D Figure</a></li>
+                <li>
+                    <a href="#step-2-find-the-projection-or-section" aria-label="Step 2: Find the Projection or Section">Step 2: Find the Projection or Section</a></li>
+                <li>
+                    <a href="#step-3-apply-3d-properties" aria-label="Step 3: Apply 3D Properties">Step 3: Apply 3D Properties</a></li>
+                <li>
+                    <a href="#step-4-verify" aria-label="Step 4: Verify">Step 4: Verify</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-worked-example" aria-label="🔍 Worked Example">🔍 Worked Example</a></li>
+                <li>
+                    <a href="#-common-pitfalls" aria-label="⚠️ Common Pitfalls">⚠️ Common Pitfalls</a></li>
+                <li>
+                    <a href="#-related-patterns" aria-label="🔗 Related Patterns">🔗 Related Patterns</a></li>
+                <li>
+                    <a href="#-quick-reference" aria-label="💡 Quick Reference">💡 Quick Reference</a><ul>
+                        
+                <li>
+                    <a href="#3d-projection-properties" aria-label="3D Projection Properties">3D Projection Properties</a></li>
+                <li>
+                    <a href="#common-3d-figures" aria-label="Common 3D Figures">Common 3D Figures</a></li>
+                <li>
+                    <a href="#solution-strategy" aria-label="Solution Strategy">Solution Strategy</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-3d-projections--sections">📦 3D Projections &amp; Sections<a hidden class="anchor" aria-hidden="true" href="#-3d-projections--sections">#</a></h1>
+<p>3D geometry problems often involve projections and cross-sections. Master these techniques for AMC 12 success.</p>
+<h2 id="-recognition-cues">🎯 Recognition Cues<a hidden class="anchor" aria-hidden="true" href="#-recognition-cues">#</a></h2>
+<h3 id="key-triggers">Key Triggers<a hidden class="anchor" aria-hidden="true" href="#key-triggers">#</a></h3>
+<ul>
+<li><strong>3D figures</strong> - Look for cubes, prisms, pyramids, or spheres</li>
+<li><strong>Projections</strong> - Look for problems involving projecting 3D figures onto 2D planes</li>
+<li><strong>Cross-sections</strong> - Look for problems involving slicing 3D figures</li>
+<li><strong>Areas/lengths</strong> - Look for problems asking for areas or lengths in 3D</li>
+</ul>
+<h3 id="common-setups">Common Setups<a hidden class="anchor" aria-hidden="true" href="#common-setups">#</a></h3>
+<ul>
+<li>Cubes with cross-sections</li>
+<li>Prisms with projections</li>
+<li>Pyramids with sections</li>
+<li>Spheres with projections</li>
+</ul>
+<h2 id="-solution-template">🧩 Solution Template<a hidden class="anchor" aria-hidden="true" href="#-solution-template">#</a></h2>
+<h3 id="step-1-identify-the-3d-figure">Step 1: Identify the 3D Figure<a hidden class="anchor" aria-hidden="true" href="#step-1-identify-the-3d-figure">#</a></h3>
+<ul>
+<li>Determine the type of 3D figure</li>
+<li>Identify key dimensions and properties</li>
+<li>Mark given information</li>
+</ul>
+<h3 id="step-2-find-the-projection-or-section">Step 2: Find the Projection or Section<a hidden class="anchor" aria-hidden="true" href="#step-2-find-the-projection-or-section">#</a></h3>
+<ul>
+<li>Determine what 2D figure results from projection or section</li>
+<li>Calculate dimensions of the 2D figure</li>
+<li>Use 2D geometry to find areas or lengths</li>
+</ul>
+<h3 id="step-3-apply-3d-properties">Step 3: Apply 3D Properties<a hidden class="anchor" aria-hidden="true" href="#step-3-apply-3d-properties">#</a></h3>
+<ul>
+<li>Use 3D formulas for volumes or surface areas</li>
+<li>Apply projection formulas</li>
+<li>Use similar triangles or other 2D techniques</li>
+</ul>
+<h3 id="step-4-verify">Step 4: Verify<a hidden class="anchor" aria-hidden="true" href="#step-4-verify">#</a></h3>
+<ul>
+<li>Check that the 2D figure makes sense</li>
+<li>Ensure all calculations are correct</li>
+<li>Verify the final answer</li>
+</ul>
+<h2 id="-worked-example">🔍 Worked Example<a hidden class="anchor" aria-hidden="true" href="#-worked-example">#</a></h2>
+<p><strong>Problem:</strong> A cube with side length 6 is cut by a plane that passes through the midpoints of three edges meeting at a vertex. Find the area of the cross-section.</p>
+<p><strong>Solution:</strong>
+<strong>Step 1:</strong> Identify 3D figure</p>
+<ul>
+<li>Cube with side length 6</li>
+<li>Plane passes through midpoints of three edges</li>
+</ul>
+<p><strong>Step 2:</strong> Find the cross-section</p>
+<ul>
+<li>The cross-section is a triangle</li>
+<li>Vertices are at midpoints of three edges</li>
+<li>Each edge of the triangle is the diagonal of a face</li>
+</ul>
+<p><strong>Step 3:</strong> Calculate dimensions</p>
+<ul>
+<li>Each edge of the triangle is $\sqrt{6^2 + 6^2} = 6\sqrt{2}$</li>
+<li>This is an equilateral triangle with side length $6\sqrt{2}$</li>
+<li>Area = $\frac{\sqrt{3}}{4} \cdot (6\sqrt{2})^2 = \frac{\sqrt{3}}{4} \cdot 72 = 18\sqrt{3}$</li>
+</ul>
+<p><strong>Step 4:</strong> Verify</p>
+<ul>
+<li>Check that cross-section is triangle ✓</li>
+<li>Calculate area correctly ✓</li>
+<li>Answer makes sense ✓</li>
+</ul>
+<p><strong>Answer:</strong> $18\sqrt{3}$</p>
+<h2 id="-common-pitfalls">⚠️ Common Pitfalls<a hidden class="anchor" aria-hidden="true" href="#-common-pitfalls">#</a></h2>
+<p><strong>Pitfall:</strong> Wrong cross-section identification</p>
+<ul>
+<li><strong>Fix:</strong> Carefully determine what 2D figure results from the cut</li>
+</ul>
+<p><strong>Pitfall:</strong> Forgetting about 3D properties</p>
+<ul>
+<li><strong>Fix:</strong> Use 3D formulas when appropriate</li>
+</ul>
+<p><strong>Pitfall:</strong> Wrong projection setup</p>
+<ul>
+<li><strong>Fix:</strong> Make sure you understand the projection direction</li>
+</ul>
+<p><strong>Pitfall:</strong> Forgetting about similar triangles</p>
+<ul>
+<li><strong>Fix:</strong> Look for similar triangles in 3D problems</li>
+</ul>
+<h2 id="-related-patterns">🔗 Related Patterns<a hidden class="anchor" aria-hidden="true" href="#-related-patterns">#</a></h2>
+<ul>
+<li><a href="coordinate-kill"><strong>Coordinate Kill</strong></a> - Using coordinates in 3D problems</li>
+<li><a href="similar-triangle-stacks"><strong>Similar Triangle Stacks</strong></a> - Using similarity in 3D</li>
+<li><a href="area-ratio-in-triangle"><strong>Area Ratio in Triangle</strong></a> - Using area ratios in 3D</li>
+</ul>
+<h2 id="-quick-reference">💡 Quick Reference<a hidden class="anchor" aria-hidden="true" href="#-quick-reference">#</a></h2>
+<h3 id="3d-projection-properties">3D Projection Properties<a hidden class="anchor" aria-hidden="true" href="#3d-projection-properties">#</a></h3>
+<ul>
+<li><strong>Orthogonal projection:</strong> Project perpendicular to plane</li>
+<li><strong>Cross-sections:</strong> 2D slices of 3D figures</li>
+<li><strong>Areas:</strong> Use 2D formulas for cross-sections</li>
+</ul>
+<h3 id="common-3d-figures">Common 3D Figures<a hidden class="anchor" aria-hidden="true" href="#common-3d-figures">#</a></h3>
+<ul>
+<li><strong>Cube:</strong> All faces are squares</li>
+<li><strong>Prism:</strong> Two parallel bases connected by rectangles</li>
+<li><strong>Pyramid:</strong> Base connected to apex</li>
+<li><strong>Sphere:</strong> All points equidistant from center</li>
+</ul>
+<h3 id="solution-strategy">Solution Strategy<a hidden class="anchor" aria-hidden="true" href="#solution-strategy">#</a></h3>
+<ul>
+<li><strong>Identify:</strong> Look for 3D figures with projections or sections</li>
+<li><strong>Project:</strong> Find the 2D projection or section</li>
+<li><strong>Calculate:</strong> Use 2D geometry to find areas or lengths</li>
+<li><strong>Verify:</strong> Check that answer makes geometric sense</li>
+</ul>
+<hr>
+<p><strong>Next:</strong> <a href="geometric-probability-patterns">Geometric Probability Patterns →</a> | <strong>Prev:</strong> <a href="mass-points-templates">Mass Points Templates →</a> | <strong>Back to:</strong> <a href="../">Geometry Mastery Guide →</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/geometry/">Geometry</a></li>
+      <li><a href="http://localhost:1313/tags/3d/">3d</a></li>
+      <li><a href="http://localhost:1313/tags/projections/">Projections</a></li>
+      <li><a href="http://localhost:1313/tags/cross-sections/">Cross-Sections</a></li>
+      <li><a href="http://localhost:1313/tags/study-guide/">Study Guide</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

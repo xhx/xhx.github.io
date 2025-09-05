@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Essential Formulas | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="amc10, geometry, formulas, mathematics">
+<meta name="description" content="Comprehensive collection of essential geometry formulas for AMC 10">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/geometry2/essential-formulas/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/geometry2/essential-formulas/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry2/">AMC 10 Geometry Mastery Guide</a></div>
+    <div class="post-meta"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> 
+  <div class="post-content"><!-- # 📐 Essential Formulas -->
+<!-- Comprehensive collection of essential geometry formulas for AMC 10 success. -->
+<h2 id="-triangle-formulas">📐 Triangle Formulas<a hidden class="anchor" aria-hidden="true" href="#-triangle-formulas">#</a></h2>
+<div class="formula-grid">
+  <div class="formula-card">
+    <h4>📐 Area Formulas</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$A = \frac{1}{2}bh$</span>
+        <span class="description">base-height</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$A = \frac{1}{2}ab\sin C$</span>
+        <span class="description">SAS</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$A = \sqrt{s(s-a)(s-b)(s-c)}$</span>
+        <span class="description">Heron's</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$A = \frac{abc}{4R}$</span>
+        <span class="description">circumradius</span>
+      </div>
+    </div>
+  </div>
+  <div class="formula-card">
+    <h4>🔺 Special Right Triangles</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$1 : \sqrt{3} : 2$</span>
+        <span class="description">30-60-90</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$1 : 1 : \sqrt{2}$</span>
+        <span class="description">45-45-90</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$3 : 4 : 5$</span>
+        <span class="description">3-4-5</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$5 : 12 : 13$</span>
+        <span class="description">5-12-13</span>
+      </div>
+    </div>
+  </div>
+  <div class="formula-card">
+    <h4>⚡ Triangle Centers</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$\frac{2}{3}$ from vertex</span>
+        <span class="description">Centroid</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$r = \frac{A}{s}$</span>
+        <span class="description">Inradius</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$R = \frac{abc}{4A}$</span>
+        <span class="description">Circumradius</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$h = \frac{2A}{a}$</span>
+        <span class="description">Altitude</span>
+      </div>
+    </div>
+  </div>
+  <div class="formula-card">
+    <h4>📏 Triangle Inequalities</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$a + b > c$</span>
+        <span class="description">triangle inequality</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$|a - b| < c$</span>
+        <span class="description">reverse inequality</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$a^2 + b^2 > c^2$</span>
+        <span class="description">acute triangle</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$a^2 + b^2 = c^2$</span>
+        <span class="description">right triangle</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$a^2 + b^2 < c^2$</span>
+        <span class="description">obtuse triangle</span>
+      </div>
+    </div>
+  </div>
+</div>
+<h2 id="-circle-formulas">⭕ Circle Formulas<a hidden class="anchor" aria-hidden="true" href="#-circle-formulas">#</a></h2>
+<div class="formula-grid">
+  <div class="formula-card">
+    <h4>⭕ Basic Circle Properties</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$A = \pi r^2$</span>
+        <span class="description">Area</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$C = 2\pi r$</span>
+        <span class="description">Circumference</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$s = r\theta$</span>
+        <span class="description">Arc Length</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$A = \frac{1}{2}r^2\theta$</span>
+        <span class="description">Sector Area</span>
+      </div>
+    </div>
+  </div>
+  <div class="formula-card">
+    <h4>⚡ Power of a Point</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$PT^2 = PA \cdot PB$</span>
+        <span class="description">Tangent-Secant</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$AE \cdot EC = BE \cdot ED$</span>
+        <span class="description">Chord-Chord</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$PA \cdot PB = PC \cdot PD$</span>
+        <span class="description">Secant-Secant</span>
+      </div>
+    </div>
+  </div>
+  <div class="formula-card">
+    <h4>📐 Circle Angles</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$\angle = \frac{1}{2}$ arc</span>
+        <span class="description">Inscribed</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\angle =$ arc</span>
+        <span class="description">Central</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\angle = \frac{1}{2}$ arc</span>
+        <span class="description">Tangent-Chord</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$90°$</span>
+        <span class="description">Angle in Semicircle</span>
+      </div>
+    </div>
+  </div>
+  <div class="formula-card">
+    <h4>🔗 Circle Theorems</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$AC \cdot BD = AB \cdot CD + BC \cdot DA$</span>
+        <span class="description">Ptolemy's</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">For hexagon in circle</span>
+        <span class="description">Pascal's</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">From point to circumcircle</span>
+        <span class="description">Simson Line</span>
+      </div>
+    </div>
+  </div>
+</div>
+<h2 id="-trigonometry-formulas">📐 Trigonometry Formulas<a hidden class="anchor" aria-hidden="true" href="#-trigonometry-formulas">#</a></h2>
+<div class="formula-grid">
+  <div class="formula-card">
+    <h4>📐 Basic Trig Ratios</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$\sin \theta = \frac{\text{opp}}{\text{hyp}}$</span>
+        <span class="description">sine</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\cos \theta = \frac{\text{adj}}{\text{hyp}}$</span>
+        <span class="description">cosine</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\tan \theta = \frac{\text{opp}}{\text{adj}}$</span>
+        <span class="description">tangent</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\cot \theta = \frac{1}{\tan \theta}$</span>
+        <span class="description">cotangent</span>
+      </div>
+    </div>
+  </div>
+  <div class="formula-card">
+    <h4>⭐ Special Angles</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$\sin 30° = \frac{1}{2}$</span>
+        <span class="description">30°</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\cos 30° = \frac{\sqrt{3}}{2}$</span>
+        <span class="description">30°</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\sin 45° = \frac{\sqrt{2}}{2}$</span>
+        <span class="description">45°</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\cos 45° = \frac{\sqrt{2}}{2}$</span>
+        <span class="description">45°</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\sin 60° = \frac{\sqrt{3}}{2}$</span>
+        <span class="description">60°</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\cos 60° = \frac{1}{2}$</span>
+        <span class="description">60°</span>
+      </div>
+    </div>
+  </div>
+  <div class="formula-card">
+    <h4>🔗 Trig Identities</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$\sin^2 \theta + \cos^2 \theta = 1$</span>
+        <span class="description">Pythagorean</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$1 + \tan^2 \theta = \sec^2 \theta$</span>
+        <span class="description">secant</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$1 + \cot^2 \theta = \csc^2 \theta$</span>
+        <span class="description">cosecant</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\sin(90° - \theta) = \cos \theta$</span>
+        <span class="description">complementary</span>
+      </div>
+    </div>
+  </div>
+  <div class="formula-card">
+    <h4>➕ Sum & Difference</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$\sin(A \pm B) = \sin A \cos B \pm \cos A \sin B$</span>
+        <span class="description">sine</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\cos(A \pm B) = \cos A \cos B \mp \sin A \sin B$</span>
+        <span class="description">cosine</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\tan(A \pm B) = \frac{\tan A \pm \tan B}{1 \mp \tan A \tan B}$</span>
+        <span class="description">tangent</span>
+      </div>
+    </div>
+  </div>
+  <div class="formula-card">
+    <h4>✂️ Half Angle</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$\sin \frac{\theta}{2} = \pm\sqrt{\frac{1 - \cos \theta}{2}}$</span>
+        <span class="description">sine</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\cos \frac{\theta}{2} = \pm\sqrt{\frac{1 + \cos \theta}{2}}$</span>
+        <span class="description">cosine</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$\tan \frac{\theta}{2} = \frac{1 - \cos \theta}{\sin \theta}$</span>
+        <span class="description">tangent</span>
+      </div>
+    </div>
+  </div>
+  <div class="formula-card">
+    <h4>⚖️ Law of Sines & Cosines</h4>
+    <div class="formula-list">
+      <div class="formula-item">
+        <span class="formula">$\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R$</span>
+        <span class="description">Law of Sines</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$c^2 = a^2 + b^2 - 2ab\cos C$</span>
+        <span class="description">Law of Cosines</span>
+      </div>
+      <div class="formula-item">
+        <span class="formula">$A = \frac{1}{2}ab\sin C$</span>
+        <span class="description">Area (SAS)</span>
+      </div>
+    </div>
+  </div>
+</div>
+<h2 id="-polygon-formulas">📊 Polygon Formulas<a hidden class="anchor" aria-hidden="true" href="#-polygon-formulas">#</a></h2>
+<div class="formula-grid">
+  <div class="formula-card">
+    <h4>Quadrilaterals</h4>
+    <p><strong>Rectangle:</strong> $A = lw$, $P = 2(l+w)$<br>
+    <strong>Square:</strong> $A = s^2$, $P = 4s$<br>
+    <strong>Parallelogram:</strong> $A = bh$<br>
+    <strong>Rhombus:</strong> $A = \frac{1}{2}d_1d_2$</p>
+  </div>
+  <div class="formula-card">
+    <h4>Regular Polygons</h4>
+    <p><strong>Area:</strong> $A = \frac{1}{2}ap$ (apothem × perimeter)<br>
+    <strong>Interior Angle:</strong> $\frac{(n-2)180°}{n}$<br>
+    <strong>Exterior Angle:</strong> $\frac{360°}{n}$<br>
+    <strong>Central Angle:</strong> $\frac{360°}{n}$</p>
+  </div>
+  <div class="formula-card">
+    <h4>3D Solids</h4>
+    <p><strong>Cube:</strong> $V = s^3$, $SA = 6s^2$<br>
+    <strong>Rectangular Prism:</strong> $V = lwh$<br>
+    <strong>Cylinder:</strong> $V = \pi r^2h$, $SA = 2\pi r(r+h)$<br>
+    <strong>Sphere:</strong> $V = \frac{4}{3}\pi r^3$, $SA = 4\pi r^2$</p>
+  </div>
+  <div class="formula-card">
+    <h4>Coordinate Geometry</h4>
+    <p><strong>Distance:</strong> $d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$<br>
+    <strong>Midpoint:</strong> $\left(\frac{x_1+x_2}{2}, \frac{y_1+y_2}{2}\right)$<br>
+    <strong>Shoelace:</strong> $A = \frac{1}{2}|x_1y_2 + \cdots + x_ny_1 - y_1x_2 - \cdots - y_nx_1|$<br>
+    <strong>Slope:</strong> $m = \frac{y_2-y_1}{x_2-x_1}$</p>
+  </div>
+</div>
+<h2 id="-essential-theorems--properties">🎯 Essential Theorems &amp; Properties<a hidden class="anchor" aria-hidden="true" href="#-essential-theorems--properties">#</a></h2>
+<h3 id="-triangle-theorems">📐 Triangle Theorems<a hidden class="anchor" aria-hidden="true" href="#-triangle-theorems">#</a></h3>
+<ul>
+<li><strong>Pythagorean Theorem</strong>: $a^2 + b^2 = c^2$ (right triangles only)</li>
+<li><strong>Law of Sines</strong>: $\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R$</li>
+<li><strong>Law of Cosines</strong>: $c^2 = a^2 + b^2 - 2ab\cos C$</li>
+<li><strong>Angle Bisector Theorem</strong>: $\frac{BD}{DC} = \frac{AB}{AC}$</li>
+<li><strong>Ceva&rsquo;s Theorem</strong>: $\frac{AF}{FB} \cdot \frac{BD}{DC} \cdot \frac{CE}{EA} = 1$ (concurrent cevians)</li>
+<li><strong>Menelaus&rsquo;s Theorem</strong>: $\frac{AF}{FB} \cdot \frac{BD}{DC} \cdot \frac{CE}{EA} = -1$ (collinear points)</li>
+</ul>
+<h3 id="-circle-theorems">⭕ Circle Theorems<a hidden class="anchor" aria-hidden="true" href="#-circle-theorems">#</a></h3>
+<ul>
+<li><strong>Inscribed Angle Theorem</strong>: Inscribed angle = $\frac{1}{2}$ × central angle</li>
+<li><strong>Central Angle Theorem</strong>: Central angle = 2 × inscribed angle</li>
+<li><strong>Power of a Point</strong>: $PA \cdot PB = PC \cdot PD$ (intersecting chords)</li>
+<li><strong>Ptolemy&rsquo;s Theorem</strong>: $AC \cdot BD = AB \cdot CD + BC \cdot DA$ (cyclic quadrilaterals)</li>
+<li><strong>Pascal&rsquo;s Theorem</strong>: For hexagon inscribed in circle</li>
+<li><strong>Simson Line</strong>: From point to circumcircle of triangle</li>
+</ul>
+<h3 id="-similarity--congruence">🔗 Similarity &amp; Congruence<a hidden class="anchor" aria-hidden="true" href="#-similarity--congruence">#</a></h3>
+<ul>
+<li><strong>AA Similarity</strong>: Two angles equal</li>
+<li><strong>SAS Similarity</strong>: Proportional sides, included angle equal</li>
+<li><strong>SSS Similarity</strong>: All sides proportional</li>
+<li><strong>SSS Congruence</strong>: All sides equal</li>
+<li><strong>SAS Congruence</strong>: Two sides and included angle equal</li>
+<li><strong>ASA Congruence</strong>: Two angles and included side equal</li>
+</ul>
+<h3 id="-advanced-properties">📊 Advanced Properties<a hidden class="anchor" aria-hidden="true" href="#-advanced-properties">#</a></h3>
+<ul>
+<li><strong>Euler&rsquo;s Formula</strong>: $d^2 = R^2 - 2Rr$ (distance between circumcenter and incenter)</li>
+<li><strong>Stewart&rsquo;s Theorem</strong>: $b^2m + c^2n = a(d^2 + mn)$ (cevian length)</li>
+<li><strong>Brahmagupta&rsquo;s Formula</strong>: $A = \sqrt{(s-a)(s-b)(s-c)(s-d)}$ (cyclic quadrilateral area)</li>
+</ul>
+<h2 id="-mental-math-shortcuts">🧠 Mental Math Shortcuts<a hidden class="anchor" aria-hidden="true" href="#-mental-math-shortcuts">#</a></h2>
+<h3 id="common-calculations">Common Calculations<a hidden class="anchor" aria-hidden="true" href="#common-calculations">#</a></h3>
+<ul>
+<li><strong>$\sqrt{2} \approx 1.414$</strong>, <strong>$\sqrt{3} \approx 1.732$</strong></li>
+<li><strong>$\pi \approx 3.1416$</strong> or <strong>$\frac{22}{7}$</strong> for rough estimates</li>
+<li><strong>$e \approx 2.718$</strong> (occasionally needed)</li>
+<li><strong>Golden ratio</strong>: $\phi = \frac{1+\sqrt{5}}{2} \approx 1.618$</li>
+</ul>
+<h3 id="fraction-to-decimal-conversions">Fraction to Decimal Conversions<a hidden class="anchor" aria-hidden="true" href="#fraction-to-decimal-conversions">#</a></h3>
+<ul>
+<li>$\frac{1}{3} = 0.333&hellip;$, $\frac{2}{3} = 0.666&hellip;$</li>
+<li>$\frac{1}{4} = 0.25$, $\frac{3}{4} = 0.75$</li>
+<li>$\frac{1}{5} = 0.2$, $\frac{2}{5} = 0.4$, $\frac{3}{5} = 0.6$, $\frac{4}{5} = 0.8$</li>
+<li>$\frac{1}{6} = 0.166&hellip;$, $\frac{5}{6} = 0.833&hellip;$</li>
+<li>$\frac{1}{8} = 0.125$, $\frac{3}{8} = 0.375$, $\frac{5}{8} = 0.625$, $\frac{7}{8} = 0.875$</li>
+</ul>
+<hr>
+<h2 id="-related-resources">📚 Related Resources<a hidden class="anchor" aria-hidden="true" href="#-related-resources">#</a></h2>
+<ul>
+<li><a href="../problem-solving-tips">💡 Problem-Solving Tips</a> - Strategies and techniques</li>
+<li><a href="../problem-types">🎯 Problem Types</a> - Complete list of essential problem patterns</li>
+<li><a href="../reference-guide">📖 Reference Guide</a> - Comprehensive geometry reference</li>
+<li><a href="../topic-guides">📝 Topic Guides</a> - Detailed coverage of specific topics</li>
+</ul>
+<hr>
+<p><em>Master these formulas and you&rsquo;ll have the mathematical foundation needed for AMC 10 geometry success!</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/geometry/">Geometry</a></li>
+      <li><a href="http://localhost:1313/tags/formulas/">Formulas</a></li>
+      <li><a href="http://localhost:1313/tags/mathematics/">Mathematics</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

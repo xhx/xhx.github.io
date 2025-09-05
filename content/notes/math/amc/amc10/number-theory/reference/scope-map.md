@@ -74,4 +74,4 @@ This matrix shows which number theory topics are tested in each contest level.
 
 ---
 
-**Next**: Check the [Notation Cheatsheet](notation-cheatsheet) for quick symbol reference.
+**Next**: Check the [Notation Cheatsheet](../notation-cheatsheet) for quick symbol reference.

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Geometry | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="">
+<meta name="description" content="Personal website of Xiaohui Xie featuring mathematics, teaching, and research">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/tags/geometry/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/geometry/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/geometry/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
+  <h1>
+    Geometry
+    <a href="/tags/geometry/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Triangle Centers
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🎯 Triangle Centers The four classic triangle centers are fundamental to AMC geometry. Each has unique properties and relationships that frequently appear in contest problems.
+🎯 The Four Centers Centroid (G) Definition: Intersection of the three medians Properties:
+Divides each median in ratio 2:1 (closer to vertex) Center of mass of the triangle Coordinates: Average of vertex coordinates Key Formula: If $A(x_1,y_1)$, $B(x_2,y_2)$, $C(x_3,y_3)$, then $G = \left(\frac{x_1&#43;x_2&#43;x_3}{3}, \frac{y_1&#43;y_2&#43;y_3}{3}\right)$
+Incenter (I) Definition: Intersection of the three angle bisectors Properties:
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Triangle Centers" href="http://localhost:1313/notes/math/amc/amc10/geometry/topics/triangle-centers/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Angle Chasing
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>📐 Angle Chasing Angle chasing is the systematic process of finding unknown angles using known relationships. It’s one of the most common problem types in AMC geometry.
+🎯 Key Angle Relationships Triangle Angle Sum Fundamental: The sum of angles in any triangle is $180°$.
+Applications:
+Find third angle when two are known Prove angles are equal by showing they’re both $180° - \text{other angles}$ Use in angle chasing chains Parallel Line Theorems When two lines are parallel:
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Angle Chasing" href="http://localhost:1313/notes/math/amc/amc10/geometry/topics/angle-chasing/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Similarity &amp; Ratios
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🔄 Similarity &amp; Ratios Similarity is one of the most powerful tools in AMC geometry. It connects angles, lengths, and areas in elegant ways that often provide the shortest path to solutions.
+🎯 Key Concepts Similarity Theory Two figures are similar if:
+Corresponding angles are equal Corresponding sides are proportional Similarity Ratio: If $\triangle ABC \sim \triangle DEF$ with ratio $k$, then:
+$\frac{AB}{DE} = \frac{BC}{EF} = \frac{CA}{FD} = k$ $\frac{\text{Area of } \triangle ABC}{\text{Area of } \triangle DEF} = k^2$ Similarity Criteria Criterion What’s Given What’s Proved AA Two angles equal All angles equal, sides proportional SAS Two sides proportional &#43; included angle equal All angles equal, all sides proportional SSS All three sides proportional All angles equal, all sides proportional Angle Bisector Theorem Fundamental: An angle bisector divides the opposite side into segments proportional to the adjacent sides.
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Similarity & Ratios" href="http://localhost:1313/notes/math/amc/amc10/geometry/topics/similarity-and-ratios/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Circles &amp; Power of a Point
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>⭕ Circles &amp; Power of a Point Circles are fundamental in AMC geometry, and the Power of a Point theorem unifies many circle relationships into one powerful tool.
+🎯 Key Concepts Basic Circle Properties Chord: Line segment connecting two points on the circle Tangent: Line touching the circle at exactly one point Secant: Line intersecting the circle at two points Radius: Distance from center to any point on the circle Diameter: Longest chord, passing through the center Power of a Point Theorem Fundamental: For any point $P$ and circle, the product of distances from $P$ to two intersection points of any line through $P$ with the circle is constant.
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Circles & Power of a Point" href="http://localhost:1313/notes/math/amc/amc10/geometry/topics/circles-and-power-of-a-point/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Cyclic Quadrilaterals
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🔄 Cyclic Quadrilaterals A cyclic quadrilateral is one that can be inscribed in a circle. These quadrilaterals have special properties that make them powerful tools in AMC geometry.
+🎯 Key Concepts Definition and Recognition A quadrilateral is cyclic if and only if all four vertices lie on a circle.
+Recognition Criteria:
+Opposite angles sum to $180°$ Equal angles subtend the same arc One angle equals the opposite angle’s supplement Opposite Angle Theorem Fundamental: In a cyclic quadrilateral, opposite angles are supplementary.
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Cyclic Quadrilaterals" href="http://localhost:1313/notes/math/amc/amc10/geometry/topics/cyclic-quadrilaterals/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Special Segments in Triangles
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>📏 Special Segments in Triangles Special segments in triangles are fundamental tools in AMC geometry. Each has unique properties that frequently appear in contest problems.
+🎯 Key Concepts Medians Definition: Line segment from vertex to midpoint of opposite side Properties:
+Three medians meet at centroid Centroid divides each median in ratio 2:1 Medians divide triangle into six equal areas Length formula: $m_a = \frac{1}{2}\sqrt{2b^2 &#43; 2c^2 - a^2}$ Altitudes Definition: Perpendicular line segment from vertex to opposite side (or extension) Properties:
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Special Segments in Triangles" href="http://localhost:1313/notes/math/amc/amc10/geometry/topics/special-segments-in-triangles/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Length &amp; Area Classics
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>📏 Length &amp; Area Classics These classical formulas are essential tools for AMC geometry. They provide direct paths to solutions when other methods become complex.
+🎯 Key Formulas Heron’s Formula Purpose: Find triangle area from side lengths Formula: $A = \sqrt{s(s-a)(s-b)(s-c)}$ where $s = \frac{a&#43;b&#43;c}{2}$
+When to Use: Given three side lengths, need area AMC Appearance: Common in problems with specific side lengths
+Brahmagupta’s Formula Purpose: Find area of cyclic quadrilateral from side lengths Formula: $A = \sqrt{(s-a)(s-b)(s-c)(s-d)}$ where $s = \frac{a&#43;b&#43;c&#43;d}{2}$
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Length & Area Classics" href="http://localhost:1313/notes/math/amc/amc10/geometry/topics/length-area-classics/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Complex Plane Geometry
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🌀 Complex Plane Geometry Use complex numbers to solve geometric problems. This advanced topic combines algebra and geometry in powerful ways.
+🎯 Key Ideas Complex Plane: Each complex number $z = a &#43; bi$ corresponds to point $(a,b)$ in the plane.
+Geometric Operations: Multiplication by complex numbers performs rotations and scaling.
+Loci: Sets of complex numbers satisfying certain geometric conditions.
+📐 Basic Geometric Interpretations Distance Distance between complex numbers $z_1$ and $z_2$: $$|z_1 - z_2| = \sqrt{(a_1-a_2)^2 &#43; (b_1-b_2)^2}$$
+...</p>
+  </div>
+  <footer class="entry-footer">4 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Complex Plane Geometry" href="http://localhost:1313/notes/math/amc/amc10/precalculus/topics/complex-plane-geometry/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Transformations
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🔄 Transformations Transformations are powerful tools in AMC 12 geometry that can simplify complex problems by moving figures to more convenient positions.
+🎯 Key Concepts Reflections Definition: Flip figure across a line (mirror) Properties:
+Preserves distances and angles Creates congruent figures Useful for minimizing distances (reflection method) Common Applications:
+Finding shortest paths Proving equal distances Creating symmetric figures Rotations Definition: Turn figure around a point by given angle Properties:
+Preserves distances and angles Creates congruent figures Useful for proving equal angles Common Applications:
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Transformations" href="http://localhost:1313/notes/math/amc/amc10/geometry/topics/transformations/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Coordinate Geometry
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>📐 Coordinate Geometry When pure geometry becomes complex, coordinate methods often provide the most direct path to solutions. Master these essential techniques for AMC success.
+🎯 Key Concepts Line Equations Slope-Intercept Form: $y = mx &#43; b$ Point-Slope Form: $y - y_1 = m(x - x_1)$ Two-Point Form: $\frac{y - y_1}{y_2 - y_1} = \frac{x - x_1}{x_2 - x_1}$
+Key Formulas:
+Slope: $m = \frac{y_2 - y_1}{x_2 - x_1}$ Midpoint: $\left(\frac{x_1 &#43; x_2}{2}, \frac{y_1 &#43; y_2}{2}\right)$ Distance: $d = \sqrt{(x_2 - x_1)^2 &#43; (y_2 - y_1)^2}$ Circle Equations Standard Form: $(x - h)^2 &#43; (y - k)^2 = r^2$ (center at $(h,k)$, radius $r$) General Form: $x^2 &#43; y^2 &#43; Dx &#43; Ey &#43; F = 0$
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Coordinate Geometry" href="http://localhost:1313/notes/math/amc/amc10/geometry/topics/coordinate-geometry/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/tags/geometry/page/3/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="http://localhost:1313/tags/geometry/page/5/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

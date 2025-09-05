@@ -2,32 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Symmetry on Xiaohui Xie&#39;s Site</title>
-    <link>https://xhx.github.io/tags/symmetry/</link>
+    <link>http://localhost:1313/tags/symmetry/</link>
     <description>Recent content in Symmetry on Xiaohui Xie&#39;s Site</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xhx.github.io/tags/symmetry/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Transformations &amp; Symmetry</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/transformations-symmetry/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/transformations-symmetry/</guid>
-      <description>AMC 10 Geometry: Transformations &amp;amp; Symmetry</description>
-    </item>
-    <item>
-      <title>Symmetry &amp; Invariance</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/symmetry-invariance/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/symmetry-invariance/</guid>
-      <description>Using symmetry to reduce cases, invariance principles, and when to apply these techniques.</description>
-    </item>
-    <item>
-      <title>Symmetry Probability</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/symmetry-probability/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/symmetry-probability/</guid>
-      <description>Using symmetry to find probabilities without explicit counting, especially for random choices.</description>
-    </item>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/symmetry/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

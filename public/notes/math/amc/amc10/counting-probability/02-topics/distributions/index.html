@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Probability Distributions | Xiaohui Xie&#39;s Site</title>
 <meta name="keywords" content="AMC10, AMC12, Probability, Distributions, Binomial">
 <meta name="description" content="Binomial, geometric, negative binomial, and hypergeometric distributions with AMC examples.">
 <meta name="author" content="Xiaohui Xie">
-<link rel="canonical" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/distributions/">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/counting-probability/02-topics/distributions/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://xhx.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/distributions/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/counting-probability/02-topics/distributions/">
 <noscript>
     <style>
         #theme-toggle,
@@ -70,106 +70,7 @@
         });"></script>
 
 
-<meta property="og:url" content="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/distributions/">
-  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
-  <meta property="og:title" content="Probability Distributions">
-  <meta property="og:description" content="Binomial, geometric, negative binomial, and hypergeometric distributions with AMC examples.">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="notes">
-    <meta property="article:tag" content="Amc10">
-    <meta property="article:tag" content="AMC12">
-    <meta property="article:tag" content="Probability">
-    <meta property="article:tag" content="Distributions">
-    <meta property="article:tag" content="Binomial">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Probability Distributions">
-<meta name="twitter:description" content="Binomial, geometric, negative binomial, and hypergeometric distributions with AMC examples.">
 
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Notes",
-      "item": "https://xhx.github.io/notes/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Mathematics Notes",
-      "item": "https://xhx.github.io/notes/math/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  3 ,
-      "name": "AMC Problems",
-      "item": "https://xhx.github.io/notes/math/amc/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  4 ,
-      "name": "AMC 10",
-      "item": "https://xhx.github.io/notes/math/amc/amc10/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  5 ,
-      "name": "Counting \u0026 Probability Mastery Guide",
-      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  6 ,
-      "name": "Core Topics",
-      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  7 ,
-      "name": "Probability Distributions",
-      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/distributions/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Probability Distributions",
-  "name": "Probability Distributions",
-  "description": "Binomial, geometric, negative binomial, and hypergeometric distributions with AMC examples.",
-  "keywords": [
-    "AMC10", "AMC12", "Probability", "Distributions", "Binomial"
-  ],
-  "articleBody": "📈 Probability Distributions Common probability models that frequently appear in AMC problems.\n🎯 Key Ideas Binomial Distribution Counts successes in $n$ independent trials with probability $p$ of success each. $$P(X = k) = \\binom{n}{k} p^k (1-p)^{n-k}$$ $$\\mathbb{E}[X] = np, \\quad \\text{Var}(X) = np(1-p)$$\nGeometric Distribution Counts trials until first success in independent trials with probability $p$ of success. $$P(X = k) = (1-p)^{k-1} p$$ $$\\mathbb{E}[X] = \\frac{1}{p}, \\quad \\text{Var}(X) = \\frac{1-p}{p^2}$$\nHypergeometric Distribution Counts successes in sampling without replacement from a finite population. $$P(X = k) = \\frac{\\binom{K}{k}\\binom{N-K}{n-k}}{\\binom{N}{n}}$$ where $N$ = total population, $K$ = successes in population, $n$ = sample size.\n💡 Micro-Examples Binomial Distribution Problem: What’s the probability of exactly 3 heads in 5 coin flips? Solution: $P(X = 3) = \\binom{5}{3} \\left(\\frac{1}{2}\\right)^3 \\left(\\frac{1}{2}\\right)^2 = \\frac{10}{32} = \\frac{5}{16}$ Geometric Distribution Problem: What’s the probability the first 6 appears on the 4th die roll? Solution: $P(X = 4) = \\left(\\frac{5}{6}\\right)^3 \\cdot \\frac{1}{6} = \\frac{125}{1296}$ Hypergeometric Distribution Problem: What’s the probability of exactly 2 red balls in 5 draws from an urn with 10 red and 15 blue balls? Solution: $P(X = 2) = \\frac{\\binom{10}{2}\\binom{15}{3}}{\\binom{25}{5}} = \\frac{45 \\cdot 455}{53130} = \\frac{20475}{53130} = \\frac{1365}{3542}$ ⚠️ Common Traps \u0026 Fixes Trap: Confusing binomial and hypergeometric Wrong: “Drawing 5 cards with replacement” = Hypergeometric Right: “Drawing 5 cards with replacement” = Binomial (with replacement) Trap: Forgetting the “until first success” in geometric Wrong: “What’s the probability of exactly 3 failures before success?” = Geometric Right: “What’s the probability of exactly 3 failures before success?” = Geometric with $k = 4$ Trap: Misapplying hypergeometric formula Wrong: “What’s the probability of exactly 2 aces in 5 cards?” = $\\frac{\\binom{4}{2}\\binom{48}{3}}{\\binom{52}{5}}$ Right: This is actually correct! $N = 52$, $K = 4$, $n = 5$, $k = 2$. 🏆 AMC-Style Worked Example Problem: A bag contains 6 red balls and 4 blue balls. You draw 3 balls without replacement. What’s the expected number of red balls?\nSolution:\nMethod 1: Using hypergeometric distribution\n$N = 10$, $K = 6$, $n = 3$ $\\mathbb{E}[X] = n \\cdot \\frac{K}{N} = 3 \\cdot \\frac{6}{10} = \\frac{18}{10} = 1.8$ Method 2: Using indicators\nLet $I_i$ be 1 if ball $i$ is red, 0 otherwise $\\mathbb{E}[\\text{red balls}] = \\mathbb{E}[I_1 + I_2 + I_3] = 3 \\cdot \\frac{6}{10} = 1.8$ Key insight: Both methods give the same answer! The hypergeometric approach is often more direct.\n🔗 Related Topics Probability Basics - Foundation for distributions Expected Value - Expected values of distributions Hypergeo vs Binomial - When to use which distribution Next: Symmetry \u0026 Invariance → Recurrences \u0026 GF\n",
-  "wordCount" : "424",
-  "inLanguage": "en",
-  "datePublished": "0001-01-01T00:00:00Z",
-  "dateModified": "0001-01-01T00:00:00Z",
-  "author":{
-    "@type": "Person",
-    "name": "Xiaohui Xie"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/distributions/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Xiaohui Xie's Site",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://xhx.github.io/favicon.ico"
-    }
-  }
-}
-</script>
 </head>
 
 <body class="" id="top">
@@ -187,7 +88,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -219,13 +120,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/">Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/">Counting &amp; Probability Mastery Guide</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/">Core Topics</a></div>
-    <h1 class="post-title entry-hint-parent">
-      Probability Distributions
-    </h1>
-    <div class="post-description">
-      Binomial, geometric, negative binomial, and hypergeometric distributions with AMC examples.
-    </div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/counting-probability/">Counting &amp; Probability Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/counting-probability/02-topics/">Core Topics</a></div>
     <div class="post-meta">2 min&nbsp;·&nbsp;Xiaohui Xie
 
 </div>
@@ -362,11 +257,11 @@ where $N$ = total population, $K$ = successes in population, $n$ = sample size.<
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://xhx.github.io/tags/amc10/">Amc10</a></li>
-      <li><a href="https://xhx.github.io/tags/amc12/">AMC12</a></li>
-      <li><a href="https://xhx.github.io/tags/probability/">Probability</a></li>
-      <li><a href="https://xhx.github.io/tags/distributions/">Distributions</a></li>
-      <li><a href="https://xhx.github.io/tags/binomial/">Binomial</a></li>
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/probability/">Probability</a></li>
+      <li><a href="http://localhost:1313/tags/distributions/">Distributions</a></li>
+      <li><a href="http://localhost:1313/tags/binomial/">Binomial</a></li>
     </ul>
 
   </footer>
@@ -374,7 +269,7 @@ where $N$ = total population, $K$ = successes in population, $n$ = sample size.<
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
 
     
 </footer>

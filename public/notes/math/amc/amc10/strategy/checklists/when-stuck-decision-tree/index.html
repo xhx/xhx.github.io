@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>When Stuck Decision Tree | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Checklist, Decision Tree, Problem Solving">
+<meta name="description" content="Systematic decision tree for handling difficult problems including tactic switching, complement approaches, symmetry, and backsolving strategies.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/strategy/checklists/when-stuck-decision-tree/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/strategy/checklists/when-stuck-decision-tree/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/">AMC 10/12 Contest Strategy &amp; Tactics Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/checklists/">Checklists &amp; Protocols</a></div>
+    <div class="post-meta">5 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-when-stuck-decision-tree" aria-label="🌳 When Stuck Decision Tree">🌳 When Stuck Decision Tree</a><ul>
+                        
+                <li>
+                    <a href="#-initial-assessment-30-seconds" aria-label="🎯 Initial Assessment (30 seconds)">🎯 Initial Assessment (30 seconds)</a><ul>
+                        
+                <li>
+                    <a href="#first-ask-yourself" aria-label="First, Ask Yourself:">First, Ask Yourself:</a></li>
+                <li>
+                    <a href="#quick-time-check" aria-label="Quick Time Check:">Quick Time Check:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-tactic-switching-1-2-minutes" aria-label="🔄 Tactic Switching (1-2 minutes)">🔄 Tactic Switching (1-2 minutes)</a><ul>
+                        
+                <li>
+                    <a href="#if-current-approach-isnt-working" aria-label="If Current Approach Isn&rsquo;t Working:">If Current Approach Isn&rsquo;t Working:</a></li>
+                <li>
+                    <a href="#tactic-switching-examples" aria-label="Tactic Switching Examples:">Tactic Switching Examples:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-complement-approaches-1-2-minutes" aria-label="🎯 Complement Approaches (1-2 minutes)">🎯 Complement Approaches (1-2 minutes)</a><ul>
+                        
+                <li>
+                    <a href="#when-direct-approach-is-hard" aria-label="When Direct Approach is Hard:">When Direct Approach is Hard:</a></li>
+                <li>
+                    <a href="#complement-examples" aria-label="Complement Examples:">Complement Examples:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-symmetry-and-patterns-1-2-minutes" aria-label="🔍 Symmetry and Patterns (1-2 minutes)">🔍 Symmetry and Patterns (1-2 minutes)</a><ul>
+                        
+                <li>
+                    <a href="#look-for-symmetry" aria-label="Look for Symmetry:">Look for Symmetry:</a></li>
+                <li>
+                    <a href="#pattern-recognition" aria-label="Pattern Recognition:">Pattern Recognition:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-backsolving-and-answer-choice-exploitation-1-2-minutes" aria-label="🔄 Backsolving and Answer Choice Exploitation (1-2 minutes)">🔄 Backsolving and Answer Choice Exploitation (1-2 minutes)</a><ul>
+                        
+                <li>
+                    <a href="#when-direct-solving-is-hard" aria-label="When Direct Solving is Hard:">When Direct Solving is Hard:</a></li>
+                <li>
+                    <a href="#backsolving-process" aria-label="Backsolving Process:">Backsolving Process:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-coordinate-and-visual-approaches-1-2-minutes" aria-label="🎯 Coordinate and Visual Approaches (1-2 minutes)">🎯 Coordinate and Visual Approaches (1-2 minutes)</a><ul>
+                        
+                <li>
+                    <a href="#when-abstract-approach-is-hard" aria-label="When Abstract Approach is Hard:">When Abstract Approach is Hard:</a></li>
+                <li>
+                    <a href="#visual-approach-examples" aria-label="Visual Approach Examples:">Visual Approach Examples:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-approximation-and-estimation-1-minute" aria-label="⚡ Quick Approximation and Estimation (1 minute)">⚡ Quick Approximation and Estimation (1 minute)</a><ul>
+                        
+                <li>
+                    <a href="#when-exact-solution-is-hard" aria-label="When Exact Solution is Hard:">When Exact Solution is Hard:</a></li>
+                <li>
+                    <a href="#approximation-examples" aria-label="Approximation Examples:">Approximation Examples:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-emergency-protocols-30-seconds" aria-label="🚨 Emergency Protocols (30 seconds)">🚨 Emergency Protocols (30 seconds)</a><ul>
+                        
+                <li>
+                    <a href="#when-all-else-fails" aria-label="When All Else Fails:">When All Else Fails:</a></li>
+                <li>
+                    <a href="#guessing-strategy" aria-label="Guessing Strategy:">Guessing Strategy:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-decision-tree-summary" aria-label="📊 Decision Tree Summary">📊 Decision Tree Summary</a><ul>
+                        
+                <li>
+                    <a href="#time-based-decisions" aria-label="Time-Based Decisions:">Time-Based Decisions:</a></li>
+                <li>
+                    <a href="#problem-based-decisions" aria-label="Problem-Based Decisions:">Problem-Based Decisions:</a></li>
+                <li>
+                    <a href="#confidence-based-decisions" aria-label="Confidence-Based Decisions:">Confidence-Based Decisions:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-reference" aria-label="⚡ Quick Reference">⚡ Quick Reference</a><ul>
+                        
+                <li>
+                    <a href="#when-stuck-checklist" aria-label="When Stuck Checklist:">When Stuck Checklist:</a></li>
+                <li>
+                    <a href="#recovery-actions" aria-label="Recovery Actions:">Recovery Actions:</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-when-stuck-decision-tree">🌳 When Stuck Decision Tree<a hidden class="anchor" aria-hidden="true" href="#-when-stuck-decision-tree">#</a></h1>
+<p>Follow this systematic decision tree when you encounter difficult problems. Don&rsquo;t waste time spinning your wheels - use this structured approach to find a solution or move on efficiently.</p>
+<h2 id="-initial-assessment-30-seconds">🎯 Initial Assessment (30 seconds)<a hidden class="anchor" aria-hidden="true" href="#-initial-assessment-30-seconds">#</a></h2>
+<h3 id="first-ask-yourself">First, Ask Yourself:<a hidden class="anchor" aria-hidden="true" href="#first-ask-yourself">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>How long have I been on this problem?</strong> (If &gt; 5 minutes, consider moving on)</li>
+<li><input disabled="" type="checkbox"> <strong>Am I making progress?</strong> (If no progress, try different approach)</li>
+<li><input disabled="" type="checkbox"> <strong>Do I understand what&rsquo;s being asked?</strong> (If not, re-read carefully)</li>
+<li><input disabled="" type="checkbox"> <strong>Is this problem worth my time?</strong> (Consider expected value)</li>
+<li><input disabled="" type="checkbox"> <strong>What&rsquo;s my confidence level?</strong> (Low confidence = try different approach)</li>
+</ul>
+<h3 id="quick-time-check">Quick Time Check:<a hidden class="anchor" aria-hidden="true" href="#quick-time-check">#</a></h3>
+<ul>
+<li><strong>Problems 1-10</strong>: Don&rsquo;t spend more than 3 minutes</li>
+<li><strong>Problems 11-15</strong>: Don&rsquo;t spend more than 5 minutes</li>
+<li><strong>Problems 16-20</strong>: Don&rsquo;t spend more than 7 minutes</li>
+<li><strong>Problems 21-25</strong>: Don&rsquo;t spend more than 10 minutes</li>
+</ul>
+<h2 id="-tactic-switching-1-2-minutes">🔄 Tactic Switching (1-2 minutes)<a hidden class="anchor" aria-hidden="true" href="#-tactic-switching-1-2-minutes">#</a></h2>
+<h3 id="if-current-approach-isnt-working">If Current Approach Isn&rsquo;t Working:<a hidden class="anchor" aria-hidden="true" href="#if-current-approach-isnt-working">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Switch from algebra to geometry</strong>: Try coordinate geometry or visual approach</li>
+<li><input disabled="" type="checkbox"> <strong>Switch from geometry to algebra</strong>: Try setting up equations</li>
+<li><input disabled="" type="checkbox"> <strong>Switch from direct to indirect</strong>: Try complement counting or working backwards</li>
+<li><input disabled="" type="checkbox"> <strong>Switch from general to specific</strong>: Try plugging in specific values</li>
+<li><input disabled="" type="checkbox"> <strong>Switch from complex to simple</strong>: Try a simpler approach</li>
+</ul>
+<h3 id="tactic-switching-examples">Tactic Switching Examples:<a hidden class="anchor" aria-hidden="true" href="#tactic-switching-examples">#</a></h3>
+<ul>
+<li><strong>Algebra problem</strong>: Try backsolving with answer choices</li>
+<li><strong>Geometry problem</strong>: Try coordinate geometry</li>
+<li><strong>Counting problem</strong>: Try complement counting</li>
+<li><strong>Number theory problem</strong>: Try modular arithmetic</li>
+<li><strong>Function problem</strong>: Try graphing or specific values</li>
+</ul>
+<h2 id="-complement-approaches-1-2-minutes">🎯 Complement Approaches (1-2 minutes)<a hidden class="anchor" aria-hidden="true" href="#-complement-approaches-1-2-minutes">#</a></h2>
+<h3 id="when-direct-approach-is-hard">When Direct Approach is Hard:<a hidden class="anchor" aria-hidden="true" href="#when-direct-approach-is-hard">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Count what you don&rsquo;t want</strong>: Use complement counting</li>
+<li><input disabled="" type="checkbox"> <strong>Work backwards</strong>: Start from the answer and work back</li>
+<li><input disabled="" type="checkbox"> <strong>Use &ldquo;at least&rdquo; logic</strong>: Count &ldquo;none&rdquo; and subtract</li>
+<li><input disabled="" type="checkbox"> <strong>Use &ldquo;at most&rdquo; logic</strong>: Count &ldquo;more than&rdquo; and subtract</li>
+<li><input disabled="" type="checkbox"> <strong>Use probability complements</strong>: $P(A) = 1 - P(A^c)$</li>
+</ul>
+<h3 id="complement-examples">Complement Examples:<a hidden class="anchor" aria-hidden="true" href="#complement-examples">#</a></h3>
+<ul>
+<li><strong>&ldquo;At least one&rdquo;</strong>: Count &ldquo;none&rdquo; and subtract from total</li>
+<li><strong>&ldquo;At most one&rdquo;</strong>: Count &ldquo;more than one&rdquo; and subtract from total</li>
+<li><strong>&ldquo;Not all&rdquo;</strong>: Count &ldquo;all&rdquo; and subtract from total</li>
+<li><strong>&ldquo;Some but not all&rdquo;</strong>: Count &ldquo;all&rdquo; and &ldquo;none&rdquo;, then subtract</li>
+</ul>
+<h2 id="-symmetry-and-patterns-1-2-minutes">🔍 Symmetry and Patterns (1-2 minutes)<a hidden class="anchor" aria-hidden="true" href="#-symmetry-and-patterns-1-2-minutes">#</a></h2>
+<h3 id="look-for-symmetry">Look for Symmetry:<a hidden class="anchor" aria-hidden="true" href="#look-for-symmetry">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Geometric symmetry</strong>: Use symmetric properties</li>
+<li><input disabled="" type="checkbox"> <strong>Algebraic symmetry</strong>: Use symmetric substitutions</li>
+<li><input disabled="" type="checkbox"> <strong>Combinatorial symmetry</strong>: Use symmetric counting</li>
+<li><input disabled="" type="checkbox"> <strong>Numerical symmetry</strong>: Use symmetric patterns</li>
+<li><input disabled="" type="checkbox"> <strong>Functional symmetry</strong>: Use even/odd properties</li>
+</ul>
+<h3 id="pattern-recognition">Pattern Recognition:<a hidden class="anchor" aria-hidden="true" href="#pattern-recognition">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Look for cycles</strong>: Find repeating patterns</li>
+<li><input disabled="" type="checkbox"> <strong>Look for sequences</strong>: Find arithmetic or geometric patterns</li>
+<li><input disabled="" type="checkbox"> <strong>Look for formulas</strong>: Find known formulas that apply</li>
+<li><input disabled="" type="checkbox"> <strong>Look for identities</strong>: Find trigonometric or algebraic identities</li>
+<li><input disabled="" type="checkbox"> <strong>Look for special cases</strong>: Find cases that are easier to handle</li>
+</ul>
+<h2 id="-backsolving-and-answer-choice-exploitation-1-2-minutes">🔄 Backsolving and Answer Choice Exploitation (1-2 minutes)<a hidden class="anchor" aria-hidden="true" href="#-backsolving-and-answer-choice-exploitation-1-2-minutes">#</a></h2>
+<h3 id="when-direct-solving-is-hard">When Direct Solving is Hard:<a hidden class="anchor" aria-hidden="true" href="#when-direct-solving-is-hard">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Try answer choices</strong>: Plug in each choice</li>
+<li><input disabled="" type="checkbox"> <strong>Start with middle choice</strong>: Often C or D</li>
+<li><input disabled="" type="checkbox"> <strong>Use binary search</strong>: Go higher or lower based on result</li>
+<li><input disabled="" type="checkbox"> <strong>Eliminate obviously wrong</strong>: Cross out impossible answers</li>
+<li><input disabled="" type="checkbox"> <strong>Use answer choice patterns</strong>: Look for patterns in choices</li>
+</ul>
+<h3 id="backsolving-process">Backsolving Process:<a hidden class="anchor" aria-hidden="true" href="#backsolving-process">#</a></h3>
+<ol>
+<li><strong>Start with middle choice</strong>: Try C or D</li>
+<li><strong>Test the value</strong>: Substitute into problem</li>
+<li><strong>Compare result</strong>: Does it match what&rsquo;s asked?</li>
+<li><strong>Adjust direction</strong>: Go higher or lower based on result</li>
+<li><strong>Narrow down</strong>: Use binary search approach</li>
+</ol>
+<h2 id="-coordinate-and-visual-approaches-1-2-minutes">🎯 Coordinate and Visual Approaches (1-2 minutes)<a hidden class="anchor" aria-hidden="true" href="#-coordinate-and-visual-approaches-1-2-minutes">#</a></h2>
+<h3 id="when-abstract-approach-is-hard">When Abstract Approach is Hard:<a hidden class="anchor" aria-hidden="true" href="#when-abstract-approach-is-hard">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Draw a diagram</strong>: Visualize the problem</li>
+<li><input disabled="" type="checkbox"> <strong>Use coordinate geometry</strong>: Place in coordinate system</li>
+<li><input disabled="" type="checkbox"> <strong>Use graphing</strong>: Plot functions or relationships</li>
+<li><input disabled="" type="checkbox"> <strong>Use visualization</strong>: Create mental or physical models</li>
+<li><input disabled="" type="checkbox"> <strong>Use symmetry</strong>: Apply symmetric properties</li>
+</ul>
+<h3 id="visual-approach-examples">Visual Approach Examples:<a hidden class="anchor" aria-hidden="true" href="#visual-approach-examples">#</a></h3>
+<ul>
+<li><strong>Geometry problem</strong>: Draw accurate diagram</li>
+<li><strong>Function problem</strong>: Graph the function</li>
+<li><strong>Counting problem</strong>: Use Venn diagrams or tree diagrams</li>
+<li><strong>Algebra problem</strong>: Graph both sides of equation</li>
+<li><strong>Number theory problem</strong>: Use number line or grid</li>
+</ul>
+<h2 id="-quick-approximation-and-estimation-1-minute">⚡ Quick Approximation and Estimation (1 minute)<a hidden class="anchor" aria-hidden="true" href="#-quick-approximation-and-estimation-1-minute">#</a></h2>
+<h3 id="when-exact-solution-is-hard">When Exact Solution is Hard:<a hidden class="anchor" aria-hidden="true" href="#when-exact-solution-is-hard">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Use estimation</strong>: Approximate the answer</li>
+<li><input disabled="" type="checkbox"> <strong>Use bounds</strong>: Find upper and lower bounds</li>
+<li><input disabled="" type="checkbox"> <strong>Use order of magnitude</strong>: Estimate the scale</li>
+<li><input disabled="" type="checkbox"> <strong>Use special values</strong>: Try $x = 0, 1, -1$</li>
+<li><input disabled="" type="checkbox"> <strong>Use extreme cases</strong>: Test boundary values</li>
+</ul>
+<h3 id="approximation-examples">Approximation Examples:<a hidden class="anchor" aria-hidden="true" href="#approximation-examples">#</a></h3>
+<ul>
+<li><strong>Large numbers</strong>: Use scientific notation</li>
+<li><strong>Complex expressions</strong>: Use approximation formulas</li>
+<li><strong>Geometric problems</strong>: Use approximate values</li>
+<li><strong>Counting problems</strong>: Use approximation techniques</li>
+<li><strong>Probability problems</strong>: Use approximation methods</li>
+</ul>
+<h2 id="-emergency-protocols-30-seconds">🚨 Emergency Protocols (30 seconds)<a hidden class="anchor" aria-hidden="true" href="#-emergency-protocols-30-seconds">#</a></h2>
+<h3 id="when-all-else-fails">When All Else Fails:<a hidden class="anchor" aria-hidden="true" href="#when-all-else-fails">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Make an educated guess</strong>: Use elimination and intuition</li>
+<li><input disabled="" type="checkbox"> <strong>Use expected value</strong>: Apply guessing strategy</li>
+<li><input disabled="" type="checkbox"> <strong>Move on</strong>: Don&rsquo;t waste more time</li>
+<li><input disabled="" type="checkbox"> <strong>Mark for later</strong>: Come back if time permits</li>
+<li><input disabled="" type="checkbox"> <strong>Stay calm</strong>: Don&rsquo;t let one problem ruin your contest</li>
+</ul>
+<h3 id="guessing-strategy">Guessing Strategy:<a hidden class="anchor" aria-hidden="true" href="#guessing-strategy">#</a></h3>
+<ul>
+<li><strong>Eliminate obviously wrong</strong>: Cross out impossible answers</li>
+<li><strong>Use partial information</strong>: Apply what you know</li>
+<li><strong>Use symmetry</strong>: Choose symmetric answer if applicable</li>
+<li><strong>Use intuition</strong>: Go with your gut feeling</li>
+<li><strong>Use expected value</strong>: Apply mathematical guessing strategy</li>
+</ul>
+<h2 id="-decision-tree-summary">📊 Decision Tree Summary<a hidden class="anchor" aria-hidden="true" href="#-decision-tree-summary">#</a></h2>
+<h3 id="time-based-decisions">Time-Based Decisions:<a hidden class="anchor" aria-hidden="true" href="#time-based-decisions">#</a></h3>
+<ul>
+<li><strong>0-2 minutes</strong>: Try different approach</li>
+<li><strong>2-5 minutes</strong>: Try complement or symmetry</li>
+<li><strong>5-10 minutes</strong>: Try backsolving or approximation</li>
+<li><strong>10+ minutes</strong>: Make educated guess or move on</li>
+</ul>
+<h3 id="problem-based-decisions">Problem-Based Decisions:<a hidden class="anchor" aria-hidden="true" href="#problem-based-decisions">#</a></h3>
+<ul>
+<li><strong>Easy problems (1-10)</strong>: Don&rsquo;t get stuck, move on quickly</li>
+<li><strong>Medium problems (11-15)</strong>: Try 2-3 different approaches</li>
+<li><strong>Hard problems (16-20)</strong>: Try 1-2 approaches, then guess</li>
+<li><strong>Very hard problems (21-25)</strong>: Try 1 approach, then guess</li>
+</ul>
+<h3 id="confidence-based-decisions">Confidence-Based Decisions:<a hidden class="anchor" aria-hidden="true" href="#confidence-based-decisions">#</a></h3>
+<ul>
+<li><strong>High confidence</strong>: Continue with current approach</li>
+<li><strong>Medium confidence</strong>: Try different approach</li>
+<li><strong>Low confidence</strong>: Try complement or backsolving</li>
+<li><strong>No confidence</strong>: Make educated guess or move on</li>
+</ul>
+<h2 id="-quick-reference">⚡ Quick Reference<a hidden class="anchor" aria-hidden="true" href="#-quick-reference">#</a></h2>
+<h3 id="when-stuck-checklist">When Stuck Checklist:<a hidden class="anchor" aria-hidden="true" href="#when-stuck-checklist">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>How long?</strong> (If &gt; time limit, move on)</li>
+<li><input disabled="" type="checkbox"> <strong>Making progress?</strong> (If no, try different approach)</li>
+<li><input disabled="" type="checkbox"> <strong>Understand problem?</strong> (If not, re-read)</li>
+<li><input disabled="" type="checkbox"> <strong>Worth my time?</strong> (Consider expected value)</li>
+<li><input disabled="" type="checkbox"> <strong>Confidence level?</strong> (Low = try different approach)</li>
+</ul>
+<h3 id="recovery-actions">Recovery Actions:<a hidden class="anchor" aria-hidden="true" href="#recovery-actions">#</a></h3>
+<ul>
+<li><strong>Switch tactics</strong>: Try different approach</li>
+<li><strong>Use complement</strong>: Count what you don&rsquo;t want</li>
+<li><strong>Look for symmetry</strong>: Use symmetric properties</li>
+<li><strong>Try backsolving</strong>: Use answer choices</li>
+<li><strong>Use approximation</strong>: Estimate the answer</li>
+<li><strong>Make educated guess</strong>: Use elimination and intuition</li>
+</ul>
+<hr>
+<p><strong>Prev:</strong> <a href="during-test-quick-checks">During Test Quick Checks</a> | <strong>Next:</strong> <a href="final-review-pass">Final Review Pass</a> | <strong>Back to:</strong> <a href="../">Strategy Guide</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/checklist/">Checklist</a></li>
+      <li><a href="http://localhost:1313/tags/decision-tree/">Decision Tree</a></li>
+      <li><a href="http://localhost:1313/tags/problem-solving/">Problem Solving</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Word Problems — Algebraic Models &amp; Real-World Applications | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Algebra, Word Problems, Applications">
+<meta name="description" content="Master translating word problems into algebraic equations and solving them efficiently.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/algebra/problem-types/word-problems-algebraic-models/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/algebra/problem-types/word-problems-algebraic-models/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/algebra/">Algebra Mastery Guide — AMC 10 &amp; AMC 12</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/algebra/problem-types/">Problem Types — Pattern Recognition &amp; Templates</a></div>
+    <div class="post-meta">4 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-word-problems--algebraic-models--real-world-applications" aria-label="📝 Word Problems — Algebraic Models &amp; Real-World Applications">📝 Word Problems — Algebraic Models &amp; Real-World Applications</a><ul>
+                        
+                <li>
+                    <a href="#-recognition-cues" aria-label="🎯 Recognition Cues">🎯 Recognition Cues</a></li>
+                <li>
+                    <a href="#-template-solutions" aria-label="📚 Template Solutions">📚 Template Solutions</a><ul>
+                        
+                <li>
+                    <a href="#common-problem-types" aria-label="Common Problem Types">Common Problem Types</a></li>
+                <li>
+                    <a href="#translation-strategies" aria-label="Translation Strategies">Translation Strategies</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-worked-examples" aria-label="🎯 Worked Examples">🎯 Worked Examples</a><ul>
+                        
+                <li>
+                    <a href="#example-1-workrate-problem" aria-label="Example 1: Work/Rate Problem">Example 1: Work/Rate Problem</a></li>
+                <li>
+                    <a href="#example-2-mixture-problem" aria-label="Example 2: Mixture Problem">Example 2: Mixture Problem</a></li>
+                <li>
+                    <a href="#example-3-age-problem" aria-label="Example 3: Age Problem">Example 3: Age Problem</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-common-pitfalls" aria-label="⚠️ Common Pitfalls">⚠️ Common Pitfalls</a></li>
+                <li>
+                    <a href="#-amc-style-worked-example" aria-label="🎯 AMC-Style Worked Example">🎯 AMC-Style Worked Example</a></li>
+                <li>
+                    <a href="#-related-patterns" aria-label="🔗 Related Patterns">🔗 Related Patterns</a></li>
+                <li>
+                    <a href="#-practice-checklist" aria-label="📝 Practice Checklist">📝 Practice Checklist</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-word-problems--algebraic-models--real-world-applications">📝 Word Problems — Algebraic Models &amp; Real-World Applications<a hidden class="anchor" aria-hidden="true" href="#-word-problems--algebraic-models--real-world-applications">#</a></h1>
+<p>Essential for translating real-world situations into algebraic equations and solving them.</p>
+<h2 id="-recognition-cues">🎯 Recognition Cues<a hidden class="anchor" aria-hidden="true" href="#-recognition-cues">#</a></h2>
+<ul>
+<li><strong>&ldquo;How many&rdquo;</strong> — Counting problems</li>
+<li><strong>&ldquo;What is the ratio&rdquo;</strong> — Ratio and proportion problems</li>
+<li><strong>&ldquo;Work together&rdquo;</strong> — Rate and work problems</li>
+<li><strong>&ldquo;Mixture&rdquo;</strong> — Mixture and concentration problems</li>
+<li><strong>&ldquo;Age&rdquo;</strong> — Age-related problems</li>
+</ul>
+<h2 id="-template-solutions">📚 Template Solutions<a hidden class="anchor" aria-hidden="true" href="#-template-solutions">#</a></h2>
+<h3 id="common-problem-types">Common Problem Types<a hidden class="anchor" aria-hidden="true" href="#common-problem-types">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Type</th>
+          <th>Key Variables</th>
+          <th>Equation</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Work/Rate</td>
+          <td>$r = \frac{1}{t}$ (rate), $t$ (time)</td>
+          <td>$r_1 + r_2 = r_{\text{total}}$</td>
+          <td>$A$ can do job in $3$ hours, $B$ in $6$ hours</td>
+      </tr>
+      <tr>
+          <td>Mixture</td>
+          <td>$c$ (concentration), $v$ (volume)</td>
+          <td>$c_1v_1 + c_2v_2 = c_{\text{final}}v_{\text{final}}$</td>
+          <td>Mix $20%$ acid with $50%$ acid</td>
+      </tr>
+      <tr>
+          <td>Age</td>
+          <td>$a$ (age now), $y$ (years ago)</td>
+          <td>$a - y = \text{age then}$</td>
+          <td>&ldquo;In $5$ years, John will be twice as old&rdquo;</td>
+      </tr>
+      <tr>
+          <td>Distance</td>
+          <td>$d$ (distance), $r$ (rate), $t$ (time)</td>
+          <td>$d = rt$</td>
+          <td>&ldquo;Train travels $120$ miles in $2$ hours&rdquo;</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="translation-strategies">Translation Strategies<a hidden class="anchor" aria-hidden="true" href="#translation-strategies">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Word/Phrase</th>
+          <th>Translation</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>&ldquo;is&rdquo;</td>
+          <td>$=$</td>
+          <td>&ldquo;John&rsquo;s age is $x$&rdquo; → $a = x$</td>
+      </tr>
+      <tr>
+          <td>&ldquo;more than&rdquo;</td>
+          <td>$+$</td>
+          <td>&ldquo;$5$ more than $x$&rdquo; → $x + 5$</td>
+      </tr>
+      <tr>
+          <td>&ldquo;less than&rdquo;</td>
+          <td>$-$</td>
+          <td>&ldquo;$3$ less than $x$&rdquo; → $x - 3$</td>
+      </tr>
+      <tr>
+          <td>&ldquo;times&rdquo;</td>
+          <td>$\times$</td>
+          <td>&ldquo;$2$ times $x$&rdquo; → $2x$</td>
+      </tr>
+      <tr>
+          <td>&ldquo;of&rdquo;</td>
+          <td>$\times$</td>
+          <td>&ldquo;$20%$ of $x$&rdquo; → $0.2x$</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-worked-examples">🎯 Worked Examples<a hidden class="anchor" aria-hidden="true" href="#-worked-examples">#</a></h2>
+<h3 id="example-1-workrate-problem">Example 1: Work/Rate Problem<a hidden class="anchor" aria-hidden="true" href="#example-1-workrate-problem">#</a></h3>
+<p><strong>Problem</strong>: Alice can paint a room in $4$ hours, and Bob can paint the same room in $6$ hours. How long will it take them to paint the room together?</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li><strong>Alice&rsquo;s rate</strong>: $r_A = \frac{1}{4}$ rooms per hour</li>
+<li><strong>Bob&rsquo;s rate</strong>: $r_B = \frac{1}{6}$ rooms per hour</li>
+<li><strong>Combined rate</strong>: $r_{\text{total}} = r_A + r_B = \frac{1}{4} + \frac{1}{6} = \frac{3}{12} + \frac{2}{12} = \frac{5}{12}$</li>
+<li><strong>Time together</strong>: $t = \frac{1}{r_{\text{total}}} = \frac{1}{\frac{5}{12}} = \frac{12}{5} = 2.4$ hours</li>
+<li><strong>Answer</strong>: $2.4$ hours (or $2$ hours $24$ minutes)</li>
+</ol>
+<h3 id="example-2-mixture-problem">Example 2: Mixture Problem<a hidden class="anchor" aria-hidden="true" href="#example-2-mixture-problem">#</a></h3>
+<p><strong>Problem</strong>: How many liters of a $20%$ acid solution must be mixed with $5$ liters of a $50%$ acid solution to get a $30%$ acid solution?</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li><strong>Let $x$ = liters of $20%$ solution</strong></li>
+<li><strong>Set up equation</strong>: $0.2x + 0.5(5) = 0.3(x + 5)$</li>
+<li><strong>Simplify</strong>: $0.2x + 2.5 = 0.3x + 1.5$</li>
+<li><strong>Rearrange</strong>: $2.5 - 1.5 = 0.3x - 0.2x$</li>
+<li><strong>Solve</strong>: $1 = 0.1x$ → $x = 10$</li>
+<li><strong>Answer</strong>: $10$ liters</li>
+</ol>
+<h3 id="example-3-age-problem">Example 3: Age Problem<a hidden class="anchor" aria-hidden="true" href="#example-3-age-problem">#</a></h3>
+<p><strong>Problem</strong>: John is $3$ times as old as his son. In $5$ years, he will be twice as old as his son. How old is John now?</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li><strong>Let $s$ = son&rsquo;s age now, $j$ = John&rsquo;s age now</strong></li>
+<li><strong>From first sentence</strong>: $j = 3s$</li>
+<li><strong>From second sentence</strong>: $j + 5 = 2(s + 5)$</li>
+<li><strong>Substitute</strong>: $3s + 5 = 2s + 10$</li>
+<li><strong>Solve</strong>: $3s - 2s = 10 - 5$ → $s = 5$</li>
+<li><strong>Find John&rsquo;s age</strong>: $j = 3(5) = 15$</li>
+<li><strong>Answer</strong>: John is $15$ years old</li>
+</ol>
+<h2 id="-common-pitfalls">⚠️ Common Pitfalls<a hidden class="anchor" aria-hidden="true" href="#-common-pitfalls">#</a></h2>
+<p><strong>Pitfall</strong>: Incorrect variable setup</p>
+<ul>
+<li><strong>Fix</strong>: Clearly define what each variable represents</li>
+<li><strong>Example</strong>: &ldquo;Let $x$ = number of apples&rdquo; not &ldquo;Let $x$ = apples&rdquo;</li>
+</ul>
+<p><strong>Pitfall</strong>: Forgetting units</p>
+<ul>
+<li><strong>Fix</strong>: Always include units in your answer</li>
+<li><strong>Example</strong>: &ldquo;$10$ liters&rdquo; not just &ldquo;$10$&rdquo;</li>
+</ul>
+<p><strong>Pitfall</strong>: Incorrect equation setup</p>
+<ul>
+<li><strong>Fix</strong>: Read the problem carefully and translate word by word</li>
+<li><strong>Example</strong>: &ldquo;John is $3$ times as old as his son&rdquo; means $j = 3s$, not $s = 3j$</li>
+</ul>
+<h2 id="-amc-style-worked-example">🎯 AMC-Style Worked Example<a hidden class="anchor" aria-hidden="true" href="#-amc-style-worked-example">#</a></h2>
+<p><strong>Problem</strong>: A train leaves station A at $60$ mph and another train leaves station B at $80$ mph. If the stations are $280$ miles apart and the trains are traveling toward each other, how long will it take them to meet?</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li><strong>Let $t$ = time until they meet</strong></li>
+<li><strong>Distance covered by first train</strong>: $60t$ miles</li>
+<li><strong>Distance covered by second train</strong>: $80t$ miles</li>
+<li><strong>Total distance</strong>: $60t + 80t = 140t$ miles</li>
+<li><strong>Set up equation</strong>: $140t = 280$</li>
+<li><strong>Solve</strong>: $t = \frac{280}{140} = 2$ hours</li>
+<li><strong>Answer</strong>: $2$ hours</li>
+</ol>
+<p><strong>Key insight</strong>: When objects move toward each other, their distances add up to the total distance between them.</p>
+<h2 id="-related-patterns">🔗 Related Patterns<a hidden class="anchor" aria-hidden="true" href="#-related-patterns">#</a></h2>
+<ul>
+<li><strong>Systems of Equations</strong> — Many word problems require systems</li>
+<li><strong>Rate Problems</strong> — Often involve distance, time, and rate</li>
+<li><strong>Mixture Problems</strong> — Concentration and volume relationships</li>
+<li><strong>Age Problems</strong> — Time-based relationships</li>
+</ul>
+<h2 id="-practice-checklist">📝 Practice Checklist<a hidden class="anchor" aria-hidden="true" href="#-practice-checklist">#</a></h2>
+<ul>
+<li><input disabled="" type="checkbox"> Master common problem types</li>
+<li><input disabled="" type="checkbox"> Practice translation strategies</li>
+<li><input disabled="" type="checkbox"> Learn to set up equations correctly</li>
+<li><input disabled="" type="checkbox"> Practice unit conversions</li>
+<li><input disabled="" type="checkbox"> Understand rate and work problems</li>
+<li><input disabled="" type="checkbox"> Work on speed and accuracy</li>
+</ul>
+<hr>
+<p><strong>Next</strong>: <a href="formulas/essential-formulas">Essential Formulas</a> | <strong>Prev</strong>: <a href="exponential-log-tricks">Exponential &amp; Log Tricks</a> | <strong>Back</strong>: <a href="_index">Problem Types Overview</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/algebra/">Algebra</a></li>
+      <li><a href="http://localhost:1313/tags/word-problems/">Word Problems</a></li>
+      <li><a href="http://localhost:1313/tags/applications/">Applications</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

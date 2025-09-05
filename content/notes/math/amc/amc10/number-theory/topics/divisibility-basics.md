@@ -103,4 +103,4 @@ $$ax + by = d$$
 
 ---
 
-**Previous**: [Reference Materials](../reference) | **Next**: [Congruences & Modular Arithmetic](congruences-and-modular-arithmetic)
+**Previous**: [Reference Materials](../../reference) | **Next**: [Congruences & Modular Arithmetic](../congruences-and-modular-arithmetic)

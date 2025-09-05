@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Full Test Simulation Guide | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Simulation, Practice, Test Taking">
+<meta name="description" content="Complete protocol for executing realistic AMC 10/12 practice tests including environment setup, pacing strategies, and performance analysis.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/strategy/simulations/full-test-simulation-guide/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/strategy/simulations/full-test-simulation-guide/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/">AMC 10/12 Contest Strategy &amp; Tactics Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/simulations/">Simulations &amp; Practice</a></div>
+    <div class="post-meta">5 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-full-test-simulation-guide" aria-label="🧪 Full Test Simulation Guide">🧪 Full Test Simulation Guide</a><ul>
+                        
+                <li>
+                    <a href="#-pre-simulation-preparation" aria-label="🎯 Pre-Simulation Preparation">🎯 Pre-Simulation Preparation</a><ul>
+                        
+                <li>
+                    <a href="#test-selection" aria-label="Test Selection">Test Selection</a></li>
+                <li>
+                    <a href="#environment-setup" aria-label="Environment Setup">Environment Setup</a></li>
+                <li>
+                    <a href="#materials-preparation" aria-label="Materials Preparation">Materials Preparation</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-simulation-execution" aria-label="⏰ Simulation Execution">⏰ Simulation Execution</a><ul>
+                        
+                <li>
+                    <a href="#pre-test-setup-5-minutes" aria-label="Pre-Test Setup (5 minutes)">Pre-Test Setup (5 minutes)</a></li>
+                <li>
+                    <a href="#first-pass-foundation-45-minutes" aria-label="First Pass: Foundation (45 minutes)">First Pass: Foundation (45 minutes)</a></li>
+                <li>
+                    <a href="#second-pass-strategic-25-minutes" aria-label="Second Pass: Strategic (25 minutes)">Second Pass: Strategic (25 minutes)</a></li>
+                <li>
+                    <a href="#final-review-completion-5-minutes" aria-label="Final Review: Completion (5 minutes)">Final Review: Completion (5 minutes)</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-post-simulation-analysis" aria-label="📊 Post-Simulation Analysis">📊 Post-Simulation Analysis</a><ul>
+                        
+                <li>
+                    <a href="#immediate-analysis-within-1-hour" aria-label="Immediate Analysis (Within 1 hour)">Immediate Analysis (Within 1 hour)</a></li>
+                <li>
+                    <a href="#detailed-analysis-within-24-hours" aria-label="Detailed Analysis (Within 24 hours)">Detailed Analysis (Within 24 hours)</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-simulation-strategies" aria-label="🎯 Simulation Strategies">🎯 Simulation Strategies</a><ul>
+                        
+                <li>
+                    <a href="#time-management" aria-label="Time Management">Time Management</a></li>
+                <li>
+                    <a href="#problem-approach" aria-label="Problem Approach">Problem Approach</a></li>
+                <li>
+                    <a href="#mental-management" aria-label="Mental Management">Mental Management</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-progress-tracking" aria-label="📈 Progress Tracking">📈 Progress Tracking</a><ul>
+                        
+                <li>
+                    <a href="#performance-metrics" aria-label="Performance Metrics">Performance Metrics</a></li>
+                <li>
+                    <a href="#weekly-goals" aria-label="Weekly Goals">Weekly Goals</a></li>
+                <li>
+                    <a href="#monthly-goals" aria-label="Monthly Goals">Monthly Goals</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-reference" aria-label="⚡ Quick Reference">⚡ Quick Reference</a><ul>
+                        
+                <li>
+                    <a href="#simulation-checklist" aria-label="Simulation Checklist:">Simulation Checklist:</a></li>
+                <li>
+                    <a href="#time-checkpoints" aria-label="Time Checkpoints:">Time Checkpoints:</a></li>
+                <li>
+                    <a href="#performance-targets" aria-label="Performance Targets:">Performance Targets:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-common-simulation-mistakes" aria-label="🚨 Common Simulation Mistakes">🚨 Common Simulation Mistakes</a><ul>
+                        
+                <li>
+                    <a href="#avoid-these-errors" aria-label="Avoid These Errors:">Avoid These Errors:</a></li>
+                <li>
+                    <a href="#red-flags" aria-label="Red Flags:">Red Flags:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-success-metrics" aria-label="📊 Success Metrics">📊 Success Metrics</a><ul>
+                        
+                <li>
+                    <a href="#simulation-goals" aria-label="Simulation Goals:">Simulation Goals:</a></li>
+                <li>
+                    <a href="#analysis-goals" aria-label="Analysis Goals:">Analysis Goals:</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-full-test-simulation-guide">🧪 Full Test Simulation Guide<a hidden class="anchor" aria-hidden="true" href="#-full-test-simulation-guide">#</a></h1>
+<p>Execute realistic practice tests to build confidence, improve performance, and prepare for the actual AMC 10/12 contest experience.</p>
+<h2 id="-pre-simulation-preparation">🎯 Pre-Simulation Preparation<a hidden class="anchor" aria-hidden="true" href="#-pre-simulation-preparation">#</a></h2>
+<h3 id="test-selection">Test Selection<a hidden class="anchor" aria-hidden="true" href="#test-selection">#</a></h3>
+<ul>
+<li><strong>Difficulty level</strong>: Choose appropriate test difficulty</li>
+<li><strong>Recent tests</strong>: Use tests from recent years</li>
+<li><strong>Variety</strong>: Mix different years and difficulty levels</li>
+<li><strong>Availability</strong>: Ensure you have access to the test</li>
+<li><strong>Answer key</strong>: Make sure you have the correct answers</li>
+</ul>
+<h3 id="environment-setup">Environment Setup<a hidden class="anchor" aria-hidden="true" href="#environment-setup">#</a></h3>
+<ul>
+<li><strong>Quiet location</strong>: Find a distraction-free environment</li>
+<li><strong>Proper seating</strong>: Use a desk or table with good lighting</li>
+<li><strong>No distractions</strong>: Turn off phone, close unnecessary tabs</li>
+<li><strong>Time awareness</strong>: Have a clock or timer visible</li>
+<li><strong>Materials ready</strong>: Have all supplies within reach</li>
+</ul>
+<h3 id="materials-preparation">Materials Preparation<a hidden class="anchor" aria-hidden="true" href="#materials-preparation">#</a></h3>
+<ul>
+<li><strong>Test booklet</strong>: Print or access the practice test</li>
+<li><strong>Answer sheet</strong>: Use official-style answer sheet</li>
+<li><strong>Pencils</strong>: Multiple sharpened #2 pencils</li>
+<li><strong>Eraser</strong>: Good quality eraser</li>
+<li><strong>Water bottle</strong>: Stay hydrated during the test</li>
+<li><strong>Timer</strong>: Set timer for 75 minutes</li>
+</ul>
+<h2 id="-simulation-execution">⏰ Simulation Execution<a hidden class="anchor" aria-hidden="true" href="#-simulation-execution">#</a></h2>
+<h3 id="pre-test-setup-5-minutes">Pre-Test Setup (5 minutes)<a hidden class="anchor" aria-hidden="true" href="#pre-test-setup-5-minutes">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Read instructions</strong>: Review test instructions carefully</li>
+<li><input disabled="" type="checkbox"> <strong>Check materials</strong>: Ensure all supplies are ready</li>
+<li><input disabled="" type="checkbox"> <strong>Set timer</strong>: Set timer for 75 minutes</li>
+<li><input disabled="" type="checkbox"> <strong>Mental preparation</strong>: Take deep breaths, stay calm</li>
+<li><input disabled="" type="checkbox"> <strong>Strategy recall</strong>: Remember your three-pass approach</li>
+<li><input disabled="" type="checkbox"> <strong>Start timer</strong>: Begin the 75-minute countdown</li>
+</ul>
+<h3 id="first-pass-foundation-45-minutes">First Pass: Foundation (45 minutes)<a hidden class="anchor" aria-hidden="true" href="#first-pass-foundation-45-minutes">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Problems 1-10</strong>: Complete with high accuracy (95%+)</li>
+<li><input disabled="" type="checkbox"> <strong>Problems 11-15</strong>: Complete with good accuracy (80%+)</li>
+<li><input disabled="" type="checkbox"> <strong>Time per problem</strong>: 2-3 minutes average</li>
+<li><input disabled="" type="checkbox"> <strong>Build confidence</strong>: Each success builds momentum</li>
+<li><input disabled="" type="checkbox"> <strong>Stay focused</strong>: One problem at a time</li>
+<li><input disabled="" type="checkbox"> <strong>Check time</strong>: Monitor progress at 15, 30, 45 minutes</li>
+</ul>
+<h3 id="second-pass-strategic-25-minutes">Second Pass: Strategic (25 minutes)<a hidden class="anchor" aria-hidden="true" href="#second-pass-strategic-25-minutes">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Problems 16-20</strong>: Strategic approach with good accuracy</li>
+<li><input disabled="" type="checkbox"> <strong>Problems 21-25</strong>: Selective approach, use eliminations</li>
+<li><input disabled="" type="checkbox"> <strong>Time per problem</strong>: 2-4 minutes based on difficulty</li>
+<li><input disabled="" type="checkbox"> <strong>Guessing strategy</strong>: Apply expected value calculations</li>
+<li><input disabled="" type="checkbox"> <strong>Stay flexible</strong>: Adapt approach as needed</li>
+<li><input disabled="" type="checkbox"> <strong>Check time</strong>: Monitor progress at 60, 70 minutes</li>
+</ul>
+<h3 id="final-review-completion-5-minutes">Final Review: Completion (5 minutes)<a hidden class="anchor" aria-hidden="true" href="#final-review-completion-5-minutes">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Bubble audit</strong>: Ensure all answers are marked</li>
+<li><input disabled="" type="checkbox"> <strong>Quick verification</strong>: Spot-check calculations</li>
+<li><input disabled="" type="checkbox"> <strong>Final guesses</strong>: Apply expected value to remaining blanks</li>
+<li><input disabled="" type="checkbox"> <strong>Student ID check</strong>: Verify your ID is correct</li>
+<li><input disabled="" type="checkbox"> <strong>Answer sheet review</strong>: Final check for completeness</li>
+<li><input disabled="" type="checkbox"> <strong>Submit</strong>: End the simulation</li>
+</ul>
+<h2 id="-post-simulation-analysis">📊 Post-Simulation Analysis<a hidden class="anchor" aria-hidden="true" href="#-post-simulation-analysis">#</a></h2>
+<h3 id="immediate-analysis-within-1-hour">Immediate Analysis (Within 1 hour)<a hidden class="anchor" aria-hidden="true" href="#immediate-analysis-within-1-hour">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Score calculation</strong>: Calculate your score and percentile</li>
+<li><input disabled="" type="checkbox"> <strong>Problem-by-problem review</strong>: Analyze each problem</li>
+<li><input disabled="" type="checkbox"> <strong>Error identification</strong>: Identify all mistakes</li>
+<li><input disabled="" type="checkbox"> <strong>Time analysis</strong>: Review time spent on each problem</li>
+<li><input disabled="" type="checkbox"> <strong>Strategy evaluation</strong>: Assess your overall approach</li>
+</ul>
+<h3 id="detailed-analysis-within-24-hours">Detailed Analysis (Within 24 hours)<a hidden class="anchor" aria-hidden="true" href="#detailed-analysis-within-24-hours">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Pattern identification</strong>: Look for recurring themes</li>
+<li><input disabled="" type="checkbox"> <strong>Strengths assessment</strong>: Identify what worked well</li>
+<li><input disabled="" type="checkbox"> <strong>Weaknesses analysis</strong>: Identify areas for improvement</li>
+<li><input disabled="" type="checkbox"> <strong>Strategy refinement</strong>: Adjust your approach</li>
+<li><input disabled="" type="checkbox"> <strong>Action planning</strong>: Develop specific improvement strategies</li>
+</ul>
+<h2 id="-simulation-strategies">🎯 Simulation Strategies<a hidden class="anchor" aria-hidden="true" href="#-simulation-strategies">#</a></h2>
+<h3 id="time-management">Time Management<a hidden class="anchor" aria-hidden="true" href="#time-management">#</a></h3>
+<ul>
+<li><strong>Checkpoint system</strong>: Set time checkpoints at 15, 30, 45, 60, 70 minutes</li>
+<li><strong>Problem allocation</strong>: Allocate time based on difficulty</li>
+<li><strong>Flexibility</strong>: Adjust approach based on progress</li>
+<li><strong>Emergency protocol</strong>: Know what to do when behind schedule</li>
+<li><strong>Final review</strong>: Always leave time for final review</li>
+</ul>
+<h3 id="problem-approach">Problem Approach<a hidden class="anchor" aria-hidden="true" href="#problem-approach">#</a></h3>
+<ul>
+<li><strong>First pass</strong>: Focus on problems 1-15</li>
+<li><strong>Second pass</strong>: Strategic approach to problems 16-25</li>
+<li><strong>Guessing strategy</strong>: Use expected value calculations</li>
+<li><strong>Verification</strong>: Check work before moving on</li>
+<li><strong>Skip strategy</strong>: Know when to skip and move on</li>
+</ul>
+<h3 id="mental-management">Mental Management<a hidden class="anchor" aria-hidden="true" href="#mental-management">#</a></h3>
+<ul>
+<li><strong>Stay calm</strong>: Don&rsquo;t let pressure affect performance</li>
+<li><strong>Build confidence</strong>: Each success helps the next</li>
+<li><strong>Stay focused</strong>: One problem at a time</li>
+<li><strong>Trust preparation</strong>: You&rsquo;ve prepared for this</li>
+<li><strong>Stay positive</strong>: Maintain confidence throughout</li>
+</ul>
+<h2 id="-progress-tracking">📈 Progress Tracking<a hidden class="anchor" aria-hidden="true" href="#-progress-tracking">#</a></h2>
+<h3 id="performance-metrics">Performance Metrics<a hidden class="anchor" aria-hidden="true" href="#performance-metrics">#</a></h3>
+<ul>
+<li><strong>Score</strong>: Track your score over time</li>
+<li><strong>Percentile</strong>: Monitor percentile improvement</li>
+<li><strong>Accuracy</strong>: Track accuracy by difficulty level</li>
+<li><strong>Time management</strong>: Monitor time allocation</li>
+<li><strong>Error patterns</strong>: Track recurring mistake types</li>
+</ul>
+<h3 id="weekly-goals">Weekly Goals<a hidden class="anchor" aria-hidden="true" href="#weekly-goals">#</a></h3>
+<ul>
+<li><strong>Score improvement</strong>: Aim for 5-10 point improvement weekly</li>
+<li><strong>Accuracy targets</strong>: 95%+ on easy, 80%+ on medium, 60%+ on hard</li>
+<li><strong>Time efficiency</strong>: Reduce time per problem</li>
+<li><strong>Error reduction</strong>: Decrease common mistake types</li>
+<li><strong>Confidence building</strong>: Increase confidence level</li>
+</ul>
+<h3 id="monthly-goals">Monthly Goals<a hidden class="anchor" aria-hidden="true" href="#monthly-goals">#</a></h3>
+<ul>
+<li><strong>Overall improvement</strong>: 20-30 point score improvement</li>
+<li><strong>Consistency</strong>: Reduce score variability</li>
+<li><strong>Strategy mastery</strong>: Perfect your approach</li>
+<li><strong>Weakness improvement</strong>: Address major weaknesses</li>
+<li><strong>Confidence</strong>: Build strong confidence level</li>
+</ul>
+<h2 id="-quick-reference">⚡ Quick Reference<a hidden class="anchor" aria-hidden="true" href="#-quick-reference">#</a></h2>
+<h3 id="simulation-checklist">Simulation Checklist:<a hidden class="anchor" aria-hidden="true" href="#simulation-checklist">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Select test</strong>: Choose appropriate difficulty</li>
+<li><input disabled="" type="checkbox"> <strong>Set up environment</strong>: Create realistic conditions</li>
+<li><input disabled="" type="checkbox"> <strong>Gather materials</strong>: Have everything ready</li>
+<li><input disabled="" type="checkbox"> <strong>Set timer</strong>: 75 minutes</li>
+<li><input disabled="" type="checkbox"> <strong>Execute simulation</strong>: Follow your strategy</li>
+<li><input disabled="" type="checkbox"> <strong>Analyze results</strong>: Review performance thoroughly</li>
+<li><input disabled="" type="checkbox"> <strong>Plan improvements</strong>: Develop next steps</li>
+</ul>
+<h3 id="time-checkpoints">Time Checkpoints:<a hidden class="anchor" aria-hidden="true" href="#time-checkpoints">#</a></h3>
+<ul>
+<li><strong>15 minutes</strong>: Should be on problem 5-6</li>
+<li><strong>30 minutes</strong>: Should be on problem 10-12</li>
+<li><strong>45 minutes</strong>: Should be on problem 15-17</li>
+<li><strong>60 minutes</strong>: Should be on problem 20-22</li>
+<li><strong>75 minutes</strong>: Contest ends</li>
+</ul>
+<h3 id="performance-targets">Performance Targets:<a hidden class="anchor" aria-hidden="true" href="#performance-targets">#</a></h3>
+<ul>
+<li><strong>Problems 1-10</strong>: 95%+ accuracy</li>
+<li><strong>Problems 11-15</strong>: 80%+ accuracy</li>
+<li><strong>Problems 16-20</strong>: 60%+ accuracy</li>
+<li><strong>Problems 21-25</strong>: 40%+ accuracy</li>
+<li><strong>Overall score</strong>: Aim for 100+ points</li>
+</ul>
+<h2 id="-common-simulation-mistakes">🚨 Common Simulation Mistakes<a hidden class="anchor" aria-hidden="true" href="#-common-simulation-mistakes">#</a></h2>
+<h3 id="avoid-these-errors">Avoid These Errors:<a hidden class="anchor" aria-hidden="true" href="#avoid-these-errors">#</a></h3>
+<ul>
+<li><strong>Not simulating realistically</strong>: Don&rsquo;t take shortcuts</li>
+<li><strong>Skipping analysis</strong>: Always analyze your performance</li>
+<li><strong>Ignoring time pressure</strong>: Practice under time constraints</li>
+<li><strong>Not tracking progress</strong>: Monitor improvement over time</li>
+<li><strong>Giving up early</strong>: Complete the full simulation</li>
+</ul>
+<h3 id="red-flags">Red Flags:<a hidden class="anchor" aria-hidden="true" href="#red-flags">#</a></h3>
+<ul>
+<li><strong>Score not improving</strong>: Review your approach</li>
+<li><strong>Time management issues</strong>: Practice pacing more</li>
+<li><strong>Consistent errors</strong>: Focus on error prevention</li>
+<li><strong>Low confidence</strong>: Build confidence through practice</li>
+<li><strong>Inconsistent performance</strong>: Identify and address causes</li>
+</ul>
+<h2 id="-success-metrics">📊 Success Metrics<a hidden class="anchor" aria-hidden="true" href="#-success-metrics">#</a></h2>
+<h3 id="simulation-goals">Simulation Goals:<a hidden class="anchor" aria-hidden="true" href="#simulation-goals">#</a></h3>
+<ul>
+<li><strong>Realistic conditions</strong>: Mimic actual test environment</li>
+<li><strong>Time pressure</strong>: Practice under strict time limits</li>
+<li><strong>Strategy testing</strong>: Evaluate different approaches</li>
+<li><strong>Confidence building</strong>: Increase confidence level</li>
+<li><strong>Performance improvement</strong>: Track score improvement</li>
+</ul>
+<h3 id="analysis-goals">Analysis Goals:<a hidden class="anchor" aria-hidden="true" href="#analysis-goals">#</a></h3>
+<ul>
+<li><strong>Error identification</strong>: Find all mistakes and patterns</li>
+<li><strong>Strategy evaluation</strong>: Assess approach effectiveness</li>
+<li><strong>Improvement planning</strong>: Develop specific strategies</li>
+<li><strong>Progress tracking</strong>: Monitor improvement over time</li>
+<li><strong>Goal setting</strong>: Establish new performance targets</li>
+</ul>
+<hr>
+<p><strong>Prev:</strong> <a href="../mistakes-and-review/postmortem-framework">Postmortem Framework</a> | <strong>Next:</strong> <a href="../">Strategy Guide</a> | <strong>Back to:</strong> <a href="../">Strategy Guide</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/simulation/">Simulation</a></li>
+      <li><a href="http://localhost:1313/tags/practice/">Practice</a></li>
+      <li><a href="http://localhost:1313/tags/test-taking/">Test Taking</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -77,3 +77,5 @@ Strategic tips, heuristics, and checklists to improve your AMC number theory pro
 ---
 
 **Next**: Study the [Problem-Solving Tips](problem-solving-tips) for detailed strategies.
+
+**Next**: [Problem-Solving Tips](problem-solving-tips) | **Back**: [Number Theory Mastery Guide](../)

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Floor and Fractional Part Functions | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="">
+<meta name="description" content="A reference on floor functions, fractional parts, identities, and problem-solving strategies. Includes AMC/AIME-style examples.">
+<meta name="author" content="Compiled by ChatGPT">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/algebra2/floor-fractional-part/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/algebra2/floor-fractional-part/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/algebra2/">Algebra</a></div>
+    <div class="post-meta"><span title='2025-09-02 00:00:00 +0000 UTC'>September 2, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Compiled by ChatGPT
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="-floor-and-fractional-part-functions">🔢 Floor and Fractional Part Functions<a hidden class="anchor" aria-hidden="true" href="#-floor-and-fractional-part-functions">#</a></h1>
+<hr>
+<h2 id="-understanding-floor-and-fractional-part">🟦 Understanding Floor and Fractional Part<a hidden class="anchor" aria-hidden="true" href="#-understanding-floor-and-fractional-part">#</a></h2>
+<p>Given a real number $x$, we define:</p>
+<ul>
+<li><strong>Floor function</strong> $\lfloor x \rfloor$: the <strong>greatest integer less than or equal to $x$</strong>.</li>
+<li><strong>Fractional part</strong> ${x}$: the <strong>decimal part after removing the integer part</strong>.</li>
+</ul>
+<h3 id="example">Example<a hidden class="anchor" aria-hidden="true" href="#example">#</a></h3>
+<p>For $x = 6.2$:</p>
+<p>$$
+\lfloor 6.2 \rfloor = 6, \quad {6.2} = 6.2 - \lfloor 6.2 \rfloor = 0.2
+$$</p>
+<hr>
+<h2 id="-key-identities">✨ Key Identities<a hidden class="anchor" aria-hidden="true" href="#-key-identities">#</a></h2>
+<h3 id="floor--fractional-part-identity">Floor + Fractional Part Identity<a hidden class="anchor" aria-hidden="true" href="#floor--fractional-part-identity">#</a></h3>
+<p>For any real number $x$:</p>
+<p>$$
+{x} + \lfloor x \rfloor = x
+$$</p>
+<p>This identity allows switching between floor and fractional part expressions.</p>
+<hr>
+<h3 id="useful-note">Useful Note<a hidden class="anchor" aria-hidden="true" href="#useful-note">#</a></h3>
+<p>$$
+0 \leq {x} &lt; 1
+$$</p>
+<ul>
+<li>The fractional part is <strong>always non-negative</strong> and <strong>strictly less than 1</strong>.</li>
+<li>This is crucial when bounding expressions in problems.</li>
+</ul>
+<hr>
+<h2 id="-quick-reference-table">📋 Quick Reference Table<a hidden class="anchor" aria-hidden="true" href="#-quick-reference-table">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Symbol</th>
+          <th>Meaning</th>
+          <th>Properties</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\lfloor x \rfloor$</td>
+          <td>Floor (integer part)</td>
+          <td>Always an integer</td>
+      </tr>
+      <tr>
+          <td>${x}$</td>
+          <td>Fractional part</td>
+          <td>$0 \leq {x} &lt; 1$</td>
+      </tr>
+      <tr>
+          <td>Identity</td>
+          <td>Relation</td>
+          <td>${x} + \lfloor x \rfloor = x$</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="-standard-moves-in-problem-solving">🛠️ Standard Moves in Problem Solving<a hidden class="anchor" aria-hidden="true" href="#-standard-moves-in-problem-solving">#</a></h2>
+<ol>
+<li>
+<p><strong>Introduce</strong> $x = n + t$</p>
+<ul>
+<li>Let $n = \lfloor x \rfloor$ (integer) and $t = {x}$ with $0 \leq t &lt; 1$.</li>
+</ul>
+</li>
+<li>
+<p><strong>Rewrite every floor</strong></p>
+<ul>
+<li>Example:<br>
+$$\lfloor kx \rfloor = \lfloor k(n+t) \rfloor = kn + \lfloor kt \rfloor.$$</li>
+</ul>
+</li>
+<li>
+<p><strong>Isolate integer vs. fractional parts</strong></p>
+<ul>
+<li>Collect integers together, then analyze the bounded fractional part.</li>
+</ul>
+</li>
+<li>
+<p><strong>Use bounds to finish</strong></p>
+<ul>
+<li>Since $0 \leq t &lt; 1$, $\lfloor kt \rfloor$ has only a few possible values.</li>
+<li>Check these cases to solve.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="-example-amc-style">🧮 Example (AMC-style)<a hidden class="anchor" aria-hidden="true" href="#-example-amc-style">#</a></h2>
+<p><strong>Problem.</strong><br>
+Find $\lfloor x \rfloor$ if</p>
+<p>$$
+\lfloor 3x \rfloor + \lfloor 4x \rfloor = 100.
+$$</p>
+<hr>
+<h3 id="step-1-set-x--n--t">Step 1: Set $x = n + t$<a hidden class="anchor" aria-hidden="true" href="#step-1-set-x--n--t">#</a></h3>
+<p>Let $n = \lfloor x \rfloor$, $t = {x}$, $0 \leq t &lt; 1$.</p>
+<hr>
+<h3 id="step-2-rewrite-floors">Step 2: Rewrite floors<a hidden class="anchor" aria-hidden="true" href="#step-2-rewrite-floors">#</a></h3>
+<p>[
+\begin{aligned}
+\lfloor 3x \rfloor &amp;= 3n + \lfloor 3t \rfloor, \
+\lfloor 4x \rfloor &amp;= 4n + \lfloor 4t \rfloor.
+\end{aligned}
+]</p>
+<p>So:</p>
+<p>$$
+7n + \big(\lfloor 3t \rfloor + \lfloor 4t \rfloor\big) = 100.
+$$</p>
+<hr>
+<h3 id="step-3-possible-values-of-lfloor-3t-rfloor--lfloor-4t-rfloor">Step 3: Possible values of $\lfloor 3t \rfloor + \lfloor 4t \rfloor$<a hidden class="anchor" aria-hidden="true" href="#step-3-possible-values-of-lfloor-3t-rfloor--lfloor-4t-rfloor">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Interval for $t$</th>
+          <th>$\lfloor 3t \rfloor$</th>
+          <th>$\lfloor 4t \rfloor$</th>
+          <th>Sum</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$[0, \tfrac14)$</td>
+          <td>0</td>
+          <td>0</td>
+          <td><strong>0</strong></td>
+      </tr>
+      <tr>
+          <td>$[\tfrac14, \tfrac13)$</td>
+          <td>0</td>
+          <td>1</td>
+          <td><strong>1</strong></td>
+      </tr>
+      <tr>
+          <td>$[\tfrac13, \tfrac12)$</td>
+          <td>1</td>
+          <td>1</td>
+          <td><strong>2</strong></td>
+      </tr>
+      <tr>
+          <td>$[\tfrac12, \tfrac23)$</td>
+          <td>1</td>
+          <td>2</td>
+          <td><strong>3</strong></td>
+      </tr>
+      <tr>
+          <td>$[\tfrac23, \tfrac34)$</td>
+          <td>2</td>
+          <td>2</td>
+          <td><strong>4</strong></td>
+      </tr>
+      <tr>
+          <td>$[\tfrac34, 1)$</td>
+          <td>2</td>
+          <td>3</td>
+          <td><strong>5</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>Thus $S = \lfloor 3t \rfloor + \lfloor 4t \rfloor \in {0,1,2,3,4,5}$.</p>
+<hr>
+<h3 id="step-4-solve-for-n">Step 4: Solve for $n$<a hidden class="anchor" aria-hidden="true" href="#step-4-solve-for-n">#</a></h3>
+<p>Equation: $7n + S = 100$.<br>
+So $7n = 100 - S$ must be divisible by 7.</p>
+<p>Since $100 \equiv 2 \pmod{7}$, we need $S \equiv 2 \pmod{7}$.<br>
+The only valid $S$ is <strong>2</strong>.</p>
+<p>Therefore:</p>
+<p>$$
+7n = 100 - 2 = 98 \quad \Longrightarrow \quad n = 14.
+$$</p>
+<p><strong>Answer:</strong><br>
+$$\lfloor x \rfloor = 14$$ ✅</p>
+<hr>
+<h2 id="-take-away-patterns-to-memorize">📌 Take-away Patterns to Memorize<a hidden class="anchor" aria-hidden="true" href="#-take-away-patterns-to-memorize">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>If you see …</th>
+          <th>Strategy</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>A sum/difference of floors</td>
+          <td>Rewrite as $kn + \lfloor kt \rfloor$ and bound the leftovers.</td>
+      </tr>
+      <tr>
+          <td>A floor plus fractional part</td>
+          <td>Use $\lfloor x \rfloor = x - {x}$ to simplify.</td>
+      </tr>
+      <tr>
+          <td>A nested fractional part like ${kx}$</td>
+          <td>Expand: ${kx} = kx - \lfloor kx \rfloor$.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h1 id="-end-of-floor-functions-reference">✅ End of Floor Functions Reference<a hidden class="anchor" aria-hidden="true" href="#-end-of-floor-functions-reference">#</a></h1>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

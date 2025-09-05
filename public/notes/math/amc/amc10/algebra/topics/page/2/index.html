@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Topic Guides — Algebra Mastery | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Algebra, Topics, Study Guide">
+<meta name="description" content="Comprehensive topic-by-topic guides for algebra concepts with examples and AMC strategies.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/algebra/topics/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/notes/math/amc/amc10/algebra/topics/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/algebra/topics/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/algebra/">Algebra Mastery Guide — AMC 10 &amp; AMC 12</a></div>
+  <h1>
+    Topic Guides — Algebra Mastery
+    <a href="/notes/math/amc/amc10/algebra/topics/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+  <div class="post-description">
+    Comprehensive topic-by-topic guides for algebra concepts with examples and AMC strategies.
+  </div>
+</header>
+<div class="post-content"><h1 id="-topic-guides--algebra-mastery">📖 Topic Guides — Algebra Mastery<a hidden class="anchor" aria-hidden="true" href="#-topic-guides--algebra-mastery">#</a></h1>
+<p>Detailed guides for each algebra topic, organized for systematic study.</p>
+<h2 id="-core-topics-amc10-essential">🎯 Core Topics (AMC10 Essential)<a hidden class="anchor" aria-hidden="true" href="#-core-topics-amc10-essential">#</a></h2>
+<h3 id="-fundamentals">🔢 Fundamentals<a hidden class="anchor" aria-hidden="true" href="#-fundamentals">#</a></h3>
+<ul>
+<li><strong><a href="algebra-basics.md">Algebra Basics</a></strong> — Order of operations, factoring patterns, identities</li>
+<li><strong><a href="linear-equations-and-inequalities.md">Linear Equations &amp; Inequalities</a></strong> — One-variable, interval notation, graph sense</li>
+</ul>
+<h3 id="-quadratic-systems">🎯 Quadratic Systems<a hidden class="anchor" aria-hidden="true" href="#-quadratic-systems">#</a></h3>
+<ul>
+<li><strong><a href="absolute-value-equations-inequalities.md">Absolute Value</a></strong> — Piecewise setup, distance view</li>
+<li><strong><a href="quadratics-and-parabolas.md">Quadratics &amp; Parabolas</a></strong> — Vertex/axis, discriminant, completing square</li>
+</ul>
+<h3 id="-polynomial-theory">🧮 Polynomial Theory<a hidden class="anchor" aria-hidden="true" href="#-polynomial-theory">#</a></h3>
+<ul>
+<li><strong><a href="polynomial-theory.md">Polynomial Theory</a></strong> — Division, remainder/factor theorems, Vieta</li>
+</ul>
+<h3 id="-rational--radical">🔄 Rational &amp; Radical<a hidden class="anchor" aria-hidden="true" href="#-rational--radical">#</a></h3>
+<ul>
+<li><strong><a href="rational-expressions-and-equations.md">Rational Expressions</a></strong> — Domains, asymptote sense, extraneous roots</li>
+<li><strong><a href="radicals-and-exponents.md">Radicals &amp; Exponents</a></strong> — Rational exponents, conjugate/rationalize</li>
+</ul>
+<h3 id="-systems--advanced">🎲 Systems &amp; Advanced<a hidden class="anchor" aria-hidden="true" href="#-systems--advanced">#</a></h3>
+<ul>
+<li><strong><a href="systems-of-equations.md">Systems of Equations</a></strong> — Substitution/elimination, 2×2, 3×3, nonlinear pairs</li>
+<li><strong><a href="inequalities-and-optimization.md">Inequalities &amp; Optimization</a></strong> — Sign charts, AM-GM/Cauchy, bounds</li>
+<li><strong><a href="sequences-and-recursions.md">Sequences &amp; Recursions</a></strong> — Arithmetic/geometric, simple recurrences, telescoping</li>
+</ul>
+<h2 id="-advanced-topics-amc12-extensions">🚀 Advanced Topics (AMC12 Extensions)<a hidden class="anchor" aria-hidden="true" href="#-advanced-topics-amc12-extensions">#</a></h2>
+<h3 id="-advanced-algebra">🧮 Advanced Algebra<a hidden class="anchor" aria-hidden="true" href="#-advanced-algebra">#</a></h3>
+<ul>
+<li><strong><a href="functional-equations-light.md">Functional Equations</a></strong> — Substitutions, symmetry, injective/surjective checks</li>
+<li><strong><a href="exponential-and-log-equations.md">Exponential &amp; Log Equations</a></strong> — Equation/ineq solving, change-of-base</li>
+<li><strong><a href="complex-numbers-light.md">Complex Numbers</a></strong> — Algebra, quadratic roots, Arg basics</li>
+<li><strong><a href="equations-with-parameters.md">Equations with Parameters</a></strong> — Number of solutions via discriminant/degeneracy</li>
+</ul>
+<h2 id="-how-to-use-these-guides">📚 How to Use These Guides<a hidden class="anchor" aria-hidden="true" href="#-how-to-use-these-guides">#</a></h2>
+<h3 id="study-order">Study Order<a hidden class="anchor" aria-hidden="true" href="#study-order">#</a></h3>
+<ol>
+<li><strong>Start with Core Topics</strong> — Master AMC10 essentials first</li>
+<li><strong>Practice Each Topic</strong> — Work through examples and problems</li>
+<li><strong>Connect Topics</strong> — Notice how concepts build on each other</li>
+<li><strong>Add Advanced Topics</strong> — For AMC12 preparation</li>
+</ol>
+<h3 id="each-guide-contains">Each Guide Contains<a hidden class="anchor" aria-hidden="true" href="#each-guide-contains">#</a></h3>
+<ul>
+<li><strong>Key Ideas</strong> — Core concepts explained clearly</li>
+<li><strong>Micro-Examples</strong> — Quick practice problems</li>
+<li><strong>Traps &amp; Fixes</strong> — Common mistakes and how to avoid them</li>
+<li><strong>AMC-Style Examples</strong> — Contest-level worked problems</li>
+<li><strong>Cross-References</strong> — Links to related topics</li>
+</ul>
+<h3 id="study-tips">Study Tips<a hidden class="anchor" aria-hidden="true" href="#study-tips">#</a></h3>
+<ul>
+<li><strong>Read actively</strong> — Don&rsquo;t just skim, work through examples</li>
+<li><strong>Practice immediately</strong> — Try problems as you read</li>
+<li><strong>Make connections</strong> — See how topics relate to each other</li>
+<li><strong>Review regularly</strong> — Come back to reinforce learning</li>
+</ul>
+<h2 id="-quick-reference">⚡ Quick Reference<a hidden class="anchor" aria-hidden="true" href="#-quick-reference">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Topic</th>
+          <th>AMC10</th>
+          <th>AMC12</th>
+          <th>Key Skills</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Algebra Basics</td>
+          <td>✅</td>
+          <td>✅</td>
+          <td>Factoring, identities</td>
+      </tr>
+      <tr>
+          <td>Linear Systems</td>
+          <td>✅</td>
+          <td>✅</td>
+          <td>Solving, graphing</td>
+      </tr>
+      <tr>
+          <td>Quadratics</td>
+          <td>✅</td>
+          <td>✅</td>
+          <td>Formula, vertex, discriminant</td>
+      </tr>
+      <tr>
+          <td>Polynomials</td>
+          <td>🔶</td>
+          <td>✅</td>
+          <td>Vieta, remainder/factor</td>
+      </tr>
+      <tr>
+          <td>Rational</td>
+          <td>🔶</td>
+          <td>✅</td>
+          <td>Domain, extraneous</td>
+      </tr>
+      <tr>
+          <td>Radicals</td>
+          <td>🔶</td>
+          <td>✅</td>
+          <td>Isolate, square, verify</td>
+      </tr>
+      <tr>
+          <td>Systems</td>
+          <td>✅</td>
+          <td>✅</td>
+          <td>Substitution, elimination</td>
+      </tr>
+      <tr>
+          <td>Inequalities</td>
+          <td>🔶</td>
+          <td>✅</td>
+          <td>Sign charts, AM-GM</td>
+      </tr>
+      <tr>
+          <td>Sequences</td>
+          <td>✅</td>
+          <td>✅</td>
+          <td>AP/GP, telescoping</td>
+      </tr>
+      <tr>
+          <td>Functional</td>
+          <td>❌</td>
+          <td>🔶</td>
+          <td>Substitution, symmetry</td>
+      </tr>
+      <tr>
+          <td>Exponentials</td>
+          <td>🔶</td>
+          <td>✅</td>
+          <td>Change of base</td>
+      </tr>
+      <tr>
+          <td>Complex</td>
+          <td>❌</td>
+          <td>🔶</td>
+          <td>Conjugates, modulus</td>
+      </tr>
+      <tr>
+          <td>Parameters</td>
+          <td>🔶</td>
+          <td>✅</td>
+          <td>Discriminant analysis</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<p><em>Start with <a href="algebra-basics.md">Algebra Basics</a> to build your foundation!</em></p>
+
+
+</div>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Functional Equations — Substitutions &amp; Symmetry
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🎯 Functional Equations — Substitutions &amp; Symmetry Essential for AMC12 problems involving unknown functions and their properties.
+🎯 Key Ideas Functional Equations — Equations involving unknown functions, often solved by substitution or exploiting symmetry.
+Substitution Strategy — Replace variables with specific values or expressions to reveal function properties.
+Symmetry — Look for patterns like $f(-x)$, $f(x&#43;a)$, or cyclic relationships.
+📊 Essential Techniques Common Substitutions Type Substitution Purpose Example Zero $x = 0$ Find $f(0)$ $f(x&#43;y) = f(x) &#43; f(y)$ → $f(0) = 0$ Identity $x = y$ Find relationships $f(x&#43;y) = f(x) &#43; f(y)$ → $f(2x) = 2f(x)$ Negative $x = -y$ Exploit symmetry $f(x&#43;y) = f(x) &#43; f(y)$ → $f(0) = f(x) &#43; f(-x)$ Reciprocal $x = \frac{1}{y}$ Find $f(1)$ $f(xy) = f(x) &#43; f(y)$ → $f(1) = 0$ Symmetry Patterns Pattern Recognition Strategy $f(-x)$ Even/odd functions Check if $f(-x) = f(x)$ or $f(-x) = -f(x)$ $f(x&#43;a)$ Periodic functions Look for period $a$ $f(\frac{1}{x})$ Reciprocal symmetry Substitute $x \mapsto \frac{1}{x}$ Cyclic $f(x,y,z) = f(y,z,x)$ Use cyclic substitution 🎯 Micro-Examples Example 1: Find all functions $f: \mathbb{R} \to \mathbb{R}$ such that $f(x&#43;y) = f(x) &#43; f(y)$ for all $x,y \in \mathbb{R}$.
+...</p>
+  </div>
+  <footer class="entry-footer">4 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Functional Equations — Substitutions & Symmetry" href="http://localhost:1313/notes/math/amc/amc10/algebra/topics/functional-equations-light/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Exponential &amp; Log Equations — Change of Base &amp; Growth
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🔢 Exponential &amp; Log Equations — Change of Base &amp; Growth Essential for AMC12 problems involving exponential and logarithmic functions.
+🎯 Key Ideas Exponential Equations — Equations with variables in exponents, solved using logarithms or by expressing both sides with the same base.
+Logarithmic Equations — Equations with logarithms, solved using logarithm properties and change of base.
+Change of Base — $\log_a x = \frac{\log_b x}{\log_b a}$ allows conversion between different logarithm bases.
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Exponential & Log Equations — Change of Base & Growth" href="http://localhost:1313/notes/math/amc/amc10/algebra/topics/exponential-and-log-equations/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Complex Numbers — Algebra &amp; Quadratic Roots
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🧮 Complex Numbers — Algebra &amp; Quadratic Roots Essential for AMC12 problems involving complex numbers and quadratic equations.
+🎯 Key Ideas Complex Numbers — Numbers of the form $a &#43; bi$ where $a, b \in \mathbb{R}$ and $i^2 = -1$.
+Complex Conjugate — For $z = a &#43; bi$, the conjugate is $\overline{z} = a - bi$.
+Quadratic Roots — When discriminant is negative, roots are complex conjugates.
+📊 Essential Concepts Basic Operations Operation Formula Example Addition $(a&#43;bi) &#43; (c&#43;di) = (a&#43;c) &#43; (b&#43;d)i$ $(3&#43;4i) &#43; (1-2i) = 4&#43;2i$ Subtraction $(a&#43;bi) - (c&#43;di) = (a-c) &#43; (b-d)i$ $(3&#43;4i) - (1-2i) = 2&#43;6i$ Multiplication $(a&#43;bi)(c&#43;di) = (ac-bd) &#43; (ad&#43;bc)i$ $(3&#43;4i)(1-2i) = 3-6i&#43;4i-8i^2 = 11-2i$ Division $\frac{a&#43;bi}{c&#43;di} = \frac{(a&#43;bi)(c-di)}{c^2&#43;d^2}$ $\frac{3&#43;4i}{1-2i} = \frac{(3&#43;4i)(1&#43;2i)}{1&#43;4} = \frac{-5&#43;10i}{5} = -1&#43;2i$ Conjugate Properties Property Formula Example Conjugate $\overline{a&#43;bi} = a-bi$ $\overline{3&#43;4i} = 3-4i$ Product $(a&#43;bi)(a-bi) = a^2 &#43; b^2$ $(3&#43;4i)(3-4i) = 9&#43;16 = 25$ Modulus $ a&#43;bi Sum $z &#43; \overline{z} = 2a$ $(3&#43;4i) &#43; (3-4i) = 6$ Quadratic Roots Discriminant Nature of Roots Example $\Delta &gt; 0$ Two real roots $x^2 - 5x &#43; 6 = 0$: $x = 2, 3$ $\Delta = 0$ One real root $x^2 - 4x &#43; 4 = 0$: $x = 2$ $\Delta &lt; 0$ Two complex roots $x^2 &#43; 1 = 0$: $x = \pm i$ 🎯 Micro-Examples Example 1: Simplify $(3&#43;4i)(2-i)$
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Complex Numbers — Algebra & Quadratic Roots" href="http://localhost:1313/notes/math/amc/amc10/algebra/topics/complex-numbers-light/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Equations with Parameters — Solution Counting &amp; Analysis
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🎯 Equations with Parameters — Solution Counting &amp; Analysis Essential for AMC problems involving parameter analysis and solution counting.
+🎯 Key Ideas Parameter Analysis — Studying how the number and nature of solutions depends on parameter values.
+Discriminant Method — Using $\Delta = b^2 - 4ac$ to analyze quadratic equations with parameters.
+Degeneracy Conditions — Special cases where the equation becomes linear or has no solutions.
+📊 Essential Techniques Discriminant Analysis Condition Discriminant Number of Solutions Example Two distinct real roots $\Delta &gt; 0$ 2 $x^2 - 5x &#43; 6 = 0$: $\Delta = 25 - 24 = 1 &gt; 0$ One repeated real root $\Delta = 0$ 1 $x^2 - 4x &#43; 4 = 0$: $\Delta = 16 - 16 = 0$ No real roots $\Delta &lt; 0$ 0 $x^2 &#43; 1 = 0$: $\Delta = 0 - 4 = -4 &lt; 0$ Parameter Sweep Strategy Identify the equation — Usually quadratic in form Calculate discriminant — $\Delta = b^2 - 4ac$ Set up inequality — Based on desired number of solutions Solve for parameter — Find range of parameter values Check boundaries — Verify edge cases 🎯 Micro-Examples Example 1: For what values of $k$ does $x^2 &#43; kx &#43; 1 = 0$ have exactly one real solution?
+...</p>
+  </div>
+  <footer class="entry-footer">4 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Equations with Parameters — Solution Counting & Analysis" href="http://localhost:1313/notes/math/amc/amc10/algebra/topics/equations-with-parameters/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/notes/math/amc/amc10/algebra/topics/">
+      «&nbsp;Prev&nbsp;
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

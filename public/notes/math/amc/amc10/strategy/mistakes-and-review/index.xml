@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Mistakes &amp; Review on Xiaohui Xie&#39;s Site</title>
+    <link>http://localhost:1313/notes/math/amc/amc10/strategy/mistakes-and-review/</link>
+    <description>Recent content in Mistakes &amp; Review on Xiaohui Xie&#39;s Site</description>
+    <generator>Hugo -- 0.149.0</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/notes/math/amc/amc10/strategy/mistakes-and-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LSH Attention: Multiple Hyperplanes and Bucketing</title>
+      <link>http://localhost:1313/notes/ai/ml/lsh-attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/ai/ml/lsh-attention/</guid>
+      <description>Understanding how multiple random hyperplanes create better locality-sensitive hashing for attention mechanisms</description>
+    </item>
+    <item>
+      <title>Self-Attention Approximation Methods</title>
+      <link>http://localhost:1313/notes/ai/ml/self-attention-approx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/ai/ml/self-attention-approx/</guid>
+      <description>Efficient attention mechanisms including kernelization, low-rank approximations, and structured sparsity</description>
+    </item>
+  </channel>
+</rss>

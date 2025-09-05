@@ -2,24 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Expected Value on Xiaohui Xie&#39;s Site</title>
-    <link>https://xhx.github.io/tags/expected-value/</link>
+    <link>http://localhost:1313/tags/expected-value/</link>
     <description>Recent content in Expected Value on Xiaohui Xie&#39;s Site</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
-    <atom:link href="https://xhx.github.io/tags/expected-value/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Expected Value</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/expected-value/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/expected-value/</guid>
-      <description>Linearity of expectation, indicator variables, and expected counts with AMC examples.</description>
-    </item>
-    <item>
-      <title>Expected Counts</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/expected-counts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/expected-counts/</guid>
-      <description>Using indicator variables and linearity of expectation for expected count problems.</description>
-    </item>
+    <atom:link href="http://localhost:1313/tags/expected-value/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

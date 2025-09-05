@@ -2,31 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Concepts on Xiaohui Xie&#39;s Site</title>
-    <link>https://xhx.github.io/tags/concepts/</link>
+    <link>http://localhost:1313/tags/concepts/</link>
     <description>Recent content in Concepts on Xiaohui Xie&#39;s Site</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
-    <atom:link href="https://xhx.github.io/tags/concepts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Concept Atlas</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/concept-atlas/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/01-reference/concept-atlas/</guid>
-      <description>One-paragraph primers on all major counting and probability topics with AMC appearance cues.</description>
-    </item>
-    <item>
-      <title>Concept Atlas</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/concept-atlas/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/concept-atlas/</guid>
-      <description>One-paragraph primers on all major precalculus topics with AMC application notes.</description>
-    </item>
-    <item>
-      <title>Concept Atlas</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/number-theory/reference/concept-atlas/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/number-theory/reference/concept-atlas/</guid>
-      <description>One-paragraph primers for each number theory area with AMC appearance notes.</description>
-    </item>
+    <atom:link href="http://localhost:1313/tags/concepts/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

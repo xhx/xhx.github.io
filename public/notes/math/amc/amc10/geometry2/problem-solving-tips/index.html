@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Problem-Solving Tips | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="amc10, geometry, tips, strategies, problem-solving">
+<meta name="description" content="Essential strategies, techniques, and tips for AMC 10 geometry success">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/geometry2/problem-solving-tips/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/geometry2/problem-solving-tips/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry2/">AMC 10 Geometry Mastery Guide</a></div>
+    <div class="post-meta"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> 
+  <div class="post-content"><!-- # 💡 Problem-Solving Tips -->
+<!-- Essential strategies, techniques, and tips for AMC 10 geometry success. -->
+<h2 id="-pattern-recognition">🔍 Pattern Recognition<a hidden class="anchor" aria-hidden="true" href="#-pattern-recognition">#</a></h2>
+<h3 id="common-patterns-to-look-for">Common Patterns to Look For<a hidden class="anchor" aria-hidden="true" href="#common-patterns-to-look-for">#</a></h3>
+<ul>
+<li><strong>Special triangles</strong> - 30-60-90, 45-45-90, and Pythagorean triples</li>
+<li><strong>Hidden right triangles</strong> in complex diagrams</li>
+<li><strong>Similar triangles</strong> created by altitudes, parallel lines, or angle bisectors</li>
+<li><strong>Cyclic quadrilaterals</strong> - opposite angles sum to 180°</li>
+<li><strong>Power of a point</strong> relationships in circle problems</li>
+<li><strong>Symmetry</strong> - look for reflectional or rotational symmetry</li>
+</ul>
+<h3 id="quick-recognition-techniques">Quick Recognition Techniques<a hidden class="anchor" aria-hidden="true" href="#quick-recognition-techniques">#</a></h3>
+<ul>
+<li><strong>Look for right angles</strong> - Often hidden in complex figures</li>
+<li><strong>Check for parallel lines</strong> - Creates similar triangles</li>
+<li><strong>Identify special angles</strong> - 30°, 45°, 60°, 90°, 120°, 135°, 150°</li>
+<li><strong>Spot Pythagorean triples</strong> - (3,4,5), (5,12,13), (7,24,25), (8,15,17)</li>
+<li><strong>Find cyclic quadrilaterals</strong> - Look for four points on a circle</li>
+</ul>
+<h2 id="-coordinate-geometry-approach">📐 Coordinate Geometry Approach<a hidden class="anchor" aria-hidden="true" href="#-coordinate-geometry-approach">#</a></h2>
+<h3 id="when-to-use-coordinates">When to Use Coordinates<a hidden class="anchor" aria-hidden="true" href="#when-to-use-coordinates">#</a></h3>
+<ul>
+<li><strong>When stuck</strong> - If other methods aren&rsquo;t working</li>
+<li><strong>Complex figures</strong> - Multiple intersecting lines and circles</li>
+<li><strong>Distance problems</strong> - When you need exact measurements</li>
+<li><strong>Angle problems</strong> - When you need precise angle calculations</li>
+<li><strong>Area problems</strong> - When you have vertex coordinates</li>
+</ul>
+<h3 id="coordinate-strategy">Coordinate Strategy<a hidden class="anchor" aria-hidden="true" href="#coordinate-strategy">#</a></h3>
+<ol>
+<li><strong>Choose origin wisely</strong> - Place at a vertex or center of symmetry</li>
+<li><strong>Align axes</strong> - Along lines of symmetry or important lines</li>
+<li><strong>Use simple coordinates</strong> - Avoid fractions when possible</li>
+<li><strong>Check answer choices</strong> - Look for hints about coordinate values</li>
+<li><strong>Apply shoelace formula</strong> - For polygon areas with known vertices</li>
+</ol>
+<h3 id="common-coordinate-setups">Common Coordinate Setups<a hidden class="anchor" aria-hidden="true" href="#common-coordinate-setups">#</a></h3>
+<ul>
+<li><strong>Right triangle</strong>: Place right angle at origin, legs along axes</li>
+<li><strong>Circle</strong>: Center at origin, or use $(x-h)^2 + (y-k)^2 = r^2$</li>
+<li><strong>Regular polygon</strong>: Center at origin, one vertex on positive x-axis</li>
+<li><strong>Parallelogram</strong>: Three vertices at origin and on axes</li>
+</ul>
+<h2 id="-speed-techniques">⚡ Speed Techniques<a hidden class="anchor" aria-hidden="true" href="#-speed-techniques">#</a></h2>
+<h3 id="quick-recognition">Quick Recognition<a hidden class="anchor" aria-hidden="true" href="#quick-recognition">#</a></h3>
+<ol>
+<li><strong>Memorize common values</strong>: $\sin 30° = \frac{1}{2}$, $\cos 45° = \frac{\sqrt{2}}{2}$</li>
+<li><strong>Special angle values</strong>: 30°, 45°, 60°, 90°, 120°, 135°, 150°</li>
+<li><strong>Integer solutions</strong>: AMC problems often have clean, integer answers</li>
+<li><strong>Answer choice analysis</strong>: Look for patterns in the given options</li>
+<li><strong>Estimation</strong>: Round numbers to get approximate answers quickly</li>
+</ol>
+<h3 id="mental-math-shortcuts">Mental Math Shortcuts<a hidden class="anchor" aria-hidden="true" href="#mental-math-shortcuts">#</a></h3>
+<ul>
+<li><strong>$\sqrt{2} \approx 1.414$</strong>, <strong>$\sqrt{3} \approx 1.732$</strong></li>
+<li><strong>$\pi \approx 3.1416$</strong> or <strong>$\frac{22}{7}$</strong> for rough estimates</li>
+<li><strong>Common fractions</strong>: $\frac{1}{3} = 0.333&hellip;$, $\frac{1}{4} = 0.25$, etc.</li>
+<li><strong>Pythagorean triples</strong>: (3,4,5), (5,12,13), (7,24,25), (8,15,17), (9,40,41)</li>
+</ul>
+<h2 id="-problem-solving-workflow">🎯 Problem-Solving Workflow<a hidden class="anchor" aria-hidden="true" href="#-problem-solving-workflow">#</a></h2>
+<h3 id="step-by-step-approach">Step-by-Step Approach<a hidden class="anchor" aria-hidden="true" href="#step-by-step-approach">#</a></h3>
+<ol>
+<li><strong>Read carefully</strong> - Identify what&rsquo;s given and what&rsquo;s asked</li>
+<li><strong>Draw a diagram</strong> - Visual representation reveals relationships</li>
+<li><strong>Look for patterns</strong> - Special triangles, similar figures, cyclic quadrilaterals</li>
+<li><strong>Try coordinate geometry</strong> - When other methods fail</li>
+<li><strong>Check your work</strong> - Verify answer makes sense</li>
+</ol>
+<h3 id="time-management-strategy">Time Management Strategy<a hidden class="anchor" aria-hidden="true" href="#time-management-strategy">#</a></h3>
+<ul>
+<li><strong>Easy problems (1-10)</strong>: 1-2 minutes each</li>
+<li><strong>Medium problems (11-20)</strong>: 2-4 minutes each</li>
+<li><strong>Hard problems (21-25)</strong>: 4-6 minutes each</li>
+<li><strong>Skip if stuck</strong> - Return to difficult problems later</li>
+<li><strong>Use answer choices</strong> - Sometimes you can work backwards</li>
+</ul>
+<h2 id="-difficulty-indicators--problem-types">📊 Difficulty Indicators &amp; Problem Types<a hidden class="anchor" aria-hidden="true" href="#-difficulty-indicators--problem-types">#</a></h2>
+<h3 id="-easy-problems-1-10">🟢 Easy (Problems 1-10)<a hidden class="anchor" aria-hidden="true" href="#-easy-problems-1-10">#</a></h3>
+<ul>
+<li>Basic area/perimeter calculations</li>
+<li>Special right triangles (30-60-90, 45-45-90)</li>
+<li>Simple coordinate geometry</li>
+<li>Basic circle properties</li>
+<li>Elementary similarity</li>
+</ul>
+<h3 id="-medium-problems-11-20">🟡 Medium (Problems 11-20)<a hidden class="anchor" aria-hidden="true" href="#-medium-problems-11-20">#</a></h3>
+<ul>
+<li>Angle chasing with parallel lines</li>
+<li>Power of a point applications</li>
+<li>Similarity in complex diagrams</li>
+<li>3D geometry (surface area, volume)</li>
+<li>Coordinate geometry with circles</li>
+<li>Trigonometry applications</li>
+</ul>
+<h3 id="-hard-problems-21-25">🔴 Hard (Problems 21-25)<a hidden class="anchor" aria-hidden="true" href="#-hard-problems-21-25">#</a></h3>
+<ul>
+<li>Advanced similarity and concurrency</li>
+<li>Complex angle chasing</li>
+<li>Power of a point in difficult configurations</li>
+<li>Advanced coordinate geometry</li>
+<li>Multiple theorem applications</li>
+<li>Construction problems</li>
+</ul>
+<h2 id="-common-mistakes-to-avoid">⚠️ Common Mistakes to Avoid<a hidden class="anchor" aria-hidden="true" href="#-common-mistakes-to-avoid">#</a></h2>
+<h3 id="-conceptual-errors">🔍 Conceptual Errors<a hidden class="anchor" aria-hidden="true" href="#-conceptual-errors">#</a></h3>
+<ul>
+<li><strong>Confusing similarity and congruence</strong> - Similarity requires proportional sides, congruence requires equal sides</li>
+<li><strong>Mixing up inscribed and central angles</strong> - Inscribed angle = $\frac{1}{2}$ × central angle</li>
+<li><strong>Forgetting units</strong> - Always check if answer should be in degrees, radians, or other units</li>
+<li><strong>Sign errors in coordinate geometry</strong> - Double-check positive/negative directions</li>
+</ul>
+<h3 id="-calculation-mistakes">📐 Calculation Mistakes<a hidden class="anchor" aria-hidden="true" href="#-calculation-mistakes">#</a></h3>
+<ul>
+<li><strong>Wrong Pythagorean theorem application</strong> - Only works for right triangles</li>
+<li><strong>Incorrect special triangle ratios</strong> - 30-60-90 is $1:\sqrt{3}:2$, not $1:2:\sqrt{3}$</li>
+<li><strong>Angle measurement confusion</strong> - Radians vs degrees, especially in trigonometry</li>
+<li><strong>Shoelace formula errors</strong> - Remember to take absolute value and divide by 2</li>
+</ul>
+<h3 id="-strategic-errors">🎯 Strategic Errors<a hidden class="anchor" aria-hidden="true" href="#-strategic-errors">#</a></h3>
+<ul>
+<li><strong>Overcomplicating simple problems</strong> - Try basic approaches first</li>
+<li><strong>Not drawing diagrams</strong> - Visual representation is crucial</li>
+<li><strong>Skipping verification</strong> - Check if answer makes geometric sense</li>
+<li><strong>Time management</strong> - Don&rsquo;t spend too long on one problem</li>
+</ul>
+<h2 id="-advanced-strategies">🚀 Advanced Strategies<a hidden class="anchor" aria-hidden="true" href="#-advanced-strategies">#</a></h2>
+<h3 id="multiple-approach-method">Multiple Approach Method<a hidden class="anchor" aria-hidden="true" href="#multiple-approach-method">#</a></h3>
+<ol>
+<li><strong>Try synthetic geometry first</strong> - Look for similar triangles, power of a point</li>
+<li><strong>Switch to coordinates</strong> - If synthetic approach gets complicated</li>
+<li><strong>Use trigonometry</strong> - For angle and side length problems</li>
+<li><strong>Apply advanced theorems</strong> - Ceva&rsquo;s, Menelaus&rsquo;s, Ptolemy&rsquo;s when appropriate</li>
+</ol>
+<h3 id="answer-choice-strategy">Answer Choice Strategy<a hidden class="anchor" aria-hidden="true" href="#answer-choice-strategy">#</a></h3>
+<ul>
+<li><strong>Look for patterns</strong> - Are answers in a specific range?</li>
+<li><strong>Work backwards</strong> - Plug in answer choices to see which works</li>
+<li><strong>Eliminate obviously wrong</strong> - Use estimation to rule out choices</li>
+<li><strong>Check units</strong> - Make sure your answer has the right units</li>
+</ul>
+<h3 id="diagram-drawing-tips">Diagram Drawing Tips<a hidden class="anchor" aria-hidden="true" href="#diagram-drawing-tips">#</a></h3>
+<ul>
+<li><strong>Draw to scale</strong> - Helps with estimation</li>
+<li><strong>Label everything</strong> - Points, angles, lengths</li>
+<li><strong>Use different colors</strong> - For different types of lines</li>
+<li><strong>Draw auxiliary lines</strong> - Altitudes, angle bisectors, parallel lines</li>
+<li><strong>Show right angles</strong> - Mark them clearly</li>
+</ul>
+<h2 id="-final-tips-for-success">💡 Final Tips for Success<a hidden class="anchor" aria-hidden="true" href="#-final-tips-for-success">#</a></h2>
+<ol>
+<li><strong>Practice regularly</strong> - Consistent practice builds pattern recognition</li>
+<li><strong>Time yourself</strong> - Learn to work efficiently under time pressure</li>
+<li><strong>Review mistakes</strong> - Understand why you got problems wrong</li>
+<li><strong>Stay calm</strong> - Don&rsquo;t panic if you don&rsquo;t immediately see the solution</li>
+<li><strong>Use this reference</strong> - Keep it handy during practice and review sessions</li>
+</ol>
+<hr>
+<h2 id="-related-resources">📚 Related Resources<a hidden class="anchor" aria-hidden="true" href="#-related-resources">#</a></h2>
+<ul>
+<li><a href="../essential-formulas">📐 Essential Formulas</a> - Complete formula reference</li>
+<li><a href="../problem-types">🎯 Problem Types</a> - Complete list of essential problem patterns</li>
+<li><a href="../reference-guide">📖 Reference Guide</a> - Comprehensive geometry reference</li>
+<li><a href="../topic-guides">📝 Topic Guides</a> - Detailed coverage of specific topics</li>
+</ul>
+<hr>
+<p><em>Master these problem-solving strategies and you&rsquo;ll be well-equipped to tackle any AMC 10 geometry problem!</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/geometry/">Geometry</a></li>
+      <li><a href="http://localhost:1313/tags/tips/">Tips</a></li>
+      <li><a href="http://localhost:1313/tags/strategies/">Strategies</a></li>
+      <li><a href="http://localhost:1313/tags/problem-solving/">Problem Solving</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

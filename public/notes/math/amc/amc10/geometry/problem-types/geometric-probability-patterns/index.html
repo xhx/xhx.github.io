@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Geometric Probability Patterns | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Geometry, Probability, Random Points, Random Chords, Study Guide">
+<meta name="description" content="Master geometric probability patterns: random chords/points on segments/regions with systematic solution approaches.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/geometry/problem-types/geometric-probability-patterns/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/geometry/problem-types/geometric-probability-patterns/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/">Geometry Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/problem-types/">Problem Types</a></div>
+    <div class="post-meta">3 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-geometric-probability-patterns" aria-label="🎲 Geometric Probability Patterns">🎲 Geometric Probability Patterns</a><ul>
+                        
+                <li>
+                    <a href="#-recognition-cues" aria-label="🎯 Recognition Cues">🎯 Recognition Cues</a><ul>
+                        
+                <li>
+                    <a href="#key-triggers" aria-label="Key Triggers">Key Triggers</a></li>
+                <li>
+                    <a href="#common-setups" aria-label="Common Setups">Common Setups</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-solution-template" aria-label="🧩 Solution Template">🧩 Solution Template</a><ul>
+                        
+                <li>
+                    <a href="#step-1-identify-the-geometric-setup" aria-label="Step 1: Identify the Geometric Setup">Step 1: Identify the Geometric Setup</a></li>
+                <li>
+                    <a href="#step-2-calculate-geometric-measures" aria-label="Step 2: Calculate Geometric Measures">Step 2: Calculate Geometric Measures</a></li>
+                <li>
+                    <a href="#step-3-apply-probability-formula" aria-label="Step 3: Apply Probability Formula">Step 3: Apply Probability Formula</a></li>
+                <li>
+                    <a href="#step-4-verify" aria-label="Step 4: Verify">Step 4: Verify</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-worked-example" aria-label="🔍 Worked Example">🔍 Worked Example</a></li>
+                <li>
+                    <a href="#-common-pitfalls" aria-label="⚠️ Common Pitfalls">⚠️ Common Pitfalls</a></li>
+                <li>
+                    <a href="#-related-patterns" aria-label="🔗 Related Patterns">🔗 Related Patterns</a></li>
+                <li>
+                    <a href="#-quick-reference" aria-label="💡 Quick Reference">💡 Quick Reference</a><ul>
+                        
+                <li>
+                    <a href="#geometric-probability-formulas" aria-label="Geometric Probability Formulas">Geometric Probability Formulas</a></li>
+                <li>
+                    <a href="#common-problem-types" aria-label="Common Problem Types">Common Problem Types</a></li>
+                <li>
+                    <a href="#solution-strategy" aria-label="Solution Strategy">Solution Strategy</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-geometric-probability-patterns">🎲 Geometric Probability Patterns<a hidden class="anchor" aria-hidden="true" href="#-geometric-probability-patterns">#</a></h1>
+<p>Geometric probability problems combine geometry with probability. Master these patterns for efficient problem solving.</p>
+<h2 id="-recognition-cues">🎯 Recognition Cues<a hidden class="anchor" aria-hidden="true" href="#-recognition-cues">#</a></h2>
+<h3 id="key-triggers">Key Triggers<a hidden class="anchor" aria-hidden="true" href="#key-triggers">#</a></h3>
+<ul>
+<li><strong>Random points</strong> - Look for problems involving random points</li>
+<li><strong>Random chords</strong> - Look for problems involving random chords</li>
+<li><strong>Random regions</strong> - Look for problems involving random areas</li>
+<li><strong>Probability</strong> - Look for problems asking for probabilities</li>
+</ul>
+<h3 id="common-setups">Common Setups<a hidden class="anchor" aria-hidden="true" href="#common-setups">#</a></h3>
+<ul>
+<li>Random points on line segments</li>
+<li>Random chords in circles</li>
+<li>Random points in regions</li>
+<li>Random lines through figures</li>
+</ul>
+<h2 id="-solution-template">🧩 Solution Template<a hidden class="anchor" aria-hidden="true" href="#-solution-template">#</a></h2>
+<h3 id="step-1-identify-the-geometric-setup">Step 1: Identify the Geometric Setup<a hidden class="anchor" aria-hidden="true" href="#step-1-identify-the-geometric-setup">#</a></h3>
+<ul>
+<li>Determine the geometric figure involved</li>
+<li>Identify the total geometric measure</li>
+<li>Identify the favorable geometric measure</li>
+</ul>
+<h3 id="step-2-calculate-geometric-measures">Step 2: Calculate Geometric Measures<a hidden class="anchor" aria-hidden="true" href="#step-2-calculate-geometric-measures">#</a></h3>
+<ul>
+<li><strong>Length probability:</strong> Use length ratios</li>
+<li><strong>Area probability:</strong> Use area ratios</li>
+<li><strong>Volume probability:</strong> Use volume ratios</li>
+</ul>
+<h3 id="step-3-apply-probability-formula">Step 3: Apply Probability Formula<a hidden class="anchor" aria-hidden="true" href="#step-3-apply-probability-formula">#</a></h3>
+<ul>
+<li>Use the formula: $P = \frac{\text{Favorable measure}}{\text{Total measure}}$</li>
+<li>Substitute calculated values</li>
+<li>Simplify the fraction</li>
+</ul>
+<h3 id="step-4-verify">Step 4: Verify<a hidden class="anchor" aria-hidden="true" href="#step-4-verify">#</a></h3>
+<ul>
+<li>Check that probability is between 0 and 1</li>
+<li>Ensure all measures are positive</li>
+<li>Verify the final answer</li>
+</ul>
+<h2 id="-worked-example">🔍 Worked Example<a hidden class="anchor" aria-hidden="true" href="#-worked-example">#</a></h2>
+<p><strong>Problem:</strong> A point is chosen randomly inside a square with side length 6. What is the probability that the point is within 2 units of the center?</p>
+<p><strong>Solution:</strong>
+<strong>Step 1:</strong> Identify geometric setup</p>
+<ul>
+<li>Square with side length 6</li>
+<li>Total area = $6^2 = 36$</li>
+<li>Favorable area = circle of radius 2 centered at square center</li>
+</ul>
+<p><strong>Step 2:</strong> Calculate geometric measures</p>
+<ul>
+<li>Total area = 36</li>
+<li>Favorable area = $\pi \cdot 2^2 = 4\pi$</li>
+</ul>
+<p><strong>Step 3:</strong> Apply probability formula</p>
+<ul>
+<li>$P = \frac{4\pi}{36} = \frac{\pi}{9}$</li>
+</ul>
+<p><strong>Step 4:</strong> Verify</p>
+<ul>
+<li>Check that circle fits in square ✓</li>
+<li>Probability is between 0 and 1 ✓</li>
+<li>Answer makes sense ✓</li>
+</ul>
+<p><strong>Answer:</strong> $\frac{\pi}{9}$</p>
+<h2 id="-common-pitfalls">⚠️ Common Pitfalls<a hidden class="anchor" aria-hidden="true" href="#-common-pitfalls">#</a></h2>
+<p><strong>Pitfall:</strong> Wrong geometric measure</p>
+<ul>
+<li><strong>Fix:</strong> Use length for 1D, area for 2D, volume for 3D</li>
+</ul>
+<p><strong>Pitfall:</strong> Forgetting to check if point is in region</p>
+<ul>
+<li><strong>Fix:</strong> Make sure random point satisfies given conditions</li>
+</ul>
+<p><strong>Pitfall:</strong> Wrong probability formula</p>
+<ul>
+<li><strong>Fix:</strong> Always use $\frac{\text{Favorable}}{\text{Total}}$</li>
+</ul>
+<p><strong>Pitfall:</strong> Forgetting units</p>
+<ul>
+<li><strong>Fix:</strong> Make sure units match (length with length, area with area)</li>
+</ul>
+<h2 id="-related-patterns">🔗 Related Patterns<a hidden class="anchor" aria-hidden="true" href="#-related-patterns">#</a></h2>
+<ul>
+<li><a href="coordinate-kill"><strong>Coordinate Kill</strong></a> - Using coordinates in probability</li>
+<li><a href="3d-projections-and-sections"><strong>3D Projections &amp; Sections</strong></a> - 3D probability</li>
+<li><a href="area-ratio-in-triangle"><strong>Area Ratio in Triangle</strong></a> - Using area ratios in probability</li>
+</ul>
+<h2 id="-quick-reference">💡 Quick Reference<a hidden class="anchor" aria-hidden="true" href="#-quick-reference">#</a></h2>
+<h3 id="geometric-probability-formulas">Geometric Probability Formulas<a hidden class="anchor" aria-hidden="true" href="#geometric-probability-formulas">#</a></h3>
+<ul>
+<li><strong>Length:</strong> $P = \frac{\text{Favorable length}}{\text{Total length}}$</li>
+<li><strong>Area:</strong> $P = \frac{\text{Favorable area}}{\text{Total area}}$</li>
+<li><strong>Volume:</strong> $P = \frac{\text{Favorable volume}}{\text{Total volume}}$</li>
+</ul>
+<h3 id="common-problem-types">Common Problem Types<a hidden class="anchor" aria-hidden="true" href="#common-problem-types">#</a></h3>
+<ul>
+<li><strong>Line segments:</strong> Use length ratios</li>
+<li><strong>Circles:</strong> Use area ratios</li>
+<li><strong>Squares/rectangles:</strong> Use area ratios</li>
+<li><strong>Triangles:</strong> Use area ratios</li>
+</ul>
+<h3 id="solution-strategy">Solution Strategy<a hidden class="anchor" aria-hidden="true" href="#solution-strategy">#</a></h3>
+<ul>
+<li><strong>Identify:</strong> Look for geometric probability problems</li>
+<li><strong>Calculate:</strong> Find geometric measures</li>
+<li><strong>Apply:</strong> Use probability formula</li>
+<li><strong>Verify:</strong> Check that answer makes sense</li>
+</ul>
+<hr>
+<p><strong>Next:</strong> <a href="../formulas/">Formulas Overview →</a> | <strong>Prev:</strong> <a href="3d-projections-and-sections">3D Projections &amp; Sections →</a> | <strong>Back to:</strong> <a href="../">Geometry Mastery Guide →</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/geometry/">Geometry</a></li>
+      <li><a href="http://localhost:1313/tags/probability/">Probability</a></li>
+      <li><a href="http://localhost:1313/tags/random-points/">Random Points</a></li>
+      <li><a href="http://localhost:1313/tags/random-chords/">Random Chords</a></li>
+      <li><a href="http://localhost:1313/tags/study-guide/">Study Guide</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Elimination &amp; Guessing Playbook | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Strategy, Elimination, Guessing, Expected Value">
+<meta name="description" content="Strategic elimination techniques and expected value-based guessing decisions for AMC 10/12 contests.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/strategy/playbooks/elimination-and-guessing/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/strategy/playbooks/elimination-and-guessing/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/">AMC 10/12 Contest Strategy &amp; Tactics Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/playbooks/">Strategic Playbooks</a></div>
+    <div class="post-meta">4 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-elimination--guessing-playbook" aria-label="🎲 Elimination &amp; Guessing Playbook">🎲 Elimination &amp; Guessing Playbook</a><ul>
+                        
+                <li>
+                    <a href="#-expected-value-framework" aria-label="🎯 Expected Value Framework">🎯 Expected Value Framework</a><ul>
+                        
+                <li>
+                    <a href="#the-math-behind-guessing" aria-label="The Math Behind Guessing">The Math Behind Guessing</a></li>
+                <li>
+                    <a href="#decision-rule" aria-label="Decision Rule">Decision Rule</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-elimination-techniques" aria-label="🚫 Quick Elimination Techniques">🚫 Quick Elimination Techniques</a><ul>
+                        
+                <li>
+                    <a href="#parity-checks" aria-label="Parity Checks">Parity Checks</a></li>
+                <li>
+                    <a href="#units--dimensions" aria-label="Units &amp; Dimensions">Units &amp; Dimensions</a></li>
+                <li>
+                    <a href="#order-of-magnitude" aria-label="Order of Magnitude">Order of Magnitude</a></li>
+                <li>
+                    <a href="#monotonicity" aria-label="Monotonicity">Monotonicity</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-strategic-guessing-thresholds" aria-label="🎯 Strategic Guessing Thresholds">🎯 Strategic Guessing Thresholds</a><ul>
+                        
+                <li>
+                    <a href="#typical-amc-scoring-s_c--6-s_w--0-s_b--15" aria-label="Typical AMC Scoring ($S_C = 6$, $S_W = 0$, $S_B = 1.5$)">Typical AMC Scoring ($S_C = 6$, $S_W = 0$, $S_B = 1.5$)</a></li>
+                <li>
+                    <a href="#quick-decision-matrix" aria-label="Quick Decision Matrix">Quick Decision Matrix</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-advanced-elimination-strategies" aria-label="🔍 Advanced Elimination Strategies">🔍 Advanced Elimination Strategies</a><ul>
+                        
+                <li>
+                    <a href="#algebraic-elimination" aria-label="Algebraic Elimination">Algebraic Elimination</a></li>
+                <li>
+                    <a href="#geometric-elimination" aria-label="Geometric Elimination">Geometric Elimination</a></li>
+                <li>
+                    <a href="#number-theory-elimination" aria-label="Number Theory Elimination">Number Theory Elimination</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-elimination-checklist" aria-label="⚡ Quick Elimination Checklist">⚡ Quick Elimination Checklist</a><ul>
+                        
+                <li>
+                    <a href="#before-guessing-ask" aria-label="Before Guessing, Ask:">Before Guessing, Ask:</a></li>
+                <li>
+                    <a href="#elimination-priority" aria-label="Elimination Priority:">Elimination Priority:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-problem-specific-strategies" aria-label="🎯 Problem-Specific Strategies">🎯 Problem-Specific Strategies</a><ul>
+                        
+                <li>
+                    <a href="#algebra-problems" aria-label="Algebra Problems">Algebra Problems</a></li>
+                <li>
+                    <a href="#geometry-problems" aria-label="Geometry Problems">Geometry Problems</a></li>
+                <li>
+                    <a href="#number-theory-problems" aria-label="Number Theory Problems">Number Theory Problems</a></li>
+                <li>
+                    <a href="#countingprobability-problems" aria-label="Counting/Probability Problems">Counting/Probability Problems</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-common-elimination-mistakes" aria-label="🚨 Common Elimination Mistakes">🚨 Common Elimination Mistakes</a><ul>
+                        
+                <li>
+                    <a href="#avoid-these-traps" aria-label="Avoid These Traps:">Avoid These Traps:</a></li>
+                <li>
+                    <a href="#red-flags" aria-label="Red Flags:">Red Flags:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-expected-value-calculator" aria-label="📊 Expected Value Calculator">📊 Expected Value Calculator</a><ul>
+                        
+                <li>
+                    <a href="#quick-mental-math" aria-label="Quick Mental Math:">Quick Mental Math:</a></li>
+                <li>
+                    <a href="#decision-tree" aria-label="Decision Tree:">Decision Tree:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-final-tips" aria-label="🎯 Final Tips">🎯 Final Tips</a><ul>
+                        
+                <li>
+                    <a href="#strategic-principles" aria-label="Strategic Principles:">Strategic Principles:</a></li>
+                <li>
+                    <a href="#mental-approach" aria-label="Mental Approach:">Mental Approach:</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-elimination--guessing-playbook">🎲 Elimination &amp; Guessing Playbook<a hidden class="anchor" aria-hidden="true" href="#-elimination--guessing-playbook">#</a></h1>
+<p>Master the art of strategic elimination and expected value-based guessing to maximize your score on difficult problems.</p>
+<h2 id="-expected-value-framework">🎯 Expected Value Framework<a hidden class="anchor" aria-hidden="true" href="#-expected-value-framework">#</a></h2>
+<h3 id="the-math-behind-guessing">The Math Behind Guessing<a hidden class="anchor" aria-hidden="true" href="#the-math-behind-guessing">#</a></h3>
+<p>With $k$ total choices and $e$ eliminations:</p>
+<ul>
+<li><strong>Probability of correct guess</strong>: $\frac{1}{k-e}$</li>
+<li><strong>Probability of wrong guess</strong>: $\frac{k-e-1}{k-e}$</li>
+</ul>
+<p><strong>Expected Value of Guessing:</strong>
+$$\text{EV}_\text{guess} = \frac{1}{k-e} \cdot S_C + \frac{k-e-1}{k-e} \cdot S_W$$</p>
+<p><strong>Expected Value of Blank:</strong>
+$$\text{EV}_\text{blank} = S_B$$</p>
+<h3 id="decision-rule">Decision Rule<a hidden class="anchor" aria-hidden="true" href="#decision-rule">#</a></h3>
+<p><strong>Guess if and only if:</strong> $\text{EV}<em>\text{guess} &gt; \text{EV}</em>\text{blank}$</p>
+<h2 id="-quick-elimination-techniques">🚫 Quick Elimination Techniques<a hidden class="anchor" aria-hidden="true" href="#-quick-elimination-techniques">#</a></h2>
+<h3 id="parity-checks">Parity Checks<a hidden class="anchor" aria-hidden="true" href="#parity-checks">#</a></h3>
+<ul>
+<li><strong>Even/odd</strong>: Check if answer should be even or odd</li>
+<li><strong>Last digit</strong>: Look for patterns in final digits</li>
+<li><strong>Modular arithmetic</strong>: Use small moduli (2, 3, 4, 5)</li>
+</ul>
+<p><strong>Example</strong>: If problem asks for $2n+1$ where $n$ is integer, answer must be odd.</p>
+<h3 id="units--dimensions">Units &amp; Dimensions<a hidden class="anchor" aria-hidden="true" href="#units--dimensions">#</a></h3>
+<ul>
+<li><strong>Length</strong>: Should be positive, reasonable scale</li>
+<li><strong>Area</strong>: Should be positive, units squared</li>
+<li><strong>Volume</strong>: Should be positive, units cubed</li>
+<li><strong>Probability</strong>: Must be between 0 and 1</li>
+</ul>
+<p><strong>Example</strong>: If asking for area, eliminate negative answers immediately.</p>
+<h3 id="order-of-magnitude">Order of Magnitude<a hidden class="anchor" aria-hidden="true" href="#order-of-magnitude">#</a></h3>
+<ul>
+<li><strong>Size bounds</strong>: Is answer too big or too small?</li>
+<li><strong>Reasonable range</strong>: Does answer make sense?</li>
+<li><strong>Extreme values</strong>: Test boundary cases</li>
+</ul>
+<p><strong>Example</strong>: If problem involves small numbers, eliminate very large answers.</p>
+<h3 id="monotonicity">Monotonicity<a hidden class="anchor" aria-hidden="true" href="#monotonicity">#</a></h3>
+<ul>
+<li><strong>Increasing functions</strong>: Larger input → larger output</li>
+<li><strong>Decreasing functions</strong>: Larger input → smaller output</li>
+<li><strong>Symmetry</strong>: Look for symmetric properties</li>
+</ul>
+<p><strong>Example</strong>: If $f(x) = x^2$ and $a &lt; b$, then $f(a) &lt; f(b)$.</p>
+<h2 id="-strategic-guessing-thresholds">🎯 Strategic Guessing Thresholds<a hidden class="anchor" aria-hidden="true" href="#-strategic-guessing-thresholds">#</a></h2>
+<h3 id="typical-amc-scoring-s_c--6-s_w--0-s_b--15">Typical AMC Scoring ($S_C = 6$, $S_W = 0$, $S_B = 1.5$)<a hidden class="anchor" aria-hidden="true" href="#typical-amc-scoring-s_c--6-s_w--0-s_b--15">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Eliminations</th>
+          <th>EV</th>
+          <th>Decision</th>
+          <th>Confidence Level</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>0</td>
+          <td>1.2</td>
+          <td>Don&rsquo;t guess</td>
+          <td>N/A</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>1.5</td>
+          <td>Tie-breaker</td>
+          <td>High confidence only</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>2.0</td>
+          <td><strong>Guess</strong></td>
+          <td>Any confidence</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>3.0</td>
+          <td><strong>Guess</strong></td>
+          <td>Any confidence</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>6.0</td>
+          <td><strong>Guess</strong></td>
+          <td>Any confidence</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="quick-decision-matrix">Quick Decision Matrix<a hidden class="anchor" aria-hidden="true" href="#quick-decision-matrix">#</a></h3>
+<ul>
+<li><strong>No eliminations</strong>: Skip (EV too low)</li>
+<li><strong>1 elimination</strong>: Only if very confident</li>
+<li><strong>2+ eliminations</strong>: Always guess</li>
+<li><strong>3+ eliminations</strong>: Strong guess</li>
+</ul>
+<h2 id="-advanced-elimination-strategies">🔍 Advanced Elimination Strategies<a hidden class="anchor" aria-hidden="true" href="#-advanced-elimination-strategies">#</a></h2>
+<h3 id="algebraic-elimination">Algebraic Elimination<a hidden class="anchor" aria-hidden="true" href="#algebraic-elimination">#</a></h3>
+<ul>
+<li><strong>Substitute values</strong>: Test specific numbers</li>
+<li><strong>Check special cases</strong>: $x = 0, 1, -1$</li>
+<li><strong>Boundary conditions</strong>: Test limits and extremes</li>
+<li><strong>Symmetry</strong>: Look for symmetric properties</li>
+</ul>
+<h3 id="geometric-elimination">Geometric Elimination<a hidden class="anchor" aria-hidden="true" href="#geometric-elimination">#</a></h3>
+<ul>
+<li><strong>Visual inspection</strong>: Does answer look right?</li>
+<li><strong>Scale</strong>: Is the answer the right size?</li>
+<li><strong>Angles</strong>: Are angles reasonable?</li>
+<li><strong>Coordinates</strong>: Do coordinates make sense?</li>
+</ul>
+<h3 id="number-theory-elimination">Number Theory Elimination<a hidden class="anchor" aria-hidden="true" href="#number-theory-elimination">#</a></h3>
+<ul>
+<li><strong>Divisibility</strong>: Check divisibility rules</li>
+<li><strong>Prime factors</strong>: Look for prime patterns</li>
+<li><strong>Modular arithmetic</strong>: Use small moduli</li>
+<li><strong>Digit sums</strong>: Check digit sum properties</li>
+</ul>
+<h2 id="-quick-elimination-checklist">⚡ Quick Elimination Checklist<a hidden class="anchor" aria-hidden="true" href="#-quick-elimination-checklist">#</a></h2>
+<h3 id="before-guessing-ask">Before Guessing, Ask:<a hidden class="anchor" aria-hidden="true" href="#before-guessing-ask">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> Can I eliminate any obviously wrong answers?</li>
+<li><input disabled="" type="checkbox"> Do the units/dimensions make sense?</li>
+<li><input disabled="" type="checkbox"> Is the order of magnitude reasonable?</li>
+<li><input disabled="" type="checkbox"> Does the answer satisfy basic constraints?</li>
+<li><input disabled="" type="checkbox"> Are there any symmetry or pattern clues?</li>
+</ul>
+<h3 id="elimination-priority">Elimination Priority:<a hidden class="anchor" aria-hidden="true" href="#elimination-priority">#</a></h3>
+<ol>
+<li><strong>Units/dimensions</strong> (highest priority)</li>
+<li><strong>Order of magnitude</strong></li>
+<li><strong>Parity/odd-even</strong></li>
+<li><strong>Boundary conditions</strong></li>
+<li><strong>Special cases</strong></li>
+</ol>
+<h2 id="-problem-specific-strategies">🎯 Problem-Specific Strategies<a hidden class="anchor" aria-hidden="true" href="#-problem-specific-strategies">#</a></h2>
+<h3 id="algebra-problems">Algebra Problems<a hidden class="anchor" aria-hidden="true" href="#algebra-problems">#</a></h3>
+<ul>
+<li><strong>Substitute simple values</strong>: $x = 0, 1, -1$</li>
+<li><strong>Check degree</strong>: Polynomial degree should match</li>
+<li><strong>Test symmetry</strong>: Even/odd functions</li>
+<li><strong>Boundary cases</strong>: Test limits</li>
+</ul>
+<h3 id="geometry-problems">Geometry Problems<a hidden class="anchor" aria-hidden="true" href="#geometry-problems">#</a></h3>
+<ul>
+<li><strong>Visual inspection</strong>: Does it look right?</li>
+<li><strong>Scale</strong>: Is it the right size?</li>
+<li><strong>Angles</strong>: Are angles reasonable?</li>
+<li><strong>Coordinates</strong>: Do they make sense?</li>
+</ul>
+<h3 id="number-theory-problems">Number Theory Problems<a hidden class="anchor" aria-hidden="true" href="#number-theory-problems">#</a></h3>
+<ul>
+<li><strong>Divisibility</strong>: Check divisibility rules</li>
+<li><strong>Last digits</strong>: Look for patterns</li>
+<li><strong>Modular arithmetic</strong>: Use small moduli</li>
+<li><strong>Prime factors</strong>: Check prime patterns</li>
+</ul>
+<h3 id="countingprobability-problems">Counting/Probability Problems<a hidden class="anchor" aria-hidden="true" href="#countingprobability-problems">#</a></h3>
+<ul>
+<li><strong>Range check</strong>: Probability between 0 and 1</li>
+<li><strong>Symmetry</strong>: Look for symmetric cases</li>
+<li><strong>Boundary cases</strong>: Test extreme values</li>
+<li><strong>Combinatorial sense</strong>: Does count make sense?</li>
+</ul>
+<h2 id="-common-elimination-mistakes">🚨 Common Elimination Mistakes<a hidden class="anchor" aria-hidden="true" href="#-common-elimination-mistakes">#</a></h2>
+<h3 id="avoid-these-traps">Avoid These Traps:<a hidden class="anchor" aria-hidden="true" href="#avoid-these-traps">#</a></h3>
+<ul>
+<li><strong>Over-elimination</strong>: Don&rsquo;t eliminate too many choices</li>
+<li><strong>Under-elimination</strong>: Don&rsquo;t miss obvious eliminations</li>
+<li><strong>Confirmation bias</strong>: Don&rsquo;t eliminate answers you don&rsquo;t like</li>
+<li><strong>Rushing</strong>: Take time to check eliminations</li>
+</ul>
+<h3 id="red-flags">Red Flags:<a hidden class="anchor" aria-hidden="true" href="#red-flags">#</a></h3>
+<ul>
+<li><strong>Eliminating all choices</strong>: You made an error</li>
+<li><strong>Only one choice left</strong>: Double-check your work</li>
+<li><strong>Eliminating based on complexity</strong>: Don&rsquo;t eliminate &ldquo;too simple&rdquo; answers</li>
+<li><strong>Ignoring units</strong>: Always check units first</li>
+</ul>
+<h2 id="-expected-value-calculator">📊 Expected Value Calculator<a hidden class="anchor" aria-hidden="true" href="#-expected-value-calculator">#</a></h2>
+<h3 id="quick-mental-math">Quick Mental Math:<a hidden class="anchor" aria-hidden="true" href="#quick-mental-math">#</a></h3>
+<ul>
+<li><strong>2 eliminations</strong>: EV = 2.0 (guess)</li>
+<li><strong>3 eliminations</strong>: EV = 3.0 (guess)</li>
+<li><strong>4 eliminations</strong>: EV = 6.0 (strong guess)</li>
+<li><strong>No eliminations</strong>: EV = 1.2 (skip)</li>
+</ul>
+<h3 id="decision-tree">Decision Tree:<a hidden class="anchor" aria-hidden="true" href="#decision-tree">#</a></h3>
+<ol>
+<li><strong>Can I eliminate 2+ choices?</strong> → Guess</li>
+<li><strong>Can I eliminate 1 choice?</strong> → Only if confident</li>
+<li><strong>Can&rsquo;t eliminate any?</strong> → Skip</li>
+</ol>
+<h2 id="-final-tips">🎯 Final Tips<a hidden class="anchor" aria-hidden="true" href="#-final-tips">#</a></h2>
+<h3 id="strategic-principles">Strategic Principles:<a hidden class="anchor" aria-hidden="true" href="#strategic-principles">#</a></h3>
+<ul>
+<li><strong>Elimination first</strong>: Always try to eliminate before guessing</li>
+<li><strong>Expected value</strong>: Use math to make decisions</li>
+<li><strong>Confidence matters</strong>: Factor in your confidence level</li>
+<li><strong>Time management</strong>: Don&rsquo;t spend too long on eliminations</li>
+</ul>
+<h3 id="mental-approach">Mental Approach:<a hidden class="anchor" aria-hidden="true" href="#mental-approach">#</a></h3>
+<ul>
+<li><strong>Stay calm</strong>: Don&rsquo;t panic when stuck</li>
+<li><strong>Be systematic</strong>: Follow elimination checklist</li>
+<li><strong>Trust the math</strong>: Expected value is your friend</li>
+<li><strong>Move on</strong>: Don&rsquo;t get trapped on one problem</li>
+</ul>
+<hr>
+<p><strong>Prev:</strong> <a href="pacing-and-triage">Pacing &amp; Triage</a> | <strong>Next:</strong> <a href="answer-choice-exploitation">Answer Choice Exploitation</a> | <strong>Back to:</strong> <a href="../">Strategy Guide</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/strategy/">Strategy</a></li>
+      <li><a href="http://localhost:1313/tags/elimination/">Elimination</a></li>
+      <li><a href="http://localhost:1313/tags/guessing/">Guessing</a></li>
+      <li><a href="http://localhost:1313/tags/expected-value/">Expected Value</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

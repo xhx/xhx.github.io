@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Absolute Value Casework — Breakpoints &amp; Symmetry | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Algebra, Absolute Value, Casework">
+<meta name="description" content="Master solving absolute value equations using case analysis and symmetry techniques.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/algebra/problem-types/absolute-value-casework/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/algebra/problem-types/absolute-value-casework/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/algebra/">Algebra Mastery Guide — AMC 10 &amp; AMC 12</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/algebra/problem-types/">Problem Types — Pattern Recognition &amp; Templates</a></div>
+    <div class="post-meta">4 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-absolute-value-casework--breakpoints--symmetry" aria-label="🎯 Absolute Value Casework — Breakpoints &amp; Symmetry">🎯 Absolute Value Casework — Breakpoints &amp; Symmetry</a><ul>
+                        
+                <li>
+                    <a href="#-recognition-cues" aria-label="🎯 Recognition Cues">🎯 Recognition Cues</a></li>
+                <li>
+                    <a href="#-template-solutions" aria-label="📚 Template Solutions">📚 Template Solutions</a><ul>
+                        
+                <li>
+                    <a href="#basic-absolute-value-equation" aria-label="Basic Absolute Value Equation">Basic Absolute Value Equation</a></li>
+                <li>
+                    <a href="#multiple-absolute-values" aria-label="Multiple Absolute Values">Multiple Absolute Values</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-worked-examples" aria-label="🎯 Worked Examples">🎯 Worked Examples</a><ul>
+                        
+                <li>
+                    <a href="#example-1-basic-absolute-value" aria-label="Example 1: Basic Absolute Value">Example 1: Basic Absolute Value</a></li>
+                <li>
+                    <a href="#example-2-multiple-absolute-values" aria-label="Example 2: Multiple Absolute Values">Example 2: Multiple Absolute Values</a></li>
+                <li>
+                    <a href="#example-3-absolute-value-inequality" aria-label="Example 3: Absolute Value Inequality">Example 3: Absolute Value Inequality</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-common-pitfalls" aria-label="⚠️ Common Pitfalls">⚠️ Common Pitfalls</a></li>
+                <li>
+                    <a href="#-amc-style-worked-example" aria-label="🎯 AMC-Style Worked Example">🎯 AMC-Style Worked Example</a></li>
+                <li>
+                    <a href="#-related-patterns" aria-label="🔗 Related Patterns">🔗 Related Patterns</a></li>
+                <li>
+                    <a href="#-practice-checklist" aria-label="📝 Practice Checklist">📝 Practice Checklist</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-absolute-value-casework--breakpoints--symmetry">🎯 Absolute Value Casework — Breakpoints &amp; Symmetry<a hidden class="anchor" aria-hidden="true" href="#-absolute-value-casework--breakpoints--symmetry">#</a></h1>
+<p>Essential technique for solving absolute value equations and inequalities.</p>
+<h2 id="-recognition-cues">🎯 Recognition Cues<a hidden class="anchor" aria-hidden="true" href="#-recognition-cues">#</a></h2>
+<ul>
+<li><strong>&ldquo;Solve for $x$&rdquo;</strong> — Equations with absolute value signs</li>
+<li><strong>&ldquo;Find all real solutions&rdquo;</strong> — Absolute value equations often have multiple cases</li>
+<li><strong>$|x|$, $|x-a|$</strong> — Absolute value expressions</li>
+<li><strong>&ldquo;For what values&rdquo;</strong> — Absolute value inequalities</li>
+</ul>
+<h2 id="-template-solutions">📚 Template Solutions<a hidden class="anchor" aria-hidden="true" href="#-template-solutions">#</a></h2>
+<h3 id="basic-absolute-value-equation">Basic Absolute Value Equation<a hidden class="anchor" aria-hidden="true" href="#basic-absolute-value-equation">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Step</th>
+          <th>Action</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>Identify breakpoints</td>
+          <td>$</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>Create cases</td>
+          <td>Case 1: $x \geq 2$; Case 2: $x &lt; 2$</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>Solve each case</td>
+          <td>Case 1: $x-2 = 3$ → $x = 5$; Case 2: $-(x-2) = 3$ → $x = -1$</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>Check solutions</td>
+          <td>$x = 5$: $</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="multiple-absolute-values">Multiple Absolute Values<a hidden class="anchor" aria-hidden="true" href="#multiple-absolute-values">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Step</th>
+          <th>Action</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>Find all breakpoints</td>
+          <td>$</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>Create intervals</td>
+          <td>$x &lt; -2$; $-2 \leq x &lt; 1$; $x \geq 1$</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>Solve each interval</td>
+          <td>Use appropriate signs for each interval</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>Check solutions</td>
+          <td>Verify each solution in original equation</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-worked-examples">🎯 Worked Examples<a hidden class="anchor" aria-hidden="true" href="#-worked-examples">#</a></h2>
+<h3 id="example-1-basic-absolute-value">Example 1: Basic Absolute Value<a hidden class="anchor" aria-hidden="true" href="#example-1-basic-absolute-value">#</a></h3>
+<p><strong>Problem</strong>: Solve $|x-3| = 7$</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li><strong>Breakpoint</strong>: $x = 3$</li>
+<li><strong>Case 1</strong> ($x \geq 3$): $x-3 = 7$ → $x = 10$</li>
+<li><strong>Case 2</strong> ($x &lt; 3$): $-(x-3) = 7$ → $-x+3 = 7$ → $x = -4$</li>
+<li><strong>Check</strong>: $x = 10$: $|10-3| = 7$ ✓; $x = -4$: $|-4-3| = 7$ ✓</li>
+<li><strong>Answer</strong>: $x = 10$ or $x = -4$</li>
+</ol>
+<h3 id="example-2-multiple-absolute-values">Example 2: Multiple Absolute Values<a hidden class="anchor" aria-hidden="true" href="#example-2-multiple-absolute-values">#</a></h3>
+<p><strong>Problem</strong>: Solve $|x-1| + |x+2| = 5$</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li><strong>Breakpoints</strong>: $x = 1$ and $x = -2$</li>
+<li><strong>Create intervals</strong>: $x &lt; -2$; $-2 \leq x &lt; 1$; $x \geq 1$</li>
+<li><strong>Case 1</strong> ($x &lt; -2$): $-(x-1) - (x+2) = 5$ → $-x+1-x-2 = 5$ → $-2x-1 = 5$ → $x = -3$</li>
+<li><strong>Case 2</strong> ($-2 \leq x &lt; 1$): $-(x-1) + (x+2) = 5$ → $-x+1+x+2 = 5$ → $3 = 5$ (no solution)</li>
+<li><strong>Case 3</strong> ($x \geq 1$): $(x-1) + (x+2) = 5$ → $x-1+x+2 = 5$ → $2x+1 = 5$ → $x = 2$</li>
+<li><strong>Check</strong>: $x = -3$: $|-3-1| + |-3+2| = 4 + 1 = 5$ ✓; $x = 2$: $|2-1| + |2+2| = 1 + 4 = 5$ ✓</li>
+<li><strong>Answer</strong>: $x = -3$ or $x = 2$</li>
+</ol>
+<h3 id="example-3-absolute-value-inequality">Example 3: Absolute Value Inequality<a hidden class="anchor" aria-hidden="true" href="#example-3-absolute-value-inequality">#</a></h3>
+<p><strong>Problem</strong>: Solve $|x-2| &lt; 3$</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li><strong>Rewrite as compound inequality</strong>: $-3 &lt; x-2 &lt; 3$</li>
+<li><strong>Add 2 to all parts</strong>: $-3 + 2 &lt; x &lt; 3 + 2$ → $-1 &lt; x &lt; 5$</li>
+<li><strong>Answer</strong>: $x \in (-1, 5)$</li>
+</ol>
+<h2 id="-common-pitfalls">⚠️ Common Pitfalls<a hidden class="anchor" aria-hidden="true" href="#-common-pitfalls">#</a></h2>
+<p><strong>Pitfall</strong>: Incorrect case analysis</p>
+<ul>
+<li><strong>Fix</strong>: Always consider all possible combinations of signs</li>
+<li><strong>Example</strong>: $|x-1| + |x+2|$ has 4 possible sign combinations, not 2</li>
+</ul>
+<p><strong>Pitfall</strong>: Forgetting to check solutions</p>
+<ul>
+<li><strong>Fix</strong>: Always substitute solutions back into original equation</li>
+<li><strong>Example</strong>: $|x-1| + |x+2| = 5$ might have extraneous solutions</li>
+</ul>
+<p><strong>Pitfall</strong>: Incorrect inequality direction</p>
+<ul>
+<li><strong>Fix</strong>: $|x| &lt; a$ means $-a &lt; x &lt; a$ (and), $|x| &gt; a$ means $x &lt; -a$ or $x &gt; a$ (or)</li>
+<li><strong>Example</strong>: $|x| &lt; 2$ is $-2 &lt; x &lt; 2$, not $x &lt; 2$ or $x &gt; -2$</li>
+</ul>
+<h2 id="-amc-style-worked-example">🎯 AMC-Style Worked Example<a hidden class="anchor" aria-hidden="true" href="#-amc-style-worked-example">#</a></h2>
+<p><strong>Problem</strong>: Find all real values of $x$ such that $|x^2 - 4| = 3$.</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li><strong>Set up cases</strong>: $x^2 - 4 = 3$ or $x^2 - 4 = -3$</li>
+<li><strong>Case 1</strong>: $x^2 - 4 = 3$ → $x^2 = 7$ → $x = \pm\sqrt{7}$</li>
+<li><strong>Case 2</strong>: $x^2 - 4 = -3$ → $x^2 = 1$ → $x = \pm 1$</li>
+<li><strong>Check all solutions</strong>:
+<ul>
+<li>$x = \sqrt{7}$: $|(\sqrt{7})^2 - 4| = |7 - 4| = 3$ ✓</li>
+<li>$x = -\sqrt{7}$: $|(-\sqrt{7})^2 - 4| = |7 - 4| = 3$ ✓</li>
+<li>$x = 1$: $|1^2 - 4| = |1 - 4| = 3$ ✓</li>
+<li>$x = -1$: $|(-1)^2 - 4| = |1 - 4| = 3$ ✓</li>
+</ul>
+</li>
+<li><strong>Answer</strong>: $x = \pm\sqrt{7}$ or $x = \pm 1$</li>
+</ol>
+<p><strong>Key insight</strong>: Absolute value equations often lead to multiple cases that must all be checked.</p>
+<h2 id="-related-patterns">🔗 Related Patterns<a hidden class="anchor" aria-hidden="true" href="#-related-patterns">#</a></h2>
+<ul>
+<li><strong>Case Analysis</strong> — Absolute value problems require careful case analysis</li>
+<li><strong>Breakpoints</strong> — Find all values where absolute value arguments equal zero</li>
+<li><strong>Symmetry</strong> — Absolute value expressions often have symmetry</li>
+<li><strong>Inequalities</strong> — Absolute value inequalities use similar techniques</li>
+</ul>
+<h2 id="-practice-checklist">📝 Practice Checklist<a hidden class="anchor" aria-hidden="true" href="#-practice-checklist">#</a></h2>
+<ul>
+<li><input disabled="" type="checkbox"> Master basic absolute value equations</li>
+<li><input disabled="" type="checkbox"> Practice multiple absolute value problems</li>
+<li><input disabled="" type="checkbox"> Learn case analysis technique</li>
+<li><input disabled="" type="checkbox"> Practice absolute value inequalities</li>
+<li><input disabled="" type="checkbox"> Understand breakpoint identification</li>
+<li><input disabled="" type="checkbox"> Work on speed and accuracy</li>
+</ul>
+<hr>
+<p><strong>Next</strong>: <a href="systems-linear-and-nonlinear">Systems Linear &amp; Nonlinear</a> | <strong>Prev</strong>: <a href="radical-equations">Radical Equations</a> | <strong>Back</strong>: <a href="../">Problem Types Overview</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/algebra/">Algebra</a></li>
+      <li><a href="http://localhost:1313/tags/absolute-value/">Absolute Value</a></li>
+      <li><a href="http://localhost:1313/tags/casework/">Casework</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

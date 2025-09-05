@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Diagramming &amp; Markup Playbook | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Strategy, Diagramming, Visual, Organization">
+<meta name="description" content="Visual problem-solving techniques including quick diagrams, labeling, marking givens, and organizing information for complex problems.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/strategy/playbooks/diagramming-and-markup/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/strategy/playbooks/diagramming-and-markup/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/">AMC 10/12 Contest Strategy &amp; Tactics Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/playbooks/">Strategic Playbooks</a></div>
+    <div class="post-meta">5 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-diagramming--markup-playbook" aria-label="📐 Diagramming &amp; Markup Playbook">📐 Diagramming &amp; Markup Playbook</a><ul>
+                        
+                <li>
+                    <a href="#-when-to-diagram" aria-label="🎯 When to Diagram">🎯 When to Diagram</a><ul>
+                        
+                <li>
+                    <a href="#always-diagram" aria-label="Always Diagram:">Always Diagram:</a></li>
+                <li>
+                    <a href="#consider-diagramming" aria-label="Consider Diagramming:">Consider Diagramming:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-diagramming-techniques" aria-label="📏 Quick Diagramming Techniques">📏 Quick Diagramming Techniques</a><ul>
+                        
+                <li>
+                    <a href="#basic-shapes" aria-label="Basic Shapes">Basic Shapes</a></li>
+                <li>
+                    <a href="#labeling-system" aria-label="Labeling System">Labeling System</a></li>
+                <li>
+                    <a href="#marking-givens" aria-label="Marking Givens">Marking Givens</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-geometry-diagramming" aria-label="🔍 Geometry Diagramming">🔍 Geometry Diagramming</a><ul>
+                        
+                <li>
+                    <a href="#triangle-problems" aria-label="Triangle Problems">Triangle Problems</a></li>
+                <li>
+                    <a href="#circle-problems" aria-label="Circle Problems">Circle Problems</a></li>
+                <li>
+                    <a href="#coordinate-problems" aria-label="Coordinate Problems">Coordinate Problems</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-algebra-diagramming" aria-label="📊 Algebra Diagramming">📊 Algebra Diagramming</a><ul>
+                        
+                <li>
+                    <a href="#function-graphs" aria-label="Function Graphs">Function Graphs</a></li>
+                <li>
+                    <a href="#system-of-equations" aria-label="System of Equations">System of Equations</a></li>
+                <li>
+                    <a href="#word-problems" aria-label="Word Problems">Word Problems</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-counting-diagramming" aria-label="🧮 Counting Diagramming">🧮 Counting Diagramming</a><ul>
+                        
+                <li>
+                    <a href="#arrangements" aria-label="Arrangements">Arrangements</a></li>
+                <li>
+                    <a href="#tree-diagrams" aria-label="Tree Diagrams">Tree Diagrams</a></li>
+                <li>
+                    <a href="#venn-diagrams" aria-label="Venn Diagrams">Venn Diagrams</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-markup-strategies" aria-label="⚡ Quick Markup Strategies">⚡ Quick Markup Strategies</a><ul>
+                        
+                <li>
+                    <a href="#problem-analysis" aria-label="Problem Analysis">Problem Analysis</a></li>
+                <li>
+                    <a href="#solution-tracking" aria-label="Solution Tracking">Solution Tracking</a></li>
+                <li>
+                    <a href="#error-prevention" aria-label="Error Prevention">Error Prevention</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-advanced-diagramming" aria-label="🎯 Advanced Diagramming">🎯 Advanced Diagramming</a><ul>
+                        
+                <li>
+                    <a href="#3d-problems" aria-label="3D Problems">3D Problems</a></li>
+                <li>
+                    <a href="#complex-relationships" aria-label="Complex Relationships">Complex Relationships</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-diagramming-checklist" aria-label="📋 Diagramming Checklist">📋 Diagramming Checklist</a><ul>
+                        
+                <li>
+                    <a href="#before-starting" aria-label="Before Starting:">Before Starting:</a></li>
+                <li>
+                    <a href="#while-diagramming" aria-label="While Diagramming:">While Diagramming:</a></li>
+                <li>
+                    <a href="#after-diagramming" aria-label="After Diagramming:">After Diagramming:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-common-diagramming-mistakes" aria-label="🚨 Common Diagramming Mistakes">🚨 Common Diagramming Mistakes</a><ul>
+                        
+                <li>
+                    <a href="#avoid-these-errors" aria-label="Avoid These Errors:">Avoid These Errors:</a></li>
+                <li>
+                    <a href="#red-flags" aria-label="Red Flags:">Red Flags:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-reference" aria-label="📊 Quick Reference">📊 Quick Reference</a><ul>
+                        
+                <li>
+                    <a href="#essential-tools" aria-label="Essential Tools:">Essential Tools:</a></li>
+                <li>
+                    <a href="#notation-system" aria-label="Notation System:">Notation System:</a></li>
+                <li>
+                    <a href="#problem-types" aria-label="Problem Types:">Problem Types:</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-diagramming--markup-playbook">📐 Diagramming &amp; Markup Playbook<a hidden class="anchor" aria-hidden="true" href="#-diagramming--markup-playbook">#</a></h1>
+<p>Transform complex problems into visual representations that make solutions clearer and more accessible. Master the art of quick, effective diagramming.</p>
+<h2 id="-when-to-diagram">🎯 When to Diagram<a hidden class="anchor" aria-hidden="true" href="#-when-to-diagram">#</a></h2>
+<h3 id="always-diagram">Always Diagram:<a hidden class="anchor" aria-hidden="true" href="#always-diagram">#</a></h3>
+<ul>
+<li><strong>Geometry problems</strong>: Any problem with shapes, angles, or spatial relationships</li>
+<li><strong>Word problems</strong>: When visualizing helps understand the scenario</li>
+<li><strong>Complex relationships</strong>: When multiple variables interact</li>
+<li><strong>Coordinate problems</strong>: When working with graphs or coordinates</li>
+</ul>
+<h3 id="consider-diagramming">Consider Diagramming:<a hidden class="anchor" aria-hidden="true" href="#consider-diagramming">#</a></h3>
+<ul>
+<li><strong>Algebra problems</strong>: When substitution or relationships are complex</li>
+<li><strong>Counting problems</strong>: When visualizing arrangements helps</li>
+<li><strong>Number theory</strong>: When patterns or relationships are spatial</li>
+<li><strong>Any problem</strong>: When you feel stuck or confused</li>
+</ul>
+<h2 id="-quick-diagramming-techniques">📏 Quick Diagramming Techniques<a hidden class="anchor" aria-hidden="true" href="#-quick-diagramming-techniques">#</a></h2>
+<h3 id="basic-shapes">Basic Shapes<a hidden class="anchor" aria-hidden="true" href="#basic-shapes">#</a></h3>
+<ul>
+<li><strong>Circles</strong>: Use for circular problems, angles, or cycles</li>
+<li><strong>Rectangles</strong>: For area problems, grids, or rectangular arrangements</li>
+<li><strong>Triangles</strong>: For triangular problems, relationships, or hierarchies</li>
+<li><strong>Lines</strong>: For linear relationships, sequences, or connections</li>
+</ul>
+<h3 id="labeling-system">Labeling System<a hidden class="anchor" aria-hidden="true" href="#labeling-system">#</a></h3>
+<ul>
+<li><strong>Points</strong>: Use capital letters (A, B, C, D)</li>
+<li><strong>Lines</strong>: Use lowercase letters (a, b, c) or two points (AB)</li>
+<li><strong>Angles</strong>: Use three points (∠ABC) or Greek letters (α, β, γ)</li>
+<li><strong>Lengths</strong>: Use lowercase letters or two points with bar (AB̄)</li>
+</ul>
+<h3 id="marking-givens">Marking Givens<a hidden class="anchor" aria-hidden="true" href="#marking-givens">#</a></h3>
+<ul>
+<li><strong>Equal lengths</strong>: Use hash marks (|, ||, |||)</li>
+<li><strong>Equal angles</strong>: Use arcs (⌒, ⌒⌒, ⌒⌒⌒)</li>
+<li><strong>Right angles</strong>: Use square corner (∟)</li>
+<li><strong>Parallel lines</strong>: Use arrows (→, ←)</li>
+<li><strong>Perpendicular lines</strong>: Use right angle symbol (⊥)</li>
+</ul>
+<h2 id="-geometry-diagramming">🔍 Geometry Diagramming<a hidden class="anchor" aria-hidden="true" href="#-geometry-diagramming">#</a></h2>
+<h3 id="triangle-problems">Triangle Problems<a hidden class="anchor" aria-hidden="true" href="#triangle-problems">#</a></h3>
+<ul>
+<li><strong>Draw the triangle</strong>: Use given information</li>
+<li><strong>Mark given angles</strong>: Use arc notation</li>
+<li><strong>Mark given sides</strong>: Use hash marks for equal lengths</li>
+<li><strong>Label vertices</strong>: Use capital letters</li>
+<li><strong>Mark special properties</strong>: Right angles, equal sides, etc.</li>
+</ul>
+<h3 id="circle-problems">Circle Problems<a hidden class="anchor" aria-hidden="true" href="#circle-problems">#</a></h3>
+<ul>
+<li><strong>Draw the circle</strong>: Use given radius or diameter</li>
+<li><strong>Mark center</strong>: Use point O</li>
+<li><strong>Mark points on circle</strong>: Use given information</li>
+<li><strong>Draw chords, tangents, secants</strong>: As needed</li>
+<li><strong>Mark angles</strong>: Central angles, inscribed angles, etc.</li>
+</ul>
+<h3 id="coordinate-problems">Coordinate Problems<a hidden class="anchor" aria-hidden="true" href="#coordinate-problems">#</a></h3>
+<ul>
+<li><strong>Draw axes</strong>: Label x and y axes</li>
+<li><strong>Plot points</strong>: Mark given points</li>
+<li><strong>Draw lines/curves</strong>: As needed</li>
+<li><strong>Mark intersections</strong>: Where lines/curves meet</li>
+<li><strong>Label coordinates</strong>: Write coordinates near points</li>
+</ul>
+<h2 id="-algebra-diagramming">📊 Algebra Diagramming<a hidden class="anchor" aria-hidden="true" href="#-algebra-diagramming">#</a></h2>
+<h3 id="function-graphs">Function Graphs<a hidden class="anchor" aria-hidden="true" href="#function-graphs">#</a></h3>
+<ul>
+<li><strong>Draw axes</strong>: Label x and y axes</li>
+<li><strong>Plot key points</strong>: Intercepts, vertices, etc.</li>
+<li><strong>Draw the curve</strong>: Connect points smoothly</li>
+<li><strong>Mark special points</strong>: Maxima, minima, asymptotes</li>
+<li><strong>Label features</strong>: Domain, range, symmetry</li>
+</ul>
+<h3 id="system-of-equations">System of Equations<a hidden class="anchor" aria-hidden="true" href="#system-of-equations">#</a></h3>
+<ul>
+<li><strong>Draw each equation</strong>: As separate lines/curves</li>
+<li><strong>Mark intersections</strong>: Where solutions occur</li>
+<li><strong>Label solutions</strong>: Write coordinates</li>
+<li><strong>Check solutions</strong>: Verify by substitution</li>
+</ul>
+<h3 id="word-problems">Word Problems<a hidden class="anchor" aria-hidden="true" href="#word-problems">#</a></h3>
+<ul>
+<li><strong>Draw the scenario</strong>: Visualize the situation</li>
+<li><strong>Label variables</strong>: Use letters for unknowns</li>
+<li><strong>Mark relationships</strong>: Show how variables connect</li>
+<li><strong>Write equations</strong>: Based on the diagram</li>
+<li><strong>Solve systematically</strong>: Use the visual aid</li>
+</ul>
+<h2 id="-counting-diagramming">🧮 Counting Diagramming<a hidden class="anchor" aria-hidden="true" href="#-counting-diagramming">#</a></h2>
+<h3 id="arrangements">Arrangements<a hidden class="anchor" aria-hidden="true" href="#arrangements">#</a></h3>
+<ul>
+<li><strong>Draw the arrangement</strong>: Show the structure</li>
+<li><strong>Mark positions</strong>: Number or letter positions</li>
+<li><strong>Show constraints</strong>: Mark restrictions</li>
+<li><strong>Count systematically</strong>: Use the diagram to count</li>
+</ul>
+<h3 id="tree-diagrams">Tree Diagrams<a hidden class="anchor" aria-hidden="true" href="#tree-diagrams">#</a></h3>
+<ul>
+<li><strong>Start with root</strong>: Initial choice</li>
+<li><strong>Branch for each option</strong>: Show all possibilities</li>
+<li><strong>Continue branching</strong>: Until complete</li>
+<li><strong>Count paths</strong>: Number of ways to reach each outcome</li>
+</ul>
+<h3 id="venn-diagrams">Venn Diagrams<a hidden class="anchor" aria-hidden="true" href="#venn-diagrams">#</a></h3>
+<ul>
+<li><strong>Draw circles</strong>: One for each set</li>
+<li><strong>Mark intersections</strong>: Where sets overlap</li>
+<li><strong>Label regions</strong>: Write counts or variables</li>
+<li><strong>Use given information</strong>: Fill in known values</li>
+<li><strong>Solve for unknowns</strong>: Use the diagram</li>
+</ul>
+<h2 id="-quick-markup-strategies">⚡ Quick Markup Strategies<a hidden class="anchor" aria-hidden="true" href="#-quick-markup-strategies">#</a></h2>
+<h3 id="problem-analysis">Problem Analysis<a hidden class="anchor" aria-hidden="true" href="#problem-analysis">#</a></h3>
+<ul>
+<li><strong>Underline key information</strong>: Important facts</li>
+<li><strong>Circle what you&rsquo;re looking for</strong>: The question</li>
+<li><strong>Box given values</strong>: Known quantities</li>
+<li><strong>Mark relationships</strong>: How things connect</li>
+<li><strong>Note constraints</strong>: Limitations or restrictions</li>
+</ul>
+<h3 id="solution-tracking">Solution Tracking<a hidden class="anchor" aria-hidden="true" href="#solution-tracking">#</a></h3>
+<ul>
+<li><strong>Number your steps</strong>: Keep track of progress</li>
+<li><strong>Mark intermediate results</strong>: Don&rsquo;t lose work</li>
+<li><strong>Circle final answers</strong>: Make them easy to find</li>
+<li><strong>Cross out wrong work</strong>: Keep it clean</li>
+<li><strong>Use arrows</strong>: Show direction of logic</li>
+</ul>
+<h3 id="error-prevention">Error Prevention<a hidden class="anchor" aria-hidden="true" href="#error-prevention">#</a></h3>
+<ul>
+<li><strong>Check units</strong>: Mark units on all quantities</li>
+<li><strong>Verify signs</strong>: Mark positive/negative clearly</li>
+<li><strong>Test extreme cases</strong>: Mark boundary values</li>
+<li><strong>Check reasonableness</strong>: Does answer make sense?</li>
+</ul>
+<h2 id="-advanced-diagramming">🎯 Advanced Diagramming<a hidden class="anchor" aria-hidden="true" href="#-advanced-diagramming">#</a></h2>
+<h3 id="3d-problems">3D Problems<a hidden class="anchor" aria-hidden="true" href="#3d-problems">#</a></h3>
+<ul>
+<li><strong>Draw 2D projections</strong>: Show different views</li>
+<li><strong>Use perspective</strong>: Show depth and height</li>
+<li><strong>Mark key points</strong>: Vertices, edges, faces</li>
+<li><strong>Label dimensions</strong>: Length, width, height</li>
+<li><strong>Use cross-sections</strong>: Cut through 3D shapes</li>
+</ul>
+<h3 id="complex-relationships">Complex Relationships<a hidden class="anchor" aria-hidden="true" href="#complex-relationships">#</a></h3>
+<ul>
+<li><strong>Use multiple diagrams</strong>: Different views of same problem</li>
+<li><strong>Show transformations</strong>: How things change</li>
+<li><strong>Mark symmetries</strong>: Equal or similar parts</li>
+<li><strong>Use color coding</strong>: Different colors for different types</li>
+<li><strong>Create legends</strong>: Explain your notation</li>
+</ul>
+<h2 id="-diagramming-checklist">📋 Diagramming Checklist<a hidden class="anchor" aria-hidden="true" href="#-diagramming-checklist">#</a></h2>
+<h3 id="before-starting">Before Starting:<a hidden class="anchor" aria-hidden="true" href="#before-starting">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Read the problem</strong>: Understand what&rsquo;s being asked</li>
+<li><input disabled="" type="checkbox"> <strong>Identify key information</strong>: What&rsquo;s given and what&rsquo;s needed</li>
+<li><input disabled="" type="checkbox"> <strong>Choose diagram type</strong>: What kind of diagram will help?</li>
+<li><input disabled="" type="checkbox"> <strong>Gather materials</strong>: Pencil, eraser, ruler if needed</li>
+<li><input disabled="" type="checkbox"> <strong>Plan the layout</strong>: How will you organize the information?</li>
+</ul>
+<h3 id="while-diagramming">While Diagramming:<a hidden class="anchor" aria-hidden="true" href="#while-diagramming">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Draw accurately</strong>: Use given information precisely</li>
+<li><input disabled="" type="checkbox"> <strong>Label clearly</strong>: Use consistent notation</li>
+<li><input disabled="" type="checkbox"> <strong>Mark relationships</strong>: Show how things connect</li>
+<li><input disabled="" type="checkbox"> <strong>Keep it neat</strong>: Easy to read and understand</li>
+<li><input disabled="" type="checkbox"> <strong>Add details gradually</strong>: Don&rsquo;t overcrowd initially</li>
+</ul>
+<h3 id="after-diagramming">After Diagramming:<a hidden class="anchor" aria-hidden="true" href="#after-diagramming">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Check accuracy</strong>: Does diagram match the problem?</li>
+<li><input disabled="" type="checkbox"> <strong>Verify completeness</strong>: All given information included?</li>
+<li><input disabled="" type="checkbox"> <strong>Test the solution</strong>: Does diagram help solve the problem?</li>
+<li><input disabled="" type="checkbox"> <strong>Clean up</strong>: Erase unnecessary marks</li>
+<li><input disabled="" type="checkbox"> <strong>Double-check</strong>: Final verification</li>
+</ul>
+<h2 id="-common-diagramming-mistakes">🚨 Common Diagramming Mistakes<a hidden class="anchor" aria-hidden="true" href="#-common-diagramming-mistakes">#</a></h2>
+<h3 id="avoid-these-errors">Avoid These Errors:<a hidden class="anchor" aria-hidden="true" href="#avoid-these-errors">#</a></h3>
+<ul>
+<li><strong>Inaccurate drawings</strong>: Not matching given information</li>
+<li><strong>Missing labels</strong>: Hard to follow without labels</li>
+<li><strong>Inconsistent notation</strong>: Confusing to read</li>
+<li><strong>Overcrowding</strong>: Too much information at once</li>
+<li><strong>Skipping steps</strong>: Not showing intermediate work</li>
+</ul>
+<h3 id="red-flags">Red Flags:<a hidden class="anchor" aria-hidden="true" href="#red-flags">#</a></h3>
+<ul>
+<li><strong>Diagram doesn&rsquo;t help</strong>: If it&rsquo;s not useful, try a different approach</li>
+<li><strong>Can&rsquo;t read your own work</strong>: Make it clearer</li>
+<li><strong>Missing key information</strong>: Include all given facts</li>
+<li><strong>Wrong scale</strong>: Make sure proportions are reasonable</li>
+<li><strong>Incomplete solution</strong>: Use diagram to finish the problem</li>
+</ul>
+<h2 id="-quick-reference">📊 Quick Reference<a hidden class="anchor" aria-hidden="true" href="#-quick-reference">#</a></h2>
+<h3 id="essential-tools">Essential Tools:<a hidden class="anchor" aria-hidden="true" href="#essential-tools">#</a></h3>
+<ul>
+<li><strong>Pencil</strong>: For drawing and erasing</li>
+<li><strong>Eraser</strong>: For corrections and cleanup</li>
+<li><strong>Ruler</strong>: For straight lines (if allowed)</li>
+<li><strong>Protractor</strong>: For angles (if allowed)</li>
+<li><strong>Compass</strong>: For circles (if allowed)</li>
+</ul>
+<h3 id="notation-system">Notation System:<a hidden class="anchor" aria-hidden="true" href="#notation-system">#</a></h3>
+<ul>
+<li><strong>Points</strong>: A, B, C, D, &hellip;</li>
+<li><strong>Lines</strong>: AB, CD, or a, b, c, &hellip;</li>
+<li><strong>Angles</strong>: ∠ABC or α, β, γ, &hellip;</li>
+<li><strong>Equal lengths</strong>: |, ||, |||, &hellip;</li>
+<li><strong>Equal angles</strong>: ⌒, ⌒⌒, ⌒⌒⌒, &hellip;</li>
+<li><strong>Right angles</strong>: ∟ or ⊥</li>
+</ul>
+<h3 id="problem-types">Problem Types:<a hidden class="anchor" aria-hidden="true" href="#problem-types">#</a></h3>
+<ul>
+<li><strong>Geometry</strong>: Always diagram</li>
+<li><strong>Word problems</strong>: Often helpful</li>
+<li><strong>Algebra</strong>: When relationships are complex</li>
+<li><strong>Counting</strong>: When visualizing arrangements</li>
+<li><strong>Any problem</strong>: When you feel stuck</li>
+</ul>
+<hr>
+<p><strong>Prev:</strong> <a href="sanity-checks-and-verification">Sanity Checks &amp; Verification</a> | <strong>Next:</strong> <a href="estimation-and-bounds">Estimation &amp; Bounds</a> | <strong>Back to:</strong> <a href="../">Strategy Guide</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/strategy/">Strategy</a></li>
+      <li><a href="http://localhost:1313/tags/diagramming/">Diagramming</a></li>
+      <li><a href="http://localhost:1313/tags/visual/">Visual</a></li>
+      <li><a href="http://localhost:1313/tags/organization/">Organization</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

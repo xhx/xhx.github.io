@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Notation Cheatsheet — Algebra Symbols &amp; Conventions | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Algebra, Notation, Reference">
+<meta name="description" content="Quick reference for algebra notation, symbols, and mathematical conventions used in AMC contests.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/algebra/reference/notation-cheatsheet/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/algebra/reference/notation-cheatsheet/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/algebra/">Algebra Mastery Guide — AMC 10 &amp; AMC 12</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/algebra/reference/">Reference Materials — Algebra Mastery</a></div>
+    <div class="post-meta">4 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-notation-cheatsheet--algebra-symbols--conventions" aria-label="📝 Notation Cheatsheet — Algebra Symbols &amp; Conventions">📝 Notation Cheatsheet — Algebra Symbols &amp; Conventions</a><ul>
+                        
+                <li>
+                    <a href="#-number-systems" aria-label="🔢 Number Systems">🔢 Number Systems</a></li>
+                <li>
+                    <a href="#-intervals--sets" aria-label="📏 Intervals &amp; Sets">📏 Intervals &amp; Sets</a></li>
+                <li>
+                    <a href="#-function-notation" aria-label="🔧 Function Notation">🔧 Function Notation</a></li>
+                <li>
+                    <a href="#-essential-identities" aria-label="⚡ Essential Identities">⚡ Essential Identities</a><ul>
+                        
+                <li>
+                    <a href="#basic-factoring" aria-label="Basic Factoring">Basic Factoring</a></li>
+                <li>
+                    <a href="#vietas-formulas" aria-label="Vieta&rsquo;s Formulas">Vieta&rsquo;s Formulas</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quadratic-essentials" aria-label="🎯 Quadratic Essentials">🎯 Quadratic Essentials</a></li>
+                <li>
+                    <a href="#-series--sequences" aria-label="📊 Series &amp; Sequences">📊 Series &amp; Sequences</a></li>
+                <li>
+                    <a href="#-exponents--logarithms" aria-label="🔢 Exponents &amp; Logarithms">🔢 Exponents &amp; Logarithms</a></li>
+                <li>
+                    <a href="#-complex-numbers" aria-label="🧮 Complex Numbers">🧮 Complex Numbers</a></li>
+                <li>
+                    <a href="#-inequalities" aria-label="⚖️ Inequalities">⚖️ Inequalities</a></li>
+                <li>
+                    <a href="#-common-pitfalls" aria-label="🎯 Common Pitfalls">🎯 Common Pitfalls</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-notation-cheatsheet--algebra-symbols--conventions">📝 Notation Cheatsheet — Algebra Symbols &amp; Conventions<a hidden class="anchor" aria-hidden="true" href="#-notation-cheatsheet--algebra-symbols--conventions">#</a></h1>
+<p>Essential notation reference for AMC algebra problems.</p>
+<h2 id="-number-systems">🔢 Number Systems<a hidden class="anchor" aria-hidden="true" href="#-number-systems">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Symbol</th>
+          <th>Meaning</th>
+          <th>Example</th>
+          <th>Usage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\mathbb{R}$</td>
+          <td>Real numbers</td>
+          <td>$x \in \mathbb{R}$</td>
+          <td>All real values</td>
+      </tr>
+      <tr>
+          <td>$\mathbb{Z}$</td>
+          <td>Integers</td>
+          <td>$n \in \mathbb{Z}$</td>
+          <td>Whole numbers</td>
+      </tr>
+      <tr>
+          <td>$\mathbb{N}$</td>
+          <td>Natural numbers</td>
+          <td>$k \in \mathbb{N}$</td>
+          <td>Positive integers</td>
+      </tr>
+      <tr>
+          <td>$\mathbb{Q}$</td>
+          <td>Rational numbers</td>
+          <td>$\frac{p}{q} \in \mathbb{Q}$</td>
+          <td>Fractions</td>
+      </tr>
+      <tr>
+          <td>$\mathbb{C}$</td>
+          <td>Complex numbers</td>
+          <td>$z \in \mathbb{C}$</td>
+          <td>$a + bi$ form</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-intervals--sets">📏 Intervals &amp; Sets<a hidden class="anchor" aria-hidden="true" href="#-intervals--sets">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Notation</th>
+          <th>Meaning</th>
+          <th>Example</th>
+          <th>Usage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$(a,b)$</td>
+          <td>Open interval</td>
+          <td>$x \in (2,5)$</td>
+          <td>$2 &lt; x &lt; 5$</td>
+      </tr>
+      <tr>
+          <td>$[a,b]$</td>
+          <td>Closed interval</td>
+          <td>$x \in [1,4]$</td>
+          <td>$1 \leq x \leq 4$</td>
+      </tr>
+      <tr>
+          <td>$(a,b]$</td>
+          <td>Half-open</td>
+          <td>$x \in (0,3]$</td>
+          <td>$0 &lt; x \leq 3$</td>
+      </tr>
+      <tr>
+          <td>$[a,b)$</td>
+          <td>Half-open</td>
+          <td>$x \in [2,7)$</td>
+          <td>$2 \leq x &lt; 7$</td>
+      </tr>
+      <tr>
+          <td>$(-\infty, a)$</td>
+          <td>Unbounded</td>
+          <td>$x &lt; a$</td>
+          <td>All $x$ less than $a$</td>
+      </tr>
+      <tr>
+          <td>$(a, \infty)$</td>
+          <td>Unbounded</td>
+          <td>$x &gt; a$</td>
+          <td>All $x$ greater than $a$</td>
+      </tr>
+      <tr>
+          <td>${x : P(x)}$</td>
+          <td>Set builder</td>
+          <td>${x : x^2 &lt; 4}$</td>
+          <td>All $x$ satisfying $P(x)$</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-function-notation">🔧 Function Notation<a hidden class="anchor" aria-hidden="true" href="#-function-notation">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Symbol</th>
+          <th>Meaning</th>
+          <th>Example</th>
+          <th>Usage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$f(x)$</td>
+          <td>Function value</td>
+          <td>$f(3) = 7$</td>
+          <td>Evaluate at $x = 3$</td>
+      </tr>
+      <tr>
+          <td>$f^{-1}(x)$</td>
+          <td>Inverse function</td>
+          <td>$f^{-1}(7) = 3$</td>
+          <td>Undo the function</td>
+      </tr>
+      <tr>
+          <td>$f \circ g$</td>
+          <td>Composition</td>
+          <td>$(f \circ g)(x) = f(g(x))$</td>
+          <td>Apply $g$ then $f$</td>
+      </tr>
+      <tr>
+          <td>$\text{dom}(f)$</td>
+          <td>Domain</td>
+          <td>$\text{dom}(f) = \mathbb{R}$</td>
+          <td>All valid inputs</td>
+      </tr>
+      <tr>
+          <td>$\text{ran}(f)$</td>
+          <td>Range</td>
+          <td>$\text{ran}(f) = [0,\infty)$</td>
+          <td>All possible outputs</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-essential-identities">⚡ Essential Identities<a hidden class="anchor" aria-hidden="true" href="#-essential-identities">#</a></h2>
+<h3 id="basic-factoring">Basic Factoring<a hidden class="anchor" aria-hidden="true" href="#basic-factoring">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Pattern</th>
+          <th>Formula</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Difference of squares</td>
+          <td>$a^2 - b^2 = (a-b)(a+b)$</td>
+          <td>$x^2 - 9 = (x-3)(x+3)$</td>
+      </tr>
+      <tr>
+          <td>Perfect square</td>
+          <td>$(a \pm b)^2 = a^2 \pm 2ab + b^2$</td>
+          <td>$(x+2)^2 = x^2 + 4x + 4$</td>
+      </tr>
+      <tr>
+          <td>Sum of cubes</td>
+          <td>$a^3 + b^3 = (a+b)(a^2-ab+b^2)$</td>
+          <td>$x^3 + 8 = (x+2)(x^2-2x+4)$</td>
+      </tr>
+      <tr>
+          <td>Difference of cubes</td>
+          <td>$a^3 - b^3 = (a-b)(a^2+ab+b^2)$</td>
+          <td>$x^3 - 27 = (x-3)(x^2+3x+9)$</td>
+      </tr>
+      <tr>
+          <td>Sophie Germain</td>
+          <td>$a^4 + 4b^4 = (a^2+2ab+2b^2)(a^2-2ab+2b^2)$</td>
+          <td>$x^4 + 4 = (x^2+2x+2)(x^2-2x+2)$</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="vietas-formulas">Vieta&rsquo;s Formulas<a hidden class="anchor" aria-hidden="true" href="#vietas-formulas">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Degree</th>
+          <th>Sum of Roots</th>
+          <th>Product of Roots</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Quadratic $ax^2+bx+c$</td>
+          <td>$r_1 + r_2 = -\frac{b}{a}$</td>
+          <td>$r_1 \cdot r_2 = \frac{c}{a}$</td>
+      </tr>
+      <tr>
+          <td>Cubic $ax^3+bx^2+cx+d$</td>
+          <td>$r_1 + r_2 + r_3 = -\frac{b}{a}$</td>
+          <td>$r_1 \cdot r_2 \cdot r_3 = -\frac{d}{a}$</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-quadratic-essentials">🎯 Quadratic Essentials<a hidden class="anchor" aria-hidden="true" href="#-quadratic-essentials">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Concept</th>
+          <th>Formula</th>
+          <th>Usage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Quadratic formula</td>
+          <td>$x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$</td>
+          <td>Solve $ax^2+bx+c=0$</td>
+      </tr>
+      <tr>
+          <td>Discriminant</td>
+          <td>$\Delta = b^2 - 4ac$</td>
+          <td>Nature of roots</td>
+      </tr>
+      <tr>
+          <td>Vertex form</td>
+          <td>$y = a(x-h)^2 + k$</td>
+          <td>Vertex at $(h,k)$</td>
+      </tr>
+      <tr>
+          <td>Vertex coordinates</td>
+          <td>$h = -\frac{b}{2a}$, $k = \frac{4ac-b^2}{4a}$</td>
+          <td>From standard form</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-series--sequences">📊 Series &amp; Sequences<a hidden class="anchor" aria-hidden="true" href="#-series--sequences">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Type</th>
+          <th>Formula</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Arithmetic term</td>
+          <td>$a_n = a_1 + (n-1)d$</td>
+          <td>$a_5 = 3 + 4 \cdot 2 = 11$</td>
+      </tr>
+      <tr>
+          <td>Arithmetic sum</td>
+          <td>$S_n = \frac{n}{2}(2a_1 + (n-1)d)$</td>
+          <td>$S_{10} = 5(6 + 9 \cdot 2) = 120$</td>
+      </tr>
+      <tr>
+          <td>Geometric term</td>
+          <td>$a_n = a_1 \cdot r^{n-1}$</td>
+          <td>$a_4 = 2 \cdot 3^3 = 54$</td>
+      </tr>
+      <tr>
+          <td>Geometric sum (finite)</td>
+          <td>$S_n = a_1 \frac{1-r^n}{1-r}$</td>
+          <td>$S_5 = 2 \cdot \frac{1-3^5}{1-3} = 242$</td>
+      </tr>
+      <tr>
+          <td>Geometric sum (infinite)</td>
+          <td>$S_\infty = \frac{a_1}{1-r}$</td>
+          <td>$S_\infty = \frac{3}{1-\frac{1}{2}} = 6$</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-exponents--logarithms">🔢 Exponents &amp; Logarithms<a hidden class="anchor" aria-hidden="true" href="#-exponents--logarithms">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Rule</th>
+          <th>Formula</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Product</td>
+          <td>$a^x \cdot a^y = a^{x+y}$</td>
+          <td>$2^3 \cdot 2^4 = 2^7$</td>
+      </tr>
+      <tr>
+          <td>Power</td>
+          <td>$(a^x)^y = a^{xy}$</td>
+          <td>$(3^2)^3 = 3^6$</td>
+      </tr>
+      <tr>
+          <td>Quotient</td>
+          <td>$\frac{a^x}{a^y} = a^{x-y}$</td>
+          <td>$\frac{5^7}{5^3} = 5^4$</td>
+      </tr>
+      <tr>
+          <td>Log product</td>
+          <td>$\log_a(xy) = \log_a x + \log_a y$</td>
+          <td>$\log_2(8 \cdot 4) = \log_2 8 + \log_2 4$</td>
+      </tr>
+      <tr>
+          <td>Log power</td>
+          <td>$\log_a(x^y) = y \log_a x$</td>
+          <td>$\log_3(9^2) = 2 \log_3 9$</td>
+      </tr>
+      <tr>
+          <td>Change of base</td>
+          <td>$\log_a x = \frac{\log_b x}{\log_b a}$</td>
+          <td>$\log_2 8 = \frac{\log_{10} 8}{\log_{10} 2}$</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-complex-numbers">🧮 Complex Numbers<a hidden class="anchor" aria-hidden="true" href="#-complex-numbers">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Concept</th>
+          <th>Formula</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Imaginary unit</td>
+          <td>$i^2 = -1$</td>
+          <td>$i^3 = -i$</td>
+      </tr>
+      <tr>
+          <td>Complex conjugate</td>
+          <td>$\overline{a+bi} = a-bi$</td>
+          <td>$\overline{3+4i} = 3-4i$</td>
+      </tr>
+      <tr>
+          <td>Modulus</td>
+          <td>$</td>
+          <td>a+bi</td>
+      </tr>
+      <tr>
+          <td>Product with conjugate</td>
+          <td>$(a+bi)(a-bi) = a^2+b^2$</td>
+          <td>$(3+4i)(3-4i) = 25$</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-inequalities">⚖️ Inequalities<a hidden class="anchor" aria-hidden="true" href="#-inequalities">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Symbol</th>
+          <th>Meaning</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$&lt;$</td>
+          <td>Less than</td>
+          <td>$x &lt; 5$</td>
+      </tr>
+      <tr>
+          <td>$\leq$</td>
+          <td>Less than or equal</td>
+          <td>$x \leq 3$</td>
+      </tr>
+      <tr>
+          <td>$&gt;$</td>
+          <td>Greater than</td>
+          <td>$x &gt; -2$</td>
+      </tr>
+      <tr>
+          <td>$\geq$</td>
+          <td>Greater than or equal</td>
+          <td>$x \geq 0$</td>
+      </tr>
+      <tr>
+          <td>$\neq$</td>
+          <td>Not equal</td>
+          <td>$x \neq 1$</td>
+      </tr>
+      <tr>
+          <td>$\approx$</td>
+          <td>Approximately equal</td>
+          <td>$\pi \approx 3.14$</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-common-pitfalls">🎯 Common Pitfalls<a hidden class="anchor" aria-hidden="true" href="#-common-pitfalls">#</a></h2>
+<ul>
+<li><strong>Domain restrictions</strong>: Check denominators $\neq 0$, radicands $\geq 0$</li>
+<li><strong>Sign errors</strong>: Watch negative signs in expansions</li>
+<li><strong>Extraneous solutions</strong>: Always verify after squaring or cross-multiplying</li>
+<li><strong>Interval notation</strong>: Remember $(a,b)$ vs $[a,b]$ distinction</li>
+<li><strong>Function composition</strong>: $(f \circ g)(x) = f(g(x))$, not $f(x) \cdot g(x)$</li>
+</ul>
+<hr>
+<p><strong>Next</strong>: <a href="concept-atlas">Concept Atlas</a> | <strong>Prev</strong>: <a href="scope-map">Scope Map</a> | <strong>Back</strong>: <a href="../">Reference Overview</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/algebra/">Algebra</a></li>
+      <li><a href="http://localhost:1313/tags/notation/">Notation</a></li>
+      <li><a href="http://localhost:1313/tags/reference/">Reference</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

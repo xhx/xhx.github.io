@@ -2,38 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Trigonometry on Xiaohui Xie&#39;s Site</title>
-    <link>https://xhx.github.io/tags/trigonometry/</link>
+    <link>http://localhost:1313/tags/trigonometry/</link>
     <description>Recent content in Trigonometry on Xiaohui Xie&#39;s Site</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
-    <atom:link href="https://xhx.github.io/tags/trigonometry/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Trigonometry Basics</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/trigonometry-basics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/trigonometry-basics/</guid>
-      <description>Unit circle, special angles, and right triangle relationships for AMC trigonometry problems.</description>
-    </item>
-    <item>
-      <title>Trig Identities &amp; Equations</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/trig-identities-and-equations/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/trig-identities-and-equations/</guid>
-      <description>Addition formulas, double/half angles, sum-to-product, and inverse trig functions for AMC problems.</description>
-    </item>
-    <item>
-      <title>Laws of Sines &amp; Cosines</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/laws-of-sines-and-cosines/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/laws-of-sines-and-cosines/</guid>
-      <description>Triangle solving, area calculations, and the ambiguous case for AMC geometry problems.</description>
-    </item>
-    <item>
-      <title>Solving Trig Equations</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/solving-trig-equations/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/solving-trig-equations/</guid>
-      <description>Pattern recognition and solution strategies for trigonometric equations in AMC problems.</description>
-    </item>
+    <atom:link href="http://localhost:1313/tags/trigonometry/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

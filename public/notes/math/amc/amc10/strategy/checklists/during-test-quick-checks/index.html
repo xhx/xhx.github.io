@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>During Test Quick Checks | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Checklist, Verification, Error Prevention">
+<meta name="description" content="Essential 20-second micro-checks to perform before bubbling any answer to prevent careless errors and maintain accuracy.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/strategy/checklists/during-test-quick-checks/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/strategy/checklists/during-test-quick-checks/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/">AMC 10/12 Contest Strategy &amp; Tactics Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/checklists/">Checklists &amp; Protocols</a></div>
+    <div class="post-meta">4 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-during-test-quick-checks" aria-label="⚡ During Test Quick Checks">⚡ During Test Quick Checks</a><ul>
+                        
+                <li>
+                    <a href="#-the-20-second-verification-rule" aria-label="🎯 The 20-Second Verification Rule">🎯 The 20-Second Verification Rule</a><ul>
+                        
+                <li>
+                    <a href="#before-bubbling-any-answer" aria-label="Before Bubbling Any Answer:">Before Bubbling Any Answer:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-verification-techniques" aria-label="🔍 Quick Verification Techniques">🔍 Quick Verification Techniques</a><ul>
+                        
+                <li>
+                    <a href="#plug-back-check-5-seconds" aria-label="Plug-Back Check (5 seconds)">Plug-Back Check (5 seconds)</a></li>
+                <li>
+                    <a href="#units--dimensions-check-3-seconds" aria-label="Units &amp; Dimensions Check (3 seconds)">Units &amp; Dimensions Check (3 seconds)</a></li>
+                <li>
+                    <a href="#constraint-verification-5-seconds" aria-label="Constraint Verification (5 seconds)">Constraint Verification (5 seconds)</a></li>
+                <li>
+                    <a href="#extreme-value-check-4-seconds" aria-label="Extreme Value Check (4 seconds)">Extreme Value Check (4 seconds)</a></li>
+                <li>
+                    <a href="#reasonableness-check-3-seconds" aria-label="Reasonableness Check (3 seconds)">Reasonableness Check (3 seconds)</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-problem-specific-checks" aria-label="⚡ Problem-Specific Checks">⚡ Problem-Specific Checks</a><ul>
+                        
+                <li>
+                    <a href="#algebra-problems" aria-label="Algebra Problems">Algebra Problems</a></li>
+                <li>
+                    <a href="#geometry-problems" aria-label="Geometry Problems">Geometry Problems</a></li>
+                <li>
+                    <a href="#number-theory-problems" aria-label="Number Theory Problems">Number Theory Problems</a></li>
+                <li>
+                    <a href="#countingprobability-problems" aria-label="Counting/Probability Problems">Counting/Probability Problems</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-common-error-types" aria-label="🚨 Common Error Types">🚨 Common Error Types</a><ul>
+                        
+                <li>
+                    <a href="#sign-errors" aria-label="Sign Errors">Sign Errors</a></li>
+                <li>
+                    <a href="#unit-errors" aria-label="Unit Errors">Unit Errors</a></li>
+                <li>
+                    <a href="#calculation-errors" aria-label="Calculation Errors">Calculation Errors</a></li>
+                <li>
+                    <a href="#logic-errors" aria-label="Logic Errors">Logic Errors</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-reference" aria-label="⚡ Quick Reference">⚡ Quick Reference</a><ul>
+                        
+                <li>
+                    <a href="#20-second-checklist" aria-label="20-Second Checklist:">20-Second Checklist:</a></li>
+                <li>
+                    <a href="#red-flag-warnings" aria-label="Red Flag Warnings:">Red Flag Warnings:</a></li>
+                <li>
+                    <a href="#recovery-actions" aria-label="Recovery Actions:">Recovery Actions:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-success-metrics" aria-label="📊 Success Metrics">📊 Success Metrics</a><ul>
+                        
+                <li>
+                    <a href="#accuracy-goals" aria-label="Accuracy Goals:">Accuracy Goals:</a></li>
+                <li>
+                    <a href="#time-goals" aria-label="Time Goals:">Time Goals:</a></li>
+                <li>
+                    <a href="#quality-goals" aria-label="Quality Goals:">Quality Goals:</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-during-test-quick-checks">⚡ During Test Quick Checks<a hidden class="anchor" aria-hidden="true" href="#-during-test-quick-checks">#</a></h1>
+<p>Perform these essential 20-second micro-checks before bubbling any answer to prevent careless errors and maintain high accuracy throughout the contest.</p>
+<h2 id="-the-20-second-verification-rule">🎯 The 20-Second Verification Rule<a hidden class="anchor" aria-hidden="true" href="#-the-20-second-verification-rule">#</a></h2>
+<h3 id="before-bubbling-any-answer">Before Bubbling Any Answer:<a hidden class="anchor" aria-hidden="true" href="#before-bubbling-any-answer">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Plug back</strong>: Substitute answer into original problem</li>
+<li><input disabled="" type="checkbox"> <strong>Check units</strong>: Do the units and dimensions make sense?</li>
+<li><input disabled="" type="checkbox"> <strong>Verify constraints</strong>: Does answer satisfy all given conditions?</li>
+<li><input disabled="" type="checkbox"> <strong>Test extremes</strong>: Does answer work at boundary values?</li>
+<li><input disabled="" type="checkbox"> <strong>Check reasonableness</strong>: Is the answer in the right ballpark?</li>
+</ul>
+<h2 id="-quick-verification-techniques">🔍 Quick Verification Techniques<a hidden class="anchor" aria-hidden="true" href="#-quick-verification-techniques">#</a></h2>
+<h3 id="plug-back-check-5-seconds">Plug-Back Check (5 seconds)<a hidden class="anchor" aria-hidden="true" href="#plug-back-check-5-seconds">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Substitute answer</strong>: Replace variable with your answer</li>
+<li><input disabled="" type="checkbox"> <strong>Simplify</strong>: Work through the calculation</li>
+<li><input disabled="" type="checkbox"> <strong>Check equality</strong>: Does left side equal right side?</li>
+<li><input disabled="" type="checkbox"> <strong>Verify all conditions</strong>: Check all given constraints</li>
+<li><input disabled="" type="checkbox"> <strong>Confirm</strong>: Answer satisfies the problem</li>
+</ul>
+<h3 id="units--dimensions-check-3-seconds">Units &amp; Dimensions Check (3 seconds)<a hidden class="anchor" aria-hidden="true" href="#units--dimensions-check-3-seconds">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Length</strong>: Should be positive, reasonable scale</li>
+<li><input disabled="" type="checkbox"> <strong>Area</strong>: Should be positive, units squared</li>
+<li><input disabled="" type="checkbox"> <strong>Volume</strong>: Should be positive, units cubed</li>
+<li><input disabled="" type="checkbox"> <strong>Probability</strong>: Must be between 0 and 1</li>
+<li><input disabled="" type="checkbox"> <strong>Time</strong>: Should be positive, reasonable duration</li>
+</ul>
+<h3 id="constraint-verification-5-seconds">Constraint Verification (5 seconds)<a hidden class="anchor" aria-hidden="true" href="#constraint-verification-5-seconds">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Domain restrictions</strong>: Does answer satisfy domain?</li>
+<li><input disabled="" type="checkbox"> <strong>Range restrictions</strong>: Does answer satisfy range?</li>
+<li><input disabled="" type="checkbox"> <strong>Inequality constraints</strong>: Does answer satisfy inequalities?</li>
+<li><input disabled="" type="checkbox"> <strong>Integer constraints</strong>: Is answer integer if required?</li>
+<li><input disabled="" type="checkbox"> <strong>Positive constraints</strong>: Is answer positive if required?</li>
+</ul>
+<h3 id="extreme-value-check-4-seconds">Extreme Value Check (4 seconds)<a hidden class="anchor" aria-hidden="true" href="#extreme-value-check-4-seconds">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Boundary cases</strong>: Test at limits and extremes</li>
+<li><input disabled="" type="checkbox"> <strong>Special values</strong>: Test $x = 0, 1, -1$ if applicable</li>
+<li><input disabled="" type="checkbox"> <strong>Large values</strong>: Test with large numbers</li>
+<li><input disabled="" type="checkbox"> <strong>Small values</strong>: Test with small numbers</li>
+<li><input disabled="" type="checkbox"> <strong>Zero cases</strong>: Test when variables equal zero</li>
+</ul>
+<h3 id="reasonableness-check-3-seconds">Reasonableness Check (3 seconds)<a hidden class="anchor" aria-hidden="true" href="#reasonableness-check-3-seconds">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Order of magnitude</strong>: Is answer too big or too small?</li>
+<li><input disabled="" type="checkbox"> <strong>Physical sense</strong>: Does answer make physical sense?</li>
+<li><input disabled="" type="checkbox"> <strong>Mathematical sense</strong>: Does answer make mathematical sense?</li>
+<li><input disabled="" type="checkbox"> <strong>Comparison</strong>: How does it compare to other answers?</li>
+<li><input disabled="" type="checkbox"> <strong>Intuition</strong>: Does it feel right?</li>
+</ul>
+<h2 id="-problem-specific-checks">⚡ Problem-Specific Checks<a hidden class="anchor" aria-hidden="true" href="#-problem-specific-checks">#</a></h2>
+<h3 id="algebra-problems">Algebra Problems<a hidden class="anchor" aria-hidden="true" href="#algebra-problems">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Substitute back</strong>: Plug answer into original equation</li>
+<li><input disabled="" type="checkbox"> <strong>Check all solutions</strong>: Verify each root if multiple</li>
+<li><input disabled="" type="checkbox"> <strong>Test constraints</strong>: Check domain restrictions</li>
+<li><input disabled="" type="checkbox"> <strong>Verify signs</strong>: Check positive/negative requirements</li>
+<li><input disabled="" type="checkbox"> <strong>Check calculations</strong>: Verify arithmetic</li>
+</ul>
+<h3 id="geometry-problems">Geometry Problems<a hidden class="anchor" aria-hidden="true" href="#geometry-problems">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Check dimensions</strong>: Verify units and scale</li>
+<li><input disabled="" type="checkbox"> <strong>Test angles</strong>: Are angles reasonable?</li>
+<li><input disabled="" type="checkbox"> <strong>Verify formulas</strong>: Are you using the right formula?</li>
+<li><input disabled="" type="checkbox"> <strong>Check coordinates</strong>: Do coordinates make sense?</li>
+<li><input disabled="" type="checkbox"> <strong>Test area/volume</strong>: Are areas/volumes positive?</li>
+</ul>
+<h3 id="number-theory-problems">Number Theory Problems<a hidden class="anchor" aria-hidden="true" href="#number-theory-problems">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Check divisibility</strong>: Verify divisibility rules</li>
+<li><input disabled="" type="checkbox"> <strong>Test modular arithmetic</strong>: Check mod calculations</li>
+<li><input disabled="" type="checkbox"> <strong>Verify prime factors</strong>: Check prime factorizations</li>
+<li><input disabled="" type="checkbox"> <strong>Test digit properties</strong>: Check digit sum rules</li>
+<li><input disabled="" type="checkbox"> <strong>Check integer constraints</strong>: Is answer integer?</li>
+</ul>
+<h3 id="countingprobability-problems">Counting/Probability Problems<a hidden class="anchor" aria-hidden="true" href="#countingprobability-problems">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Check range</strong>: Probability between 0 and 1</li>
+<li><input disabled="" type="checkbox"> <strong>Verify counts</strong>: Are counts non-negative integers?</li>
+<li><input disabled="" type="checkbox"> <strong>Test symmetry</strong>: Check symmetric cases</li>
+<li><input disabled="" type="checkbox"> <strong>Verify formulas</strong>: Are you using the right formula?</li>
+<li><input disabled="" type="checkbox"> <strong>Check calculations</strong>: Verify arithmetic</li>
+</ul>
+<h2 id="-common-error-types">🚨 Common Error Types<a hidden class="anchor" aria-hidden="true" href="#-common-error-types">#</a></h2>
+<h3 id="sign-errors">Sign Errors<a hidden class="anchor" aria-hidden="true" href="#sign-errors">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Positive/negative</strong>: Is the sign correct?</li>
+<li><input disabled="" type="checkbox"> <strong>Addition/subtraction</strong>: Check your arithmetic</li>
+<li><input disabled="" type="checkbox"> <strong>Multiplication/division</strong>: Check your operations</li>
+<li><input disabled="" type="checkbox"> <strong>Exponents</strong>: Check positive/negative exponents</li>
+<li><input disabled="" type="checkbox"> <strong>Square roots</strong>: Check positive/negative roots</li>
+</ul>
+<h3 id="unit-errors">Unit Errors<a hidden class="anchor" aria-hidden="true" href="#unit-errors">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Length units</strong>: Are units appropriate?</li>
+<li><input disabled="" type="checkbox"> <strong>Area units</strong>: Are units squared?</li>
+<li><input disabled="" type="checkbox"> <strong>Volume units</strong>: Are units cubed?</li>
+<li><input disabled="" type="checkbox"> <strong>Time units</strong>: Are units appropriate?</li>
+<li><input disabled="" type="checkbox"> <strong>Angle units</strong>: Degrees or radians?</li>
+</ul>
+<h3 id="calculation-errors">Calculation Errors<a hidden class="anchor" aria-hidden="true" href="#calculation-errors">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Arithmetic</strong>: Check addition, subtraction, multiplication, division</li>
+<li><input disabled="" type="checkbox"> <strong>Order of operations</strong>: Follow PEMDAS correctly</li>
+<li><input disabled="" type="checkbox"> <strong>Fractions</strong>: Check numerator and denominator</li>
+<li><input disabled="" type="checkbox"> <strong>Decimals</strong>: Check decimal places</li>
+<li><input disabled="" type="checkbox"> <strong>Percentages</strong>: Check percentage calculations</li>
+</ul>
+<h3 id="logic-errors">Logic Errors<a hidden class="anchor" aria-hidden="true" href="#logic-errors">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Problem understanding</strong>: Did you understand the problem?</li>
+<li><input disabled="" type="checkbox"> <strong>Method selection</strong>: Did you choose the right approach?</li>
+<li><input disabled="" type="checkbox"> <strong>Step sequence</strong>: Are your steps in the right order?</li>
+<li><input disabled="" type="checkbox"> <strong>Conclusion</strong>: Does your conclusion follow from your work?</li>
+<li><input disabled="" type="checkbox"> <strong>Answer format</strong>: Is your answer in the right format?</li>
+</ul>
+<h2 id="-quick-reference">⚡ Quick Reference<a hidden class="anchor" aria-hidden="true" href="#-quick-reference">#</a></h2>
+<h3 id="20-second-checklist">20-Second Checklist:<a hidden class="anchor" aria-hidden="true" href="#20-second-checklist">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Plug back</strong> (5 seconds)</li>
+<li><input disabled="" type="checkbox"> <strong>Check units</strong> (3 seconds)</li>
+<li><input disabled="" type="checkbox"> <strong>Verify constraints</strong> (5 seconds)</li>
+<li><input disabled="" type="checkbox"> <strong>Test extremes</strong> (4 seconds)</li>
+<li><input disabled="" type="checkbox"> <strong>Check reasonableness</strong> (3 seconds)</li>
+</ul>
+<h3 id="red-flag-warnings">Red Flag Warnings:<a hidden class="anchor" aria-hidden="true" href="#red-flag-warnings">#</a></h3>
+<ul>
+<li><strong>Negative area</strong>: Areas can&rsquo;t be negative</li>
+<li><strong>Probability &gt; 1</strong>: Probabilities must be ≤ 1</li>
+<li><strong>Imaginary length</strong>: Lengths must be real</li>
+<li><strong>Zero denominator</strong>: Division by zero is undefined</li>
+<li><strong>Negative count</strong>: Counts must be non-negative</li>
+</ul>
+<h3 id="recovery-actions">Recovery Actions:<a hidden class="anchor" aria-hidden="true" href="#recovery-actions">#</a></h3>
+<ul>
+<li><strong>If answer doesn&rsquo;t work</strong>: Check your calculations</li>
+<li><strong>If units don&rsquo;t match</strong>: Check your formula</li>
+<li><strong>If constraints violated</strong>: Check your work</li>
+<li><strong>If extremes fail</strong>: Check your approach</li>
+<li><strong>If unreasonable</strong>: Re-examine the problem</li>
+</ul>
+<h2 id="-success-metrics">📊 Success Metrics<a hidden class="anchor" aria-hidden="true" href="#-success-metrics">#</a></h2>
+<h3 id="accuracy-goals">Accuracy Goals:<a hidden class="anchor" aria-hidden="true" href="#accuracy-goals">#</a></h3>
+<ul>
+<li><strong>Problems 1-10</strong>: 95%+ accuracy</li>
+<li><strong>Problems 11-15</strong>: 80%+ accuracy</li>
+<li><strong>Problems 16-20</strong>: 60%+ accuracy</li>
+<li><strong>Problems 21-25</strong>: 40%+ accuracy</li>
+</ul>
+<h3 id="time-goals">Time Goals:<a hidden class="anchor" aria-hidden="true" href="#time-goals">#</a></h3>
+<ul>
+<li><strong>Easy problems</strong>: 2-3 minutes each</li>
+<li><strong>Medium problems</strong>: 3-5 minutes each</li>
+<li><strong>Hard problems</strong>: 5-10 minutes each</li>
+<li><strong>Verification</strong>: 20 seconds per answer</li>
+</ul>
+<h3 id="quality-goals">Quality Goals:<a hidden class="anchor" aria-hidden="true" href="#quality-goals">#</a></h3>
+<ul>
+<li><strong>No careless errors</strong>: Check every answer</li>
+<li><strong>Consistent verification</strong>: Use the same process</li>
+<li><strong>High accuracy</strong>: Maintain accuracy throughout</li>
+<li><strong>Efficient process</strong>: Don&rsquo;t waste time on verification</li>
+</ul>
+<hr>
+<p><strong>Prev:</strong> <a href="first-5-minutes">First 5 Minutes</a> | <strong>Next:</strong> <a href="when-stuck-decision-tree">When Stuck Decision Tree</a> | <strong>Back to:</strong> <a href="../">Strategy Guide</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/checklist/">Checklist</a></li>
+      <li><a href="http://localhost:1313/tags/verification/">Verification</a></li>
+      <li><a href="http://localhost:1313/tags/error-prevention/">Error Prevention</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -34,3 +34,5 @@ Essential reference materials for AMC counting and probability problems. Use the
 ---
 
 *Next: [Scope Map](scope-map) → [Notation Cheatsheet](notation-cheatsheet) → [Concept Atlas](concept-atlas)*
+
+**Next**: [Scope Map](scope-map) | **Back**: [Counting & Probability Mastery Guide](../)

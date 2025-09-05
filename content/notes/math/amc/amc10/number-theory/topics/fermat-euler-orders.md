@@ -111,4 +111,4 @@ For last digit problems, work modulo $10$ and use the fact that:
 
 ---
 
-**Previous**: [Pigeonhole in Number Theory](pigeonhole-in-number-theory) | **Next**: [Chinese Remainder Theorem](chinese-remainder-theorem)
+**Previous**: [Pigeonhole in Number Theory](../pigeonhole-in-number-theory) | **Next**: [Chinese Remainder Theorem](../chinese-remainder-theorem)

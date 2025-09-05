@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Geometry Mini-Flashcards | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Geometry, Flashcards, Facts">
+<meta name="description" content="Essential geometric facts, formulas, and relationships for quick reference during AMC 10/12 contests.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/strategy/drills/geometry-mini-flashcards/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/strategy/drills/geometry-mini-flashcards/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/">AMC 10/12 Contest Strategy &amp; Tactics Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/drills/">Skill Drills</a></div>
+    <div class="post-meta">5 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-geometry-mini-flashcards" aria-label="📐 Geometry Mini-Flashcards">📐 Geometry Mini-Flashcards</a><ul>
+                        
+                <li>
+                    <a href="#-essential-angle-facts" aria-label="🎯 Essential Angle Facts">🎯 Essential Angle Facts</a><ul>
+                        
+                <li>
+                    <a href="#parallel-lines" aria-label="Parallel Lines">Parallel Lines</a></li>
+                <li>
+                    <a href="#triangle-angles" aria-label="Triangle Angles">Triangle Angles</a></li>
+                <li>
+                    <a href="#circle-angles" aria-label="Circle Angles">Circle Angles</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-essential-length-formulas" aria-label="🔢 Essential Length Formulas">🔢 Essential Length Formulas</a><ul>
+                        
+                <li>
+                    <a href="#triangle-formulas" aria-label="Triangle Formulas">Triangle Formulas</a></li>
+                <li>
+                    <a href="#special-right-triangles" aria-label="Special Right Triangles">Special Right Triangles</a></li>
+                <li>
+                    <a href="#circle-formulas" aria-label="Circle Formulas">Circle Formulas</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-essential-area-formulas" aria-label="📊 Essential Area Formulas">📊 Essential Area Formulas</a><ul>
+                        
+                <li>
+                    <a href="#basic-shapes" aria-label="Basic Shapes">Basic Shapes</a></li>
+                <li>
+                    <a href="#circle-and-ellipse" aria-label="Circle and Ellipse">Circle and Ellipse</a></li>
+                <li>
+                    <a href="#regular-polygons" aria-label="Regular Polygons">Regular Polygons</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-reference-facts" aria-label="⚡ Quick Reference Facts">⚡ Quick Reference Facts</a><ul>
+                        
+                <li>
+                    <a href="#angle-relationships" aria-label="Angle Relationships">Angle Relationships</a></li>
+                <li>
+                    <a href="#triangle-properties" aria-label="Triangle Properties">Triangle Properties</a></li>
+                <li>
+                    <a href="#circle-properties" aria-label="Circle Properties">Circle Properties</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-practice-drills" aria-label="🎯 Practice Drills">🎯 Practice Drills</a><ul>
+                        
+                <li>
+                    <a href="#5-minute-sprint-angle-facts" aria-label="5-Minute Sprint: Angle Facts">5-Minute Sprint: Angle Facts</a></li>
+                <li>
+                    <a href="#5-minute-sprint-length-formulas" aria-label="5-Minute Sprint: Length Formulas">5-Minute Sprint: Length Formulas</a></li>
+                <li>
+                    <a href="#5-minute-sprint-area-formulas" aria-label="5-Minute Sprint: Area Formulas">5-Minute Sprint: Area Formulas</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-advanced-geometric-facts" aria-label="🔍 Advanced Geometric Facts">🔍 Advanced Geometric Facts</a><ul>
+                        
+                <li>
+                    <a href="#similarity" aria-label="Similarity">Similarity</a></li>
+                <li>
+                    <a href="#power-of-a-point" aria-label="Power of a Point">Power of a Point</a></li>
+                <li>
+                    <a href="#coordinate-geometry" aria-label="Coordinate Geometry">Coordinate Geometry</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-progress-tracking" aria-label="📊 Progress Tracking">📊 Progress Tracking</a><ul>
+                        
+                <li>
+                    <a href="#accuracy-targets" aria-label="Accuracy Targets">Accuracy Targets</a></li>
+                <li>
+                    <a href="#speed-targets" aria-label="Speed Targets">Speed Targets</a></li>
+                <li>
+                    <a href="#weekly-goals" aria-label="Weekly Goals">Weekly Goals</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-reference" aria-label="⚡ Quick Reference">⚡ Quick Reference</a><ul>
+                        
+                <li>
+                    <a href="#essential-angle-facts" aria-label="Essential Angle Facts:">Essential Angle Facts:</a></li>
+                <li>
+                    <a href="#essential-length-formulas" aria-label="Essential Length Formulas:">Essential Length Formulas:</a></li>
+                <li>
+                    <a href="#essential-area-formulas" aria-label="Essential Area Formulas:">Essential Area Formulas:</a></li>
+                <li>
+                    <a href="#practice-schedule" aria-label="Practice Schedule:">Practice Schedule:</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-geometry-mini-flashcards">📐 Geometry Mini-Flashcards<a hidden class="anchor" aria-hidden="true" href="#-geometry-mini-flashcards">#</a></h1>
+<p>Master essential geometric facts and formulas through quick-reference flashcards. These key relationships will help you solve geometry problems efficiently.</p>
+<h2 id="-essential-angle-facts">🎯 Essential Angle Facts<a hidden class="anchor" aria-hidden="true" href="#-essential-angle-facts">#</a></h2>
+<h3 id="parallel-lines">Parallel Lines<a hidden class="anchor" aria-hidden="true" href="#parallel-lines">#</a></h3>
+<ul>
+<li><strong>Corresponding angles</strong>: Equal when lines are parallel</li>
+<li><strong>Alternate interior angles</strong>: Equal when lines are parallel</li>
+<li><strong>Alternate exterior angles</strong>: Equal when lines are parallel</li>
+<li><strong>Same-side interior angles</strong>: Supplementary when lines are parallel</li>
+<li><strong>Same-side exterior angles</strong>: Supplementary when lines are parallel</li>
+</ul>
+<h3 id="triangle-angles">Triangle Angles<a hidden class="anchor" aria-hidden="true" href="#triangle-angles">#</a></h3>
+<ul>
+<li><strong>Sum of angles</strong>: $180°$ in any triangle</li>
+<li><strong>Exterior angle</strong>: Equal to sum of opposite interior angles</li>
+<li><strong>Isosceles triangle</strong>: Base angles equal</li>
+<li><strong>Equilateral triangle</strong>: All angles equal $60°$</li>
+<li><strong>Right triangle</strong>: One angle equals $90°$</li>
+</ul>
+<h3 id="circle-angles">Circle Angles<a hidden class="anchor" aria-hidden="true" href="#circle-angles">#</a></h3>
+<ul>
+<li><strong>Central angle</strong>: Angle with vertex at center</li>
+<li><strong>Inscribed angle</strong>: Angle with vertex on circle</li>
+<li><strong>Inscribed angle theorem</strong>: Inscribed angle = half central angle</li>
+<li><strong>Thales&rsquo; theorem</strong>: Angle inscribed in semicircle is right angle</li>
+<li><strong>Cyclic quadrilateral</strong>: Opposite angles sum to $180°$</li>
+</ul>
+<h2 id="-essential-length-formulas">🔢 Essential Length Formulas<a hidden class="anchor" aria-hidden="true" href="#-essential-length-formulas">#</a></h2>
+<h3 id="triangle-formulas">Triangle Formulas<a hidden class="anchor" aria-hidden="true" href="#triangle-formulas">#</a></h3>
+<ul>
+<li><strong>Pythagorean theorem</strong>: $a^2 + b^2 = c^2$ (right triangle)</li>
+<li><strong>Area</strong>: $A = \frac{1}{2}bh$ or $A = \frac{1}{2}ab\sin C$</li>
+<li><strong>Semi-perimeter</strong>: $s = \frac{a + b + c}{2}$</li>
+<li><strong>Heron&rsquo;s formula</strong>: $A = \sqrt{s(s-a)(s-b)(s-c)}$</li>
+</ul>
+<h3 id="special-right-triangles">Special Right Triangles<a hidden class="anchor" aria-hidden="true" href="#special-right-triangles">#</a></h3>
+<ul>
+<li><strong>30-60-90</strong>: Sides in ratio $1 : \sqrt{3} : 2$</li>
+<li><strong>45-45-90</strong>: Sides in ratio $1 : 1 : \sqrt{2}$</li>
+<li><strong>3-4-5</strong>: Pythagorean triple</li>
+<li><strong>5-12-13</strong>: Pythagorean triple</li>
+<li><strong>8-15-17</strong>: Pythagorean triple</li>
+</ul>
+<h3 id="circle-formulas">Circle Formulas<a hidden class="anchor" aria-hidden="true" href="#circle-formulas">#</a></h3>
+<ul>
+<li><strong>Circumference</strong>: $C = 2\pi r = \pi d$</li>
+<li><strong>Area</strong>: $A = \pi r^2$</li>
+<li><strong>Arc length</strong>: $s = r\theta$ (where $\theta$ is in radians)</li>
+<li><strong>Sector area</strong>: $A = \frac{1}{2}r^2\theta$ (where $\theta$ is in radians)</li>
+</ul>
+<h2 id="-essential-area-formulas">📊 Essential Area Formulas<a hidden class="anchor" aria-hidden="true" href="#-essential-area-formulas">#</a></h2>
+<h3 id="basic-shapes">Basic Shapes<a hidden class="anchor" aria-hidden="true" href="#basic-shapes">#</a></h3>
+<ul>
+<li><strong>Rectangle</strong>: $A = lw$</li>
+<li><strong>Square</strong>: $A = s^2$</li>
+<li><strong>Parallelogram</strong>: $A = bh$</li>
+<li><strong>Trapezoid</strong>: $A = \frac{1}{2}h(b_1 + b_2)$</li>
+<li><strong>Triangle</strong>: $A = \frac{1}{2}bh$</li>
+</ul>
+<h3 id="circle-and-ellipse">Circle and Ellipse<a hidden class="anchor" aria-hidden="true" href="#circle-and-ellipse">#</a></h3>
+<ul>
+<li><strong>Circle</strong>: $A = \pi r^2$</li>
+<li><strong>Ellipse</strong>: $A = \pi ab$ (where $a$ and $b$ are semi-axes)</li>
+<li><strong>Sector</strong>: $A = \frac{1}{2}r^2\theta$ (where $\theta$ is in radians)</li>
+<li><strong>Segment</strong>: $A = \frac{1}{2}r^2(\theta - \sin\theta)$ (where $\theta$ is in radians)</li>
+</ul>
+<h3 id="regular-polygons">Regular Polygons<a hidden class="anchor" aria-hidden="true" href="#regular-polygons">#</a></h3>
+<ul>
+<li><strong>Regular $n$-gon</strong>: $A = \frac{1}{2}ap$ (where $a$ is apothem, $p$ is perimeter)</li>
+<li><strong>Regular triangle</strong>: $A = \frac{\sqrt{3}}{4}s^2$</li>
+<li><strong>Regular square</strong>: $A = s^2$</li>
+<li><strong>Regular pentagon</strong>: $A = \frac{1}{4}\sqrt{25 + 10\sqrt{5}}s^2$</li>
+<li><strong>Regular hexagon</strong>: $A = \frac{3\sqrt{3}}{2}s^2$</li>
+</ul>
+<h2 id="-quick-reference-facts">⚡ Quick Reference Facts<a hidden class="anchor" aria-hidden="true" href="#-quick-reference-facts">#</a></h2>
+<h3 id="angle-relationships">Angle Relationships<a hidden class="anchor" aria-hidden="true" href="#angle-relationships">#</a></h3>
+<ul>
+<li><strong>Complementary angles</strong>: Sum to $90°$</li>
+<li><strong>Supplementary angles</strong>: Sum to $180°$</li>
+<li><strong>Vertical angles</strong>: Equal</li>
+<li><strong>Adjacent angles</strong>: Share a common side</li>
+<li><strong>Linear pair</strong>: Adjacent and supplementary</li>
+</ul>
+<h3 id="triangle-properties">Triangle Properties<a hidden class="anchor" aria-hidden="true" href="#triangle-properties">#</a></h3>
+<ul>
+<li><strong>Scalene</strong>: All sides different lengths</li>
+<li><strong>Isosceles</strong>: Two sides equal</li>
+<li><strong>Equilateral</strong>: All sides equal</li>
+<li><strong>Right</strong>: One angle equals $90°$</li>
+<li><strong>Acute</strong>: All angles less than $90°$</li>
+<li><strong>Obtuse</strong>: One angle greater than $90°$</li>
+</ul>
+<h3 id="circle-properties">Circle Properties<a hidden class="anchor" aria-hidden="true" href="#circle-properties">#</a></h3>
+<ul>
+<li><strong>Radius</strong>: Distance from center to edge</li>
+<li><strong>Diameter</strong>: Distance across circle through center</li>
+<li><strong>Chord</strong>: Line segment connecting two points on circle</li>
+<li><strong>Tangent</strong>: Line touching circle at exactly one point</li>
+<li><strong>Secant</strong>: Line intersecting circle at two points</li>
+</ul>
+<h2 id="-practice-drills">🎯 Practice Drills<a hidden class="anchor" aria-hidden="true" href="#-practice-drills">#</a></h2>
+<h3 id="5-minute-sprint-angle-facts">5-Minute Sprint: Angle Facts<a hidden class="anchor" aria-hidden="true" href="#5-minute-sprint-angle-facts">#</a></h3>
+<p><strong>Target</strong>: 20 problems in 5 minutes (95%+ accuracy)</p>
+<ol>
+<li>In triangle ABC, if angle A = 40° and angle B = 60°, what is angle C?</li>
+<li>If two parallel lines are cut by a transversal, and one angle is 70°, what is its corresponding angle?</li>
+<li>In a right triangle, if one acute angle is 30°, what is the other acute angle?</li>
+<li>If an inscribed angle intercepts an arc of 80°, what is the measure of the inscribed angle?</li>
+<li>In a cyclic quadrilateral, if one angle is 100°, what is the opposite angle?</li>
+</ol>
+<h3 id="5-minute-sprint-length-formulas">5-Minute Sprint: Length Formulas<a hidden class="anchor" aria-hidden="true" href="#5-minute-sprint-length-formulas">#</a></h3>
+<p><strong>Target</strong>: 15 problems in 5 minutes (90%+ accuracy)</p>
+<ol>
+<li>In a 30-60-90 triangle, if the short leg is 3, what is the hypotenuse?</li>
+<li>In a 45-45-90 triangle, if one leg is 5, what is the hypotenuse?</li>
+<li>In a right triangle with legs 3 and 4, what is the hypotenuse?</li>
+<li>If a circle has radius 7, what is its circumference?</li>
+<li>If a circle has diameter 10, what is its area?</li>
+</ol>
+<h3 id="5-minute-sprint-area-formulas">5-Minute Sprint: Area Formulas<a hidden class="anchor" aria-hidden="true" href="#5-minute-sprint-area-formulas">#</a></h3>
+<p><strong>Target</strong>: 20 problems in 5 minutes (90%+ accuracy)</p>
+<ol>
+<li>What is the area of a rectangle with length 8 and width 6?</li>
+<li>What is the area of a triangle with base 10 and height 8?</li>
+<li>What is the area of a circle with radius 5?</li>
+<li>What is the area of a trapezoid with bases 6 and 10 and height 4?</li>
+<li>What is the area of a parallelogram with base 12 and height 7?</li>
+</ol>
+<h2 id="-advanced-geometric-facts">🔍 Advanced Geometric Facts<a hidden class="anchor" aria-hidden="true" href="#-advanced-geometric-facts">#</a></h2>
+<h3 id="similarity">Similarity<a hidden class="anchor" aria-hidden="true" href="#similarity">#</a></h3>
+<ul>
+<li><strong>AA Similarity</strong>: Two angles equal</li>
+<li><strong>SAS Similarity</strong>: Two sides proportional, included angle equal</li>
+<li><strong>SSS Similarity</strong>: All three sides proportional</li>
+<li><strong>Proportional relationships</strong>: Use similarity ratios</li>
+</ul>
+<h3 id="power-of-a-point">Power of a Point<a hidden class="anchor" aria-hidden="true" href="#power-of-a-point">#</a></h3>
+<ul>
+<li><strong>Secant-Secant</strong>: $PA \cdot PB = PC \cdot PD$</li>
+<li><strong>Secant-Tangent</strong>: $PA \cdot PB = PT^2$</li>
+<li><strong>Tangent-Tangent</strong>: $PT_1 = PT_2$</li>
+<li><strong>Chord-Chord</strong>: $PA \cdot PB = PC \cdot PD$</li>
+</ul>
+<h3 id="coordinate-geometry">Coordinate Geometry<a hidden class="anchor" aria-hidden="true" href="#coordinate-geometry">#</a></h3>
+<ul>
+<li><strong>Distance formula</strong>: $d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$</li>
+<li><strong>Midpoint formula</strong>: $M = \left(\frac{x_1+x_2}{2}, \frac{y_1+y_2}{2}\right)$</li>
+<li><strong>Slope formula</strong>: $m = \frac{y_2-y_1}{x_2-x_1}$</li>
+<li><strong>Shoelace formula</strong>: For polygon area</li>
+</ul>
+<h2 id="-progress-tracking">📊 Progress Tracking<a hidden class="anchor" aria-hidden="true" href="#-progress-tracking">#</a></h2>
+<h3 id="accuracy-targets">Accuracy Targets<a hidden class="anchor" aria-hidden="true" href="#accuracy-targets">#</a></h3>
+<ul>
+<li><strong>Angle facts</strong>: 95%+ accuracy</li>
+<li><strong>Length formulas</strong>: 90%+ accuracy</li>
+<li><strong>Area formulas</strong>: 90%+ accuracy</li>
+<li><strong>Advanced facts</strong>: 85%+ accuracy</li>
+</ul>
+<h3 id="speed-targets">Speed Targets<a hidden class="anchor" aria-hidden="true" href="#speed-targets">#</a></h3>
+<ul>
+<li><strong>Angle facts</strong>: 4 problems per minute</li>
+<li><strong>Length formulas</strong>: 3 problems per minute</li>
+<li><strong>Area formulas</strong>: 4 problems per minute</li>
+<li><strong>Advanced facts</strong>: 2 problems per minute</li>
+</ul>
+<h3 id="weekly-goals">Weekly Goals<a hidden class="anchor" aria-hidden="true" href="#weekly-goals">#</a></h3>
+<ul>
+<li><strong>Week 1</strong>: Master basic angle facts and length formulas</li>
+<li><strong>Week 2</strong>: Add area formulas, maintain accuracy</li>
+<li><strong>Week 3</strong>: Add advanced facts, increase speed</li>
+<li><strong>Week 4</strong>: Master all areas, optimize speed</li>
+</ul>
+<h2 id="-quick-reference">⚡ Quick Reference<a hidden class="anchor" aria-hidden="true" href="#-quick-reference">#</a></h2>
+<h3 id="essential-angle-facts">Essential Angle Facts:<a hidden class="anchor" aria-hidden="true" href="#essential-angle-facts">#</a></h3>
+<ul>
+<li><strong>Triangle sum</strong>: $180°$ in any triangle</li>
+<li><strong>Parallel lines</strong>: Corresponding angles equal</li>
+<li><strong>Circle angles</strong>: Inscribed angle = half central angle</li>
+<li><strong>Right triangle</strong>: One angle equals $90°$</li>
+</ul>
+<h3 id="essential-length-formulas">Essential Length Formulas:<a hidden class="anchor" aria-hidden="true" href="#essential-length-formulas">#</a></h3>
+<ul>
+<li><strong>Pythagorean theorem</strong>: $a^2 + b^2 = c^2$</li>
+<li><strong>30-60-90</strong>: Sides in ratio $1 : \sqrt{3} : 2$</li>
+<li><strong>45-45-90</strong>: Sides in ratio $1 : 1 : \sqrt{2}$</li>
+<li><strong>Circle circumference</strong>: $C = 2\pi r$</li>
+</ul>
+<h3 id="essential-area-formulas">Essential Area Formulas:<a hidden class="anchor" aria-hidden="true" href="#essential-area-formulas">#</a></h3>
+<ul>
+<li><strong>Triangle</strong>: $A = \frac{1}{2}bh$</li>
+<li><strong>Rectangle</strong>: $A = lw$</li>
+<li><strong>Circle</strong>: $A = \pi r^2$</li>
+<li><strong>Trapezoid</strong>: $A = \frac{1}{2}h(b_1 + b_2)$</li>
+</ul>
+<h3 id="practice-schedule">Practice Schedule:<a hidden class="anchor" aria-hidden="true" href="#practice-schedule">#</a></h3>
+<ul>
+<li><strong>Daily</strong>: 10 minutes of geometry facts practice</li>
+<li><strong>Focus areas</strong>: Work on your weakest skills</li>
+<li><strong>Progressive difficulty</strong>: Increase complexity over time</li>
+<li><strong>Time pressure</strong>: Practice under time constraints</li>
+<li><strong>Accuracy first</strong>: Speed comes with accuracy</li>
+</ul>
+<hr>
+<p><strong>Next:</strong> <a href="../probability-and-ev-snippets">Probability &amp; EV Snippets</a> | <strong>Back to:</strong> <a href="../">Strategy Guide</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/geometry/">Geometry</a></li>
+      <li><a href="http://localhost:1313/tags/flashcards/">Flashcards</a></li>
+      <li><a href="http://localhost:1313/tags/facts/">Facts</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

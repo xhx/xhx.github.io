@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Similar Triangle Stacks | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Geometry, Similar Triangles, Parallel Lines, Homothety, Study Guide">
+<meta name="description" content="Master similar triangle patterns: parallel lines, homothety, and ladder problems with systematic solution approaches.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/geometry/problem-types/similar-triangle-stacks/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/geometry/problem-types/similar-triangle-stacks/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/">Geometry Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/problem-types/">Problem Types</a></div>
+    <div class="post-meta">3 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-similar-triangle-stacks" aria-label="🔺 Similar Triangle Stacks">🔺 Similar Triangle Stacks</a><ul>
+                        
+                <li>
+                    <a href="#-recognition-cues" aria-label="🎯 Recognition Cues">🎯 Recognition Cues</a><ul>
+                        
+                <li>
+                    <a href="#key-triggers" aria-label="Key Triggers">Key Triggers</a></li>
+                <li>
+                    <a href="#common-setups" aria-label="Common Setups">Common Setups</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-solution-template" aria-label="🧩 Solution Template">🧩 Solution Template</a><ul>
+                        
+                <li>
+                    <a href="#step-1-identify-similarity" aria-label="Step 1: Identify Similarity">Step 1: Identify Similarity</a></li>
+                <li>
+                    <a href="#step-2-find-the-ratio" aria-label="Step 2: Find the Ratio">Step 2: Find the Ratio</a></li>
+                <li>
+                    <a href="#step-3-apply-the-ratio" aria-label="Step 3: Apply the Ratio">Step 3: Apply the Ratio</a></li>
+                <li>
+                    <a href="#step-4-verify" aria-label="Step 4: Verify">Step 4: Verify</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-worked-example" aria-label="🔍 Worked Example">🔍 Worked Example</a></li>
+                <li>
+                    <a href="#-common-pitfalls" aria-label="⚠️ Common Pitfalls">⚠️ Common Pitfalls</a></li>
+                <li>
+                    <a href="#-related-patterns" aria-label="🔗 Related Patterns">🔗 Related Patterns</a></li>
+                <li>
+                    <a href="#-quick-reference" aria-label="💡 Quick Reference">💡 Quick Reference</a><ul>
+                        
+                <li>
+                    <a href="#similarity-criteria" aria-label="Similarity Criteria">Similarity Criteria</a></li>
+                <li>
+                    <a href="#common-ratios" aria-label="Common Ratios">Common Ratios</a></li>
+                <li>
+                    <a href="#solution-strategy" aria-label="Solution Strategy">Solution Strategy</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-similar-triangle-stacks">🔺 Similar Triangle Stacks<a hidden class="anchor" aria-hidden="true" href="#-similar-triangle-stacks">#</a></h1>
+<p>Similar triangles often appear in &ldquo;stacked&rdquo; configurations with parallel lines or homothety. Master these patterns for efficient problem solving.</p>
+<h2 id="-recognition-cues">🎯 Recognition Cues<a hidden class="anchor" aria-hidden="true" href="#-recognition-cues">#</a></h2>
+<h3 id="key-triggers">Key Triggers<a hidden class="anchor" aria-hidden="true" href="#key-triggers">#</a></h3>
+<ul>
+<li><strong>Parallel lines</strong> - Look for multiple parallel lines creating similar triangles</li>
+<li><strong>Homothety</strong> - Look for scaling transformations or similar figures</li>
+<li><strong>Ladder problems</strong> - Look for figures that look like ladders or steps</li>
+<li><strong>Gap problems</strong> - Look for missing segments between similar triangles</li>
+</ul>
+<h3 id="common-setups">Common Setups<a hidden class="anchor" aria-hidden="true" href="#common-setups">#</a></h3>
+<ul>
+<li>Trapezoids with parallel bases</li>
+<li>Triangles with parallel sides</li>
+<li>Figures with multiple similar triangles</li>
+<li>Scaling transformations</li>
+</ul>
+<h2 id="-solution-template">🧩 Solution Template<a hidden class="anchor" aria-hidden="true" href="#-solution-template">#</a></h2>
+<h3 id="step-1-identify-similarity">Step 1: Identify Similarity<a hidden class="anchor" aria-hidden="true" href="#step-1-identify-similarity">#</a></h3>
+<ul>
+<li>Look for parallel lines or equal angles</li>
+<li>Check if triangles are similar by AA, SAS, or SSS</li>
+<li>Mark the similarity relationship</li>
+</ul>
+<h3 id="step-2-find-the-ratio">Step 2: Find the Ratio<a hidden class="anchor" aria-hidden="true" href="#step-2-find-the-ratio">#</a></h3>
+<ul>
+<li>Identify corresponding sides</li>
+<li>Calculate the similarity ratio</li>
+<li>Use the ratio to find unknown lengths</li>
+</ul>
+<h3 id="step-3-apply-the-ratio">Step 3: Apply the Ratio<a hidden class="anchor" aria-hidden="true" href="#step-3-apply-the-ratio">#</a></h3>
+<ul>
+<li>Use the similarity ratio to find missing lengths</li>
+<li>Apply to all corresponding sides</li>
+<li>Check that ratios are consistent</li>
+</ul>
+<h3 id="step-4-verify">Step 4: Verify<a hidden class="anchor" aria-hidden="true" href="#step-4-verify">#</a></h3>
+<ul>
+<li>Ensure all triangles are actually similar</li>
+<li>Check that ratios are consistent</li>
+<li>Verify the final answer</li>
+</ul>
+<h2 id="-worked-example">🔍 Worked Example<a hidden class="anchor" aria-hidden="true" href="#-worked-example">#</a></h2>
+<p><strong>Problem:</strong> In trapezoid $ABCD$ with $AB \parallel CD$, $AB = 8$, $CD = 4$, and $AD = 6$. If $E$ is the midpoint of $AD$ and $F$ is the midpoint of $BC$, find $EF$.</p>
+<p><strong>Solution:</strong>
+<strong>Step 1:</strong> Identify similarity</p>
+<ul>
+<li>$AB \parallel CD$ creates similar triangles</li>
+<li>$\triangle AEB \sim \triangle CED$ by AA (corresponding angles equal)</li>
+</ul>
+<p><strong>Step 2:</strong> Find the ratio</p>
+<ul>
+<li>Similarity ratio: $\frac{AB}{CD} = \frac{8}{4} = 2$</li>
+<li>This means $AE:CE = 2:1$</li>
+</ul>
+<p><strong>Step 3:</strong> Apply the ratio</p>
+<ul>
+<li>Since $E$ is midpoint of $AD$, $AE = 3$</li>
+<li>From similarity: $CE = \frac{AE}{2} = \frac{3}{2} = 1.5$</li>
+<li>Therefore, $AC = AE + CE = 3 + 1.5 = 4.5$</li>
+</ul>
+<p><strong>Step 4:</strong> Find $EF$</p>
+<ul>
+<li>$EF$ is the midsegment of trapezoid $ABCD$</li>
+<li>Midsegment length = $\frac{AB + CD}{2} = \frac{8 + 4}{2} = 6$</li>
+</ul>
+<p><strong>Answer:</strong> $EF = 6$</p>
+<h2 id="-common-pitfalls">⚠️ Common Pitfalls<a hidden class="anchor" aria-hidden="true" href="#-common-pitfalls">#</a></h2>
+<p><strong>Pitfall:</strong> Assuming similarity without proof</p>
+<ul>
+<li><strong>Fix:</strong> Use AA, SAS, or SSS criteria to establish similarity</li>
+</ul>
+<p><strong>Pitfall:</strong> Wrong similarity ratio</p>
+<ul>
+<li><strong>Fix:</strong> Make sure you&rsquo;re using corresponding sides in the same order</li>
+</ul>
+<p><strong>Pitfall:</strong> Forgetting about midsegments</p>
+<ul>
+<li><strong>Fix:</strong> In trapezoids, midsegments have special length formulas</li>
+</ul>
+<p><strong>Pitfall:</strong> Wrong order in similarity statements</p>
+<ul>
+<li><strong>Fix:</strong> Always match corresponding vertices: $A \leftrightarrow D$, $B \leftrightarrow E$, $C \leftrightarrow F$</li>
+</ul>
+<h2 id="-related-patterns">🔗 Related Patterns<a hidden class="anchor" aria-hidden="true" href="#-related-patterns">#</a></h2>
+<ul>
+<li><a href="angle-chase-cycles"><strong>Angle Chase Cycles</strong></a> - Parallel lines create similar triangles</li>
+<li><a href="area-ratio-in-triangle"><strong>Area Ratio in Triangle</strong></a> - Similar triangles have area ratios</li>
+<li><a href="coordinate-kill"><strong>Coordinate Kill</strong></a> - Alternative to similarity methods</li>
+</ul>
+<h2 id="-quick-reference">💡 Quick Reference<a hidden class="anchor" aria-hidden="true" href="#-quick-reference">#</a></h2>
+<h3 id="similarity-criteria">Similarity Criteria<a hidden class="anchor" aria-hidden="true" href="#similarity-criteria">#</a></h3>
+<ul>
+<li><strong>AA:</strong> Two angles equal (third automatically equal)</li>
+<li><strong>SAS:</strong> Two sides proportional + included angle equal</li>
+<li><strong>SSS:</strong> All three sides proportional</li>
+</ul>
+<h3 id="common-ratios">Common Ratios<a hidden class="anchor" aria-hidden="true" href="#common-ratios">#</a></h3>
+<ul>
+<li><strong>Parallel lines:</strong> Create similar triangles with constant ratio</li>
+<li><strong>Homothety:</strong> Scale factor determines similarity ratio</li>
+<li><strong>Midsegments:</strong> Special length formulas in trapezoids</li>
+</ul>
+<h3 id="solution-strategy">Solution Strategy<a hidden class="anchor" aria-hidden="true" href="#solution-strategy">#</a></h3>
+<ul>
+<li><strong>Identify:</strong> Look for parallel lines or equal angles</li>
+<li><strong>Prove:</strong> Use similarity criteria</li>
+<li><strong>Calculate:</strong> Find similarity ratio</li>
+<li><strong>Apply:</strong> Use ratio to find unknown lengths</li>
+</ul>
+<hr>
+<p><strong>Next:</strong> <a href="tangent-secant-chord">Tangent-Secant-Chord →</a> | <strong>Prev:</strong> <a href="angle-chase-cycles">Angle Chase Cycles →</a> | <strong>Back to:</strong> <a href="../">Geometry Mastery Guide →</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/geometry/">Geometry</a></li>
+      <li><a href="http://localhost:1313/tags/similar-triangles/">Similar-Triangles</a></li>
+      <li><a href="http://localhost:1313/tags/parallel-lines/">Parallel Lines</a></li>
+      <li><a href="http://localhost:1313/tags/homothety/">Homothety</a></li>
+      <li><a href="http://localhost:1313/tags/study-guide/">Study Guide</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

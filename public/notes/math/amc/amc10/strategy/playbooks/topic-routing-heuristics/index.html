@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Topic Routing Heuristics Playbook | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Strategy, Topic Routing, Problem Identification, Heuristics">
+<meta name="description" content="Quick problem identification and routing strategies for Algebra, Number Theory, Geometry, and Counting/Probability problems in AMC 10/12.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/strategy/playbooks/topic-routing-heuristics/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/strategy/playbooks/topic-routing-heuristics/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/">AMC 10/12 Contest Strategy &amp; Tactics Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/playbooks/">Strategic Playbooks</a></div>
+    <div class="post-meta">5 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-topic-routing-heuristics-playbook" aria-label="🧭 Topic Routing Heuristics Playbook">🧭 Topic Routing Heuristics Playbook</a><ul>
+                        
+                <li>
+                    <a href="#-problem-identification-framework" aria-label="🎯 Problem Identification Framework">🎯 Problem Identification Framework</a><ul>
+                        
+                <li>
+                    <a href="#first-10-seconds" aria-label="First 10 Seconds:">First 10 Seconds:</a></li>
+                <li>
+                    <a href="#topic-signal-words" aria-label="Topic Signal Words">Topic Signal Words</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-algebra-routing" aria-label="🔢 Algebra Routing">🔢 Algebra Routing</a><ul>
+                        
+                <li>
+                    <a href="#problem-signals" aria-label="Problem Signals">Problem Signals</a></li>
+                <li>
+                    <a href="#quick-recognition" aria-label="Quick Recognition">Quick Recognition</a></li>
+                <li>
+                    <a href="#solution-strategies" aria-label="Solution Strategies">Solution Strategies</a></li>
+                <li>
+                    <a href="#algebra-example" aria-label="Algebra Example">Algebra Example</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-number-theory-routing" aria-label="🔢 Number Theory Routing">🔢 Number Theory Routing</a><ul>
+                        
+                <li>
+                    <a href="#problem-signals-1" aria-label="Problem Signals">Problem Signals</a></li>
+                <li>
+                    <a href="#quick-recognition-1" aria-label="Quick Recognition">Quick Recognition</a></li>
+                <li>
+                    <a href="#solution-strategies-1" aria-label="Solution Strategies">Solution Strategies</a></li>
+                <li>
+                    <a href="#number-theory-example" aria-label="Number Theory Example">Number Theory Example</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-geometry-routing" aria-label="📐 Geometry Routing">📐 Geometry Routing</a><ul>
+                        
+                <li>
+                    <a href="#problem-signals-2" aria-label="Problem Signals">Problem Signals</a></li>
+                <li>
+                    <a href="#quick-recognition-2" aria-label="Quick Recognition">Quick Recognition</a></li>
+                <li>
+                    <a href="#solution-strategies-2" aria-label="Solution Strategies">Solution Strategies</a></li>
+                <li>
+                    <a href="#geometry-example" aria-label="Geometry Example">Geometry Example</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-countingprobability-routing" aria-label="🎲 Counting/Probability Routing">🎲 Counting/Probability Routing</a><ul>
+                        
+                <li>
+                    <a href="#problem-signals-3" aria-label="Problem Signals">Problem Signals</a></li>
+                <li>
+                    <a href="#quick-recognition-3" aria-label="Quick Recognition">Quick Recognition</a></li>
+                <li>
+                    <a href="#solution-strategies-3" aria-label="Solution Strategies">Solution Strategies</a></li>
+                <li>
+                    <a href="#counting-example" aria-label="Counting Example">Counting Example</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-routing-decision-tree" aria-label="⚡ Quick Routing Decision Tree">⚡ Quick Routing Decision Tree</a></li>
+                <li>
+                    <a href="#-topic-specific-quick-starts" aria-label="🎯 Topic-Specific Quick Starts">🎯 Topic-Specific Quick Starts</a><ul>
+                        
+                <li>
+                    <a href="#algebra-quick-start" aria-label="Algebra Quick Start">Algebra Quick Start</a></li>
+                <li>
+                    <a href="#number-theory-quick-start" aria-label="Number Theory Quick Start">Number Theory Quick Start</a></li>
+                <li>
+                    <a href="#geometry-quick-start" aria-label="Geometry Quick Start">Geometry Quick Start</a></li>
+                <li>
+                    <a href="#countingprobability-quick-start" aria-label="Counting/Probability Quick Start">Counting/Probability Quick Start</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-common-routing-mistakes" aria-label="🚨 Common Routing Mistakes">🚨 Common Routing Mistakes</a><ul>
+                        
+                <li>
+                    <a href="#avoid-these-errors" aria-label="Avoid These Errors:">Avoid These Errors:</a></li>
+                <li>
+                    <a href="#red-flags" aria-label="Red Flags:">Red Flags:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-reference" aria-label="📊 Quick Reference">📊 Quick Reference</a><ul>
+                        
+                <li>
+                    <a href="#topic-identification" aria-label="Topic Identification:">Topic Identification:</a></li>
+                <li>
+                    <a href="#solution-strategies-4" aria-label="Solution Strategies:">Solution Strategies:</a></li>
+                <li>
+                    <a href="#time-allocation" aria-label="Time Allocation:">Time Allocation:</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-topic-routing-heuristics-playbook">🧭 Topic Routing Heuristics Playbook<a hidden class="anchor" aria-hidden="true" href="#-topic-routing-heuristics-playbook">#</a></h1>
+<p>Develop the ability to quickly identify problem types and route to the most effective solution strategies. This systematic approach will help you start problems efficiently.</p>
+<h2 id="-problem-identification-framework">🎯 Problem Identification Framework<a hidden class="anchor" aria-hidden="true" href="#-problem-identification-framework">#</a></h2>
+<h3 id="first-10-seconds">First 10 Seconds:<a hidden class="anchor" aria-hidden="true" href="#first-10-seconds">#</a></h3>
+<ol>
+<li><strong>Read the problem</strong>: Get the gist quickly</li>
+<li><strong>Identify key words</strong>: Look for topic signals</li>
+<li><strong>Check answer choices</strong>: What type of answer is expected?</li>
+<li><strong>Route to strategy</strong>: Choose your approach</li>
+<li><strong>Start solving</strong>: Begin with confidence</li>
+</ol>
+<h3 id="topic-signal-words">Topic Signal Words<a hidden class="anchor" aria-hidden="true" href="#topic-signal-words">#</a></h3>
+<ul>
+<li><strong>Algebra</strong>: &ldquo;solve&rdquo;, &ldquo;equation&rdquo;, &ldquo;function&rdquo;, &ldquo;graph&rdquo;, &ldquo;slope&rdquo;</li>
+<li><strong>Number Theory</strong>: &ldquo;divisible&rdquo;, &ldquo;remainder&rdquo;, &ldquo;prime&rdquo;, &ldquo;factor&rdquo;, &ldquo;digit&rdquo;</li>
+<li><strong>Geometry</strong>: &ldquo;triangle&rdquo;, &ldquo;circle&rdquo;, &ldquo;angle&rdquo;, &ldquo;area&rdquo;, &ldquo;perimeter&rdquo;, &ldquo;coordinate&rdquo;</li>
+<li><strong>Counting/Probability</strong>: &ldquo;how many&rdquo;, &ldquo;ways&rdquo;, &ldquo;probability&rdquo;, &ldquo;arrange&rdquo;, &ldquo;choose&rdquo;</li>
+</ul>
+<h2 id="-algebra-routing">🔢 Algebra Routing<a hidden class="anchor" aria-hidden="true" href="#-algebra-routing">#</a></h2>
+<h3 id="problem-signals">Problem Signals<a hidden class="anchor" aria-hidden="true" href="#problem-signals">#</a></h3>
+<ul>
+<li><strong>Equations</strong>: Linear, quadratic, polynomial, rational</li>
+<li><strong>Functions</strong>: Graphs, transformations, compositions</li>
+<li><strong>Inequalities</strong>: Linear, quadratic, absolute value</li>
+<li><strong>Systems</strong>: Multiple equations, multiple variables</li>
+</ul>
+<h3 id="quick-recognition">Quick Recognition<a hidden class="anchor" aria-hidden="true" href="#quick-recognition">#</a></h3>
+<ul>
+<li><strong>Variables</strong>: $x, y, z$ or other letters</li>
+<li><strong>Operations</strong>: $+, -, \times, \div, \sqrt{}, \text{^}$</li>
+<li><strong>Relations</strong>: $=, &lt;, &gt;, \leq, \geq$</li>
+<li><strong>Functions</strong>: $f(x), g(x), h(x)$</li>
+</ul>
+<h3 id="solution-strategies">Solution Strategies<a hidden class="anchor" aria-hidden="true" href="#solution-strategies">#</a></h3>
+<ul>
+<li><strong>Substitution</strong>: Replace variables with values</li>
+<li><strong>Elimination</strong>: Remove variables systematically</li>
+<li><strong>Factoring</strong>: Break down expressions</li>
+<li><strong>Graphing</strong>: Visual representation</li>
+<li><strong>Backsolving</strong>: Use answer choices</li>
+</ul>
+<h3 id="algebra-example">Algebra Example<a hidden class="anchor" aria-hidden="true" href="#algebra-example">#</a></h3>
+<p><strong>Problem</strong>: Solve $2x + 3 = 11$</p>
+<p><strong>Signals</strong>: &ldquo;solve&rdquo;, equation with variable $x$
+<strong>Route</strong>: Direct algebraic manipulation
+<strong>Solution</strong>: $2x = 8$, $x = 4$</p>
+<h2 id="-number-theory-routing">🔢 Number Theory Routing<a hidden class="anchor" aria-hidden="true" href="#-number-theory-routing">#</a></h2>
+<h3 id="problem-signals-1">Problem Signals<a hidden class="anchor" aria-hidden="true" href="#problem-signals-1">#</a></h3>
+<ul>
+<li><strong>Divisibility</strong>: &ldquo;divisible by&rdquo;, &ldquo;multiple of&rdquo;, &ldquo;factor of&rdquo;</li>
+<li><strong>Remainders</strong>: &ldquo;remainder when divided by&rdquo;, &ldquo;mod&rdquo;</li>
+<li><strong>Primes</strong>: &ldquo;prime number&rdquo;, &ldquo;prime factor&rdquo;</li>
+<li><strong>Digits</strong>: &ldquo;digit sum&rdquo;, &ldquo;last digit&rdquo;, &ldquo;digit properties&rdquo;</li>
+</ul>
+<h3 id="quick-recognition-1">Quick Recognition<a hidden class="anchor" aria-hidden="true" href="#quick-recognition-1">#</a></h3>
+<ul>
+<li><strong>Modular arithmetic</strong>: $\bmod$, remainders</li>
+<li><strong>Prime numbers</strong>: 2, 3, 5, 7, 11, 13, &hellip;</li>
+<li><strong>Divisibility rules</strong>: 2, 3, 5, 9, 11</li>
+<li><strong>Digit operations</strong>: Sum, product, last digit</li>
+</ul>
+<h3 id="solution-strategies-1">Solution Strategies<a hidden class="anchor" aria-hidden="true" href="#solution-strategies-1">#</a></h3>
+<ul>
+<li><strong>Modular arithmetic</strong>: Use small moduli</li>
+<li><strong>Prime factorization</strong>: Break down numbers</li>
+<li><strong>Divisibility rules</strong>: Apply standard rules</li>
+<li><strong>Pattern recognition</strong>: Look for cycles</li>
+<li><strong>Extreme cases</strong>: Test boundary values</li>
+</ul>
+<h3 id="number-theory-example">Number Theory Example<a hidden class="anchor" aria-hidden="true" href="#number-theory-example">#</a></h3>
+<p><strong>Problem</strong>: Find the remainder when $2^{100}$ is divided by 7</p>
+<p><strong>Signals</strong>: &ldquo;remainder when divided by&rdquo;, modular arithmetic
+<strong>Route</strong>: Find pattern in powers of 2 mod 7
+<strong>Solution</strong>: $2^3 \equiv 1 \pmod{7}$, so $2^{100} = 2^{99} \cdot 2 \equiv 2 \pmod{7}$</p>
+<h2 id="-geometry-routing">📐 Geometry Routing<a hidden class="anchor" aria-hidden="true" href="#-geometry-routing">#</a></h2>
+<h3 id="problem-signals-2">Problem Signals<a hidden class="anchor" aria-hidden="true" href="#problem-signals-2">#</a></h3>
+<ul>
+<li><strong>Shapes</strong>: &ldquo;triangle&rdquo;, &ldquo;circle&rdquo;, &ldquo;rectangle&rdquo;, &ldquo;square&rdquo;</li>
+<li><strong>Measurements</strong>: &ldquo;area&rdquo;, &ldquo;perimeter&rdquo;, &ldquo;volume&rdquo;, &ldquo;angle&rdquo;</li>
+<li><strong>Coordinates</strong>: &ldquo;point&rdquo;, &ldquo;line&rdquo;, &ldquo;slope&rdquo;, &ldquo;distance&rdquo;</li>
+<li><strong>Transformations</strong>: &ldquo;rotate&rdquo;, &ldquo;reflect&rdquo;, &ldquo;translate&rdquo;</li>
+</ul>
+<h3 id="quick-recognition-2">Quick Recognition<a hidden class="anchor" aria-hidden="true" href="#quick-recognition-2">#</a></h3>
+<ul>
+<li><strong>Geometric terms</strong>: Triangle, circle, angle, area</li>
+<li><strong>Coordinate terms</strong>: Point, line, slope, distance</li>
+<li><strong>Measurement terms</strong>: Length, area, volume, angle</li>
+<li><strong>Relationship terms</strong>: Similar, congruent, parallel, perpendicular</li>
+</ul>
+<h3 id="solution-strategies-2">Solution Strategies<a hidden class="anchor" aria-hidden="true" href="#solution-strategies-2">#</a></h3>
+<ul>
+<li><strong>Coordinate geometry</strong>: Use coordinates and formulas</li>
+<li><strong>Similar triangles</strong>: Proportional relationships</li>
+<li><strong>Power of a point</strong>: Circle properties</li>
+<li><strong>Area formulas</strong>: Standard area calculations</li>
+<li><strong>Angle properties</strong>: Sum of angles, parallel lines</li>
+</ul>
+<h3 id="geometry-example">Geometry Example<a hidden class="anchor" aria-hidden="true" href="#geometry-example">#</a></h3>
+<p><strong>Problem</strong>: Find the area of a triangle with vertices at $(0,0)$, $(3,0)$, and $(0,4)$</p>
+<p><strong>Signals</strong>: &ldquo;area&rdquo;, &ldquo;triangle&rdquo;, coordinates
+<strong>Route</strong>: Use coordinate geometry or basic area formula
+<strong>Solution</strong>: $A = \frac{1}{2} \cdot 3 \cdot 4 = 6$</p>
+<h2 id="-countingprobability-routing">🎲 Counting/Probability Routing<a hidden class="anchor" aria-hidden="true" href="#-countingprobability-routing">#</a></h2>
+<h3 id="problem-signals-3">Problem Signals<a hidden class="anchor" aria-hidden="true" href="#problem-signals-3">#</a></h3>
+<ul>
+<li><strong>Counting</strong>: &ldquo;how many&rdquo;, &ldquo;ways&rdquo;, &ldquo;arrange&rdquo;, &ldquo;choose&rdquo;</li>
+<li><strong>Probability</strong>: &ldquo;probability&rdquo;, &ldquo;chance&rdquo;, &ldquo;likelihood&rdquo;</li>
+<li><strong>Combinations</strong>: &ldquo;combinations&rdquo;, &ldquo;permutations&rdquo;, &ldquo;factorial&rdquo;</li>
+<li><strong>Events</strong>: &ldquo;at least&rdquo;, &ldquo;at most&rdquo;, &ldquo;exactly&rdquo;, &ldquo;or&rdquo;, &ldquo;and&rdquo;</li>
+</ul>
+<h3 id="quick-recognition-3">Quick Recognition<a hidden class="anchor" aria-hidden="true" href="#quick-recognition-3">#</a></h3>
+<ul>
+<li><strong>Counting words</strong>: &ldquo;how many&rdquo;, &ldquo;ways&rdquo;, &ldquo;arrange&rdquo;</li>
+<li><strong>Probability words</strong>: &ldquo;probability&rdquo;, &ldquo;chance&rdquo;, &ldquo;likelihood&rdquo;</li>
+<li><strong>Combinatorial words</strong>: &ldquo;choose&rdquo;, &ldquo;select&rdquo;, &ldquo;pick&rdquo;</li>
+<li><strong>Event words</strong>: &ldquo;at least&rdquo;, &ldquo;at most&rdquo;, &ldquo;exactly&rdquo;</li>
+</ul>
+<h3 id="solution-strategies-3">Solution Strategies<a hidden class="anchor" aria-hidden="true" href="#solution-strategies-3">#</a></h3>
+<ul>
+<li><strong>Complementary counting</strong>: Count what you don&rsquo;t want</li>
+<li><strong>Casework</strong>: Break into cases</li>
+<li><strong>Symmetry</strong>: Use symmetric properties</li>
+<li><strong>Indicators</strong>: Use indicator variables</li>
+<li><strong>Recursion</strong>: Build up from smaller cases</li>
+</ul>
+<h3 id="counting-example">Counting Example<a hidden class="anchor" aria-hidden="true" href="#counting-example">#</a></h3>
+<p><strong>Problem</strong>: How many ways can 3 people sit in 5 chairs?</p>
+<p><strong>Signals</strong>: &ldquo;how many ways&rdquo;, &ldquo;arrange&rdquo;, &ldquo;sit&rdquo;
+<strong>Route</strong>: Permutation problem
+<strong>Solution</strong>: $P(5,3) = 5 \cdot 4 \cdot 3 = 60$</p>
+<h2 id="-quick-routing-decision-tree">⚡ Quick Routing Decision Tree<a hidden class="anchor" aria-hidden="true" href="#-quick-routing-decision-tree">#</a></h2>
+<svg width="400" height="300" viewBox="0 0 400 300">
+<defs>
+<style>
+.node { fill: #e1f5fe; stroke: #01579b; stroke-width: 2; }
+.decision { fill: #fff3e0; stroke: #e65100; stroke-width: 2; }
+.leaf { fill: #f3e5f5; stroke: #4a148c; stroke-width: 2; }
+.arrow { stroke: #0066cc; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+.text { font-family: Arial, sans-serif; font-size: 12px; text-anchor: middle; }
+</style>
+<marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#0066cc" />
+</marker>
+</defs>
+<rect x="150" y="20" width="100" height="40" class="node" rx="5"/>
+<text x="200" y="45" class="text">Problem Type?</text>
+<rect x="50" y="80" width="80" height="30" class="decision" rx="5"/>
+<text x="90" y="100" class="text">Algebra</text>
+<rect x="150" y="80" width="80" height="30" class="decision" rx="5"/>
+<text x="190" y="100" class="text">Number Theory</text>
+<rect x="250" y="80" width="80" height="30" class="decision" rx="5"/>
+<text x="290" y="100" class="text">Geometry</text>
+<rect x="350" y="80" width="80" height="30" class="decision" rx="5"/>
+<text x="390" y="100" class="text">Counting</text>
+<rect x="20" y="140" width="60" height="25" class="leaf" rx="5"/>
+<text x="50" y="157" class="text">Solve</text>
+<rect x="100" y="140" width="60" height="25" class="leaf" rx="5"/>
+<text x="130" y="157" class="text">Substitute</text>
+<rect x="180" y="140" width="60" height="25" class="leaf" rx="5"/>
+<text x="210" y="157" class="text">Modular</text>
+<rect x="250" y="140" width="60" height="25" class="leaf" rx="5"/>
+<text x="280" y="157" class="text">Coordinate</text>
+<rect x="320" y="140" width="60" height="25" class="leaf" rx="5"/>
+<text x="350" y="157" class="text">Count</text>
+<rect x="390" y="140" width="60" height="25" class="leaf" rx="5"/>
+<text x="420" y="157" class="text">Probability</text>
+<line x1="200" y1="60" x2="90" y2="80" class="arrow"/>
+<line x1="200" y1="60" x2="190" y2="80" class="arrow"/>
+<line x1="200" y1="60" x2="290" y2="80" class="arrow"/>
+<line x1="200" y1="60" x2="390" y2="80" class="arrow"/>
+<line x1="90" y1="110" x2="50" y2="140" class="arrow"/>
+<line x1="90" y1="110" x2="130" y2="140" class="arrow"/>
+<line x1="190" y1="110" x2="210" y2="140" class="arrow"/>
+<line x1="290" y1="110" x2="280" y2="140" class="arrow"/>
+<line x1="390" y1="110" x2="350" y2="140" class="arrow"/>
+<line x1="390" y1="110" x2="420" y2="140" class="arrow"/>
+</svg>
+<h2 id="-topic-specific-quick-starts">🎯 Topic-Specific Quick Starts<a hidden class="anchor" aria-hidden="true" href="#-topic-specific-quick-starts">#</a></h2>
+<h3 id="algebra-quick-start">Algebra Quick Start<a hidden class="anchor" aria-hidden="true" href="#algebra-quick-start">#</a></h3>
+<ol>
+<li><strong>Identify the equation type</strong>: Linear, quadratic, polynomial?</li>
+<li><strong>Choose solution method</strong>: Direct solving, substitution, elimination?</li>
+<li><strong>Check for special cases</strong>: Factoring, completing the square?</li>
+<li><strong>Verify your answer</strong>: Plug back into original equation</li>
+</ol>
+<h3 id="number-theory-quick-start">Number Theory Quick Start<a hidden class="anchor" aria-hidden="true" href="#number-theory-quick-start">#</a></h3>
+<ol>
+<li><strong>Identify the number property</strong>: Divisibility, remainder, prime?</li>
+<li><strong>Choose the right tool</strong>: Modular arithmetic, prime factorization?</li>
+<li><strong>Look for patterns</strong>: Cycles, repetitions, symmetries?</li>
+<li><strong>Test your answer</strong>: Verify with small examples</li>
+</ol>
+<h3 id="geometry-quick-start">Geometry Quick Start<a hidden class="anchor" aria-hidden="true" href="#geometry-quick-start">#</a></h3>
+<ol>
+<li><strong>Draw a diagram</strong>: Visualize the problem</li>
+<li><strong>Identify the shape</strong>: Triangle, circle, polygon?</li>
+<li><strong>Choose the approach</strong>: Coordinate, synthetic, or analytical?</li>
+<li><strong>Apply the right formula</strong>: Area, perimeter, angle, distance?</li>
+</ol>
+<h3 id="countingprobability-quick-start">Counting/Probability Quick Start<a hidden class="anchor" aria-hidden="true" href="#countingprobability-quick-start">#</a></h3>
+<ol>
+<li><strong>Identify the counting type</strong>: Permutation, combination, arrangement?</li>
+<li><strong>Choose the method</strong>: Direct counting, complementary, casework?</li>
+<li><strong>Look for symmetry</strong>: Can you use symmetric properties?</li>
+<li><strong>Check your answer</strong>: Does it make sense?</li>
+</ol>
+<h2 id="-common-routing-mistakes">🚨 Common Routing Mistakes<a hidden class="anchor" aria-hidden="true" href="#-common-routing-mistakes">#</a></h2>
+<h3 id="avoid-these-errors">Avoid These Errors:<a hidden class="anchor" aria-hidden="true" href="#avoid-these-errors">#</a></h3>
+<ul>
+<li><strong>Misidentifying the topic</strong>: Don&rsquo;t force the wrong approach</li>
+<li><strong>Overcomplicating</strong>: Don&rsquo;t use complex methods for simple problems</li>
+<li><strong>Undercomplicating</strong>: Don&rsquo;t miss the complexity in hard problems</li>
+<li><strong>Skipping the diagram</strong>: Always draw for geometry problems</li>
+</ul>
+<h3 id="red-flags">Red Flags:<a hidden class="anchor" aria-hidden="true" href="#red-flags">#</a></h3>
+<ul>
+<li><strong>Can&rsquo;t identify the topic</strong>: Re-read the problem carefully</li>
+<li><strong>Wrong approach</strong>: Try a different method</li>
+<li><strong>Getting stuck</strong>: Switch to a different strategy</li>
+<li><strong>Answer doesn&rsquo;t make sense</strong>: Check your work</li>
+</ul>
+<h2 id="-quick-reference">📊 Quick Reference<a hidden class="anchor" aria-hidden="true" href="#-quick-reference">#</a></h2>
+<h3 id="topic-identification">Topic Identification:<a hidden class="anchor" aria-hidden="true" href="#topic-identification">#</a></h3>
+<ul>
+<li><strong>Algebra</strong>: Variables, equations, functions</li>
+<li><strong>Number Theory</strong>: Divisibility, remainders, primes</li>
+<li><strong>Geometry</strong>: Shapes, angles, coordinates</li>
+<li><strong>Counting/Probability</strong>: Arrangements, combinations, likelihood</li>
+</ul>
+<h3 id="solution-strategies-4">Solution Strategies:<a hidden class="anchor" aria-hidden="true" href="#solution-strategies-4">#</a></h3>
+<ul>
+<li><strong>Algebra</strong>: Solve, substitute, eliminate, factor</li>
+<li><strong>Number Theory</strong>: Modular arithmetic, prime factorization</li>
+<li><strong>Geometry</strong>: Coordinate geometry, similar triangles</li>
+<li><strong>Counting</strong>: Direct counting, complementary, casework</li>
+</ul>
+<h3 id="time-allocation">Time Allocation:<a hidden class="anchor" aria-hidden="true" href="#time-allocation">#</a></h3>
+<ul>
+<li><strong>Easy problems</strong>: 2-3 minutes</li>
+<li><strong>Medium problems</strong>: 3-5 minutes</li>
+<li><strong>Hard problems</strong>: 5-10 minutes</li>
+<li><strong>Very hard problems</strong>: Skip or guess</li>
+</ul>
+<hr>
+<p><strong>Prev:</strong> <a href="estimation-and-bounds">Estimation &amp; Bounds</a> | <strong>Next:</strong> <a href="endgame-management">Endgame Management</a> | <strong>Back to:</strong> <a href="../">Strategy Guide</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/strategy/">Strategy</a></li>
+      <li><a href="http://localhost:1313/tags/topic-routing/">Topic Routing</a></li>
+      <li><a href="http://localhost:1313/tags/problem-identification/">Problem Identification</a></li>
+      <li><a href="http://localhost:1313/tags/heuristics/">Heuristics</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Essential Formulas Bank | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Geometry, Formulas, Reference, Examples, Study Guide">
+<meta name="description" content="Complete formula bank with usage notes and micro-examples for AMC geometry success.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/geometry/formulas/essential-formulas/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/geometry/formulas/essential-formulas/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/">Geometry Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/formulas/">Essential Formulas</a></div>
+    <div class="post-meta">4 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-essential-formulas-bank" aria-label="📏 Essential Formulas Bank">📏 Essential Formulas Bank</a><ul>
+                        
+                <li>
+                    <a href="#-triangle-formulas" aria-label="🔺 Triangle Formulas">🔺 Triangle Formulas</a><ul>
+                        
+                <li>
+                    <a href="#area-formulas" aria-label="Area Formulas">Area Formulas</a></li>
+                <li>
+                    <a href="#length-formulas" aria-label="Length Formulas">Length Formulas</a></li>
+                <li>
+                    <a href="#center-formulas" aria-label="Center Formulas">Center Formulas</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-circle-formulas" aria-label="⭕ Circle Formulas">⭕ Circle Formulas</a><ul>
+                        
+                <li>
+                    <a href="#basic-properties" aria-label="Basic Properties">Basic Properties</a></li>
+                <li>
+                    <a href="#power-of-a-point" aria-label="Power of a Point">Power of a Point</a></li>
+                <li>
+                    <a href="#chord-and-arc" aria-label="Chord and Arc">Chord and Arc</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-coordinate-formulas" aria-label="📐 Coordinate Formulas">📐 Coordinate Formulas</a><ul>
+                        
+                <li>
+                    <a href="#basic-operations" aria-label="Basic Operations">Basic Operations</a></li>
+                <li>
+                    <a href="#area-and-lines" aria-label="Area and Lines">Area and Lines</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-transformation-formulas" aria-label="🔄 Transformation Formulas">🔄 Transformation Formulas</a><ul>
+                        
+                <li>
+                    <a href="#basic-transformations" aria-label="Basic Transformations">Basic Transformations</a></li>
+                <li>
+                    <a href="#scaling" aria-label="Scaling">Scaling</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-3d-formulas" aria-label="📦 3D Formulas">📦 3D Formulas</a><ul>
+                        
+                <li>
+                    <a href="#volume" aria-label="Volume">Volume</a></li>
+                <li>
+                    <a href="#surface-area" aria-label="Surface Area">Surface Area</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-special-formulas" aria-label="🎯 Special Formulas">🎯 Special Formulas</a><ul>
+                        
+                <li>
+                    <a href="#ceva-and-menelaus" aria-label="Ceva and Menelaus">Ceva and Menelaus</a></li>
+                <li>
+                    <a href="#ptolemys-theorem" aria-label="Ptolemy&rsquo;s Theorem">Ptolemy&rsquo;s Theorem</a></li>
+                <li>
+                    <a href="#angle-bisector-theorem" aria-label="Angle Bisector Theorem">Angle Bisector Theorem</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-reference-tips" aria-label="💡 Quick Reference Tips">💡 Quick Reference Tips</a><ul>
+                        
+                <li>
+                    <a href="#memorization-strategy" aria-label="Memorization Strategy">Memorization Strategy</a></li>
+                <li>
+                    <a href="#common-mistakes" aria-label="Common Mistakes">Common Mistakes</a></li>
+                <li>
+                    <a href="#contest-strategy" aria-label="Contest Strategy">Contest Strategy</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-essential-formulas-bank">📏 Essential Formulas Bank<a hidden class="anchor" aria-hidden="true" href="#-essential-formulas-bank">#</a></h1>
+<p>Complete reference for all essential AMC geometry formulas with usage notes and micro-examples.</p>
+<h2 id="-triangle-formulas">🔺 Triangle Formulas<a hidden class="anchor" aria-hidden="true" href="#-triangle-formulas">#</a></h2>
+<h3 id="area-formulas">Area Formulas<a hidden class="anchor" aria-hidden="true" href="#area-formulas">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Formula</th>
+          <th>Usage</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$A = \frac{1}{2}bh$</td>
+          <td>Basic triangle area</td>
+          <td>Triangle with base 6, height 4: $A = \frac{1}{2} \cdot 6 \cdot 4 = 12$</td>
+      </tr>
+      <tr>
+          <td>$A = \frac{1}{2}ab\sin C$</td>
+          <td>Triangle with two sides and included angle</td>
+          <td>Sides 5, 7, angle $60°$: $A = \frac{1}{2} \cdot 5 \cdot 7 \cdot \sin 60° = \frac{35\sqrt{3}}{4}$</td>
+      </tr>
+      <tr>
+          <td>$A = \sqrt{s(s-a)(s-b)(s-c)}$</td>
+          <td>Heron&rsquo;s formula (three sides)</td>
+          <td>Sides 3, 4, 5: $s = 6$, $A = \sqrt{6 \cdot 3 \cdot 2 \cdot 1} = 6$</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="length-formulas">Length Formulas<a hidden class="anchor" aria-hidden="true" href="#length-formulas">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Formula</th>
+          <th>Usage</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$m_a = \frac{1}{2}\sqrt{2b^2 + 2c^2 - a^2}$</td>
+          <td>Median length</td>
+          <td>Sides 3, 4, 5: $m = \frac{1}{2}\sqrt{2 \cdot 16 + 2 \cdot 9 - 25} = \frac{5}{2}$</td>
+      </tr>
+      <tr>
+          <td>$h_a = \frac{2A}{a}$</td>
+          <td>Altitude length</td>
+          <td>Area 6, base 3: $h = \frac{2 \cdot 6}{3} = 4$</td>
+      </tr>
+      <tr>
+          <td>$t_a = \frac{2bc}{b+c}\cos\frac{A}{2}$</td>
+          <td>Angle bisector length</td>
+          <td>Sides 3, 4, angle $60°$: $t = \frac{2 \cdot 3 \cdot 4}{7} \cdot \cos 30° = \frac{24\sqrt{3}}{14}$</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="center-formulas">Center Formulas<a hidden class="anchor" aria-hidden="true" href="#center-formulas">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Formula</th>
+          <th>Usage</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$G = \left(\frac{x_1+x_2+x_3}{3}, \frac{y_1+y_2+y_3}{3}\right)$</td>
+          <td>Centroid coordinates</td>
+          <td>Vertices $(0,0)$, $(4,0)$, $(2,3)$: $G = (2,1)$</td>
+      </tr>
+      <tr>
+          <td>$r = \frac{A}{s}$</td>
+          <td>Inradius</td>
+          <td>Area 6, semi-perimeter 6: $r = 1$</td>
+      </tr>
+      <tr>
+          <td>$R = \frac{abc}{4A}$</td>
+          <td>Circumradius</td>
+          <td>Sides 3, 4, 5, area 6: $R = \frac{3 \cdot 4 \cdot 5}{4 \cdot 6} = \frac{5}{2}$</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-circle-formulas">⭕ Circle Formulas<a hidden class="anchor" aria-hidden="true" href="#-circle-formulas">#</a></h2>
+<h3 id="basic-properties">Basic Properties<a hidden class="anchor" aria-hidden="true" href="#basic-properties">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Formula</th>
+          <th>Usage</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$A = \pi r^2$</td>
+          <td>Circle area</td>
+          <td>Radius 5: $A = 25\pi$</td>
+      </tr>
+      <tr>
+          <td>$C = 2\pi r$</td>
+          <td>Circumference</td>
+          <td>Radius 5: $C = 10\pi$</td>
+      </tr>
+      <tr>
+          <td>$d = 2r$</td>
+          <td>Diameter</td>
+          <td>Radius 5: $d = 10$</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="power-of-a-point">Power of a Point<a hidden class="anchor" aria-hidden="true" href="#power-of-a-point">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Formula</th>
+          <th>Usage</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$PA^2 = PB \cdot PC$</td>
+          <td>Tangent-secant</td>
+          <td>Tangent 6, secant segment 4: $6^2 = 4 \cdot PC$, so $PC = 9$</td>
+      </tr>
+      <tr>
+          <td>$PA \cdot PB = PC \cdot PD$</td>
+          <td>Two secants/chords</td>
+          <td>Secant segments 3, 4 and 2, 6: $3 \cdot 4 = 2 \cdot 6 = 12$</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="chord-and-arc">Chord and Arc<a hidden class="anchor" aria-hidden="true" href="#chord-and-arc">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Formula</th>
+          <th>Usage</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$L = 2\sqrt{r^2 - d^2}$</td>
+          <td>Chord length</td>
+          <td>Radius 5, distance 3: $L = 2\sqrt{25-9} = 8$</td>
+      </tr>
+      <tr>
+          <td>$s = r\theta$</td>
+          <td>Arc length</td>
+          <td>Radius 5, angle $\frac{\pi}{3}$: $s = \frac{5\pi}{3}$</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-coordinate-formulas">📐 Coordinate Formulas<a hidden class="anchor" aria-hidden="true" href="#-coordinate-formulas">#</a></h2>
+<h3 id="basic-operations">Basic Operations<a hidden class="anchor" aria-hidden="true" href="#basic-operations">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Formula</th>
+          <th>Usage</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$</td>
+          <td>Distance between points</td>
+          <td>$(0,0)$ to $(3,4)$: $d = \sqrt{9+16} = 5$</td>
+      </tr>
+      <tr>
+          <td>$m = \frac{y_2-y_1}{x_2-x_1}$</td>
+          <td>Slope</td>
+          <td>$(1,2)$ to $(3,6)$: $m = \frac{6-2}{3-1} = 2$</td>
+      </tr>
+      <tr>
+          <td>$\left(\frac{x_1+x_2}{2}, \frac{y_1+y_2}{2}\right)$</td>
+          <td>Midpoint</td>
+          <td>$(0,0)$ to $(4,6)$: $(2,3)$</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="area-and-lines">Area and Lines<a hidden class="anchor" aria-hidden="true" href="#area-and-lines">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Formula</th>
+          <th>Usage</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$A = \frac{1}{2}</td>
+          <td>\sum_{i=1}^n x_iy_{i+1} - \sum_{i=1}^n y_ix_{i+1}</td>
+          <td>$</td>
+      </tr>
+      <tr>
+          <td>$y = mx + b$</td>
+          <td>Line equation</td>
+          <td>Slope 2, y-intercept 3: $y = 2x + 3$</td>
+      </tr>
+      <tr>
+          <td>$(x-h)^2 + (y-k)^2 = r^2$</td>
+          <td>Circle equation</td>
+          <td>Center $(2,3)$, radius 5: $(x-2)^2 + (y-3)^2 = 25$</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-transformation-formulas">🔄 Transformation Formulas<a hidden class="anchor" aria-hidden="true" href="#-transformation-formulas">#</a></h2>
+<h3 id="basic-transformations">Basic Transformations<a hidden class="anchor" aria-hidden="true" href="#basic-transformations">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Formula</th>
+          <th>Usage</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$(x,y) \rightarrow (y,x)$</td>
+          <td>Reflection across $y = x$</td>
+          <td>$(3,4) \rightarrow (4,3)$</td>
+      </tr>
+      <tr>
+          <td>$(x,y) \rightarrow (-y,x)$</td>
+          <td>Rotation by $90°$</td>
+          <td>$(3,4) \rightarrow (-4,3)$</td>
+      </tr>
+      <tr>
+          <td>$(x,y) \rightarrow (x+a,y+b)$</td>
+          <td>Translation by $(a,b)$</td>
+          <td>$(3,4)$ by $(1,2)$: $(4,6)$</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="scaling">Scaling<a hidden class="anchor" aria-hidden="true" href="#scaling">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Formula</th>
+          <th>Usage</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$(x,y) \rightarrow (kx,ky)$</td>
+          <td>Homothety by factor $k$</td>
+          <td>$(3,4)$ by factor 2: $(6,8)$</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-3d-formulas">📦 3D Formulas<a hidden class="anchor" aria-hidden="true" href="#-3d-formulas">#</a></h2>
+<h3 id="volume">Volume<a hidden class="anchor" aria-hidden="true" href="#volume">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Formula</th>
+          <th>Usage</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$V = s^3$</td>
+          <td>Cube volume</td>
+          <td>Side 4: $V = 64$</td>
+      </tr>
+      <tr>
+          <td>$V = lwh$</td>
+          <td>Rectangular prism</td>
+          <td>Length 3, width 4, height 5: $V = 60$</td>
+      </tr>
+      <tr>
+          <td>$V = \pi r^2 h$</td>
+          <td>Cylinder volume</td>
+          <td>Radius 3, height 5: $V = 45\pi$</td>
+      </tr>
+      <tr>
+          <td>$V = \frac{1}{3}\pi r^2 h$</td>
+          <td>Cone volume</td>
+          <td>Radius 3, height 5: $V = 15\pi$</td>
+      </tr>
+      <tr>
+          <td>$V = \frac{4}{3}\pi r^3$</td>
+          <td>Sphere volume</td>
+          <td>Radius 3: $V = 36\pi$</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="surface-area">Surface Area<a hidden class="anchor" aria-hidden="true" href="#surface-area">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Formula</th>
+          <th>Usage</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$A = 6s^2$</td>
+          <td>Cube surface area</td>
+          <td>Side 4: $A = 96$</td>
+      </tr>
+      <tr>
+          <td>$A = 2(lw + lh + wh)$</td>
+          <td>Rectangular prism</td>
+          <td>Length 3, width 4, height 5: $A = 94$</td>
+      </tr>
+      <tr>
+          <td>$A = 2\pi r^2 + 2\pi rh$</td>
+          <td>Cylinder surface area</td>
+          <td>Radius 3, height 5: $A = 48\pi$</td>
+      </tr>
+      <tr>
+          <td>$A = 4\pi r^2$</td>
+          <td>Sphere surface area</td>
+          <td>Radius 3: $A = 36\pi$</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-special-formulas">🎯 Special Formulas<a hidden class="anchor" aria-hidden="true" href="#-special-formulas">#</a></h2>
+<h3 id="ceva-and-menelaus">Ceva and Menelaus<a hidden class="anchor" aria-hidden="true" href="#ceva-and-menelaus">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Formula</th>
+          <th>Usage</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\frac{AF}{FB} \cdot \frac{BD}{DC} \cdot \frac{CE}{EA} = 1$</td>
+          <td>Ceva&rsquo;s theorem</td>
+          <td>Check concurrency of cevians</td>
+      </tr>
+      <tr>
+          <td>$\frac{AF}{FB} \cdot \frac{BD}{DC} \cdot \frac{CE}{EA} = 1$</td>
+          <td>Menelaus&rsquo;s theorem</td>
+          <td>Check collinearity of points</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="ptolemys-theorem">Ptolemy&rsquo;s Theorem<a hidden class="anchor" aria-hidden="true" href="#ptolemys-theorem">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Formula</th>
+          <th>Usage</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$AC \cdot BD = AB \cdot CD + BC \cdot AD$</td>
+          <td>Cyclic quadrilateral</td>
+          <td>Sides 3, 4, 5, 6: $AC \cdot BD = 3 \cdot 5 + 4 \cdot 6 = 39$</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="angle-bisector-theorem">Angle Bisector Theorem<a hidden class="anchor" aria-hidden="true" href="#angle-bisector-theorem">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Formula</th>
+          <th>Usage</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\frac{BD}{DC} = \frac{AB}{AC}$</td>
+          <td>Angle bisector</td>
+          <td>Sides 6, 8, bisector divides opposite side: $\frac{BD}{DC} = \frac{6}{8} = \frac{3}{4}$</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-quick-reference-tips">💡 Quick Reference Tips<a hidden class="anchor" aria-hidden="true" href="#-quick-reference-tips">#</a></h2>
+<h3 id="memorization-strategy">Memorization Strategy<a hidden class="anchor" aria-hidden="true" href="#memorization-strategy">#</a></h3>
+<ul>
+<li><strong>Group by topic</strong> - Learn related formulas together</li>
+<li><strong>Practice applications</strong> - Work through examples</li>
+<li><strong>Build recognition</strong> - Learn when to use each formula</li>
+</ul>
+<h3 id="common-mistakes">Common Mistakes<a hidden class="anchor" aria-hidden="true" href="#common-mistakes">#</a></h3>
+<ul>
+<li><strong>Wrong units</strong> - Make sure units match</li>
+<li><strong>Wrong order</strong> - Check formula order carefully</li>
+<li><strong>Missing factors</strong> - Don&rsquo;t forget $\frac{1}{2}$ or other factors</li>
+</ul>
+<h3 id="contest-strategy">Contest Strategy<a hidden class="anchor" aria-hidden="true" href="#contest-strategy">#</a></h3>
+<ul>
+<li><strong>Quick lookup</strong> - Know where to find each formula</li>
+<li><strong>Apply correctly</strong> - Use the right formula for the problem</li>
+<li><strong>Verify results</strong> - Check that your answer makes sense</li>
+</ul>
+<hr>
+<p><strong>Next:</strong> <a href="../tips/">Tips Overview →</a> | <strong>Prev:</strong> <a href="_index">Formulas Overview →</a> | <strong>Back to:</strong> <a href="../">Geometry Mastery Guide →</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/geometry/">Geometry</a></li>
+      <li><a href="http://localhost:1313/tags/formulas/">Formulas</a></li>
+      <li><a href="http://localhost:1313/tags/reference/">Reference</a></li>
+      <li><a href="http://localhost:1313/tags/examples/">Examples</a></li>
+      <li><a href="http://localhost:1313/tags/study-guide/">Study Guide</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

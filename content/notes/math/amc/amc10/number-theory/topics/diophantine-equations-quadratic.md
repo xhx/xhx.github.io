@@ -101,4 +101,4 @@ A positive integer $n$ can be written as a sum of two squares if and only if eve
 
 ---
 
-**Previous**: [Linear Diophantine Equations](diophantine-equations-linear) | **Next**: [Digit & Base Problems](digit-and-base-problems)
+**Previous**: [Linear Diophantine Equations](../diophantine-equations-linear) | **Next**: [Digit & Base Problems](../digit-and-base-problems)

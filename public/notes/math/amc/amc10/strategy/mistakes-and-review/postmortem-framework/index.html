@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Postmortem Framework | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Postmortem, Analysis, Improvement">
+<meta name="description" content="Systematic framework for analyzing full test performance, identifying trends, and developing improvement strategies for AMC 10/12 contests.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/strategy/mistakes-and-review/postmortem-framework/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/strategy/mistakes-and-review/postmortem-framework/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/">AMC 10/12 Contest Strategy &amp; Tactics Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/mistakes-and-review/">Mistakes &amp; Review</a></div>
+    <div class="post-meta">5 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-postmortem-framework" aria-label="📊 Postmortem Framework">📊 Postmortem Framework</a><ul>
+                        
+                <li>
+                    <a href="#-postmortem-process" aria-label="🎯 Postmortem Process">🎯 Postmortem Process</a><ul>
+                        
+                <li>
+                    <a href="#immediate-analysis-within-24-hours" aria-label="Immediate Analysis (Within 24 hours)">Immediate Analysis (Within 24 hours)</a></li>
+                <li>
+                    <a href="#deep-analysis-within-48-hours" aria-label="Deep Analysis (Within 48 hours)">Deep Analysis (Within 48 hours)</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-postmortem-checklist" aria-label="📋 Postmortem Checklist">📋 Postmortem Checklist</a><ul>
+                        
+                <li>
+                    <a href="#test-performance" aria-label="Test Performance">Test Performance</a></li>
+                <li>
+                    <a href="#problem-by-problem-analysis" aria-label="Problem-by-Problem Analysis">Problem-by-Problem Analysis</a></li>
+                <li>
+                    <a href="#error-analysis" aria-label="Error Analysis">Error Analysis</a></li>
+                <li>
+                    <a href="#time-analysis" aria-label="Time Analysis">Time Analysis</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-detailed-analysis-framework" aria-label="🔍 Detailed Analysis Framework">🔍 Detailed Analysis Framework</a><ul>
+                        
+                <li>
+                    <a href="#problem-by-problem-review" aria-label="Problem-by-Problem Review">Problem-by-Problem Review</a><ul>
+                        
+                <li>
+                    <a href="#for-each-problem" aria-label="For Each Problem:">For Each Problem:</a></li>
+                <li>
+                    <a href="#example-problem-analysis" aria-label="Example Problem Analysis:">Example Problem Analysis:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#error-pattern-analysis" aria-label="Error Pattern Analysis">Error Pattern Analysis</a><ul>
+                        
+                <li>
+                    <a href="#error-categories" aria-label="Error Categories:">Error Categories:</a></li>
+                <li>
+                    <a href="#pattern-identification" aria-label="Pattern Identification:">Pattern Identification:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#strengths-and-weaknesses-analysis" aria-label="Strengths and Weaknesses Analysis">Strengths and Weaknesses Analysis</a><ul>
+                        
+                <li>
+                    <a href="#strengths-assessment" aria-label="Strengths Assessment:">Strengths Assessment:</a></li>
+                <li>
+                    <a href="#weaknesses-analysis" aria-label="Weaknesses Analysis:">Weaknesses Analysis:</a></li></ul>
+                </li></ul>
+                </li>
+                <li>
+                    <a href="#-improvement-planning" aria-label="🎯 Improvement Planning">🎯 Improvement Planning</a><ul>
+                        
+                <li>
+                    <a href="#priority-setting" aria-label="Priority Setting">Priority Setting</a></li>
+                <li>
+                    <a href="#action-plan-development" aria-label="Action Plan Development">Action Plan Development</a></li>
+                <li>
+                    <a href="#example-action-plan" aria-label="Example Action Plan:">Example Action Plan:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-progress-tracking" aria-label="📊 Progress Tracking">📊 Progress Tracking</a><ul>
+                        
+                <li>
+                    <a href="#weekly-reviews" aria-label="Weekly Reviews">Weekly Reviews</a></li>
+                <li>
+                    <a href="#monthly-reviews" aria-label="Monthly Reviews">Monthly Reviews</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-reference" aria-label="⚡ Quick Reference">⚡ Quick Reference</a><ul>
+                        
+                <li>
+                    <a href="#postmortem-checklist" aria-label="Postmortem Checklist:">Postmortem Checklist:</a></li>
+                <li>
+                    <a href="#analysis-questions" aria-label="Analysis Questions:">Analysis Questions:</a></li>
+                <li>
+                    <a href="#improvement-focus" aria-label="Improvement Focus:">Improvement Focus:</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-postmortem-framework">📊 Postmortem Framework<a hidden class="anchor" aria-hidden="true" href="#-postmortem-framework">#</a></h1>
+<p>Use this systematic framework to analyze your full test performance, identify trends, and develop targeted improvement strategies. Regular postmortem analysis is essential for continuous improvement.</p>
+<h2 id="-postmortem-process">🎯 Postmortem Process<a hidden class="anchor" aria-hidden="true" href="#-postmortem-process">#</a></h2>
+<h3 id="immediate-analysis-within-24-hours">Immediate Analysis (Within 24 hours)<a hidden class="anchor" aria-hidden="true" href="#immediate-analysis-within-24-hours">#</a></h3>
+<ul>
+<li><strong>Score calculation</strong>: Calculate your score and percentile</li>
+<li><strong>Problem-by-problem review</strong>: Analyze each problem individually</li>
+<li><strong>Error identification</strong>: Identify all mistakes and their causes</li>
+<li><strong>Time analysis</strong>: Review time spent on each problem</li>
+<li><strong>Strategy evaluation</strong>: Assess your overall approach</li>
+</ul>
+<h3 id="deep-analysis-within-48-hours">Deep Analysis (Within 48 hours)<a hidden class="anchor" aria-hidden="true" href="#deep-analysis-within-48-hours">#</a></h3>
+<ul>
+<li><strong>Pattern identification</strong>: Look for recurring themes</li>
+<li><strong>Strengths assessment</strong>: Identify what worked well</li>
+<li><strong>Weaknesses analysis</strong>: Identify areas for improvement</li>
+<li><strong>Strategy refinement</strong>: Adjust your approach</li>
+<li><strong>Action planning</strong>: Develop specific improvement strategies</li>
+</ul>
+<h2 id="-postmortem-checklist">📋 Postmortem Checklist<a hidden class="anchor" aria-hidden="true" href="#-postmortem-checklist">#</a></h2>
+<h3 id="test-performance">Test Performance<a hidden class="anchor" aria-hidden="true" href="#test-performance">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Score</strong>: What was your final score?</li>
+<li><input disabled="" type="checkbox"> <strong>Percentile</strong>: What percentile did you achieve?</li>
+<li><input disabled="" type="checkbox"> <strong>Target comparison</strong>: How does this compare to your target?</li>
+<li><input disabled="" type="checkbox"> <strong>Previous performance</strong>: How does this compare to past tests?</li>
+<li><input disabled="" type="checkbox"> <strong>Overall assessment</strong>: How do you feel about your performance?</li>
+</ul>
+<h3 id="problem-by-problem-analysis">Problem-by-Problem Analysis<a hidden class="anchor" aria-hidden="true" href="#problem-by-problem-analysis">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Problems 1-10</strong>: How many did you get correct?</li>
+<li><input disabled="" type="checkbox"> <strong>Problems 11-15</strong>: How many did you get correct?</li>
+<li><input disabled="" type="checkbox"> <strong>Problems 16-20</strong>: How many did you get correct?</li>
+<li><input disabled="" type="checkbox"> <strong>Problems 21-25</strong>: How many did you get correct?</li>
+<li><input disabled="" type="checkbox"> <strong>Accuracy by difficulty</strong>: What&rsquo;s your accuracy by difficulty level?</li>
+</ul>
+<h3 id="error-analysis">Error Analysis<a hidden class="anchor" aria-hidden="true" href="#error-analysis">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Total errors</strong>: How many problems did you get wrong?</li>
+<li><input disabled="" type="checkbox"> <strong>Error types</strong>: What types of errors did you make?</li>
+<li><input disabled="" type="checkbox"> <strong>Error patterns</strong>: Are there recurring error types?</li>
+<li><input disabled="" type="checkbox"> <strong>Error distribution</strong>: Where did most errors occur?</li>
+<li><input disabled="" type="checkbox"> <strong>Error causes</strong>: What caused these errors?</li>
+</ul>
+<h3 id="time-analysis">Time Analysis<a hidden class="anchor" aria-hidden="true" href="#time-analysis">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Total time</strong>: How much time did you spend overall?</li>
+<li><input disabled="" type="checkbox"> <strong>Time per problem</strong>: What was your average time per problem?</li>
+<li><input disabled="" type="checkbox"> <strong>Time distribution</strong>: How did you allocate time across problems?</li>
+<li><input disabled="" type="checkbox"> <strong>Time pressure</strong>: Did you feel rushed at any point?</li>
+<li><input disabled="" type="checkbox"> <strong>Time management</strong>: How well did you manage your time?</li>
+</ul>
+<h2 id="-detailed-analysis-framework">🔍 Detailed Analysis Framework<a hidden class="anchor" aria-hidden="true" href="#-detailed-analysis-framework">#</a></h2>
+<h3 id="problem-by-problem-review">Problem-by-Problem Review<a hidden class="anchor" aria-hidden="true" href="#problem-by-problem-review">#</a></h3>
+<h4 id="for-each-problem">For Each Problem:<a hidden class="anchor" aria-hidden="true" href="#for-each-problem">#</a></h4>
+<ul>
+<li><strong>Problem number</strong>: Which problem was it?</li>
+<li><strong>Difficulty level</strong>: Easy (1-10), Medium (11-20), Hard (21-25)</li>
+<li><strong>Topic</strong>: Algebra, Geometry, Number Theory, Counting/Probability, Precalculus</li>
+<li><strong>Your approach</strong>: What method did you use?</li>
+<li><strong>Time spent</strong>: How long did you spend on this problem?</li>
+<li><strong>Result</strong>: Correct, incorrect, or skipped</li>
+<li><strong>Error type</strong>: If incorrect, what type of error?</li>
+<li><strong>Correct solution</strong>: What was the correct approach?</li>
+<li><strong>Lessons learned</strong>: What can you learn from this problem?</li>
+</ul>
+<h4 id="example-problem-analysis">Example Problem Analysis:<a hidden class="anchor" aria-hidden="true" href="#example-problem-analysis">#</a></h4>
+<p><strong>Problem #15 (Medium, Algebra)</strong></p>
+<ul>
+<li><strong>Your approach</strong>: Used substitution method</li>
+<li><strong>Time spent</strong>: 4 minutes</li>
+<li><strong>Result</strong>: Incorrect</li>
+<li><strong>Error type</strong>: Calculation mistake in final step</li>
+<li><strong>Correct solution</strong>: Should have used elimination method</li>
+<li><strong>Lessons learned</strong>: Try different approaches when stuck, double-check arithmetic</li>
+</ul>
+<h3 id="error-pattern-analysis">Error Pattern Analysis<a hidden class="anchor" aria-hidden="true" href="#error-pattern-analysis">#</a></h3>
+<h4 id="error-categories">Error Categories:<a hidden class="anchor" aria-hidden="true" href="#error-categories">#</a></h4>
+<ul>
+<li><strong>Careless errors</strong>: Calculation mistakes, reading errors, bubbling errors</li>
+<li><strong>Conceptual errors</strong>: Misunderstanding, wrong approach, missing knowledge</li>
+<li><strong>Strategic errors</strong>: Time management, guessing strategy, problem selection</li>
+</ul>
+<h4 id="pattern-identification">Pattern Identification:<a hidden class="anchor" aria-hidden="true" href="#pattern-identification">#</a></h4>
+<ul>
+<li><strong>Most common error type</strong>: What error type occurs most frequently?</li>
+<li><strong>Error distribution</strong>: Where do most errors occur (by difficulty, topic)?</li>
+<li><strong>Error timing</strong>: When do errors typically occur (beginning, middle, end)?</li>
+<li><strong>Error causes</strong>: What are the root causes of your errors?</li>
+</ul>
+<h3 id="strengths-and-weaknesses-analysis">Strengths and Weaknesses Analysis<a hidden class="anchor" aria-hidden="true" href="#strengths-and-weaknesses-analysis">#</a></h3>
+<h4 id="strengths-assessment">Strengths Assessment:<a hidden class="anchor" aria-hidden="true" href="#strengths-assessment">#</a></h4>
+<ul>
+<li><strong>Strong topics</strong>: Which topics do you perform well on?</li>
+<li><strong>Strong problem types</strong>: Which problem types do you handle well?</li>
+<li><strong>Effective strategies</strong>: Which strategies work well for you?</li>
+<li><strong>Time management</strong>: How well do you manage your time?</li>
+<li><strong>Verification</strong>: How well do you check your work?</li>
+</ul>
+<h4 id="weaknesses-analysis">Weaknesses Analysis:<a hidden class="anchor" aria-hidden="true" href="#weaknesses-analysis">#</a></h4>
+<ul>
+<li><strong>Weak topics</strong>: Which topics need improvement?</li>
+<li><strong>Weak problem types</strong>: Which problem types are challenging?</li>
+<li><strong>Ineffective strategies</strong>: Which strategies don&rsquo;t work well?</li>
+<li><strong>Time management</strong>: Where do you struggle with time?</li>
+<li><strong>Verification</strong>: Where do you need to improve checking?</li>
+</ul>
+<h2 id="-improvement-planning">🎯 Improvement Planning<a hidden class="anchor" aria-hidden="true" href="#-improvement-planning">#</a></h2>
+<h3 id="priority-setting">Priority Setting<a hidden class="anchor" aria-hidden="true" href="#priority-setting">#</a></h3>
+<ul>
+<li><strong>Top 3 weaknesses</strong>: Identify your biggest improvement areas</li>
+<li><strong>Quick wins</strong>: Identify areas where you can improve quickly</li>
+<li><strong>Long-term goals</strong>: Identify areas requiring sustained effort</li>
+<li><strong>Resource allocation</strong>: How will you allocate your study time?</li>
+</ul>
+<h3 id="action-plan-development">Action Plan Development<a hidden class="anchor" aria-hidden="true" href="#action-plan-development">#</a></h3>
+<ul>
+<li><strong>Specific goals</strong>: Set concrete, measurable goals</li>
+<li><strong>Study plan</strong>: Develop specific study strategies</li>
+<li><strong>Practice plan</strong>: Create targeted practice routines</li>
+<li><strong>Timeline</strong>: Set realistic timelines for improvement</li>
+<li><strong>Progress tracking</strong>: Establish metrics for monitoring progress</li>
+</ul>
+<h3 id="example-action-plan">Example Action Plan:<a hidden class="anchor" aria-hidden="true" href="#example-action-plan">#</a></h3>
+<p><strong>Weakness</strong>: Poor time management on hard problems
+<strong>Goal</strong>: Reduce time spent on problems 21-25 by 50%
+<strong>Strategy</strong>: Set strict 5-minute time limits, practice with timer
+<strong>Practice plan</strong>: 30 minutes daily of timed practice on hard problems
+<strong>Timeline</strong>: 4 weeks to see improvement
+<strong>Progress tracking</strong>: Track time spent on hard problems weekly</p>
+<h2 id="-progress-tracking">📊 Progress Tracking<a hidden class="anchor" aria-hidden="true" href="#-progress-tracking">#</a></h2>
+<h3 id="weekly-reviews">Weekly Reviews<a hidden class="anchor" aria-hidden="true" href="#weekly-reviews">#</a></h3>
+<ul>
+<li><strong>Error log analysis</strong>: Review error patterns from past week</li>
+<li><strong>Practice performance</strong>: Assess improvement in practice</li>
+<li><strong>Strategy effectiveness</strong>: Evaluate which strategies are working</li>
+<li><strong>Goal progress</strong>: Track progress toward specific goals</li>
+<li><strong>Adjustments</strong>: Modify approach based on results</li>
+</ul>
+<h3 id="monthly-reviews">Monthly Reviews<a hidden class="anchor" aria-hidden="true" href="#monthly-reviews">#</a></h3>
+<ul>
+<li><strong>Overall progress</strong>: Assess improvement over the month</li>
+<li><strong>Goal achievement</strong>: Evaluate progress toward monthly goals</li>
+<li><strong>Strategy refinement</strong>: Adjust strategies based on results</li>
+<li><strong>New challenges</strong>: Identify emerging areas for improvement</li>
+<li><strong>Next month planning</strong>: Develop next month&rsquo;s strategy</li>
+</ul>
+<h2 id="-quick-reference">⚡ Quick Reference<a hidden class="anchor" aria-hidden="true" href="#-quick-reference">#</a></h2>
+<h3 id="postmortem-checklist">Postmortem Checklist:<a hidden class="anchor" aria-hidden="true" href="#postmortem-checklist">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Calculate score</strong>: Determine your final score and percentile</li>
+<li><input disabled="" type="checkbox"> <strong>Review each problem</strong>: Analyze every problem individually</li>
+<li><input disabled="" type="checkbox"> <strong>Identify errors</strong>: Categorize all mistakes and their causes</li>
+<li><input disabled="" type="checkbox"> <strong>Analyze patterns</strong>: Look for recurring themes</li>
+<li><input disabled="" type="checkbox"> <strong>Assess strengths</strong>: Identify what worked well</li>
+<li><input disabled="" type="checkbox"> <strong>Identify weaknesses</strong>: Find areas for improvement</li>
+<li><input disabled="" type="checkbox"> <strong>Develop action plan</strong>: Create specific improvement strategies</li>
+<li><input disabled="" type="checkbox"> <strong>Track progress</strong>: Monitor improvement over time</li>
+</ul>
+<h3 id="analysis-questions">Analysis Questions:<a hidden class="anchor" aria-hidden="true" href="#analysis-questions">#</a></h3>
+<ul>
+<li><strong>What went well?</strong>: Identify your successes</li>
+<li><strong>What went wrong?</strong>: Identify your failures</li>
+<li><strong>Why did it happen?</strong>: Understand the root causes</li>
+<li><strong>How can I improve?</strong>: Develop specific strategies</li>
+<li><strong>What&rsquo;s my plan?</strong>: Create actionable steps</li>
+</ul>
+<h3 id="improvement-focus">Improvement Focus:<a hidden class="anchor" aria-hidden="true" href="#improvement-focus">#</a></h3>
+<ul>
+<li><strong>Top 3 weaknesses</strong>: Focus on your biggest improvement areas</li>
+<li><strong>Quick wins</strong>: Target areas where you can improve quickly</li>
+<li><strong>Long-term goals</strong>: Plan for sustained improvement</li>
+<li><strong>Resource allocation</strong>: Use your time effectively</li>
+</ul>
+<hr>
+<p><strong>Next:</strong> <a href="../simulations/full-test-simulation-guide">Full Test Simulation Guide</a> | <strong>Back to:</strong> <a href="../">Strategy Guide</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/postmortem/">Postmortem</a></li>
+      <li><a href="http://localhost:1313/tags/analysis/">Analysis</a></li>
+      <li><a href="http://localhost:1313/tags/improvement/">Improvement</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

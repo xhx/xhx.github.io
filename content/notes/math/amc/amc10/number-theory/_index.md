@@ -78,3 +78,5 @@ Welcome to your comprehensive **Number Theory** study guide for AMC 10 & AMC 12!
 ---
 
 **Next**: Start with [Scope Map](reference/scope-map) to understand the coverage differences between AMC 10 and AMC 12.
+
+**Next**: [Precalculus](../precalculus) | **Prev**: [Counting & Probability](../counting-probability) | **Back**: [AMC 10 Overview](../)

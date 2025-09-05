@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Grid Paths | Xiaohui Xie&#39;s Site</title>
 <meta name="keywords" content="AMC10, AMC12, Counting, Grid Paths, Lattice">
 <meta name="description" content="Lattice path counting with blockages, diagonal moves, and symmetry techniques.">
 <meta name="author" content="Xiaohui Xie">
-<link rel="canonical" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/grid-paths/">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/counting-probability/03-problem-types/grid-paths/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://xhx.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/grid-paths/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/counting-probability/03-problem-types/grid-paths/">
 <noscript>
     <style>
         #theme-toggle,
@@ -70,106 +70,7 @@
         });"></script>
 
 
-<meta property="og:url" content="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/grid-paths/">
-  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
-  <meta property="og:title" content="Grid Paths">
-  <meta property="og:description" content="Lattice path counting with blockages, diagonal moves, and symmetry techniques.">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="notes">
-    <meta property="article:tag" content="Amc10">
-    <meta property="article:tag" content="AMC12">
-    <meta property="article:tag" content="Counting">
-    <meta property="article:tag" content="Grid Paths">
-    <meta property="article:tag" content="Lattice">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Grid Paths">
-<meta name="twitter:description" content="Lattice path counting with blockages, diagonal moves, and symmetry techniques.">
 
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Notes",
-      "item": "https://xhx.github.io/notes/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Mathematics Notes",
-      "item": "https://xhx.github.io/notes/math/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  3 ,
-      "name": "AMC Problems",
-      "item": "https://xhx.github.io/notes/math/amc/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  4 ,
-      "name": "AMC 10",
-      "item": "https://xhx.github.io/notes/math/amc/amc10/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  5 ,
-      "name": "Counting \u0026 Probability Mastery Guide",
-      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  6 ,
-      "name": "Problem Types",
-      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  7 ,
-      "name": "Grid Paths",
-      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/grid-paths/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Grid Paths",
-  "name": "Grid Paths",
-  "description": "Lattice path counting with blockages, diagonal moves, and symmetry techniques.",
-  "keywords": [
-    "AMC10", "AMC12", "Counting", "Grid Paths", "Lattice"
-  ],
-  "articleBody": "🗺️ Grid Paths Problems involving counting paths on a grid with various constraints and restrictions.\n🎯 Recognition Cues Keywords: “path”, “walk”, “grid”, “lattice”, “right and up”, “diagonal” Setup: Moving on a grid from one point to another Constraints: Blocked squares, diagonal moves, specific directions 📋 Solution Template Identify the path type:\nBasic lattice path: Only right and up moves Diagonal path: Includes diagonal moves Blocked path: Some squares are off-limits Apply the appropriate method:\nBasic lattice: Use $\\binom{m+n}{n}$ formula Diagonal: Use modified formula or recursion Blocked: Use inclusion-exclusion or dynamic programming Check for symmetry:\nReflection symmetry Rotation symmetry Diagonal symmetry 💡 Micro-Examples Basic Lattice Path Problem: How many ways can you walk from (0,0) to (3,2) moving only right and up? Solution: $\\binom{3+2}{2} = \\binom{5}{2} = 10$ ways Diagonal Path Problem: How many ways can you walk from (0,0) to (3,2) moving right, up, or diagonally up-right? Solution: Use recursion: $a_{i,j} = a_{i-1,j} + a_{i,j-1} + a_{i-1,j-1}$ Blocked Path Problem: How many ways can you walk from (0,0) to (3,2) avoiding the square (1,1)? Solution: Total paths - Paths through (1,1) = $\\binom{5}{2} - \\binom{2}{1} \\cdot \\binom{2}{1} = 10 - 4 = 6$ ⚠️ Common Pitfalls \u0026 Variants Pitfall: Forgetting to account for blocked squares Wrong: “Path from (0,0) to (3,2) avoiding (1,1)” = $\\binom{5}{2}$ Right: Total - Paths through (1,1) = $\\binom{5}{2} - \\binom{2}{1} \\cdot \\binom{2}{1}$ Pitfall: Confusing lattice paths with general paths Wrong: “Path from (0,0) to (3,2)” = $3! \\cdot 2! = 12$ ways Right: $\\binom{5}{2} = 10$ ways (lattice path formula) Pitfall: Misapplying diagonal path formulas Wrong: “Diagonal path from (0,0) to (3,2)” = $\\binom{5}{2}$ Right: Use recursion or modified formula for diagonal moves 🏆 AMC-Style Worked Example Problem: How many ways can you walk from (0,0) to (4,3) moving only right and up, avoiding the squares (1,1) and (2,2)?\nSolution:\nStep 1: Total paths from (0,0) to (4,3): $\\binom{7}{3} = 35$ Step 2: Paths through (1,1): $\\binom{2}{1} \\cdot \\binom{4}{2} = 2 \\cdot 6 = 12$ Step 3: Paths through (2,2): $\\binom{4}{2} \\cdot \\binom{2}{1} = 6 \\cdot 2 = 12$ Step 4: Paths through both (1,1) and (2,2): $\\binom{2}{1} \\cdot \\binom{2}{1} \\cdot \\binom{2}{1} = 8$ Step 5: By inclusion-exclusion: $35 - 12 - 12 + 8 = 19$ Key insight: Use inclusion-exclusion for multiple blocked squares!\n🔗 Related Topics Permutations \u0026 Combinations - Foundation for path counting Inclusion-Exclusion - Essential for blocked paths Symmetry \u0026 Invariance - Symmetry in path problems Next: Urn, Coin \u0026 String Problems → Expected Counts\n",
-  "wordCount" : "414",
-  "inLanguage": "en",
-  "datePublished": "0001-01-01T00:00:00Z",
-  "dateModified": "0001-01-01T00:00:00Z",
-  "author":{
-    "@type": "Person",
-    "name": "Xiaohui Xie"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/grid-paths/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Xiaohui Xie's Site",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://xhx.github.io/favicon.ico"
-    }
-  }
-}
-</script>
 </head>
 
 <body class="" id="top">
@@ -187,7 +88,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -219,13 +120,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/">Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/">Counting &amp; Probability Mastery Guide</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/">Problem Types</a></div>
-    <h1 class="post-title entry-hint-parent">
-      Grid Paths
-    </h1>
-    <div class="post-description">
-      Lattice path counting with blockages, diagonal moves, and symmetry techniques.
-    </div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/counting-probability/">Counting &amp; Probability Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/counting-probability/03-problem-types/">Problem Types</a></div>
     <div class="post-meta">2 min&nbsp;·&nbsp;Xiaohui Xie
 
 </div>
@@ -367,11 +262,11 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://xhx.github.io/tags/amc10/">Amc10</a></li>
-      <li><a href="https://xhx.github.io/tags/amc12/">AMC12</a></li>
-      <li><a href="https://xhx.github.io/tags/counting/">Counting</a></li>
-      <li><a href="https://xhx.github.io/tags/grid-paths/">Grid Paths</a></li>
-      <li><a href="https://xhx.github.io/tags/lattice/">Lattice</a></li>
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/counting/">Counting</a></li>
+      <li><a href="http://localhost:1313/tags/grid-paths/">Grid Paths</a></li>
+      <li><a href="http://localhost:1313/tags/lattice/">Lattice</a></li>
     </ul>
 
   </footer>
@@ -379,7 +274,7 @@
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
 
     
 </footer>

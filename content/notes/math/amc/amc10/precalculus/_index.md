@@ -13,12 +13,12 @@ Welcome to your comprehensive **AMC 10 & AMC 12 Precalculus** preparation hub! T
 
 ## 🗺️ Quick Navigation
 
-### 📚 [Reference Materials](/notes/math/amc/amc10/precalculus/reference/)
+### 📚 [Reference Materials](reference/)
 - **Scope Map**: AMC 10 vs AMC 12 topic coverage
 - **Notation Cheatsheet**: Essential symbols and conventions
 - **Concept Atlas**: Quick primers on all major topics
 
-### 🧭 [Topic Guides](/notes/math/amc/amc10/precalculus/topics/)
+### 🧭 [Topic Guides](topics/)
 Core precalculus concepts with AMC-focused examples:
 - **Functions & Transformations** - domains, ranges, inverses, shifts
 - **Equations & Inequalities** - absolute value, systems, AM-GM
@@ -29,7 +29,7 @@ Core precalculus concepts with AMC-focused examples:
 - **Sequences & Series** - arithmetic/geometric, telescoping
 - **Coordinate Geometry** - lines, circles, conics (AMC 12)
 
-### 🧩 [Problem Types](/notes/math/amc/amc10/precalculus/problem-types/)
+### 🧩 [Problem Types](problem-types/)
 Pattern recognition and solution templates:
 - **Trig Equations & Identities** - solving strategies
 - **Logarithm & Exponential** - equation solving techniques
@@ -37,10 +37,10 @@ Pattern recognition and solution templates:
 - **Complex Number Geometry** - rotations, loci, roots of unity
 - **Inequality Techniques** - AM-GM, Cauchy-Schwarz
 
-### 📏 [Essential Formulas](/notes/math/amc/amc10/precalculus/formulas/)
+### 📏 [Essential Formulas](formulas/)
 Quick reference for all key formulas with usage examples.
 
-### 💡 [Problem-Solving Tips](/notes/math/amc/amc10/precalculus/tips/)
+### 💡 [Problem-Solving Tips](tips/)
 Strategic approaches, checklists, and timing advice.
 
 ## 🎯 How to Use This Guide
@@ -60,4 +60,6 @@ Strategic approaches, checklists, and timing advice.
 
 ---
 
-**Ready to begin?** Start with the [Reference Materials](/notes/math/amc/amc10/precalculus/reference/) to understand the scope, then dive into [Topic Guides](/notes/math/amc/amc10/precalculus/topics/) for detailed study.
+**Ready to begin?** Start with the [Reference Materials](reference/) to understand the scope, then dive into [Topic Guides](topics/) for detailed study.
+
+**Next**: [Strategy](../strategy) | **Prev**: [Number Theory](../number-theory) | **Back**: [AMC 10 Overview](../)

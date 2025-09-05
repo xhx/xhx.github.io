@@ -1,190 +1,163 @@
 ---
-title: "AMC 10 Syllabus"
-description: "A comprehensive topic-by-topic syllabus for AMC 10"
+title: "AMC 10/12 Syllabus — What’s Actually Tested"
+description: "A focused, exam-accurate syllabus for AMC 10 and AMC 12: AMC 10 core + AMC 12 additions (logs, trig, complex)."
 date: 2024-01-01
 draft: false
 type: "notes"
 categories: ["math", "amc", "syllabus"]
-tags: ["amc10", "syllabus", "curriculum", "mathematics", "competition"]
+tags: ["AMC10","AMC12","syllabus","algebra","geometry","counting","probability","number theory","precalculus"]
 weight: 7
+ShowToc: true
 ---
 
-# A topic-by-topic "syllabus" for AMC 10
+# 📚 AMC 10/12 — Exam Syllabus
 
-## Algebra & Functions (≈ 36 % of total test)
+A streamlined, **what-you-actually-see** syllabus for AMC 10/12. It lists **AMC 10 core** topics and the **few key additions** for AMC 12 (mainly **logarithms, trigonometry, complex numbers**) plus light extensions of AMC 10 tools.
 
----
-
-1.1 Linear & Quadratic Expressions/Equations  (10 %)
-• Factoring, expanding, completing-the-square
-
-• Using Viète’s relations, sum/product of roots
-
-• Graph interpretation (vertex, intercepts, axis of symmetry)
-
-1.2 Higher-Degree Polynomials (4 %)
-• Remainder & Factor Theorems
-
-• Roots & coefficients relationships, symmetric sums
-
-• Synthetic division and clever substitution
-
-1.3 Rational Expressions & Equations (2 %)
-• Partial-fraction style decomposition
-
-• Domain restrictions, extraneous roots
-
-1.4 Inequalities (4 %)
-• AM–GM, Cauchy-Schwarz, rearrangement inequalities
-
-• Interval/“sign chart” methods, absolute-value splitting
-
-1.5 Systems of Equations (3 %)
-• Elimination/substitution (linear, nonlinear)
-
-• Symmetric systems; exploiting homogeneity
-
-1.6 Exponents & Radicals (3 %)
-• Rational and negative exponents, radical manipulation
-
-• Exponential growth/decay word scenarios
-
-1.7 Logarithms (1½ %)
-• Change-of-base, log-equation solving
-
-• Interpreting log scales in applied settings
-
-1.8 Sequences & Series (4 %)
-• Arithmetic & geometric sequences, recursion, telescoping sums
-
-• Finite/infinite geometric series sums
-
-1.9 Functions & Functional Equations (4½ %)
-• Composition, inverses, piecewise definitions
-
-• Cauchy-type functional equations with integer domain/codomain
-
-• Fixed points, periodicity
+> ✅ Use this as your planning backbone. If a topic isn’t listed here, it’s likely **AIME-level** or too rare for AMC 10/12.
 
 ---
 
-## Geometry (Plane, Coordinate, 3-D) (≈ 33 %)
+## 🗺️ Quick Topic Map
+
+| Domain | AMC 10 — Core Coverage | AMC 12 — Adds/Extends |
+|---|---|---|
+| 🧮 Algebra & Functions | Linear/quadratic; factoring & identities; remainder/factor; basic Vieta; rational expressions (domains, extraneous roots); inequalities (sign charts, absolute value, AM–GM lite); systems (linear + simple nonlinear); exponents/radicals; sequences (AP/GP, telescoping); basic function ops/graphs | **Logarithms** (laws, change-of-base, solving); a bit more discriminant/parameter sweeps; slightly richer functional-equation plugs |
+| 📐 Geometry | Similarity & congruence; circle theorems; **Power of a Point**; cyclic quads basics; coordinate line/circle, slope/distance/midpoint; shoelace; simple transformations; 3D formulas & nets | **Plane trigonometry** (unit circle values, identities, basic trig equations); **law of sines/cosines**; some deeper cyclic/similarity setups |
+| 🎲 Counting & Probability | Sum/product rules; complement; P&C (with/without repetition, indistinguishable); **Stars & Bars** (nonneg/positive + simple bounds); **PIE ≤ 3 sets**; **Pigeonhole**; grid paths, anagrams, seatings; probability (conditional, independence); **EV via linearity/indicators**; Binomial/Geometric recognition; simple Hypergeometric | Slightly richer PIE/bounded distributions; **derangements**; a bit more geometric probability |
+| 🔢 Number Theory | Divisibility, gcd/lcm, Euclid; prime factorization; modular arithmetic (residues, inverses when $\gcd=1$); last-digit cycles; simple **FLT/Euler** reductions; **CRT** with small coprime moduli; linear Diophantine $ax+by=c$; digits/bases & divisibility tests | More modular chains/orders, light valuation use (e.g., trailing zeros) |
+| 📘 “Precalculus” | — | **Logs, Trig, Complex** (algebra, modulus/argument, simple De Moivre/roots of unity geometry) |
 
 ---
 
-2.1 Triangles (8 %)
-• Similarity, congruence (SSS, ASA, etc.)
+## 🧮 Algebra & Functions (Core for AMC 10)
 
-• Area formulas: ½ ab sin C, Heron, coordinates/barycentric
+### 1) Linear & Quadratic
+- Factor/expand, complete the square; vertex/intercepts/axis; discriminant sense.
+- Viète (sum/product of roots), quick parameter checks.
 
-• Special points: centroid, incenter, orthocenter, circumcenter
+### 2) Polynomials
+- Remainder/Factor theorems; basic Vieta relations; synthetic division when natural.
+- Classic identities: $(a\pm b)^2$, $a^2-b^2$, $a^3\pm b^3$, $(a+b)^3$.
 
-2.2 Quadrilaterals & Polygons (3½ %)
-• Properties of parallelograms, trapezoids, cyclic quads
+### 3) Rational Expressions & Equations
+- **Domain first**; cancellation rules; avoid/spot **extraneous solutions**.
 
-• Interior/exterior angle sums, polygon dissection problems
+### 4) Inequalities & Absolute Value
+- Sign charts; piecewise splitting; **AM–GM** for quick bounds (light use).
 
-2.3 Circles (6 %)
-• Power of a Point, chord/tangent/angle theorems
+### 5) Systems
+- Substitution/elimination for linear; simple nonlinear pairs (e.g., line–circle).
 
-• Arc length & sector area, concentric and coaxal systems
+### 6) Exponents & Radicals
+- Laws of exponents; rational exponents; conjugate/rationalize tactics.
 
-2.4 Coordinate Geometry (5 %)
-• Slope/intercept, distance formula, midpoints
+### 7) Sequences & Series
+- AP/GP formulas; finite/infinite GP; simple telescoping sums.
 
-• Intersection of loci; using algebra to prove collinearity/concurrency
+### 8) Functions
+- Composition/inverses; graph transformations; piecewise; light functional-equation plugging for symmetry/fixed points.
 
-2.5 Transformational Geometry (2 %)
-• Reflections, rotations, translations, glide reflections
-
-• Symmetry counting, tessellation basics
-
-2.6 3-Dimensional Geometry (4 %)
-• Prisms, pyramids, cylinders, cones, spheres: volume, surface area
-
-• Cross-sections and nets; spatial diagonals; frustums
-
-2.7 Trigonometry (Plane) (2½ %)
-• Basic ratios, Pythagorean identities, law of sines/cosines
-
-• Angle-chasing via trig in non-right triangles
+#### AMC 12 Adds in Algebra
+- **Logarithms**: $\log$ laws, change-of-base, solving equations/inequalities, growth comparisons.
+- More discriminant/parameter sweeps (counting roots, tangency conditions).
 
 ---
 
-## Counting, Probability & Discrete Math (≈ 21 %)
+## 📐 Geometry (Core for AMC 10)
+
+### 1) Triangles
+- Similarity & congruence (SSS/SAS/ASA/AAS); area: $A=\tfrac12 ab\sin C$, **Heron**.
+- Special points: centroid, incenter, circumcenter, orthocenter (basic properties).
+
+### 2) Circles & Cyclic Figures
+- Central/inscribed angles; chord–tangent–secant relations; **Power of a Point**.
+- Cyclic quadrilaterals: opposite angles supplementary; equal angles $\leftrightarrow$ equal arcs.
+
+### 3) Coordinate Geometry
+- Slope, distance, midpoint; line & circle equations; collinearity/concurrency via algebra.
+- **Shoelace** for polygon area.
+
+### 4) Transformations & 3D Basics
+- Reflections/rotations/translations; symmetry arguments.
+- 3D volumes/surfaces (prisms, pyramids, cylinders, cones, spheres), nets & cross-sections; space diagonal.
+
+#### AMC 12 Adds in Geometry
+- **Trig toolkit**: unit circle values, identities (Pythagorean, angle addition/double/half), basic trig equations.
+- **Law of sines/cosines**, $A=\tfrac12 ab\sin C$ as an algebraic lever.
+- Slightly deeper cyclic/similarity chains (still AMC-level).
 
 ---
 
-3.1 Basic Counting Principles (6 %)
-• Fundamental Counting Principle, tree diagrams
+## 🎲 Counting & Probability (Core for AMC 10)
 
-• Ordered vs unordered selections; “slots” arguments
+### 1) Counting Principles & P&C
+- Sum/product rules; complement; with/without repetition; indistinguishable objects; circular basics.
 
-3.2 Permutations & Combinations (4½ %)
-• nPk, nCk manipulation, binomial identities
+### 2) Stars & Bars / PIE / Pigeonhole
+- Nonnegative/positive solutions; simple bounds/caps.
+- **PIE up to 3 sets**; **Pigeonhole** classic bounds and constructions.
 
-• Circular permutations, derangements, ranking permutations
+### 3) Classic Patterns
+- Grid paths; anagrams; seatings with restrictions (gaps/adjacency); committees with conditions.
 
-3.3 Advanced Enumeration (3 %)
-• Pigeonhole Principle; Principle of Inclusion–Exclusion
+### 4) Probability & Expected Value
+- Sample space models; conditional probability; independence checks.
+- **Linearity of expectation**; **indicator variables** (expected counts).  
+- Binomial/Geometric recognition; simple **Hypergeometric** selections.
 
-• Catalan-type recursion, ballot problems
-
-3.4 Probability (6 %)
-• Classical probability, geometric probability (area/length models)
-
-• Conditional probability, independence, Bayes’ theorem (qualitative)
-
-• Expected value, linearity of expectation
-
-3.5 Graphs & Networks (1½ %)
-• Simple planar graph counts (Euler formula)
-
-• Shortest-path and spanning tree style puzzles
+#### AMC 12 Adds in C&P
+- Slightly richer PIE/bounds; **derangements**; more geometric probability setups.
 
 ---
 
-## Number Theory (≈ 10 %)
+## 🔢 Number Theory (Core for AMC 10)
+
+### 1) Divisibility & GCD/LCM
+- Euclidean algorithm; $\gcd\!\cdot\!\operatorname{lcm}=\text{product}$; prime factorization.
+
+### 2) Modular Arithmetic
+- Residues; modular inverses when $\gcd=1$; last-digit cycles; reduce big exponents.
+- Quick use of **Fermat/Euler** to tame powers.
+
+### 3) CRT & Simple Diophantine
+- **CRT** with small pairwise coprime moduli; solve two-mod systems.
+- Linear forms $ax+by=c$, coin problems (two-coin Frobenius by recognition).
+
+### 4) Digits & Bases
+- Divisibility tests (3/9/11); digital sums; base-$b$ reasoning.
+
+#### AMC 12 Adds in NT
+- Longer modular chains, order/cycle reasoning; light valuations (e.g., trailing zeros).
 
 ---
 
-4.1 Divisibility & Primes (3 %)
-• Euclidean algorithm, gcd/lcm relations
-
-• Fundamental Theorem of Arithmetic, prime factor exponents
-
-4.2 Modular Arithmetic (3 %)
-• Congruence classes, inverses mod n, cyclicity of remainders
-
-• Chinese Remainder Theorem on small moduli, solving linear congruences
-
-4.3 Diophantine Equations (1½ %)
-• Integer lattice points, chicken McNugget (Frobenius) problem
-
-• Bounding arguments, parity/odd–even constraints
-
-4.4 Special Sequences & Functions (2½ %)
-• Euler’s totient, σ(n), τ(n) in simple settings
-
-• Fibonacci & other linear recurrences modulo m
+## 🚫 What to De-Emphasize for AMC 10/12
+- Heavy inequality machinery (Jensen, full Cauchy/Schwarz proofs, rearrangement as theory).
+- Generating functions/Burnside/Polya; Catalan/Stirling as formal topics.
+- Inversion, spiral similarity; advanced triangle-center geometry.
+- Conics beyond circles; vectors/matrices/eigenvalues beyond basics.
+- Quadratic reciprocity, Pell’s equation, continued fractions; complex analysis.
 
 ---
 
-## Miscellaneous / Algebra II-Lite (≈ 3–4 %)
+## 🎯 Study Flow (Practical)
+
+1. **Master AMC 10 Core** in all four domains (Algebra, Geometry, C&P, Number Theory).  
+2. Layer **AMC 12 Adds**: **Logs, Trig, Complex** (plus light extensions in each domain).  
+3. Drill **pattern recognition**: grid paths, stars & bars, PIE ≤ 3 sets, power-of-a-point, discriminant sweeps, modular cycles.  
+4. After each practice set: **error review** → log the miss reason (concept vs. slip vs. strategy).  
+5. Weekly checkpoint: 1 short mixed section (25–35 min) focusing on **timing + accuracy**.
 
 ---
 
-5.1 Complex Numbers (1 %)
-• Argand diagram distance/angle
+## 🧩 Micro-Checklist Before Test Day
+- **Domains covered**: Algebra ✔︎ Geometry ✔︎ Counting/Prob ✔︎ Number Theory ✔︎ (+ Logs/Trig/Complex for AMC 12).  
+- **Tools ready**: factor/identity bank, PoP & cyclic cues, stars-bars/PIE/pigeonhole, modular inverse/CRT.  
+- **Habits**: domain first (for rational/log/radical), verify after squaring/cross-multiplying, check units/signs/extremes, use complement/linearity.
 
-• Simple De Moivre, roots of unity symmetry
+> Keep it simple: nail the core, add logs/trig/complex, practice patterns, and review mistakes with discipline.
 
-5.2 Matrices & Determinants (½ %)
-• 2 × 2 determinant as area/rotation factor
+---
 
-• Simple system solving with inverses
-
-5.3 Reasoning & Logic (≈ 2 %)
-• Truth tables, implication, negation of quantified statements
-
-• Paradox/“liar” problems; constructive vs existence arguments
+**Next**: [Algebra](../algebra) | **Prev**: [AMC 10 Overview](../) | **Back**: [AMC Notes](../)

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Cevians, Concurrency, and Mass-Points | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="amc10, geometry, cevians, concurrency, mass-points, mathematics">
+<meta name="description" content="AMC 10 Geometry: Cevians, Concurrency, and Mass-Points">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/geometry2/topic-guides/cevians-concurrency-mass-points/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/geometry2/topic-guides/cevians-concurrency-mass-points/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry2/">AMC 10 Geometry Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry2/topic-guides/">AMC 10 Geometry Topic Guides</a></div>
+    <div class="post-meta"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="13--cevians-concurrency-and-mass-points">#13 – Cevians, Concurrency, and Mass-Points<a hidden class="anchor" aria-hidden="true" href="#13--cevians-concurrency-and-mass-points">#</a></h1>
+<p>Three line segments drawn from the vertices of a triangle to the opposite sides are called <strong>cevians</strong>.  When they all meet at one point we say they are <em>concurrent</em>.  AMC 10 geometry loves to test this via two intertwined tools:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Tool</th>
+          <th>Core statement</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Ceva&rsquo;s Theorem</strong></td>
+          <td>For concurrent cevians $AD,BE,CF$ in $\triangle ABC$ with $D\in BC,\ E\in CA,\ F\in AB$,  $\displaystyle \frac{BD}{DC}\cdot\frac{CE}{EA}\cdot\frac{AF}{FB}=1$.</td>
+      </tr>
+      <tr>
+          <td><strong>Mass Points</strong></td>
+          <td>Assign &ldquo;masses&rdquo; at vertices so each cevian balances its opposite side; segment ratios follow from center-of-mass rules.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="1-cevas-theorem--forward--converse">1 Ceva&rsquo;s Theorem – Forward &amp; Converse<a hidden class="anchor" aria-hidden="true" href="#1-cevas-theorem--forward--converse">#</a></h3>
+<ul>
+<li><strong>Forward:</strong> If $AD,BE,CF$ concur ⇒ the product of directed ratios equals 1.</li>
+<li><strong>Converse:</strong> If the product of ratios equals 1 ⇒ the three cevians meet at a single point.</li>
+</ul>
+<p><em>Mnemonic:</em> &ldquo;$\displaystyle \prod \text{(side pieces)} = 1$&rdquo; when cevians concur.</p>
+<hr>
+<h3 id="2-mass-points-in-3-lines">2 Mass-Points in 3 Lines<a hidden class="anchor" aria-hidden="true" href="#2-mass-points-in-3-lines">#</a></h3>
+<ol>
+<li><strong>Assign masses</strong> $m_A,m_B,m_C$ to $A,B,C$.</li>
+<li><strong>Edge balance:</strong> At $D$ (on $BC$) require $m_B: m_C = DC:BD$.</li>
+<li><strong>Cevian balance:</strong> The mass at the concurrency point is the sum of masses on that cevian&rsquo;s endpoints.</li>
+<li><strong>Solve integer masses</strong> to read off any unknown segment ratios.</li>
+</ol>
+<p>Because all calculations are integer proportions, mass-points is lightning-fast on AMC integer problems.</p>
+<hr>
+<h3 id="3-canonical-amc-10-prompts">3 Canonical AMC 10 Prompts<a hidden class="anchor" aria-hidden="true" href="#3-canonical-amc-10-prompts">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Setup</th>
+          <th>Quick path</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Given three ratios of side pieces, show cevians concur</td>
+          <td>Multiply; see if product is 1 (Ceva).</td>
+      </tr>
+      <tr>
+          <td>Two cevians are medians or angle-bisectors, find third ratio for concurrency</td>
+          <td>Plug known $=1$ ratio pairs into Ceva, solve for missing.</td>
+      </tr>
+      <tr>
+          <td>Complex web of points on sides with many ratios</td>
+          <td>Assign masses: each equation is a balance condition.</td>
+      </tr>
+      <tr>
+          <td>Need length of a small segment created by two or three cevians</td>
+          <td>Mass-points turns it into integer arithmetic.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="4-worked-example-a--missing-ratio">4 Worked Example A – &ldquo;Missing Ratio&rdquo;<a hidden class="anchor" aria-hidden="true" href="#4-worked-example-a--missing-ratio">#</a></h3>
+<blockquote>
+<p>In $\triangle ABC$, points $D,E$ are on $BC,CA$ such that $AD$ and $BE$ intersect at $P$.</p>
+<p>If $\dfrac{BD}{DC}=2$ and $\dfrac{CE}{EA}=3$, find $\dfrac{AF}{FB}$ so that $CF$ through $P$ is concurrent with the others.</p></blockquote>
+<p>Ceva:</p>
+<p>$$2\cdot3\cdot\frac{AF}{FB}=1;;\Longrightarrow;;\frac{AF}{FB}=\frac16.$$</p>
+<p>So $AF:FB=1:6$.</p>
+<hr>
+<h3 id="5-worked-example-b--mass-points-speed-solve">5 Worked Example B – Mass-Points Speed Solve<a hidden class="anchor" aria-hidden="true" href="#5-worked-example-b--mass-points-speed-solve">#</a></h3>
+<blockquote>
+<p>In $\triangle ABC$, $AD, BE, CF$ concur at $P$.</p>
+<p>Suppose $BD:DC = 1:2$ and $CE:EA=4:1$.</p>
+<p>Find $AF:FB$.</p></blockquote>
+<p><strong>Step-by-step masses</strong></p>
+<ol>
+<li>
+<p>Put mass $m_B=2$ and $m_C=1$ so edge $BD:DC=1:2$ balances at $D$.</p>
+</li>
+<li>
+<p>$CE:EA=4:1$ ⇒ put $m_C=1$ (already) and scale $m_A=4$.</p>
+</li>
+<li>
+<p>Mass at $P$ on cevian $AD$ is $m_A+m_D=4+?$; $m_D=m_B+m_C=3$.</p>
+<p>Actually you don&rsquo;t need $P$; go straight to side $AB$:</p>
+<p>$m_A:m_B = 4:2 = 2:1$.</p>
+<p>So $AF:FB=1:2$.</p>
+</li>
+</ol>
+<p>Check with Ceva: $(1/2)\cdot(4/1)\cdot(1/2)=1$. ✓</p>
+<p>Mass-points did that without writing Ceva explicitly.</p>
+<hr>
+<h3 id="6-common-amc-twists">6 Common AMC &ldquo;Twists&rdquo;<a hidden class="anchor" aria-hidden="true" href="#6-common-amc-twists">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Twist</th>
+          <th>Tip</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>One cevian is a <strong>median</strong></td>
+          <td>Median sets its side ratio to $1$.</td>
+      </tr>
+      <tr>
+          <td>One cevian is an <strong>angle bisector</strong></td>
+          <td>Uses <strong>Angle-bisector theorem</strong> ratio instead of arbitrary.</td>
+      </tr>
+      <tr>
+          <td>Concurrency outside the triangle</td>
+          <td>Ceva still works with directed segments (signs).</td>
+      </tr>
+      <tr>
+          <td>Request for <strong>area ratio</strong></td>
+          <td>Similar triangles formed by cevians scale by product of side ratios.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="7-recognition--speed-checklist">7 Recognition &amp; Speed Checklist<a hidden class="anchor" aria-hidden="true" href="#7-recognition--speed-checklist">#</a></h3>
+<ol>
+<li><strong>See three lines from vertices?</strong> Write Ceva product in your head.</li>
+<li><strong>Integer ratios given?</strong> Mass-points almost certainly quicker.</li>
+<li><strong>Answer choices small integers like 2,3,6?</strong> Expect Ceva outputs like $1/3$ or $2$.</li>
+<li><strong>Diagram has medians or bisectors</strong> – remember those built-in ratios: median $=1$, bisector $=\text{adjacent sides}$.</li>
+</ol>
+<hr>
+<p>With Ceva at the front of your toolkit and mass-points as a mental calculator, AMC 10 concurrency problems collapse to a few lines of proportion arithmetic.</p>
+<p>Ready to move on to <strong>Problem Type #14 – Circle Tangent to Two Lines &amp; a Circle (Incircle/Excircle setups)</strong>, or do you want more practice problems here?</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/geometry/">Geometry</a></li>
+      <li><a href="http://localhost:1313/tags/cevians/">Cevians</a></li>
+      <li><a href="http://localhost:1313/tags/concurrency/">Concurrency</a></li>
+      <li><a href="http://localhost:1313/tags/mass-points/">Mass-Points</a></li>
+      <li><a href="http://localhost:1313/tags/mathematics/">Mathematics</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

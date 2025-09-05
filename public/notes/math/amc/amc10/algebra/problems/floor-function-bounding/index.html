@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Floor Function Bounding | Xiaohui Xie&#39;s Site</title>
 <meta name="keywords" content="amc10, algebra, floor-function, mathematics, competition">
 <meta name="description" content="AMC 10 Algebra: Floor function bounding techniques">
 <meta name="author" content="Xiaohui Xie">
-<link rel="canonical" href="https://xhx.github.io/notes/math/amc/amc10/algebra/problems/floor-function-bounding/">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/algebra/problems/floor-function-bounding/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://xhx.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://xhx.github.io/notes/math/amc/amc10/algebra/problems/floor-function-bounding/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/algebra/problems/floor-function-bounding/">
 <noscript>
     <style>
         #theme-toggle,
@@ -70,108 +70,7 @@
         });"></script>
 
 
-<meta property="og:url" content="https://xhx.github.io/notes/math/amc/amc10/algebra/problems/floor-function-bounding/">
-  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
-  <meta property="og:title" content="Floor Function Bounding">
-  <meta property="og:description" content="AMC 10 Algebra: Floor function bounding techniques">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="notes">
-    <meta property="article:published_time" content="2024-01-01T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-01-01T00:00:00+00:00">
-    <meta property="article:tag" content="Amc10">
-    <meta property="article:tag" content="Algebra">
-    <meta property="article:tag" content="Floor-Function">
-    <meta property="article:tag" content="Mathematics">
-    <meta property="article:tag" content="Competition">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Floor Function Bounding">
-<meta name="twitter:description" content="AMC 10 Algebra: Floor function bounding techniques">
 
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Notes",
-      "item": "https://xhx.github.io/notes/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Mathematics Notes",
-      "item": "https://xhx.github.io/notes/math/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  3 ,
-      "name": "AMC Problems",
-      "item": "https://xhx.github.io/notes/math/amc/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  4 ,
-      "name": "AMC 10",
-      "item": "https://xhx.github.io/notes/math/amc/amc10/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  5 ,
-      "name": "Algebra",
-      "item": "https://xhx.github.io/notes/math/amc/amc10/algebra/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  6 ,
-      "name": "Algebra Problems",
-      "item": "https://xhx.github.io/notes/math/amc/amc10/algebra/problems/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  7 ,
-      "name": "Floor Function Bounding",
-      "item": "https://xhx.github.io/notes/math/amc/amc10/algebra/problems/floor-function-bounding/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Floor Function Bounding",
-  "name": "Floor Function Bounding",
-  "description": "AMC 10 Algebra: Floor function bounding techniques",
-  "keywords": [
-    "amc10", "algebra", "floor-function", "mathematics", "competition"
-  ],
-  "articleBody": "Floor‑function bounding with $\\lfloor\\sqrt{n}\\rfloor$ 💡 Problem. AMC 10A 2020 Problem 20\nLet $T$ be the triangle in the coordinate plane with vertices $(0,0)$, $(4,0)$, and $(4,3)$. Consider the following five isometries (rigid transformations) of the plane: rotations of $90^{\\circ}$, $180^{\\circ}$, and $270^{\\circ}$ counterclockwise around the origin, reflection across the $x$-axis, and reflection across the $y$-axis. How many of the 125 sequences of three of these transformations (not necessarily distinct) will return $T$ to its original position?\nSolution. We need to count the number of sequences of three transformations that return triangle $T$ to its original position.\nLet’s analyze each transformation:\nRotation by $90°$ counterclockwise: $(x,y) \\to (-y,x)$ Rotation by $180°$ counterclockwise: $(x,y) \\to (-x,-y)$ Rotation by $270°$ counterclockwise: $(x,y) \\to (y,-x)$ Reflection across $x$-axis: $(x,y) \\to (x,-y)$ Reflection across $y$-axis: $(x,y) \\to (-x,y)$ The original triangle $T$ has vertices $(0,0)$, $(4,0)$, and $(4,3)$.\nStep 1: Find transformations that return $T$ to itself Let’s check which single transformations return $T$ to itself:\nRotation by $180°$: $(0,0) \\to (0,0)$, $(4,0) \\to (-4,0)$, $(4,3) \\to (-4,-3)$\nThis does NOT return $T$ to itself. Reflection across $x$-axis: $(0,0) \\to (0,0)$, $(4,0) \\to (4,0)$, $(4,3) \\to (4,-3)$\nThis does NOT return $T$ to itself. Reflection across $y$-axis: $(0,0) \\to (0,0)$, $(4,0) \\to (-4,0)$, $(4,3) \\to (-4,3)$\nThis does NOT return $T$ to itself. Rotation by $90°$: $(0,0) \\to (0,0)$, $(4,0) \\to (0,4)$, $(4,3) \\to (-3,4)$\nThis does NOT return $T$ to itself. Rotation by $270°$: $(0,0) \\to (0,0)$, $(4,0) \\to (0,-4)$, $(4,3) \\to (3,-4)$\nThis does NOT return $T$ to itself. Step 2: Find sequences of two transformations Let’s check sequences of two transformations:\nIdentity transformation: The composition of any transformation with its inverse gives the identity.\nRotation by $90°$ followed by rotation by $270°$ = Identity Rotation by $180°$ followed by rotation by $180°$ = Identity Reflection across $x$-axis followed by reflection across $x$-axis = Identity Reflection across $y$-axis followed by reflection across $y$-axis = Identity Step 3: Find sequences of three transformations For a sequence of three transformations to return $T$ to itself, the composition of all three must be the identity transformation.\nLet’s denote the transformations as:\n$R_{90}$: Rotation by $90°$ $R_{180}$: Rotation by $180°$ $R_{270}$: Rotation by $270°$ $R_x$: Reflection across $x$-axis $R_y$: Reflection across $y$-axis We need to find all ordered triples $(A, B, C)$ such that $A \\circ B \\circ C = \\text{Identity}$.\nThis means $A \\circ B = C^{-1}$.\nStep 4: Count the valid sequences Since we have 5 transformations and each has an inverse, we need to count the number of ways to choose $A$ and $B$ such that $A \\circ B$ is one of the 5 transformations.\nFor each choice of $A$ (5 choices), there is exactly one choice of $B$ such that $A \\circ B$ equals any given transformation.\nHowever, we need to be more systematic. Let’s use the fact that:\nRotations: $R_{90} \\circ R_{270} = R_{180} \\circ R_{180} = \\text{Identity}$ Reflections: $R_x \\circ R_x = R_y \\circ R_y = \\text{Identity}$ For three transformations to compose to identity, we need:\nEither all three are the same transformation (and it’s an involution) Or the first two compose to the inverse of the third Let’s count systematically:\nCase 1: All three transformations are the same\n$R_{180} \\circ R_{180} \\circ R_{180} = R_{180}$ (not identity) $R_x \\circ R_x \\circ R_x = R_x$ (not identity) $R_y \\circ R_y \\circ R_y = R_y$ (not identity) Case 2: First two compose to the inverse of the third\nFor $R_{90}$:\n$R_{90} \\circ R_{270} \\circ R_{180} = \\text{Identity} \\circ R_{180} = R_{180}$ (not identity) $R_{90} \\circ R_{180} \\circ R_{270} = R_{270} \\circ R_{270} = R_{180}$ (not identity) Wait, let me recalculate this more carefully.\nActually, let’s use a different approach. We know that:\n$R_{90} \\circ R_{270} = \\text{Identity}$ $R_{180} \\circ R_{180} = \\text{Identity}$ $R_x \\circ R_x = \\text{Identity}$ $R_y \\circ R_y = \\text{Identity}$ For three transformations to compose to identity, we need the first two to compose to the inverse of the third.\nThe inverses are:\n$R_{90}^{-1} = R_{270}$ $R_{180}^{-1} = R_{180}$ $R_{270}^{-1} = R_{90}$ $R_x^{-1} = R_x$ $R_y^{-1} = R_y$ So we need:\n$A \\circ B = R_{270}$ and $C = R_{90}$ $A \\circ B = R_{180}$ and $C = R_{180}$ $A \\circ B = R_{90}$ and $C = R_{270}$ $A \\circ B = R_x$ and $C = R_x$ $A \\circ B = R_y$ and $C = R_y$ For each case, we need to count how many pairs $(A,B)$ satisfy $A \\circ B = \\text{target}$.\nSince we have 5 transformations, for each target transformation, there are exactly 5 pairs $(A,B)$ such that $A \\circ B = \\text{target}$ (one for each choice of $A$).\nTherefore, the total number of valid sequences is $5 \\times 5 = 25$.\nAnswer: $\\boxed{25}$\n",
-  "wordCount" : "786",
-  "inLanguage": "en",
-  "datePublished": "2024-01-01T00:00:00Z",
-  "dateModified": "2024-01-01T00:00:00Z",
-  "author":{
-    "@type": "Person",
-    "name": "Xiaohui Xie"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://xhx.github.io/notes/math/amc/amc10/algebra/problems/floor-function-bounding/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Xiaohui Xie's Site",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://xhx.github.io/favicon.ico"
-    }
-  }
-}
-</script>
 </head>
 
 <body class="" id="top">
@@ -189,7 +88,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -221,13 +120,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/">Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/algebra/">Algebra</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/algebra/problems/">Algebra Problems</a></div>
-    <h1 class="post-title entry-hint-parent">
-      Floor Function Bounding
-    </h1>
-    <div class="post-description">
-      AMC 10 Algebra: Floor function bounding techniques
-    </div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/algebra/">Algebra Mastery Guide — AMC 10 &amp; AMC 12</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/algebra/problems/">Algebra Problems</a></div>
     <div class="post-meta"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Xiaohui Xie
 
 </div>
@@ -366,11 +259,11 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://xhx.github.io/tags/amc10/">Amc10</a></li>
-      <li><a href="https://xhx.github.io/tags/algebra/">Algebra</a></li>
-      <li><a href="https://xhx.github.io/tags/floor-function/">Floor-Function</a></li>
-      <li><a href="https://xhx.github.io/tags/mathematics/">Mathematics</a></li>
-      <li><a href="https://xhx.github.io/tags/competition/">Competition</a></li>
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/algebra/">Algebra</a></li>
+      <li><a href="http://localhost:1313/tags/floor-function/">Floor-Function</a></li>
+      <li><a href="http://localhost:1313/tags/mathematics/">Mathematics</a></li>
+      <li><a href="http://localhost:1313/tags/competition/">Competition</a></li>
     </ul>
 
   </footer>
@@ -378,7 +271,7 @@
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
 
     
 </footer>

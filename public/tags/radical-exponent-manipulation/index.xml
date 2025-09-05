@@ -2,18 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Radical-Exponent-Manipulation on Xiaohui Xie&#39;s Site</title>
-    <link>https://xhx.github.io/tags/radical-exponent-manipulation/</link>
+    <link>http://localhost:1313/tags/radical-exponent-manipulation/</link>
     <description>Recent content in Radical-Exponent-Manipulation on Xiaohui Xie&#39;s Site</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xhx.github.io/tags/radical-exponent-manipulation/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Radical‑Exponent Manipulation / “Sum‑of‑Cubes” Trick</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/radical-exponent-manipulation/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/algebra/problems/radical-exponent-manipulation/</guid>
-      <description>AMC 10 Algebra: Radical‑Exponent Manipulation / “Sum‑of‑Cubes” Trick</description>
-    </item>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/radical-exponent-manipulation/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

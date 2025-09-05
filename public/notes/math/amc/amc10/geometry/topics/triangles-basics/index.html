@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Triangles Basics | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Geometry, Triangles, Congruence, Similarity, Study Guide">
+<meta name="description" content="Fundamental triangle properties: congruence, similarity, and special triangle types with AMC applications.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/geometry/topics/triangles-basics/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/geometry/topics/triangles-basics/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/">Geometry Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/topics/">Topic Guides</a></div>
+    <div class="post-meta">3 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-triangles-basics" aria-label="🔺 Triangles Basics">🔺 Triangles Basics</a><ul>
+                        
+                <li>
+                    <a href="#-key-concepts" aria-label="🎯 Key Concepts">🎯 Key Concepts</a><ul>
+                        
+                <li>
+                    <a href="#triangle-congruence" aria-label="Triangle Congruence">Triangle Congruence</a></li>
+                <li>
+                    <a href="#triangle-similarity" aria-label="Triangle Similarity">Triangle Similarity</a></li>
+                <li>
+                    <a href="#special-triangles" aria-label="Special Triangles">Special Triangles</a><ul>
+                        
+                <li>
+                    <a href="#isosceles-triangles" aria-label="Isosceles Triangles">Isosceles Triangles</a></li>
+                <li>
+                    <a href="#equilateral-triangles" aria-label="Equilateral Triangles">Equilateral Triangles</a></li></ul>
+                </li></ul>
+                </li>
+                <li>
+                    <a href="#-micro-examples" aria-label="🔍 Micro-Examples">🔍 Micro-Examples</a><ul>
+                        
+                <li>
+                    <a href="#congruence-example" aria-label="Congruence Example">Congruence Example</a></li>
+                <li>
+                    <a href="#similarity-example" aria-label="Similarity Example">Similarity Example</a></li>
+                <li>
+                    <a href="#isosceles-example" aria-label="Isosceles Example">Isosceles Example</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-common-traps" aria-label="⚠️ Common Traps">⚠️ Common Traps</a></li>
+                <li>
+                    <a href="#-amc-style-worked-example" aria-label="🎯 AMC-Style Worked Example">🎯 AMC-Style Worked Example</a></li>
+                <li>
+                    <a href="#-related-topics" aria-label="🔗 Related Topics">🔗 Related Topics</a></li>
+                <li>
+                    <a href="#-quick-reference" aria-label="💡 Quick Reference">💡 Quick Reference</a><ul>
+                        
+                <li>
+                    <a href="#congruence-shortcuts" aria-label="Congruence Shortcuts">Congruence Shortcuts</a></li>
+                <li>
+                    <a href="#similarity-shortcuts" aria-label="Similarity Shortcuts">Similarity Shortcuts</a></li>
+                <li>
+                    <a href="#common-ratios" aria-label="Common Ratios">Common Ratios</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-triangles-basics">🔺 Triangles Basics<a hidden class="anchor" aria-hidden="true" href="#-triangles-basics">#</a></h1>
+<p>Triangles are the fundamental building blocks of plane geometry. Master these core concepts to unlock most AMC geometry problems.</p>
+<h2 id="-key-concepts">🎯 Key Concepts<a hidden class="anchor" aria-hidden="true" href="#-key-concepts">#</a></h2>
+<h3 id="triangle-congruence">Triangle Congruence<a hidden class="anchor" aria-hidden="true" href="#triangle-congruence">#</a></h3>
+<p>Two triangles are <strong>congruent</strong> if all corresponding parts are equal. The four main criteria are:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Criterion</th>
+          <th>What&rsquo;s Given</th>
+          <th>What&rsquo;s Proved</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>SSS</strong></td>
+          <td>Three sides</td>
+          <td>All angles and sides equal</td>
+      </tr>
+      <tr>
+          <td><strong>SAS</strong></td>
+          <td>Two sides + included angle</td>
+          <td>All parts equal</td>
+      </tr>
+      <tr>
+          <td><strong>ASA</strong></td>
+          <td>Two angles + included side</td>
+          <td>All parts equal</td>
+      </tr>
+      <tr>
+          <td><strong>AAS</strong></td>
+          <td>Two angles + non-included side</td>
+          <td>All parts equal</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Pro move:</strong> Order matters! In $\triangle ABC \cong \triangle DEF$, vertex $A$ corresponds to $D$, $B$ to $E$, and $C$ to $F$.</p>
+<h3 id="triangle-similarity">Triangle Similarity<a hidden class="anchor" aria-hidden="true" href="#triangle-similarity">#</a></h3>
+<p>Two triangles are <strong>similar</strong> if corresponding angles are equal and corresponding sides are proportional.</p>
+<p><strong>Similarity Criteria:</strong></p>
+<ul>
+<li><strong>AA:</strong> Two angles equal (third automatically equal)</li>
+<li><strong>SAS:</strong> Two sides proportional + included angle equal</li>
+<li><strong>SSS:</strong> All three sides proportional</li>
+</ul>
+<p><strong>Key Insight:</strong> Similarity ratio $k$ means all lengths scale by $k$, areas by $k^2$.</p>
+<h3 id="special-triangles">Special Triangles<a hidden class="anchor" aria-hidden="true" href="#special-triangles">#</a></h3>
+<h4 id="isosceles-triangles">Isosceles Triangles<a hidden class="anchor" aria-hidden="true" href="#isosceles-triangles">#</a></h4>
+<ul>
+<li><strong>Definition:</strong> Two sides equal</li>
+<li><strong>Key Properties:</strong> Base angles equal, altitude bisects base and vertex angle</li>
+<li><strong>AMC Appearance:</strong> Often appears in angle chasing problems</li>
+</ul>
+<h4 id="equilateral-triangles">Equilateral Triangles<a hidden class="anchor" aria-hidden="true" href="#equilateral-triangles">#</a></h4>
+<ul>
+<li><strong>Definition:</strong> All three sides equal</li>
+<li><strong>Key Properties:</strong> All angles $60°$, all altitudes/medians/angle bisectors equal</li>
+<li><strong>AMC Appearance:</strong> Common in coordinate geometry and area problems</li>
+</ul>
+<h2 id="-micro-examples">🔍 Micro-Examples<a hidden class="anchor" aria-hidden="true" href="#-micro-examples">#</a></h2>
+<h3 id="congruence-example">Congruence Example<a hidden class="anchor" aria-hidden="true" href="#congruence-example">#</a></h3>
+<p>In $\triangle ABC$, if $AB = AC$ and $\angle B = \angle C$, then $\triangle ABC$ is isosceles by definition, and $\triangle ABC \cong \triangle ACB$ by SAS.</p>
+<h3 id="similarity-example">Similarity Example<a hidden class="anchor" aria-hidden="true" href="#similarity-example">#</a></h3>
+<p>If $\triangle ABC$ has $\angle A = 60°$ and $\angle B = 80°$, and $\triangle DEF$ has $\angle D = 60°$ and $\angle E = 80°$, then $\triangle ABC \sim \triangle DEF$ by AA.</p>
+<h3 id="isosceles-example">Isosceles Example<a hidden class="anchor" aria-hidden="true" href="#isosceles-example">#</a></h3>
+<p>In isosceles $\triangle ABC$ with $AB = AC$, if $D$ is the midpoint of $BC$, then $AD$ is both the median and altitude, and $\angle BAD = \angle CAD$.</p>
+<h2 id="-common-traps">⚠️ Common Traps<a hidden class="anchor" aria-hidden="true" href="#-common-traps">#</a></h2>
+<p><strong>Pitfall:</strong> Assuming congruence from SSA</p>
+<ul>
+<li><strong>Fix:</strong> SSA only works for right triangles (HL) or when the angle is opposite the longer side</li>
+</ul>
+<p><strong>Pitfall:</strong> Confusing similarity and congruence</p>
+<ul>
+<li><strong>Fix:</strong> Similarity preserves shape, congruence preserves both shape and size</li>
+</ul>
+<p><strong>Pitfall:</strong> Wrong order in similarity statements</p>
+<ul>
+<li><strong>Fix:</strong> Always match corresponding vertices: $A \leftrightarrow D$, $B \leftrightarrow E$, $C \leftrightarrow F$</li>
+</ul>
+<h2 id="-amc-style-worked-example">🎯 AMC-Style Worked Example<a hidden class="anchor" aria-hidden="true" href="#-amc-style-worked-example">#</a></h2>
+<p><strong>Problem:</strong> In triangle $ABC$, points $D$ and $E$ are on sides $AB$ and $AC$ respectively, such that $DE \parallel BC$. If $AD = 3$, $DB = 2$, and $BC = 10$, find $DE$.</p>
+<p><strong>Solution:</strong>
+Since $DE \parallel BC$, we have $\triangle ADE \sim \triangle ABC$ by AA (corresponding angles equal).</p>
+<p>The similarity ratio is $\frac{AD}{AB} = \frac{3}{3+2} = \frac{3}{5}$.</p>
+<p>Therefore, $\frac{DE}{BC} = \frac{3}{5}$, so $DE = \frac{3}{5} \cdot 10 = 6$.</p>
+<p><strong>Answer:</strong> $DE = 6$</p>
+<h2 id="-related-topics">🔗 Related Topics<a hidden class="anchor" aria-hidden="true" href="#-related-topics">#</a></h2>
+<ul>
+<li><a href="../triangle-centers"><strong>Triangle Centers</strong></a> - Special points in triangles</li>
+<li><a href="../special-segments-in-triangles"><strong>Special Segments</strong></a> - Medians, altitudes, angle bisectors</li>
+<li><a href="../similarity-and-ratios"><strong>Similarity &amp; Ratios</strong></a> - Advanced similarity applications</li>
+<li><a href="../angle-chasing"><strong>Angle Chasing</strong></a> - Using triangle properties in angle problems</li>
+</ul>
+<h2 id="-quick-reference">💡 Quick Reference<a hidden class="anchor" aria-hidden="true" href="#-quick-reference">#</a></h2>
+<h3 id="congruence-shortcuts">Congruence Shortcuts<a hidden class="anchor" aria-hidden="true" href="#congruence-shortcuts">#</a></h3>
+<ul>
+<li><strong>Right triangles:</strong> HL (hypotenuse-leg)</li>
+<li><strong>Isosceles:</strong> If two sides equal, base angles equal</li>
+<li><strong>Equilateral:</strong> If one side equal to others, all angles $60°$</li>
+</ul>
+<h3 id="similarity-shortcuts">Similarity Shortcuts<a hidden class="anchor" aria-hidden="true" href="#similarity-shortcuts">#</a></h3>
+<ul>
+<li><strong>Parallel lines:</strong> Create similar triangles</li>
+<li><strong>Angle bisectors:</strong> Often create similar triangles</li>
+<li><strong>Right triangles:</strong> Look for shared acute angles</li>
+</ul>
+<h3 id="common-ratios">Common Ratios<a hidden class="anchor" aria-hidden="true" href="#common-ratios">#</a></h3>
+<ul>
+<li><strong>30-60-90:</strong> Sides in ratio $1 : \sqrt{3} : 2$</li>
+<li><strong>45-45-90:</strong> Sides in ratio $1 : 1 : \sqrt{2}$</li>
+<li><strong>3-4-5:</strong> Right triangle with sides 3, 4, 5</li>
+</ul>
+<hr>
+<p><strong>Next:</strong> <a href="../triangle-centers">Triangle Centers →</a> | <strong>Prev:</strong> <a href="../">Topics Overview →</a> | <strong>Back to:</strong> <a href="../../">Geometry Mastery Guide →</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/geometry/">Geometry</a></li>
+      <li><a href="http://localhost:1313/tags/triangles/">Triangles</a></li>
+      <li><a href="http://localhost:1313/tags/congruence/">Congruence</a></li>
+      <li><a href="http://localhost:1313/tags/similarity/">Similarity</a></li>
+      <li><a href="http://localhost:1313/tags/study-guide/">Study Guide</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

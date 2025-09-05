@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Topic Guides | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Geometry, Topics, Guides, Study">
+<meta name="description" content="Comprehensive guides for each major geometry topic with examples, traps, and AMC-style problems.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/geometry/topics/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/notes/math/amc/amc10/geometry/topics/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/geometry/topics/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/">Geometry Mastery Guide</a></div>
+</header>
+<div class="post-content"><h1 id="-topic-guides">🧭 Topic Guides<a hidden class="anchor" aria-hidden="true" href="#-topic-guides">#</a></h1>
+<p>Deep dive into each major geometry topic with comprehensive explanations, examples, and AMC-style problems.</p>
+<h2 id="-topic-overview">📚 Topic Overview<a hidden class="anchor" aria-hidden="true" href="#-topic-overview">#</a></h2>
+<h3 id="-triangle-fundamentals">🔺 Triangle Fundamentals<a hidden class="anchor" aria-hidden="true" href="#-triangle-fundamentals">#</a></h3>
+<ul>
+<li><a href="triangles-basics"><strong>Triangles Basics</strong></a> - Congruence, similarity, special triangles</li>
+<li><a href="triangle-centers"><strong>Triangle Centers</strong></a> - Centroid, incenter, circumcenter, orthocenter</li>
+<li><a href="special-segments-in-triangles"><strong>Special Segments</strong></a> - Medians, altitudes, angle bisectors</li>
+</ul>
+<h3 id="-angle-relationships">📐 Angle Relationships<a hidden class="anchor" aria-hidden="true" href="#-angle-relationships">#</a></h3>
+<ul>
+<li><a href="angle-chasing"><strong>Angle Chasing</strong></a> - Parallel lines, inscribed angles, exterior angles</li>
+<li><a href="similarity-and-ratios"><strong>Similarity &amp; Ratios</strong></a> - Dilations, angle bisector theorem, area ratios</li>
+</ul>
+<h3 id="-circle-properties">⭕ Circle Properties<a hidden class="anchor" aria-hidden="true" href="#-circle-properties">#</a></h3>
+<ul>
+<li><a href="circles-and-power-of-a-point"><strong>Circles &amp; Power of Point</strong></a> - Chords, tangents, secants, PoP</li>
+<li><a href="cyclic-quadrilaterals"><strong>Cyclic Quadrilaterals</strong></a> - Opposite angles, Ptolemy&rsquo;s theorem</li>
+<li><a href="tangency-configurations"><strong>Tangency Configurations</strong></a> - Incircles, excircles, tangent chains</li>
+</ul>
+<h3 id="-length--area">📏 Length &amp; Area<a hidden class="anchor" aria-hidden="true" href="#-length--area">#</a></h3>
+<ul>
+<li><a href="length-area-classics"><strong>Length &amp; Area Classics</strong></a> - Heron, Brahmagupta, Stewart, Apollonius</li>
+</ul>
+<h3 id="-transformations--coordinates">🔄 Transformations &amp; Coordinates<a hidden class="anchor" aria-hidden="true" href="#-transformations--coordinates">#</a></h3>
+<ul>
+<li><a href="transformations"><strong>Transformations</strong></a> - Reflections, rotations, homothety</li>
+<li><a href="coordinate-geometry"><strong>Coordinate Geometry</strong></a> - Lines, circles, shoelace formula</li>
+</ul>
+<h3 id="-advanced-topics">🎲 Advanced Topics<a hidden class="anchor" aria-hidden="true" href="#-advanced-topics">#</a></h3>
+<ul>
+<li><a href="geometric-probability"><strong>Geometric Probability</strong></a> - Lengths, areas, random points</li>
+<li><a href="3d-geometry-light"><strong>3D Geometry Light</strong></a> - Projections, volumes, cross-sections</li>
+<li><a href="mass-points-and-ceva-menelaus"><strong>Mass Points &amp; Ceva/Menelaus</strong></a> - Concurrency, collinearity</li>
+<li><a href="polygons-and-tilings"><strong>Polygons &amp; Tilings</strong></a> - Interior angles, regular polygons</li>
+<li><a href="inversion-and-spiral-similarity"><strong>Inversion &amp; Spiral Similarity</strong></a> - Advanced transformations</li>
+</ul>
+<h2 id="-how-to-use-these-guides">🎯 How to Use These Guides<a hidden class="anchor" aria-hidden="true" href="#-how-to-use-these-guides">#</a></h2>
+<h3 id="study-strategy">Study Strategy<a hidden class="anchor" aria-hidden="true" href="#study-strategy">#</a></h3>
+<ol>
+<li><strong>Start with fundamentals</strong> - Triangles and angles are the foundation</li>
+<li><strong>Build connections</strong> - See how topics relate to each other</li>
+<li><strong>Practice recognition</strong> - Learn to spot common patterns</li>
+<li><strong>Master techniques</strong> - Focus on problem-solving methods</li>
+</ol>
+<h3 id="each-guide-contains">Each Guide Contains<a hidden class="anchor" aria-hidden="true" href="#each-guide-contains">#</a></h3>
+<ul>
+<li><strong>Key concepts</strong> with clear explanations</li>
+<li><strong>Micro-examples</strong> for quick understanding</li>
+<li><strong>Common traps</strong> and how to avoid them</li>
+<li><strong>AMC-style worked examples</strong> with full solutions</li>
+<li><strong>Cross-references</strong> to related topics</li>
+</ul>
+<h3 id="pro-tips">Pro Tips<a hidden class="anchor" aria-hidden="true" href="#pro-tips">#</a></h3>
+<ul>
+<li><strong>Mark equalities</strong> on diagrams immediately</li>
+<li><strong>Look for parallel lines</strong> - they create similar triangles</li>
+<li><strong>Check for cyclicity</strong> - equal subtended angles often appear</li>
+<li><strong>Use coordinate geometry</strong> when pure geometry gets messy</li>
+</ul>
+<hr>
+<p><strong>Next:</strong> <a href="triangles-basics">Triangles Basics →</a> | <strong>Back to:</strong> <a href="../">Geometry Mastery Guide →</a></p>
+
+
+</div>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,19 +1,33 @@
 ---
-title: "AMC Problems"
-description: "American Mathematics Competitions problems and solutions"
+title: "AMC"
+description: "American Mathematics Competitions - comprehensive study guides, problems, and solutions for AMC 8, 10, and 12"
 draft: false
 math: true
+weight: 1
+ShowToc: true
+hideTitle: true
+ShowPostDesc: false
 ---
 
+# AMC Study Materials
 
-Welcome to the American Mathematics Competitions (AMC) section! Here you'll find problems, solutions, and resources related to AMC competitions.
+Comprehensive study guides for American Mathematics Competitions.
 
-## About AMC
+## Available Resources
 
-The American Mathematics Competitions (AMC) are a series of examinations and curriculum materials that build problem-solving skills and mathematical knowledge in middle and high school students.
+- **[AMC 10/12 Mastery Guide](amc10/)** - Complete study materials for AMC 10 and 12
+- **AMC 8** - Coming soon
 
-## Problem Categories
+<!-- ## Quick Links
 
-- **AMC 8**: For students in grade 8 and below
-- **AMC 10**: For students in grade 10 and below  
-- **AMC 12**: For students in grade 12 and below
+- [Syllabus](amc10/syllabus) - What's tested on AMC 10/12
+- [Algebra](amc10/algebra/) - Algebra topics and problem types
+- [Geometry](amc10/geometry/) - Geometry concepts and strategies
+- [Number Theory](amc10/number-theory/) - Divisibility, modular arithmetic, and more
+- [Counting & Probability](amc10/counting-probability/) - Combinatorics and probability
+- [Precalculus](amc10/precalculus/) - Trigonometry, logarithms, complex numbers
+- [Strategy](amc10/strategy/) - Contest strategies and tips -->
+
+---
+
+**Next**: [AMC 10/12 Mastery Guide](amc10/) | **Back**: [Math Notes](../)

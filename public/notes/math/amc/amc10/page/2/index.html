@@ -5,9 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>AMC 10 | Xiaohui Xie&#39;s Site</title>
-<meta name="keywords" content="amc10, mathematics, competition, algebra, geometry, number-theory, combinatorics">
-<meta name="description" content="American Mathematics Competition 10 - Topic index and study materials">
+<title>AMC 10/12 — Master Landing Page | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Math, Study Guide, Landing">
+<meta name="description" content="Quick navigation to Algebra, Geometry, Counting &amp; Probability, Number Theory, Precalculus, and Contest Strategy.">
 <meta name="author" content="Xiaohui Xie">
 <link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
@@ -120,7 +120,7 @@
 <main class="main"> 
 <header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a></div>
   <h1>
-    AMC 10
+    AMC 10/12 — Master Landing Page
     <a href="/notes/math/amc/amc10/index.xml" title="RSS" aria-label="RSS">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
         stroke-linecap="round" stroke-linejoin="round" height="23">
@@ -131,212 +131,140 @@
     </a>
   </h1>
   <div class="post-description">
-    American Mathematics Competition 10 - Topic index and study materials
+    Quick navigation to Algebra, Geometry, Counting &amp; Probability, Number Theory, Precalculus, and Contest Strategy.
   </div>
 </header>
-<div class="post-content"><p><a href="algebra">🧮 <strong>Algebra</strong></a></p>
-<hr>
-<p><a href="geometry">📐 <strong>Geometry</strong></a></p>
-<hr>
-<p><a href="number-theory">📊 <strong>Number Theory</strong></a></p>
-<hr>
-<p><a href="counting-probability">📈 <strong>Counting &amp; Probability</strong></a></p>
-<hr>
-<p><a href="precalculus">📏 <strong>Precalculus</strong></a></p>
-<hr>
-<p><a href="misc">🧠 <strong>General Problem Solving Strategies</strong></a></p>
-<hr>
-<p><a href="syllabus">📚 <strong>A Topic-By-Topic Syllabus</strong></a></p>
-<hr>
-<h3 id="misc">Misc<a hidden class="anchor" aria-hidden="true" href="#misc">#</a></h3>
-<ol>
-<li>Euler’s Theorem.  Euler’s Totient Function.  Fermat’s little theorem.</li>
-</ol>
-<p><a href="chinese-remainder-theorem.md"><strong>Chinese Remainder Theorem (CRT)</strong></a></p>
-<ol>
-<li>Simon’s Favorite Trick (SSFT)</li>
-<li>Modulus operation</li>
-<li>Stars and Bars</li>
-</ol>
-<p><a href="roots-of-polynomial.md">Roots of Polynomial</a></p>
-<p><a href="lcm-gcd.md">LCM &amp; GCD</a></p>
-<p><a href="modular-operation.md">Modular Operation</a></p>
-<p><a href="tricks.md">Tricks</a></p>
-<p><a href="number-theory-advanced.md">Number Theory</a></p>
-<p><a href="algebra-advanced.md">Algebra</a></p>
-<p><a href="combinatorics-advanced.md">Combinatorics</a></p>
-<p><a href="geometry-advanced.md">Geometry</a></p>
-<p><a href="problems.md">Problems</a></p>
-<p><a href="principle-of-inclusion-exclusion.md">Principle of Inclusion-Exclusion (PIE)</a></p>
-<p><a href="number-theory-problems.md">Number Theory Problems</a></p>
+<div class="post-content"><p>Welcome to your central hub for AMC 10/12 preparation! This page provides quick access to all major topic areas, helping you navigate your study journey efficiently.</p>
+<style>
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
 
+.topic-card {
+  background: var(--theme);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.topic-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: inherit;
+}
+
+.topic-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.topic-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.topic-desc {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  line-height: 1.4;
+}
+
+.getting-started {
+  background: var(--code-bg);
+  border-left: 4px solid var(--primary);
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.getting-started h3 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .topic-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .topic-card {
+    padding: 1.25rem;
+  }
+}
+</style>
+<div class="topic-grid">
+  <a href="algebra/" class="topic-card">
+    <span class="topic-icon">🧮</span>
+    <div class="topic-title">Algebra</div>
+    <div class="topic-desc">Equations, functions, and algebraic manipulation</div>
+  </a>
+  <a href="geometry/" class="topic-card">
+    <span class="topic-icon">📐</span>
+    <div class="topic-title">Geometry</div>
+    <div class="topic-desc">Shapes, angles, and spatial reasoning</div>
+  </a>
+  <a href="counting-probability/" class="topic-card">
+    <span class="topic-icon">🎲</span>
+    <div class="topic-title">Counting & Probability</div>
+    <div class="topic-desc">Combinatorics and probability theory</div>
+  </a>
+  <a href="number-theory/" class="topic-card">
+    <span class="topic-icon">🔢</span>
+    <div class="topic-title">Number Theory</div>
+    <div class="topic-desc">Prime numbers, divisibility, and modular arithmetic</div>
+  </a>
+  <a href="precalculus/" class="topic-card">
+    <span class="topic-icon">📘</span>
+    <div class="topic-title">Precalculus</div>
+    <div class="topic-desc">Trigonometry, logarithms, and advanced functions</div>
+  </a>
+  <a href="strategy/" class="topic-card">
+    <span class="topic-icon">🧭</span>
+    <div class="topic-title">Strategy</div>
+    <div class="topic-desc">Problem-solving techniques and contest strategies</div>
+  </a>
+</div>
+<div class="getting-started">
+  <h3>🚀 Getting Started</h3>
+  <ul>
+    <li><strong>Pick a topic</strong> that interests you or where you need the most practice</li>
+    <li><strong>Skim the scope map</strong> to understand what concepts are covered in each area</li>
+    <li><strong>Try 3 warm-up problems</strong> to gauge your current level and identify gaps</li>
+  </ul>
+</div>
 
 </div>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Chinese Remainder Theorem (CRT)
+    <h2 class="entry-hint-parent">AMC 10/12 Contest Strategy &amp; Tactics Guide
     </h2>
   </header>
   <div class="entry-content">
-    <p>Chinese Remainder Theorem (CRT) The Chinese Remainder Theorem (CRT) is a powerful tool in number theory that lets you solve systems of modular congruences when the moduli are pairwise coprime.
-Chinese Remainder Theorem (Statement) Let $m_1, m_2, \ldots, m_k$ be pairwise coprime positive integers (i.e., $\gcd(m_i, m_j) = 1$ for all $i \neq j$).
-Let $a_1, a_2, \ldots, a_k$ be any integers.
-Then the system of congruences:
-$$\begin{cases} x \equiv a_1 \pmod{m_1} \ x \equiv a_2 \pmod{m_2} \ \vdots \ x \equiv a_k \pmod{m_k} \end{cases}$$
+    <p>🎯 AMC 10/12 Contest Strategy &amp; Tactics Guide Welcome to your complete strategy guide for dominating the AMC 10 and AMC 12 contests! This comprehensive resource is designed to maximize your performance through systematic preparation, tactical execution, and strategic decision-making.
+🗺️ Quick Navigation 📚 Reference Materials Contest Format &amp; Scoring - Understanding scoring parameters and expected value calculations Rules &amp; Logistics - Contest procedures, timing, and administrative details Mindset &amp; Focus - Mental preparation and performance psychology 🎮 Strategic Playbooks Pacing &amp; Triage - Three-pass method and time management Elimination &amp; Guessing - When and how to guess strategically Answer Choice Exploitation - Using multiple choice to your advantage Sanity Checks &amp; Verification - Avoiding careless errors Diagramming &amp; Markup - Visual problem-solving techniques Estimation &amp; Bounds - Quick approximation strategies Topic Routing Heuristics - Identifying problem types quickly Endgame Management - Final minutes strategy 🧭 Tactics by Topic Algebra Tactics - Substitutions, discriminants, and algebraic manipulation Number Theory Tactics - Modular arithmetic and divisibility Geometry Tactics - Similar triangles, power of a point, coordinate geometry Counting &amp; Probability Tactics - Combinatorics and probability techniques Precalculus Tactics - Trigonometry, logarithms, and advanced functions ✅ Checklists &amp; Protocols Pre-Test Checklist - Night before and morning preparation First 5 Minutes - Initial test setup and triage During Test Quick Checks - Micro-checks before answering When Stuck Decision Tree - Systematic approach to difficult problems Final Review Pass - Last-minute verification and completion ⚡ Skill Drills Mental Math Toolkit - Fast calculation techniques Modular Arithmetic Sprints - Quick residue calculations Geometry Mini-Flashcards - Essential geometric facts Probability &amp; EV Snippets - Expected value calculations Estimation Sprints - Quick approximation practice 🔄 Review &amp; Improvement Error Log Template - Track and categorize mistakes Postmortem Framework - Analyze test performance 🧪 Practice &amp; Simulation Full Test Simulation Guide - Complete practice test protocol 🎯 How to Use This Guide Start with Reference - Understand the contest format and scoring system Master the Playbooks - Learn the core strategic approaches Practice Tactics - Drill specific techniques by topic Use Checklists - Follow systematic protocols during tests Track Progress - Use the review tools to improve continuously 🏆 Success Principles Strategic Thinking: Always consider expected value and time allocation Systematic Approach: Use checklists and protocols consistently Topic Mastery: Know when to apply specific techniques Mental Discipline: Stay focused and manage pressure effectively Continuous Improvement: Learn from every practice session and test Next: Contest Format &amp; Scoring | Back to: AMC 10 Notes
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
-  <a class="entry-link" aria-label="post link to Chinese Remainder Theorem (CRT)" href="http://localhost:1313/notes/math/amc/amc10/chinese-remainder-theorem/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Number Theory Problems
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Number Theory Problems Practice Problems by Topic Divisibility and Primes Problem 1: Find the largest 4-digit number divisible by 36.
-Problem 2: How many numbers from 1 to 1000 are divisible by 2, 3, or 5?
-Problem 3: Find all digits $d$ such that $12d34$ is divisible by 11.
-GCD and LCM Problem 4: Find $\gcd(123456, 789012)$.
-Problem 5: Find all positive integer solutions to $15x &#43; 25y = 100$.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
-  <a class="entry-link" aria-label="post link to Number Theory Problems" href="http://localhost:1313/notes/math/amc/amc10/number-theory-problems/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Linear Diophantine Equations
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Linear Diophantine Equations Here’s a complete guide on how to solve the linear Diophantine equation:
-$$\boxed{ax &#43; by = c}$$
-Where $a, b, c$ are given integers, and we want to find integer solutions $x, y$.
-✅ Step 1: Check for Solvability A solution exists if and only if:
-$$\boxed{\gcd(a, b) \mid c}$$
-Let $d = \gcd(a, b)$. If $d \nmid c$, then no integer solutions exist.
-✅ Step 2: Simplify the Equation If $d = \gcd(a, b)$, divide the entire equation by $d$:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
-  <a class="entry-link" aria-label="post link to Linear Diophantine Equations" href="http://localhost:1313/notes/math/amc/amc10/linear-diophantine-equations/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Quadratic Diophantine Equations
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Quadratic Diophantine Equations Solving two-variable quadratic Diophantine equations of the form:
-$$x^{2}&#43;Bxy&#43;Cy^{2}&#43;Dx&#43;Ey&#43;F=0, \qquad A,B,C,D,E,F\in\mathbb{Z}$$
-The aim is to decide (i) whether integer solutions exist and (ii) how to list them all (finite or infinite).
-1. Normalize and Check Easy Obstructions Step What to do Why (a) Clear denominators / GCD Multiply both sides by a common factor so all coefficients are integers with $\gcd=1$. Keeps later modular work clean. (b) Reduce mod small bases Test mod 2, 4, 3, 5, 8, 11… Often rules out entire families quickly. (c) Look for obvious factorisation Does the LHS factor nicely? (e.g. SFFT: $xy&#43;mx&#43;ny = (x&#43;n)(y&#43;m)-mn$). Turns the job into divisor–counting. Example: $xy&#43;4y=5x&#43;20$ → $(x-4)(y&#43;5)=0$ after shifting terms (classic Simon).
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
-  <a class="entry-link" aria-label="post link to Quadratic Diophantine Equations" href="http://localhost:1313/notes/math/amc/amc10/quadratic-diophantine-equations/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Bézout&#39;s Identity
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Bézout’s Identity Bézout’s Identity (also known as Bézout’s Lemma) is a result in number theory that expresses a relationship between two integers and their greatest common divisor (GCD).
-Statement If $a$ and $b$ are two integers, and $\gcd(a, b)$ is their greatest common divisor, then there exist integers $x$ and $y$ (called Bézout coefficients) such that:
-$$a \cdot x &#43; b \cdot y = \gcd(a, b)$$
-In other words, the greatest common divisor of $a$ and $b$ can be written as a linear combination of $a$ and $b$ with integer coefficients.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
-  <a class="entry-link" aria-label="post link to Bézout&#39;s Identity" href="http://localhost:1313/notes/math/amc/amc10/bezouts-identity/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Chicken McNugget Theorem
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Chicken McNugget Theorem The Chicken McNugget Theorem (also known as the Frobenius coin problem) determines the largest monetary amount that cannot be obtained using any combination of coins of specified denominations.
-Statement For two relatively prime positive integers $a$ and $b$, the largest integer that cannot be expressed as $ax &#43; by$ for non-negative integers $x$ and $y$ is:
-$$g(a,b) = ab - a - b$$
-This is called the Frobenius number of $a$ and $b$.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
-  <a class="entry-link" aria-label="post link to Chicken McNugget Theorem" href="http://localhost:1313/notes/math/amc/amc10/chicken-mcnugget-theorem/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Practice Problems
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Problems Algebra </p>
-  </div>
-  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Xiaohui Xie</footer>
-  <a class="entry-link" aria-label="post link to Practice Problems" href="http://localhost:1313/notes/math/amc/amc10/problems/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Wilson&#39;s Theorem
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Wilson’s Theorem Wilson’s Theorem is a fundamental result in number theory that provides a necessary and sufficient condition for a positive integer to be prime.
-Statement A positive integer $p &gt; 1$ is prime if and only if:
-$$(p-1)! \equiv -1 \pmod{p}$$
-Examples Prime Case For $p = 5$ (prime): $$(5-1)! = 4! = 24 \equiv -1 \pmod{5}$$
-Composite Case For $p = 6$ (composite): $$(6-1)! = 5! = 120 \equiv 0 \pmod{6}$$
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
-  <a class="entry-link" aria-label="post link to Wilson&#39;s Theorem" href="http://localhost:1313/notes/math/amc/amc10/wilsons-theorem/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Legendre&#39;s Formula
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Legendre’s Formula Legendre’s Formula provides a way to count the exponent of a prime $p$ in the prime factorization of $n!$.
-Statement For a prime $p$ and positive integer $n$, the exponent of $p$ in $n!$ is:
-$$\sum_{k=1}^{\infty} \left\lfloor \frac{n}{p^k} \right\rfloor$$
-In practice, we only need to sum until $p^k &gt; n$, since $\left\lfloor \frac{n}{p^k} \right\rfloor = 0$ for $p^k &gt; n$.
-Examples Example 1: Find the exponent of 2 in 10! $$10! = 10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1$$
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
-  <a class="entry-link" aria-label="post link to Legendre&#39;s Formula" href="http://localhost:1313/notes/math/amc/amc10/legendres-formula/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Problem Solving Tricks
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Tricks Pick a special value </p>
-  </div>
-  <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Xiaohui Xie</footer>
-  <a class="entry-link" aria-label="post link to Problem Solving Tricks" href="http://localhost:1313/notes/math/amc/amc10/tricks/"></a>
+  <footer class="entry-footer">2 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to AMC 10/12 Contest Strategy & Tactics Guide" href="http://localhost:1313/notes/math/amc/amc10/strategy/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/notes/math/amc/amc10/">
       «&nbsp;Prev&nbsp;
-    </a>
-    <a class="next" href="http://localhost:1313/notes/math/amc/amc10/page/3/">Next&nbsp;&nbsp;»
     </a>
   </nav>
 </footer>

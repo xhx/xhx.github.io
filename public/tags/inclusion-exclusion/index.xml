@@ -2,24 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Inclusion-Exclusion on Xiaohui Xie&#39;s Site</title>
-    <link>https://xhx.github.io/tags/inclusion-exclusion/</link>
+    <link>http://localhost:1313/tags/inclusion-exclusion/</link>
     <description>Recent content in Inclusion-Exclusion on Xiaohui Xie&#39;s Site</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
-    <atom:link href="https://xhx.github.io/tags/inclusion-exclusion/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Inclusion-Exclusion Principle</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/inclusion-exclusion/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/inclusion-exclusion/</guid>
-      <description>Counting elements in unions of sets with 2-3 sets, &amp;#39;at least/at most&amp;#39; problems, and common pitfalls.</description>
-    </item>
-    <item>
-      <title>Derangements</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/derangements/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/03-problem-types/derangements/</guid>
-      <description>Permutations with no fixed points using inclusion-exclusion and the derangement formula.</description>
-    </item>
+    <atom:link href="http://localhost:1313/tags/inclusion-exclusion/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

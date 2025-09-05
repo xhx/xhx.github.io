@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Sanity Checks &amp; Verification Playbook | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Strategy, Verification, Error Prevention, Accuracy">
+<meta name="description" content="Systematic verification techniques to catch errors and ensure answer accuracy through plug-back, units, parity, and extreme value checks.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/strategy/playbooks/sanity-checks-and-verification/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/strategy/playbooks/sanity-checks-and-verification/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/">AMC 10/12 Contest Strategy &amp; Tactics Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/playbooks/">Strategic Playbooks</a></div>
+    <div class="post-meta">5 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-sanity-checks--verification-playbook" aria-label="✅ Sanity Checks &amp; Verification Playbook">✅ Sanity Checks &amp; Verification Playbook</a><ul>
+                        
+                <li>
+                    <a href="#-the-20-second-verification-rule" aria-label="🔍 The 20-Second Verification Rule">🔍 The 20-Second Verification Rule</a><ul>
+                        
+                <li>
+                    <a href="#before-bubbling-any-answer" aria-label="Before Bubbling Any Answer:">Before Bubbling Any Answer:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-plug-back-verification" aria-label="🔄 Plug-Back Verification">🔄 Plug-Back Verification</a><ul>
+                        
+                <li>
+                    <a href="#when-to-plug-back" aria-label="When to Plug Back">When to Plug Back</a></li>
+                <li>
+                    <a href="#plug-back-process" aria-label="Plug-Back Process">Plug-Back Process</a></li>
+                <li>
+                    <a href="#plug-back-example" aria-label="Plug-Back Example">Plug-Back Example</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-units-and-dimensional-analysis" aria-label="📏 Units and Dimensional Analysis">📏 Units and Dimensional Analysis</a><ul>
+                        
+                <li>
+                    <a href="#unit-checking" aria-label="Unit Checking">Unit Checking</a></li>
+                <li>
+                    <a href="#dimensional-analysis" aria-label="Dimensional Analysis">Dimensional Analysis</a></li>
+                <li>
+                    <a href="#units-example" aria-label="Units Example">Units Example</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-parity-and-modulo-checks" aria-label="🔢 Parity and Modulo Checks">🔢 Parity and Modulo Checks</a><ul>
+                        
+                <li>
+                    <a href="#parity-evenodd-checks" aria-label="Parity (Even/Odd) Checks">Parity (Even/Odd) Checks</a></li>
+                <li>
+                    <a href="#modulo-checks" aria-label="Modulo Checks">Modulo Checks</a></li>
+                <li>
+                    <a href="#parity-example" aria-label="Parity Example">Parity Example</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-extreme-value-testing" aria-label="🎯 Extreme Value Testing">🎯 Extreme Value Testing</a><ul>
+                        
+                <li>
+                    <a href="#boundary-cases" aria-label="Boundary Cases">Boundary Cases</a></li>
+                <li>
+                    <a href="#extreme-value-examples" aria-label="Extreme Value Examples">Extreme Value Examples</a></li>
+                <li>
+                    <a href="#extreme-value-example" aria-label="Extreme Value Example">Extreme Value Example</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-order-of-magnitude-checks" aria-label="🧮 Order of Magnitude Checks">🧮 Order of Magnitude Checks</a><ul>
+                        
+                <li>
+                    <a href="#size-verification" aria-label="Size Verification">Size Verification</a></li>
+                <li>
+                    <a href="#magnitude-examples" aria-label="Magnitude Examples">Magnitude Examples</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-sign-and-direction-checks" aria-label="🔍 Sign and Direction Checks">🔍 Sign and Direction Checks</a><ul>
+                        
+                <li>
+                    <a href="#sign-verification" aria-label="Sign Verification">Sign Verification</a></li>
+                <li>
+                    <a href="#direction-checks" aria-label="Direction Checks">Direction Checks</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-verification-checklist" aria-label="⚡ Quick Verification Checklist">⚡ Quick Verification Checklist</a><ul>
+                        
+                <li>
+                    <a href="#before-bubbling" aria-label="Before Bubbling:">Before Bubbling:</a></li>
+                <li>
+                    <a href="#common-error-types" aria-label="Common Error Types:">Common Error Types:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-red-flag-warnings" aria-label="🚨 Red Flag Warnings">🚨 Red Flag Warnings</a><ul>
+                        
+                <li>
+                    <a href="#immediate-red-flags" aria-label="Immediate Red Flags:">Immediate Red Flags:</a></li>
+                <li>
+                    <a href="#warning-signs" aria-label="Warning Signs:">Warning Signs:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-verification-by-problem-type" aria-label="🎯 Verification by Problem Type">🎯 Verification by Problem Type</a><ul>
+                        
+                <li>
+                    <a href="#algebra-problems" aria-label="Algebra Problems">Algebra Problems</a></li>
+                <li>
+                    <a href="#geometry-problems" aria-label="Geometry Problems">Geometry Problems</a></li>
+                <li>
+                    <a href="#number-theory-problems" aria-label="Number Theory Problems">Number Theory Problems</a></li>
+                <li>
+                    <a href="#countingprobability-problems" aria-label="Counting/Probability Problems">Counting/Probability Problems</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-reference" aria-label="📊 Quick Reference">📊 Quick Reference</a><ul>
+                        
+                <li>
+                    <a href="#20-second-verification" aria-label="20-Second Verification:">20-Second Verification:</a></li>
+                <li>
+                    <a href="#error-prevention" aria-label="Error Prevention:">Error Prevention:</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-sanity-checks--verification-playbook">✅ Sanity Checks &amp; Verification Playbook<a hidden class="anchor" aria-hidden="true" href="#-sanity-checks--verification-playbook">#</a></h1>
+<p>Build a systematic approach to catching errors before they cost you points. These verification techniques will help you maintain high accuracy throughout the contest.</p>
+<h2 id="-the-20-second-verification-rule">🔍 The 20-Second Verification Rule<a hidden class="anchor" aria-hidden="true" href="#-the-20-second-verification-rule">#</a></h2>
+<h3 id="before-bubbling-any-answer">Before Bubbling Any Answer:<a hidden class="anchor" aria-hidden="true" href="#before-bubbling-any-answer">#</a></h3>
+<ol>
+<li><strong>Plug back</strong>: Substitute answer into original problem</li>
+<li><strong>Check units</strong>: Do the units make sense?</li>
+<li><strong>Verify constraints</strong>: Does answer satisfy all conditions?</li>
+<li><strong>Test extremes</strong>: Does answer work at boundaries?</li>
+<li><strong>Check reasonableness</strong>: Is the answer in the right ballpark?</li>
+</ol>
+<h2 id="-plug-back-verification">🔄 Plug-Back Verification<a hidden class="anchor" aria-hidden="true" href="#-plug-back-verification">#</a></h2>
+<h3 id="when-to-plug-back">When to Plug Back<a hidden class="anchor" aria-hidden="true" href="#when-to-plug-back">#</a></h3>
+<ul>
+<li><strong>Every answer</strong>: Make it a habit</li>
+<li><strong>Complex calculations</strong>: Especially important</li>
+<li><strong>Time pressure</strong>: Quick verification saves time</li>
+<li><strong>Uncertainty</strong>: When you&rsquo;re not sure</li>
+</ul>
+<h3 id="plug-back-process">Plug-Back Process<a hidden class="anchor" aria-hidden="true" href="#plug-back-process">#</a></h3>
+<ol>
+<li><strong>Substitute answer</strong>: Replace variable with your answer</li>
+<li><strong>Simplify</strong>: Work through the calculation</li>
+<li><strong>Check equality</strong>: Does left side equal right side?</li>
+<li><strong>Verify all conditions</strong>: Check all given constraints</li>
+<li><strong>Confirm</strong>: Answer satisfies the problem</li>
+</ol>
+<h3 id="plug-back-example">Plug-Back Example<a hidden class="anchor" aria-hidden="true" href="#plug-back-example">#</a></h3>
+<p><strong>Problem</strong>: Solve $2x + 3 = 11$</p>
+<p><strong>Your answer</strong>: $x = 4$</p>
+<p><strong>Plug-back</strong>: $2(4) + 3 = 8 + 3 = 11$ ✓ <strong>Correct!</strong></p>
+<h2 id="-units-and-dimensional-analysis">📏 Units and Dimensional Analysis<a hidden class="anchor" aria-hidden="true" href="#-units-and-dimensional-analysis">#</a></h2>
+<h3 id="unit-checking">Unit Checking<a hidden class="anchor" aria-hidden="true" href="#unit-checking">#</a></h3>
+<ul>
+<li><strong>Length</strong>: Should be positive, reasonable scale</li>
+<li><strong>Area</strong>: Should be positive, units squared</li>
+<li><strong>Volume</strong>: Should be positive, units cubed</li>
+<li><strong>Probability</strong>: Must be between 0 and 1</li>
+<li><strong>Time</strong>: Should be positive, reasonable duration</li>
+</ul>
+<h3 id="dimensional-analysis">Dimensional Analysis<a hidden class="anchor" aria-hidden="true" href="#dimensional-analysis">#</a></h3>
+<ul>
+<li><strong>Check dimensions</strong>: Do the units match?</li>
+<li><strong>Verify formulas</strong>: Are you using the right formula?</li>
+<li><strong>Test extreme cases</strong>: What happens at limits?</li>
+<li><strong>Apply physical intuition</strong>: Does it make sense?</li>
+</ul>
+<h3 id="units-example">Units Example<a hidden class="anchor" aria-hidden="true" href="#units-example">#</a></h3>
+<p><strong>Problem</strong>: Find the area of a circle with radius 3 cm</p>
+<p><strong>Your answer</strong>: $9\pi$ cm²</p>
+<p><strong>Unit check</strong>: Area should be length squared ✓
+<strong>Calculation</strong>: $A = \pi r^2 = \pi \cdot 3^2 = 9\pi$ ✓
+<strong>Units</strong>: cm² ✓ <strong>Correct!</strong></p>
+<h2 id="-parity-and-modulo-checks">🔢 Parity and Modulo Checks<a hidden class="anchor" aria-hidden="true" href="#-parity-and-modulo-checks">#</a></h2>
+<h3 id="parity-evenodd-checks">Parity (Even/Odd) Checks<a hidden class="anchor" aria-hidden="true" href="#parity-evenodd-checks">#</a></h3>
+<ul>
+<li><strong>Even numbers</strong>: Divisible by 2</li>
+<li><strong>Odd numbers</strong>: Not divisible by 2</li>
+<li><strong>Sums</strong>: Even + Even = Even, Odd + Odd = Even</li>
+<li><strong>Products</strong>: Even × Anything = Even</li>
+</ul>
+<h3 id="modulo-checks">Modulo Checks<a hidden class="anchor" aria-hidden="true" href="#modulo-checks">#</a></h3>
+<ul>
+<li><strong>Mod 3</strong>: Sum of digits divisible by 3</li>
+<li><strong>Mod 9</strong>: Sum of digits divisible by 9</li>
+<li><strong>Mod 11</strong>: Alternating sum of digits</li>
+<li><strong>Mod 4</strong>: Last two digits divisible by 4</li>
+</ul>
+<h3 id="parity-example">Parity Example<a hidden class="anchor" aria-hidden="true" href="#parity-example">#</a></h3>
+<p><strong>Problem</strong>: Find the sum of first 10 odd numbers</p>
+<p><strong>Your answer</strong>: 100</p>
+<p><strong>Parity check</strong>: Sum of odd numbers should be even ✓
+<strong>Calculation</strong>: $1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 = 100$ ✓
+<strong>Verification</strong>: 100 is even ✓ <strong>Correct!</strong></p>
+<h2 id="-extreme-value-testing">🎯 Extreme Value Testing<a hidden class="anchor" aria-hidden="true" href="#-extreme-value-testing">#</a></h2>
+<h3 id="boundary-cases">Boundary Cases<a hidden class="anchor" aria-hidden="true" href="#boundary-cases">#</a></h3>
+<ul>
+<li><strong>Minimum values</strong>: Test smallest possible inputs</li>
+<li><strong>Maximum values</strong>: Test largest possible inputs</li>
+<li><strong>Zero cases</strong>: Test when variables equal zero</li>
+<li><strong>Negative cases</strong>: Test negative inputs when applicable</li>
+</ul>
+<h3 id="extreme-value-examples">Extreme Value Examples<a hidden class="anchor" aria-hidden="true" href="#extreme-value-examples">#</a></h3>
+<ul>
+<li><strong>$x = 0$</strong>: Often simplifies calculations</li>
+<li><strong>$x = 1$</strong>: Good for testing formulas</li>
+<li><strong>$x = -1$</strong>: Useful for alternating series</li>
+<li><strong>Large $x$</strong>: Test asymptotic behavior</li>
+</ul>
+<h3 id="extreme-value-example">Extreme Value Example<a hidden class="anchor" aria-hidden="true" href="#extreme-value-example">#</a></h3>
+<p><strong>Problem</strong>: Find the minimum value of $f(x) = x^2 - 4x + 3$</p>
+<p><strong>Your answer</strong>: $f(2) = -1$</p>
+<p><strong>Extreme value check</strong>:</p>
+<ul>
+<li>At $x = 0$: $f(0) = 3$</li>
+<li>At $x = 2$: $f(2) = 4 - 8 + 3 = -1$</li>
+<li>At $x = 4$: $f(4) = 16 - 16 + 3 = 3$</li>
+<li>Minimum occurs at $x = 2$ ✓ <strong>Correct!</strong></li>
+</ul>
+<h2 id="-order-of-magnitude-checks">🧮 Order of Magnitude Checks<a hidden class="anchor" aria-hidden="true" href="#-order-of-magnitude-checks">#</a></h2>
+<h3 id="size-verification">Size Verification<a hidden class="anchor" aria-hidden="true" href="#size-verification">#</a></h3>
+<ul>
+<li><strong>Is answer too big?</strong>: Check against reasonable bounds</li>
+<li><strong>Is answer too small?</strong>: Verify it&rsquo;s not zero or negative</li>
+<li><strong>Does scale make sense?</strong>: Compare to known quantities</li>
+<li><strong>Are units appropriate?</strong>: Check the scale of units</li>
+</ul>
+<h3 id="magnitude-examples">Magnitude Examples<a hidden class="anchor" aria-hidden="true" href="#magnitude-examples">#</a></h3>
+<ul>
+<li><strong>Distances</strong>: Should be positive, reasonable scale</li>
+<li><strong>Areas</strong>: Should be positive, appropriate size</li>
+<li><strong>Probabilities</strong>: Must be between 0 and 1</li>
+<li><strong>Counts</strong>: Should be non-negative integers</li>
+</ul>
+<h2 id="-sign-and-direction-checks">🔍 Sign and Direction Checks<a hidden class="anchor" aria-hidden="true" href="#-sign-and-direction-checks">#</a></h2>
+<h3 id="sign-verification">Sign Verification<a hidden class="anchor" aria-hidden="true" href="#sign-verification">#</a></h3>
+<ul>
+<li><strong>Positive answers</strong>: When answer should be positive</li>
+<li><strong>Negative answers</strong>: When answer should be negative</li>
+<li><strong>Zero answers</strong>: When answer should be zero</li>
+<li><strong>Sign changes</strong>: Check for sign errors</li>
+</ul>
+<h3 id="direction-checks">Direction Checks<a hidden class="anchor" aria-hidden="true" href="#direction-checks">#</a></h3>
+<ul>
+<li><strong>Increasing functions</strong>: Larger input → larger output</li>
+<li><strong>Decreasing functions</strong>: Larger input → smaller output</li>
+<li><strong>Monotonicity</strong>: Check if function behavior matches expectation</li>
+<li><strong>Symmetry</strong>: Verify symmetric properties</li>
+</ul>
+<h2 id="-quick-verification-checklist">⚡ Quick Verification Checklist<a hidden class="anchor" aria-hidden="true" href="#-quick-verification-checklist">#</a></h2>
+<h3 id="before-bubbling">Before Bubbling:<a hidden class="anchor" aria-hidden="true" href="#before-bubbling">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Plug back</strong>: Does answer work in original problem?</li>
+<li><input disabled="" type="checkbox"> <strong>Check units</strong>: Do units and dimensions make sense?</li>
+<li><input disabled="" type="checkbox"> <strong>Verify constraints</strong>: Does answer satisfy all conditions?</li>
+<li><input disabled="" type="checkbox"> <strong>Test extremes</strong>: Does answer work at boundaries?</li>
+<li><input disabled="" type="checkbox"> <strong>Check reasonableness</strong>: Is answer in the right ballpark?</li>
+<li><input disabled="" type="checkbox"> <strong>Verify signs</strong>: Is the sign correct?</li>
+<li><input disabled="" type="checkbox"> <strong>Check parity</strong>: Is even/odd status correct?</li>
+</ul>
+<h3 id="common-error-types">Common Error Types:<a hidden class="anchor" aria-hidden="true" href="#common-error-types">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Sign errors</strong>: Wrong positive/negative</li>
+<li><input disabled="" type="checkbox"> <strong>Unit errors</strong>: Wrong units or dimensions</li>
+<li><input disabled="" type="checkbox"> <strong>Calculation errors</strong>: Arithmetic mistakes</li>
+<li><input disabled="" type="checkbox"> <strong>Constraint violations</strong>: Answer doesn&rsquo;t satisfy conditions</li>
+<li><input disabled="" type="checkbox"> <strong>Order of magnitude</strong>: Answer too big or too small</li>
+</ul>
+<h2 id="-red-flag-warnings">🚨 Red Flag Warnings<a hidden class="anchor" aria-hidden="true" href="#-red-flag-warnings">#</a></h2>
+<h3 id="immediate-red-flags">Immediate Red Flags:<a hidden class="anchor" aria-hidden="true" href="#immediate-red-flags">#</a></h3>
+<ul>
+<li><strong>Negative area</strong>: Areas can&rsquo;t be negative</li>
+<li><strong>Probability &gt; 1</strong>: Probabilities must be ≤ 1</li>
+<li><strong>Imaginary length</strong>: Lengths must be real</li>
+<li><strong>Zero denominator</strong>: Division by zero is undefined</li>
+<li><strong>Negative count</strong>: Counts must be non-negative</li>
+</ul>
+<h3 id="warning-signs">Warning Signs:<a hidden class="anchor" aria-hidden="true" href="#warning-signs">#</a></h3>
+<ul>
+<li><strong>Answer seems too big</strong>: Check your calculations</li>
+<li><strong>Answer seems too small</strong>: Verify your approach</li>
+<li><strong>Units don&rsquo;t match</strong>: Check your formula</li>
+<li><strong>Sign seems wrong</strong>: Check your work</li>
+<li><strong>Answer doesn&rsquo;t make sense</strong>: Re-examine the problem</li>
+</ul>
+<h2 id="-verification-by-problem-type">🎯 Verification by Problem Type<a hidden class="anchor" aria-hidden="true" href="#-verification-by-problem-type">#</a></h2>
+<h3 id="algebra-problems">Algebra Problems<a hidden class="anchor" aria-hidden="true" href="#algebra-problems">#</a></h3>
+<ul>
+<li><strong>Substitute back</strong>: Plug answer into equation</li>
+<li><strong>Check all solutions</strong>: Verify each root</li>
+<li><strong>Test constraints</strong>: Check domain restrictions</li>
+<li><strong>Verify signs</strong>: Check positive/negative requirements</li>
+</ul>
+<h3 id="geometry-problems">Geometry Problems<a hidden class="anchor" aria-hidden="true" href="#geometry-problems">#</a></h3>
+<ul>
+<li><strong>Check dimensions</strong>: Verify units and scale</li>
+<li><strong>Test angles</strong>: Are angles reasonable?</li>
+<li><strong>Verify formulas</strong>: Are you using the right formula?</li>
+<li><strong>Check coordinates</strong>: Do coordinates make sense?</li>
+</ul>
+<h3 id="number-theory-problems">Number Theory Problems<a hidden class="anchor" aria-hidden="true" href="#number-theory-problems">#</a></h3>
+<ul>
+<li><strong>Check divisibility</strong>: Verify divisibility rules</li>
+<li><strong>Test modular arithmetic</strong>: Check mod calculations</li>
+<li><strong>Verify prime factors</strong>: Check prime factorizations</li>
+<li><strong>Test digit properties</strong>: Check digit sum rules</li>
+</ul>
+<h3 id="countingprobability-problems">Counting/Probability Problems<a hidden class="anchor" aria-hidden="true" href="#countingprobability-problems">#</a></h3>
+<ul>
+<li><strong>Check range</strong>: Probability between 0 and 1</li>
+<li><strong>Verify counts</strong>: Are counts non-negative integers?</li>
+<li><strong>Test symmetry</strong>: Check symmetric cases</li>
+<li><strong>Verify formulas</strong>: Are you using the right formula?</li>
+</ul>
+<h2 id="-quick-reference">📊 Quick Reference<a hidden class="anchor" aria-hidden="true" href="#-quick-reference">#</a></h2>
+<h3 id="20-second-verification">20-Second Verification:<a hidden class="anchor" aria-hidden="true" href="#20-second-verification">#</a></h3>
+<ol>
+<li><strong>Plug back</strong> (5 seconds)</li>
+<li><strong>Check units</strong> (3 seconds)</li>
+<li><strong>Verify constraints</strong> (5 seconds)</li>
+<li><strong>Test extremes</strong> (4 seconds)</li>
+<li><strong>Check reasonableness</strong> (3 seconds)</li>
+</ol>
+<h3 id="error-prevention">Error Prevention:<a hidden class="anchor" aria-hidden="true" href="#error-prevention">#</a></h3>
+<ul>
+<li><strong>Make it a habit</strong>: Verify every answer</li>
+<li><strong>Use checklists</strong>: Follow systematic approach</li>
+<li><strong>Trust your instincts</strong>: If something seems wrong, check it</li>
+<li><strong>Don&rsquo;t rush</strong>: Take time to verify</li>
+</ul>
+<hr>
+<p><strong>Prev:</strong> <a href="answer-choice-exploitation">Answer Choice Exploitation</a> | <strong>Next:</strong> <a href="diagramming-and-markup">Diagramming &amp; Markup</a> | <strong>Back to:</strong> <a href="../">Strategy Guide</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/strategy/">Strategy</a></li>
+      <li><a href="http://localhost:1313/tags/verification/">Verification</a></li>
+      <li><a href="http://localhost:1313/tags/error-prevention/">Error Prevention</a></li>
+      <li><a href="http://localhost:1313/tags/accuracy/">Accuracy</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

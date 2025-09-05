@@ -2,17 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Identities on Xiaohui Xie&#39;s Site</title>
-    <link>https://xhx.github.io/tags/identities/</link>
+    <link>http://localhost:1313/tags/identities/</link>
     <description>Recent content in Identities on Xiaohui Xie&#39;s Site</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
-    <atom:link href="https://xhx.github.io/tags/identities/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Trig Identities &amp; Equations</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/trig-identities-and-equations/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/trig-identities-and-equations/</guid>
-      <description>Addition formulas, double/half angles, sum-to-product, and inverse trig functions for AMC problems.</description>
-    </item>
+    <atom:link href="http://localhost:1313/tags/identities/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

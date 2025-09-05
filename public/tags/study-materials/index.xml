@@ -2,18 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Study-Materials on Xiaohui Xie&#39;s Site</title>
-    <link>https://xhx.github.io/tags/study-materials/</link>
+    <link>http://localhost:1313/tags/study-materials/</link>
     <description>Recent content in Study-Materials on Xiaohui Xie&#39;s Site</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xhx.github.io/tags/study-materials/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Detailed Topic Guides</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/topic-guides/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/geometry/topic-guides/topic-guides/</guid>
-      <description>Comprehensive guides for each AMC 10 geometry topic with study materials and practice links</description>
-    </item>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/study-materials/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

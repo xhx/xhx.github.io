@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Geometry | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="">
+<meta name="description" content="Personal website of Xiaohui Xie featuring mathematics, teaching, and research">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/tags/geometry/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/geometry/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/geometry/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
+  <h1>
+    Geometry
+    <a href="/tags/geometry/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Area Ratio in Triangle
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>📐 Area Ratio in Triangle Area ratios in triangles are powerful tools for finding relationships between different parts of a triangle. Master these patterns for efficient problem solving.
+🎯 Recognition Cues Key Triggers Medians - Look for lines from vertices to midpoints of opposite sides Cevians - Look for lines from vertices to opposite sides Shared heights - Look for triangles with the same height Shared bases - Look for triangles with the same base Common Setups Triangles with medians or cevians Figures with shared heights or bases Area comparisons Ratio problems 🧩 Solution Template Step 1: Identify the Configuration Determine if you have medians, cevians, or shared heights/bases Mark given lengths and relationships Identify what ratios you need to find Step 2: Apply Area Ratio Principles Shared height: Area ratio = base ratio Shared base: Area ratio = height ratio Medians: Divide triangle into six equal areas Cevians: Use area ratios based on side splits Step 3: Set Up the Ratio Write the area ratio equation Substitute known values Solve for the unknown Step 4: Verify Check that the ratio makes geometric sense Ensure all areas are positive Verify the final answer 🔍 Worked Example Problem: In triangle $ABC$, $D$ is the midpoint of $BC$ and $E$ is the midpoint of $AC$. If the area of triangle $ABC$ is 24, find the area of triangle $ADE$.
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Area Ratio in Triangle" href="http://localhost:1313/notes/math/amc/amc10/geometry/problem-types/area-ratio-in-triangle/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Coordinate Kill
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>📐 Coordinate Kill When pure geometry becomes complex, coordinate methods often provide the most direct path to solutions. Master these techniques for AMC success.
+🎯 Recognition Cues Key Triggers Complex figures - Look for figures that are hard to solve with pure geometry Specific coordinates - Look for problems with given coordinate information Area calculations - Look for area problems that are easier with coordinates Distance problems - Look for distance problems that are easier with coordinates Common Setups Figures with given coordinates Area calculations Distance problems Line and circle equations 🧩 Solution Template Step 1: Set Up Coordinates Choose a convenient coordinate system Place key points at origin or on axes Assign coordinates to all relevant points Step 2: Apply Coordinate Methods Distance formula: $d = \sqrt{(x_2-x_1)^2 &#43; (y_2-y_1)^2}$ Midpoint formula: $\left(\frac{x_1&#43;x_2}{2}, \frac{y_1&#43;y_2}{2}\right)$ Shoelace formula: $A = \frac{1}{2}|x_1y_2 &#43; x_2y_3 &#43; \cdots &#43; x_ny_1 - y_1x_2 - y_2x_3 - \cdots - y_nx_1|$ Step 3: Calculate Use the appropriate formula Substitute known values Solve for the unknown Step 4: Verify Check that the answer makes geometric sense Ensure all calculations are correct Verify the final answer 🔍 Worked Example Problem: Triangle $ABC$ has vertices $A(0,0)$, $B(4,0)$, and $C(2,3)$. Find the area of the triangle.
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Coordinate Kill" href="http://localhost:1313/notes/math/amc/amc10/geometry/problem-types/coordinate-kill/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Extremal Geometry Paths
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🎯 Extremal Geometry Paths Extremal geometry problems involve finding maximum or minimum values of geometric quantities. Master these techniques for AMC success.
+🎯 Recognition Cues Key Triggers Minimum distance - Look for shortest path problems Maximum area - Look for largest area problems Reflection method - Look for problems involving reflections Optimization - Look for problems asking for extreme values Common Setups Shortest path between points Largest area with given constraints Minimum perimeter problems Reflection across lines 🧩 Solution Template Step 1: Identify the Extremal Problem Determine if you need maximum or minimum Identify the constraint Look for reflection opportunities Step 2: Apply Reflection Method Reflect one point across the constraint line Draw line from other point to reflected point Find intersection with constraint line Step 3: Calculate the Extremal Value Use the reflection method result Apply distance or area formulas Solve for the extremal value Step 4: Verify Check that the solution satisfies constraints Ensure the extremal value is correct Verify the final answer 🔍 Worked Example Problem: Point $A$ is at $(0,0)$ and point $B$ is at $(4,2)$. Find the shortest path from $A$ to $B$ that touches the line $y = 1$.
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Extremal Geometry Paths" href="http://localhost:1313/notes/math/amc/amc10/geometry/problem-types/extremal-geometry-paths/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Circle Packing Touching
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>⭕ Circle Packing Touching Circle packing problems involve multiple circles that touch each other. Master these configurations for efficient problem solving.
+🎯 Recognition Cues Key Triggers Multiple circles - Look for problems with several circles Tangency - Look for circles that touch each other Equal radii - Look for circles with the same radius Chains - Look for circles arranged in chains or patterns Common Setups Circles tangent to each other Equal radius circles Circles in chains or patterns Circles tangent to lines 🧩 Solution Template Step 1: Identify the Configuration Determine how many circles are involved Identify which circles touch which others Mark given radii and relationships Step 2: Apply Tangency Properties Equal tangents: From external point, two tangents are equal Power of a Point: Use for tangent relationships Equal radii: Use for equal tangent lengths Step 3: Set Up Equations Use tangency properties to set up equations Substitute known values Solve for the unknown Step 4: Verify Check that all circles can actually touch Ensure all radii are positive Verify the final answer 🔍 Worked Example Problem: Three circles with radii 2, 3, and 4 are externally tangent to each other. Find the radius of the circle that is externally tangent to all three.
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Circle Packing Touching" href="http://localhost:1313/notes/math/amc/amc10/geometry/problem-types/circle-packing-touching/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Mass Points Templates
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>⚖️ Mass Points Templates Mass point geometry provides an elegant alternative to coordinate methods for ratio problems. Master these templates for AMC 12 success.
+🎯 Recognition Cues Key Triggers Ratio problems - Look for problems asking for ratios of lengths Cevians - Look for lines from vertices to opposite sides Concurrency - Look for lines meeting at a point Weighted points - Look for problems involving weighted averages Common Setups Triangles with cevians Ratio problems Concurrency problems Weighted point problems 🧩 Solution Template Step 1: Assign Masses Assign masses to vertices proportional to opposite side lengths Use the principle of moments Ensure masses are consistent Step 2: Find Center of Mass Calculate the center of mass Use the formula: $G = \frac{m_1P_1 &#43; m_2P_2 &#43; m_3P_3}{m_1 &#43; m_2 &#43; m_3}$ Step 3: Apply Mass Point Properties Use the fact that center of mass is at intersection of cevians Apply mass ratios to find unknown lengths Use weighted averages Step 4: Verify Check that masses are consistent Ensure ratios make geometric sense Verify the final answer 🔍 Worked Example Problem: In triangle $ABC$, $D$ is on $BC$ such that $BD:DC = 3:4$. If $AB = 6$ and $AC = 8$, find the ratio $AD:DE$ where $E$ is the intersection of $AD$ and the line through $B$ parallel to $AC$.
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Mass Points Templates" href="http://localhost:1313/notes/math/amc/amc10/geometry/problem-types/mass-points-templates/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">3D Projections &amp; Sections
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>📦 3D Projections &amp; Sections 3D geometry problems often involve projections and cross-sections. Master these techniques for AMC 12 success.
+🎯 Recognition Cues Key Triggers 3D figures - Look for cubes, prisms, pyramids, or spheres Projections - Look for problems involving projecting 3D figures onto 2D planes Cross-sections - Look for problems involving slicing 3D figures Areas/lengths - Look for problems asking for areas or lengths in 3D Common Setups Cubes with cross-sections Prisms with projections Pyramids with sections Spheres with projections 🧩 Solution Template Step 1: Identify the 3D Figure Determine the type of 3D figure Identify key dimensions and properties Mark given information Step 2: Find the Projection or Section Determine what 2D figure results from projection or section Calculate dimensions of the 2D figure Use 2D geometry to find areas or lengths Step 3: Apply 3D Properties Use 3D formulas for volumes or surface areas Apply projection formulas Use similar triangles or other 2D techniques Step 4: Verify Check that the 2D figure makes sense Ensure all calculations are correct Verify the final answer 🔍 Worked Example Problem: A cube with side length 6 is cut by a plane that passes through the midpoints of three edges meeting at a vertex. Find the area of the cross-section.
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to 3D Projections & Sections" href="http://localhost:1313/notes/math/amc/amc10/geometry/problem-types/3d-projections-and-sections/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Geometric Probability Patterns
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🎲 Geometric Probability Patterns Geometric probability problems combine geometry with probability. Master these patterns for efficient problem solving.
+🎯 Recognition Cues Key Triggers Random points - Look for problems involving random points Random chords - Look for problems involving random chords Random regions - Look for problems involving random areas Probability - Look for problems asking for probabilities Common Setups Random points on line segments Random chords in circles Random points in regions Random lines through figures 🧩 Solution Template Step 1: Identify the Geometric Setup Determine the geometric figure involved Identify the total geometric measure Identify the favorable geometric measure Step 2: Calculate Geometric Measures Length probability: Use length ratios Area probability: Use area ratios Volume probability: Use volume ratios Step 3: Apply Probability Formula Use the formula: $P = \frac{\text{Favorable measure}}{\text{Total measure}}$ Substitute calculated values Simplify the fraction Step 4: Verify Check that probability is between 0 and 1 Ensure all measures are positive Verify the final answer 🔍 Worked Example Problem: A point is chosen randomly inside a square with side length 6. What is the probability that the point is within 2 units of the center?
+...</p>
+  </div>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Geometric Probability Patterns" href="http://localhost:1313/notes/math/amc/amc10/geometry/problem-types/geometric-probability-patterns/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Essential Formulas Bank
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>📏 Essential Formulas Bank Complete reference for all essential AMC geometry formulas with usage notes and micro-examples.
+🔺 Triangle Formulas Area Formulas Formula Usage Example $A = \frac{1}{2}bh$ Basic triangle area Triangle with base 6, height 4: $A = \frac{1}{2} \cdot 6 \cdot 4 = 12$ $A = \frac{1}{2}ab\sin C$ Triangle with two sides and included angle Sides 5, 7, angle $60°$: $A = \frac{1}{2} \cdot 5 \cdot 7 \cdot \sin 60° = \frac{35\sqrt{3}}{4}$ $A = \sqrt{s(s-a)(s-b)(s-c)}$ Heron’s formula (three sides) Sides 3, 4, 5: $s = 6$, $A = \sqrt{6 \cdot 3 \cdot 2 \cdot 1} = 6$ Length Formulas Formula Usage Example $m_a = \frac{1}{2}\sqrt{2b^2 &#43; 2c^2 - a^2}$ Median length Sides 3, 4, 5: $m = \frac{1}{2}\sqrt{2 \cdot 16 &#43; 2 \cdot 9 - 25} = \frac{5}{2}$ $h_a = \frac{2A}{a}$ Altitude length Area 6, base 3: $h = \frac{2 \cdot 6}{3} = 4$ $t_a = \frac{2bc}{b&#43;c}\cos\frac{A}{2}$ Angle bisector length Sides 3, 4, angle $60°$: $t = \frac{2 \cdot 3 \cdot 4}{7} \cdot \cos 30° = \frac{24\sqrt{3}}{14}$ Center Formulas Formula Usage Example $G = \left(\frac{x_1&#43;x_2&#43;x_3}{3}, \frac{y_1&#43;y_2&#43;y_3}{3}\right)$ Centroid coordinates Vertices $(0,0)$, $(4,0)$, $(2,3)$: $G = (2,1)$ $r = \frac{A}{s}$ Inradius Area 6, semi-perimeter 6: $r = 1$ $R = \frac{abc}{4A}$ Circumradius Sides 3, 4, 5, area 6: $R = \frac{3 \cdot 4 \cdot 5}{4 \cdot 6} = \frac{5}{2}$ ⭕ Circle Formulas Basic Properties Formula Usage Example $A = \pi r^2$ Circle area Radius 5: $A = 25\pi$ $C = 2\pi r$ Circumference Radius 5: $C = 10\pi$ $d = 2r$ Diameter Radius 5: $d = 10$ Power of a Point Formula Usage Example $PA^2 = PB \cdot PC$ Tangent-secant Tangent 6, secant segment 4: $6^2 = 4 \cdot PC$, so $PC = 9$ $PA \cdot PB = PC \cdot PD$ Two secants/chords Secant segments 3, 4 and 2, 6: $3 \cdot 4 = 2 \cdot 6 = 12$ Chord and Arc Formula Usage Example $L = 2\sqrt{r^2 - d^2}$ Chord length Radius 5, distance 3: $L = 2\sqrt{25-9} = 8$ $s = r\theta$ Arc length Radius 5, angle $\frac{\pi}{3}$: $s = \frac{5\pi}{3}$ 📐 Coordinate Formulas Basic Operations Formula Usage Example $d = \sqrt{(x_2-x_1)^2 &#43; (y_2-y_1)^2}$ Distance between points $(0,0)$ to $(3,4)$: $d = \sqrt{9&#43;16} = 5$ $m = \frac{y_2-y_1}{x_2-x_1}$ Slope $(1,2)$ to $(3,6)$: $m = \frac{6-2}{3-1} = 2$ $\left(\frac{x_1&#43;x_2}{2}, \frac{y_1&#43;y_2}{2}\right)$ Midpoint $(0,0)$ to $(4,6)$: $(2,3)$ Area and Lines Formula Usage Example $A = \frac{1}{2} \sum_{i=1}^n x_iy_{i&#43;1} - \sum_{i=1}^n y_ix_{i&#43;1} $ $y = mx &#43; b$ Line equation Slope 2, y-intercept 3: $y = 2x &#43; 3$ $(x-h)^2 &#43; (y-k)^2 = r^2$ Circle equation Center $(2,3)$, radius 5: $(x-2)^2 &#43; (y-3)^2 = 25$ 🔄 Transformation Formulas Basic Transformations Formula Usage Example $(x,y) \rightarrow (y,x)$ Reflection across $y = x$ $(3,4) \rightarrow (4,3)$ $(x,y) \rightarrow (-y,x)$ Rotation by $90°$ $(3,4) \rightarrow (-4,3)$ $(x,y) \rightarrow (x&#43;a,y&#43;b)$ Translation by $(a,b)$ $(3,4)$ by $(1,2)$: $(4,6)$ Scaling Formula Usage Example $(x,y) \rightarrow (kx,ky)$ Homothety by factor $k$ $(3,4)$ by factor 2: $(6,8)$ 📦 3D Formulas Volume Formula Usage Example $V = s^3$ Cube volume Side 4: $V = 64$ $V = lwh$ Rectangular prism Length 3, width 4, height 5: $V = 60$ $V = \pi r^2 h$ Cylinder volume Radius 3, height 5: $V = 45\pi$ $V = \frac{1}{3}\pi r^2 h$ Cone volume Radius 3, height 5: $V = 15\pi$ $V = \frac{4}{3}\pi r^3$ Sphere volume Radius 3: $V = 36\pi$ Surface Area Formula Usage Example $A = 6s^2$ Cube surface area Side 4: $A = 96$ $A = 2(lw &#43; lh &#43; wh)$ Rectangular prism Length 3, width 4, height 5: $A = 94$ $A = 2\pi r^2 &#43; 2\pi rh$ Cylinder surface area Radius 3, height 5: $A = 48\pi$ $A = 4\pi r^2$ Sphere surface area Radius 3: $A = 36\pi$ 🎯 Special Formulas Ceva and Menelaus Formula Usage Example $\frac{AF}{FB} \cdot \frac{BD}{DC} \cdot \frac{CE}{EA} = 1$ Ceva’s theorem Check concurrency of cevians $\frac{AF}{FB} \cdot \frac{BD}{DC} \cdot \frac{CE}{EA} = 1$ Menelaus’s theorem Check collinearity of points Ptolemy’s Theorem Formula Usage Example $AC \cdot BD = AB \cdot CD &#43; BC \cdot AD$ Cyclic quadrilateral Sides 3, 4, 5, 6: $AC \cdot BD = 3 \cdot 5 &#43; 4 \cdot 6 = 39$ Angle Bisector Theorem Formula Usage Example $\frac{BD}{DC} = \frac{AB}{AC}$ Angle bisector Sides 6, 8, bisector divides opposite side: $\frac{BD}{DC} = \frac{6}{8} = \frac{3}{4}$ 💡 Quick Reference Tips Memorization Strategy Group by topic - Learn related formulas together Practice applications - Work through examples Build recognition - Learn when to use each formula Common Mistakes Wrong units - Make sure units match Wrong order - Check formula order carefully Missing factors - Don’t forget $\frac{1}{2}$ or other factors Contest Strategy Quick lookup - Know where to find each formula Apply correctly - Use the right formula for the problem Verify results - Check that your answer makes sense Next: Tips Overview → | Prev: Formulas Overview → | Back to: Geometry Mastery Guide →
+...</p>
+  </div>
+  <footer class="entry-footer">4 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Essential Formulas Bank" href="http://localhost:1313/notes/math/amc/amc10/geometry/formulas/essential-formulas/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Problem-Solving Tips
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🧠 Problem-Solving Tips Master these essential strategies for AMC geometry success. These tips will help you solve problems faster and more accurately.
+🔍 Recognition Strategies Pattern Recognition When stuck: Look for these common patterns:
+Parallel lines → Similar triangles Circles → Inscribed angles, Power of a Point Equal angles → Parallel lines or cyclic quadrilaterals Ratios → Similarity or area ratios Coordinates → Distance, midpoint, shoelace formulas Quick Scans First 30 seconds:
+...</p>
+  </div>
+  <footer class="entry-footer">5 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Problem-Solving Tips" href="http://localhost:1313/notes/math/amc/amc10/geometry/tips/problem-solving-tips/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Geometry Tactics
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>📐 Geometry Tactics Master the essential geometric techniques that will help you solve problems involving shapes, angles, areas, and spatial relationships efficiently.
+🎯 Core Geometric Strategies Similar Triangles AA Similarity: Two angles equal SAS Similarity: Two sides proportional, included angle equal SSS Similarity: All three sides proportional Proportional relationships: Use similarity ratios Power of a Point Secant-Secant: $PA \cdot PB = PC \cdot PD$ Secant-Tangent: $PA \cdot PB = PT^2$ Tangent-Tangent: $PT_1 = PT_2$ Chord-Chord: $PA \cdot PB = PC \cdot PD$ Coordinate Geometry Distance formula: $d = \sqrt{(x_2-x_1)^2 &#43; (y_2-y_1)^2}$ Midpoint formula: $M = \left(\frac{x_1&#43;x_2}{2}, \frac{y_1&#43;y_2}{2}\right)$ Slope formula: $m = \frac{y_2-y_1}{x_2-x_1}$ Area formulas: Triangle, rectangle, circle, etc. 🔍 Similar Triangles Mastery AA Similarity When to use: Two angles are equal in both triangles
+...</p>
+  </div>
+  <footer class="entry-footer">6 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Geometry Tactics" href="http://localhost:1313/notes/math/amc/amc10/strategy/tactics-by-topic/geometry-tactics/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/tags/geometry/page/5/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="http://localhost:1313/tags/geometry/page/7/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

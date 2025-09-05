@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Algebra Tactics | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Algebra, Tactics, Problem Solving">
+<meta name="description" content="Specialized algebraic problem-solving techniques including substitutions, discriminants, conjugates, and advanced manipulation strategies.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/strategy/tactics-by-topic/algebra-tactics/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/strategy/tactics-by-topic/algebra-tactics/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/">AMC 10/12 Contest Strategy &amp; Tactics Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/tactics-by-topic/">Tactics by Topic</a></div>
+    <div class="post-meta">6 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-algebra-tactics" aria-label="🔢 Algebra Tactics">🔢 Algebra Tactics</a><ul>
+                        
+                <li>
+                    <a href="#-core-algebraic-strategies" aria-label="🎯 Core Algebraic Strategies">🎯 Core Algebraic Strategies</a><ul>
+                        
+                <li>
+                    <a href="#substitution-techniques" aria-label="Substitution Techniques">Substitution Techniques</a></li>
+                <li>
+                    <a href="#discriminant-analysis" aria-label="Discriminant Analysis">Discriminant Analysis</a></li>
+                <li>
+                    <a href="#conjugate-techniques" aria-label="Conjugate Techniques">Conjugate Techniques</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-substitution-mastery" aria-label="🔄 Substitution Mastery">🔄 Substitution Mastery</a><ul>
+                        
+                <li>
+                    <a href="#variable-substitution" aria-label="Variable Substitution">Variable Substitution</a></li>
+                <li>
+                    <a href="#symmetric-substitution" aria-label="Symmetric Substitution">Symmetric Substitution</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-discriminant-analysis" aria-label="📊 Discriminant Analysis">📊 Discriminant Analysis</a><ul>
+                        
+                <li>
+                    <a href="#quadratic-discriminant" aria-label="Quadratic Discriminant">Quadratic Discriminant</a></li>
+                <li>
+                    <a href="#discriminant-example" aria-label="Discriminant Example">Discriminant Example</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-conjugate-techniques" aria-label="🔗 Conjugate Techniques">🔗 Conjugate Techniques</a><ul>
+                        
+                <li>
+                    <a href="#rationalizing-denominators" aria-label="Rationalizing Denominators">Rationalizing Denominators</a></li>
+                <li>
+                    <a href="#complex-conjugates" aria-label="Complex Conjugates">Complex Conjugates</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-advanced-algebraic-techniques" aria-label="🎯 Advanced Algebraic Techniques">🎯 Advanced Algebraic Techniques</a><ul>
+                        
+                <li>
+                    <a href="#vietas-formulas" aria-label="Vieta&rsquo;s Formulas">Vieta&rsquo;s Formulas</a></li>
+                <li>
+                    <a href="#vietas-example" aria-label="Vieta&rsquo;s Example">Vieta&rsquo;s Example</a></li>
+                <li>
+                    <a href="#polynomial-division" aria-label="Polynomial Division">Polynomial Division</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-algebraic-tricks" aria-label="⚡ Quick Algebraic Tricks">⚡ Quick Algebraic Tricks</a><ul>
+                        
+                <li>
+                    <a href="#factoring-techniques" aria-label="Factoring Techniques">Factoring Techniques</a></li>
+                <li>
+                    <a href="#completing-the-square" aria-label="Completing the Square">Completing the Square</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-problem-specific-strategies" aria-label="🎯 Problem-Specific Strategies">🎯 Problem-Specific Strategies</a><ul>
+                        
+                <li>
+                    <a href="#equation-solving" aria-label="Equation Solving">Equation Solving</a></li>
+                <li>
+                    <a href="#function-analysis" aria-label="Function Analysis">Function Analysis</a></li>
+                <li>
+                    <a href="#inequality-solving" aria-label="Inequality Solving">Inequality Solving</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-common-algebraic-mistakes" aria-label="🚨 Common Algebraic Mistakes">🚨 Common Algebraic Mistakes</a><ul>
+                        
+                <li>
+                    <a href="#avoid-these-errors" aria-label="Avoid These Errors:">Avoid These Errors:</a></li>
+                <li>
+                    <a href="#red-flags" aria-label="Red Flags:">Red Flags:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-reference" aria-label="📊 Quick Reference">📊 Quick Reference</a><ul>
+                        
+                <li>
+                    <a href="#substitution-checklist" aria-label="Substitution Checklist:">Substitution Checklist:</a></li>
+                <li>
+                    <a href="#discriminant-checklist" aria-label="Discriminant Checklist:">Discriminant Checklist:</a></li>
+                <li>
+                    <a href="#conjugate-checklist" aria-label="Conjugate Checklist:">Conjugate Checklist:</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-algebra-tactics">🔢 Algebra Tactics<a hidden class="anchor" aria-hidden="true" href="#-algebra-tactics">#</a></h1>
+<p>Master the essential algebraic techniques that will help you solve equations, manipulate expressions, and handle complex algebraic relationships efficiently.</p>
+<h2 id="-core-algebraic-strategies">🎯 Core Algebraic Strategies<a hidden class="anchor" aria-hidden="true" href="#-core-algebraic-strategies">#</a></h2>
+<h3 id="substitution-techniques">Substitution Techniques<a hidden class="anchor" aria-hidden="true" href="#substitution-techniques">#</a></h3>
+<ul>
+<li><strong>Variable substitution</strong>: Replace complex expressions with simpler variables</li>
+<li><strong>Trigonometric substitution</strong>: Use trig identities for algebraic problems</li>
+<li><strong>Symmetric substitution</strong>: Exploit symmetry in expressions</li>
+<li><strong>Parameter substitution</strong>: Introduce parameters to simplify</li>
+</ul>
+<h3 id="discriminant-analysis">Discriminant Analysis<a hidden class="anchor" aria-hidden="true" href="#discriminant-analysis">#</a></h3>
+<ul>
+<li><strong>Quadratic discriminant</strong>: $b^2 - 4ac$ determines nature of roots</li>
+<li><strong>Positive discriminant</strong>: Two distinct real roots</li>
+<li><strong>Zero discriminant</strong>: One repeated real root</li>
+<li><strong>Negative discriminant</strong>: Two complex roots</li>
+</ul>
+<h3 id="conjugate-techniques">Conjugate Techniques<a hidden class="anchor" aria-hidden="true" href="#conjugate-techniques">#</a></h3>
+<ul>
+<li><strong>Rationalizing denominators</strong>: Multiply by conjugate</li>
+<li><strong>Complex conjugates</strong>: Use $z \cdot \overline{z} = |z|^2$</li>
+<li><strong>Radical conjugates</strong>: Simplify expressions with radicals</li>
+<li><strong>Trigonometric conjugates</strong>: Use complementary angles</li>
+</ul>
+<h2 id="-substitution-mastery">🔄 Substitution Mastery<a hidden class="anchor" aria-hidden="true" href="#-substitution-mastery">#</a></h2>
+<h3 id="variable-substitution">Variable Substitution<a hidden class="anchor" aria-hidden="true" href="#variable-substitution">#</a></h3>
+<p><strong>When to use</strong>: Complex expressions with repeated patterns</p>
+<p><strong>Process</strong>:</p>
+<ol>
+<li><strong>Identify the pattern</strong>: Look for repeated expressions</li>
+<li><strong>Choose substitution</strong>: Let $u = \text{pattern}$</li>
+<li><strong>Rewrite equation</strong>: Express in terms of $u$</li>
+<li><strong>Solve for $u$</strong>: Use standard techniques</li>
+<li><strong>Back-substitute</strong>: Find original variable</li>
+</ol>
+<p><strong>Example</strong>: Solve $x^4 - 5x^2 + 4 = 0$</p>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Let $u = x^2$, then $u^2 - 5u + 4 = 0$</li>
+<li>Factor: $(u-1)(u-4) = 0$, so $u = 1$ or $u = 4$</li>
+<li>Back-substitute: $x^2 = 1$ or $x^2 = 4$</li>
+<li>Solutions: $x = \pm 1, \pm 2$</li>
+</ul>
+<h3 id="symmetric-substitution">Symmetric Substitution<a hidden class="anchor" aria-hidden="true" href="#symmetric-substitution">#</a></h3>
+<p><strong>When to use</strong>: Symmetric expressions in multiple variables</p>
+<p><strong>Process</strong>:</p>
+<ol>
+<li><strong>Identify symmetry</strong>: Look for symmetric patterns</li>
+<li><strong>Use symmetric variables</strong>: $s = x + y$, $p = xy$</li>
+<li><strong>Express in terms</strong>: Rewrite using symmetric variables</li>
+<li><strong>Solve systematically</strong>: Use symmetric properties</li>
+<li><strong>Find original variables</strong>: Back-substitute</li>
+</ol>
+<p><strong>Example</strong>: Solve $x + y = 5$, $xy = 6$</p>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Let $s = x + y = 5$, $p = xy = 6$</li>
+<li>$x, y$ are roots of $t^2 - st + p = 0$</li>
+<li>$t^2 - 5t + 6 = 0$, so $(t-2)(t-3) = 0$</li>
+<li>Solutions: $(x,y) = (2,3)$ or $(3,2)$</li>
+</ul>
+<h2 id="-discriminant-analysis">📊 Discriminant Analysis<a hidden class="anchor" aria-hidden="true" href="#-discriminant-analysis">#</a></h2>
+<h3 id="quadratic-discriminant">Quadratic Discriminant<a hidden class="anchor" aria-hidden="true" href="#quadratic-discriminant">#</a></h3>
+<p><strong>Formula</strong>: $\Delta = b^2 - 4ac$ for $ax^2 + bx + c = 0$</p>
+<p><strong>Cases</strong>:</p>
+<ul>
+<li><strong>$\Delta &gt; 0$</strong>: Two distinct real roots</li>
+<li><strong>$\Delta = 0$</strong>: One repeated real root</li>
+<li><strong>$\Delta &lt; 0$</strong>: Two complex roots</li>
+</ul>
+<p><strong>Applications</strong>:</p>
+<ul>
+<li><strong>Nature of roots</strong>: Determine if roots are real</li>
+<li><strong>Number of solutions</strong>: Count real solutions</li>
+<li><strong>Parameter ranges</strong>: Find values for specific root types</li>
+<li><strong>Optimization</strong>: Find extrema of quadratic functions</li>
+</ul>
+<h3 id="discriminant-example">Discriminant Example<a hidden class="anchor" aria-hidden="true" href="#discriminant-example">#</a></h3>
+<p><strong>Problem</strong>: For what values of $k$ does $x^2 + kx + 1 = 0$ have real roots?</p>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Discriminant: $\Delta = k^2 - 4(1)(1) = k^2 - 4$</li>
+<li>Real roots when $\Delta \geq 0$: $k^2 - 4 \geq 0$</li>
+<li>$k^2 \geq 4$, so $|k| \geq 2$</li>
+<li><strong>Answer</strong>: $k \leq -2$ or $k \geq 2$</li>
+</ul>
+<h2 id="-conjugate-techniques">🔗 Conjugate Techniques<a hidden class="anchor" aria-hidden="true" href="#-conjugate-techniques">#</a></h2>
+<h3 id="rationalizing-denominators">Rationalizing Denominators<a hidden class="anchor" aria-hidden="true" href="#rationalizing-denominators">#</a></h3>
+<p><strong>When to use</strong>: Denominators with radicals or complex numbers</p>
+<p><strong>Process</strong>:</p>
+<ol>
+<li><strong>Identify conjugate</strong>: Change sign of radical or imaginary part</li>
+<li><strong>Multiply by conjugate</strong>: Both numerator and denominator</li>
+<li><strong>Simplify</strong>: Use difference of squares or other identities</li>
+<li><strong>Check result</strong>: Verify the simplification</li>
+</ol>
+<p><strong>Example</strong>: Rationalize $\frac{1}{\sqrt{3} + \sqrt{2}}$</p>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Conjugate: $\sqrt{3} - \sqrt{2}$</li>
+<li>Multiply: $\frac{1}{\sqrt{3} + \sqrt{2}} \cdot \frac{\sqrt{3} - \sqrt{2}}{\sqrt{3} - \sqrt{2}}$</li>
+<li>Simplify: $\frac{\sqrt{3} - \sqrt{2}}{(\sqrt{3})^2 - (\sqrt{2})^2} = \frac{\sqrt{3} - \sqrt{2}}{3 - 2} = \sqrt{3} - \sqrt{2}$</li>
+</ul>
+<h3 id="complex-conjugates">Complex Conjugates<a hidden class="anchor" aria-hidden="true" href="#complex-conjugates">#</a></h3>
+<p><strong>When to use</strong>: Complex numbers and expressions</p>
+<p><strong>Key identity</strong>: $z \cdot \overline{z} = |z|^2$</p>
+<p><strong>Applications</strong>:</p>
+<ul>
+<li><strong>Modulus calculation</strong>: $|z|^2 = z \cdot \overline{z}$</li>
+<li><strong>Division</strong>: $\frac{z_1}{z_2} = \frac{z_1 \cdot \overline{z_2}}{|z_2|^2}$</li>
+<li><strong>Real parts</strong>: $\text{Re}(z) = \frac{z + \overline{z}}{2}$</li>
+<li><strong>Imaginary parts</strong>: $\text{Im}(z) = \frac{z - \overline{z}}{2i}$</li>
+</ul>
+<h2 id="-advanced-algebraic-techniques">🎯 Advanced Algebraic Techniques<a hidden class="anchor" aria-hidden="true" href="#-advanced-algebraic-techniques">#</a></h2>
+<h3 id="vietas-formulas">Vieta&rsquo;s Formulas<a hidden class="anchor" aria-hidden="true" href="#vietas-formulas">#</a></h3>
+<p><strong>For quadratic</strong>: If $ax^2 + bx + c = 0$ has roots $r_1, r_2$:</p>
+<ul>
+<li>$r_1 + r_2 = -\frac{b}{a}$</li>
+<li>$r_1 \cdot r_2 = \frac{c}{a}$</li>
+</ul>
+<p><strong>For cubic</strong>: If $ax^3 + bx^2 + cx + d = 0$ has roots $r_1, r_2, r_3$:</p>
+<ul>
+<li>$r_1 + r_2 + r_3 = -\frac{b}{a}$</li>
+<li>$r_1r_2 + r_1r_3 + r_2r_3 = \frac{c}{a}$</li>
+<li>$r_1r_2r_3 = -\frac{d}{a}$</li>
+</ul>
+<h3 id="vietas-example">Vieta&rsquo;s Example<a hidden class="anchor" aria-hidden="true" href="#vietas-example">#</a></h3>
+<p><strong>Problem</strong>: If $x^2 - 5x + 6 = 0$ has roots $r_1, r_2$, find $r_1^2 + r_2^2$</p>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Vieta&rsquo;s: $r_1 + r_2 = 5$, $r_1r_2 = 6$</li>
+<li>$r_1^2 + r_2^2 = (r_1 + r_2)^2 - 2r_1r_2 = 5^2 - 2(6) = 25 - 12 = 13$</li>
+</ul>
+<h3 id="polynomial-division">Polynomial Division<a hidden class="anchor" aria-hidden="true" href="#polynomial-division">#</a></h3>
+<p><strong>Synthetic division</strong>: For dividing by linear factors
+<strong>Long division</strong>: For dividing by higher degree polynomials
+<strong>Remainder theorem</strong>: $P(a)$ is remainder when $P(x)$ divided by $(x-a)$
+<strong>Factor theorem</strong>: $(x-a)$ is factor of $P(x)$ if and only if $P(a) = 0$</p>
+<h2 id="-quick-algebraic-tricks">⚡ Quick Algebraic Tricks<a hidden class="anchor" aria-hidden="true" href="#-quick-algebraic-tricks">#</a></h2>
+<h3 id="factoring-techniques">Factoring Techniques<a hidden class="anchor" aria-hidden="true" href="#factoring-techniques">#</a></h3>
+<ul>
+<li><strong>Common factor</strong>: Factor out common terms</li>
+<li><strong>Difference of squares</strong>: $a^2 - b^2 = (a+b)(a-b)$</li>
+<li><strong>Perfect squares</strong>: $a^2 \pm 2ab + b^2 = (a \pm b)^2$</li>
+<li><strong>Sum/difference of cubes</strong>: $a^3 \pm b^3 = (a \pm b)(a^2 \mp ab + b^2)$</li>
+<li><strong>Grouping</strong>: Group terms to factor</li>
+</ul>
+<h3 id="completing-the-square">Completing the Square<a hidden class="anchor" aria-hidden="true" href="#completing-the-square">#</a></h3>
+<p><strong>Process</strong>:</p>
+<ol>
+<li><strong>Isolate variable terms</strong>: Move constant to other side</li>
+<li><strong>Factor coefficient</strong>: Factor out coefficient of $x^2$</li>
+<li><strong>Add and subtract</strong>: Add $(\frac{b}{2})^2$ inside parentheses</li>
+<li><strong>Simplify</strong>: Write as perfect square</li>
+<li><strong>Solve</strong>: Take square root and solve</li>
+</ol>
+<p><strong>Example</strong>: Solve $x^2 - 6x + 5 = 0$</p>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>$x^2 - 6x = -5$</li>
+<li>$x^2 - 6x + 9 = -5 + 9$ (add $(\frac{-6}{2})^2 = 9$)</li>
+<li>$(x-3)^2 = 4$</li>
+<li>$x-3 = \pm 2$, so $x = 3 \pm 2 = 1, 5$</li>
+</ul>
+<h2 id="-problem-specific-strategies">🎯 Problem-Specific Strategies<a hidden class="anchor" aria-hidden="true" href="#-problem-specific-strategies">#</a></h2>
+<h3 id="equation-solving">Equation Solving<a hidden class="anchor" aria-hidden="true" href="#equation-solving">#</a></h3>
+<ul>
+<li><strong>Linear equations</strong>: Isolate variable</li>
+<li><strong>Quadratic equations</strong>: Factor, complete square, or use formula</li>
+<li><strong>Rational equations</strong>: Clear denominators</li>
+<li><strong>Radical equations</strong>: Isolate radical, square both sides</li>
+<li><strong>Exponential equations</strong>: Use logarithms</li>
+<li><strong>Logarithmic equations</strong>: Use exponential form</li>
+</ul>
+<h3 id="function-analysis">Function Analysis<a hidden class="anchor" aria-hidden="true" href="#function-analysis">#</a></h3>
+<ul>
+<li><strong>Domain</strong>: Values where function is defined</li>
+<li><strong>Range</strong>: Possible output values</li>
+<li><strong>Intercepts</strong>: Where function crosses axes</li>
+<li><strong>Symmetry</strong>: Even, odd, or neither</li>
+<li><strong>Asymptotes</strong>: Vertical, horizontal, or oblique</li>
+<li><strong>Extrema</strong>: Maximum and minimum values</li>
+</ul>
+<h3 id="inequality-solving">Inequality Solving<a hidden class="anchor" aria-hidden="true" href="#inequality-solving">#</a></h3>
+<ul>
+<li><strong>Linear inequalities</strong>: Solve like equations, flip sign when multiplying by negative</li>
+<li><strong>Quadratic inequalities</strong>: Find roots, test intervals</li>
+<li><strong>Rational inequalities</strong>: Find zeros and undefined points, test intervals</li>
+<li><strong>Absolute value inequalities</strong>: Use definition of absolute value</li>
+<li><strong>Compound inequalities</strong>: Solve each part separately</li>
+</ul>
+<h2 id="-common-algebraic-mistakes">🚨 Common Algebraic Mistakes<a hidden class="anchor" aria-hidden="true" href="#-common-algebraic-mistakes">#</a></h2>
+<h3 id="avoid-these-errors">Avoid These Errors:<a hidden class="anchor" aria-hidden="true" href="#avoid-these-errors">#</a></h3>
+<ul>
+<li><strong>Sign errors</strong>: Be careful with negative signs</li>
+<li><strong>Distribution errors</strong>: Don&rsquo;t forget to distribute</li>
+<li><strong>Factoring errors</strong>: Check your factoring</li>
+<li><strong>Domain errors</strong>: Don&rsquo;t divide by zero</li>
+<li><strong>Extraneous solutions</strong>: Check solutions in original equation</li>
+</ul>
+<h3 id="red-flags">Red Flags:<a hidden class="anchor" aria-hidden="true" href="#red-flags">#</a></h3>
+<ul>
+<li><strong>Answer doesn&rsquo;t work</strong>: Check your work</li>
+<li><strong>Negative under square root</strong>: Check your work</li>
+<li><strong>Division by zero</strong>: Check your work</li>
+<li><strong>Impossible result</strong>: Check your work</li>
+</ul>
+<h2 id="-quick-reference">📊 Quick Reference<a hidden class="anchor" aria-hidden="true" href="#-quick-reference">#</a></h2>
+<h3 id="substitution-checklist">Substitution Checklist:<a hidden class="anchor" aria-hidden="true" href="#substitution-checklist">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Identify pattern</strong>: Look for repeated expressions</li>
+<li><input disabled="" type="checkbox"> <strong>Choose substitution</strong>: Let $u = \text{pattern}$</li>
+<li><input disabled="" type="checkbox"> <strong>Rewrite equation</strong>: Express in terms of $u$</li>
+<li><input disabled="" type="checkbox"> <strong>Solve for $u$</strong>: Use standard techniques</li>
+<li><input disabled="" type="checkbox"> <strong>Back-substitute</strong>: Find original variable</li>
+</ul>
+<h3 id="discriminant-checklist">Discriminant Checklist:<a hidden class="anchor" aria-hidden="true" href="#discriminant-checklist">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Identify quadratic</strong>: $ax^2 + bx + c = 0$</li>
+<li><input disabled="" type="checkbox"> <strong>Calculate discriminant</strong>: $\Delta = b^2 - 4ac$</li>
+<li><input disabled="" type="checkbox"> <strong>Determine nature</strong>: Positive, zero, or negative</li>
+<li><input disabled="" type="checkbox"> <strong>Apply result</strong>: Use discriminant information</li>
+</ul>
+<h3 id="conjugate-checklist">Conjugate Checklist:<a hidden class="anchor" aria-hidden="true" href="#conjugate-checklist">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Identify conjugate</strong>: Change sign of radical or imaginary part</li>
+<li><input disabled="" type="checkbox"> <strong>Multiply by conjugate</strong>: Both numerator and denominator</li>
+<li><input disabled="" type="checkbox"> <strong>Simplify</strong>: Use difference of squares or other identities</li>
+<li><input disabled="" type="checkbox"> <strong>Check result</strong>: Verify the simplification</li>
+</ul>
+<hr>
+<p><strong>Prev:</strong> <a href="../playbooks/endgame-management">Endgame Management</a> | <strong>Next:</strong> <a href="number-theory-tactics">Number Theory Tactics</a> | <strong>Back to:</strong> <a href="../">Strategy Guide</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/algebra/">Algebra</a></li>
+      <li><a href="http://localhost:1313/tags/tactics/">Tactics</a></li>
+      <li><a href="http://localhost:1313/tags/problem-solving/">Problem Solving</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

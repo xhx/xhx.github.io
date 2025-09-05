@@ -95,4 +95,4 @@ A classic application: "How many ways can you make $c$ cents using $a$-cent and 
 
 ---
 
-**Previous**: [Congruences & Modular Arithmetic](congruences-and-modular-arithmetic) | **Next**: [Quadratic Diophantine Equations](diophantine-equations-quadratic)
+**Previous**: [Congruences & Modular Arithmetic](../congruences-and-modular-arithmetic) | **Next**: [Quadratic Diophantine Equations](../diophantine-equations-quadratic)

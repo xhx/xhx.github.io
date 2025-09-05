@@ -57,3 +57,5 @@ Quick reference for the most important number theory formulas used in AMC contes
 ---
 
 **Next**: Browse the [Essential Formulas](essential-formulas) for complete formula reference.
+
+**Next**: [Essential Formulas](essential-formulas) | **Back**: [Number Theory Mastery Guide](../)

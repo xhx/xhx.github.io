@@ -2,66 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Xiaohui Xie&#39;s Site</title>
-    <link>https://xhx.github.io/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Xiaohui Xie&#39;s Site</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xhx.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Algebra</title>
-      <link>https://xhx.github.io/categories/algebra/</link>
+      <link>http://localhost:1313/categories/algebra/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/categories/algebra/</guid>
+      <guid>http://localhost:1313/categories/algebra/</guid>
       <description></description>
     </item>
     <item>
       <title>Amc</title>
-      <link>https://xhx.github.io/categories/amc/</link>
+      <link>http://localhost:1313/categories/amc/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/categories/amc/</guid>
+      <guid>http://localhost:1313/categories/amc/</guid>
       <description></description>
     </item>
     <item>
       <title>Geometry</title>
-      <link>https://xhx.github.io/categories/geometry/</link>
+      <link>http://localhost:1313/categories/geometry/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/categories/geometry/</guid>
+      <guid>http://localhost:1313/categories/geometry/</guid>
       <description></description>
     </item>
     <item>
       <title>Math</title>
-      <link>https://xhx.github.io/categories/math/</link>
+      <link>http://localhost:1313/categories/math/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/categories/math/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Problems</title>
-      <link>https://xhx.github.io/categories/problems/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/categories/problems/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Strategies</title>
-      <link>https://xhx.github.io/categories/strategies/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/categories/strategies/</guid>
+      <guid>http://localhost:1313/categories/math/</guid>
       <description></description>
     </item>
     <item>
       <title>Syllabus</title>
-      <link>https://xhx.github.io/categories/syllabus/</link>
+      <link>http://localhost:1313/categories/syllabus/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/categories/syllabus/</guid>
+      <guid>http://localhost:1313/categories/syllabus/</guid>
       <description></description>
     </item>
     <item>
       <title>General</title>
-      <link>https://xhx.github.io/categories/general/</link>
+      <link>http://localhost:1313/categories/general/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/categories/general/</guid>
+      <guid>http://localhost:1313/categories/general/</guid>
       <description></description>
     </item>
   </channel>

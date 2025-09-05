@@ -85,4 +85,4 @@ One-paragraph primers for each number theory area, with notes on how they appear
 
 ---
 
-**Next**: Start studying core topics with [Divisibility Basics](topics/divisibility-basics).
+**Next**: Start studying core topics with [Divisibility Basics](../../topics/divisibility-basics).

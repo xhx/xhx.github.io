@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Fraction (Partial) Decomposition | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="">
+<meta name="description" content="A structured guide to partial fraction decomposition: linear, repeated, and quadratic factors. Includes method, examples, and applications.">
+<meta name="author" content="Compiled by ChatGPT">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/algebra2/fraction-decomposition/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/algebra2/fraction-decomposition/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/algebra2/">Algebra</a></div>
+    <div class="post-meta"><span title='2025-09-02 00:00:00 +0000 UTC'>September 2, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Compiled by ChatGPT
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="-fraction-decomposition">➗ Fraction Decomposition<a hidden class="anchor" aria-hidden="true" href="#-fraction-decomposition">#</a></h1>
+<p>Fraction decomposition is a method of expressing a complex rational function as a <strong>sum of simpler fractions</strong>.<br>
+This technique, commonly known as <strong>partial fraction decomposition</strong>, is particularly useful in:</p>
+<ul>
+<li><strong>Calculus</strong> → integrating rational functions</li>
+<li><strong>Algebra</strong> → simplifying rational expressions</li>
+<li><strong>Number theory &amp; competitions</strong> → telescoping sums</li>
+</ul>
+<hr>
+<h2 id="-general-process">📝 General Process<a hidden class="anchor" aria-hidden="true" href="#-general-process">#</a></h2>
+<ol>
+<li><strong>Factor the denominator</strong> completely.</li>
+<li><strong>Decompose the fraction</strong> into simpler terms according to the factors.</li>
+<li><strong>Solve for the unknown coefficients</strong> by equating coefficients or substituting values of $x$.</li>
+</ol>
+<hr>
+<h2 id="-types-of-denominators-and-decomposition">📘 Types of Denominators and Decomposition<a hidden class="anchor" aria-hidden="true" href="#-types-of-denominators-and-decomposition">#</a></h2>
+<h3 id="1-linear-factors">1. Linear Factors<a hidden class="anchor" aria-hidden="true" href="#1-linear-factors">#</a></h3>
+<p>If the denominator has <strong>distinct linear factors</strong> $(x+a)$:</p>
+<p>$$
+\frac{x + 2}{(x + 1)(x + 3)} = \frac{A}{x + 1} + \frac{B}{x + 3}
+$$</p>
+<p>Here $A$ and $B$ are constants to determine.</p>
+<hr>
+<h3 id="2-repeated-linear-factors">2. Repeated Linear Factors<a hidden class="anchor" aria-hidden="true" href="#2-repeated-linear-factors">#</a></h3>
+<p>If a linear factor is repeated:</p>
+<p>$$
+\frac{x - 4}{(x + 1)(x + 2)^2} = \frac{A}{x + 1} + \frac{B}{x + 2} + \frac{C}{(x + 2)^2}
+$$</p>
+<p>The power $(x+2)^2$ requires terms for <strong>both first and second powers</strong>.</p>
+<hr>
+<h3 id="3-higher-order-quadratic-factors">3. Higher-Order (Quadratic) Factors<a hidden class="anchor" aria-hidden="true" href="#3-higher-order-quadratic-factors">#</a></h3>
+<p>If the denominator includes <strong>irreducible quadratic factors</strong> (cannot be factored over reals):</p>
+<p>$$
+\frac{x^2 + 3x - 5}{(x - 2)(x^2 + 16)} = \frac{A}{x - 2} + \frac{Bx + C}{x^2 + 16}
+$$</p>
+<ul>
+<li>For quadratic denominators, the numerator must be <strong>linear</strong> ($Bx+C$).</li>
+</ul>
+<hr>
+<h2 id="-general-method">🔎 General Method<a hidden class="anchor" aria-hidden="true" href="#-general-method">#</a></h2>
+<ol>
+<li><strong>Factorize</strong> the denominator into linear and irreducible quadratic factors.</li>
+<li><strong>Set up decomposition</strong>:
+<ul>
+<li>For each linear $(x-a)$ → term $\tfrac{A}{x-a}$.</li>
+<li>For repeated $(x-a)^n$ → include $\tfrac{A}{x-a}, \tfrac{B}{(x-a)^2}, \dots, \tfrac{C}{(x-a)^n}$.</li>
+<li>For irreducible $x^2+bx+c$ → include $\tfrac{Bx+C}{x^2+bx+c}$.</li>
+</ul>
+</li>
+<li><strong>Clear denominators</strong> by multiplying through.</li>
+<li><strong>Solve for coefficients</strong>:
+<ul>
+<li>Equating coefficients of powers of $x$, or</li>
+<li>Plugging in strategic values of $x$.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="-example-problem">🧮 Example Problem<a hidden class="anchor" aria-hidden="true" href="#-example-problem">#</a></h2>
+<p>Decompose:</p>
+<p>$$
+\frac{2x^2 + 5x + 7}{(x - 1)(x^2 + 1)}.
+$$</p>
+<hr>
+<h3 id="step-1-factor-denominator">Step 1: Factor denominator<a hidden class="anchor" aria-hidden="true" href="#step-1-factor-denominator">#</a></h3>
+<p>Denominator = $(x - 1)(x^2 + 1)$</p>
+<ul>
+<li>$(x-1)$ is linear</li>
+<li>$(x^2+1)$ is irreducible quadratic</li>
+</ul>
+<hr>
+<h3 id="step-2-set-up-decomposition">Step 2: Set up decomposition<a hidden class="anchor" aria-hidden="true" href="#step-2-set-up-decomposition">#</a></h3>
+<p>$$
+\frac{2x^2 + 5x + 7}{(x - 1)(x^2 + 1)}
+= \frac{A}{x - 1} + \frac{Bx + C}{x^2 + 1}
+$$</p>
+<hr>
+<h3 id="step-3-clear-denominators">Step 3: Clear denominators<a hidden class="anchor" aria-hidden="true" href="#step-3-clear-denominators">#</a></h3>
+<p>Multiply both sides by $(x-1)(x^2+1)$:</p>
+<p>$$
+2x^2 + 5x + 7 = A(x^2+1) + (Bx + C)(x-1)
+$$</p>
+<hr>
+<h3 id="step-4-expand--collect">Step 4: Expand &amp; Collect<a hidden class="anchor" aria-hidden="true" href="#step-4-expand--collect">#</a></h3>
+<p>$$
+2x^2 + 5x + 7 = A(x^2+1) + (Bx^2 - Bx + Cx - C)
+$$</p>
+<p>$$
+= (A + B)x^2 + (C - B)x + (A - C)
+$$</p>
+<hr>
+<h3 id="step-5-compare-coefficients">Step 5: Compare coefficients<a hidden class="anchor" aria-hidden="true" href="#step-5-compare-coefficients">#</a></h3>
+<p>Match coefficients with LHS $2x^2 + 5x + 7$:</p>
+<ul>
+<li>$A + B = 2$</li>
+<li>$C - B = 5$</li>
+<li>$A - C = 7$</li>
+</ul>
+<p>Solve this system to find $A, B, C$.</p>
+<hr>
+<h2 id="-applications">📌 Applications<a hidden class="anchor" aria-hidden="true" href="#-applications">#</a></h2>
+<ul>
+<li>Simplifying rational expressions in <strong>algebra contests</strong></li>
+<li>Evaluating <strong>telescoping sums</strong></li>
+<li><strong>Integration</strong> of rational functions in calculus</li>
+<li>Solving <strong>differential equations</strong></li>
+</ul>
+<hr>
+<h2 id="-summary">✅ Summary<a hidden class="anchor" aria-hidden="true" href="#-summary">#</a></h2>
+<p>Partial fraction decomposition rewrites:</p>
+<p>$$
+\frac{P(x)}{Q(x)}
+$$</p>
+<p>into a sum of simpler terms, making algebra and calculus problems <strong>much easier</strong>.</p>
+<blockquote>
+<p>🔑 <strong>Remember:</strong></p>
+<ol>
+<li>Factor the denominator.</li>
+<li>Assign terms according to factor type (linear, repeated, quadratic).</li>
+<li>Solve for constants.</li>
+</ol></blockquote>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

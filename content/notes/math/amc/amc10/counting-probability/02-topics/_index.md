@@ -65,3 +65,5 @@ graph TD
 ---
 
 *Start with [Counting Principles](counting-principles) or jump to [Permutations & Combinations](permutations-combinations)*
+
+**Next**: [Counting Principles](counting-principles) | **Back**: [Counting & Probability Mastery Guide](../)

@@ -2,24 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Study Guide on Xiaohui Xie&#39;s Site</title>
-    <link>https://xhx.github.io/tags/study-guide/</link>
+    <link>http://localhost:1313/tags/study-guide/</link>
     <description>Recent content in Study Guide on Xiaohui Xie&#39;s Site</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
-    <atom:link href="https://xhx.github.io/tags/study-guide/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>AMC Scope Map</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/scope-map/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/scope-map/</guid>
-      <description>Comprehensive matrix showing AMC 10 vs AMC 12 precalculus topic coverage and testing frequency.</description>
-    </item>
-    <item>
-      <title>Concept Atlas</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/concept-atlas/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/reference/concept-atlas/</guid>
-      <description>One-paragraph primers on all major precalculus topics with AMC application notes.</description>
-    </item>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/study-guide/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

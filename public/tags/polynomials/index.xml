@@ -2,24 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Polynomials on Xiaohui Xie&#39;s Site</title>
-    <link>https://xhx.github.io/tags/polynomials/</link>
+    <link>http://localhost:1313/tags/polynomials/</link>
     <description>Recent content in Polynomials on Xiaohui Xie&#39;s Site</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
-    <atom:link href="https://xhx.github.io/tags/polynomials/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Polynomials &amp; Rational Functions</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/polynomials-and-rational-functions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/topics/polynomials-and-rational-functions/</guid>
-      <description>Factoring, Vieta&amp;#39;s formulas, asymptotes, and partial fractions for AMC polynomial problems.</description>
-    </item>
-    <item>
-      <title>Polynomial Roots &amp; Vieta</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/polynomial-roots-and-vieta/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/precalculus/problem-types/polynomial-roots-and-vieta/</guid>
-      <description>Pattern recognition and solution strategies for polynomial root problems using Vieta&amp;#39;s formulas.</description>
-    </item>
+    <atom:link href="http://localhost:1313/tags/polynomials/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,17 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Principles on Xiaohui Xie&#39;s Site</title>
-    <link>https://xhx.github.io/tags/principles/</link>
+    <link>http://localhost:1313/tags/principles/</link>
     <description>Recent content in Principles on Xiaohui Xie&#39;s Site</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
-    <atom:link href="https://xhx.github.io/tags/principles/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Counting Principles</title>
-      <link>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/counting-principles/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/counting-principles/</guid>
-      <description>Fundamental counting rules: addition, multiplication, and complement principles with AMC examples.</description>
-    </item>
+    <atom:link href="http://localhost:1313/tags/principles/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

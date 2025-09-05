@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Radicals &amp; Exponents — Rational Exponents &amp; Conjugates | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Algebra, Radicals, Exponents">
+<meta name="description" content="Master rational exponents, radical equations, and conjugate techniques for AMC contests.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/algebra/topics/radicals-and-exponents/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/algebra/topics/radicals-and-exponents/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/algebra/">Algebra Mastery Guide — AMC 10 &amp; AMC 12</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/algebra/topics/">Topic Guides — Algebra Mastery</a></div>
+    <div class="post-meta">3 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-radicals--exponents--rational-exponents--conjugates" aria-label="🔢 Radicals &amp; Exponents — Rational Exponents &amp; Conjugates">🔢 Radicals &amp; Exponents — Rational Exponents &amp; Conjugates</a><ul>
+                        
+                <li>
+                    <a href="#-key-ideas" aria-label="🎯 Key Ideas">🎯 Key Ideas</a></li>
+                <li>
+                    <a href="#-essential-concepts" aria-label="📊 Essential Concepts">📊 Essential Concepts</a><ul>
+                        
+                <li>
+                    <a href="#rational-exponents" aria-label="Rational Exponents">Rational Exponents</a></li>
+                <li>
+                    <a href="#radical-equations" aria-label="Radical Equations">Radical Equations</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-micro-examples" aria-label="🎯 Micro-Examples">🎯 Micro-Examples</a></li>
+                <li>
+                    <a href="#-common-traps--fixes" aria-label="⚠️ Common Traps &amp; Fixes">⚠️ Common Traps &amp; Fixes</a></li>
+                <li>
+                    <a href="#-amc-style-worked-example" aria-label="🎯 AMC-Style Worked Example">🎯 AMC-Style Worked Example</a></li>
+                <li>
+                    <a href="#-related-topics" aria-label="🔗 Related Topics">🔗 Related Topics</a></li>
+                <li>
+                    <a href="#-practice-checklist" aria-label="📝 Practice Checklist">📝 Practice Checklist</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-radicals--exponents--rational-exponents--conjugates">🔢 Radicals &amp; Exponents — Rational Exponents &amp; Conjugates<a hidden class="anchor" aria-hidden="true" href="#-radicals--exponents--rational-exponents--conjugates">#</a></h1>
+<p>Essential for radical equations and exponent manipulation in AMC contests.</p>
+<h2 id="-key-ideas">🎯 Key Ideas<a hidden class="anchor" aria-hidden="true" href="#-key-ideas">#</a></h2>
+<p><strong>Rational Exponents</strong> — Understanding $a^{m/n} = \sqrt[n]{a^m}$ and applying exponent rules to fractional powers.</p>
+<p><strong>Radical Equations</strong> — Equations with square roots or other radicals, solved by isolating and squaring both sides.</p>
+<p><strong>Conjugate Technique</strong> — Using $(a+b)(a-b) = a^2 - b^2$ to rationalize denominators and simplify expressions.</p>
+<h2 id="-essential-concepts">📊 Essential Concepts<a hidden class="anchor" aria-hidden="true" href="#-essential-concepts">#</a></h2>
+<h3 id="rational-exponents">Rational Exponents<a hidden class="anchor" aria-hidden="true" href="#rational-exponents">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Rule</th>
+          <th>Formula</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Definition</td>
+          <td>$a^{m/n} = \sqrt[n]{a^m}$</td>
+          <td>$8^{2/3} = \sqrt[3]{8^2} = \sqrt[3]{64} = 4$</td>
+      </tr>
+      <tr>
+          <td>Product</td>
+          <td>$a^{m/n} \cdot a^{p/n} = a^{(m+p)/n}$</td>
+          <td>$2^{1/2} \cdot 2^{3/2} = 2^{2} = 4$</td>
+      </tr>
+      <tr>
+          <td>Power</td>
+          <td>$(a^{m/n})^p = a^{mp/n}$</td>
+          <td>$(3^{2/3})^3 = 3^2 = 9$</td>
+      </tr>
+      <tr>
+          <td>Quotient</td>
+          <td>$\frac{a^{m/n}}{a^{p/n}} = a^{(m-p)/n}$</td>
+          <td>$\frac{5^{4/3}}{5^{1/3}} = 5^{1} = 5$</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="radical-equations">Radical Equations<a hidden class="anchor" aria-hidden="true" href="#radical-equations">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Step</th>
+          <th>Action</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>Isolate radical</td>
+          <td>$\sqrt{x+1} = x-1$</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>Square both sides</td>
+          <td>$x+1 = (x-1)^2$</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>Expand and solve</td>
+          <td>$x+1 = x^2-2x+1$ → $x^2-3x = 0$ → $x = 0, 3$</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>Check solutions</td>
+          <td>$x = 0$: $\sqrt{1} = -1$ ✗; $x = 3$: $\sqrt{4} = 2$ ✓</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-micro-examples">🎯 Micro-Examples<a hidden class="anchor" aria-hidden="true" href="#-micro-examples">#</a></h2>
+<p><strong>Example 1</strong>: Simplify $8^{2/3}$</p>
+<ul>
+<li><strong>Method 1</strong>: $8^{2/3} = \sqrt[3]{8^2} = \sqrt[3]{64} = 4$</li>
+<li><strong>Method 2</strong>: $8^{2/3} = (8^{1/3})^2 = 2^2 = 4$</li>
+</ul>
+<p><strong>Example 2</strong>: Solve $\sqrt{x+1} = x-1$</p>
+<ul>
+<li><strong>Isolate</strong>: Already isolated</li>
+<li><strong>Square</strong>: $x+1 = (x-1)^2 = x^2-2x+1$</li>
+<li><strong>Rearrange</strong>: $x^2-3x = 0$</li>
+<li><strong>Factor</strong>: $x(x-3) = 0$</li>
+<li><strong>Solve</strong>: $x = 0$ or $x = 3$</li>
+<li><strong>Check</strong>: $x = 0$: $\sqrt{1} = -1$ ✗; $x = 3$: $\sqrt{4} = 2$ ✓</li>
+<li><strong>Answer</strong>: $x = 3$</li>
+</ul>
+<p><strong>Example 3</strong>: Rationalize $\frac{1}{\sqrt{3} + \sqrt{2}}$</p>
+<ul>
+<li><strong>Multiply by conjugate</strong>: $\frac{1}{\sqrt{3} + \sqrt{2}} \cdot \frac{\sqrt{3} - \sqrt{2}}{\sqrt{3} - \sqrt{2}}$</li>
+<li><strong>Simplify</strong>: $\frac{\sqrt{3} - \sqrt{2}}{(\sqrt{3})^2 - (\sqrt{2})^2} = \frac{\sqrt{3} - \sqrt{2}}{3 - 2} = \sqrt{3} - \sqrt{2}$</li>
+</ul>
+<h2 id="-common-traps--fixes">⚠️ Common Traps &amp; Fixes<a hidden class="anchor" aria-hidden="true" href="#-common-traps--fixes">#</a></h2>
+<p><strong>Trap</strong>: Forgetting to check solutions after squaring</p>
+<ul>
+<li><strong>Fix</strong>: Always substitute solutions back into original equation</li>
+<li><strong>Example</strong>: $\sqrt{x+1} = x-1$ gives $x = 0, 3$, but only $x = 3$ works</li>
+</ul>
+<p><strong>Trap</strong>: Incorrect exponent rules</p>
+<ul>
+<li><strong>Fix</strong>: Remember $a^{m/n} = \sqrt[n]{a^m}$, not $\sqrt[m]{a^n}$</li>
+<li><strong>Example</strong>: $8^{2/3} = \sqrt[3]{8^2} = 4$, not $\sqrt[2]{8^3}$</li>
+</ul>
+<p><strong>Trap</strong>: Domain restrictions</p>
+<ul>
+<li><strong>Fix</strong>: Check that radicands are non-negative</li>
+<li><strong>Example</strong>: $\sqrt{x-1}$ requires $x \geq 1$</li>
+</ul>
+<h2 id="-amc-style-worked-example">🎯 AMC-Style Worked Example<a hidden class="anchor" aria-hidden="true" href="#-amc-style-worked-example">#</a></h2>
+<p><strong>Problem</strong>: Solve $\sqrt{x+1} + \sqrt{x-1} = 2$.</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li><strong>Domain</strong>: $x+1 \geq 0$ and $x-1 \geq 0$, so $x \geq 1$</li>
+<li><strong>Isolate one radical</strong>: $\sqrt{x+1} = 2 - \sqrt{x-1}$</li>
+<li><strong>Square both sides</strong>: $x+1 = 4 - 4\sqrt{x-1} + (x-1)$</li>
+<li><strong>Simplify</strong>: $x+1 = 4 - 4\sqrt{x-1} + x - 1 = 3 - 4\sqrt{x-1} + x$</li>
+<li><strong>Subtract $x$</strong>: $1 = 3 - 4\sqrt{x-1}$</li>
+<li><strong>Isolate radical</strong>: $4\sqrt{x-1} = 2$</li>
+<li><strong>Divide by 4</strong>: $\sqrt{x-1} = \frac{1}{2}$</li>
+<li><strong>Square</strong>: $x-1 = \frac{1}{4}$</li>
+<li><strong>Solve</strong>: $x = \frac{5}{4}$</li>
+<li><strong>Check domain</strong>: $\frac{5}{4} \geq 1$ ✓</li>
+<li><strong>Verify</strong>: $\sqrt{\frac{5}{4}+1} + \sqrt{\frac{5}{4}-1} = \sqrt{\frac{9}{4}} + \sqrt{\frac{1}{4}} = \frac{3}{2} + \frac{1}{2} = 2$ ✓</li>
+<li><strong>Answer</strong>: $x = \frac{5}{4}$</li>
+</ol>
+<p><strong>Key insight</strong>: Multiple radicals require careful isolation and squaring.</p>
+<h2 id="-related-topics">🔗 Related Topics<a hidden class="anchor" aria-hidden="true" href="#-related-topics">#</a></h2>
+<ul>
+<li><strong>Rational Expressions</strong> — Radicals often appear in rational expressions</li>
+<li><strong>Domain</strong> — Radical expressions have domain restrictions</li>
+<li><strong>Conjugates</strong> — Essential for rationalizing denominators</li>
+<li><strong>Exponent Rules</strong> — Rational exponents follow same rules as integer exponents</li>
+</ul>
+<h2 id="-practice-checklist">📝 Practice Checklist<a hidden class="anchor" aria-hidden="true" href="#-practice-checklist">#</a></h2>
+<ul>
+<li><input disabled="" type="checkbox"> Master rational exponent rules</li>
+<li><input disabled="" type="checkbox"> Practice radical equation solving</li>
+<li><input disabled="" type="checkbox"> Learn conjugate techniques</li>
+<li><input disabled="" type="checkbox"> Practice domain restrictions</li>
+<li><input disabled="" type="checkbox"> Understand verification process</li>
+<li><input disabled="" type="checkbox"> Work on speed and accuracy</li>
+</ul>
+<hr>
+<p><strong>Next</strong>: <a href="systems-of-equations">Systems of Equations</a> | <strong>Prev</strong>: <a href="rational-expressions-and-equations">Rational Expressions</a> | <strong>Back</strong>: <a href="../">Topics Overview</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/algebra/">Algebra</a></li>
+      <li><a href="http://localhost:1313/tags/radicals/">Radicals</a></li>
+      <li><a href="http://localhost:1313/tags/exponents/">Exponents</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

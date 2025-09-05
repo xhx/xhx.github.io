@@ -74,3 +74,5 @@ Comprehensive collection of all essential formulas organized by topic.
 ---
 
 **Next**: [Complete Formula Bank](/notes/math/amc/amc10/precalculus/formulas/essential-formulas)
+
+**Next**: [Essential Formulas](essential-formulas) | **Back**: [Precalculus Mastery Guide](../)

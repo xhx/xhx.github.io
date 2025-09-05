@@ -54,3 +54,5 @@ Welcome to your complete **AMC 10 & AMC 12 Counting & Probability** study resour
 ---
 
 *Ready to master counting and probability? Start with the [Reference Materials](01-reference/) or jump directly to [Core Topics](02-topics/).*
+
+**Next**: [Number Theory](../number-theory) | **Prev**: [Geometry](../geometry) | **Back**: [AMC 10 Overview](../)

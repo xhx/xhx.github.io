@@ -14,22 +14,22 @@ Essential number theory topics organized by difficulty and contest importance. S
 ## 🎯 Study Order
 
 ### Phase 1: Foundations (AMC 10 Essential)
-1. **[Divisibility Basics](divisibility-basics)** - Primes, GCD/LCM, Euclidean algorithm
-2. **[Congruences & Modular Arithmetic](congruences-and-modular-arithmetic)** - Residues, inverses, solving congruences
-3. **[Linear Diophantine Equations](diophantine-equations-linear)** - Coin problems, parameterization
-4. **[Quadratic Diophantine Equations](diophantine-equations-quadratic)** - Pythagorean triples, sum of squares
-5. **[Digit & Base Problems](digit-and-base-problems)** - Base conversion, divisibility tests
-6. **[Invariants & Parity](invariants-and-parity)** - Parity arguments, coloring techniques
-7. **[Pigeonhole in Number Theory](pigeonhole-in-number-theory)** - Subset sums, residue classes
+1. **[Divisibility Basics](../divisibility-basics)** - Primes, GCD/LCM, Euclidean algorithm
+2. **[Congruences & Modular Arithmetic](../congruences-and-modular-arithmetic)** - Residues, inverses, solving congruences
+3. **[Linear Diophantine Equations](../diophantine-equations-linear)** - Coin problems, parameterization
+4. **[Quadratic Diophantine Equations](../diophantine-equations-quadratic)** - Pythagorean triples, sum of squares
+5. **[Digit & Base Problems](../digit-and-base-problems)** - Base conversion, divisibility tests
+6. **[Invariants & Parity](../invariants-and-parity)** - Parity arguments, coloring techniques
+7. **[Pigeonhole in Number Theory](../pigeonhole-in-number-theory)** - Subset sums, residue classes
 
 ### Phase 2: Intermediate (AMC 12 Core)
-8. **[Fermat, Euler & Orders](fermat-euler-orders)** - FLT, Euler's theorem, order theory
-9. **[Chinese Remainder Theorem](chinese-remainder-theorem)** - Systems of congruences
-10. **[Factorization & Valuation](factorization-and-valuation)** - Prime powers, Legendre's formula
-11. **[Divisor Functions](divisor-functions)** - τ(n), σ(n), multiplicativity
+8. **[Fermat, Euler & Orders](../fermat-euler-orders)** - FLT, Euler's theorem, order theory
+9. **[Chinese Remainder Theorem](../chinese-remainder-theorem)** - Systems of congruences
+10. **[Factorization & Valuation](../factorization-and-valuation)** - Prime powers, Legendre's formula
+11. **[Divisor Functions](../divisor-functions)** - τ(n), σ(n), multiplicativity
 
 ### Phase 3: Advanced (AMC 12 Stretch)
-12. **[Binomial & Number Theory](binomial-and-number-theory)** - Divisibility patterns, Lucas theorem
+12. **[Binomial & Number Theory](../binomial-and-number-theory)** - Divisibility patterns, Lucas theorem
 
 ## 📊 Topic Matrix
 
@@ -73,10 +73,12 @@ Essential number theory topics organized by difficulty and contest importance. S
 
 ## 🚀 Quick Start
 
-1. **New to number theory?** Start with [Divisibility Basics](divisibility-basics)
-2. **Comfortable with basics?** Jump to [Congruences & Modular Arithmetic](congruences-and-modular-arithmetic)
-3. **Preparing for AMC 12?** Focus on [Fermat, Euler & Orders](fermat-euler-orders) and [Chinese Remainder Theorem](chinese-remainder-theorem)
+1. **New to number theory?** Start with [Divisibility Basics](../divisibility-basics)
+2. **Comfortable with basics?** Jump to [Congruences & Modular Arithmetic](../congruences-and-modular-arithmetic)
+3. **Preparing for AMC 12?** Focus on [Fermat, Euler & Orders](../fermat-euler-orders) and [Chinese Remainder Theorem](../chinese-remainder-theorem)
 
 ---
 
-**Next**: Begin with [Divisibility Basics](divisibility-basics) to build your foundation.
+**Next**: Begin with [Divisibility Basics](../divisibility-basics) to build your foundation.
+
+**Next**: [Divisibility Basics](divisibility-basics) | **Back**: [Number Theory Mastery Guide](../)

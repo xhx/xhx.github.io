@@ -75,3 +75,5 @@ Complete formula bank for AMC counting and probability problems with usage notes
 ---
 
 *Next: [Essential Formulas](essential-formulas) → [Problem-Solving Tips](05-tips/)*
+
+**Next**: [Essential Formulas](essential-formulas) | **Back**: [Counting & Probability Mastery Guide](../)

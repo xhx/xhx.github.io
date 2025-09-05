@@ -85,3 +85,5 @@ Substitutions, invariants, and common patterns.
 ---
 
 **Next**: Start with [Functions & Transformations](/notes/math/amc/amc10/precalculus/topics/functions-and-transformations) to build your foundation, or jump to any topic you need to review.
+
+**Next**: [Functions & Transformations](functions-and-transformations) | **Back**: [Precalculus Mastery Guide](../)

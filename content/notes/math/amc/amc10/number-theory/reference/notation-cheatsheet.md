@@ -86,4 +86,4 @@ Quick reference for number theory symbols and conventions used in AMC problems.
 
 ---
 
-**Next**: Browse the [Concept Atlas](concept-atlas) for quick topic overviews.
+**Next**: Browse the [Concept Atlas](../concept-atlas) for quick topic overviews.

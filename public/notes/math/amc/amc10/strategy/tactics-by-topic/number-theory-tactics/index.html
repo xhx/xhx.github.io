@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Number Theory Tactics | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Number Theory, Tactics, Modular Arithmetic">
+<meta name="description" content="Specialized number theory techniques including modular arithmetic, divisibility rules, prime factorization, and number properties.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/strategy/tactics-by-topic/number-theory-tactics/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/strategy/tactics-by-topic/number-theory-tactics/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/">AMC 10/12 Contest Strategy &amp; Tactics Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/tactics-by-topic/">Tactics by Topic</a></div>
+    <div class="post-meta">7 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-number-theory-tactics" aria-label="🔢 Number Theory Tactics">🔢 Number Theory Tactics</a><ul>
+                        
+                <li>
+                    <a href="#-core-number-theory-strategies" aria-label="🎯 Core Number Theory Strategies">🎯 Core Number Theory Strategies</a><ul>
+                        
+                <li>
+                    <a href="#modular-arithmetic" aria-label="Modular Arithmetic">Modular Arithmetic</a></li>
+                <li>
+                    <a href="#divisibility-rules" aria-label="Divisibility Rules">Divisibility Rules</a></li>
+                <li>
+                    <a href="#prime-factorization" aria-label="Prime Factorization">Prime Factorization</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-modular-arithmetic-mastery" aria-label="🔄 Modular Arithmetic Mastery">🔄 Modular Arithmetic Mastery</a><ul>
+                        
+                <li>
+                    <a href="#basic-modular-operations" aria-label="Basic Modular Operations">Basic Modular Operations</a></li>
+                <li>
+                    <a href="#modular-exponentiation" aria-label="Modular Exponentiation">Modular Exponentiation</a></li>
+                <li>
+                    <a href="#fermats-little-theorem" aria-label="Fermat&rsquo;s Little Theorem">Fermat&rsquo;s Little Theorem</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-divisibility-rules" aria-label="🔍 Divisibility Rules">🔍 Divisibility Rules</a><ul>
+                        
+                <li>
+                    <a href="#standard-rules" aria-label="Standard Rules">Standard Rules</a></li>
+                <li>
+                    <a href="#advanced-rules" aria-label="Advanced Rules">Advanced Rules</a></li>
+                <li>
+                    <a href="#divisibility-example" aria-label="Divisibility Example">Divisibility Example</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-prime-factorization" aria-label="🔢 Prime Factorization">🔢 Prime Factorization</a><ul>
+                        
+                <li>
+                    <a href="#fundamental-theorem-of-arithmetic" aria-label="Fundamental Theorem of Arithmetic">Fundamental Theorem of Arithmetic</a></li>
+                <li>
+                    <a href="#prime-factorization-example" aria-label="Prime Factorization Example">Prime Factorization Example</a></li>
+                <li>
+                    <a href="#using-prime-factorization" aria-label="Using Prime Factorization">Using Prime Factorization</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-advanced-number-theory-techniques" aria-label="🎯 Advanced Number Theory Techniques">🎯 Advanced Number Theory Techniques</a><ul>
+                        
+                <li>
+                    <a href="#chinese-remainder-theorem" aria-label="Chinese Remainder Theorem">Chinese Remainder Theorem</a></li>
+                <li>
+                    <a href="#chinese-remainder-example" aria-label="Chinese Remainder Example">Chinese Remainder Example</a></li>
+                <li>
+                    <a href="#eulers-totient-function" aria-label="Euler&rsquo;s Totient Function">Euler&rsquo;s Totient Function</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-number-theory-tricks" aria-label="⚡ Quick Number Theory Tricks">⚡ Quick Number Theory Tricks</a><ul>
+                        
+                <li>
+                    <a href="#last-digit-patterns" aria-label="Last Digit Patterns">Last Digit Patterns</a></li>
+                <li>
+                    <a href="#digit-sum-properties" aria-label="Digit Sum Properties">Digit Sum Properties</a></li>
+                <li>
+                    <a href="#prime-testing" aria-label="Prime Testing">Prime Testing</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-problem-specific-strategies" aria-label="🎯 Problem-Specific Strategies">🎯 Problem-Specific Strategies</a><ul>
+                        
+                <li>
+                    <a href="#remainder-problems" aria-label="Remainder Problems">Remainder Problems</a></li>
+                <li>
+                    <a href="#divisibility-problems" aria-label="Divisibility Problems">Divisibility Problems</a></li>
+                <li>
+                    <a href="#prime-problems" aria-label="Prime Problems">Prime Problems</a></li>
+                <li>
+                    <a href="#number-property-problems" aria-label="Number Property Problems">Number Property Problems</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-common-number-theory-mistakes" aria-label="🚨 Common Number Theory Mistakes">🚨 Common Number Theory Mistakes</a><ul>
+                        
+                <li>
+                    <a href="#avoid-these-errors" aria-label="Avoid These Errors:">Avoid These Errors:</a></li>
+                <li>
+                    <a href="#red-flags" aria-label="Red Flags:">Red Flags:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-quick-reference" aria-label="📊 Quick Reference">📊 Quick Reference</a><ul>
+                        
+                <li>
+                    <a href="#modular-arithmetic-checklist" aria-label="Modular Arithmetic Checklist:">Modular Arithmetic Checklist:</a></li>
+                <li>
+                    <a href="#divisibility-checklist" aria-label="Divisibility Checklist:">Divisibility Checklist:</a></li>
+                <li>
+                    <a href="#prime-factorization-checklist" aria-label="Prime Factorization Checklist:">Prime Factorization Checklist:</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-number-theory-tactics">🔢 Number Theory Tactics<a hidden class="anchor" aria-hidden="true" href="#-number-theory-tactics">#</a></h1>
+<p>Master the essential number theory techniques that will help you solve problems involving divisibility, remainders, primes, and number properties efficiently.</p>
+<h2 id="-core-number-theory-strategies">🎯 Core Number Theory Strategies<a hidden class="anchor" aria-hidden="true" href="#-core-number-theory-strategies">#</a></h2>
+<h3 id="modular-arithmetic">Modular Arithmetic<a hidden class="anchor" aria-hidden="true" href="#modular-arithmetic">#</a></h3>
+<ul>
+<li><strong>Modulo operations</strong>: Find remainders efficiently</li>
+<li><strong>Modular exponentiation</strong>: Compute large powers mod $n$</li>
+<li><strong>Chinese Remainder Theorem</strong>: Solve systems of congruences</li>
+<li><strong>Fermat&rsquo;s Little Theorem</strong>: Simplify modular calculations</li>
+</ul>
+<h3 id="divisibility-rules">Divisibility Rules<a hidden class="anchor" aria-hidden="true" href="#divisibility-rules">#</a></h3>
+<ul>
+<li><strong>Divisibility by 2</strong>: Last digit is even</li>
+<li><strong>Divisibility by 3</strong>: Sum of digits divisible by 3</li>
+<li><strong>Divisibility by 5</strong>: Last digit is 0 or 5</li>
+<li><strong>Divisibility by 9</strong>: Sum of digits divisible by 9</li>
+<li><strong>Divisibility by 11</strong>: Alternating sum of digits divisible by 11</li>
+</ul>
+<h3 id="prime-factorization">Prime Factorization<a hidden class="anchor" aria-hidden="true" href="#prime-factorization">#</a></h3>
+<ul>
+<li><strong>Fundamental Theorem</strong>: Every integer has unique prime factorization</li>
+<li><strong>Prime testing</strong>: Check divisibility by small primes</li>
+<li><strong>Factor trees</strong>: Systematic factorization</li>
+<li><strong>GCD and LCM</strong>: Using prime factorizations</li>
+</ul>
+<h2 id="-modular-arithmetic-mastery">🔄 Modular Arithmetic Mastery<a hidden class="anchor" aria-hidden="true" href="#-modular-arithmetic-mastery">#</a></h2>
+<h3 id="basic-modular-operations">Basic Modular Operations<a hidden class="anchor" aria-hidden="true" href="#basic-modular-operations">#</a></h3>
+<p><strong>Addition</strong>: $(a + b) \bmod m = ((a \bmod m) + (b \bmod m)) \bmod m$
+<strong>Subtraction</strong>: $(a - b) \bmod m = ((a \bmod m) - (b \bmod m)) \bmod m$
+<strong>Multiplication</strong>: $(a \cdot b) \bmod m = ((a \bmod m) \cdot (b \bmod m)) \bmod m$</p>
+<h3 id="modular-exponentiation">Modular Exponentiation<a hidden class="anchor" aria-hidden="true" href="#modular-exponentiation">#</a></h3>
+<p><strong>Binary method</strong>: Express exponent in binary, use repeated squaring
+<strong>Process</strong>:</p>
+<ol>
+<li><strong>Write exponent in binary</strong>: $e = b_k b_{k-1} \ldots b_1 b_0$</li>
+<li><strong>Initialize result</strong>: $result = 1$</li>
+<li><strong>For each bit</strong>: If bit is 1, multiply by current power</li>
+<li><strong>Square current power</strong>: $current = current^2 \bmod m$</li>
+<li><strong>Return result</strong>: Final result</li>
+</ol>
+<p><strong>Example</strong>: Compute $3^{13} \bmod 7$</p>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>$13 = 1101_2$ in binary</li>
+<li>$3^1 \equiv 3 \pmod{7}$</li>
+<li>$3^2 \equiv 9 \equiv 2 \pmod{7}$</li>
+<li>$3^4 \equiv 2^2 \equiv 4 \pmod{7}$</li>
+<li>$3^8 \equiv 4^2 \equiv 16 \equiv 2 \pmod{7}$</li>
+<li>$3^{13} = 3^8 \cdot 3^4 \cdot 3^1 \equiv 2 \cdot 4 \cdot 3 \equiv 24 \equiv 3 \pmod{7}$</li>
+</ul>
+<h3 id="fermats-little-theorem">Fermat&rsquo;s Little Theorem<a hidden class="anchor" aria-hidden="true" href="#fermats-little-theorem">#</a></h3>
+<p><strong>Statement</strong>: If $p$ is prime and $\gcd(a,p) = 1$, then $a^{p-1} \equiv 1 \pmod{p}$</p>
+<p><strong>Applications</strong>:</p>
+<ul>
+<li><strong>Simplify exponents</strong>: Reduce large exponents mod prime</li>
+<li><strong>Find inverses</strong>: $a^{-1} \equiv a^{p-2} \pmod{p}$</li>
+<li><strong>Test primality</strong>: If $a^{n-1} \not\equiv 1 \pmod{n}$, then $n$ is composite</li>
+</ul>
+<p><strong>Example</strong>: Find $2^{100} \bmod 101$</p>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Since 101 is prime and $\gcd(2,101) = 1$, Fermat&rsquo;s theorem applies</li>
+<li>$2^{100} \equiv 2^{101-1} \equiv 1 \pmod{101}$</li>
+</ul>
+<h2 id="-divisibility-rules">🔍 Divisibility Rules<a hidden class="anchor" aria-hidden="true" href="#-divisibility-rules">#</a></h2>
+<h3 id="standard-rules">Standard Rules<a hidden class="anchor" aria-hidden="true" href="#standard-rules">#</a></h3>
+<ul>
+<li><strong>Divisibility by 2</strong>: Last digit is even (0, 2, 4, 6, 8)</li>
+<li><strong>Divisibility by 3</strong>: Sum of digits divisible by 3</li>
+<li><strong>Divisibility by 4</strong>: Last two digits divisible by 4</li>
+<li><strong>Divisibility by 5</strong>: Last digit is 0 or 5</li>
+<li><strong>Divisibility by 6</strong>: Divisible by both 2 and 3</li>
+<li><strong>Divisibility by 8</strong>: Last three digits divisible by 8</li>
+<li><strong>Divisibility by 9</strong>: Sum of digits divisible by 9</li>
+<li><strong>Divisibility by 10</strong>: Last digit is 0</li>
+</ul>
+<h3 id="advanced-rules">Advanced Rules<a hidden class="anchor" aria-hidden="true" href="#advanced-rules">#</a></h3>
+<ul>
+<li><strong>Divisibility by 11</strong>: Alternating sum of digits divisible by 11</li>
+<li><strong>Divisibility by 12</strong>: Divisible by both 3 and 4</li>
+<li><strong>Divisibility by 15</strong>: Divisible by both 3 and 5</li>
+<li><strong>Divisibility by 18</strong>: Divisible by both 2 and 9</li>
+</ul>
+<h3 id="divisibility-example">Divisibility Example<a hidden class="anchor" aria-hidden="true" href="#divisibility-example">#</a></h3>
+<p><strong>Problem</strong>: Is 123,456 divisible by 9?</p>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Sum of digits: $1 + 2 + 3 + 4 + 5 + 6 = 21$</li>
+<li>Since 21 is divisible by 9, 123,456 is divisible by 9</li>
+<li><strong>Answer</strong>: Yes</li>
+</ul>
+<h2 id="-prime-factorization">🔢 Prime Factorization<a hidden class="anchor" aria-hidden="true" href="#-prime-factorization">#</a></h2>
+<h3 id="fundamental-theorem-of-arithmetic">Fundamental Theorem of Arithmetic<a hidden class="anchor" aria-hidden="true" href="#fundamental-theorem-of-arithmetic">#</a></h3>
+<p><strong>Statement</strong>: Every integer $n &gt; 1$ can be written uniquely as a product of primes</p>
+<p><strong>Process</strong>:</p>
+<ol>
+<li><strong>Start with smallest prime</strong>: Begin with 2</li>
+<li><strong>Divide repeatedly</strong>: Keep dividing by current prime</li>
+<li><strong>Move to next prime</strong>: When current prime no longer divides</li>
+<li><strong>Continue until 1</strong>: Stop when quotient is 1</li>
+<li><strong>Write as product</strong>: Express as powers of primes</li>
+</ol>
+<h3 id="prime-factorization-example">Prime Factorization Example<a hidden class="anchor" aria-hidden="true" href="#prime-factorization-example">#</a></h3>
+<p><strong>Problem</strong>: Find prime factorization of 60</p>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>$60 = 2 \times 30 = 2 \times 2 \times 15 = 2 \times 2 \times 3 \times 5 = 2^2 \times 3 \times 5$</li>
+</ul>
+<h3 id="using-prime-factorization">Using Prime Factorization<a hidden class="anchor" aria-hidden="true" href="#using-prime-factorization">#</a></h3>
+<p><strong>GCD</strong>: Take minimum power of each prime
+<strong>LCM</strong>: Take maximum power of each prime
+<strong>Number of divisors</strong>: $(e_1 + 1)(e_2 + 1) \ldots (e_k + 1)$ where $n = p_1^{e_1} p_2^{e_2} \ldots p_k^{e_k}$</p>
+<h2 id="-advanced-number-theory-techniques">🎯 Advanced Number Theory Techniques<a hidden class="anchor" aria-hidden="true" href="#-advanced-number-theory-techniques">#</a></h2>
+<h3 id="chinese-remainder-theorem">Chinese Remainder Theorem<a hidden class="anchor" aria-hidden="true" href="#chinese-remainder-theorem">#</a></h3>
+<p><strong>Statement</strong>: If $\gcd(m_1, m_2) = 1$, then the system
+$$\begin{cases}
+x \equiv a_1 \pmod{m_1} \
+x \equiv a_2 \pmod{m_2}
+\end{cases}$$
+has a unique solution mod $m_1 m_2$</p>
+<p><strong>Process</strong>:</p>
+<ol>
+<li><strong>Find solution to first congruence</strong>: $x_1 \equiv a_1 \pmod{m_1}$</li>
+<li><strong>Find solution to second congruence</strong>: $x_2 \equiv a_2 \pmod{m_2}$</li>
+<li><strong>Combine solutions</strong>: $x \equiv x_1 + m_1 \cdot k \pmod{m_1 m_2}$</li>
+<li><strong>Find $k$</strong>: Solve $x_1 + m_1 \cdot k \equiv a_2 \pmod{m_2}$</li>
+</ol>
+<h3 id="chinese-remainder-example">Chinese Remainder Example<a hidden class="anchor" aria-hidden="true" href="#chinese-remainder-example">#</a></h3>
+<p><strong>Problem</strong>: Solve $x \equiv 2 \pmod{3}$ and $x \equiv 3 \pmod{5}$</p>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>From first: $x = 3k + 2$ for some integer $k$</li>
+<li>Substitute into second: $3k + 2 \equiv 3 \pmod{5}$</li>
+<li>$3k \equiv 1 \pmod{5}$, so $k \equiv 2 \pmod{5}$</li>
+<li>$k = 5m + 2$ for some integer $m$</li>
+<li>$x = 3(5m + 2) + 2 = 15m + 8$</li>
+<li><strong>Solution</strong>: $x \equiv 8 \pmod{15}$</li>
+</ul>
+<h3 id="eulers-totient-function">Euler&rsquo;s Totient Function<a hidden class="anchor" aria-hidden="true" href="#eulers-totient-function">#</a></h3>
+<p><strong>Definition</strong>: $\phi(n)$ = number of integers from 1 to $n$ relatively prime to $n$</p>
+<p><strong>Formula</strong>: If $n = p_1^{e_1} p_2^{e_2} \ldots p_k^{e_k}$, then
+$$\phi(n) = n \left(1 - \frac{1}{p_1}\right)\left(1 - \frac{1}{p_2}\right) \ldots \left(1 - \frac{1}{p_k}\right)$$</p>
+<p><strong>Euler&rsquo;s Theorem</strong>: If $\gcd(a,n) = 1$, then $a^{\phi(n)} \equiv 1 \pmod{n}$</p>
+<h2 id="-quick-number-theory-tricks">⚡ Quick Number Theory Tricks<a hidden class="anchor" aria-hidden="true" href="#-quick-number-theory-tricks">#</a></h2>
+<h3 id="last-digit-patterns">Last Digit Patterns<a hidden class="anchor" aria-hidden="true" href="#last-digit-patterns">#</a></h3>
+<ul>
+<li><strong>Powers of 2</strong>: 2, 4, 8, 6, 2, 4, 8, 6, &hellip;</li>
+<li><strong>Powers of 3</strong>: 3, 9, 7, 1, 3, 9, 7, 1, &hellip;</li>
+<li><strong>Powers of 4</strong>: 4, 6, 4, 6, &hellip;</li>
+<li><strong>Powers of 5</strong>: 5, 5, 5, &hellip;</li>
+<li><strong>Powers of 6</strong>: 6, 6, 6, &hellip;</li>
+<li><strong>Powers of 7</strong>: 7, 9, 3, 1, 7, 9, 3, 1, &hellip;</li>
+<li><strong>Powers of 8</strong>: 8, 4, 2, 6, 8, 4, 2, 6, &hellip;</li>
+<li><strong>Powers of 9</strong>: 9, 1, 9, 1, &hellip;</li>
+</ul>
+<h3 id="digit-sum-properties">Digit Sum Properties<a hidden class="anchor" aria-hidden="true" href="#digit-sum-properties">#</a></h3>
+<ul>
+<li><strong>Mod 9</strong>: Sum of digits mod 9</li>
+<li><strong>Mod 3</strong>: Sum of digits mod 3</li>
+<li><strong>Mod 11</strong>: Alternating sum of digits mod 11</li>
+<li><strong>Casting out nines</strong>: Use digit sum for verification</li>
+</ul>
+<h3 id="prime-testing">Prime Testing<a hidden class="anchor" aria-hidden="true" href="#prime-testing">#</a></h3>
+<ul>
+<li><strong>Trial division</strong>: Check divisibility by primes up to $\sqrt{n}$</li>
+<li><strong>Fermat test</strong>: Use Fermat&rsquo;s little theorem</li>
+<li><strong>Wilson&rsquo;s theorem</strong>: $(p-1)! \equiv -1 \pmod{p}$ for prime $p$</li>
+<li><strong>Sieve of Eratosthenes</strong>: Find all primes up to $n$</li>
+</ul>
+<h2 id="-problem-specific-strategies">🎯 Problem-Specific Strategies<a hidden class="anchor" aria-hidden="true" href="#-problem-specific-strategies">#</a></h2>
+<h3 id="remainder-problems">Remainder Problems<a hidden class="anchor" aria-hidden="true" href="#remainder-problems">#</a></h3>
+<ul>
+<li><strong>Use modular arithmetic</strong>: Work mod the divisor</li>
+<li><strong>Find patterns</strong>: Look for cycles in remainders</li>
+<li><strong>Use Fermat&rsquo;s theorem</strong>: For prime moduli</li>
+<li><strong>Apply Chinese Remainder Theorem</strong>: For multiple congruences</li>
+</ul>
+<h3 id="divisibility-problems">Divisibility Problems<a hidden class="anchor" aria-hidden="true" href="#divisibility-problems">#</a></h3>
+<ul>
+<li><strong>Apply divisibility rules</strong>: Use standard rules</li>
+<li><strong>Use prime factorization</strong>: Factor and check</li>
+<li><strong>Test small values</strong>: Check specific cases</li>
+<li><strong>Use modular arithmetic</strong>: Work mod the divisor</li>
+</ul>
+<h3 id="prime-problems">Prime Problems<a hidden class="anchor" aria-hidden="true" href="#prime-problems">#</a></h3>
+<ul>
+<li><strong>Use prime factorization</strong>: Factor completely</li>
+<li><strong>Apply prime properties</strong>: Use known prime facts</li>
+<li><strong>Test primality</strong>: Use appropriate tests</li>
+<li><strong>Use number theory theorems</strong>: Apply relevant theorems</li>
+</ul>
+<h3 id="number-property-problems">Number Property Problems<a hidden class="anchor" aria-hidden="true" href="#number-property-problems">#</a></h3>
+<ul>
+<li><strong>Use definitions</strong>: Apply definitions directly</li>
+<li><strong>Test examples</strong>: Check specific cases</li>
+<li><strong>Use counterexamples</strong>: Find counterexamples</li>
+<li><strong>Apply theorems</strong>: Use relevant number theory results</li>
+</ul>
+<h2 id="-common-number-theory-mistakes">🚨 Common Number Theory Mistakes<a hidden class="anchor" aria-hidden="true" href="#-common-number-theory-mistakes">#</a></h2>
+<h3 id="avoid-these-errors">Avoid These Errors:<a hidden class="anchor" aria-hidden="true" href="#avoid-these-errors">#</a></h3>
+<ul>
+<li><strong>Modular arithmetic errors</strong>: Be careful with signs and operations</li>
+<li><strong>Divisibility rule errors</strong>: Apply rules correctly</li>
+<li><strong>Prime factorization errors</strong>: Factor completely</li>
+<li><strong>Chinese Remainder Theorem errors</strong>: Check conditions</li>
+<li><strong>Fermat&rsquo;s theorem errors</strong>: Check conditions</li>
+</ul>
+<h3 id="red-flags">Red Flags:<a hidden class="anchor" aria-hidden="true" href="#red-flags">#</a></h3>
+<ul>
+<li><strong>Answer doesn&rsquo;t work</strong>: Check your calculations</li>
+<li><strong>Impossible result</strong>: Check your work</li>
+<li><strong>Contradiction</strong>: Check your logic</li>
+<li><strong>Wrong remainder</strong>: Check your modular arithmetic</li>
+</ul>
+<h2 id="-quick-reference">📊 Quick Reference<a hidden class="anchor" aria-hidden="true" href="#-quick-reference">#</a></h2>
+<h3 id="modular-arithmetic-checklist">Modular Arithmetic Checklist:<a hidden class="anchor" aria-hidden="true" href="#modular-arithmetic-checklist">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Identify the modulus</strong>: What are you working mod?</li>
+<li><input disabled="" type="checkbox"> <strong>Apply modular operations</strong>: Use modular arithmetic rules</li>
+<li><input disabled="" type="checkbox"> <strong>Find patterns</strong>: Look for cycles</li>
+<li><input disabled="" type="checkbox"> <strong>Use theorems</strong>: Apply Fermat&rsquo;s or Euler&rsquo;s theorem</li>
+<li><input disabled="" type="checkbox"> <strong>Check result</strong>: Verify your answer</li>
+</ul>
+<h3 id="divisibility-checklist">Divisibility Checklist:<a hidden class="anchor" aria-hidden="true" href="#divisibility-checklist">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Identify the divisor</strong>: What are you checking divisibility by?</li>
+<li><input disabled="" type="checkbox"> <strong>Apply divisibility rule</strong>: Use appropriate rule</li>
+<li><input disabled="" type="checkbox"> <strong>Check calculation</strong>: Verify your work</li>
+<li><input disabled="" type="checkbox"> <strong>Test result</strong>: Verify the divisibility</li>
+</ul>
+<h3 id="prime-factorization-checklist">Prime Factorization Checklist:<a hidden class="anchor" aria-hidden="true" href="#prime-factorization-checklist">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Start with smallest prime</strong>: Begin with 2</li>
+<li><input disabled="" type="checkbox"> <strong>Divide repeatedly</strong>: Keep dividing by current prime</li>
+<li><input disabled="" type="checkbox"> <strong>Move to next prime</strong>: When current prime no longer divides</li>
+<li><input disabled="" type="checkbox"> <strong>Continue until 1</strong>: Stop when quotient is 1</li>
+<li><input disabled="" type="checkbox"> <strong>Write as product</strong>: Express as powers of primes</li>
+</ul>
+<hr>
+<p><strong>Prev:</strong> <a href="algebra-tactics">Algebra Tactics</a> | <strong>Next:</strong> <a href="geometry-tactics">Geometry Tactics</a> | <strong>Back to:</strong> <a href="../">Strategy Guide</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/number-theory/">Number Theory</a></li>
+      <li><a href="http://localhost:1313/tags/tactics/">Tactics</a></li>
+      <li><a href="http://localhost:1313/tags/modular-arithmetic/">Modular Arithmetic</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

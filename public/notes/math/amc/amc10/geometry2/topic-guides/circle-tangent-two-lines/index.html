@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Circle Tangent to Two Lines and a Circle | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="amc10, geometry, circles, tangency, mathematics">
+<meta name="description" content="AMC 10 Geometry: Circle Tangent to Two Lines and a Circle">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/geometry2/topic-guides/circle-tangent-two-lines/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/geometry2/topic-guides/circle-tangent-two-lines/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry2/">AMC 10 Geometry Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry2/topic-guides/">AMC 10 Geometry Topic Guides</a></div>
+    <div class="post-meta"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="14--circle-tangent-to-two-lines-and-a-circle">#14 – Circle Tangent to Two Lines and a Circle<a hidden class="anchor" aria-hidden="true" href="#14--circle-tangent-to-two-lines-and-a-circle">#</a></h1>
+<p><em>(Incircle/Excircle &amp; &ldquo;Kissing-circle&rdquo; Set-ups)</em></p>
+<p>AMC 10 loves configurations where a circle must squeeze between two intersecting (or parallel) lines <strong>and</strong> kiss another circle.  Recognizing the <strong>angle-bisector</strong> location of centers and the simple <strong>sum / difference of radii</strong> rule collapses the algebra.</p>
+<p><img alt="output (3).png" loading="lazy" src="#14%20%E2%80%93%20Circle%20Tangent%20to%20Two%20Lines%20and%20a%20Circle%20228936cc221480639ea1c2c8ddaf8a20/output_(3).png"></p>
+<p><em>(The plot shows two lines $\ell_1, \ell_2$ making a</em> $60^{\circ}$ <em>wedge.
+A small blue circle of radius $r$ and a larger orange circle of radius $R$ both touch <strong>each line</strong> and also each other; their centers lie on the angle bisector.)</em></p>
+<hr>
+<h3 id="1-key-geometric-facts">1 Key Geometric Facts<a hidden class="anchor" aria-hidden="true" href="#1-key-geometric-facts">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Fact</th>
+          <th>Formula / Rule</th>
+          <th>Where it shows up</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Center on angle bisector</strong></td>
+          <td>Center of any circle tangent to both lines in an angle lies on the angle bisector.</td>
+          <td>Ex/Incircle in a triangle; two-line wedge.</td>
+      </tr>
+      <tr>
+          <td><strong>Distance from vertex</strong></td>
+          <td>$d=\dfrac{r}{\sin(\tfrac{\theta}{2})}$ where $\theta$ is the angle between the lines.</td>
+          <td>Used to place center quickly.</td>
+      </tr>
+      <tr>
+          <td><strong>Two tangent circles on same bisector</strong></td>
+          <td>Distance between centers $= R\pm r$ (external $\pm$ internal tangency).</td>
+          <td>&ldquo;Kissing&rdquo; circles chain.</td>
+      </tr>
+      <tr>
+          <td><strong>Incircle of triangle</strong></td>
+          <td>$r=\dfrac{[\triangle]}{s}$ with $s=\tfrac12(a+b+c)$.</td>
+          <td>Many AMC right-triangle tasks.</td>
+      </tr>
+      <tr>
+          <td><strong>Excircle opposite $A$</strong></td>
+          <td>Radius $r_a=\dfrac{[\triangle]}{s-a}$.</td>
+          <td>Problems using an external tangent circle.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="2-canonical-amc-prompts">2 Canonical AMC Prompts<a hidden class="anchor" aria-hidden="true" href="#2-canonical-amc-prompts">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Wording</th>
+          <th>Fast attack</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>&ldquo;Circle tangent to sides $AB$ and $AC$ and externally tangent to incircle&rdquo;</td>
+          <td>Put centers on angle-bisector of $\angle A$; use sum of radii for center spacing.</td>
+      </tr>
+      <tr>
+          <td>&ldquo;Find radius of excircle opposite side $BC$&rdquo;</td>
+          <td>Compute area $K$ and semiperimeter; apply $r_a=K/(s-b)$.</td>
+      </tr>
+      <tr>
+          <td>&ldquo;Smallest circle fits in a 45° angle and is tangent to a circle of radius $3$&rdquo;</td>
+          <td>Use $r = R,\dfrac{1-\sin\frac\theta2}{1+\sin\frac\theta2}$ after equating center distances.</td>
+      </tr>
+      <tr>
+          <td>&ldquo;Circle tangent to two parallel lines and a given circle&rdquo;</td>
+          <td>Parallel case ⇒ centers share a perpendicular; distance between parallels gives linear equation in $r$.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="3-worked-example-a--two-lines--one-circle">3 Worked Example A – Two Lines + One Circle<a hidden class="anchor" aria-hidden="true" href="#3-worked-example-a--two-lines--one-circle">#</a></h3>
+<blockquote>
+<p>Lines meet at $60^{\circ}$.  A circle of radius $3$ sits in the angle.</p>
+<p>A larger circle is tangent to both lines and externally tangent to the small one.</p>
+<p>Find its radius $R$.</p></blockquote>
+<ol>
+<li>
+<p>Center spacing along bisector:</p>
+<p>$d_r = \dfrac{r}{\sin30^{\circ}} = \dfrac{3}{0.5}=6$.</p>
+<p>$d_R = \dfrac{R}{\sin30^{\circ}} = 2R$.</p>
+</li>
+<li>
+<p>External tangency ⇒ distance between centers $=R+3$.</p>
+<p>$2R-6 = R+3 ;;\Longrightarrow;; R = 9$.</p>
+</li>
+</ol>
+<hr>
+<h3 id="4-worked-example-b--incircle--contact-circle-in-triangle">4 Worked Example B – Incircle &amp; &ldquo;Contact&rdquo; Circle in Triangle<a hidden class="anchor" aria-hidden="true" href="#4-worked-example-b--incircle--contact-circle-in-triangle">#</a></h3>
+<blockquote>
+<p>Right $\triangle ABC$ has legs $6,8$.</p>
+<p>The incircle has radius $r=2$.</p>
+<p>A second circle is tangent to sides $AB,AC$ and externally tangent to the incircle.</p>
+<p>Find its radius $x$.</p></blockquote>
+<ol>
+<li>Incircle center $I$ is $2$ units from each leg; new circle center lies on same $45^{\circ}$ angle bisector (since $AB\perp AC$).</li>
+<li>Center spacing: $d_I = 2\sqrt2,; d_x = (2+x)\sqrt2$.</li>
+<li>External touch ⇒ distance between centers $=x+2$.</li>
+</ol>
+<p>$$(2+x)\sqrt2 - 2\sqrt2 = x+2<br>
+\Longrightarrow  (x)\sqrt2 - 2\sqrt2 = x+2<br>
+\Longrightarrow  (\sqrt2-1)x = 2(\sqrt2+1)<br>
+\Longrightarrow  x = \frac{2(\sqrt2+1)}{\sqrt2-1}=2(3+2\sqrt2)=10+4\sqrt2.$$</p>
+<p>AMC answer choices often rationalize automatically.</p>
+<hr>
+<h3 id="5-recognition--speed-tips">5 Recognition &amp; Speed Tips<a hidden class="anchor" aria-hidden="true" href="#5-recognition--speed-tips">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Visual cue</th>
+          <th>Immediate thought</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Two intersecting lines + &ldquo;circle tangent to each&rdquo;</td>
+          <td>Center on angle bisector; distance $r/\sin(\theta/2)$.</td>
+      </tr>
+      <tr>
+          <td>Phrase &ldquo;externally (or internally) tangent to circle of radius $k$&rdquo;</td>
+          <td>Add (or subtract) radii for center spacing.</td>
+      </tr>
+      <tr>
+          <td>Triangle with extra tangent circle at a vertex</td>
+          <td>Treat the vertex wedge like two-line setup; then use triangle lengths to find $\theta$.</td>
+      </tr>
+      <tr>
+          <td>Parallel lines</td>
+          <td>Circle center must be midway; radius equals half the gap minus other circle&rsquo;s radius.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="6-practice-drill">6 Practice Drill<a hidden class="anchor" aria-hidden="true" href="#6-practice-drill">#</a></h3>
+<p>Try this AMC-style quickie:</p>
+<blockquote>
+<p>In a $45^{\circ}$ wedge, two congruent circles of radius $r$ are each tangent to the sides and to each other.  Find $r$.</p></blockquote>
+<ol>
+<li>
+<p>Place first center at distance $d=\dfrac{r}{\sin22.5^{\circ}}$.</p>
+</li>
+<li>
+<p>Second center doubles that distance.</p>
+</li>
+<li>
+<p>Distance between centers $=2d$ must equal $2r$.</p>
+<p>Solve to get $r = \dfrac{\sin22.5^{\circ}}{1+\sin22.5^{\circ}}$ ($\approx 0.414$).</p>
+</li>
+</ol>
+<p>Work it out—good practice for the real contest.</p>
+<hr>
+<p>Ready to continue to <strong>Problem Type #15 – Three-Dimensional Box Diagonals</strong> or need a deeper dive on tangent-circle tricks? Just let me know!</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/geometry/">Geometry</a></li>
+      <li><a href="http://localhost:1313/tags/circles/">Circles</a></li>
+      <li><a href="http://localhost:1313/tags/tangency/">Tangency</a></li>
+      <li><a href="http://localhost:1313/tags/mathematics/">Mathematics</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

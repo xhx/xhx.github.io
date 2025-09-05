@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Counting Principles | Xiaohui Xie&#39;s Site</title>
 <meta name="keywords" content="AMC10, AMC12, Counting, Principles">
 <meta name="description" content="Fundamental counting rules: addition, multiplication, and complement principles with AMC examples.">
 <meta name="author" content="Xiaohui Xie">
-<link rel="canonical" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/counting-principles/">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/counting-probability/02-topics/counting-principles/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://xhx.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://xhx.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://xhx.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://xhx.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://xhx.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/counting-principles/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/counting-probability/02-topics/counting-principles/">
 <noscript>
     <style>
         #theme-toggle,
@@ -70,105 +70,7 @@
         });"></script>
 
 
-<meta property="og:url" content="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/counting-principles/">
-  <meta property="og:site_name" content="Xiaohui Xie&#39;s Site">
-  <meta property="og:title" content="Counting Principles">
-  <meta property="og:description" content="Fundamental counting rules: addition, multiplication, and complement principles with AMC examples.">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="notes">
-    <meta property="article:tag" content="Amc10">
-    <meta property="article:tag" content="AMC12">
-    <meta property="article:tag" content="Counting">
-    <meta property="article:tag" content="Principles">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Counting Principles">
-<meta name="twitter:description" content="Fundamental counting rules: addition, multiplication, and complement principles with AMC examples.">
 
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Notes",
-      "item": "https://xhx.github.io/notes/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Mathematics Notes",
-      "item": "https://xhx.github.io/notes/math/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  3 ,
-      "name": "AMC Problems",
-      "item": "https://xhx.github.io/notes/math/amc/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  4 ,
-      "name": "AMC 10",
-      "item": "https://xhx.github.io/notes/math/amc/amc10/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  5 ,
-      "name": "Counting \u0026 Probability Mastery Guide",
-      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  6 ,
-      "name": "Core Topics",
-      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  7 ,
-      "name": "Counting Principles",
-      "item": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/counting-principles/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Counting Principles",
-  "name": "Counting Principles",
-  "description": "Fundamental counting rules: addition, multiplication, and complement principles with AMC examples.",
-  "keywords": [
-    "AMC10", "AMC12", "Counting", "Principles"
-  ],
-  "articleBody": "🔢 Counting Principles The three fundamental rules that form the foundation of all counting problems.\n🎯 Key Ideas Addition Principle When counting objects that can be categorized into mutually exclusive groups, add the counts of each group.\nFormula: If $A$ and $B$ are disjoint sets, then $|A \\cup B| = |A| + |B|$\nMultiplication Principle When counting sequences of choices where each choice is independent, multiply the number of choices at each step.\nFormula: If you can make $m$ choices for the first decision and $n$ choices for the second decision, then there are $m \\cdot n$ total ways to make both decisions.\nComplement Principle Instead of counting what you want, count what you don’t want and subtract from the total.\nFormula: $|A| = |S| - |A^c|$ where $S$ is the universal set.\n💡 Micro-Examples Addition Principle Problem: How many ways can you choose a red or blue ball from a bag with 3 red, 4 blue, and 2 green balls? Solution: $3 + 4 = 7$ ways (red OR blue) Multiplication Principle Problem: How many ways can you choose a shirt and pants if you have 3 shirts and 4 pants? Solution: $3 \\cdot 4 = 12$ ways (shirt AND pants) Complement Principle Problem: How many ways can you roll two dice and get at least one 6? Solution: Total ways = $6^2 = 36$, ways with no 6s = $5^2 = 25$, so answer = $36 - 25 = 11$ ⚠️ Common Traps \u0026 Fixes Trap: Using addition when you should use multiplication Wrong: “I can take the bus (3 routes) or walk (2 routes), so there are $3 + 2 = 5$ ways to get to school” Right: If you’re counting the total number of ways to get to school, it’s $3 + 2 = 5$. But if you’re counting ways to get to school AND back home, it’s $(3 + 2) \\cdot (3 + 2) = 25$ ways. Trap: Forgetting that sets must be disjoint for addition Wrong: “There are 10 math students and 8 science students, so there are $10 + 8 = 18$ students total” Right: If some students take both subjects, use inclusion-exclusion: $10 + 8 - |\\text{math} \\cap \\text{science}|$ Trap: Overcounting with complement Wrong: “At least 2 heads in 3 flips” = Total - “No heads” - “1 head” = $8 - 1 - 3 = 4$ Right: “At least 2 heads” = “Exactly 2 heads” + “Exactly 3 heads” = $3 + 1 = 4$ 🏆 AMC-Style Worked Example Problem: How many 3-digit numbers contain at least one 7?\nSolution:\nTotal 3-digit numbers: $9 \\cdot 10 \\cdot 10 = 900$ (first digit: 1-9, others: 0-9) 3-digit numbers with NO 7s: $8 \\cdot 9 \\cdot 9 = 648$ (first digit: 1-6,8,9; others: 0-6,8,9) Answer: $900 - 648 = 252$ numbers Key insight: Use complement counting to avoid casework on “exactly 1 seven”, “exactly 2 sevens”, etc.\n🔗 Related Topics Permutations \u0026 Combinations - Applications of multiplication principle Inclusion-Exclusion - When sets aren’t disjoint Complement Counting - Advanced complement techniques Next: Permutations \u0026 Combinations → Inclusion-Exclusion\n",
-  "wordCount" : "513",
-  "inLanguage": "en",
-  "datePublished": "0001-01-01T00:00:00Z",
-  "dateModified": "0001-01-01T00:00:00Z",
-  "author":{
-    "@type": "Person",
-    "name": "Xiaohui Xie"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/counting-principles/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Xiaohui Xie's Site",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://xhx.github.io/favicon.ico"
-    }
-  }
-}
-</script>
 </head>
 
 <body class="" id="top">
@@ -186,7 +88,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://xhx.github.io/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -218,13 +120,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://xhx.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/">Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/">AMC 10</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/">Counting &amp; Probability Mastery Guide</a>&nbsp;»&nbsp;<a href="https://xhx.github.io/notes/math/amc/amc10/counting-probability/02-topics/">Core Topics</a></div>
-    <h1 class="post-title entry-hint-parent">
-      Counting Principles
-    </h1>
-    <div class="post-description">
-      Fundamental counting rules: addition, multiplication, and complement principles with AMC examples.
-    </div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/counting-probability/">Counting &amp; Probability Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/counting-probability/02-topics/">Core Topics</a></div>
     <div class="post-meta">3 min&nbsp;·&nbsp;Xiaohui Xie
 
 </div>
@@ -347,10 +243,10 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://xhx.github.io/tags/amc10/">Amc10</a></li>
-      <li><a href="https://xhx.github.io/tags/amc12/">AMC12</a></li>
-      <li><a href="https://xhx.github.io/tags/counting/">Counting</a></li>
-      <li><a href="https://xhx.github.io/tags/principles/">Principles</a></li>
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/counting/">Counting</a></li>
+      <li><a href="http://localhost:1313/tags/principles/">Principles</a></li>
     </ul>
 
   </footer>
@@ -358,7 +254,7 @@
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://xhx.github.io/">Xiaohui Xie&#39;s Site</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
 
     
 </footer>

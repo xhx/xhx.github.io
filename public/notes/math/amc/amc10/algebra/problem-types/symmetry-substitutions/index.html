@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Symmetry Substitutions — u=x&#43;1/x, t=x², Cyclic Sums | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Algebra, Substitutions, Symmetry">
+<meta name="description" content="Master symmetry substitutions for solving complex algebraic problems efficiently.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/algebra/problem-types/symmetry-substitutions/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/algebra/problem-types/symmetry-substitutions/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Mathematics Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC Problems</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/algebra/">Algebra Mastery Guide — AMC 10 &amp; AMC 12</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/algebra/problem-types/">Problem Types — Pattern Recognition &amp; Templates</a></div>
+    <div class="post-meta">4 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-symmetry-substitutions--ux1x-tx-cyclic-sums" aria-label="🎯 Symmetry Substitutions — u=x&#43;1/x, t=x², Cyclic Sums">🎯 Symmetry Substitutions — u=x+1/x, t=x², Cyclic Sums</a><ul>
+                        
+                <li>
+                    <a href="#-recognition-cues" aria-label="🎯 Recognition Cues">🎯 Recognition Cues</a></li>
+                <li>
+                    <a href="#-template-solutions" aria-label="📚 Template Solutions">📚 Template Solutions</a><ul>
+                        
+                <li>
+                    <a href="#common-substitutions" aria-label="Common Substitutions">Common Substitutions</a></li>
+                <li>
+                    <a href="#symmetry-identities" aria-label="Symmetry Identities">Symmetry Identities</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-worked-examples" aria-label="🎯 Worked Examples">🎯 Worked Examples</a><ul>
+                        
+                <li>
+                    <a href="#example-1-basic-symmetry" aria-label="Example 1: Basic Symmetry">Example 1: Basic Symmetry</a></li>
+                <li>
+                    <a href="#example-2-higher-powers" aria-label="Example 2: Higher Powers">Example 2: Higher Powers</a></li>
+                <li>
+                    <a href="#example-3-cyclic-sums" aria-label="Example 3: Cyclic Sums">Example 3: Cyclic Sums</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-common-pitfalls" aria-label="⚠️ Common Pitfalls">⚠️ Common Pitfalls</a></li>
+                <li>
+                    <a href="#-amc-style-worked-example" aria-label="🎯 AMC-Style Worked Example">🎯 AMC-Style Worked Example</a></li>
+                <li>
+                    <a href="#-related-patterns" aria-label="🔗 Related Patterns">🔗 Related Patterns</a></li>
+                <li>
+                    <a href="#-practice-checklist" aria-label="📝 Practice Checklist">📝 Practice Checklist</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-symmetry-substitutions--ux1x-tx-cyclic-sums">🎯 Symmetry Substitutions — u=x+1/x, t=x², Cyclic Sums<a hidden class="anchor" aria-hidden="true" href="#-symmetry-substitutions--ux1x-tx-cyclic-sums">#</a></h1>
+<p>Essential technique for solving complex algebraic problems with symmetry.</p>
+<h2 id="-recognition-cues">🎯 Recognition Cues<a hidden class="anchor" aria-hidden="true" href="#-recognition-cues">#</a></h2>
+<ul>
+<li><strong>&ldquo;Simplify&rdquo;</strong> — Expressions with $x$ and $\frac{1}{x}$</li>
+<li><strong>&ldquo;Find the value of&rdquo;</strong> — Complex expressions that can be simplified</li>
+<li><strong>$x + \frac{1}{x}$</strong> — Symmetric expressions</li>
+<li><strong>$x^2 + \frac{1}{x^2}$</strong> — Powers of symmetric expressions</li>
+<li><strong>Cyclic expressions</strong> — $x + y + z$ where $x, y, z$ are related</li>
+</ul>
+<h2 id="-template-solutions">📚 Template Solutions<a hidden class="anchor" aria-hidden="true" href="#-template-solutions">#</a></h2>
+<h3 id="common-substitutions">Common Substitutions<a hidden class="anchor" aria-hidden="true" href="#common-substitutions">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Pattern</th>
+          <th>Substitution</th>
+          <th>Purpose</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$x + \frac{1}{x}$</td>
+          <td>$u = x + \frac{1}{x}$</td>
+          <td>Simplify expressions</td>
+          <td>$x^2 + \frac{1}{x^2} = u^2 - 2$</td>
+      </tr>
+      <tr>
+          <td>$x^2$</td>
+          <td>$t = x^2$</td>
+          <td>Reduce degree</td>
+          <td>$x^4 + x^2 + 1 = t^2 + t + 1$</td>
+      </tr>
+      <tr>
+          <td>$x + y + z$</td>
+          <td>$s = x + y + z$</td>
+          <td>Cyclic sums</td>
+          <td>$x^2 + y^2 + z^2 = s^2 - 2(xy + yz + zx)$</td>
+      </tr>
+      <tr>
+          <td>$\sqrt{x}$</td>
+          <td>$u = \sqrt{x}$</td>
+          <td>Eliminate radicals</td>
+          <td>$x + \sqrt{x} = u^2 + u$</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="symmetry-identities">Symmetry Identities<a hidden class="anchor" aria-hidden="true" href="#symmetry-identities">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Expression</th>
+          <th>Identity</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$x^2 + \frac{1}{x^2}$</td>
+          <td>$(x + \frac{1}{x})^2 - 2$</td>
+          <td>$x^2 + \frac{1}{x^2} = u^2 - 2$ where $u = x + \frac{1}{x}$</td>
+      </tr>
+      <tr>
+          <td>$x^3 + \frac{1}{x^3}$</td>
+          <td>$(x + \frac{1}{x})^3 - 3(x + \frac{1}{x})$</td>
+          <td>$x^3 + \frac{1}{x^3} = u^3 - 3u$ where $u = x + \frac{1}{x}$</td>
+      </tr>
+      <tr>
+          <td>$x^4 + \frac{1}{x^4}$</td>
+          <td>$(x^2 + \frac{1}{x^2})^2 - 2$</td>
+          <td>$x^4 + \frac{1}{x^4} = (u^2 - 2)^2 - 2$ where $u = x + \frac{1}{x}$</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-worked-examples">🎯 Worked Examples<a hidden class="anchor" aria-hidden="true" href="#-worked-examples">#</a></h2>
+<h3 id="example-1-basic-symmetry">Example 1: Basic Symmetry<a hidden class="anchor" aria-hidden="true" href="#example-1-basic-symmetry">#</a></h3>
+<p><strong>Problem</strong>: If $x + \frac{1}{x} = 3$, find $x^2 + \frac{1}{x^2}$.</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li><strong>Let $u = x + \frac{1}{x}$</strong>: $u = 3$</li>
+<li><strong>Use identity</strong>: $x^2 + \frac{1}{x^2} = u^2 - 2$</li>
+<li><strong>Substitute</strong>: $x^2 + \frac{1}{x^2} = 3^2 - 2 = 9 - 2 = 7$</li>
+<li><strong>Answer</strong>: $7$</li>
+</ol>
+<h3 id="example-2-higher-powers">Example 2: Higher Powers<a hidden class="anchor" aria-hidden="true" href="#example-2-higher-powers">#</a></h3>
+<p><strong>Problem</strong>: If $x + \frac{1}{x} = 2$, find $x^3 + \frac{1}{x^3}$.</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li><strong>Let $u = x + \frac{1}{x}$</strong>: $u = 2$</li>
+<li><strong>Use identity</strong>: $x^3 + \frac{1}{x^3} = u^3 - 3u$</li>
+<li><strong>Substitute</strong>: $x^3 + \frac{1}{x^3} = 2^3 - 3(2) = 8 - 6 = 2$</li>
+<li><strong>Answer</strong>: $2$</li>
+</ol>
+<h3 id="example-3-cyclic-sums">Example 3: Cyclic Sums<a hidden class="anchor" aria-hidden="true" href="#example-3-cyclic-sums">#</a></h3>
+<p><strong>Problem</strong>: If $x + y + z = 6$ and $xy + yz + zx = 11$, find $x^2 + y^2 + z^2$.</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li><strong>Let $s = x + y + z$</strong>: $s = 6$</li>
+<li><strong>Use identity</strong>: $x^2 + y^2 + z^2 = s^2 - 2(xy + yz + zx)$</li>
+<li><strong>Substitute</strong>: $x^2 + y^2 + z^2 = 6^2 - 2(11) = 36 - 22 = 14$</li>
+<li><strong>Answer</strong>: $14$</li>
+</ol>
+<h2 id="-common-pitfalls">⚠️ Common Pitfalls<a hidden class="anchor" aria-hidden="true" href="#-common-pitfalls">#</a></h2>
+<p><strong>Pitfall</strong>: Incorrect identity application</p>
+<ul>
+<li><strong>Fix</strong>: Remember $x^2 + \frac{1}{x^2} = (x + \frac{1}{x})^2 - 2$, not $(x + \frac{1}{x})^2 + 2$</li>
+<li><strong>Example</strong>: If $x + \frac{1}{x} = 3$, then $x^2 + \frac{1}{x^2} = 3^2 - 2 = 7$, not $3^2 + 2 = 11$</li>
+</ul>
+<p><strong>Pitfall</strong>: Forgetting to check domain</p>
+<ul>
+<li><strong>Fix</strong>: Ensure substitutions are valid</li>
+<li><strong>Example</strong>: $u = x + \frac{1}{x}$ requires $x \neq 0$</li>
+</ul>
+<p><strong>Pitfall</strong>: Incorrect cyclic substitution</p>
+<ul>
+<li><strong>Fix</strong>: Use correct identity for cyclic sums</li>
+<li><strong>Example</strong>: $x^2 + y^2 + z^2 = (x+y+z)^2 - 2(xy+yz+zx)$, not $(x+y+z)^2$</li>
+</ul>
+<h2 id="-amc-style-worked-example">🎯 AMC-Style Worked Example<a hidden class="anchor" aria-hidden="true" href="#-amc-style-worked-example">#</a></h2>
+<p><strong>Problem</strong>: If $x + \frac{1}{x} = 4$, find $x^4 + \frac{1}{x^4}$.</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li><strong>Let $u = x + \frac{1}{x}$</strong>: $u = 4$</li>
+<li><strong>Find $x^2 + \frac{1}{x^2}$</strong>: $x^2 + \frac{1}{x^2} = u^2 - 2 = 4^2 - 2 = 16 - 2 = 14$</li>
+<li><strong>Use identity</strong>: $x^4 + \frac{1}{x^4} = (x^2 + \frac{1}{x^2})^2 - 2$</li>
+<li><strong>Substitute</strong>: $x^4 + \frac{1}{x^4} = 14^2 - 2 = 196 - 2 = 194$</li>
+<li><strong>Answer</strong>: $194$</li>
+</ol>
+<p><strong>Key insight</strong>: Higher powers can be found by building up from lower powers.</p>
+<h2 id="-related-patterns">🔗 Related Patterns<a hidden class="anchor" aria-hidden="true" href="#-related-patterns">#</a></h2>
+<ul>
+<li><strong>Symmetric Expressions</strong> — Look for patterns involving $x$ and $\frac{1}{x}$</li>
+<li><strong>Cyclic Sums</strong> — Expressions with $x + y + z$ and related terms</li>
+<li><strong>Identities</strong> — Memorize common symmetry identities</li>
+<li><strong>Substitution</strong> — Replace complex expressions with simpler variables</li>
+</ul>
+<h2 id="-practice-checklist">📝 Practice Checklist<a hidden class="anchor" aria-hidden="true" href="#-practice-checklist">#</a></h2>
+<ul>
+<li><input disabled="" type="checkbox"> Master basic symmetry substitutions</li>
+<li><input disabled="" type="checkbox"> Practice higher power identities</li>
+<li><input disabled="" type="checkbox"> Learn cyclic sum techniques</li>
+<li><input disabled="" type="checkbox"> Practice domain restrictions</li>
+<li><input disabled="" type="checkbox"> Understand identity applications</li>
+<li><input disabled="" type="checkbox"> Work on speed and accuracy</li>
+</ul>
+<hr>
+<p><strong>Next</strong>: <a href="sequence-closed-forms">Sequence Closed Forms</a> | <strong>Prev</strong>: <a href="systems-linear-and-nonlinear">Systems Linear &amp; Nonlinear</a> | <strong>Back</strong>: <a href="_index">Problem Types Overview</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/algebra/">Algebra</a></li>
+      <li><a href="http://localhost:1313/tags/substitutions/">Substitutions</a></li>
+      <li><a href="http://localhost:1313/tags/symmetry/">Symmetry</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
