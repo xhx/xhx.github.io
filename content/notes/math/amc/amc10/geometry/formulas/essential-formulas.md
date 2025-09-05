@@ -67,7 +67,6 @@ Complete reference for all essential AMC geometry formulas with usage notes and 
 ### Area and Lines
 | Formula | Usage | Example |
 |---------|-------|---------|
-| $A = \frac{1}{2}|\sum_{i=1}^n x_iy_{i+1} - \sum_{i=1}^n y_ix_{i+1}|$ | Shoelace formula | Triangle $(0,0)$, $(3,0)$, $(0,4)$: $A = \frac{1}{2}|0+12+0-0-0-0| = 6$ |
 | $y = mx + b$ | Line equation | Slope 2, y-intercept 3: $y = 2x + 3$ |
 | $(x-h)^2 + (y-k)^2 = r^2$ | Circle equation | Center $(2,3)$, radius 5: $(x-2)^2 + (y-3)^2 = 25$ |
 
@@ -122,6 +121,32 @@ Complete reference for all essential AMC geometry formulas with usage notes and 
 |---------|-------|---------|
 | $\frac{BD}{DC} = \frac{AB}{AC}$ | Angle bisector | Sides 6, 8, bisector divides opposite side: $\frac{BD}{DC} = \frac{6}{8} = \frac{3}{4}$ |
 
+### Stewart's Theorem
+| Formula | Usage | Example |
+|---------|-------|---------|
+| $b^2m + c^2n = a(d^2 + mn)$ | Cevian length | Triangle with sides 5, 6, 7, cevian divides side 5 into 2, 3: $6^2 \cdot 2 + 7^2 \cdot 3 = 5(d^2 + 6)$, so $d^2 = \frac{72 + 147 - 30}{5} = 37.8$ |
+
+### Law of Sines and Cosines
+| Formula | Usage | Example |
+|---------|-------|---------|
+| $\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R$ | Law of sines | Triangle with angles 30°, 60°, 90° and side opposite 30° = 3: $a = 3$, $b = 3\sqrt{3}$, $c = 6$ |
+| $a^2 = b^2 + c^2 - 2bc\cos A$ | Law of cosines | Sides 3, 4, angle 60°: $a^2 = 9 + 16 - 24 \cdot \frac{1}{2} = 13$, so $a = \sqrt{13}$ |
+| $b^2 = a^2 + c^2 - 2ac\cos B$ | Law of cosines | Find angle when given three sides |
+| $c^2 = a^2 + b^2 - 2ab\cos C$ | Law of cosines | Check if triangle is acute, right, or obtuse |
+
+### Shoelace Area Formula
+$$A = \frac{1}{2}\left|\sum_{i=1}^n x_iy_{i+1} - \sum_{i=1}^n y_ix_{i+1}\right|$$
+
+
+
+
+### Half-Angle Identities
+| Formula | Usage | Example |
+|---------|-------|---------|
+| $\sin\frac{A}{2} = \sqrt{\frac{1-\cos A}{2}}$ | Half-angle sine | $\cos 60° = \frac{1}{2}$: $\sin 30° = \sqrt{\frac{1-\frac{1}{2}}{2}} = \frac{1}{2}$ |
+| $\cos\frac{A}{2} = \sqrt{\frac{1+\cos A}{2}}$ | Half-angle cosine | $\cos 60° = \frac{1}{2}$: $\cos 30° = \sqrt{\frac{1+\frac{1}{2}}{2}} = \frac{\sqrt{3}}{2}$ |
+| $\tan\frac{A}{2} = \frac{1-\cos A}{\sin A} = \frac{\sin A}{1+\cos A}$ | Half-angle tangent | $\cos 60° = \frac{1}{2}$, $\sin 60° = \frac{\sqrt{3}}{2}$: $\tan 30° = \frac{1-\frac{1}{2}}{\frac{\sqrt{3}}{2}} = \frac{1}{\sqrt{3}}$ |
+
 ## 💡 Quick Reference Tips
 
 ### Memorization Strategy
@@ -133,11 +158,6 @@ Complete reference for all essential AMC geometry formulas with usage notes and 
 - **Wrong units** - Make sure units match
 - **Wrong order** - Check formula order carefully
 - **Missing factors** - Don't forget $\frac{1}{2}$ or other factors
-
-### Contest Strategy
-- **Quick lookup** - Know where to find each formula
-- **Apply correctly** - Use the right formula for the problem
-- **Verify results** - Check that your answer makes sense
 
 ---
 

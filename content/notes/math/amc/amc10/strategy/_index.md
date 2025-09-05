@@ -56,13 +56,13 @@ Welcome to your complete strategy guide for dominating the AMC 10 and AMC 12 con
 ### 🧪 Practice & Simulation
 - **[Full Test Simulation Guide](simulations/full-test-simulation-guide)** - Complete practice test protocol
 
-## 🎯 How to Use This Guide
+<!-- ## 🎯 How to Use This Guide
 
 1. **Start with Reference** - Understand the contest format and scoring system
 2. **Master the Playbooks** - Learn the core strategic approaches
 3. **Practice Tactics** - Drill specific techniques by topic
 4. **Use Checklists** - Follow systematic protocols during tests
-5. **Track Progress** - Use the review tools to improve continuously
+5. **Track Progress** - Use the review tools to improve continuously -->
 
 ## 🏆 Success Principles
 

@@ -43,23 +43,23 @@ Quick reference for all key formulas with usage examples.
 ### 💡 [Problem-Solving Tips](tips/)
 Strategic approaches, checklists, and timing advice.
 
-## 🎯 How to Use This Guide
+<!-- ## 🎯 How to Use This Guide
 
 1. **Start with Reference** - Get familiar with notation and scope
 2. **Study Topics** - Work through each topic systematically
 3. **Practice Patterns** - Use problem types to recognize common patterns
 4. **Memorize Formulas** - Keep essential formulas at your fingertips
-5. **Apply Tips** - Use strategic approaches during practice
+5. **Apply Tips** - Use strategic approaches during practice -->
 
-## 🏆 AMC Success Strategy
+<!-- ## 🏆 AMC Success Strategy
 
 - **AMC 10**: Focus on core topics, master basic techniques
 - **AMC 12**: Add advanced topics, develop sophisticated problem-solving
 - **Practice**: Work through past problems using these patterns
-- **Timing**: Learn to recognize and apply techniques quickly
+- **Timing**: Learn to recognize and apply techniques quickly -->
 
 ---
 
-**Ready to begin?** Start with the [Reference Materials](reference/) to understand the scope, then dive into [Topic Guides](topics/) for detailed study.
+
 
 **Next**: [Strategy](../strategy) | **Prev**: [Number Theory](../number-theory) | **Back**: [AMC 10 Overview](../)

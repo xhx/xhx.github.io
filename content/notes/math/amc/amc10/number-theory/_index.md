@@ -60,13 +60,13 @@ Welcome to your comprehensive **Number Theory** study guide for AMC 10 & AMC 12!
 ### 💡 Strategic Tips
 - **[Problem-Solving Tips](tips/problem-solving-tips)**: Heuristics, checklists, and timing strategies
 
-## 🚀 Getting Started
+<!-- ## 🚀 Getting Started
 
 1. **Begin with Reference**: Check the [scope map](reference/scope-map) to understand AMC 10 vs AMC 12 coverage
 2. **Study Core Topics**: Work through topics in order, focusing on your target contest level
 3. **Practice Problem Types**: Use the pattern catalog to recognize and solve common problem structures
 4. **Master Formulas**: Keep the [essential formulas](formulas/essential-formulas) handy during practice
-5. **Apply Strategic Tips**: Use the [problem-solving tips](tips/problem-solving-tips) to improve your contest performance
+5. **Apply Strategic Tips**: Use the [problem-solving tips](tips/problem-solving-tips) to improve your contest performance -->
 
 ## 🎯 Contest Strategy
 
@@ -77,6 +77,6 @@ Welcome to your comprehensive **Number Theory** study guide for AMC 10 & AMC 12!
 
 ---
 
-**Next**: Start with [Scope Map](reference/scope-map) to understand the coverage differences between AMC 10 and AMC 12.
+
 
 **Next**: [Precalculus](../precalculus) | **Prev**: [Counting & Probability](../counting-probability) | **Back**: [AMC 10 Overview](../)

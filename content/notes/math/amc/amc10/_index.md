@@ -1,5 +1,5 @@
 ---
-title: "AMC 10/12 — Master Landing Page"
+title: "AMC 10/12"
 description: "Quick navigation to Algebra, Geometry, Counting & Probability, Number Theory, Precalculus, and Contest Strategy."
 tags: ["AMC10","AMC12","Math","Study Guide","Landing"]
 draft: false

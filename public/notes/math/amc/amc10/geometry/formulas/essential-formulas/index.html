@@ -120,8 +120,8 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12 — Master Landing Page</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/">Geometry Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/formulas/">Essential Formulas</a></div>
-    <div class="post-meta">4 min&nbsp;·&nbsp;Xiaohui Xie
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/">Geometry Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/formulas/">Essential Formulas</a></div>
+    <div class="post-meta">5 min&nbsp;·&nbsp;Xiaohui Xie
 
 </div>
   </header> <div class="toc">
@@ -186,7 +186,15 @@
                 <li>
                     <a href="#ptolemys-theorem" aria-label="Ptolemy&rsquo;s Theorem">Ptolemy&rsquo;s Theorem</a></li>
                 <li>
-                    <a href="#angle-bisector-theorem" aria-label="Angle Bisector Theorem">Angle Bisector Theorem</a></li></ul>
+                    <a href="#angle-bisector-theorem" aria-label="Angle Bisector Theorem">Angle Bisector Theorem</a></li>
+                <li>
+                    <a href="#stewarts-theorem" aria-label="Stewart&rsquo;s Theorem">Stewart&rsquo;s Theorem</a></li>
+                <li>
+                    <a href="#law-of-sines-and-cosines" aria-label="Law of Sines and Cosines">Law of Sines and Cosines</a></li>
+                <li>
+                    <a href="#shoelace-area-formula" aria-label="Shoelace Area Formula">Shoelace Area Formula</a></li>
+                <li>
+                    <a href="#half-angle-identities" aria-label="Half-Angle Identities">Half-Angle Identities</a></li></ul>
                 </li>
                 <li>
                     <a href="#-quick-reference-tips" aria-label="💡 Quick Reference Tips">💡 Quick Reference Tips</a><ul>
@@ -194,9 +202,7 @@
                 <li>
                     <a href="#memorization-strategy" aria-label="Memorization Strategy">Memorization Strategy</a></li>
                 <li>
-                    <a href="#common-mistakes" aria-label="Common Mistakes">Common Mistakes</a></li>
-                <li>
-                    <a href="#contest-strategy" aria-label="Contest Strategy">Contest Strategy</a>
+                    <a href="#common-mistakes" aria-label="Common Mistakes">Common Mistakes</a>
                 </li>
             </ul>
             </li>
@@ -402,11 +408,6 @@
   </thead>
   <tbody>
       <tr>
-          <td>$A = \frac{1}{2}</td>
-          <td>\sum_{i=1}^n x_iy_{i+1} - \sum_{i=1}^n y_ix_{i+1}</td>
-          <td>$</td>
-      </tr>
-      <tr>
           <td>$y = mx + b$</td>
           <td>Line equation</td>
           <td>Slope 2, y-intercept 3: $y = 2x + 3$</td>
@@ -590,6 +591,84 @@
       </tr>
   </tbody>
 </table>
+<h3 id="stewarts-theorem">Stewart&rsquo;s Theorem<a hidden class="anchor" aria-hidden="true" href="#stewarts-theorem">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Formula</th>
+          <th>Usage</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$b^2m + c^2n = a(d^2 + mn)$</td>
+          <td>Cevian length</td>
+          <td>Triangle with sides 5, 6, 7, cevian divides side 5 into 2, 3: $6^2 \cdot 2 + 7^2 \cdot 3 = 5(d^2 + 6)$, so $d^2 = \frac{72 + 147 - 30}{5} = 37.8$</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="law-of-sines-and-cosines">Law of Sines and Cosines<a hidden class="anchor" aria-hidden="true" href="#law-of-sines-and-cosines">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Formula</th>
+          <th>Usage</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R$</td>
+          <td>Law of sines</td>
+          <td>Triangle with angles 30°, 60°, 90° and side opposite 30° = 3: $a = 3$, $b = 3\sqrt{3}$, $c = 6$</td>
+      </tr>
+      <tr>
+          <td>$a^2 = b^2 + c^2 - 2bc\cos A$</td>
+          <td>Law of cosines</td>
+          <td>Sides 3, 4, angle 60°: $a^2 = 9 + 16 - 24 \cdot \frac{1}{2} = 13$, so $a = \sqrt{13}$</td>
+      </tr>
+      <tr>
+          <td>$b^2 = a^2 + c^2 - 2ac\cos B$</td>
+          <td>Law of cosines</td>
+          <td>Find angle when given three sides</td>
+      </tr>
+      <tr>
+          <td>$c^2 = a^2 + b^2 - 2ab\cos C$</td>
+          <td>Law of cosines</td>
+          <td>Check if triangle is acute, right, or obtuse</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="shoelace-area-formula">Shoelace Area Formula<a hidden class="anchor" aria-hidden="true" href="#shoelace-area-formula">#</a></h3>
+<p>$$A = \frac{1}{2}\left|\sum_{i=1}^n x_iy_{i+1} - \sum_{i=1}^n y_ix_{i+1}\right|$$</p>
+<h3 id="half-angle-identities">Half-Angle Identities<a hidden class="anchor" aria-hidden="true" href="#half-angle-identities">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Formula</th>
+          <th>Usage</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\sin\frac{A}{2} = \sqrt{\frac{1-\cos A}{2}}$</td>
+          <td>Half-angle sine</td>
+          <td>$\cos 60° = \frac{1}{2}$: $\sin 30° = \sqrt{\frac{1-\frac{1}{2}}{2}} = \frac{1}{2}$</td>
+      </tr>
+      <tr>
+          <td>$\cos\frac{A}{2} = \sqrt{\frac{1+\cos A}{2}}$</td>
+          <td>Half-angle cosine</td>
+          <td>$\cos 60° = \frac{1}{2}$: $\cos 30° = \sqrt{\frac{1+\frac{1}{2}}{2}} = \frac{\sqrt{3}}{2}$</td>
+      </tr>
+      <tr>
+          <td>$\tan\frac{A}{2} = \frac{1-\cos A}{\sin A} = \frac{\sin A}{1+\cos A}$</td>
+          <td>Half-angle tangent</td>
+          <td>$\cos 60° = \frac{1}{2}$, $\sin 60° = \frac{\sqrt{3}}{2}$: $\tan 30° = \frac{1-\frac{1}{2}}{\frac{\sqrt{3}}{2}} = \frac{1}{\sqrt{3}}$</td>
+      </tr>
+  </tbody>
+</table>
 <h2 id="-quick-reference-tips">💡 Quick Reference Tips<a hidden class="anchor" aria-hidden="true" href="#-quick-reference-tips">#</a></h2>
 <h3 id="memorization-strategy">Memorization Strategy<a hidden class="anchor" aria-hidden="true" href="#memorization-strategy">#</a></h3>
 <ul>
@@ -602,12 +681,6 @@
 <li><strong>Wrong units</strong> - Make sure units match</li>
 <li><strong>Wrong order</strong> - Check formula order carefully</li>
 <li><strong>Missing factors</strong> - Don&rsquo;t forget $\frac{1}{2}$ or other factors</li>
-</ul>
-<h3 id="contest-strategy">Contest Strategy<a hidden class="anchor" aria-hidden="true" href="#contest-strategy">#</a></h3>
-<ul>
-<li><strong>Quick lookup</strong> - Know where to find each formula</li>
-<li><strong>Apply correctly</strong> - Use the right formula for the problem</li>
-<li><strong>Verify results</strong> - Check that your answer makes sense</li>
 </ul>
 <hr>
 <p><strong>Next:</strong> <a href="../tips/">Tips Overview →</a> | <strong>Prev:</strong> <a href="_index">Formulas Overview →</a> | <strong>Back to:</strong> <a href="../">Geometry Mastery Guide →</a></p>

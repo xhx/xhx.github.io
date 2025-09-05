@@ -36,13 +36,13 @@ Welcome to your complete **AMC 10 & AMC 12 Counting & Probability** study resour
 - **[Essential Formulas](04-formulas/essential-formulas)** - Complete formula bank
 - **[Problem-Solving Tips](05-tips/problem-solving-tips)** - Strategies and checklists
 
-## 🎯 How to Use This Guide
+<!-- ## 🎯 How to Use This Guide
 
 1. **Start with Reference** - Check the scope map to see what's tested at your level
 2. **Master Core Topics** - Work through each topic systematically
 3. **Practice Patterns** - Use problem types to recognize common setups
 4. **Memorize Formulas** - Keep the essential formulas handy
-5. **Apply Strategies** - Use the tips section for problem-solving approaches
+5. **Apply Strategies** - Use the tips section for problem-solving approaches -->
 
 ## 🏆 Contest Strategy
 
