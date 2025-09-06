@@ -19,8 +19,8 @@ Welcome to my organized notes section! Here you'll find various notes, reference
 
 ## Mathematics
 
-
 - [AMC Problems](/notes/math/amc/) - American Mathematics Competitions
+- [MATHCOUNTS](/notes/math/mathcounts/) - MATHCOUNTS Mastery Guide
 
 
 ---
