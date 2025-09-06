@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Rate, Time, Work, and Mixture Problem Types | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="rate, time, work, mixture, problem-types, patterns">
+<meta name="description" content="Common problem patterns and worked examples in rate, time, work, and mixture">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/mathcounts/rate-time-work-mixture/problem-types/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/mathcounts/rate-time-work-mixture/problem-types/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/mathcounts/">MATHCOUNTS Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/mathcounts/rate-time-work-mixture/">Rate, Time, Work, and Mixture</a></div>
+    <div class="post-meta">3 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-rate-time-work-and-mixture-problem-types" aria-label="🎯 Rate, Time, Work, and Mixture Problem Types">🎯 Rate, Time, Work, and Mixture Problem Types</a><ul>
+                        
+                <li>
+                    <a href="#-problem-pattern-catalog" aria-label="📊 Problem Pattern Catalog">📊 Problem Pattern Catalog</a><ul>
+                        
+                <li>
+                    <a href="#type-1-basic-rate-problems" aria-label="Type 1: Basic Rate Problems">Type 1: Basic Rate Problems</a></li>
+                <li>
+                    <a href="#type-2-work-problems" aria-label="Type 2: Work Problems">Type 2: Work Problems</a></li>
+                <li>
+                    <a href="#type-3-relative-rate-problems" aria-label="Type 3: Relative Rate Problems">Type 3: Relative Rate Problems</a></li>
+                <li>
+                    <a href="#type-4-mixture-problems" aria-label="Type 4: Mixture Problems">Type 4: Mixture Problems</a></li>
+                <li>
+                    <a href="#type-5-combined-work-problems" aria-label="Type 5: Combined Work Problems">Type 5: Combined Work Problems</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-problem-solving-strategy" aria-label="🔍 Problem-Solving Strategy">🔍 Problem-Solving Strategy</a></li>
+                <li>
+                    <a href="#-common-mistakes" aria-label="⚠️ Common Mistakes">⚠️ Common Mistakes</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-rate-time-work-and-mixture-problem-types">🎯 Rate, Time, Work, and Mixture Problem Types<a hidden class="anchor" aria-hidden="true" href="#-rate-time-work-and-mixture-problem-types">#</a></h1>
+<h2 id="-problem-pattern-catalog">📊 Problem Pattern Catalog<a hidden class="anchor" aria-hidden="true" href="#-problem-pattern-catalog">#</a></h2>
+<h3 id="type-1-basic-rate-problems"><strong>Type 1: Basic Rate Problems</strong><a hidden class="anchor" aria-hidden="true" href="#type-1-basic-rate-problems">#</a></h3>
+<p><strong>Pattern</strong>: Find distance, rate, or time using $D = R \times T$
+<strong>Key Formula</strong>: $D = R \times T$, $R = \frac{D}{T}$, $T = \frac{D}{R}$</p>
+<p><strong>Worked Example</strong>:</p>
+<blockquote>
+<p>A car travels 240 miles in 4 hours. What is its average speed?</p>
+<p><strong>Solution</strong>:
+$R = \frac{D}{T} = \frac{240}{4} = 60$ mph</p></blockquote>
+<h3 id="type-2-work-problems"><strong>Type 2: Work Problems</strong><a hidden class="anchor" aria-hidden="true" href="#type-2-work-problems">#</a></h3>
+<p><strong>Pattern</strong>: Find work completed, rate, or time using $W = R \times T$
+<strong>Key Formula</strong>: $W = R \times T$, $R = \frac{W}{T}$, $T = \frac{W}{R}$</p>
+<p><strong>Worked Example</strong>:</p>
+<blockquote>
+<p>If 3 workers can complete 12 jobs in 4 hours, how many jobs can 5 workers complete in 6 hours?</p>
+<p><strong>Solution</strong>:
+First find individual rate: $R = \frac{W}{T} = \frac{12}{4} = 3$ jobs/hour per worker</p>
+<p>With 5 workers: $R_{total} = 5 \times 3 = 15$ jobs/hour</p>
+<p>In 6 hours: $W = R \times T = 15 \times 6 = 90$ jobs</p></blockquote>
+<h3 id="type-3-relative-rate-problems"><strong>Type 3: Relative Rate Problems</strong><a hidden class="anchor" aria-hidden="true" href="#type-3-relative-rate-problems">#</a></h3>
+<p><strong>Pattern</strong>: Find when two objects meet or how fast they approach/separate
+<strong>Key Concept</strong>: Add rates for approaching/separating, subtract for same direction</p>
+<p><strong>Worked Example</strong>:</p>
+<blockquote>
+<p>Two cars start 200 miles apart and drive toward each other. One travels 50 mph, the other 60 mph. How long until they meet?</p>
+<p><strong>Solution</strong>:
+Relative rate = $50 + 60 = 110$ mph (approaching)</p>
+<p>Time = $\frac{D}{R} = \frac{200}{110} = \frac{20}{11} \approx 1.82$ hours</p></blockquote>
+<h3 id="type-4-mixture-problems"><strong>Type 4: Mixture Problems</strong><a hidden class="anchor" aria-hidden="true" href="#type-4-mixture-problems">#</a></h3>
+<p><strong>Pattern</strong>: Find concentration or amount after mixing different solutions
+<strong>Key Formula</strong>: Amount = Concentration × Total</p>
+<p><strong>Worked Example</strong>:</p>
+<blockquote>
+<p>Mix 20 gallons of 30% acid solution with 30 gallons of 50% acid solution. What is the final concentration?</p>
+<p><strong>Solution</strong>:
+Amount of acid in first solution: $0.30 \times 20 = 6$ gallons</p>
+<p>Amount of acid in second solution: $0.50 \times 30 = 15$ gallons</p>
+<p>Total acid: $6 + 15 = 21$ gallons</p>
+<p>Total solution: $20 + 30 = 50$ gallons</p>
+<p>Final concentration: $\frac{21}{50} = 0.42 = 42%$</p></blockquote>
+<h3 id="type-5-combined-work-problems"><strong>Type 5: Combined Work Problems</strong><a hidden class="anchor" aria-hidden="true" href="#type-5-combined-work-problems">#</a></h3>
+<p><strong>Pattern</strong>: Find time when multiple people work together
+<strong>Key Concept</strong>: Add individual rates to get combined rate</p>
+<p><strong>Worked Example</strong>:</p>
+<blockquote>
+<p>Alice can paint a room in 6 hours, Bob can paint it in 4 hours. How long will it take them to paint it together?</p>
+<p><strong>Solution</strong>:
+Alice&rsquo;s rate: $\frac{1}{6}$ room/hour</p>
+<p>Bob&rsquo;s rate: $\frac{1}{4}$ room/hour</p>
+<p>Combined rate: $\frac{1}{6} + \frac{1}{4} = \frac{2}{12} + \frac{3}{12} = \frac{5}{12}$ room/hour</p>
+<p>Time together: $\frac{1}{\frac{5}{12}} = \frac{12}{5} = 2.4$ hours</p></blockquote>
+<h2 id="-problem-solving-strategy">🔍 Problem-Solving Strategy<a hidden class="anchor" aria-hidden="true" href="#-problem-solving-strategy">#</a></h2>
+<ol>
+<li><strong>Identify the type</strong> of problem (rate, work, mixture)</li>
+<li><strong>Write down what you know</strong> about each quantity</li>
+<li><strong>Use the appropriate formula</strong> for the situation</li>
+<li><strong>Set up equations</strong> if multiple unknowns</li>
+<li><strong>Check your answer</strong> with estimation</li>
+</ol>
+<h2 id="-common-mistakes">⚠️ Common Mistakes<a hidden class="anchor" aria-hidden="true" href="#-common-mistakes">#</a></h2>
+<ul>
+<li><strong>Mixing up rate and time</strong> in formulas</li>
+<li><strong>Wrong relative rate</strong> for same direction vs. approaching</li>
+<li><strong>Forgetting to convert units</strong> (hours to minutes, etc.)</li>
+<li><strong>Miscounting work rates</strong> in combined problems</li>
+<li><strong>Wrong concentration</strong> calculations in mixtures</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/rate/">Rate</a></li>
+      <li><a href="http://localhost:1313/tags/time/">Time</a></li>
+      <li><a href="http://localhost:1313/tags/work/">Work</a></li>
+      <li><a href="http://localhost:1313/tags/mixture/">Mixture</a></li>
+      <li><a href="http://localhost:1313/tags/problem-types/">Problem-Types</a></li>
+      <li><a href="http://localhost:1313/tags/patterns/">Patterns</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

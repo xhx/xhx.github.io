@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Data and Statistics Problem Types | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="data, statistics, problem-types, patterns">
+<meta name="description" content="Common problem patterns and worked examples in data and statistics">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/mathcounts/data-and-statistics/problem-types/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/mathcounts/data-and-statistics/problem-types/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/mathcounts/">MATHCOUNTS Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/mathcounts/data-and-statistics/">Data and Statistics</a></div>
+    <div class="post-meta">2 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-data-and-statistics-problem-types" aria-label="🎯 Data and Statistics Problem Types">🎯 Data and Statistics Problem Types</a><ul>
+                        
+                <li>
+                    <a href="#-problem-pattern-catalog" aria-label="📊 Problem Pattern Catalog">📊 Problem Pattern Catalog</a><ul>
+                        
+                <li>
+                    <a href="#type-1-finding-measures-of-center" aria-label="Type 1: Finding Measures of Center">Type 1: Finding Measures of Center</a></li>
+                <li>
+                    <a href="#type-2-weighted-averages" aria-label="Type 2: Weighted Averages">Type 2: Weighted Averages</a></li>
+                <li>
+                    <a href="#type-3-probability-calculations" aria-label="Type 3: Probability Calculations">Type 3: Probability Calculations</a></li>
+                <li>
+                    <a href="#type-4-complementary-probability" aria-label="Type 4: Complementary Probability">Type 4: Complementary Probability</a></li>
+                <li>
+                    <a href="#type-5-range-and-spread" aria-label="Type 5: Range and Spread">Type 5: Range and Spread</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-problem-solving-strategy" aria-label="🔍 Problem-Solving Strategy">🔍 Problem-Solving Strategy</a></li>
+                <li>
+                    <a href="#-common-mistakes" aria-label="⚠️ Common Mistakes">⚠️ Common Mistakes</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-data-and-statistics-problem-types">🎯 Data and Statistics Problem Types<a hidden class="anchor" aria-hidden="true" href="#-data-and-statistics-problem-types">#</a></h1>
+<h2 id="-problem-pattern-catalog">📊 Problem Pattern Catalog<a hidden class="anchor" aria-hidden="true" href="#-problem-pattern-catalog">#</a></h2>
+<h3 id="type-1-finding-measures-of-center"><strong>Type 1: Finding Measures of Center</strong><a hidden class="anchor" aria-hidden="true" href="#type-1-finding-measures-of-center">#</a></h3>
+<p><strong>Pattern</strong>: Calculate mean, median, or mode of a data set
+<strong>Key Formula</strong>: Mean = sum/count, Median = middle value, Mode = most frequent</p>
+<p><strong>Worked Example</strong>:</p>
+<blockquote>
+<p>Find the mean, median, and mode of: 2, 4, 4, 6, 8, 10, 10, 10</p>
+<p><strong>Solution</strong>:
+<strong>Mean</strong>: $\frac{2+4+4+6+8+10+10+10}{8} = \frac{54}{8} = 6.75$</p>
+<p><strong>Median</strong>: Data is already ordered. With 8 values, median is average of 4th and 5th: $\frac{6+8}{2} = 7$</p>
+<p><strong>Mode</strong>: 10 appears most frequently (3 times)</p></blockquote>
+<h3 id="type-2-weighted-averages"><strong>Type 2: Weighted Averages</strong><a hidden class="anchor" aria-hidden="true" href="#type-2-weighted-averages">#</a></h3>
+<p><strong>Pattern</strong>: Find average when different values have different weights
+<strong>Key Formula</strong>: $\frac{\sum(w_i \cdot x_i)}{\sum w_i}$</p>
+<p><strong>Worked Example</strong>:</p>
+<blockquote>
+<p>A student&rsquo;s grades are: Test 1 (80, weight 2), Test 2 (90, weight 3), Final (85, weight 5). Find the weighted average.</p>
+<p><strong>Solution</strong>:
+Weighted average = $\frac{2 \cdot 80 + 3 \cdot 90 + 5 \cdot 85}{2 + 3 + 5} = \frac{160 + 270 + 425}{10} = \frac{855}{10} = 85.5$</p></blockquote>
+<h3 id="type-3-probability-calculations"><strong>Type 3: Probability Calculations</strong><a hidden class="anchor" aria-hidden="true" href="#type-3-probability-calculations">#</a></h3>
+<p><strong>Pattern</strong>: Find probability of simple events
+<strong>Key Formula</strong>: $P(\text{event}) = \frac{\text{favorable outcomes}}{\text{total outcomes}}$</p>
+<p><strong>Worked Example</strong>:</p>
+<blockquote>
+<p>A bag contains 3 red, 4 blue, and 5 green marbles. What&rsquo;s the probability of drawing a red marble?</p>
+<p><strong>Solution</strong>:
+Total marbles = 3 + 4 + 5 = 12
+Favorable outcomes = 3 (red marbles)
+Probability = $\frac{3}{12} = \frac{1}{4}$</p></blockquote>
+<h3 id="type-4-complementary-probability"><strong>Type 4: Complementary Probability</strong><a hidden class="anchor" aria-hidden="true" href="#type-4-complementary-probability">#</a></h3>
+<p><strong>Pattern</strong>: Find probability of the opposite event
+<strong>Key Formula</strong>: $P(\text{not A}) = 1 - P(\text{A})$</p>
+<p><strong>Worked Example</strong>:</p>
+<blockquote>
+<p>The probability of rain tomorrow is 0.3. What&rsquo;s the probability of no rain?</p>
+<p><strong>Solution</strong>:
+$P(\text{no rain}) = 1 - P(\text{rain}) = 1 - 0.3 = 0.7$</p></blockquote>
+<h3 id="type-5-range-and-spread"><strong>Type 5: Range and Spread</strong><a hidden class="anchor" aria-hidden="true" href="#type-5-range-and-spread">#</a></h3>
+<p><strong>Pattern</strong>: Find range or analyze how spread out data is
+<strong>Key Formula</strong>: Range = Maximum - Minimum</p>
+<p><strong>Worked Example</strong>:</p>
+<blockquote>
+<p>Find the range of: 15, 22, 18, 25, 20, 19</p>
+<p><strong>Solution</strong>:
+Maximum = 25, Minimum = 15
+Range = 25 - 15 = 10</p></blockquote>
+<h2 id="-problem-solving-strategy">🔍 Problem-Solving Strategy<a hidden class="anchor" aria-hidden="true" href="#-problem-solving-strategy">#</a></h2>
+<ol>
+<li><strong>Identify what measure</strong> you need to find</li>
+<li><strong>Organize the data</strong> if necessary</li>
+<li><strong>Use the appropriate formula</strong> or method</li>
+<li><strong>Check your calculation</strong> with estimation</li>
+<li><strong>Consider the context</strong> of the problem</li>
+</ol>
+<h2 id="-common-mistakes">⚠️ Common Mistakes<a hidden class="anchor" aria-hidden="true" href="#-common-mistakes">#</a></h2>
+<ul>
+<li><strong>Not ordering data</strong> before finding median</li>
+<li><strong>Forgetting to divide by total weight</strong> in weighted averages</li>
+<li><strong>Miscounting outcomes</strong> in probability</li>
+<li><strong>Confusing mean and median</strong> in calculations</li>
+<li><strong>Missing the complement</strong> in probability problems</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/data/">Data</a></li>
+      <li><a href="http://localhost:1313/tags/statistics/">Statistics</a></li>
+      <li><a href="http://localhost:1313/tags/problem-types/">Problem-Types</a></li>
+      <li><a href="http://localhost:1313/tags/patterns/">Patterns</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

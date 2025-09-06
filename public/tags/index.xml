@@ -23,10 +23,31 @@
       <description></description>
     </item>
     <item>
+      <title>Euclidean</title>
+      <link>http://localhost:1313/tags/euclidean/</link>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/euclidean/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Geometry</title>
+      <link>http://localhost:1313/tags/geometry/</link>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/geometry/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Landing</title>
       <link>http://localhost:1313/tags/landing/</link>
       <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/landing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mastery</title>
+      <link>http://localhost:1313/tags/mastery/</link>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mastery/</guid>
       <description></description>
     </item>
     <item>
@@ -37,17 +58,24 @@
       <description></description>
     </item>
     <item>
+      <title>Quick Access</title>
+      <link>http://localhost:1313/tags/quick-access/</link>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/quick-access/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reference</title>
+      <link>http://localhost:1313/tags/reference/</link>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/reference/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Study Guide</title>
       <link>http://localhost:1313/tags/study-guide/</link>
       <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/study-guide/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>3d</title>
-      <link>http://localhost:1313/tags/3d/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/3d/</guid>
       <description></description>
     </item>
     <item>
@@ -58,24 +86,10 @@
       <description></description>
     </item>
     <item>
-      <title>Advanced</title>
-      <link>http://localhost:1313/tags/advanced/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/advanced/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Algebra</title>
       <link>http://localhost:1313/tags/algebra/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/algebra/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Altitude</title>
-      <link>http://localhost:1313/tags/altitude/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/altitude/</guid>
       <description></description>
     </item>
     <item>
@@ -86,52 +100,10 @@
       <description></description>
     </item>
     <item>
-      <title>Angle-Bisector</title>
-      <link>http://localhost:1313/tags/angle-bisector/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/angle-bisector/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Angles</title>
-      <link>http://localhost:1313/tags/angles/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/angles/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Areas</title>
-      <link>http://localhost:1313/tags/areas/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/areas/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Binomial-Theorem-Coefficient</title>
       <link>http://localhost:1313/tags/binomial-theorem-coefficient/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/binomial-theorem-coefficient/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cevians</title>
-      <link>http://localhost:1313/tags/cevians/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cevians/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Circles</title>
-      <link>http://localhost:1313/tags/circles/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/circles/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Circumradius</title>
-      <link>http://localhost:1313/tags/circumradius/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/circumradius/</guid>
       <description></description>
     </item>
     <item>
@@ -142,17 +114,10 @@
       <description></description>
     </item>
     <item>
-      <title>Concurrency</title>
-      <link>http://localhost:1313/tags/concurrency/</link>
+      <title>Contest Math</title>
+      <link>http://localhost:1313/tags/contest-math/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/concurrency/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Coordinate</title>
-      <link>http://localhost:1313/tags/coordinate/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/coordinate/</guid>
+      <guid>http://localhost:1313/tags/contest-math/</guid>
       <description></description>
     </item>
     <item>
@@ -163,45 +128,10 @@
       <description></description>
     </item>
     <item>
-      <title>Cross-Sections</title>
-      <link>http://localhost:1313/tags/cross-sections/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cross-sections/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cubes</title>
-      <link>http://localhost:1313/tags/cubes/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cubes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cyclic</title>
-      <link>http://localhost:1313/tags/cyclic/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cyclic/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Diagonals</title>
-      <link>http://localhost:1313/tags/diagonals/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/diagonals/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Digit-Sum-Divisibility-11</title>
       <link>http://localhost:1313/tags/digit-sum-divisibility-11/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/digit-sum-divisibility-11/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Distance</title>
-      <link>http://localhost:1313/tags/distance/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/distance/</guid>
       <description></description>
     </item>
     <item>
@@ -226,52 +156,10 @@
       <description></description>
     </item>
     <item>
-      <title>Formulas</title>
-      <link>http://localhost:1313/tags/formulas/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/formulas/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Functional-Equation-Plug-X</title>
       <link>http://localhost:1313/tags/functional-equation-plug-x/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/functional-equation-plug-x/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Geometry</title>
-      <link>http://localhost:1313/tags/geometry/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/geometry/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Infinite-Sums</title>
-      <link>http://localhost:1313/tags/infinite-sums/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/infinite-sums/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Inradius</title>
-      <link>http://localhost:1313/tags/inradius/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/inradius/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Isometries</title>
-      <link>http://localhost:1313/tags/isometries/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/isometries/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Law-of-Sines</title>
-      <link>http://localhost:1313/tags/law-of-sines/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/law-of-sines/</guid>
       <description></description>
     </item>
     <item>
@@ -282,31 +170,10 @@
       <description></description>
     </item>
     <item>
-      <title>Mass-Points</title>
-      <link>http://localhost:1313/tags/mass-points/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/mass-points/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Mathematics</title>
       <link>http://localhost:1313/tags/mathematics/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/mathematics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mid-Segments</title>
-      <link>http://localhost:1313/tags/mid-segments/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/mid-segments/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nested</title>
-      <link>http://localhost:1313/tags/nested/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/nested/</guid>
       <description></description>
     </item>
     <item>
@@ -324,45 +191,10 @@
       <description></description>
     </item>
     <item>
-      <title>Parallel</title>
-      <link>http://localhost:1313/tags/parallel/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/parallel/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Patterns</title>
-      <link>http://localhost:1313/tags/patterns/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/patterns/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Perfect-Square-Discriminant</title>
       <link>http://localhost:1313/tags/perfect-square-discriminant/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/perfect-square-discriminant/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Perimeter</title>
-      <link>http://localhost:1313/tags/perimeter/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/perimeter/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Polygon</title>
-      <link>http://localhost:1313/tags/polygon/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/polygon/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Power-of-Point</title>
-      <link>http://localhost:1313/tags/power-of-point/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/power-of-point/</guid>
       <description></description>
     </item>
     <item>
@@ -373,13 +205,6 @@
       <description></description>
     </item>
     <item>
-      <title>Preparation</title>
-      <link>http://localhost:1313/tags/preparation/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/preparation/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Probability</title>
       <link>http://localhost:1313/tags/probability/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
@@ -387,52 +212,10 @@
       <description></description>
     </item>
     <item>
-      <title>Problem Solving</title>
-      <link>http://localhost:1313/tags/problem-solving/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/problem-solving/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Problem Types</title>
-      <link>http://localhost:1313/tags/problem-types/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/problem-types/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Problems</title>
       <link>http://localhost:1313/tags/problems/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/problems/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Proportionality</title>
-      <link>http://localhost:1313/tags/proportionality/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/proportionality/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Ptolemy</title>
-      <link>http://localhost:1313/tags/ptolemy/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ptolemy/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Pythagorean</title>
-      <link>http://localhost:1313/tags/pythagorean/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/pythagorean/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Quadrilateral</title>
-      <link>http://localhost:1313/tags/quadrilateral/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/quadrilateral/</guid>
       <description></description>
     </item>
     <item>
@@ -450,83 +233,6 @@
       <description></description>
     </item>
     <item>
-      <title>Right-Triangle</title>
-      <link>http://localhost:1313/tags/right-triangle/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/right-triangle/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Right-Triangles</title>
-      <link>http://localhost:1313/tags/right-triangles/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/right-triangles/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Secant</title>
-      <link>http://localhost:1313/tags/secant/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/secant/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Shoelace</title>
-      <link>http://localhost:1313/tags/shoelace/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/shoelace/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Similar</title>
-      <link>http://localhost:1313/tags/similar/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/similar/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Similar-Triangles</title>
-      <link>http://localhost:1313/tags/similar-triangles/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/similar-triangles/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Slope</title>
-      <link>http://localhost:1313/tags/slope/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/slope/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Special-Triangles</title>
-      <link>http://localhost:1313/tags/special-triangles/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/special-triangles/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Strategies</title>
-      <link>http://localhost:1313/tags/strategies/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/strategies/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Study-Materials</title>
-      <link>http://localhost:1313/tags/study-materials/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/study-materials/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Study-Strategy</title>
-      <link>http://localhost:1313/tags/study-strategy/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/study-strategy/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Syllabus</title>
       <link>http://localhost:1313/tags/syllabus/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
@@ -541,27 +247,6 @@
       <description></description>
     </item>
     <item>
-      <title>Symmetry</title>
-      <link>http://localhost:1313/tags/symmetry/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/symmetry/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tangency</title>
-      <link>http://localhost:1313/tags/tangency/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/tangency/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tangent</title>
-      <link>http://localhost:1313/tags/tangent/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/tangent/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Telescoping-Partial-Fraction</title>
       <link>http://localhost:1313/tags/telescoping-partial-fraction/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
@@ -569,52 +254,10 @@
       <description></description>
     </item>
     <item>
-      <title>Theorem</title>
-      <link>http://localhost:1313/tags/theorem/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/theorem/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tips</title>
-      <link>http://localhost:1313/tags/tips/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/tips/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Topic-Guides</title>
-      <link>http://localhost:1313/tags/topic-guides/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/topic-guides/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Transformations</title>
-      <link>http://localhost:1313/tags/transformations/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/transformations/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Trapezoids</title>
-      <link>http://localhost:1313/tags/trapezoids/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/trapezoids/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Triangles</title>
-      <link>http://localhost:1313/tags/triangles/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/triangles/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Triples</title>
-      <link>http://localhost:1313/tags/triples/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/triples/</guid>
+      <title>3d</title>
+      <link>http://localhost:1313/tags/3d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/3d/</guid>
       <description></description>
     </item>
     <item>
@@ -629,6 +272,13 @@
       <link>http://localhost:1313/tags/accuracy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/accuracy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Advanced</title>
+      <link>http://localhost:1313/tags/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/advanced/</guid>
       <description></description>
     </item>
     <item>
@@ -653,6 +303,13 @@
       <description></description>
     </item>
     <item>
+      <title>Angle Bisector</title>
+      <link>http://localhost:1313/tags/angle-bisector/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/angle-bisector/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Angle Bisectors</title>
       <link>http://localhost:1313/tags/angle-bisectors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -664,6 +321,13 @@
       <link>http://localhost:1313/tags/angle-chasing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/angle-chasing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Angles</title>
+      <link>http://localhost:1313/tags/angles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/angles/</guid>
       <description></description>
     </item>
     <item>
@@ -702,6 +366,20 @@
       <description></description>
     </item>
     <item>
+      <title>Areas</title>
+      <link>http://localhost:1313/tags/areas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/areas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Arithmetic</title>
+      <link>http://localhost:1313/tags/arithmetic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/arithmetic/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>At Least</title>
       <link>http://localhost:1313/tags/at-least/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -727,6 +405,13 @@
       <link>http://localhost:1313/tags/balls-in-bins/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/balls-in-bins/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Basic Operations</title>
+      <link>http://localhost:1313/tags/basic-operations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/basic-operations/</guid>
       <description></description>
     </item>
     <item>
@@ -800,6 +485,13 @@
       <description></description>
     </item>
     <item>
+      <title>Cevians</title>
+      <link>http://localhost:1313/tags/cevians/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cevians/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Checklist</title>
       <link>http://localhost:1313/tags/checklist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -825,6 +517,13 @@
       <link>http://localhost:1313/tags/circle-packing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/circle-packing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Circles</title>
+      <link>http://localhost:1313/tags/circles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/circles/</guid>
       <description></description>
     </item>
     <item>
@@ -870,6 +569,13 @@
       <description></description>
     </item>
     <item>
+      <title>Comparative Relationships</title>
+      <link>http://localhost:1313/tags/comparative-relationships/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/comparative-relationships/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Completion</title>
       <link>http://localhost:1313/tags/completion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -888,6 +594,13 @@
       <link>http://localhost:1313/tags/concepts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/concepts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Concurrency</title>
+      <link>http://localhost:1313/tags/concurrency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/concurrency/</guid>
       <description></description>
     </item>
     <item>
@@ -926,14 +639,14 @@
       <description></description>
     </item>
     <item>
-      <title>Contest Math</title>
-      <link>http://localhost:1313/tags/contest-math/</link>
+      <title>Contest Format</title>
+      <link>http://localhost:1313/tags/contest-format/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/contest-math/</guid>
+      <guid>http://localhost:1313/tags/contest-format/</guid>
       <description></description>
     </item>
     <item>
-      <title>Coordinate Geometry</title>
+      <title>Coordinate-Geometry</title>
       <link>http://localhost:1313/tags/coordinate-geometry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/coordinate-geometry/</guid>
@@ -947,10 +660,31 @@
       <description></description>
     </item>
     <item>
+      <title>Countdown</title>
+      <link>http://localhost:1313/tags/countdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/countdown/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cross-Sections</title>
+      <link>http://localhost:1313/tags/cross-sections/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cross-sections/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Cycles</title>
       <link>http://localhost:1313/tags/cycles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/cycles/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cyclic</title>
+      <link>http://localhost:1313/tags/cyclic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cyclic/</guid>
       <description></description>
     </item>
     <item>
@@ -961,10 +695,24 @@
       <description></description>
     </item>
     <item>
+      <title>Data</title>
+      <link>http://localhost:1313/tags/data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/data/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>De Moivre</title>
       <link>http://localhost:1313/tags/de-moivre/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/de-moivre/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Decimals</title>
+      <link>http://localhost:1313/tags/decimals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/decimals/</guid>
       <description></description>
     </item>
     <item>
@@ -1087,6 +835,13 @@
       <description></description>
     </item>
     <item>
+      <title>Error Analysis</title>
+      <link>http://localhost:1313/tags/error-analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/error-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Error Log</title>
       <link>http://localhost:1313/tags/error-log/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1105,13 +860,6 @@
       <link>http://localhost:1313/tags/estimation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/estimation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Euclidean</title>
-      <link>http://localhost:1313/tags/euclidean/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/euclidean/</guid>
       <description></description>
     </item>
     <item>
@@ -1220,6 +968,20 @@
       <description></description>
     </item>
     <item>
+      <title>Formulas</title>
+      <link>http://localhost:1313/tags/formulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/formulas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fractions</title>
+      <link>http://localhost:1313/tags/fractions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/fractions/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Functional Equations</title>
       <link>http://localhost:1313/tags/functional-equations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1238,6 +1000,13 @@
       <link>http://localhost:1313/tags/generating-functions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/generating-functions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Geometric</title>
+      <link>http://localhost:1313/tags/geometric/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/geometric/</guid>
       <description></description>
     </item>
     <item>
@@ -1395,6 +1164,13 @@
       <description></description>
     </item>
     <item>
+      <title>Learning</title>
+      <link>http://localhost:1313/tags/learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/learning/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Lengths</title>
       <link>http://localhost:1313/tags/lengths/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1423,6 +1199,13 @@
       <description></description>
     </item>
     <item>
+      <title>Logic</title>
+      <link>http://localhost:1313/tags/logic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/logic/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Logistics</title>
       <link>http://localhost:1313/tags/logistics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1430,10 +1213,31 @@
       <description></description>
     </item>
     <item>
-      <title>Mastery</title>
-      <link>http://localhost:1313/tags/mastery/</link>
+      <title>Mass Points</title>
+      <link>http://localhost:1313/tags/mass-points/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/mastery/</guid>
+      <guid>http://localhost:1313/tags/mass-points/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MATHCOUNTS</title>
+      <link>http://localhost:1313/tags/mathcounts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mathcounts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mean</title>
+      <link>http://localhost:1313/tags/mean/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mean/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Median</title>
+      <link>http://localhost:1313/tags/median/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/median/</guid>
       <description></description>
     </item>
     <item>
@@ -1458,6 +1262,13 @@
       <description></description>
     </item>
     <item>
+      <title>Middle School</title>
+      <link>http://localhost:1313/tags/middle-school/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/middle-school/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Mindset</title>
       <link>http://localhost:1313/tags/mindset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1476,6 +1287,20 @@
       <link>http://localhost:1313/tags/mistakes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/mistakes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mixture</title>
+      <link>http://localhost:1313/tags/mixture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mixture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mode</title>
+      <link>http://localhost:1313/tags/mode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mode/</guid>
       <description></description>
     </item>
     <item>
@@ -1504,6 +1329,13 @@
       <link>http://localhost:1313/tags/notation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/notation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Number Sense</title>
+      <link>http://localhost:1313/tags/number-sense/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/number-sense/</guid>
       <description></description>
     </item>
     <item>
@@ -1563,6 +1395,20 @@
       <description></description>
     </item>
     <item>
+      <title>Patterns</title>
+      <link>http://localhost:1313/tags/patterns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/patterns/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Percents</title>
+      <link>http://localhost:1313/tags/percents/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/percents/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Performance</title>
       <link>http://localhost:1313/tags/performance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1605,6 +1451,13 @@
       <description></description>
     </item>
     <item>
+      <title>Points</title>
+      <link>http://localhost:1313/tags/points/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/points/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Polar Form</title>
       <link>http://localhost:1313/tags/polar-form/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1633,10 +1486,24 @@
       <description></description>
     </item>
     <item>
+      <title>Power of Point</title>
+      <link>http://localhost:1313/tags/power-of-point/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/power-of-point/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Practice</title>
       <link>http://localhost:1313/tags/practice/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/practice/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Preparation</title>
+      <link>http://localhost:1313/tags/preparation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/preparation/</guid>
       <description></description>
     </item>
     <item>
@@ -1668,10 +1535,31 @@
       <description></description>
     </item>
     <item>
+      <title>Problem Solving</title>
+      <link>http://localhost:1313/tags/problem-solving/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/problem-solving/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Problem-Types</title>
+      <link>http://localhost:1313/tags/problem-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/problem-types/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Projections</title>
       <link>http://localhost:1313/tags/projections/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/projections/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Proportions</title>
+      <link>http://localhost:1313/tags/proportions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/proportions/</guid>
       <description></description>
     </item>
     <item>
@@ -1686,6 +1574,20 @@
       <link>http://localhost:1313/tags/psychology/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/psychology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ptolemy</title>
+      <link>http://localhost:1313/tags/ptolemy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ptolemy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pythagorean</title>
+      <link>http://localhost:1313/tags/pythagorean/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/pythagorean/</guid>
       <description></description>
     </item>
     <item>
@@ -1707,13 +1609,6 @@
       <link>http://localhost:1313/tags/quadrilaterals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/quadrilaterals/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Quick Access</title>
-      <link>http://localhost:1313/tags/quick-access/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/quick-access/</guid>
       <description></description>
     </item>
     <item>
@@ -1752,6 +1647,20 @@
       <description></description>
     </item>
     <item>
+      <title>Rate</title>
+      <link>http://localhost:1313/tags/rate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/rate/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rates</title>
+      <link>http://localhost:1313/tags/rates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/rates/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Rational</title>
       <link>http://localhost:1313/tags/rational/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1763,6 +1672,13 @@
       <link>http://localhost:1313/tags/rational-functions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/rational-functions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rational Numbers</title>
+      <link>http://localhost:1313/tags/rational-numbers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/rational-numbers/</guid>
       <description></description>
     </item>
     <item>
@@ -1780,17 +1696,17 @@
       <description></description>
     </item>
     <item>
+      <title>Reasoning</title>
+      <link>http://localhost:1313/tags/reasoning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/reasoning/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Recurrences</title>
       <link>http://localhost:1313/tags/recurrences/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/recurrences/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Reference</title>
-      <link>http://localhost:1313/tags/reference/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/reference/</guid>
       <description></description>
     </item>
     <item>
@@ -1899,6 +1815,13 @@
       <description></description>
     </item>
     <item>
+      <title>Sets</title>
+      <link>http://localhost:1313/tags/sets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sets/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Setup</title>
       <link>http://localhost:1313/tags/setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1906,10 +1829,31 @@
       <description></description>
     </item>
     <item>
+      <title>Shapes</title>
+      <link>http://localhost:1313/tags/shapes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/shapes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shoelace</title>
+      <link>http://localhost:1313/tags/shoelace/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/shoelace/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Shortcuts</title>
       <link>http://localhost:1313/tags/shortcuts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/shortcuts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Similar Triangles</title>
+      <link>http://localhost:1313/tags/similar-triangles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/similar-triangles/</guid>
       <description></description>
     </item>
     <item>
@@ -1941,10 +1885,31 @@
       <description></description>
     </item>
     <item>
+      <title>Solid-Geometry</title>
+      <link>http://localhost:1313/tags/solid-geometry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/solid-geometry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Solutions</title>
+      <link>http://localhost:1313/tags/solutions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/solutions/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Spiral Similarity</title>
       <link>http://localhost:1313/tags/spiral-similarity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/spiral-similarity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sprint</title>
+      <link>http://localhost:1313/tags/sprint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sprint/</guid>
       <description></description>
     </item>
     <item>
@@ -1962,10 +1927,24 @@
       <description></description>
     </item>
     <item>
+      <title>Statistics</title>
+      <link>http://localhost:1313/tags/statistics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/statistics/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Stewart</title>
       <link>http://localhost:1313/tags/stewart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/stewart/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Strategies</title>
+      <link>http://localhost:1313/tags/strategies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/strategies/</guid>
       <description></description>
     </item>
     <item>
@@ -1990,6 +1969,13 @@
       <description></description>
     </item>
     <item>
+      <title>Study Plan</title>
+      <link>http://localhost:1313/tags/study-plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/study-plan/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Substitutions</title>
       <link>http://localhost:1313/tags/substitutions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1997,10 +1983,31 @@
       <description></description>
     </item>
     <item>
+      <title>Subtopics</title>
+      <link>http://localhost:1313/tags/subtopics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/subtopics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Surface-Area</title>
+      <link>http://localhost:1313/tags/surface-area/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/surface-area/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Symbols</title>
       <link>http://localhost:1313/tags/symbols/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/symbols/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Symmetry</title>
+      <link>http://localhost:1313/tags/symmetry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/symmetry/</guid>
       <description></description>
     </item>
     <item>
@@ -2025,6 +2032,13 @@
       <description></description>
     </item>
     <item>
+      <title>Tangency</title>
+      <link>http://localhost:1313/tags/tangency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/tangency/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Tangent Chains</title>
       <link>http://localhost:1313/tags/tangent-chains/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2036,6 +2050,27 @@
       <link>http://localhost:1313/tags/tangents/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/tangents/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Target</title>
+      <link>http://localhost:1313/tags/target/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/target/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Team</title>
+      <link>http://localhost:1313/tags/team/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/team/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Techniques</title>
+      <link>http://localhost:1313/tags/techniques/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/techniques/</guid>
       <description></description>
     </item>
     <item>
@@ -2060,6 +2095,13 @@
       <description></description>
     </item>
     <item>
+      <title>Time</title>
+      <link>http://localhost:1313/tags/time/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/time/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Time Management</title>
       <link>http://localhost:1313/tags/time-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2071,6 +2113,13 @@
       <link>http://localhost:1313/tags/timing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/timing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tips</title>
+      <link>http://localhost:1313/tags/tips/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/tips/</guid>
       <description></description>
     </item>
     <item>
@@ -2102,10 +2151,24 @@
       <description></description>
     </item>
     <item>
+      <title>Transformations</title>
+      <link>http://localhost:1313/tags/transformations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/transformations/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Triage</title>
       <link>http://localhost:1313/tags/triage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/triage/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Triangles</title>
+      <link>http://localhost:1313/tags/triangles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/triangles/</guid>
       <description></description>
     </item>
     <item>
@@ -2130,10 +2193,24 @@
       <description></description>
     </item>
     <item>
+      <title>Variables</title>
+      <link>http://localhost:1313/tags/variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/variables/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Vectors</title>
       <link>http://localhost:1313/tags/vectors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/vectors/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Venn-Diagrams</title>
+      <link>http://localhost:1313/tags/venn-diagrams/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/venn-diagrams/</guid>
       <description></description>
     </item>
     <item>
@@ -2158,6 +2235,20 @@
       <description></description>
     </item>
     <item>
+      <title>Visualization</title>
+      <link>http://localhost:1313/tags/visualization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/visualization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Volume</title>
+      <link>http://localhost:1313/tags/volume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/volume/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Volumes</title>
       <link>http://localhost:1313/tags/volumes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2179,7 +2270,7 @@
       <description></description>
     </item>
     <item>
-      <title>Word Problems</title>
+      <title>Word-Problems</title>
       <link>http://localhost:1313/tags/word-problems/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/word-problems/</guid>
@@ -2190,6 +2281,13 @@
       <link>http://localhost:1313/tags/words/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/words/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Work</title>
+      <link>http://localhost:1313/tags/work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/work/</guid>
       <description></description>
     </item>
   </channel>

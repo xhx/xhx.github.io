@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Geometry — Problem Types | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="MATHCOUNTS, Geometry, Problem Types, Patterns, Solutions">
+<meta name="description" content="Common problem patterns and systematic solution approaches for geometry problems in MATHCOUNTS.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/mathcounts/geometry/problem-types/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/mathcounts/geometry/problem-types/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/mathcounts/">MATHCOUNTS Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/mathcounts/geometry/">Geometry</a></div>
+    <div class="post-meta">9 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-geometry--problem-types" aria-label="📐 Geometry — Problem Types">📐 Geometry — Problem Types</a><ul>
+                        
+                <li>
+                    <a href="#triangle-problems" aria-label="Triangle Problems">Triangle Problems</a><ul>
+                        
+                <li>
+                    <a href="#angle-problems" aria-label="Angle Problems">Angle Problems</a></li>
+                <li>
+                    <a href="#side-length-problems" aria-label="Side Length Problems">Side Length Problems</a></li>
+                <li>
+                    <a href="#area-problems" aria-label="Area Problems">Area Problems</a></li></ul>
+                </li>
+                <li>
+                    <a href="#quadrilateral-problems" aria-label="Quadrilateral Problems">Quadrilateral Problems</a><ul>
+                        
+                <li>
+                    <a href="#rectangle-problems" aria-label="Rectangle Problems">Rectangle Problems</a></li>
+                <li>
+                    <a href="#square-problems" aria-label="Square Problems">Square Problems</a></li>
+                <li>
+                    <a href="#parallelogram-problems" aria-label="Parallelogram Problems">Parallelogram Problems</a></li>
+                <li>
+                    <a href="#trapezoid-problems" aria-label="Trapezoid Problems">Trapezoid Problems</a></li></ul>
+                </li>
+                <li>
+                    <a href="#circle-problems" aria-label="Circle Problems">Circle Problems</a><ul>
+                        
+                <li>
+                    <a href="#basic-circle-problems" aria-label="Basic Circle Problems">Basic Circle Problems</a></li>
+                <li>
+                    <a href="#chord-problems" aria-label="Chord Problems">Chord Problems</a></li>
+                <li>
+                    <a href="#tangent-problems" aria-label="Tangent Problems">Tangent Problems</a></li></ul>
+                </li>
+                <li>
+                    <a href="#similarity-and-congruence-problems" aria-label="Similarity and Congruence Problems">Similarity and Congruence Problems</a><ul>
+                        
+                <li>
+                    <a href="#similarity-problems" aria-label="Similarity Problems">Similarity Problems</a></li>
+                <li>
+                    <a href="#congruence-problems" aria-label="Congruence Problems">Congruence Problems</a></li></ul>
+                </li>
+                <li>
+                    <a href="#area-and-perimeter-problems" aria-label="Area and Perimeter Problems">Area and Perimeter Problems</a><ul>
+                        
+                <li>
+                    <a href="#basic-area-problems" aria-label="Basic Area Problems">Basic Area Problems</a></li>
+                <li>
+                    <a href="#composite-area-problems" aria-label="Composite Area Problems">Composite Area Problems</a></li>
+                <li>
+                    <a href="#perimeter-problems" aria-label="Perimeter Problems">Perimeter Problems</a></li></ul>
+                </li>
+                <li>
+                    <a href="#volume-and-surface-area-problems" aria-label="Volume and Surface Area Problems">Volume and Surface Area Problems</a><ul>
+                        
+                <li>
+                    <a href="#basic-volume-problems" aria-label="Basic Volume Problems">Basic Volume Problems</a></li>
+                <li>
+                    <a href="#surface-area-problems" aria-label="Surface Area Problems">Surface Area Problems</a></li></ul>
+                </li>
+                <li>
+                    <a href="#coordinate-geometry-problems" aria-label="Coordinate Geometry Problems">Coordinate Geometry Problems</a><ul>
+                        
+                <li>
+                    <a href="#distance-problems" aria-label="Distance Problems">Distance Problems</a></li>
+                <li>
+                    <a href="#midpoint-problems" aria-label="Midpoint Problems">Midpoint Problems</a></li>
+                <li>
+                    <a href="#slope-problems" aria-label="Slope Problems">Slope Problems</a></li></ul>
+                </li>
+                <li>
+                    <a href="#common-mistakes-and-fixes" aria-label="Common Mistakes and Fixes">Common Mistakes and Fixes</a><ul>
+                        
+                <li>
+                    <a href="#formula-mistakes" aria-label="Formula Mistakes">Formula Mistakes</a></li>
+                <li>
+                    <a href="#angle-mistakes" aria-label="Angle Mistakes">Angle Mistakes</a></li>
+                <li>
+                    <a href="#coordinate-mistakes" aria-label="Coordinate Mistakes">Coordinate Mistakes</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-geometry--problem-types">📐 Geometry — Problem Types<a hidden class="anchor" aria-hidden="true" href="#-geometry--problem-types">#</a></h1>
+<p>Master the common problem patterns and systematic solution approaches for geometry problems.</p>
+<h2 id="triangle-problems">Triangle Problems<a hidden class="anchor" aria-hidden="true" href="#triangle-problems">#</a></h2>
+<h3 id="angle-problems">Angle Problems<a hidden class="anchor" aria-hidden="true" href="#angle-problems">#</a></h3>
+<p><strong>Recognition</strong>: Questions asking for angle measures
+<strong>Template</strong>:</p>
+<ol>
+<li>Identify given angles</li>
+<li>Use angle sum property (180°)</li>
+<li>Use angle relationships</li>
+<li>Calculate unknown angle</li>
+</ol>
+<p><strong>Example</strong>: In triangle ABC, angle A = 60° and angle B = 80°. Find angle C.</p>
+<ol>
+<li><strong>Given</strong>: ∠A = 60°, ∠B = 80°</li>
+<li><strong>Property</strong>: Sum of angles = 180°</li>
+<li><strong>Calculation</strong>: ∠C = 180° - 60° - 80° = 40°</li>
+<li><strong>Answer</strong>: 40°</li>
+</ol>
+<p><strong>Common variations</strong>:</p>
+<ul>
+<li>Find missing angle in triangle</li>
+<li>Find angle in isosceles triangle</li>
+<li>Find angle in right triangle</li>
+<li>Find angle using exterior angle theorem</li>
+</ul>
+<h3 id="side-length-problems">Side Length Problems<a hidden class="anchor" aria-hidden="true" href="#side-length-problems">#</a></h3>
+<p><strong>Recognition</strong>: Questions asking for side lengths
+<strong>Template</strong>:</p>
+<ol>
+<li>Identify given information</li>
+<li>Use appropriate theorem or formula</li>
+<li>Calculate unknown side</li>
+<li>Check answer</li>
+</ol>
+<p><strong>Example</strong>: In right triangle ABC, legs are 3 and 4. Find hypotenuse.</p>
+<ol>
+<li><strong>Given</strong>: Legs = 3, 4</li>
+<li><strong>Theorem</strong>: Pythagorean theorem</li>
+<li><strong>Calculation</strong>: c = √(3² + 4²) = √25 = 5</li>
+<li><strong>Answer</strong>: 5</li>
+</ol>
+<p><strong>Common variations</strong>:</p>
+<ul>
+<li>Find hypotenuse using Pythagorean theorem</li>
+<li>Find leg using Pythagorean theorem</li>
+<li>Find side using special right triangles</li>
+<li>Find side using similarity</li>
+</ul>
+<h3 id="area-problems">Area Problems<a hidden class="anchor" aria-hidden="true" href="#area-problems">#</a></h3>
+<p><strong>Recognition</strong>: Questions asking for triangle area
+<strong>Template</strong>:</p>
+<ol>
+<li>Identify base and height</li>
+<li>Use area formula</li>
+<li>Calculate area</li>
+<li>Check answer</li>
+</ol>
+<p><strong>Example</strong>: Triangle with base 6 and height 4. Find area.</p>
+<ol>
+<li><strong>Given</strong>: Base = 6, height = 4</li>
+<li><strong>Formula</strong>: A = (1/2) × base × height</li>
+<li><strong>Calculation</strong>: A = (1/2) × 6 × 4 = 12</li>
+<li><strong>Answer</strong>: 12</li>
+</ol>
+<p><strong>Common variations</strong>:</p>
+<ul>
+<li>Find area using base and height</li>
+<li>Find area using Heron&rsquo;s formula</li>
+<li>Find area using coordinates</li>
+<li>Find area using similarity</li>
+</ul>
+<h2 id="quadrilateral-problems">Quadrilateral Problems<a hidden class="anchor" aria-hidden="true" href="#quadrilateral-problems">#</a></h2>
+<h3 id="rectangle-problems">Rectangle Problems<a hidden class="anchor" aria-hidden="true" href="#rectangle-problems">#</a></h3>
+<p><strong>Recognition</strong>: Questions about rectangles
+<strong>Template</strong>:</p>
+<ol>
+<li>Identify given information</li>
+<li>Use rectangle properties</li>
+<li>Apply appropriate formula</li>
+<li>Calculate result</li>
+</ol>
+<p><strong>Example</strong>: Rectangle has length 6 and width 4. Find area and perimeter.</p>
+<ol>
+<li><strong>Given</strong>: Length = 6, width = 4</li>
+<li><strong>Properties</strong>: Opposite sides equal, four right angles</li>
+<li><strong>Formulas</strong>: A = l × w, P = 2(l + w)</li>
+<li><strong>Calculations</strong>: A = 6 × 4 = 24, P = 2(6 + 4) = 20</li>
+<li><strong>Answer</strong>: Area = 24, Perimeter = 20</li>
+</ol>
+<p><strong>Common variations</strong>:</p>
+<ul>
+<li>Find area and perimeter</li>
+<li>Find missing dimension</li>
+<li>Find diagonal length</li>
+<li>Find area using coordinates</li>
+</ul>
+<h3 id="square-problems">Square Problems<a hidden class="anchor" aria-hidden="true" href="#square-problems">#</a></h3>
+<p><strong>Recognition</strong>: Questions about squares
+<strong>Template</strong>:</p>
+<ol>
+<li>Identify given information</li>
+<li>Use square properties</li>
+<li>Apply appropriate formula</li>
+<li>Calculate result</li>
+</ol>
+<p><strong>Example</strong>: Square has side 5. Find area and perimeter.</p>
+<ol>
+<li><strong>Given</strong>: Side = 5</li>
+<li><strong>Properties</strong>: All sides equal, four right angles</li>
+<li><strong>Formulas</strong>: A = s², P = 4s</li>
+<li><strong>Calculations</strong>: A = 5² = 25, P = 4 × 5 = 20</li>
+<li><strong>Answer</strong>: Area = 25, Perimeter = 20</li>
+</ol>
+<p><strong>Common variations</strong>:</p>
+<ul>
+<li>Find area and perimeter</li>
+<li>Find side length from area</li>
+<li>Find diagonal length</li>
+<li>Find area using coordinates</li>
+</ul>
+<h3 id="parallelogram-problems">Parallelogram Problems<a hidden class="anchor" aria-hidden="true" href="#parallelogram-problems">#</a></h3>
+<p><strong>Recognition</strong>: Questions about parallelograms
+<strong>Template</strong>:</p>
+<ol>
+<li>Identify given information</li>
+<li>Use parallelogram properties</li>
+<li>Apply appropriate formula</li>
+<li>Calculate result</li>
+</ol>
+<p><strong>Example</strong>: Parallelogram has base 8 and height 5. Find area.</p>
+<ol>
+<li><strong>Given</strong>: Base = 8, height = 5</li>
+<li><strong>Properties</strong>: Opposite sides equal and parallel</li>
+<li><strong>Formula</strong>: A = base × height</li>
+<li><strong>Calculation</strong>: A = 8 × 5 = 40</li>
+<li><strong>Answer</strong>: 40</li>
+</ol>
+<p><strong>Common variations</strong>:</p>
+<ul>
+<li>Find area using base and height</li>
+<li>Find missing dimension</li>
+<li>Find angle measures</li>
+<li>Find area using coordinates</li>
+</ul>
+<h3 id="trapezoid-problems">Trapezoid Problems<a hidden class="anchor" aria-hidden="true" href="#trapezoid-problems">#</a></h3>
+<p><strong>Recognition</strong>: Questions about trapezoids
+<strong>Template</strong>:</p>
+<ol>
+<li>Identify given information</li>
+<li>Use trapezoid properties</li>
+<li>Apply appropriate formula</li>
+<li>Calculate result</li>
+</ol>
+<p><strong>Example</strong>: Trapezoid has bases 6 and 10, height 4. Find area.</p>
+<ol>
+<li><strong>Given</strong>: Base₁ = 6, base₂ = 10, height = 4</li>
+<li><strong>Properties</strong>: One pair of parallel sides</li>
+<li><strong>Formula</strong>: A = (1/2) × (base₁ + base₂) × height</li>
+<li><strong>Calculation</strong>: A = (1/2) × (6 + 10) × 4 = 32</li>
+<li><strong>Answer</strong>: 32</li>
+</ol>
+<p><strong>Common variations</strong>:</p>
+<ul>
+<li>Find area using bases and height</li>
+<li>Find missing dimension</li>
+<li>Find angle measures</li>
+<li>Find area using coordinates</li>
+</ul>
+<h2 id="circle-problems">Circle Problems<a hidden class="anchor" aria-hidden="true" href="#circle-problems">#</a></h2>
+<h3 id="basic-circle-problems">Basic Circle Problems<a hidden class="anchor" aria-hidden="true" href="#basic-circle-problems">#</a></h3>
+<p><strong>Recognition</strong>: Questions about circles
+<strong>Template</strong>:</p>
+<ol>
+<li>Identify given information</li>
+<li>Use circle formulas</li>
+<li>Calculate result</li>
+<li>Check answer</li>
+</ol>
+<p><strong>Example</strong>: Circle has radius 5. Find circumference and area.</p>
+<ol>
+<li><strong>Given</strong>: Radius = 5</li>
+<li><strong>Formulas</strong>: C = 2πr, A = πr²</li>
+<li><strong>Calculations</strong>: C = 2π × 5 = 10π, A = π × 5² = 25π</li>
+<li><strong>Answer</strong>: Circumference = 10π, Area = 25π</li>
+</ol>
+<p><strong>Common variations</strong>:</p>
+<ul>
+<li>Find circumference and area</li>
+<li>Find radius from circumference</li>
+<li>Find radius from area</li>
+<li>Find diameter from radius</li>
+</ul>
+<h3 id="chord-problems">Chord Problems<a hidden class="anchor" aria-hidden="true" href="#chord-problems">#</a></h3>
+<p><strong>Recognition</strong>: Questions about chords
+<strong>Template</strong>:</p>
+<ol>
+<li>Identify given information</li>
+<li>Use chord properties</li>
+<li>Apply appropriate formula</li>
+<li>Calculate result</li>
+</ol>
+<p><strong>Example</strong>: Chord is 8 units long and 3 units from center. Find radius.</p>
+<ol>
+<li><strong>Given</strong>: Chord length = 8, distance from center = 3</li>
+<li><strong>Property</strong>: Perpendicular from center bisects chord</li>
+<li><strong>Calculation</strong>: Half-chord = 4, radius = √(4² + 3²) = 5</li>
+<li><strong>Answer</strong>: 5</li>
+</ol>
+<p><strong>Common variations</strong>:</p>
+<ul>
+<li>Find radius using chord</li>
+<li>Find chord length using radius</li>
+<li>Find distance from center</li>
+<li>Find chord using power of a point</li>
+</ul>
+<h3 id="tangent-problems">Tangent Problems<a hidden class="anchor" aria-hidden="true" href="#tangent-problems">#</a></h3>
+<p><strong>Recognition</strong>: Questions about tangents
+<strong>Template</strong>:</p>
+<ol>
+<li>Identify given information</li>
+<li>Use tangent properties</li>
+<li>Apply appropriate formula</li>
+<li>Calculate result</li>
+</ol>
+<p><strong>Example</strong>: Tangent is 6 units long and secant is 9 units long. Find external part.</p>
+<ol>
+<li><strong>Given</strong>: Tangent = 6, secant = 9</li>
+<li><strong>Property</strong>: Power of a point</li>
+<li><strong>Calculation</strong>: 6² = 9 × external part, so external part = 4</li>
+<li><strong>Answer</strong>: 4</li>
+</ol>
+<p><strong>Common variations</strong>:</p>
+<ul>
+<li>Find tangent length</li>
+<li>Find secant length</li>
+<li>Find external part</li>
+<li>Find radius using tangent</li>
+</ul>
+<h2 id="similarity-and-congruence-problems">Similarity and Congruence Problems<a hidden class="anchor" aria-hidden="true" href="#similarity-and-congruence-problems">#</a></h2>
+<h3 id="similarity-problems">Similarity Problems<a hidden class="anchor" aria-hidden="true" href="#similarity-problems">#</a></h3>
+<p><strong>Recognition</strong>: Questions about similar figures
+<strong>Template</strong>:</p>
+<ol>
+<li>Identify similar figures</li>
+<li>Find scale factor</li>
+<li>Use similarity properties</li>
+<li>Calculate result</li>
+</ol>
+<p><strong>Example</strong>: Two similar triangles have sides 3, 4, 5 and 6, 8, 10. Find scale factor.</p>
+<ol>
+<li><strong>Given</strong>: Sides 3, 4, 5 and 6, 8, 10</li>
+<li><strong>Scale factor</strong>: 6/3 = 2</li>
+<li><strong>Verification</strong>: 4 × 2 = 8, 5 × 2 = 10</li>
+<li><strong>Answer</strong>: 2</li>
+</ol>
+<p><strong>Common variations</strong>:</p>
+<ul>
+<li>Find scale factor</li>
+<li>Find missing side using similarity</li>
+<li>Find area ratio using similarity</li>
+<li>Find perimeter ratio using similarity</li>
+</ul>
+<h3 id="congruence-problems">Congruence Problems<a hidden class="anchor" aria-hidden="true" href="#congruence-problems">#</a></h3>
+<p><strong>Recognition</strong>: Questions about congruent figures
+<strong>Template</strong>:</p>
+<ol>
+<li>Identify congruent figures</li>
+<li>Use congruence properties</li>
+<li>Apply appropriate formula</li>
+<li>Calculate result</li>
+</ol>
+<p><strong>Example</strong>: Two triangles have sides 3, 4, 5 and 3, 4, 5. Are they congruent?</p>
+<ol>
+<li><strong>Given</strong>: Sides 3, 4, 5 and 3, 4, 5</li>
+<li><strong>Test</strong>: SSS (all sides equal)</li>
+<li><strong>Conclusion</strong>: Yes, they are congruent</li>
+<li><strong>Answer</strong>: Yes</li>
+</ol>
+<p><strong>Common variations</strong>:</p>
+<ul>
+<li>Determine if figures are congruent</li>
+<li>Find missing side using congruence</li>
+<li>Find angle measure using congruence</li>
+<li>Find area using congruence</li>
+</ul>
+<h2 id="area-and-perimeter-problems">Area and Perimeter Problems<a hidden class="anchor" aria-hidden="true" href="#area-and-perimeter-problems">#</a></h2>
+<h3 id="basic-area-problems">Basic Area Problems<a hidden class="anchor" aria-hidden="true" href="#basic-area-problems">#</a></h3>
+<p><strong>Recognition</strong>: Questions asking for area
+<strong>Template</strong>:</p>
+<ol>
+<li>Identify the shape</li>
+<li>Use appropriate area formula</li>
+<li>Calculate area</li>
+<li>Check answer</li>
+</ol>
+<p><strong>Example</strong>: Rectangle has length 6 and width 4. Find area.</p>
+<ol>
+<li><strong>Shape</strong>: Rectangle</li>
+<li><strong>Formula</strong>: A = length × width</li>
+<li><strong>Calculation</strong>: A = 6 × 4 = 24</li>
+<li><strong>Answer</strong>: 24</li>
+</ol>
+<p><strong>Common variations</strong>:</p>
+<ul>
+<li>Find area of basic shapes</li>
+<li>Find area using coordinates</li>
+<li>Find area using similarity</li>
+<li>Find area using composite figures</li>
+</ul>
+<h3 id="composite-area-problems">Composite Area Problems<a hidden class="anchor" aria-hidden="true" href="#composite-area-problems">#</a></h3>
+<p><strong>Recognition</strong>: Questions about composite figures
+<strong>Template</strong>:</p>
+<ol>
+<li>Break into basic shapes</li>
+<li>Find area of each shape</li>
+<li>Add areas together</li>
+<li>Check answer</li>
+</ol>
+<p><strong>Example</strong>: L-shaped figure with rectangle 6×4 and triangle with base 4 and height 3. Find total area.</p>
+<ol>
+<li><strong>Shapes</strong>: Rectangle and triangle</li>
+<li><strong>Areas</strong>: Rectangle = 6×4 = 24, Triangle = (1/2)×4×3 = 6</li>
+<li><strong>Total</strong>: 24 + 6 = 30</li>
+<li><strong>Answer</strong>: 30</li>
+</ol>
+<p><strong>Common variations</strong>:</p>
+<ul>
+<li>Find area of composite figures</li>
+<li>Find area using subtraction</li>
+<li>Find area using addition</li>
+<li>Find area using coordinates</li>
+</ul>
+<h3 id="perimeter-problems">Perimeter Problems<a hidden class="anchor" aria-hidden="true" href="#perimeter-problems">#</a></h3>
+<p><strong>Recognition</strong>: Questions asking for perimeter
+<strong>Template</strong>:</p>
+<ol>
+<li>Identify the shape</li>
+<li>Use appropriate perimeter formula</li>
+<li>Calculate perimeter</li>
+<li>Check answer</li>
+</ol>
+<p><strong>Example</strong>: Rectangle has length 6 and width 4. Find perimeter.</p>
+<ol>
+<li><strong>Shape</strong>: Rectangle</li>
+<li><strong>Formula</strong>: P = 2(length + width)</li>
+<li><strong>Calculation</strong>: P = 2(6 + 4) = 20</li>
+<li><strong>Answer</strong>: 20</li>
+</ol>
+<p><strong>Common variations</strong>:</p>
+<ul>
+<li>Find perimeter of basic shapes</li>
+<li>Find perimeter using coordinates</li>
+<li>Find perimeter using similarity</li>
+<li>Find perimeter using composite figures</li>
+</ul>
+<h2 id="volume-and-surface-area-problems">Volume and Surface Area Problems<a hidden class="anchor" aria-hidden="true" href="#volume-and-surface-area-problems">#</a></h2>
+<h3 id="basic-volume-problems">Basic Volume Problems<a hidden class="anchor" aria-hidden="true" href="#basic-volume-problems">#</a></h3>
+<p><strong>Recognition</strong>: Questions asking for volume
+<strong>Template</strong>:</p>
+<ol>
+<li>Identify the shape</li>
+<li>Use appropriate volume formula</li>
+<li>Calculate volume</li>
+<li>Check answer</li>
+</ol>
+<p><strong>Example</strong>: Rectangular prism has length 6, width 4, height 3. Find volume.</p>
+<ol>
+<li><strong>Shape</strong>: Rectangular prism</li>
+<li><strong>Formula</strong>: V = length × width × height</li>
+<li><strong>Calculation</strong>: V = 6 × 4 × 3 = 72</li>
+<li><strong>Answer</strong>: 72</li>
+</ol>
+<p><strong>Common variations</strong>:</p>
+<ul>
+<li>Find volume of basic shapes</li>
+<li>Find volume using coordinates</li>
+<li>Find volume using similarity</li>
+<li>Find volume using composite solids</li>
+</ul>
+<h3 id="surface-area-problems">Surface Area Problems<a hidden class="anchor" aria-hidden="true" href="#surface-area-problems">#</a></h3>
+<p><strong>Recognition</strong>: Questions asking for surface area
+<strong>Template</strong>:</p>
+<ol>
+<li>Identify the shape</li>
+<li>Use appropriate surface area formula</li>
+<li>Calculate surface area</li>
+<li>Check answer</li>
+</ol>
+<p><strong>Example</strong>: Cube has side 4. Find surface area.</p>
+<ol>
+<li><strong>Shape</strong>: Cube</li>
+<li><strong>Formula</strong>: SA = 6 × side²</li>
+<li><strong>Calculation</strong>: SA = 6 × 4² = 96</li>
+<li><strong>Answer</strong>: 96</li>
+</ol>
+<p><strong>Common variations</strong>:</p>
+<ul>
+<li>Find surface area of basic shapes</li>
+<li>Find surface area using coordinates</li>
+<li>Find surface area using similarity</li>
+<li>Find surface area using composite solids</li>
+</ul>
+<h2 id="coordinate-geometry-problems">Coordinate Geometry Problems<a hidden class="anchor" aria-hidden="true" href="#coordinate-geometry-problems">#</a></h2>
+<h3 id="distance-problems">Distance Problems<a hidden class="anchor" aria-hidden="true" href="#distance-problems">#</a></h3>
+<p><strong>Recognition</strong>: Questions asking for distance between points
+<strong>Template</strong>:</p>
+<ol>
+<li>Identify the points</li>
+<li>Use distance formula</li>
+<li>Calculate distance</li>
+<li>Check answer</li>
+</ol>
+<p><strong>Example</strong>: Find distance between (1, 2) and (4, 6).</p>
+<ol>
+<li><strong>Points</strong>: (1, 2) and (4, 6)</li>
+<li><strong>Formula</strong>: d = √[(x₂ - x₁)² + (y₂ - y₁)²]</li>
+<li><strong>Calculation</strong>: d = √[(4-1)² + (6-2)²] = √[9 + 16] = 5</li>
+<li><strong>Answer</strong>: 5</li>
+</ol>
+<p><strong>Common variations</strong>:</p>
+<ul>
+<li>Find distance between two points</li>
+<li>Find distance from point to line</li>
+<li>Find distance using coordinates</li>
+<li>Find distance using similarity</li>
+</ul>
+<h3 id="midpoint-problems">Midpoint Problems<a hidden class="anchor" aria-hidden="true" href="#midpoint-problems">#</a></h3>
+<p><strong>Recognition</strong>: Questions asking for midpoint
+<strong>Template</strong>:</p>
+<ol>
+<li>Identify the points</li>
+<li>Use midpoint formula</li>
+<li>Calculate midpoint</li>
+<li>Check answer</li>
+</ol>
+<p><strong>Example</strong>: Find midpoint of (1, 2) and (4, 6).</p>
+<ol>
+<li><strong>Points</strong>: (1, 2) and (4, 6)</li>
+<li><strong>Formula</strong>: M = ((x₁ + x₂)/2, (y₁ + y₂)/2)</li>
+<li><strong>Calculation</strong>: M = ((1+4)/2, (2+6)/2) = (2.5, 4)</li>
+<li><strong>Answer</strong>: (2.5, 4)</li>
+</ol>
+<p><strong>Common variations</strong>:</p>
+<ul>
+<li>Find midpoint of two points</li>
+<li>Find midpoint using coordinates</li>
+<li>Find midpoint using similarity</li>
+<li>Find midpoint using congruence</li>
+</ul>
+<h3 id="slope-problems">Slope Problems<a hidden class="anchor" aria-hidden="true" href="#slope-problems">#</a></h3>
+<p><strong>Recognition</strong>: Questions asking for slope
+<strong>Template</strong>:</p>
+<ol>
+<li>Identify the points</li>
+<li>Use slope formula</li>
+<li>Calculate slope</li>
+<li>Check answer</li>
+</ol>
+<p><strong>Example</strong>: Find slope of line through (1, 2) and (4, 6).</p>
+<ol>
+<li><strong>Points</strong>: (1, 2) and (4, 6)</li>
+<li><strong>Formula</strong>: m = (y₂ - y₁)/(x₂ - x₁)</li>
+<li><strong>Calculation</strong>: m = (6-2)/(4-1) = 4/3</li>
+<li><strong>Answer</strong>: 4/3</li>
+</ol>
+<p><strong>Common variations</strong>:</p>
+<ul>
+<li>Find slope of line</li>
+<li>Find slope using coordinates</li>
+<li>Find slope using similarity</li>
+<li>Find slope using congruence</li>
+</ul>
+<h2 id="common-mistakes-and-fixes">Common Mistakes and Fixes<a hidden class="anchor" aria-hidden="true" href="#common-mistakes-and-fixes">#</a></h2>
+<h3 id="formula-mistakes">Formula Mistakes<a hidden class="anchor" aria-hidden="true" href="#formula-mistakes">#</a></h3>
+<p><strong>Mistake</strong>: Using wrong formula for area
+<strong>Fix</strong>: Always identify the shape first, then use correct formula</p>
+<p><strong>Mistake</strong>: Forgetting the (1/2) for triangle area
+<strong>Fix</strong>: Always include (1/2) for triangle area</p>
+<p><strong>Mistake</strong>: Confusing circumference and area formulas
+<strong>Fix</strong>: Circumference has 2π, area has π²</p>
+<h3 id="angle-mistakes">Angle Mistakes<a hidden class="anchor" aria-hidden="true" href="#angle-mistakes">#</a></h3>
+<p><strong>Mistake</strong>: Forgetting that angles in triangle sum to 180°
+<strong>Fix</strong>: Always remember that angles in triangle sum to 180°</p>
+<p><strong>Mistake</strong>: Confusing complementary and supplementary
+<strong>Fix</strong>: Complementary adds to 90°, supplementary adds to 180°</p>
+<h3 id="coordinate-mistakes">Coordinate Mistakes<a hidden class="anchor" aria-hidden="true" href="#coordinate-mistakes">#</a></h3>
+<p><strong>Mistake</strong>: Forgetting to square differences in distance formula
+<strong>Fix</strong>: Always square both differences before adding</p>
+<p><strong>Mistake</strong>: Forgetting to divide by 2 in midpoint formula
+<strong>Fix</strong>: Always divide both coordinates by 2</p>
+<hr>
+<p><strong>Next</strong>: <a href="formulas">Formulas</a><br>
+<strong>Previous</strong>: <a href="topics">Topics</a><br>
+<strong>Back to</strong>: <a href="./">Geometry</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/mathcounts/">MATHCOUNTS</a></li>
+      <li><a href="http://localhost:1313/tags/geometry/">Geometry</a></li>
+      <li><a href="http://localhost:1313/tags/problem-types/">Problem-Types</a></li>
+      <li><a href="http://localhost:1313/tags/patterns/">Patterns</a></li>
+      <li><a href="http://localhost:1313/tags/solutions/">Solutions</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

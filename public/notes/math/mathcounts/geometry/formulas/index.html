@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Geometry — Formulas | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="MATHCOUNTS, Geometry, Formulas, Shortcuts, Shapes">
+<meta name="description" content="Essential formulas and shortcuts for working with geometry in MATHCOUNTS.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/mathcounts/geometry/formulas/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/mathcounts/geometry/formulas/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/mathcounts/">MATHCOUNTS Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/mathcounts/geometry/">Geometry</a></div>
+    <div class="post-meta">7 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-geometry--formulas" aria-label="📐 Geometry — Formulas">📐 Geometry — Formulas</a><ul>
+                        
+                <li>
+                    <a href="#triangle-formulas" aria-label="Triangle Formulas">Triangle Formulas</a><ul>
+                        
+                <li>
+                    <a href="#basic-properties" aria-label="Basic Properties">Basic Properties</a></li>
+                <li>
+                    <a href="#pythagorean-theorem" aria-label="Pythagorean Theorem">Pythagorean Theorem</a></li>
+                <li>
+                    <a href="#special-right-triangles" aria-label="Special Right Triangles">Special Right Triangles</a></li>
+                <li>
+                    <a href="#herons-formula" aria-label="Heron&rsquo;s Formula">Heron&rsquo;s Formula</a></li></ul>
+                </li>
+                <li>
+                    <a href="#quadrilateral-formulas" aria-label="Quadrilateral Formulas">Quadrilateral Formulas</a><ul>
+                        
+                <li>
+                    <a href="#rectangle" aria-label="Rectangle">Rectangle</a></li>
+                <li>
+                    <a href="#square" aria-label="Square">Square</a></li>
+                <li>
+                    <a href="#parallelogram" aria-label="Parallelogram">Parallelogram</a></li>
+                <li>
+                    <a href="#rhombus" aria-label="Rhombus">Rhombus</a></li>
+                <li>
+                    <a href="#trapezoid" aria-label="Trapezoid">Trapezoid</a></li></ul>
+                </li>
+                <li>
+                    <a href="#circle-formulas" aria-label="Circle Formulas">Circle Formulas</a><ul>
+                        
+                <li>
+                    <a href="#basic-circle" aria-label="Basic Circle">Basic Circle</a></li>
+                <li>
+                    <a href="#arc-and-sector" aria-label="Arc and Sector">Arc and Sector</a></li>
+                <li>
+                    <a href="#chord-properties" aria-label="Chord Properties">Chord Properties</a></li>
+                <li>
+                    <a href="#tangent-properties" aria-label="Tangent Properties">Tangent Properties</a></li></ul>
+                </li>
+                <li>
+                    <a href="#similarity-and-congruence" aria-label="Similarity and Congruence">Similarity and Congruence</a><ul>
+                        
+                <li>
+                    <a href="#similarity" aria-label="Similarity">Similarity</a></li>
+                <li>
+                    <a href="#congruence-tests" aria-label="Congruence Tests">Congruence Tests</a></li></ul>
+                </li>
+                <li>
+                    <a href="#area-formulas" aria-label="Area Formulas">Area Formulas</a><ul>
+                        
+                <li>
+                    <a href="#basic-shapes" aria-label="Basic Shapes">Basic Shapes</a></li>
+                <li>
+                    <a href="#composite-figures" aria-label="Composite Figures">Composite Figures</a></li></ul>
+                </li>
+                <li>
+                    <a href="#perimeter-formulas" aria-label="Perimeter Formulas">Perimeter Formulas</a><ul>
+                        
+                <li>
+                    <a href="#basic-shapes-1" aria-label="Basic Shapes">Basic Shapes</a></li>
+                <li>
+                    <a href="#composite-figures-1" aria-label="Composite Figures">Composite Figures</a></li></ul>
+                </li>
+                <li>
+                    <a href="#volume-formulas" aria-label="Volume Formulas">Volume Formulas</a><ul>
+                        
+                <li>
+                    <a href="#basic-shapes-2" aria-label="Basic Shapes">Basic Shapes</a></li>
+                <li>
+                    <a href="#composite-solids" aria-label="Composite Solids">Composite Solids</a></li></ul>
+                </li>
+                <li>
+                    <a href="#surface-area-formulas" aria-label="Surface Area Formulas">Surface Area Formulas</a><ul>
+                        
+                <li>
+                    <a href="#basic-shapes-3" aria-label="Basic Shapes">Basic Shapes</a></li>
+                <li>
+                    <a href="#composite-solids-1" aria-label="Composite Solids">Composite Solids</a></li></ul>
+                </li>
+                <li>
+                    <a href="#coordinate-geometry" aria-label="Coordinate Geometry">Coordinate Geometry</a><ul>
+                        
+                <li>
+                    <a href="#distance-formula" aria-label="Distance Formula">Distance Formula</a></li>
+                <li>
+                    <a href="#midpoint-formula" aria-label="Midpoint Formula">Midpoint Formula</a></li>
+                <li>
+                    <a href="#slope-formula" aria-label="Slope Formula">Slope Formula</a></li>
+                <li>
+                    <a href="#equation-of-a-line" aria-label="Equation of a Line">Equation of a Line</a></li></ul>
+                </li>
+                <li>
+                    <a href="#transformations" aria-label="Transformations">Transformations</a><ul>
+                        
+                <li>
+                    <a href="#translations" aria-label="Translations">Translations</a></li>
+                <li>
+                    <a href="#reflections" aria-label="Reflections">Reflections</a></li>
+                <li>
+                    <a href="#rotations" aria-label="Rotations">Rotations</a></li>
+                <li>
+                    <a href="#dilations" aria-label="Dilations">Dilations</a></li></ul>
+                </li>
+                <li>
+                    <a href="#mental-math-shortcuts" aria-label="Mental Math Shortcuts">Mental Math Shortcuts</a><ul>
+                        
+                <li>
+                    <a href="#common-areas" aria-label="Common Areas">Common Areas</a></li>
+                <li>
+                    <a href="#common-volumes" aria-label="Common Volumes">Common Volumes</a></li>
+                <li>
+                    <a href="#common-ratios" aria-label="Common Ratios">Common Ratios</a></li></ul>
+                </li>
+                <li>
+                    <a href="#common-applications" aria-label="Common Applications">Common Applications</a><ul>
+                        
+                <li>
+                    <a href="#real-world-problems" aria-label="Real-world Problems">Real-world Problems</a></li>
+                <li>
+                    <a href="#problem-solving-strategies" aria-label="Problem-solving Strategies">Problem-solving Strategies</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-geometry--formulas">📐 Geometry — Formulas<a hidden class="anchor" aria-hidden="true" href="#-geometry--formulas">#</a></h1>
+<p>Essential formulas and shortcuts for working with geometry in MATHCOUNTS.</p>
+<h2 id="triangle-formulas">Triangle Formulas<a hidden class="anchor" aria-hidden="true" href="#triangle-formulas">#</a></h2>
+<h3 id="basic-properties">Basic Properties<a hidden class="anchor" aria-hidden="true" href="#basic-properties">#</a></h3>
+<p><strong>Sum of angles</strong>: ∠A + ∠B + ∠C = 180°
+<strong>Triangle inequality</strong>: a + b &gt; c, b + c &gt; a, a + c &gt; b
+<strong>Area</strong>: A = (1/2) × base × height
+<strong>Perimeter</strong>: P = a + b + c</p>
+<h3 id="pythagorean-theorem">Pythagorean Theorem<a hidden class="anchor" aria-hidden="true" href="#pythagorean-theorem">#</a></h3>
+<p><strong>Right triangles</strong>: a² + b² = c² where c is hypotenuse
+<strong>Distance formula</strong>: d = √[(x₂ - x₁)² + (y₂ - y₁)²]</p>
+<p><strong>Example</strong>: If legs are 3 and 4, hypotenuse is √(3² + 4²) = 5</p>
+<h3 id="special-right-triangles">Special Right Triangles<a hidden class="anchor" aria-hidden="true" href="#special-right-triangles">#</a></h3>
+<p><strong>30°-60°-90°</strong>: Sides in ratio 1 : √3 : 2</p>
+<ul>
+<li>If short leg = x, then long leg = x√3, hypotenuse = 2x</li>
+<li>If hypotenuse = x, then short leg = x/2, long leg = x√3/2</li>
+</ul>
+<p><strong>45°-45°-90°</strong>: Sides in ratio 1 : 1 : √2</p>
+<ul>
+<li>If leg = x, then hypotenuse = x√2</li>
+<li>If hypotenuse = x, then leg = x/√2 = x√2/2</li>
+</ul>
+<p><strong>3-4-5 triangle</strong>: Sides in ratio 3 : 4 : 5
+<strong>5-12-13 triangle</strong>: Sides in ratio 5 : 12 : 13
+<strong>8-15-17 triangle</strong>: Sides in ratio 8 : 15 : 17</p>
+<h3 id="herons-formula">Heron&rsquo;s Formula<a hidden class="anchor" aria-hidden="true" href="#herons-formula">#</a></h3>
+<p><strong>Area</strong>: A = √[s(s - a)(s - b)(s - c)] where s = (a + b + c)/2
+<strong>Semi-perimeter</strong>: s = (a + b + c)/2</p>
+<p><strong>Example</strong>: Triangle with sides 3, 4, 5</p>
+<ul>
+<li>s = (3 + 4 + 5)/2 = 6</li>
+<li>A = √[6(6-3)(6-4)(6-5)] = √[6×3×2×1] = √36 = 6</li>
+</ul>
+<h2 id="quadrilateral-formulas">Quadrilateral Formulas<a hidden class="anchor" aria-hidden="true" href="#quadrilateral-formulas">#</a></h2>
+<h3 id="rectangle">Rectangle<a hidden class="anchor" aria-hidden="true" href="#rectangle">#</a></h3>
+<p><strong>Area</strong>: A = length × width
+<strong>Perimeter</strong>: P = 2(length + width)
+<strong>Diagonal</strong>: d = √(length² + width²)</p>
+<p><strong>Example</strong>: Rectangle 6×4 has area 24, perimeter 20, diagonal √52</p>
+<h3 id="square">Square<a hidden class="anchor" aria-hidden="true" href="#square">#</a></h3>
+<p><strong>Area</strong>: A = side²
+<strong>Perimeter</strong>: P = 4 × side
+<strong>Diagonal</strong>: d = side√2</p>
+<p><strong>Example</strong>: Square with side 5 has area 25, perimeter 20, diagonal 5√2</p>
+<h3 id="parallelogram">Parallelogram<a hidden class="anchor" aria-hidden="true" href="#parallelogram">#</a></h3>
+<p><strong>Area</strong>: A = base × height
+<strong>Perimeter</strong>: P = 2(a + b)
+<strong>Properties</strong>: Opposite sides equal and parallel, opposite angles equal</p>
+<p><strong>Example</strong>: Parallelogram with base 8 and height 5 has area 40</p>
+<h3 id="rhombus">Rhombus<a hidden class="anchor" aria-hidden="true" href="#rhombus">#</a></h3>
+<p><strong>Area</strong>: A = (1/2) × diagonal₁ × diagonal₂
+<strong>Perimeter</strong>: P = 4 × side
+<strong>Properties</strong>: All sides equal, diagonals perpendicular and bisect each other</p>
+<p><strong>Example</strong>: Rhombus with diagonals 6 and 8 has area 24</p>
+<h3 id="trapezoid">Trapezoid<a hidden class="anchor" aria-hidden="true" href="#trapezoid">#</a></h3>
+<p><strong>Area</strong>: A = (1/2) × (base₁ + base₂) × height
+<strong>Perimeter</strong>: P = sum of all sides
+<strong>Properties</strong>: One pair of parallel sides</p>
+<p><strong>Example</strong>: Trapezoid with bases 6 and 10, height 4 has area 32</p>
+<h2 id="circle-formulas">Circle Formulas<a hidden class="anchor" aria-hidden="true" href="#circle-formulas">#</a></h2>
+<h3 id="basic-circle">Basic Circle<a hidden class="anchor" aria-hidden="true" href="#basic-circle">#</a></h3>
+<p><strong>Circumference</strong>: C = 2πr = πd
+<strong>Area</strong>: A = πr²
+<strong>Diameter</strong>: d = 2r
+<strong>Radius</strong>: r = d/2</p>
+<p><strong>Example</strong>: Circle with radius 5 has circumference 10π and area 25π</p>
+<h3 id="arc-and-sector">Arc and Sector<a hidden class="anchor" aria-hidden="true" href="#arc-and-sector">#</a></h3>
+<p><strong>Arc length</strong>: s = rθ (where θ is in radians)
+<strong>Sector area</strong>: A = (1/2)r²θ (where θ is in radians)
+<strong>Degree conversion</strong>: θ (radians) = θ (degrees) × π/180</p>
+<p><strong>Example</strong>: 60° sector of radius 6 has arc length 2π and area 6π</p>
+<h3 id="chord-properties">Chord Properties<a hidden class="anchor" aria-hidden="true" href="#chord-properties">#</a></h3>
+<p><strong>Chord length</strong>: c = 2√(r² - d²) where d is distance from center
+<strong>Distance from center</strong>: d = √(r² - (c/2)²)
+<strong>Power of a point</strong>: AB × BC = DB × BE</p>
+<p><strong>Example</strong>: Chord 8 units long, 3 units from center: radius = √(4² + 3²) = 5</p>
+<h3 id="tangent-properties">Tangent Properties<a hidden class="anchor" aria-hidden="true" href="#tangent-properties">#</a></h3>
+<p><strong>Tangent length</strong>: t = √(d² - r²) where d is distance from point to center
+<strong>Power of a point</strong>: t² = s × e where s is secant length, e is external part
+<strong>Two tangents</strong>: From external point, two tangents are equal length</p>
+<p><strong>Example</strong>: Tangent 6 units long, secant 9 units long: external part = 9 - 6 = 3</p>
+<h2 id="similarity-and-congruence">Similarity and Congruence<a hidden class="anchor" aria-hidden="true" href="#similarity-and-congruence">#</a></h2>
+<h3 id="similarity">Similarity<a hidden class="anchor" aria-hidden="true" href="#similarity">#</a></h3>
+<p><strong>Scale factor</strong>: k = ratio of corresponding sides
+<strong>Area ratio</strong>: A₁/A₂ = k²
+<strong>Volume ratio</strong>: V₁/V₂ = k³
+<strong>Perimeter ratio</strong>: P₁/P₂ = k</p>
+<p><strong>Example</strong>: If scale factor is 2, area ratio is 4, volume ratio is 8</p>
+<h3 id="congruence-tests">Congruence Tests<a hidden class="anchor" aria-hidden="true" href="#congruence-tests">#</a></h3>
+<p><strong>SSS</strong>: All three sides equal
+<strong>SAS</strong>: Two sides and included angle equal
+<strong>ASA</strong>: Two angles and included side equal
+<strong>AAS</strong>: Two angles and non-included side equal
+<strong>HL</strong>: Hypotenuse and leg equal (right triangles only)</p>
+<h2 id="area-formulas">Area Formulas<a hidden class="anchor" aria-hidden="true" href="#area-formulas">#</a></h2>
+<h3 id="basic-shapes">Basic Shapes<a hidden class="anchor" aria-hidden="true" href="#basic-shapes">#</a></h3>
+<p><strong>Rectangle</strong>: A = length × width
+<strong>Square</strong>: A = side²
+<strong>Triangle</strong>: A = (1/2) × base × height
+<strong>Parallelogram</strong>: A = base × height
+<strong>Trapezoid</strong>: A = (1/2) × (base₁ + base₂) × height
+<strong>Circle</strong>: A = πr²</p>
+<h3 id="composite-figures">Composite Figures<a hidden class="anchor" aria-hidden="true" href="#composite-figures">#</a></h3>
+<p><strong>Method</strong>: Break into basic shapes, find area of each, add together
+<strong>Subtraction method</strong>: Find area of larger shape, subtract area of smaller shape</p>
+<p><strong>Example</strong>: L-shaped figure = rectangle + triangle</p>
+<h2 id="perimeter-formulas">Perimeter Formulas<a hidden class="anchor" aria-hidden="true" href="#perimeter-formulas">#</a></h2>
+<h3 id="basic-shapes-1">Basic Shapes<a hidden class="anchor" aria-hidden="true" href="#basic-shapes-1">#</a></h3>
+<p><strong>Rectangle</strong>: P = 2(length + width)
+<strong>Square</strong>: P = 4 × side
+<strong>Triangle</strong>: P = a + b + c
+<strong>Circle</strong>: C = 2πr</p>
+<h3 id="composite-figures-1">Composite Figures<a hidden class="anchor" aria-hidden="true" href="#composite-figures-1">#</a></h3>
+<p><strong>Method</strong>: Add all outer sides
+<strong>Subtraction method</strong>: Find perimeter of larger shape, subtract inner perimeters</p>
+<p><strong>Example</strong>: Rectangle with hole = 2(l + w) + 2πr (where r is hole radius)</p>
+<h2 id="volume-formulas">Volume Formulas<a hidden class="anchor" aria-hidden="true" href="#volume-formulas">#</a></h2>
+<h3 id="basic-shapes-2">Basic Shapes<a hidden class="anchor" aria-hidden="true" href="#basic-shapes-2">#</a></h3>
+<p><strong>Rectangular prism</strong>: V = length × width × height
+<strong>Cube</strong>: V = side³
+<strong>Cylinder</strong>: V = πr²h
+<strong>Cone</strong>: V = (1/3)πr²h
+<strong>Sphere</strong>: V = (4/3)πr³
+<strong>Pyramid</strong>: V = (1/3) × base area × height</p>
+<h3 id="composite-solids">Composite Solids<a hidden class="anchor" aria-hidden="true" href="#composite-solids">#</a></h3>
+<p><strong>Method</strong>: Break into basic shapes, find volume of each, add together
+<strong>Subtraction method</strong>: Find volume of larger solid, subtract volume of smaller solid</p>
+<p><strong>Example</strong>: L-shaped solid = rectangular prism + triangular prism</p>
+<h2 id="surface-area-formulas">Surface Area Formulas<a hidden class="anchor" aria-hidden="true" href="#surface-area-formulas">#</a></h2>
+<h3 id="basic-shapes-3">Basic Shapes<a hidden class="anchor" aria-hidden="true" href="#basic-shapes-3">#</a></h3>
+<p><strong>Rectangular prism</strong>: SA = 2(lw + lh + wh)
+<strong>Cube</strong>: SA = 6 × side²
+<strong>Cylinder</strong>: SA = 2πr² + 2πrh
+<strong>Cone</strong>: SA = πr² + πrl
+<strong>Sphere</strong>: SA = 4πr²</p>
+<h3 id="composite-solids-1">Composite Solids<a hidden class="anchor" aria-hidden="true" href="#composite-solids-1">#</a></h3>
+<p><strong>Method</strong>: Find surface area of each part, add together
+<strong>Subtraction method</strong>: Find surface area of larger solid, subtract inner surface areas</p>
+<p><strong>Example</strong>: Cylinder with hole = 2πr² + 2πrh - 2πr² (where r is hole radius)</p>
+<h2 id="coordinate-geometry">Coordinate Geometry<a hidden class="anchor" aria-hidden="true" href="#coordinate-geometry">#</a></h2>
+<h3 id="distance-formula">Distance Formula<a hidden class="anchor" aria-hidden="true" href="#distance-formula">#</a></h3>
+<p><strong>Two points</strong>: d = √[(x₂ - x₁)² + (y₂ - y₁)²]
+<strong>Point to line</strong>: d = |ax + by + c|/√(a² + b²)</p>
+<p><strong>Example</strong>: Distance between (1, 2) and (4, 6) = √[(4-1)² + (6-2)²] = 5</p>
+<h3 id="midpoint-formula">Midpoint Formula<a hidden class="anchor" aria-hidden="true" href="#midpoint-formula">#</a></h3>
+<p><strong>Two points</strong>: M = ((x₁ + x₂)/2, (y₁ + y₂)/2)
+<strong>Line segment</strong>: M = ((x₁ + x₂)/2, (y₁ + y₂)/2)</p>
+<p><strong>Example</strong>: Midpoint of (1, 2) and (4, 6) = (2.5, 4)</p>
+<h3 id="slope-formula">Slope Formula<a hidden class="anchor" aria-hidden="true" href="#slope-formula">#</a></h3>
+<p><strong>Two points</strong>: m = (y₂ - y₁)/(x₂ - x₁)
+<strong>Parallel lines</strong>: m₁ = m₂
+<strong>Perpendicular lines</strong>: m₁ × m₂ = -1</p>
+<p><strong>Example</strong>: Slope of line through (1, 2) and (4, 6) = 4/3</p>
+<h3 id="equation-of-a-line">Equation of a Line<a hidden class="anchor" aria-hidden="true" href="#equation-of-a-line">#</a></h3>
+<p><strong>Slope-intercept</strong>: y = mx + b
+<strong>Point-slope</strong>: y - y₁ = m(x - x₁)
+<strong>Standard form</strong>: Ax + By = C
+<strong>Two-point form</strong>: (y - y₁)/(y₂ - y₁) = (x - x₁)/(x₂ - x₁)</p>
+<p><strong>Example</strong>: Line through (1, 2) with slope 3: y - 2 = 3(x - 1)</p>
+<h2 id="transformations">Transformations<a hidden class="anchor" aria-hidden="true" href="#transformations">#</a></h2>
+<h3 id="translations">Translations<a hidden class="anchor" aria-hidden="true" href="#translations">#</a></h3>
+<p><strong>Notation</strong>: (x, y) → (x + a, y + b)
+<strong>Example</strong>: Translate (2, 3) by (1, 4) → (3, 7)</p>
+<h3 id="reflections">Reflections<a hidden class="anchor" aria-hidden="true" href="#reflections">#</a></h3>
+<p><strong>Over x-axis</strong>: (x, y) → (x, -y)
+<strong>Over y-axis</strong>: (x, y) → (-x, y)
+<strong>Over y = x</strong>: (x, y) → (y, x)
+<strong>Over y = -x</strong>: (x, y) → (-y, -x)</p>
+<p><strong>Example</strong>: Reflect (2, 3) over x-axis → (2, -3)</p>
+<h3 id="rotations">Rotations<a hidden class="anchor" aria-hidden="true" href="#rotations">#</a></h3>
+<p><strong>90° counterclockwise</strong>: (x, y) → (-y, x)
+<strong>180°</strong>: (x, y) → (-x, -y)
+<strong>270° counterclockwise</strong>: (x, y) → (y, -x)
+<strong>90° clockwise</strong>: (x, y) → (y, -x)</p>
+<p><strong>Example</strong>: Rotate (2, 3) 90° counterclockwise → (-3, 2)</p>
+<h3 id="dilations">Dilations<a hidden class="anchor" aria-hidden="true" href="#dilations">#</a></h3>
+<p><strong>Notation</strong>: (x, y) → (kx, ky)
+<strong>Center at origin</strong>: (x, y) → (kx, ky)
+<strong>Center at (a, b)</strong>: (x, y) → (a + k(x - a), b + k(y - b))</p>
+<p><strong>Example</strong>: Dilate (2, 3) by factor 2 → (4, 6)</p>
+<h2 id="mental-math-shortcuts">Mental Math Shortcuts<a hidden class="anchor" aria-hidden="true" href="#mental-math-shortcuts">#</a></h2>
+<h3 id="common-areas">Common Areas<a hidden class="anchor" aria-hidden="true" href="#common-areas">#</a></h3>
+<p><strong>Rectangle 6×4</strong>: Area = 24, Perimeter = 20
+<strong>Square side 5</strong>: Area = 25, Perimeter = 20, Diagonal = 5√2
+<strong>Circle radius 5</strong>: Circumference = 10π, Area = 25π
+<strong>Triangle 3-4-5</strong>: Area = 6, Perimeter = 12</p>
+<h3 id="common-volumes">Common Volumes<a hidden class="anchor" aria-hidden="true" href="#common-volumes">#</a></h3>
+<p><strong>Cube side 4</strong>: Volume = 64, Surface area = 96
+<strong>Cylinder r=3, h=5</strong>: Volume = 45π, Surface area = 48π
+<strong>Sphere radius 3</strong>: Volume = 36π, Surface area = 36π</p>
+<h3 id="common-ratios">Common Ratios<a hidden class="anchor" aria-hidden="true" href="#common-ratios">#</a></h3>
+<p><strong>30°-60°-90°</strong>: 1 : √3 : 2
+<strong>45°-45°-90°</strong>: 1 : 1 : √2
+<strong>3-4-5</strong>: 3 : 4 : 5
+<strong>5-12-13</strong>: 5 : 12 : 13</p>
+<h2 id="common-applications">Common Applications<a hidden class="anchor" aria-hidden="true" href="#common-applications">#</a></h2>
+<h3 id="real-world-problems">Real-world Problems<a hidden class="anchor" aria-hidden="true" href="#real-world-problems">#</a></h3>
+<p><strong>Architecture</strong>: Use geometry in building design
+<strong>Engineering</strong>: Use geometry in structural design
+<strong>Art</strong>: Use geometry in artistic composition
+<strong>Sports</strong>: Use geometry in field design and equipment</p>
+<h3 id="problem-solving-strategies">Problem-solving Strategies<a hidden class="anchor" aria-hidden="true" href="#problem-solving-strategies">#</a></h3>
+<p><strong>Draw diagrams</strong>: Visualize the problem
+<strong>Identify given information</strong>: List what you know
+<strong>Use appropriate formulas</strong>: Apply the right formula
+<strong>Check your answer</strong>: Verify the result makes sense</p>
+<hr>
+<p><strong>Previous</strong>: <a href="problem-types">Problem Types</a><br>
+<strong>Back to</strong>: <a href="./">Geometry</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/mathcounts/">MATHCOUNTS</a></li>
+      <li><a href="http://localhost:1313/tags/geometry/">Geometry</a></li>
+      <li><a href="http://localhost:1313/tags/formulas/">Formulas</a></li>
+      <li><a href="http://localhost:1313/tags/shortcuts/">Shortcuts</a></li>
+      <li><a href="http://localhost:1313/tags/shapes/">Shapes</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

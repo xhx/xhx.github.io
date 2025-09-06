@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Number Theory — Formulas | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="MATHCOUNTS, Number Theory, Formulas, Shortcuts, Primes">
+<meta name="description" content="Essential formulas and shortcuts for working with number theory in MATHCOUNTS.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/mathcounts/number-theory/formulas/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/mathcounts/number-theory/formulas/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/mathcounts/">MATHCOUNTS Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/mathcounts/number-theory/">Number Theory</a></div>
+    <div class="post-meta">7 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-number-theory--formulas" aria-label="🔢 Number Theory — Formulas">🔢 Number Theory — Formulas</a><ul>
+                        
+                <li>
+                    <a href="#prime-number-formulas" aria-label="Prime Number Formulas">Prime Number Formulas</a><ul>
+                        
+                <li>
+                    <a href="#prime-identification" aria-label="Prime Identification">Prime Identification</a></li>
+                <li>
+                    <a href="#prime-factorization" aria-label="Prime Factorization">Prime Factorization</a></li>
+                <li>
+                    <a href="#prime-properties" aria-label="Prime Properties">Prime Properties</a></li></ul>
+                </li>
+                <li>
+                    <a href="#divisibility-formulas" aria-label="Divisibility Formulas">Divisibility Formulas</a><ul>
+                        
+                <li>
+                    <a href="#divisibility-rules" aria-label="Divisibility Rules">Divisibility Rules</a></li>
+                <li>
+                    <a href="#divisibility-by-11" aria-label="Divisibility by 11">Divisibility by 11</a></li></ul>
+                </li>
+                <li>
+                    <a href="#gcd-and-lcm-formulas" aria-label="GCD and LCM Formulas">GCD and LCM Formulas</a><ul>
+                        
+                <li>
+                    <a href="#euclidean-algorithm" aria-label="Euclidean Algorithm">Euclidean Algorithm</a></li>
+                <li>
+                    <a href="#lcm-formula" aria-label="LCM Formula">LCM Formula</a></li>
+                <li>
+                    <a href="#properties" aria-label="Properties">Properties</a></li></ul>
+                </li>
+                <li>
+                    <a href="#modular-arithmetic-formulas" aria-label="Modular Arithmetic Formulas">Modular Arithmetic Formulas</a><ul>
+                        
+                <li>
+                    <a href="#basic-operations" aria-label="Basic Operations">Basic Operations</a></li>
+                <li>
+                    <a href="#congruence-properties" aria-label="Congruence Properties">Congruence Properties</a></li>
+                <li>
+                    <a href="#modular-inverses" aria-label="Modular Inverses">Modular Inverses</a></li></ul>
+                </li>
+                <li>
+                    <a href="#number-property-formulas" aria-label="Number Property Formulas">Number Property Formulas</a><ul>
+                        
+                <li>
+                    <a href="#even-and-odd-properties" aria-label="Even and Odd Properties">Even and Odd Properties</a></li>
+                <li>
+                    <a href="#perfect-numbers" aria-label="Perfect Numbers">Perfect Numbers</a></li>
+                <li>
+                    <a href="#abundant-and-deficient-numbers" aria-label="Abundant and Deficient Numbers">Abundant and Deficient Numbers</a></li></ul>
+                </li>
+                <li>
+                    <a href="#diophantine-equation-formulas" aria-label="Diophantine Equation Formulas">Diophantine Equation Formulas</a><ul>
+                        
+                <li>
+                    <a href="#linear-diophantine-equations" aria-label="Linear Diophantine Equations">Linear Diophantine Equations</a></li>
+                <li>
+                    <a href="#pythagorean-triples" aria-label="Pythagorean Triples">Pythagorean Triples</a></li></ul>
+                </li>
+                <li>
+                    <a href="#base-conversion-formulas" aria-label="Base Conversion Formulas">Base Conversion Formulas</a><ul>
+                        
+                <li>
+                    <a href="#decimal-to-base-b" aria-label="Decimal to Base b">Decimal to Base b</a></li>
+                <li>
+                    <a href="#base-b-to-decimal" aria-label="Base b to Decimal">Base b to Decimal</a></li>
+                <li>
+                    <a href="#hexadecimal" aria-label="Hexadecimal">Hexadecimal</a></li></ul>
+                </li>
+                <li>
+                    <a href="#mental-math-shortcuts" aria-label="Mental Math Shortcuts">Mental Math Shortcuts</a><ul>
+                        
+                <li>
+                    <a href="#divisibility-by-3" aria-label="Divisibility by 3">Divisibility by 3</a></li>
+                <li>
+                    <a href="#divisibility-by-9" aria-label="Divisibility by 9">Divisibility by 9</a></li>
+                <li>
+                    <a href="#divisibility-by-11-1" aria-label="Divisibility by 11">Divisibility by 11</a></li>
+                <li>
+                    <a href="#gcd-shortcuts" aria-label="GCD Shortcuts">GCD Shortcuts</a></li>
+                <li>
+                    <a href="#lcm-shortcuts" aria-label="LCM Shortcuts">LCM Shortcuts</a></li></ul>
+                </li>
+                <li>
+                    <a href="#common-applications" aria-label="Common Applications">Common Applications</a><ul>
+                        
+                <li>
+                    <a href="#cryptography" aria-label="Cryptography">Cryptography</a></li>
+                <li>
+                    <a href="#computer-science" aria-label="Computer Science">Computer Science</a></li>
+                <li>
+                    <a href="#mathematics" aria-label="Mathematics">Mathematics</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-number-theory--formulas">🔢 Number Theory — Formulas<a hidden class="anchor" aria-hidden="true" href="#-number-theory--formulas">#</a></h1>
+<p>Essential formulas and shortcuts for working with number theory in MATHCOUNTS.</p>
+<h2 id="prime-number-formulas">Prime Number Formulas<a hidden class="anchor" aria-hidden="true" href="#prime-number-formulas">#</a></h2>
+<h3 id="prime-identification">Prime Identification<a hidden class="anchor" aria-hidden="true" href="#prime-identification">#</a></h3>
+<p><strong>Trial division</strong>: Check divisibility by primes up to √n
+<strong>Sieve of Eratosthenes</strong>: Find all primes up to n
+<strong>Prime counting function</strong>: π(n) = number of primes ≤ n</p>
+<h3 id="prime-factorization">Prime Factorization<a hidden class="anchor" aria-hidden="true" href="#prime-factorization">#</a></h3>
+<p><strong>Fundamental theorem of arithmetic</strong>: Every integer &gt; 1 can be written uniquely as a product of primes
+<strong>Canonical form</strong>: n = p₁^a₁ × p₂^a₂ × &hellip; × pₖ^aₖ where pᵢ are distinct primes</p>
+<p><strong>Example</strong>: 60 = 2² × 3 × 5</p>
+<h3 id="prime-properties">Prime Properties<a hidden class="anchor" aria-hidden="true" href="#prime-properties">#</a></h3>
+<p><strong>Wilson&rsquo;s theorem</strong>: (p-1)! ≡ -1 (mod p) if and only if p is prime
+<strong>Fermat&rsquo;s little theorem</strong>: If p is prime and a is not divisible by p, then a^(p-1) ≡ 1 (mod p)</p>
+<h2 id="divisibility-formulas">Divisibility Formulas<a hidden class="anchor" aria-hidden="true" href="#divisibility-formulas">#</a></h2>
+<h3 id="divisibility-rules">Divisibility Rules<a hidden class="anchor" aria-hidden="true" href="#divisibility-rules">#</a></h3>
+<p><strong>2</strong>: Last digit is even (0, 2, 4, 6, 8)
+<strong>3</strong>: Sum of digits is divisible by 3
+<strong>4</strong>: Last two digits form a number divisible by 4
+<strong>5</strong>: Last digit is 0 or 5
+<strong>6</strong>: Divisible by both 2 and 3
+<strong>8</strong>: Last three digits form a number divisible by 8
+<strong>9</strong>: Sum of digits is divisible by 9
+<strong>10</strong>: Last digit is 0
+<strong>11</strong>: Alternating sum of digits is divisible by 11</p>
+<h3 id="divisibility-by-11">Divisibility by 11<a hidden class="anchor" aria-hidden="true" href="#divisibility-by-11">#</a></h3>
+<p><strong>Formula</strong>: If n = dₖdₖ₋₁&hellip;d₁d₀, then n is divisible by 11 if and only if d₀ - d₁ + d₂ - d₃ + &hellip; + (-1)ᵏdₖ is divisible by 11</p>
+<p><strong>Example</strong>: 1,234 is divisible by 11 if and only if 4 - 3 + 2 - 1 = 2 is divisible by 11 (it&rsquo;s not)</p>
+<h2 id="gcd-and-lcm-formulas">GCD and LCM Formulas<a hidden class="anchor" aria-hidden="true" href="#gcd-and-lcm-formulas">#</a></h2>
+<h3 id="euclidean-algorithm">Euclidean Algorithm<a hidden class="anchor" aria-hidden="true" href="#euclidean-algorithm">#</a></h3>
+<p><strong>GCD(a, b) = GCD(b, a mod b)</strong> until b = 0
+<strong>Extended Euclidean algorithm</strong>: Find integers x, y such that ax + by = GCD(a, b)</p>
+<p><strong>Example</strong>: GCD(48, 18)</p>
+<ul>
+<li>GCD(48, 18) = GCD(18, 12) = GCD(12, 6) = GCD(6, 0) = 6</li>
+</ul>
+<h3 id="lcm-formula">LCM Formula<a hidden class="anchor" aria-hidden="true" href="#lcm-formula">#</a></h3>
+<p><strong>LCM(a, b) = (a × b) / GCD(a, b)</strong>
+<strong>LCM(a, b, c) = LCM(LCM(a, b), c)</strong></p>
+<p><strong>Example</strong>: LCM(12, 18) = (12 × 18) / GCD(12, 18) = 216 / 6 = 36</p>
+<h3 id="properties">Properties<a hidden class="anchor" aria-hidden="true" href="#properties">#</a></h3>
+<p><strong>GCD(a, b) = GCD(b, a)</strong>
+<strong>GCD(a, 0) = a</strong>
+<strong>GCD(a, 1) = 1</strong>
+<strong>If GCD(a, b) = 1, then a and b are relatively prime</strong></p>
+<p><strong>LCM(a, b) = LCM(b, a)</strong>
+<strong>LCM(a, 1) = a</strong>
+<strong>LCM(a, a) = a</strong>
+<strong>If GCD(a, b) = 1, then LCM(a, b) = a × b</strong></p>
+<h2 id="modular-arithmetic-formulas">Modular Arithmetic Formulas<a hidden class="anchor" aria-hidden="true" href="#modular-arithmetic-formulas">#</a></h2>
+<h3 id="basic-operations">Basic Operations<a hidden class="anchor" aria-hidden="true" href="#basic-operations">#</a></h3>
+<p><strong>Addition</strong>: (a + b) mod n = ((a mod n) + (b mod n)) mod n
+<strong>Subtraction</strong>: (a - b) mod n = ((a mod n) - (b mod n)) mod n
+<strong>Multiplication</strong>: (a × b) mod n = ((a mod n) × (b mod n)) mod n
+<strong>Exponentiation</strong>: (a^b) mod n = ((a mod n)^b) mod n</p>
+<p><strong>Examples</strong>:</p>
+<ul>
+<li>(7 + 5) mod 3 = (1 + 2) mod 3 = 0</li>
+<li>(7 × 5) mod 3 = (1 × 2) mod 3 = 2</li>
+<li>(7^3) mod 3 = (1^3) mod 3 = 1</li>
+</ul>
+<h3 id="congruence-properties">Congruence Properties<a hidden class="anchor" aria-hidden="true" href="#congruence-properties">#</a></h3>
+<p><strong>Reflexive</strong>: a ≡ a (mod n)
+<strong>Symmetric</strong>: If a ≡ b (mod n), then b ≡ a (mod n)
+<strong>Transitive</strong>: If a ≡ b (mod n) and b ≡ c (mod n), then a ≡ c (mod n)</p>
+<p><strong>Addition</strong>: If a ≡ b (mod n) and c ≡ d (mod n), then a + c ≡ b + d (mod n)
+<strong>Multiplication</strong>: If a ≡ b (mod n) and c ≡ d (mod n), then a × c ≡ b × d (mod n)</p>
+<h3 id="modular-inverses">Modular Inverses<a hidden class="anchor" aria-hidden="true" href="#modular-inverses">#</a></h3>
+<p><strong>Definition</strong>: The inverse of a (mod n) is a number b such that ab ≡ 1 (mod n)
+<strong>Existence</strong>: Inverse exists if and only if GCD(a, n) = 1
+<strong>Formula</strong>: Use extended Euclidean algorithm to find inverse</p>
+<p><strong>Example</strong>: Find inverse of 3 (mod 11)</p>
+<ul>
+<li>3 × 4 = 12 ≡ 1 (mod 11)</li>
+<li>So inverse of 3 (mod 11) is 4</li>
+</ul>
+<h2 id="number-property-formulas">Number Property Formulas<a hidden class="anchor" aria-hidden="true" href="#number-property-formulas">#</a></h2>
+<h3 id="even-and-odd-properties">Even and Odd Properties<a hidden class="anchor" aria-hidden="true" href="#even-and-odd-properties">#</a></h3>
+<p><strong>Even + Even = Even</strong>
+<strong>Odd + Odd = Even</strong>
+<strong>Even + Odd = Odd</strong>
+<strong>Even × Even = Even</strong>
+<strong>Odd × Odd = Odd</strong>
+<strong>Even × Odd = Even</strong></p>
+<p><strong>Even powers</strong>: a^(2n) is even if a is even
+<strong>Odd powers</strong>: a^(2n+1) has same parity as a</p>
+<h3 id="perfect-numbers">Perfect Numbers<a hidden class="anchor" aria-hidden="true" href="#perfect-numbers">#</a></h3>
+<p><strong>Definition</strong>: A number equal to the sum of its proper divisors
+<strong>Formula</strong>: If 2^p - 1 is prime, then 2^(p-1)(2^p - 1) is perfect
+<strong>Examples</strong>: 6 = 2(2² - 1), 28 = 2²(2³ - 1), 496 = 2⁴(2⁵ - 1)</p>
+<h3 id="abundant-and-deficient-numbers">Abundant and Deficient Numbers<a hidden class="anchor" aria-hidden="true" href="#abundant-and-deficient-numbers">#</a></h3>
+<p><strong>Abundant</strong>: σ(n) &gt; 2n where σ(n) is sum of all divisors
+<strong>Deficient</strong>: σ(n) &lt; 2n
+<strong>Perfect</strong>: σ(n) = 2n</p>
+<h2 id="diophantine-equation-formulas">Diophantine Equation Formulas<a hidden class="anchor" aria-hidden="true" href="#diophantine-equation-formulas">#</a></h2>
+<h3 id="linear-diophantine-equations">Linear Diophantine Equations<a hidden class="anchor" aria-hidden="true" href="#linear-diophantine-equations">#</a></h3>
+<p><strong>Form</strong>: ax + by = c where a, b, c are integers
+<strong>Solution exists</strong>: If and only if GCD(a, b) divides c
+<strong>General solution</strong>: If (x₀, y₀) is one solution, then all solutions are x = x₀ + (b/d)t, y = y₀ - (a/d)t where d = GCD(a, b)</p>
+<p><strong>Example</strong>: Solve 3x + 4y = 10</p>
+<ul>
+<li>GCD(3, 4) = 1, and 1 divides 10, so solution exists</li>
+<li>One solution: (2, 1)</li>
+<li>General solution: x = 2 + 4t, y = 1 - 3t</li>
+</ul>
+<h3 id="pythagorean-triples">Pythagorean Triples<a hidden class="anchor" aria-hidden="true" href="#pythagorean-triples">#</a></h3>
+<p><strong>Primitive triples</strong>: (a, b, c) where GCD(a, b, c) = 1
+<strong>Formula</strong>: a = m² - n², b = 2mn, c = m² + n² where m &gt; n &gt; 0 and GCD(m, n) = 1</p>
+<p><strong>Example</strong>: m = 2, n = 1 gives (3, 4, 5)</p>
+<ul>
+<li>a = 2² - 1² = 3</li>
+<li>b = 2(2)(1) = 4</li>
+<li>c = 2² + 1² = 5</li>
+</ul>
+<h2 id="base-conversion-formulas">Base Conversion Formulas<a hidden class="anchor" aria-hidden="true" href="#base-conversion-formulas">#</a></h2>
+<h3 id="decimal-to-base-b">Decimal to Base b<a hidden class="anchor" aria-hidden="true" href="#decimal-to-base-b">#</a></h3>
+<p><strong>Method</strong>: Divide by b repeatedly, read remainders in reverse
+<strong>Formula</strong>: n = dₖb^k + dₖ₋₁b^(k-1) + &hellip; + d₁b + d₀</p>
+<p><strong>Example</strong>: Convert 13 to binary</p>
+<ul>
+<li>13 ÷ 2 = 6 remainder 1</li>
+<li>6 ÷ 2 = 3 remainder 0</li>
+<li>3 ÷ 2 = 1 remainder 1</li>
+<li>1 ÷ 2 = 0 remainder 1</li>
+<li>So 13₁₀ = 1101₂</li>
+</ul>
+<h3 id="base-b-to-decimal">Base b to Decimal<a hidden class="anchor" aria-hidden="true" href="#base-b-to-decimal">#</a></h3>
+<p><strong>Method</strong>: Multiply each digit by its place value
+<strong>Formula</strong>: dₖb^k + dₖ₋₁b^(k-1) + &hellip; + d₁b + d₀</p>
+<p><strong>Example</strong>: Convert 1101₂ to decimal</p>
+<ul>
+<li>1×2³ + 1×2² + 0×2¹ + 1×2⁰ = 8 + 4 + 0 + 1 = 13₁₀</li>
+</ul>
+<h3 id="hexadecimal">Hexadecimal<a hidden class="anchor" aria-hidden="true" href="#hexadecimal">#</a></h3>
+<p><strong>Digits</strong>: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
+**A = 10, B = 11, C = 12, D = 13, E = 14, F = 15</p>
+<p><strong>Example</strong>: Convert 1A3₁₆ to decimal</p>
+<ul>
+<li>1×16² + 10×16¹ + 3×16⁰ = 256 + 160 + 3 = 419₁₀</li>
+</ul>
+<h2 id="mental-math-shortcuts">Mental Math Shortcuts<a hidden class="anchor" aria-hidden="true" href="#mental-math-shortcuts">#</a></h2>
+<h3 id="divisibility-by-3">Divisibility by 3<a hidden class="anchor" aria-hidden="true" href="#divisibility-by-3">#</a></h3>
+<p><strong>Method</strong>: Sum of digits must be divisible by 3
+<strong>Example</strong>: 1,234: 1 + 2 + 3 + 4 = 10, not divisible by 3</p>
+<h3 id="divisibility-by-9">Divisibility by 9<a hidden class="anchor" aria-hidden="true" href="#divisibility-by-9">#</a></h3>
+<p><strong>Method</strong>: Sum of digits must be divisible by 9
+<strong>Example</strong>: 1,234: 1 + 2 + 3 + 4 = 10, not divisible by 9</p>
+<h3 id="divisibility-by-11-1">Divisibility by 11<a hidden class="anchor" aria-hidden="true" href="#divisibility-by-11-1">#</a></h3>
+<p><strong>Method</strong>: Alternating sum of digits must be divisible by 11
+<strong>Example</strong>: 1,234: 1 - 2 + 3 - 4 = -2, not divisible by 11</p>
+<h3 id="gcd-shortcuts">GCD Shortcuts<a hidden class="anchor" aria-hidden="true" href="#gcd-shortcuts">#</a></h3>
+<p><strong>If a divides b</strong>: GCD(a, b) = a
+<strong>If a and b are consecutive</strong>: GCD(a, b) = 1
+<strong>If a and b are both even</strong>: GCD(a, b) = 2 × GCD(a/2, b/2)</p>
+<h3 id="lcm-shortcuts">LCM Shortcuts<a hidden class="anchor" aria-hidden="true" href="#lcm-shortcuts">#</a></h3>
+<p><strong>If a divides b</strong>: LCM(a, b) = b
+<strong>If a and b are relatively prime</strong>: LCM(a, b) = a × b
+<strong>If a and b are both even</strong>: LCM(a, b) = 2 × LCM(a/2, b/2)</p>
+<h2 id="common-applications">Common Applications<a hidden class="anchor" aria-hidden="true" href="#common-applications">#</a></h2>
+<h3 id="cryptography">Cryptography<a hidden class="anchor" aria-hidden="true" href="#cryptography">#</a></h3>
+<p><strong>RSA</strong>: Uses large prime numbers for encryption
+<strong>Modular arithmetic</strong>: Used in many cryptographic algorithms
+<strong>Hash functions</strong>: Use modular arithmetic for collision resistance</p>
+<h3 id="computer-science">Computer Science<a hidden class="anchor" aria-hidden="true" href="#computer-science">#</a></h3>
+<p><strong>Binary</strong>: Base 2 used in computers
+<strong>Hexadecimal</strong>: Base 16 used for memory addresses
+<strong>Modular arithmetic</strong>: Used in hash tables and random number generation</p>
+<h3 id="mathematics">Mathematics<a hidden class="anchor" aria-hidden="true" href="#mathematics">#</a></h3>
+<p><strong>Number theory</strong>: Foundation for many mathematical concepts
+<strong>Algebra</strong>: Used in solving equations
+<strong>Geometry</strong>: Used in coordinate systems</p>
+<hr>
+<p><strong>Previous</strong>: <a href="problem-types">Problem Types</a><br>
+<strong>Back to</strong>: <a href="./">Number Theory</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/mathcounts/">MATHCOUNTS</a></li>
+      <li><a href="http://localhost:1313/tags/number-theory/">Number Theory</a></li>
+      <li><a href="http://localhost:1313/tags/formulas/">Formulas</a></li>
+      <li><a href="http://localhost:1313/tags/shortcuts/">Shortcuts</a></li>
+      <li><a href="http://localhost:1313/tags/primes/">Primes</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

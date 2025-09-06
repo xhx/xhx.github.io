@@ -1,17 +1,18 @@
 ---
 title: "Math"
-description: "Mathematical concepts, research notes, and problem sets"
+description: "Mathematics resources and competition guides"
 draft: false
 math: true
 hideTitle: true
 ShowPostDesc: false
 ---
 
-# Mathematics Notes
+# Mathematics
 
-Welcome to the mathematics section of my notes! Here you'll find organized mathematical content, research notes, and problem sets.
+Mathematical resources and competition preparation materials.
 
-## Content
+## Competitions
 
-- [AMC Test](amc) - American Mathematics Competitions
+- [AMC Competitions](amc) - American Mathematics Competitions for middle and high school students
+- [MATHCOUNTS](mathcounts) - MATHCOUNTS Mastery Guide for middle school mathematics competition
 

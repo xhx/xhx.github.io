@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Coordinate Geometry Problem Types | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="coordinate-geometry, problem-types, patterns">
+<meta name="description" content="Common problem patterns and worked examples in coordinate geometry">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/mathcounts/coordinate-geometry/problem-types/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/mathcounts/coordinate-geometry/problem-types/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/mathcounts/">MATHCOUNTS Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/mathcounts/coordinate-geometry/">Coordinate Geometry</a></div>
+    <div class="post-meta">2 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-coordinate-geometry-problem-types" aria-label="🎯 Coordinate Geometry Problem Types">🎯 Coordinate Geometry Problem Types</a><ul>
+                        
+                <li>
+                    <a href="#-problem-pattern-catalog" aria-label="📊 Problem Pattern Catalog">📊 Problem Pattern Catalog</a><ul>
+                        
+                <li>
+                    <a href="#type-1-distance-and-midpoint" aria-label="Type 1: Distance and Midpoint">Type 1: Distance and Midpoint</a></li>
+                <li>
+                    <a href="#type-2-slope-and-linear-equations" aria-label="Type 2: Slope and Linear Equations">Type 2: Slope and Linear Equations</a></li>
+                <li>
+                    <a href="#type-3-parallel-and-perpendicular-lines" aria-label="Type 3: Parallel and Perpendicular Lines">Type 3: Parallel and Perpendicular Lines</a></li>
+                <li>
+                    <a href="#type-4-circles" aria-label="Type 4: Circles">Type 4: Circles</a></li>
+                <li>
+                    <a href="#type-5-transformations" aria-label="Type 5: Transformations">Type 5: Transformations</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-problem-solving-strategy" aria-label="🔍 Problem-Solving Strategy">🔍 Problem-Solving Strategy</a></li>
+                <li>
+                    <a href="#-common-mistakes" aria-label="⚠️ Common Mistakes">⚠️ Common Mistakes</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-coordinate-geometry-problem-types">🎯 Coordinate Geometry Problem Types<a hidden class="anchor" aria-hidden="true" href="#-coordinate-geometry-problem-types">#</a></h1>
+<h2 id="-problem-pattern-catalog">📊 Problem Pattern Catalog<a hidden class="anchor" aria-hidden="true" href="#-problem-pattern-catalog">#</a></h2>
+<h3 id="type-1-distance-and-midpoint"><strong>Type 1: Distance and Midpoint</strong><a hidden class="anchor" aria-hidden="true" href="#type-1-distance-and-midpoint">#</a></h3>
+<p><strong>Pattern</strong>: Find distance between two points or midpoint of a segment
+<strong>Key Formula</strong>: $d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$, $M = \left(\frac{x_1+x_2}{2}, \frac{y_1+y_2}{2}\right)$</p>
+<p><strong>Worked Example</strong>:</p>
+<blockquote>
+<p>Find the distance between $A(3,4)$ and $B(-1,2)$.</p>
+<p><strong>Solution</strong>:
+$d = \sqrt{(-1-3)^2 + (2-4)^2} = \sqrt{(-4)^2 + (-2)^2} = \sqrt{16 + 4} = \sqrt{20} = 2\sqrt{5}$</p></blockquote>
+<h3 id="type-2-slope-and-linear-equations"><strong>Type 2: Slope and Linear Equations</strong><a hidden class="anchor" aria-hidden="true" href="#type-2-slope-and-linear-equations">#</a></h3>
+<p><strong>Pattern</strong>: Find slope, write equation of line, or find intersection
+<strong>Key Formula</strong>: $m = \frac{y_2-y_1}{x_2-x_1}$, $y - y_1 = m(x - x_1)$</p>
+<p><strong>Worked Example</strong>:</p>
+<blockquote>
+<p>Write the equation of the line through $(2,5)$ and $(4,9)$.</p>
+<p><strong>Solution</strong>:
+First find slope: $m = \frac{9-5}{4-2} = \frac{4}{2} = 2$</p>
+<p>Using point-slope form: $y - 5 = 2(x - 2)$</p>
+<p>Simplifying: $y = 2x + 1$</p></blockquote>
+<h3 id="type-3-parallel-and-perpendicular-lines"><strong>Type 3: Parallel and Perpendicular Lines</strong><a hidden class="anchor" aria-hidden="true" href="#type-3-parallel-and-perpendicular-lines">#</a></h3>
+<p><strong>Pattern</strong>: Find equation of parallel/perpendicular line through a point
+<strong>Key Concept</strong>: Parallel = same slope, Perpendicular = negative reciprocal</p>
+<p><strong>Worked Example</strong>:</p>
+<blockquote>
+<p>Find the equation of the line perpendicular to $y = 3x - 2$ through $(1,4)$.</p>
+<p><strong>Solution</strong>:
+Original slope: $m_1 = 3$
+Perpendicular slope: $m_2 = -\frac{1}{3}$</p>
+<p>Equation: $y - 4 = -\frac{1}{3}(x - 1)$
+Simplifying: $y = -\frac{1}{3}x + \frac{13}{3}$</p></blockquote>
+<h3 id="type-4-circles"><strong>Type 4: Circles</strong><a hidden class="anchor" aria-hidden="true" href="#type-4-circles">#</a></h3>
+<p><strong>Pattern</strong>: Find center, radius, or equation of circle
+<strong>Key Formula</strong>: $(x-h)^2 + (y-k)^2 = r^2$</p>
+<p><strong>Worked Example</strong>:</p>
+<blockquote>
+<p>Find the center and radius of $x^2 + y^2 - 4x + 6y - 3 = 0$.</p>
+<p><strong>Solution</strong>:
+Complete the square:
+$(x^2 - 4x) + (y^2 + 6y) = 3$
+$(x^2 - 4x + 4) + (y^2 + 6y + 9) = 3 + 4 + 9$
+$(x-2)^2 + (y+3)^2 = 16$</p>
+<p>Center: $(2,-3)$, Radius: $4$</p></blockquote>
+<h3 id="type-5-transformations"><strong>Type 5: Transformations</strong><a hidden class="anchor" aria-hidden="true" href="#type-5-transformations">#</a></h3>
+<p><strong>Pattern</strong>: Apply translation, reflection, or rotation to points
+<strong>Key Concept</strong>: Know how each transformation affects coordinates</p>
+<p><strong>Worked Example</strong>:</p>
+<blockquote>
+<p>Reflect the point $(3,5)$ over the x-axis, then translate 2 units right.</p>
+<p><strong>Solution</strong>:
+Reflection over x-axis: $(3,5) \to (3,-5)$
+Translation 2 units right: $(3,-5) \to (5,-5)$</p></blockquote>
+<h2 id="-problem-solving-strategy">🔍 Problem-Solving Strategy<a hidden class="anchor" aria-hidden="true" href="#-problem-solving-strategy">#</a></h2>
+<ol>
+<li><strong>Identify the type</strong> of coordinate geometry problem</li>
+<li><strong>Write down relevant formulas</strong> for that type</li>
+<li><strong>Substitute given values</strong> carefully</li>
+<li><strong>Simplify step by step</strong> to avoid errors</li>
+<li><strong>Check your answer</strong> by plugging back in</li>
+</ol>
+<h2 id="-common-mistakes">⚠️ Common Mistakes<a hidden class="anchor" aria-hidden="true" href="#-common-mistakes">#</a></h2>
+<ul>
+<li><strong>Sign errors</strong> in distance formula</li>
+<li><strong>Mixing up rise and run</strong> in slope</li>
+<li><strong>Forgetting to complete the square</strong> for circles</li>
+<li><strong>Wrong direction</strong> in transformations</li>
+<li><strong>Arithmetic errors</strong> in midpoint calculations</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/coordinate-geometry/">Coordinate-Geometry</a></li>
+      <li><a href="http://localhost:1313/tags/problem-types/">Problem-Types</a></li>
+      <li><a href="http://localhost:1313/tags/patterns/">Patterns</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

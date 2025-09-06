@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Diagramming and Estimation | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="MATHCOUNTS, Strategy, Visualization, Estimation, Problem Solving">
+<meta name="description" content="Visual problem-solving techniques and estimation strategies for MATHCOUNTS success.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/mathcounts/strategy/diagramming-and-estimation/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/mathcounts/strategy/diagramming-and-estimation/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/mathcounts/">MATHCOUNTS Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/mathcounts/strategy/">Strategy &amp; Tactics</a></div>
+    <div class="post-meta">5 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-diagramming-and-estimation" aria-label="📐 Diagramming and Estimation">📐 Diagramming and Estimation</a><ul>
+                        
+                <li>
+                    <a href="#quick-sketching-techniques" aria-label="Quick Sketching Techniques">Quick Sketching Techniques</a><ul>
+                        
+                <li>
+                    <a href="#basic-drawing-tools" aria-label="Basic Drawing Tools">Basic Drawing Tools</a></li>
+                <li>
+                    <a href="#drawing-guidelines" aria-label="Drawing Guidelines">Drawing Guidelines</a></li>
+                <li>
+                    <a href="#common-shapes" aria-label="Common Shapes">Common Shapes</a></li></ul>
+                </li>
+                <li>
+                    <a href="#problem-solving-diagrams" aria-label="Problem-Solving Diagrams">Problem-Solving Diagrams</a><ul>
+                        
+                <li>
+                    <a href="#geometry-problems" aria-label="Geometry Problems">Geometry Problems</a></li>
+                <li>
+                    <a href="#word-problems" aria-label="Word Problems">Word Problems</a></li>
+                <li>
+                    <a href="#counting-problems" aria-label="Counting Problems">Counting Problems</a></li></ul>
+                </li>
+                <li>
+                    <a href="#estimation-strategies" aria-label="Estimation Strategies">Estimation Strategies</a><ul>
+                        
+                <li>
+                    <a href="#rounding-techniques" aria-label="Rounding Techniques">Rounding Techniques</a></li>
+                <li>
+                    <a href="#estimation-examples" aria-label="Estimation Examples">Estimation Examples</a></li>
+                <li>
+                    <a href="#when-to-use-estimation" aria-label="When to Use Estimation">When to Use Estimation</a></li></ul>
+                </li>
+                <li>
+                    <a href="#visual-problem-solving-process" aria-label="Visual Problem-Solving Process">Visual Problem-Solving Process</a><ul>
+                        
+                <li>
+                    <a href="#step-1-read-and-understand" aria-label="Step 1: Read and Understand">Step 1: Read and Understand</a></li>
+                <li>
+                    <a href="#step-2-plan-your-approach" aria-label="Step 2: Plan Your Approach">Step 2: Plan Your Approach</a></li>
+                <li>
+                    <a href="#step-3-create-the-diagram" aria-label="Step 3: Create the Diagram">Step 3: Create the Diagram</a></li>
+                <li>
+                    <a href="#step-4-solve-using-the-diagram" aria-label="Step 4: Solve Using the Diagram">Step 4: Solve Using the Diagram</a></li>
+                <li>
+                    <a href="#step-5-verify-your-answer" aria-label="Step 5: Verify Your Answer">Step 5: Verify Your Answer</a></li></ul>
+                </li>
+                <li>
+                    <a href="#common-diagram-types" aria-label="Common Diagram Types">Common Diagram Types</a><ul>
+                        
+                <li>
+                    <a href="#geometry-diagrams" aria-label="Geometry Diagrams">Geometry Diagrams</a></li>
+                <li>
+                    <a href="#word-problem-diagrams" aria-label="Word Problem Diagrams">Word Problem Diagrams</a></li>
+                <li>
+                    <a href="#counting-diagrams" aria-label="Counting Diagrams">Counting Diagrams</a></li></ul>
+                </li>
+                <li>
+                    <a href="#estimation-techniques" aria-label="Estimation Techniques">Estimation Techniques</a><ul>
+                        
+                <li>
+                    <a href="#front-end-estimation" aria-label="Front-End Estimation">Front-End Estimation</a></li>
+                <li>
+                    <a href="#compatible-numbers" aria-label="Compatible Numbers">Compatible Numbers</a></li>
+                <li>
+                    <a href="#benchmark-estimation" aria-label="Benchmark Estimation">Benchmark Estimation</a></li>
+                <li>
+                    <a href="#range-estimation" aria-label="Range Estimation">Range Estimation</a></li></ul>
+                </li>
+                <li>
+                    <a href="#practice-exercises" aria-label="Practice Exercises">Practice Exercises</a><ul>
+                        
+                <li>
+                    <a href="#drawing-practice" aria-label="Drawing Practice">Drawing Practice</a></li>
+                <li>
+                    <a href="#estimation-practice" aria-label="Estimation Practice">Estimation Practice</a></li>
+                <li>
+                    <a href="#combined-practice" aria-label="Combined Practice">Combined Practice</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-diagramming-and-estimation">📐 Diagramming and Estimation<a hidden class="anchor" aria-hidden="true" href="#-diagramming-and-estimation">#</a></h1>
+<p>Master visual problem-solving and estimation techniques to solve problems faster and more accurately.</p>
+<h2 id="quick-sketching-techniques">Quick Sketching Techniques<a hidden class="anchor" aria-hidden="true" href="#quick-sketching-techniques">#</a></h2>
+<h3 id="basic-drawing-tools">Basic Drawing Tools<a hidden class="anchor" aria-hidden="true" href="#basic-drawing-tools">#</a></h3>
+<ul>
+<li><strong>Pencil and paper</strong> for rough sketches</li>
+<li><strong>Ruler</strong> for straight lines and measurements</li>
+<li><strong>Protractor</strong> for angle measurements</li>
+<li><strong>Compass</strong> for circles and arcs</li>
+</ul>
+<h3 id="drawing-guidelines">Drawing Guidelines<a hidden class="anchor" aria-hidden="true" href="#drawing-guidelines">#</a></h3>
+<ul>
+<li><strong>Keep sketches simple</strong> and clear</li>
+<li><strong>Label all given</strong> information</li>
+<li><strong>Use standard notation</strong> (points, lines, angles)</li>
+<li><strong>Draw to scale</strong> when possible</li>
+<li><strong>Mark right angles</strong> and parallel lines</li>
+</ul>
+<h3 id="common-shapes">Common Shapes<a hidden class="anchor" aria-hidden="true" href="#common-shapes">#</a></h3>
+<ul>
+<li><strong>Triangles</strong>: Label vertices and sides</li>
+<li><strong>Quadrilaterals</strong>: Mark parallel sides and right angles</li>
+<li><strong>Circles</strong>: Label center, radius, and diameter</li>
+<li><strong>Coordinate planes</strong>: Mark axes and scale</li>
+</ul>
+<h2 id="problem-solving-diagrams">Problem-Solving Diagrams<a hidden class="anchor" aria-hidden="true" href="#problem-solving-diagrams">#</a></h2>
+<h3 id="geometry-problems">Geometry Problems<a hidden class="anchor" aria-hidden="true" href="#geometry-problems">#</a></h3>
+<p><strong>When to draw</strong>:</p>
+<ul>
+<li>Angle relationships</li>
+<li>Area and perimeter calculations</li>
+<li>Similarity and congruence</li>
+<li>Coordinate geometry</li>
+</ul>
+<p><strong>Drawing steps</strong>:</p>
+<ol>
+<li><strong>Read the problem</strong> carefully</li>
+<li><strong>Identify the shape</strong> and given information</li>
+<li><strong>Draw a rough sketch</strong> with labels</li>
+<li><strong>Mark all given</strong> measurements and angles</li>
+<li><strong>Use the diagram</strong> to solve the problem</li>
+</ol>
+<p><strong>Example</strong>: Find the area of a triangle with base 6 and height 4.</p>
+<pre tabindex="0"><code>    A
+    |\
+    | \
+    |  \
+    |   \
+    |____\
+    B    C
+   base=6
+</code></pre><h3 id="word-problems">Word Problems<a hidden class="anchor" aria-hidden="true" href="#word-problems">#</a></h3>
+<p><strong>When to draw</strong>:</p>
+<ul>
+<li>Rate, time, distance problems</li>
+<li>Mixture problems</li>
+<li>Work problems</li>
+<li>Geometry word problems</li>
+</ul>
+<p><strong>Drawing steps</strong>:</p>
+<ol>
+<li><strong>Identify the key</strong> information</li>
+<li><strong>Draw a diagram</strong> representing the situation</li>
+<li><strong>Label all given</strong> values</li>
+<li><strong>Use the diagram</strong> to set up equations</li>
+</ol>
+<p><strong>Example</strong>: A train travels 120 miles in 2 hours. How far will it travel in 5 hours?</p>
+<pre tabindex="0"><code>Distance = 120 miles
+Time = 2 hours
+Rate = 120/2 = 60 mph
+
+In 5 hours: Distance = 60 × 5 = 300 miles
+</code></pre><h3 id="counting-problems">Counting Problems<a hidden class="anchor" aria-hidden="true" href="#counting-problems">#</a></h3>
+<p><strong>When to draw</strong>:</p>
+<ul>
+<li>Tree diagrams</li>
+<li>Venn diagrams</li>
+<li>Grid problems</li>
+<li>Path counting</li>
+</ul>
+<p><strong>Drawing steps</strong>:</p>
+<ol>
+<li><strong>Identify the</strong> counting structure</li>
+<li><strong>Draw a systematic</strong> diagram</li>
+<li><strong>Count carefully</strong> using the diagram</li>
+<li><strong>Check for</strong> overcounting or undercounting</li>
+</ol>
+<h2 id="estimation-strategies">Estimation Strategies<a hidden class="anchor" aria-hidden="true" href="#estimation-strategies">#</a></h2>
+<h3 id="rounding-techniques">Rounding Techniques<a hidden class="anchor" aria-hidden="true" href="#rounding-techniques">#</a></h3>
+<p><strong>Whole numbers</strong>:</p>
+<ul>
+<li>Round to the nearest 10, 100, or 1000</li>
+<li>Use compatible numbers for easier calculation</li>
+<li>Check reasonableness of results</li>
+</ul>
+<p><strong>Decimals</strong>:</p>
+<ul>
+<li>Round to one or two decimal places</li>
+<li>Use 0.5 as a benchmark for rounding</li>
+<li>Check if the result makes sense</li>
+</ul>
+<p><strong>Fractions</strong>:</p>
+<ul>
+<li>Round to common fractions (1/2, 1/3, 1/4, etc.)</li>
+<li>Use decimal equivalents for estimation</li>
+<li>Compare to known values</li>
+</ul>
+<h3 id="estimation-examples">Estimation Examples<a hidden class="anchor" aria-hidden="true" href="#estimation-examples">#</a></h3>
+<p><strong>Arithmetic</strong>:</p>
+<ul>
+<li>$47 + 23 \approx 50 + 20 = 70$ (actual: 70)</li>
+<li>$89 \times 12 \approx 90 \times 10 = 900$ (actual: 1068)</li>
+<li>$156 \div 4 \approx 160 \div 4 = 40$ (actual: 39)</li>
+</ul>
+<p><strong>Geometry</strong>:</p>
+<ul>
+<li>Area of circle with radius 7: $A \approx 3 \times 7^2 = 147$ (actual: 153.94)</li>
+<li>Perimeter of rectangle 8×12: $P \approx 2(10 + 10) = 40$ (actual: 40)</li>
+</ul>
+<p><strong>Word problems</strong>:</p>
+<ul>
+<li>If 3 apples cost $2, then 12 apples cost about $8</li>
+<li>If a car travels 60 mph for 2.5 hours, it goes about 150 miles</li>
+</ul>
+<h3 id="when-to-use-estimation">When to Use Estimation<a hidden class="anchor" aria-hidden="true" href="#when-to-use-estimation">#</a></h3>
+<p><strong>Use estimation when</strong>:</p>
+<ul>
+<li>Exact calculation is time-consuming</li>
+<li>Answer choices are far apart</li>
+<li>You need to check reasonableness</li>
+<li>Time is limited</li>
+</ul>
+<p><strong>Don&rsquo;t use estimation when</strong>:</p>
+<ul>
+<li>Answer choices are close together</li>
+<li>Exact answer is required</li>
+<li>You have plenty of time</li>
+<li>The problem is straightforward</li>
+</ul>
+<h2 id="visual-problem-solving-process">Visual Problem-Solving Process<a hidden class="anchor" aria-hidden="true" href="#visual-problem-solving-process">#</a></h2>
+<h3 id="step-1-read-and-understand">Step 1: Read and Understand<a hidden class="anchor" aria-hidden="true" href="#step-1-read-and-understand">#</a></h3>
+<ul>
+<li><strong>Read the problem</strong> carefully</li>
+<li><strong>Identify what&rsquo;s given</strong> and what&rsquo;s asked</li>
+<li><strong>Look for key words</strong> and relationships</li>
+<li><strong>Determine the type</strong> of problem</li>
+</ul>
+<h3 id="step-2-plan-your-approach">Step 2: Plan Your Approach<a hidden class="anchor" aria-hidden="true" href="#step-2-plan-your-approach">#</a></h3>
+<ul>
+<li><strong>Decide if a diagram</strong> will help</li>
+<li><strong>Choose the best</strong> visualization method</li>
+<li><strong>Plan your drawing</strong> strategy</li>
+<li><strong>Consider estimation</strong> if appropriate</li>
+</ul>
+<h3 id="step-3-create-the-diagram">Step 3: Create the Diagram<a hidden class="anchor" aria-hidden="true" href="#step-3-create-the-diagram">#</a></h3>
+<ul>
+<li><strong>Draw a clear</strong> and accurate sketch</li>
+<li><strong>Label all given</strong> information</li>
+<li><strong>Use standard notation</strong> and symbols</li>
+<li><strong>Make it large enough</strong> to work with</li>
+</ul>
+<h3 id="step-4-solve-using-the-diagram">Step 4: Solve Using the Diagram<a hidden class="anchor" aria-hidden="true" href="#step-4-solve-using-the-diagram">#</a></h3>
+<ul>
+<li><strong>Use the diagram</strong> to identify relationships</li>
+<li><strong>Apply appropriate</strong> formulas or methods</li>
+<li><strong>Show your work</strong> clearly</li>
+<li><strong>Check your answer</strong> against the diagram</li>
+</ul>
+<h3 id="step-5-verify-your-answer">Step 5: Verify Your Answer<a hidden class="anchor" aria-hidden="true" href="#step-5-verify-your-answer">#</a></h3>
+<ul>
+<li><strong>Check that your answer</strong> makes sense</li>
+<li><strong>Verify units</strong> and measurements</li>
+<li><strong>Compare to your</strong> estimation</li>
+<li><strong>Look for alternative</strong> solution methods</li>
+</ul>
+<h2 id="common-diagram-types">Common Diagram Types<a hidden class="anchor" aria-hidden="true" href="#common-diagram-types">#</a></h2>
+<h3 id="geometry-diagrams">Geometry Diagrams<a hidden class="anchor" aria-hidden="true" href="#geometry-diagrams">#</a></h3>
+<ul>
+<li><strong>Triangles</strong>: Show sides, angles, and heights</li>
+<li><strong>Quadrilaterals</strong>: Mark parallel sides and diagonals</li>
+<li><strong>Circles</strong>: Show center, radius, and chords</li>
+<li><strong>Coordinate planes</strong>: Plot points and lines</li>
+</ul>
+<h3 id="word-problem-diagrams">Word Problem Diagrams<a hidden class="anchor" aria-hidden="true" href="#word-problem-diagrams">#</a></h3>
+<ul>
+<li><strong>Rate-time-distance</strong>: Show movement and time</li>
+<li><strong>Mixture problems</strong>: Show containers and amounts</li>
+<li><strong>Work problems</strong>: Show workers and time</li>
+<li><strong>Age problems</strong>: Show relationships over time</li>
+</ul>
+<h3 id="counting-diagrams">Counting Diagrams<a hidden class="anchor" aria-hidden="true" href="#counting-diagrams">#</a></h3>
+<ul>
+<li><strong>Tree diagrams</strong>: Show choices and outcomes</li>
+<li><strong>Venn diagrams</strong>: Show set relationships</li>
+<li><strong>Grid diagrams</strong>: Show paths and arrangements</li>
+<li><strong>Flow charts</strong>: Show processes and decisions</li>
+</ul>
+<h2 id="estimation-techniques">Estimation Techniques<a hidden class="anchor" aria-hidden="true" href="#estimation-techniques">#</a></h2>
+<h3 id="front-end-estimation">Front-End Estimation<a hidden class="anchor" aria-hidden="true" href="#front-end-estimation">#</a></h3>
+<p><strong>Method</strong>: Use the first digit of each number
+<strong>Example</strong>: $347 + 256 \approx 300 + 200 = 500$</p>
+<h3 id="compatible-numbers">Compatible Numbers<a hidden class="anchor" aria-hidden="true" href="#compatible-numbers">#</a></h3>
+<p><strong>Method</strong>: Use numbers that are easy to work with
+<strong>Example</strong>: $47 \times 12 \approx 50 \times 10 = 500$</p>
+<h3 id="benchmark-estimation">Benchmark Estimation<a hidden class="anchor" aria-hidden="true" href="#benchmark-estimation">#</a></h3>
+<p><strong>Method</strong>: Use known reference points
+<strong>Example</strong>: $0.47 \approx 0.5 = \frac{1}{2}$</p>
+<h3 id="range-estimation">Range Estimation<a hidden class="anchor" aria-hidden="true" href="#range-estimation">#</a></h3>
+<p><strong>Method</strong>: Find upper and lower bounds
+<strong>Example</strong>: $23 \times 47$ is between $20 \times 40 = 800$ and $30 \times 50 = 1500$</p>
+<h2 id="practice-exercises">Practice Exercises<a hidden class="anchor" aria-hidden="true" href="#practice-exercises">#</a></h2>
+<h3 id="drawing-practice">Drawing Practice<a hidden class="anchor" aria-hidden="true" href="#drawing-practice">#</a></h3>
+<ol>
+<li>Draw a triangle with sides 3, 4, 5</li>
+<li>Sketch a circle with radius 5</li>
+<li>Draw a coordinate plane and plot points (2,3) and (5,1)</li>
+<li>Create a Venn diagram for sets A and B</li>
+</ol>
+<h3 id="estimation-practice">Estimation Practice<a hidden class="anchor" aria-hidden="true" href="#estimation-practice">#</a></h3>
+<ol>
+<li>Estimate $67 + 34 + 89$</li>
+<li>Estimate $23 \times 47$</li>
+<li>Estimate $156 \div 8$</li>
+<li>Estimate the area of a circle with radius 6</li>
+</ol>
+<h3 id="combined-practice">Combined Practice<a hidden class="anchor" aria-hidden="true" href="#combined-practice">#</a></h3>
+<ol>
+<li>Draw a diagram for a rate-time-distance problem</li>
+<li>Use estimation to check your answer</li>
+<li>Draw a tree diagram for a counting problem</li>
+<li>Use estimation to verify your count</li>
+</ol>
+<hr>
+<p><strong>Next</strong>: <a href="mental-math">Mental Math Tricks</a><br>
+<strong>Previous</strong>: <a href="sprint-target-team-countdown">Round-Specific Playbooks</a><br>
+<strong>Back to</strong>: <a href="./">Strategy &amp; Tactics</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/mathcounts/">MATHCOUNTS</a></li>
+      <li><a href="http://localhost:1313/tags/strategy/">Strategy</a></li>
+      <li><a href="http://localhost:1313/tags/visualization/">Visualization</a></li>
+      <li><a href="http://localhost:1313/tags/estimation/">Estimation</a></li>
+      <li><a href="http://localhost:1313/tags/problem-solving/">Problem Solving</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

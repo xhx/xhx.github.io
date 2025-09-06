@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Logic and Sets Topics | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="logic, sets, topics, subtopics">
+<meta name="description" content="Key subtopics in logic and sets with examples and common traps">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/mathcounts/logic-and-sets/topics/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/mathcounts/logic-and-sets/topics/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/mathcounts/">MATHCOUNTS Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/mathcounts/logic-and-sets/">Logic and Sets</a></div>
+    <div class="post-meta">2 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-logic-and-sets-topics" aria-label="🧠 Logic and Sets Topics">🧠 Logic and Sets Topics</a><ul>
+                        
+                <li>
+                    <a href="#-core-subtopics" aria-label="🎯 Core Subtopics">🎯 Core Subtopics</a><ul>
+                        
+                <li>
+                    <a href="#basic-set-operations" aria-label="Basic Set Operations">Basic Set Operations</a></li>
+                <li>
+                    <a href="#venn-diagrams" aria-label="Venn Diagrams">Venn Diagrams</a></li>
+                <li>
+                    <a href="#inclusion-exclusion-principle" aria-label="Inclusion-Exclusion Principle">Inclusion-Exclusion Principle</a></li>
+                <li>
+                    <a href="#set-notation-and-language" aria-label="Set Notation and Language">Set Notation and Language</a></li>
+                <li>
+                    <a href="#logical-statements" aria-label="Logical Statements">Logical Statements</a></li>
+                <li>
+                    <a href="#truth-tables" aria-label="Truth Tables">Truth Tables</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-common-traps" aria-label="🚨 Common Traps">🚨 Common Traps</a></li>
+                <li>
+                    <a href="#-quick-tips" aria-label="💡 Quick Tips">💡 Quick Tips</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-logic-and-sets-topics">🧠 Logic and Sets Topics<a hidden class="anchor" aria-hidden="true" href="#-logic-and-sets-topics">#</a></h1>
+<h2 id="-core-subtopics">🎯 Core Subtopics<a hidden class="anchor" aria-hidden="true" href="#-core-subtopics">#</a></h2>
+<h3 id="basic-set-operations"><strong>Basic Set Operations</strong><a hidden class="anchor" aria-hidden="true" href="#basic-set-operations">#</a></h3>
+<ul>
+<li><strong>Union</strong>: $A \cup B$ = elements in A or B</li>
+<li><strong>Intersection</strong>: $A \cap B$ = elements in both A and B</li>
+<li><strong>Complement</strong>: $A&rsquo;$ = elements not in A</li>
+<li><strong>Micro-example</strong>: If $A = {1,2,3}$ and $B = {3,4,5}$, then $A \cup B = {1,2,3,4,5}$ and $A \cap B = {3}$</li>
+<li><strong>Trap</strong>: Confusing union and intersection symbols</li>
+</ul>
+<h3 id="venn-diagrams"><strong>Venn Diagrams</strong><a hidden class="anchor" aria-hidden="true" href="#venn-diagrams">#</a></h3>
+<ul>
+<li><strong>Two-Set Diagrams</strong>: Two overlapping circles</li>
+<li><strong>Three-Set Diagrams</strong>: Three overlapping circles</li>
+<li><strong>Region Identification</strong>: Each region represents a specific combination</li>
+<li><strong>Micro-example</strong>: In a two-set diagram, the overlapping region shows $A \cap B$</li>
+<li><strong>Trap</strong>: Forgetting to label all regions</li>
+</ul>
+<h3 id="inclusion-exclusion-principle"><strong>Inclusion-Exclusion Principle</strong><a hidden class="anchor" aria-hidden="true" href="#inclusion-exclusion-principle">#</a></h3>
+<ul>
+<li><strong>Two Sets</strong>: $|A \cup B| = |A| + |B| - |A \cap B|$</li>
+<li><strong>Three Sets</strong>: Add all sets, subtract pairwise intersections, add triple intersection</li>
+<li><strong>Micro-example</strong>: If 20 students like math, 15 like science, and 8 like both, then $20 + 15 - 8 = 27$ like at least one</li>
+<li><strong>Trap</strong>: Forgetting to subtract the intersection</li>
+</ul>
+<h3 id="set-notation-and-language"><strong>Set Notation and Language</strong><a hidden class="anchor" aria-hidden="true" href="#set-notation-and-language">#</a></h3>
+<ul>
+<li><strong>Element of</strong>: $x \in A$ means x is in set A</li>
+<li><strong>Subset</strong>: $A \subseteq B$ means every element of A is in B</li>
+<li><strong>Proper Subset</strong>: $A \subset B$ means A is a subset but not equal to B</li>
+<li><strong>Micro-example</strong>: ${1,2} \subseteq {1,2,3}$ and ${1,2} \subset {1,2,3}$</li>
+<li><strong>Trap</strong>: Confusing subset and element notation</li>
+</ul>
+<h3 id="logical-statements"><strong>Logical Statements</strong><a hidden class="anchor" aria-hidden="true" href="#logical-statements">#</a></h3>
+<ul>
+<li><strong>If-Then</strong>: $p \to q$ means &ldquo;if p then q&rdquo;</li>
+<li><strong>And</strong>: $p \land q$ means &ldquo;p and q&rdquo;</li>
+<li><strong>Or</strong>: $p \lor q$ means &ldquo;p or q&rdquo;</li>
+<li><strong>Not</strong>: $\neg p$ means &ldquo;not p&rdquo;</li>
+<li><strong>Micro-example</strong>: &ldquo;If it rains, then the ground is wet&rdquo; is $p \to q$ where p = &ldquo;it rains&rdquo; and q = &ldquo;ground is wet&rdquo;</li>
+<li><strong>Trap</strong>: Confusing &ldquo;or&rdquo; (inclusive) with &ldquo;exclusive or&rdquo;</li>
+</ul>
+<h3 id="truth-tables"><strong>Truth Tables</strong><a hidden class="anchor" aria-hidden="true" href="#truth-tables">#</a></h3>
+<ul>
+<li><strong>Two Variables</strong>: 4 rows (TT, TF, FT, FF)</li>
+<li><strong>Three Variables</strong>: 8 rows (TTT, TTF, TFT, TFF, FTT, FTF, FFT, FFF)</li>
+<li><strong>Micro-example</strong>: For $p \land q$, only row TT gives true result</li>
+<li><strong>Trap</strong>: Missing rows or wrong truth values</li>
+</ul>
+<h2 id="-common-traps">🚨 Common Traps<a hidden class="anchor" aria-hidden="true" href="#-common-traps">#</a></h2>
+<ol>
+<li><strong>Union vs Intersection</strong>: Mixing up $\cup$ and $\cap$ symbols</li>
+<li><strong>Inclusion-Exclusion</strong>: Forgetting to subtract intersections</li>
+<li><strong>Venn Diagram Regions</strong>: Missing or double-counting regions</li>
+<li><strong>Set Notation</strong>: Confusing $\in$ and $\subseteq$</li>
+<li><strong>Logical Operators</strong>: Mixing up &ldquo;and&rdquo; and &ldquo;or&rdquo;</li>
+</ol>
+<h2 id="-quick-tips">💡 Quick Tips<a hidden class="anchor" aria-hidden="true" href="#-quick-tips">#</a></h2>
+<ul>
+<li><strong>Venn Diagrams</strong>: Draw them for any set problem</li>
+<li><strong>Inclusion-Exclusion</strong>: Always subtract intersections</li>
+<li><strong>Set Notation</strong>: $\in$ for elements, $\subseteq$ for subsets</li>
+<li><strong>Truth Tables</strong>: Check all combinations systematically</li>
+<li><strong>Complement</strong>: Remember it&rsquo;s relative to the universal set</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/logic/">Logic</a></li>
+      <li><a href="http://localhost:1313/tags/sets/">Sets</a></li>
+      <li><a href="http://localhost:1313/tags/topics/">Topics</a></li>
+      <li><a href="http://localhost:1313/tags/subtopics/">Subtopics</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

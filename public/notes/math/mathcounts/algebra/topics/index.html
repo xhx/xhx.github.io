@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Algebra — Topics | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="MATHCOUNTS, Algebra, Topics, Variables, Equations">
+<meta name="description" content="Core topics and techniques for working with algebra in MATHCOUNTS.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/mathcounts/algebra/topics/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/mathcounts/algebra/topics/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/mathcounts/">MATHCOUNTS Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/mathcounts/algebra/">Algebra</a></div>
+    <div class="post-meta">6 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-algebra--topics" aria-label="🔤 Algebra — Topics">🔤 Algebra — Topics</a><ul>
+                        
+                <li>
+                    <a href="#variable-operations" aria-label="Variable Operations">Variable Operations</a><ul>
+                        
+                <li>
+                    <a href="#simplifying-expressions" aria-label="Simplifying Expressions">Simplifying Expressions</a></li>
+                <li>
+                    <a href="#evaluating-expressions" aria-label="Evaluating Expressions">Evaluating Expressions</a></li></ul>
+                </li>
+                <li>
+                    <a href="#linear-equations" aria-label="Linear Equations">Linear Equations</a><ul>
+                        
+                <li>
+                    <a href="#solving-one-step-equations" aria-label="Solving One-Step Equations">Solving One-Step Equations</a></li>
+                <li>
+                    <a href="#solving-two-step-equations" aria-label="Solving Two-Step Equations">Solving Two-Step Equations</a></li>
+                <li>
+                    <a href="#solving-multi-step-equations" aria-label="Solving Multi-Step Equations">Solving Multi-Step Equations</a></li></ul>
+                </li>
+                <li>
+                    <a href="#systems-of-equations" aria-label="Systems of Equations">Systems of Equations</a><ul>
+                        
+                <li>
+                    <a href="#substitution-method" aria-label="Substitution Method">Substitution Method</a></li>
+                <li>
+                    <a href="#elimination-method" aria-label="Elimination Method">Elimination Method</a></li></ul>
+                </li>
+                <li>
+                    <a href="#quadratic-equations" aria-label="Quadratic Equations">Quadratic Equations</a><ul>
+                        
+                <li>
+                    <a href="#factoring" aria-label="Factoring">Factoring</a></li>
+                <li>
+                    <a href="#quadratic-formula" aria-label="Quadratic Formula">Quadratic Formula</a></li></ul>
+                </li>
+                <li>
+                    <a href="#inequalities" aria-label="Inequalities">Inequalities</a><ul>
+                        
+                <li>
+                    <a href="#solving-linear-inequalities" aria-label="Solving Linear Inequalities">Solving Linear Inequalities</a></li>
+                <li>
+                    <a href="#compound-inequalities" aria-label="Compound Inequalities">Compound Inequalities</a></li></ul>
+                </li>
+                <li>
+                    <a href="#functions" aria-label="Functions">Functions</a><ul>
+                        
+                <li>
+                    <a href="#function-evaluation" aria-label="Function Evaluation">Function Evaluation</a></li>
+                <li>
+                    <a href="#function-composition" aria-label="Function Composition">Function Composition</a></li></ul>
+                </li>
+                <li>
+                    <a href="#patterns-and-sequences" aria-label="Patterns and Sequences">Patterns and Sequences</a><ul>
+                        
+                <li>
+                    <a href="#arithmetic-sequences" aria-label="Arithmetic Sequences">Arithmetic Sequences</a></li>
+                <li>
+                    <a href="#geometric-sequences" aria-label="Geometric Sequences">Geometric Sequences</a></li></ul>
+                </li>
+                <li>
+                    <a href="#word-problems" aria-label="Word Problems">Word Problems</a><ul>
+                        
+                <li>
+                    <a href="#translation" aria-label="Translation">Translation</a></li>
+                <li>
+                    <a href="#age-problems" aria-label="Age Problems">Age Problems</a></li>
+                <li>
+                    <a href="#distance-problems" aria-label="Distance Problems">Distance Problems</a></li></ul>
+                </li>
+                <li>
+                    <a href="#common-mistakes" aria-label="Common Mistakes">Common Mistakes</a><ul>
+                        
+                <li>
+                    <a href="#sign-errors" aria-label="Sign Errors">Sign Errors</a></li>
+                <li>
+                    <a href="#distribution-errors" aria-label="Distribution Errors">Distribution Errors</a></li>
+                <li>
+                    <a href="#inequality-errors" aria-label="Inequality Errors">Inequality Errors</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-algebra--topics">🔤 Algebra — Topics<a hidden class="anchor" aria-hidden="true" href="#-algebra--topics">#</a></h1>
+<p>Master the core topics and techniques for working with algebra in MATHCOUNTS.</p>
+<h2 id="variable-operations">Variable Operations<a hidden class="anchor" aria-hidden="true" href="#variable-operations">#</a></h2>
+<h3 id="simplifying-expressions">Simplifying Expressions<a hidden class="anchor" aria-hidden="true" href="#simplifying-expressions">#</a></h3>
+<p><strong>Combine like terms</strong>: Add or subtract coefficients of same variables
+<strong>Example</strong>: $3x + 2x - 5x = 0x = 0$</p>
+<p><strong>Distribute</strong>: Multiply each term inside parentheses by outside term
+<strong>Example</strong>: $2(x + 3) = 2x + 6$</p>
+<p><strong>Remove parentheses</strong>: Use distributive property or rules for signs
+<strong>Example</strong>: $-(x + 3) = -x - 3$</p>
+<p><strong>Pitfall</strong>: Forgetting to distribute negative sign
+<strong>Fix</strong>: Always distribute negative sign to each term inside</p>
+<h3 id="evaluating-expressions">Evaluating Expressions<a hidden class="anchor" aria-hidden="true" href="#evaluating-expressions">#</a></h3>
+<p><strong>Method</strong>: Substitute values for variables, then calculate
+<strong>Example</strong>: If $x = 3$, find $2x^2 + 3x - 1$</p>
+<ul>
+<li>$2(3)^2 + 3(3) - 1 = 2(9) + 9 - 1 = 18 + 9 - 1 = 26$</li>
+</ul>
+<p><strong>Pitfall</strong>: Forgetting order of operations
+<strong>Fix</strong>: Use PEMDAS systematically</p>
+<h2 id="linear-equations">Linear Equations<a hidden class="anchor" aria-hidden="true" href="#linear-equations">#</a></h2>
+<h3 id="solving-one-step-equations">Solving One-Step Equations<a hidden class="anchor" aria-hidden="true" href="#solving-one-step-equations">#</a></h3>
+<p><strong>Addition/Subtraction</strong>: Add or subtract same number to both sides
+<strong>Example</strong>: $x + 5 = 12$ becomes $x = 7$</p>
+<p><strong>Multiplication/Division</strong>: Multiply or divide both sides by same number
+<strong>Example</strong>: $3x = 15$ becomes $x = 5$</p>
+<p><strong>Pitfall</strong>: Forgetting to do same operation to both sides
+<strong>Fix</strong>: Always perform same operation to both sides</p>
+<h3 id="solving-two-step-equations">Solving Two-Step Equations<a hidden class="anchor" aria-hidden="true" href="#solving-two-step-equations">#</a></h3>
+<p><strong>Method</strong>: Use inverse operations in reverse order
+<strong>Example</strong>: $2x + 3 = 11$</p>
+<ol>
+<li>Subtract 3: $2x = 8$</li>
+<li>Divide by 2: $x = 4$</li>
+</ol>
+<p><strong>Pitfall</strong>: Doing operations in wrong order
+<strong>Fix</strong>: Always undo addition/subtraction first, then multiplication/division</p>
+<h3 id="solving-multi-step-equations">Solving Multi-Step Equations<a hidden class="anchor" aria-hidden="true" href="#solving-multi-step-equations">#</a></h3>
+<p><strong>Method</strong>: Simplify each side, then solve
+<strong>Example</strong>: $3(x + 2) - 4 = 8$</p>
+<ol>
+<li>Distribute: $3x + 6 - 4 = 8$</li>
+<li>Combine like terms: $3x + 2 = 8$</li>
+<li>Subtract 2: $3x = 6$</li>
+<li>Divide by 3: $x = 2$</li>
+</ol>
+<p><strong>Pitfall</strong>: Not simplifying before solving
+<strong>Fix</strong>: Always simplify each side first</p>
+<h2 id="systems-of-equations">Systems of Equations<a hidden class="anchor" aria-hidden="true" href="#systems-of-equations">#</a></h2>
+<h3 id="substitution-method">Substitution Method<a hidden class="anchor" aria-hidden="true" href="#substitution-method">#</a></h3>
+<p><strong>Method</strong>: Solve one equation for one variable, substitute into other
+<strong>Example</strong>: Solve $\begin{cases} x + y = 5 \ 2x - y = 1 \end{cases}$</p>
+<ol>
+<li>Solve first equation: $y = 5 - x$</li>
+<li>Substitute: $2x - (5 - x) = 1$</li>
+<li>Simplify: $2x - 5 + x = 1$, so $3x = 6$, so $x = 2$</li>
+<li>Find y: $y = 5 - 2 = 3$</li>
+</ol>
+<p><strong>Pitfall</strong>: Making substitution errors
+<strong>Fix</strong>: Always substitute entire expression in parentheses</p>
+<h3 id="elimination-method">Elimination Method<a hidden class="anchor" aria-hidden="true" href="#elimination-method">#</a></h3>
+<p><strong>Method</strong>: Add or subtract equations to eliminate one variable
+<strong>Example</strong>: Solve $\begin{cases} x + y = 5 \ 2x - y = 1 \end{cases}$</p>
+<ol>
+<li>Add equations: $(x + y) + (2x - y) = 5 + 1$</li>
+<li>Simplify: $3x = 6$, so $x = 2$</li>
+<li>Substitute: $2 + y = 5$, so $y = 3$</li>
+</ol>
+<p><strong>Pitfall</strong>: Not aligning like terms
+<strong>Fix</strong>: Always align like terms before adding/subtracting</p>
+<h2 id="quadratic-equations">Quadratic Equations<a hidden class="anchor" aria-hidden="true" href="#quadratic-equations">#</a></h2>
+<h3 id="factoring">Factoring<a hidden class="anchor" aria-hidden="true" href="#factoring">#</a></h3>
+<p><strong>Method</strong>: Factor into $(x - r_1)(x - r_2) = 0$
+<strong>Example</strong>: $x^2 - 5x + 6 = 0$ becomes $(x - 2)(x - 3) = 0$</p>
+<ul>
+<li>Solutions: $x = 2$ or $x = 3$</li>
+</ul>
+<p><strong>Common patterns</strong>:</p>
+<ul>
+<li>$x^2 + 2ax + a^2 = (x + a)^2$</li>
+<li>$x^2 - 2ax + a^2 = (x - a)^2$</li>
+<li>$x^2 - a^2 = (x + a)(x - a)$</li>
+</ul>
+<p><strong>Pitfall</strong>: Not checking if factoring is possible
+<strong>Fix</strong>: Always try factoring first, use quadratic formula if needed</p>
+<h3 id="quadratic-formula">Quadratic Formula<a hidden class="anchor" aria-hidden="true" href="#quadratic-formula">#</a></h3>
+<p><strong>Formula</strong>: $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$
+<strong>Example</strong>: Solve $x^2 - 5x + 6 = 0$</p>
+<ul>
+<li>$a = 1$, $b = -5$, $c = 6$</li>
+<li>$x = \frac{5 \pm \sqrt{25 - 24}}{2} = \frac{5 \pm 1}{2}$</li>
+<li>Solutions: $x = 3$ or $x = 2$</li>
+</ul>
+<p><strong>Pitfall</strong>: Forgetting to use $\pm$ sign
+<strong>Fix</strong>: Always include both positive and negative solutions</p>
+<h2 id="inequalities">Inequalities<a hidden class="anchor" aria-hidden="true" href="#inequalities">#</a></h2>
+<h3 id="solving-linear-inequalities">Solving Linear Inequalities<a hidden class="anchor" aria-hidden="true" href="#solving-linear-inequalities">#</a></h3>
+<p><strong>Method</strong>: Same as equations, but flip inequality when multiplying/dividing by negative
+<strong>Example</strong>: Solve $2x + 3 &lt; 11$</p>
+<ol>
+<li>Subtract 3: $2x &lt; 8$</li>
+<li>Divide by 2: $x &lt; 4$</li>
+</ol>
+<p><strong>Example</strong>: Solve $-2x + 3 &lt; 11$</p>
+<ol>
+<li>Subtract 3: $-2x &lt; 8$</li>
+<li>Divide by -2: $x &gt; -4$ (flip inequality)</li>
+</ol>
+<p><strong>Pitfall</strong>: Forgetting to flip inequality
+<strong>Fix</strong>: Always flip when multiplying/dividing by negative</p>
+<h3 id="compound-inequalities">Compound Inequalities<a hidden class="anchor" aria-hidden="true" href="#compound-inequalities">#</a></h3>
+<p><strong>And</strong>: $a &lt; x &lt; b$ (both conditions must be true)
+<strong>Or</strong>: $x &lt; a$ or $x &gt; b$ (either condition can be true)</p>
+<p><strong>Example</strong>: Solve $2 &lt; x + 3 &lt; 7$</p>
+<ol>
+<li>Subtract 3: $-1 &lt; x &lt; 4$</li>
+<li>Solution: All numbers between -1 and 4</li>
+</ol>
+<p><strong>Pitfall</strong>: Confusing &ldquo;and&rdquo; and &ldquo;or&rdquo;
+<strong>Fix</strong>: &ldquo;And&rdquo; means both conditions, &ldquo;or&rdquo; means either condition</p>
+<h2 id="functions">Functions<a hidden class="anchor" aria-hidden="true" href="#functions">#</a></h2>
+<h3 id="function-evaluation">Function Evaluation<a hidden class="anchor" aria-hidden="true" href="#function-evaluation">#</a></h3>
+<p><strong>Method</strong>: Substitute value for variable
+<strong>Example</strong>: If $f(x) = 2x + 3$, find $f(4)$</p>
+<ul>
+<li>$f(4) = 2(4) + 3 = 8 + 3 = 11$</li>
+</ul>
+<p><strong>Pitfall</strong>: Forgetting to substitute entire expression
+<strong>Fix</strong>: Always substitute in parentheses</p>
+<h3 id="function-composition">Function Composition<a hidden class="anchor" aria-hidden="true" href="#function-composition">#</a></h3>
+<p><strong>Method</strong>: Substitute one function into another
+<strong>Example</strong>: If $f(x) = 2x + 3$ and $g(x) = x^2$, find $f(g(2))$</p>
+<ol>
+<li>Find $g(2)$: $g(2) = 2^2 = 4$</li>
+<li>Find $f(4)$: $f(4) = 2(4) + 3 = 11$</li>
+</ol>
+<p><strong>Pitfall</strong>: Working from outside in
+<strong>Fix</strong>: Always work from inside out</p>
+<h2 id="patterns-and-sequences">Patterns and Sequences<a hidden class="anchor" aria-hidden="true" href="#patterns-and-sequences">#</a></h2>
+<h3 id="arithmetic-sequences">Arithmetic Sequences<a hidden class="anchor" aria-hidden="true" href="#arithmetic-sequences">#</a></h3>
+<p><strong>Formula</strong>: $a_n = a_1 + (n-1)d$ where $d$ is common difference
+<strong>Example</strong>: 2, 5, 8, 11, &hellip; has $d = 3$</p>
+<ul>
+<li>$a_n = 2 + (n-1)(3) = 3n - 1$</li>
+</ul>
+<p><strong>Pitfall</strong>: Forgetting to subtract 1 from n
+<strong>Fix</strong>: Always use $(n-1)$ in formula</p>
+<h3 id="geometric-sequences">Geometric Sequences<a hidden class="anchor" aria-hidden="true" href="#geometric-sequences">#</a></h3>
+<p><strong>Formula</strong>: $a_n = a_1 \cdot r^{n-1}$ where $r$ is common ratio
+<strong>Example</strong>: 2, 6, 18, 54, &hellip; has $r = 3$</p>
+<ul>
+<li>$a_n = 2 \cdot 3^{n-1}$</li>
+</ul>
+<p><strong>Pitfall</strong>: Confusing arithmetic and geometric
+<strong>Fix</strong>: Arithmetic adds, geometric multiplies</p>
+<h2 id="word-problems">Word Problems<a hidden class="anchor" aria-hidden="true" href="#word-problems">#</a></h2>
+<h3 id="translation">Translation<a hidden class="anchor" aria-hidden="true" href="#translation">#</a></h3>
+<p><strong>Key words</strong>:</p>
+<ul>
+<li>&ldquo;is&rdquo; or &ldquo;equals&rdquo; → $=$</li>
+<li>&ldquo;more than&rdquo; or &ldquo;increased by&rdquo; → $+$</li>
+<li>&ldquo;less than&rdquo; or &ldquo;decreased by&rdquo; → $-$</li>
+<li>&ldquo;times&rdquo; or &ldquo;of&rdquo; → $\times$</li>
+<li>&ldquo;divided by&rdquo; → $\div$</li>
+</ul>
+<p><strong>Example</strong>: &ldquo;Five more than twice a number is 13&rdquo;</p>
+<ul>
+<li>Translation: $2x + 5 = 13$</li>
+<li>Solution: $x = 4$</li>
+</ul>
+<p><strong>Pitfall</strong>: Misinterpreting &ldquo;less than&rdquo;
+<strong>Fix</strong>: &ldquo;5 less than x&rdquo; means $x - 5$, not $5 - x$</p>
+<h3 id="age-problems">Age Problems<a hidden class="anchor" aria-hidden="true" href="#age-problems">#</a></h3>
+<p><strong>Method</strong>: Use variables for ages, set up equations
+<strong>Example</strong>: &ldquo;John is 5 years older than Mary. In 3 years, John will be twice as old as Mary.&rdquo;</p>
+<ul>
+<li>Let $x$ = Mary&rsquo;s age now</li>
+<li>John&rsquo;s age now: $x + 5$</li>
+<li>In 3 years: Mary = $x + 3$, John = $x + 8$</li>
+<li>Equation: $x + 8 = 2(x + 3)$</li>
+<li>Solution: $x = 2$, so Mary is 2, John is 7</li>
+</ul>
+<p><strong>Pitfall</strong>: Not accounting for time changes
+<strong>Fix</strong>: Always consider how ages change over time</p>
+<h3 id="distance-problems">Distance Problems<a hidden class="anchor" aria-hidden="true" href="#distance-problems">#</a></h3>
+<p><strong>Method</strong>: Use $d = rt$ formula
+<strong>Example</strong>: &ldquo;A car travels 60 mph for 2 hours, then 40 mph for 3 hours. What is the total distance?&rdquo;</p>
+<ul>
+<li>Distance 1: $60 \times 2 = 120$ miles</li>
+<li>Distance 2: $40 \times 3 = 120$ miles</li>
+<li>Total: $120 + 120 = 240$ miles</li>
+</ul>
+<p><strong>Pitfall</strong>: Not using correct formula
+<strong>Fix</strong>: Always use $d = rt$ for distance problems</p>
+<h2 id="common-mistakes">Common Mistakes<a hidden class="anchor" aria-hidden="true" href="#common-mistakes">#</a></h2>
+<h3 id="sign-errors">Sign Errors<a hidden class="anchor" aria-hidden="true" href="#sign-errors">#</a></h3>
+<p><strong>Mistake</strong>: $-(x + 3) = -x + 3$
+<strong>Fix</strong>: $-(x + 3) = -x - 3$</p>
+<p><strong>Mistake</strong>: $2(x - 3) = 2x - 3$
+<strong>Fix</strong>: $2(x - 3) = 2x - 6$</p>
+<h3 id="distribution-errors">Distribution Errors<a hidden class="anchor" aria-hidden="true" href="#distribution-errors">#</a></h3>
+<p><strong>Mistake</strong>: $3(x + 2) = 3x + 2$
+<strong>Fix</strong>: $3(x + 2) = 3x + 6$</p>
+<p><strong>Mistake</strong>: $-(x - 3) = -x - 3$
+<strong>Fix</strong>: $-(x - 3) = -x + 3$</p>
+<h3 id="inequality-errors">Inequality Errors<a hidden class="anchor" aria-hidden="true" href="#inequality-errors">#</a></h3>
+<p><strong>Mistake</strong>: When multiplying by negative, not flipping inequality
+<strong>Fix</strong>: Always flip inequality when multiplying/dividing by negative</p>
+<p><strong>Mistake</strong>: Confusing &ldquo;and&rdquo; and &ldquo;or&rdquo; in compound inequalities
+<strong>Fix</strong>: &ldquo;And&rdquo; means both conditions, &ldquo;or&rdquo; means either condition</p>
+<hr>
+<p><strong>Next</strong>: <a href="problem-types">Problem Types</a><br>
+<strong>Previous</strong>: <a href="reference">Reference</a><br>
+<strong>Back to</strong>: <a href="./">Algebra</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/mathcounts/">MATHCOUNTS</a></li>
+      <li><a href="http://localhost:1313/tags/algebra/">Algebra</a></li>
+      <li><a href="http://localhost:1313/tags/topics/">Topics</a></li>
+      <li><a href="http://localhost:1313/tags/variables/">Variables</a></li>
+      <li><a href="http://localhost:1313/tags/equations/">Equations</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

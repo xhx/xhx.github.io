@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Algebra — Problem Types | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="MATHCOUNTS, Algebra, Problem Types, Patterns, Solutions">
+<meta name="description" content="Common problem patterns and systematic solution approaches for algebra problems in MATHCOUNTS.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/mathcounts/algebra/problem-types/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/mathcounts/algebra/problem-types/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/mathcounts/">MATHCOUNTS Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/mathcounts/algebra/">Algebra</a></div>
+    <div class="post-meta">7 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-algebra--problem-types" aria-label="🔤 Algebra — Problem Types">🔤 Algebra — Problem Types</a><ul>
+                        
+                <li>
+                    <a href="#basic-equation-problems" aria-label="Basic Equation Problems">Basic Equation Problems</a><ul>
+                        
+                <li>
+                    <a href="#one-step-equations" aria-label="One-Step Equations">One-Step Equations</a></li>
+                <li>
+                    <a href="#two-step-equations" aria-label="Two-Step Equations">Two-Step Equations</a></li>
+                <li>
+                    <a href="#multi-step-equations" aria-label="Multi-Step Equations">Multi-Step Equations</a></li></ul>
+                </li>
+                <li>
+                    <a href="#system-of-equations-problems" aria-label="System of Equations Problems">System of Equations Problems</a><ul>
+                        
+                <li>
+                    <a href="#substitution-method" aria-label="Substitution Method">Substitution Method</a></li>
+                <li>
+                    <a href="#elimination-method" aria-label="Elimination Method">Elimination Method</a></li></ul>
+                </li>
+                <li>
+                    <a href="#quadratic-equation-problems" aria-label="Quadratic Equation Problems">Quadratic Equation Problems</a><ul>
+                        
+                <li>
+                    <a href="#factoring-method" aria-label="Factoring Method">Factoring Method</a></li>
+                <li>
+                    <a href="#quadratic-formula-method" aria-label="Quadratic Formula Method">Quadratic Formula Method</a></li></ul>
+                </li>
+                <li>
+                    <a href="#inequality-problems" aria-label="Inequality Problems">Inequality Problems</a><ul>
+                        
+                <li>
+                    <a href="#linear-inequalities" aria-label="Linear Inequalities">Linear Inequalities</a></li>
+                <li>
+                    <a href="#compound-inequalities" aria-label="Compound Inequalities">Compound Inequalities</a></li></ul>
+                </li>
+                <li>
+                    <a href="#function-problems" aria-label="Function Problems">Function Problems</a><ul>
+                        
+                <li>
+                    <a href="#function-evaluation" aria-label="Function Evaluation">Function Evaluation</a></li>
+                <li>
+                    <a href="#function-composition" aria-label="Function Composition">Function Composition</a></li></ul>
+                </li>
+                <li>
+                    <a href="#word-problems" aria-label="Word Problems">Word Problems</a><ul>
+                        
+                <li>
+                    <a href="#age-problems" aria-label="Age Problems">Age Problems</a></li>
+                <li>
+                    <a href="#distance-problems" aria-label="Distance Problems">Distance Problems</a></li>
+                <li>
+                    <a href="#mixture-problems" aria-label="Mixture Problems">Mixture Problems</a></li></ul>
+                </li>
+                <li>
+                    <a href="#pattern-problems" aria-label="Pattern Problems">Pattern Problems</a><ul>
+                        
+                <li>
+                    <a href="#arithmetic-sequences" aria-label="Arithmetic Sequences">Arithmetic Sequences</a></li>
+                <li>
+                    <a href="#geometric-sequences" aria-label="Geometric Sequences">Geometric Sequences</a></li></ul>
+                </li>
+                <li>
+                    <a href="#common-mistakes-and-fixes" aria-label="Common Mistakes and Fixes">Common Mistakes and Fixes</a><ul>
+                        
+                <li>
+                    <a href="#sign-errors" aria-label="Sign Errors">Sign Errors</a></li>
+                <li>
+                    <a href="#distribution-errors" aria-label="Distribution Errors">Distribution Errors</a></li>
+                <li>
+                    <a href="#inequality-errors" aria-label="Inequality Errors">Inequality Errors</a></li>
+                <li>
+                    <a href="#function-errors" aria-label="Function Errors">Function Errors</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-algebra--problem-types">🔤 Algebra — Problem Types<a hidden class="anchor" aria-hidden="true" href="#-algebra--problem-types">#</a></h1>
+<p>Master the common problem patterns and systematic solution approaches for algebra problems.</p>
+<h2 id="basic-equation-problems">Basic Equation Problems<a hidden class="anchor" aria-hidden="true" href="#basic-equation-problems">#</a></h2>
+<h3 id="one-step-equations">One-Step Equations<a hidden class="anchor" aria-hidden="true" href="#one-step-equations">#</a></h3>
+<p><strong>Recognition</strong>: Single operation required to solve
+<strong>Template</strong>:</p>
+<ol>
+<li>Identify the operation</li>
+<li>Use inverse operation</li>
+<li>Check solution</li>
+</ol>
+<p><strong>Example</strong>: Solve $x + 5 = 12$</p>
+<ol>
+<li><strong>Operation</strong>: Addition of 5</li>
+<li><strong>Inverse</strong>: Subtract 5 from both sides</li>
+<li><strong>Solution</strong>: $x = 7$</li>
+<li><strong>Check</strong>: $7 + 5 = 12$ ✓</li>
+</ol>
+<p><strong>Common variations</strong>:</p>
+<ul>
+<li>Addition: $x + a = b$</li>
+<li>Subtraction: $x - a = b$</li>
+<li>Multiplication: $ax = b$</li>
+<li>Division: $\frac{x}{a} = b$</li>
+</ul>
+<h3 id="two-step-equations">Two-Step Equations<a hidden class="anchor" aria-hidden="true" href="#two-step-equations">#</a></h3>
+<p><strong>Recognition</strong>: Two operations required to solve
+<strong>Template</strong>:</p>
+<ol>
+<li>Undo addition/subtraction first</li>
+<li>Undo multiplication/division second</li>
+<li>Check solution</li>
+</ol>
+<p><strong>Example</strong>: Solve $2x + 3 = 11$</p>
+<ol>
+<li><strong>Step 1</strong>: Subtract 3: $2x = 8$</li>
+<li><strong>Step 2</strong>: Divide by 2: $x = 4$</li>
+<li><strong>Check</strong>: $2(4) + 3 = 11$ ✓</li>
+</ol>
+<p><strong>Common variations</strong>:</p>
+<ul>
+<li>$ax + b = c$</li>
+<li>$ax - b = c$</li>
+<li>$\frac{x}{a} + b = c$</li>
+<li>$\frac{x}{a} - b = c$</li>
+</ul>
+<h3 id="multi-step-equations">Multi-Step Equations<a hidden class="anchor" aria-hidden="true" href="#multi-step-equations">#</a></h3>
+<p><strong>Recognition</strong>: Multiple operations and simplification required
+<strong>Template</strong>:</p>
+<ol>
+<li>Simplify each side</li>
+<li>Use inverse operations</li>
+<li>Check solution</li>
+</ol>
+<p><strong>Example</strong>: Solve $3(x + 2) - 4 = 8$</p>
+<ol>
+<li><strong>Simplify</strong>: $3x + 6 - 4 = 8$, so $3x + 2 = 8$</li>
+<li><strong>Solve</strong>: $3x = 6$, so $x = 2$</li>
+<li><strong>Check</strong>: $3(2 + 2) - 4 = 3(4) - 4 = 12 - 4 = 8$ ✓</li>
+</ol>
+<h2 id="system-of-equations-problems">System of Equations Problems<a hidden class="anchor" aria-hidden="true" href="#system-of-equations-problems">#</a></h2>
+<h3 id="substitution-method">Substitution Method<a hidden class="anchor" aria-hidden="true" href="#substitution-method">#</a></h3>
+<p><strong>Recognition</strong>: One equation can be easily solved for one variable
+<strong>Template</strong>:</p>
+<ol>
+<li>Solve one equation for one variable</li>
+<li>Substitute into other equation</li>
+<li>Solve for remaining variable</li>
+<li>Find other variable</li>
+<li>Check solution</li>
+</ol>
+<p><strong>Example</strong>: Solve $\begin{cases} x + y = 5 \ 2x - y = 1 \end{cases}$</p>
+<ol>
+<li><strong>Solve first</strong>: $y = 5 - x$</li>
+<li><strong>Substitute</strong>: $2x - (5 - x) = 1$</li>
+<li><strong>Simplify</strong>: $2x - 5 + x = 1$, so $3x = 6$, so $x = 2$</li>
+<li><strong>Find y</strong>: $y = 5 - 2 = 3$</li>
+<li><strong>Check</strong>: $2 + 3 = 5$ and $2(2) - 3 = 1$ ✓</li>
+</ol>
+<h3 id="elimination-method">Elimination Method<a hidden class="anchor" aria-hidden="true" href="#elimination-method">#</a></h3>
+<p><strong>Recognition</strong>: Variables can be eliminated by adding/subtracting equations
+<strong>Template</strong>:</p>
+<ol>
+<li>Align like terms</li>
+<li>Add or subtract equations to eliminate one variable</li>
+<li>Solve for remaining variable</li>
+<li>Find other variable</li>
+<li>Check solution</li>
+</ol>
+<p><strong>Example</strong>: Solve $\begin{cases} x + y = 5 \ 2x - y = 1 \end{cases}$</p>
+<ol>
+<li><strong>Align</strong>: Already aligned</li>
+<li><strong>Add</strong>: $(x + y) + (2x - y) = 5 + 1$, so $3x = 6$</li>
+<li><strong>Solve</strong>: $x = 2$</li>
+<li><strong>Find y</strong>: $2 + y = 5$, so $y = 3$</li>
+<li><strong>Check</strong>: $2 + 3 = 5$ and $2(2) - 3 = 1$ ✓</li>
+</ol>
+<h2 id="quadratic-equation-problems">Quadratic Equation Problems<a hidden class="anchor" aria-hidden="true" href="#quadratic-equation-problems">#</a></h2>
+<h3 id="factoring-method">Factoring Method<a hidden class="anchor" aria-hidden="true" href="#factoring-method">#</a></h3>
+<p><strong>Recognition</strong>: Quadratic can be factored into two binomials
+<strong>Template</strong>:</p>
+<ol>
+<li>Set equation equal to zero</li>
+<li>Factor into $(x - r_1)(x - r_2) = 0$</li>
+<li>Set each factor equal to zero</li>
+<li>Solve for x</li>
+<li>Check solutions</li>
+</ol>
+<p><strong>Example</strong>: Solve $x^2 - 5x + 6 = 0$</p>
+<ol>
+<li><strong>Set to zero</strong>: Already set</li>
+<li><strong>Factor</strong>: $(x - 2)(x - 3) = 0$</li>
+<li><strong>Set factors</strong>: $x - 2 = 0$ or $x - 3 = 0$</li>
+<li><strong>Solve</strong>: $x = 2$ or $x = 3$</li>
+<li><strong>Check</strong>: $2^2 - 5(2) + 6 = 0$ and $3^2 - 5(3) + 6 = 0$ ✓</li>
+</ol>
+<h3 id="quadratic-formula-method">Quadratic Formula Method<a hidden class="anchor" aria-hidden="true" href="#quadratic-formula-method">#</a></h3>
+<p><strong>Recognition</strong>: Quadratic cannot be easily factored
+<strong>Template</strong>:</p>
+<ol>
+<li>Identify a, b, c</li>
+<li>Substitute into formula</li>
+<li>Simplify</li>
+<li>Check solutions</li>
+</ol>
+<p><strong>Example</strong>: Solve $x^2 - 5x + 6 = 0$</p>
+<ol>
+<li><strong>Identify</strong>: $a = 1$, $b = -5$, $c = 6$</li>
+<li><strong>Formula</strong>: $x = \frac{5 \pm \sqrt{25 - 24}}{2}$</li>
+<li><strong>Simplify</strong>: $x = \frac{5 \pm 1}{2}$</li>
+<li><strong>Solutions</strong>: $x = 3$ or $x = 2$</li>
+<li><strong>Check</strong>: $3^2 - 5(3) + 6 = 0$ and $2^2 - 5(2) + 6 = 0$ ✓</li>
+</ol>
+<h2 id="inequality-problems">Inequality Problems<a hidden class="anchor" aria-hidden="true" href="#inequality-problems">#</a></h2>
+<h3 id="linear-inequalities">Linear Inequalities<a hidden class="anchor" aria-hidden="true" href="#linear-inequalities">#</a></h3>
+<p><strong>Recognition</strong>: Single variable inequality
+<strong>Template</strong>:</p>
+<ol>
+<li>Solve like equation</li>
+<li>Flip inequality if multiplying/dividing by negative</li>
+<li>Graph solution</li>
+<li>Check solution</li>
+</ol>
+<p><strong>Example</strong>: Solve $2x + 3 &lt; 11$</p>
+<ol>
+<li><strong>Solve</strong>: $2x &lt; 8$, so $x &lt; 4$</li>
+<li><strong>Flip</strong>: Not needed (positive coefficient)</li>
+<li><strong>Graph</strong>: Open circle at 4, arrow left</li>
+<li><strong>Check</strong>: $x = 3$ gives $2(3) + 3 = 9 &lt; 11$ ✓</li>
+</ol>
+<h3 id="compound-inequalities">Compound Inequalities<a hidden class="anchor" aria-hidden="true" href="#compound-inequalities">#</a></h3>
+<p><strong>Recognition</strong>: Two inequalities connected by &ldquo;and&rdquo; or &ldquo;or&rdquo;
+<strong>Template</strong>:</p>
+<ol>
+<li>Solve each inequality separately</li>
+<li>Combine using &ldquo;and&rdquo; or &ldquo;or&rdquo;</li>
+<li>Graph solution</li>
+<li>Check solution</li>
+</ol>
+<p><strong>Example</strong>: Solve $2 &lt; x + 3 &lt; 7$</p>
+<ol>
+<li><strong>Solve</strong>: $2 &lt; x + 3$ and $x + 3 &lt; 7$</li>
+<li><strong>Simplify</strong>: $-1 &lt; x$ and $x &lt; 4$</li>
+<li><strong>Combine</strong>: $-1 &lt; x &lt; 4$</li>
+<li><strong>Graph</strong>: Open circles at -1 and 4, line between</li>
+<li><strong>Check</strong>: $x = 0$ gives $2 &lt; 3 &lt; 7$ ✓</li>
+</ol>
+<h2 id="function-problems">Function Problems<a hidden class="anchor" aria-hidden="true" href="#function-problems">#</a></h2>
+<h3 id="function-evaluation">Function Evaluation<a hidden class="anchor" aria-hidden="true" href="#function-evaluation">#</a></h3>
+<p><strong>Recognition</strong>: Find value of function for given input
+<strong>Template</strong>:</p>
+<ol>
+<li>Substitute value for variable</li>
+<li>Simplify expression</li>
+<li>Check answer</li>
+</ol>
+<p><strong>Example</strong>: If $f(x) = 2x + 3$, find $f(4)$</p>
+<ol>
+<li><strong>Substitute</strong>: $f(4) = 2(4) + 3$</li>
+<li><strong>Simplify</strong>: $f(4) = 8 + 3 = 11$</li>
+<li><strong>Check</strong>: $f(4) = 11$ ✓</li>
+</ol>
+<h3 id="function-composition">Function Composition<a hidden class="anchor" aria-hidden="true" href="#function-composition">#</a></h3>
+<p><strong>Recognition</strong>: Find value of one function applied to another
+<strong>Template</strong>:</p>
+<ol>
+<li>Find inner function value</li>
+<li>Substitute into outer function</li>
+<li>Simplify</li>
+<li>Check answer</li>
+</ol>
+<p><strong>Example</strong>: If $f(x) = 2x + 3$ and $g(x) = x^2$, find $f(g(2))$</p>
+<ol>
+<li><strong>Inner function</strong>: $g(2) = 2^2 = 4$</li>
+<li><strong>Outer function</strong>: $f(4) = 2(4) + 3 = 11$</li>
+<li><strong>Check</strong>: $f(g(2)) = f(4) = 11$ ✓</li>
+</ol>
+<h2 id="word-problems">Word Problems<a hidden class="anchor" aria-hidden="true" href="#word-problems">#</a></h2>
+<h3 id="age-problems">Age Problems<a hidden class="anchor" aria-hidden="true" href="#age-problems">#</a></h3>
+<p><strong>Recognition</strong>: Problems about ages of people
+<strong>Template</strong>:</p>
+<ol>
+<li>Define variables for ages</li>
+<li>Set up equations based on relationships</li>
+<li>Solve system</li>
+<li>Check answer</li>
+</ol>
+<p><strong>Example</strong>: &ldquo;John is 5 years older than Mary. In 3 years, John will be twice as old as Mary.&rdquo;</p>
+<ol>
+<li><strong>Variables</strong>: Let $x$ = Mary&rsquo;s age now</li>
+<li><strong>Equations</strong>: John now = $x + 5$, In 3 years: Mary = $x + 3$, John = $x + 8$</li>
+<li><strong>Equation</strong>: $x + 8 = 2(x + 3)$</li>
+<li><strong>Solve</strong>: $x + 8 = 2x + 6$, so $x = 2$</li>
+<li><strong>Answer</strong>: Mary is 2, John is 7</li>
+</ol>
+<h3 id="distance-problems">Distance Problems<a hidden class="anchor" aria-hidden="true" href="#distance-problems">#</a></h3>
+<p><strong>Recognition</strong>: Problems involving distance, rate, and time
+<strong>Template</strong>:</p>
+<ol>
+<li>Use $d = rt$ formula</li>
+<li>Set up equations based on given information</li>
+<li>Solve system</li>
+<li>Check answer</li>
+</ol>
+<p><strong>Example</strong>: &ldquo;A car travels 60 mph for 2 hours, then 40 mph for 3 hours. What is the total distance?&rdquo;</p>
+<ol>
+<li><strong>Distance 1</strong>: $d_1 = 60 \times 2 = 120$ miles</li>
+<li><strong>Distance 2</strong>: $d_2 = 40 \times 3 = 120$ miles</li>
+<li><strong>Total</strong>: $d = d_1 + d_2 = 120 + 120 = 240$ miles</li>
+<li><strong>Check</strong>: $240 = 60 \times 2 + 40 \times 3$ ✓</li>
+</ol>
+<h3 id="mixture-problems">Mixture Problems<a hidden class="anchor" aria-hidden="true" href="#mixture-problems">#</a></h3>
+<p><strong>Recognition</strong>: Problems about mixing different concentrations
+<strong>Template</strong>:</p>
+<ol>
+<li>Define variables for amounts</li>
+<li>Set up equations based on concentrations</li>
+<li>Solve system</li>
+<li>Check answer</li>
+</ol>
+<p><strong>Example</strong>: &ldquo;Mix 2 liters of 20% acid with 3 liters of 80% acid. What is the concentration?&rdquo;</p>
+<ol>
+<li><strong>Variables</strong>: Let $x$ = final concentration</li>
+<li><strong>Equation</strong>: $2(0.20) + 3(0.80) = 5x$</li>
+<li><strong>Solve</strong>: $0.4 + 2.4 = 5x$, so $x = 0.56$</li>
+<li><strong>Answer</strong>: 56% acid</li>
+</ol>
+<h2 id="pattern-problems">Pattern Problems<a hidden class="anchor" aria-hidden="true" href="#pattern-problems">#</a></h2>
+<h3 id="arithmetic-sequences">Arithmetic Sequences<a hidden class="anchor" aria-hidden="true" href="#arithmetic-sequences">#</a></h3>
+<p><strong>Recognition</strong>: Sequence with constant difference
+<strong>Template</strong>:</p>
+<ol>
+<li>Find first term and common difference</li>
+<li>Use formula $a_n = a_1 + (n-1)d$</li>
+<li>Calculate desired term</li>
+<li>Check answer</li>
+</ol>
+<p><strong>Example</strong>: Find the 10th term of 2, 5, 8, 11, &hellip;</p>
+<ol>
+<li><strong>First term</strong>: $a_1 = 2$</li>
+<li><strong>Common difference</strong>: $d = 3$</li>
+<li><strong>Formula</strong>: $a_{10} = 2 + (10-1)(3) = 2 + 27 = 29$</li>
+<li><strong>Check</strong>: $a_4 = 2 + 3(3) = 11$ ✓</li>
+</ol>
+<h3 id="geometric-sequences">Geometric Sequences<a hidden class="anchor" aria-hidden="true" href="#geometric-sequences">#</a></h3>
+<p><strong>Recognition</strong>: Sequence with constant ratio
+<strong>Template</strong>:</p>
+<ol>
+<li>Find first term and common ratio</li>
+<li>Use formula $a_n = a_1 \cdot r^{n-1}$</li>
+<li>Calculate desired term</li>
+<li>Check answer</li>
+</ol>
+<p><strong>Example</strong>: Find the 5th term of 2, 6, 18, 54, &hellip;</p>
+<ol>
+<li><strong>First term</strong>: $a_1 = 2$</li>
+<li><strong>Common ratio</strong>: $r = 3$</li>
+<li><strong>Formula</strong>: $a_5 = 2 \cdot 3^{5-1} = 2 \cdot 3^4 = 2 \cdot 81 = 162$</li>
+<li><strong>Check</strong>: $a_4 = 2 \cdot 3^3 = 2 \cdot 27 = 54$ ✓</li>
+</ol>
+<h2 id="common-mistakes-and-fixes">Common Mistakes and Fixes<a hidden class="anchor" aria-hidden="true" href="#common-mistakes-and-fixes">#</a></h2>
+<h3 id="sign-errors">Sign Errors<a hidden class="anchor" aria-hidden="true" href="#sign-errors">#</a></h3>
+<p><strong>Mistake</strong>: $-(x + 3) = -x + 3$
+<strong>Fix</strong>: $-(x + 3) = -x - 3$</p>
+<p><strong>Mistake</strong>: $2(x - 3) = 2x - 3$
+<strong>Fix</strong>: $2(x - 3) = 2x - 6$</p>
+<h3 id="distribution-errors">Distribution Errors<a hidden class="anchor" aria-hidden="true" href="#distribution-errors">#</a></h3>
+<p><strong>Mistake</strong>: $3(x + 2) = 3x + 2$
+<strong>Fix</strong>: $3(x + 2) = 3x + 6$</p>
+<p><strong>Mistake</strong>: $-(x - 3) = -x - 3$
+<strong>Fix</strong>: $-(x - 3) = -x + 3$</p>
+<h3 id="inequality-errors">Inequality Errors<a hidden class="anchor" aria-hidden="true" href="#inequality-errors">#</a></h3>
+<p><strong>Mistake</strong>: When multiplying by negative, not flipping inequality
+<strong>Fix</strong>: Always flip inequality when multiplying/dividing by negative</p>
+<p><strong>Mistake</strong>: Confusing &ldquo;and&rdquo; and &ldquo;or&rdquo; in compound inequalities
+<strong>Fix</strong>: &ldquo;And&rdquo; means both conditions, &ldquo;or&rdquo; means either condition</p>
+<h3 id="function-errors">Function Errors<a hidden class="anchor" aria-hidden="true" href="#function-errors">#</a></h3>
+<p><strong>Mistake</strong>: $f(2x) = 2f(x)$
+<strong>Fix</strong>: $f(2x) = 2(2x) + 3 = 4x + 3$, not $2(2x + 3) = 4x + 6$</p>
+<p><strong>Mistake</strong>: $(f \circ g)(x) = f(x) \circ g(x)$
+<strong>Fix</strong>: $(f \circ g)(x) = f(g(x))$, not $f(x) \cdot g(x)$</p>
+<hr>
+<p><strong>Next</strong>: <a href="formulas">Formulas</a><br>
+<strong>Previous</strong>: <a href="topics">Topics</a><br>
+<strong>Back to</strong>: <a href="./">Algebra</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/mathcounts/">MATHCOUNTS</a></li>
+      <li><a href="http://localhost:1313/tags/algebra/">Algebra</a></li>
+      <li><a href="http://localhost:1313/tags/problem-types/">Problem-Types</a></li>
+      <li><a href="http://localhost:1313/tags/patterns/">Patterns</a></li>
+      <li><a href="http://localhost:1313/tags/solutions/">Solutions</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
