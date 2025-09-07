@@ -11,13 +11,6 @@ ShowToc: true
 
 ## 🗺️ Quick Navigation
 
-### 🎯 Strategic Practice
-- **[Strategy Practice Hub](practice/)** - Comprehensive practice with real AMC problems and strategic analysis
-
-### 📚 Reference Materials
-- **[Contest Format & Scoring](reference/contest-format-and-scoring)** - Understanding scoring parameters and expected value calculations
-- **[Rules & Logistics](reference/rules-and-logistics)** - Contest procedures, timing, and administrative details  
-- **[Mindset & Focus](reference/mindset-and-focus)** - Mental preparation and performance psychology
 
 ### 🎮 Strategic Playbooks
 - **[Pacing & Triage](playbooks/pacing-and-triage)** - Three-pass method and time management
@@ -50,21 +43,33 @@ ShowToc: true
 - **[Probability & EV Snippets](drills/probability-and-ev-snippets)** - Expected value calculations
 - **[Estimation Sprints](drills/estimation-sprints)** - Quick approximation practice
 
+### 🎯 Strategic Practice
+- **[Practice Hub](practice/)** - Comprehensive practice with real AMC problems and strategic analysis
+
+
+### 📚 Reference Materials
+- **[Contest Format & Scoring](reference/contest-format-and-scoring)** - Understanding scoring parameters and expected value calculations
+- **[Rules & Logistics](reference/rules-and-logistics)** - Contest procedures, timing, and administrative details  
+- **[Mindset & Focus](reference/mindset-and-focus)** - Mental preparation and performance psychology
+
+
+
+<!-- 
 ### 🔄 Review & Improvement
 - **[Error Log Template](mistakes-and-review/error-log-template)** - Track and categorize mistakes
-- **[Postmortem Framework](mistakes-and-review/postmortem-framework)** - Analyze test performance
+- **[Postmortem Framework](mistakes-and-review/postmortem-framework)** - Analyze test performance -->
 
-### 🧪 Practice & Simulation
+<!-- ### 🧪 Practice & Simulation
 - **[Strategy Practice Hub](practice/)** - Strategic problem-solving practice with real AMC problems
-- **[Full Test Simulation Guide](simulations/full-test-simulation-guide)** - Complete practice test protocol
-
+- **[Full Test Simulation Guide](simulations/full-test-simulation-guide)** - Complete practice test protocol -->
+<!-- 
 ## 🏆 Success Principles
 
 - **Strategic Thinking**: Always consider expected value and time allocation
 - **Systematic Approach**: Use checklists and protocols consistently
 - **Topic Mastery**: Know when to apply specific techniques
 - **Mental Discipline**: Stay focused and manage pressure effectively
-- **Continuous Improvement**: Learn from every practice session and test
+- **Continuous Improvement**: Learn from every practice session and test -->
 
 ---
 
