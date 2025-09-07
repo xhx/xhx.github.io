@@ -9,7 +9,7 @@ ShowToc: true
 
 # 🎯 AMC 10/12 Contest Strategy & Tactics Guide
 
-## 🗺️ Quick Navigation
+<!-- ## 🗺️ Quick Navigation -->
 
 
 ### 🎮 Strategic Playbooks
@@ -46,12 +46,12 @@ ShowToc: true
 ### 🎯 Strategic Practice
 - **[Practice Hub](practice/)** - Comprehensive practice with real AMC problems and strategic analysis
 
-
+<!-- 
 ### 📚 Reference Materials
 - **[Contest Format & Scoring](reference/contest-format-and-scoring)** - Understanding scoring parameters and expected value calculations
 - **[Rules & Logistics](reference/rules-and-logistics)** - Contest procedures, timing, and administrative details  
 - **[Mindset & Focus](reference/mindset-and-focus)** - Mental preparation and performance psychology
-
+ -->
 
 
 <!-- 
