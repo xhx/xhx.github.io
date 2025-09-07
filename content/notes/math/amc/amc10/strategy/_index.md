@@ -9,9 +9,10 @@ ShowToc: true
 
 # 🎯 AMC 10/12 Contest Strategy & Tactics Guide
 
-Welcome to your complete strategy guide for dominating the AMC 10 and AMC 12 contests! This comprehensive resource is designed to maximize your performance through systematic preparation, tactical execution, and strategic decision-making.
-
 ## 🗺️ Quick Navigation
+
+### 🎯 Strategic Practice
+- **[Strategy Practice Hub](practice/)** - Comprehensive practice with real AMC problems and strategic analysis
 
 ### 📚 Reference Materials
 - **[Contest Format & Scoring](reference/contest-format-and-scoring)** - Understanding scoring parameters and expected value calculations
@@ -54,15 +55,8 @@ Welcome to your complete strategy guide for dominating the AMC 10 and AMC 12 con
 - **[Postmortem Framework](mistakes-and-review/postmortem-framework)** - Analyze test performance
 
 ### 🧪 Practice & Simulation
+- **[Strategy Practice Hub](practice/)** - Strategic problem-solving practice with real AMC problems
 - **[Full Test Simulation Guide](simulations/full-test-simulation-guide)** - Complete practice test protocol
-
-<!-- ## 🎯 How to Use This Guide
-
-1. **Start with Reference** - Understand the contest format and scoring system
-2. **Master the Playbooks** - Learn the core strategic approaches
-3. **Practice Tactics** - Drill specific techniques by topic
-4. **Use Checklists** - Follow systematic protocols during tests
-5. **Track Progress** - Use the review tools to improve continuously -->
 
 ## 🏆 Success Principles
 

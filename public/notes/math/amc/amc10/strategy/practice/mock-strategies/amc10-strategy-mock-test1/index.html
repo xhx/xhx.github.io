@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Strategy Mini Mock 25 — AMC 10/12 Techniques (Clean v2) | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Strategy, Practice, Mixed, Test-Taking">
+<meta name="description" content="A full-length multiple-choice set focused on fast contest strategies: backsolving, bounding, parity/mod, complementary counting, PoP, AM–GM, telescoping, symmetry, base-change, fixed points, stars &amp; bars, and more.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/strategy/practice/mock-strategies/amc10-strategy-mock-test1/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/strategy/practice/mock-strategies/amc10-strategy-mock-test1/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/">AMC 10/12 Contest Strategy &amp; Tactics Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/practice/">Strategy Practice Hub</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/practice/mock-strategies/">Mock Strategy Sessions</a></div>
+    <div class="post-meta">7 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-strategy-mini-mock-25--amc-1012-techniques-clean-v2" aria-label="🧭 Strategy Mini Mock 25 — AMC 10/12 Techniques (Clean v2)">🧭 Strategy Mini Mock 25 — AMC 10/12 Techniques (Clean v2)</a><ul>
+                        
+                <li>
+                    <a href="#problems" aria-label="Problems">Problems</a><ul>
+                        
+                <li>
+                    <a href="#1" aria-label="1.">1.</a></li>
+                <li>
+                    <a href="#2" aria-label="2.">2.</a></li>
+                <li>
+                    <a href="#3" aria-label="3.">3.</a></li>
+                <li>
+                    <a href="#4" aria-label="4.">4.</a></li>
+                <li>
+                    <a href="#5" aria-label="5.">5.</a></li>
+                <li>
+                    <a href="#6" aria-label="6.">6.</a></li>
+                <li>
+                    <a href="#7" aria-label="7.">7.</a></li>
+                <li>
+                    <a href="#8" aria-label="8.">8.</a></li>
+                <li>
+                    <a href="#9" aria-label="9.">9.</a></li>
+                <li>
+                    <a href="#10" aria-label="10.">10.</a></li>
+                <li>
+                    <a href="#11" aria-label="11.">11.</a></li>
+                <li>
+                    <a href="#12" aria-label="12.">12.</a></li>
+                <li>
+                    <a href="#13" aria-label="13.">13.</a></li>
+                <li>
+                    <a href="#14" aria-label="14.">14.</a></li>
+                <li>
+                    <a href="#15" aria-label="15.">15.</a></li>
+                <li>
+                    <a href="#16" aria-label="16.">16.</a></li>
+                <li>
+                    <a href="#17" aria-label="17.">17.</a></li>
+                <li>
+                    <a href="#18" aria-label="18.">18.</a></li>
+                <li>
+                    <a href="#19" aria-label="19.">19.</a></li>
+                <li>
+                    <a href="#20" aria-label="20.">20.</a></li>
+                <li>
+                    <a href="#21" aria-label="21.">21.</a></li>
+                <li>
+                    <a href="#22" aria-label="22.">22.</a></li>
+                <li>
+                    <a href="#23" aria-label="23.">23.</a></li>
+                <li>
+                    <a href="#24" aria-label="24.">24.</a></li>
+                <li>
+                    <a href="#25" aria-label="25.">25.</a></li></ul>
+                </li>
+                <li>
+                    <a href="#answer-key" aria-label="Answer Key">Answer Key</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-strategy-mini-mock-25--amc-1012-techniques-clean-v2">🧭 Strategy Mini Mock 25 — AMC 10/12 Techniques (Clean v2)<a hidden class="anchor" aria-hidden="true" href="#-strategy-mini-mock-25--amc-1012-techniques-clean-v2">#</a></h1>
+<p><em>Recommended: 60–75 minutes. No calculator.</em><br>
+Each solution highlights a <strong>technique</strong> you can apply quickly on contest day.</p>
+<hr>
+<h2 id="problems">Problems<a hidden class="anchor" aria-hidden="true" href="#problems">#</a></h2>
+<h3 id="1">1.<a hidden class="anchor" aria-hidden="true" href="#1">#</a></h3>
+<p><em>Tags: Mixture · Backsolve · Easy · source: Original (AMC-style)</em></p>
+<p>A tank holds <strong>25 L</strong> of a <strong>32%</strong> acid solution. How many liters of <strong>water</strong> must be added so the mixture becomes <strong>20%</strong> acid?</p>
+<p>A) <strong>15</strong><br>
+B) 12<br>
+C) 10<br>
+D) 18<br>
+E) 14</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: A</strong></p>
+<p><em>Backsolve / One-equation.</em> Acid amount is fixed: $0.32\cdot25=8$ L. For $20\%$, total must be $8/0.20=40$ L, so add $40-25=15$ L.</p>
+</details>
+<hr>
+<h3 id="2">2.<a hidden class="anchor" aria-hidden="true" href="#2">#</a></h3>
+<p><em>Tags: Estimation &amp; Bounds · Easy · source: Original (AMC-style)</em></p>
+<p>Which is larger?</p>
+<p>A) $14.1$<br>
+B) <strong>$\sqrt{200}$</strong><br>
+C) equal<br>
+D) cannot be determined<br>
+E) $14$</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: B</strong></p>
+<p><em>Bounding squares.</em> $14^2=196$ and $15^2=225$, so $\sqrt{200}\approx14.142&gt;14.1$.</p>
+</details>
+<hr>
+<h3 id="3">3.<a hidden class="anchor" aria-hidden="true" href="#3">#</a></h3>
+<p><em>Tags: Divisibility Rules · Backsolve · Easy · source: Original (AMC-style)</em></p>
+<p>Which number is divisible by <strong>45</strong>?</p>
+<p>A) 83235<br>
+B) 54065<br>
+C) <strong>72630</strong><br>
+D) 91225<br>
+E) 70215</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: C</strong></p>
+<p><em>Rule-based scan.</em> $45=9\cdot5$. Need last digit $0$ or $5$ and digit sum multiple of $9$. Only $72630$ ends with $0$ and has digit sum $7+2+6+3+0=18$.</p>
+</details>
+<hr>
+<h3 id="4">4.<a hidden class="anchor" aria-hidden="true" href="#4">#</a></h3>
+<p><em>Tags: Complementary Counting · Medium · source: Original (AMC-style)</em></p>
+<p>How many <strong>4-digit</strong> integers have <strong>at least one zero</strong>?</p>
+<p>A) 2340<br>
+B) 2169<br>
+C) 2430<br>
+D) <strong>2439</strong><br>
+E) 2000</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: D</strong></p>
+<p><em>Complement.</em> Total $=9000$ ($1000$–$9999$). No zero: $9\cdot9\cdot9\cdot9=6561$. Hence $9000-6561=2439$.</p>
+</details>
+<hr>
+<h3 id="5">5.<a hidden class="anchor" aria-hidden="true" href="#5">#</a></h3>
+<p><em>Tags: Parity/Mod · Easy · source: Original (AMC-style)</em></p>
+<p>Which cannot be the sum of <strong>three consecutive integers</strong>?</p>
+<p>A) 201<br>
+B) 204<br>
+C) 210<br>
+D) 222<br>
+E) <strong>202</strong></p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: E</strong></p>
+<p><em>Mod $3$ check.</em> Sum of three consecutive integers is a multiple of $3$; $202$ is not.</p>
+</details>
+<hr>
+<h3 id="6">6.<a hidden class="anchor" aria-hidden="true" href="#6">#</a></h3>
+<p><em>Tags: Quadratic Vertex · Complete the Square · Easy · source: Original (AMC-style)</em></p>
+<p>The maximum value of $-2x^2+8x+3$ is</p>
+<p>A) <strong>11</strong><br>
+B) 12<br>
+C) 10<br>
+D) 9<br>
+E) 13</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: A</strong></p>
+<p><em>Vertex.</em> $x=-\frac{b}{2a}=\frac{-8}{-4}=2$. Value $=-2(4)+16+3=11$.</p>
+</details>
+<hr>
+<h3 id="7">7.<a hidden class="anchor" aria-hidden="true" href="#7">#</a></h3>
+<p><em>Tags: Last-Digit Cycle · Easy · source: Original (AMC-style)</em></p>
+<p>The units digit of $3^{2025}$ is</p>
+<p>A) 1<br>
+B) <strong>3</strong><br>
+C) 5<br>
+D) 7<br>
+E) 9</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: B</strong></p>
+<p><em>Cycle of length 4.</em> $3,9,7,1$. Since $2025\equiv1\pmod4$, digit $=3$.</p>
+</details>
+<hr>
+<h3 id="8">8.<a hidden class="anchor" aria-hidden="true" href="#8">#</a></h3>
+<p><em>Tags: Telescoping Sum · Partial Fractions · Easy · source: Original (AMC-style)</em></p>
+<p>Evaluate $\displaystyle \sum_{k=1}^{20}\frac{1}{k(k+1)}$.</p>
+<p>A) $\frac{19}{21}$<br>
+B) $1-\frac{1}{20}$<br>
+C) <strong>$\frac{20}{21}$</strong><br>
+D) $\frac{21}{22}$<br>
+E) $1-\frac{1}{22}$</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: C</strong></p>
+<p><em>Telescoping.</em> $\frac{1}{k(k+1)}=\frac1k-\frac1{k+1}$ ⇒ sum $=1-\frac1{21}=\frac{20}{21}$.</p>
+</details>
+<hr>
+<h3 id="9">9.<a hidden class="anchor" aria-hidden="true" href="#9">#</a></h3>
+<p><em>Tags: Power of a Point · Medium · source: Original (AMC-style)</em></p>
+<p>From external point $P$, a tangent has length $10$. A secant from $P$ meets the circle at $A$ then $B$ with $PA=6$. Find $PB$.</p>
+<p>A) $16$<br>
+B) $16.5$<br>
+C) $17$<br>
+D) <strong>$\dfrac{50}{3}$</strong><br>
+E) $18$</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: D</strong></p>
+<p><em>PoP.</em> $PT^2=PA\cdot PB\Rightarrow 100=6\cdot PB\Rightarrow PB=50/3$.</p>
+</details>
+<hr>
+<h3 id="10">10.<a hidden class="anchor" aria-hidden="true" href="#10">#</a></h3>
+<p><em>Tags: Slope/Perpendicular · Intercept · Easy · source: Original (AMC-style)</em></p>
+<p>A line perpendicular to $y=\tfrac{3}{4}x-2$ passes through $(2,5)$. Its $y$-intercept is</p>
+<p>A) $5$<br>
+B) $4$<br>
+C) $3$<br>
+D) $\tfrac{7}{3}$<br>
+E) <strong>$\tfrac{17}{3}$</strong></p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: E</strong></p>
+<p><em>Perpendicular slope.</em> $m=-\tfrac{4}{3}$. $y-5=-\tfrac{4}{3}(x-2)\Rightarrow y=-\tfrac43 x+\tfrac{8}{3}+5=\tfrac{17}{3}$.</p>
+</details>
+<hr>
+<h3 id="11">11.<a hidden class="anchor" aria-hidden="true" href="#11">#</a></h3>
+<p><em>Tags: Weighted Average · One-step Update · Easy · source: Original (AMC-style)</em></p>
+<p>A class average is $80$ for $20$ students. One new score is added and the average becomes $81$. The new score is</p>
+<p>A) <strong>101</strong><br>
+B) 99<br>
+C) 102<br>
+D) 100<br>
+E) 105</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: A</strong></p>
+<p><em>Sum-shift.</em> Old sum $=1600$. New sum $=21\cdot 81=1701$. Added score $=101$.</p>
+</details>
+<hr>
+<h3 id="12">12.<a hidden class="anchor" aria-hidden="true" href="#12">#</a></h3>
+<p><em>Tags: Casework · Divisible by 5 · Distinct Digits · Medium · source: Original (AMC-style)</em></p>
+<p>How many <strong>3-digit</strong> numbers with <strong>distinct digits</strong> are divisible by <strong>5</strong>?</p>
+<p>A) 120<br>
+B) <strong>136</strong><br>
+C) 128<br>
+D) 112<br>
+E) 108</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: B</strong></p>
+<p><em>Cases on last digit.</em> Last digit $0$: $9\cdot 8=72$. Last digit $5$: hundreds $\in\{1,2,3,4,6,7,8,9\}$ ($8$ choices), tens any of remaining $8$ (including $0$) $=64$. Total $72+64=136$.</p>
+</details>
+<hr>
+<h3 id="13">13.<a hidden class="anchor" aria-hidden="true" href="#13">#</a></h3>
+<p><em>Tags: Complementary Probability · Dice · Easy/Medium · source: Original (AMC-style)</em></p>
+<p>Two fair dice are rolled. Probability that <strong>at least one</strong> shows a 6 is</p>
+<p>A) $\dfrac{1}{6}$<br>
+B) $\dfrac{5}{18}$<br>
+C) <strong>$\dfrac{11}{36}$</strong><br>
+D) $\dfrac{7}{36}$<br>
+E) $\dfrac{13}{36}$</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: C</strong></p>
+<p><em>Complement.</em> $1-(5/6)^2=1-25/36=11/36$.</p>
+</details>
+<hr>
+<h3 id="14">14.<a hidden class="anchor" aria-hidden="true" href="#14">#</a></h3>
+<p><em>Tags: Expected Value · Linearity/Variance Trick · Medium · source: Original (AMC-style)</em></p>
+<p>Let $X$ be the result of one fair die roll. Compute $\mathbb{E}!\left[(X-3)^2\right]$.</p>
+<p>A) $3$<br>
+B) $\dfrac{7}{3}$<br>
+C) $2$<br>
+D) <strong>$\dfrac{19}{6}$</strong><br>
+E) $\dfrac{10}{3}$</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: D</strong></p>
+<p><em>Variance shortcut.</em> $\mathbb E[X]=3.5$, $\mathrm{Var}(X)=\tfrac{35}{12}$. Then $\mathbb E[(X-3)^2]=\mathrm{Var}(X)+(\mathbb E X-3)^2=\tfrac{35}{12}+\tfrac{1}{4}=\tfrac{19}{6}$.</p>
+</details>
+<hr>
+<h3 id="15">15.<a hidden class="anchor" aria-hidden="true" href="#15">#</a></h3>
+<p><em>Tags: Trig Angle Addition · Medium · source: Original (AMC-style)</em></p>
+<p>Compute $\cos 75^\circ$.</p>
+<p>A) $\dfrac{\sqrt3}{4}$<br>
+B) $\dfrac{\sqrt2}{4}$<br>
+C) $\dfrac{\sqrt6+\sqrt2}{4}$<br>
+D) $\dfrac{\sqrt3-1}{2}$<br>
+E) <strong>$\dfrac{\sqrt6-\sqrt2}{4}$</strong></p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: E</strong></p>
+<p><em>Angle addition.</em> $\cos(45^\circ+30^\circ)=\cos45\cos30-\sin45\sin30=\frac{\sqrt2}{2}\cdot\frac{\sqrt3}{2}-\frac{\sqrt2}{2}\cdot\frac12=\frac{\sqrt6-\sqrt2}{4}$.</p>
+</details>
+<hr>
+<h3 id="16">16.<a hidden class="anchor" aria-hidden="true" href="#16">#</a></h3>
+<p><em>Tags: Base-Change Pairing · Medium · source: Original (AMC-style)</em></p>
+<p>Evaluate $\log_2 9\cdot \log_3 4$.</p>
+<p>A) <strong>4</strong><br>
+B) 3<br>
+C) 2<br>
+D) 6<br>
+E) 8</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: A</strong></p>
+<p><em>Base change chain.</em> $(\ln9/\ln2)\cdot(\ln4/\ln3)=(2\ln3/\ln2)\cdot(2\ln2/\ln3)=4$.</p>
+</details>
+<hr>
+<h3 id="17">17.<a hidden class="anchor" aria-hidden="true" href="#17">#</a></h3>
+<p><em>Tags: Fixed Point / Heron Iteration · Medium · source: Original (AMC-style)</em></p>
+<p>Define $x_{1}&gt;0$ and $x_{n+1}=\dfrac{x_n+4/x_n}{2}$. Then $\lim_{n\to\infty}x_n$ equals</p>
+<p>A) diverges<br>
+B) <strong>2</strong><br>
+C) 1<br>
+D) 3<br>
+E) 0</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: B</strong></p>
+<p><em>Fixed point.</em> $L=\frac{L+4/L}{2}\Rightarrow L^2=4\Rightarrow L=2$ (positive sequence). This is Heron’s method for $\sqrt{4}$.</p>
+</details>
+<hr>
+<h3 id="18">18.<a hidden class="anchor" aria-hidden="true" href="#18">#</a></h3>
+<p><em>Tags: Tangent Circles to a Line · Geometry Trick · Medium · source: Original (AMC-style)</em></p>
+<p>Two circles with radii $4$ and $25$ are externally tangent to each other and to the same line. The distance between their <strong>tangency points</strong> on the line is</p>
+<p>A) 16<br>
+B) 18<br>
+C) <strong>20</strong><br>
+D) 22<br>
+E) 24</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: C</strong></p>
+<p><em>Right triangle / difference of squares.</em> Horizontal gap $=\sqrt{(R+r)^2-(R-r)^2}=2\sqrt{Rr}=2\sqrt{100}=20$.</p>
+</details>
+<hr>
+<h3 id="19">19.<a hidden class="anchor" aria-hidden="true" href="#19">#</a></h3>
+<p><em>Tags: Area · Shoelace/Base–Height · Easy/Medium · source: Original (AMC-style)</em></p>
+<p>Find the area of $\triangle$ with vertices $(0,0)$, $(5,0)$, $(2,6)$.</p>
+<p>A) 12<br>
+B) 13<br>
+C) 14<br>
+D) <strong>15</strong><br>
+E) 16</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: D</strong></p>
+<p><em>Base–height.</em> Base $=5$, height $=6$ (vertical). $A=\frac12\cdot5\cdot6=15$.</p>
+</details>
+<hr>
+<h3 id="20">20.<a hidden class="anchor" aria-hidden="true" href="#20">#</a></h3>
+<p><em>Tags: Symmetric Sums · Identity · Easy/Medium · source: Original (AMC-style)</em></p>
+<p>If $x+y=10$ and $xy=13$, then $x^2+y^2=$</p>
+<p>A) 64<br>
+B) 68<br>
+C) 72<br>
+D) 78<br>
+E) <strong>74</strong></p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: E</strong></p>
+<p><em>Identity.</em> $(x+y)^2=x^2+2xy+y^2\Rightarrow x^2+y^2=100-26=74$.</p>
+</details>
+<hr>
+<h3 id="21">21.<a hidden class="anchor" aria-hidden="true" href="#21">#</a></h3>
+<p><em>Tags: Stars &amp; Bars with Parity · Medium · source: Original (AMC-style)</em></p>
+<p>Number of nonnegative integer solutions to $a+b+c=10$ with $a$ <strong>even</strong> is</p>
+<p>A) <strong>36</strong><br>
+B) 34<br>
+C) 32<br>
+D) 38<br>
+E) 30</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: A</strong></p>
+<p><em>Substitute.</em> Let $a=2k$, $k=0,\dots,5$. For each $k$, $b+c=10-2k$ → $(10-2k)+1$ solutions. Sum: $\sum_{k=0}^{5}(11-2k)=66-30=36$.</p>
+</details>
+<hr>
+<h3 id="22">22.<a hidden class="anchor" aria-hidden="true" href="#22">#</a></h3>
+<p><em>Tags: Product Rule · Distinct Digits · Medium · source: Original (AMC-style)</em></p>
+<p>A random <strong>3-digit</strong> integer (from 100–999) has all digits <strong>distinct</strong> with probability</p>
+<p>A) $\dfrac{17}{25}$<br>
+B) <strong>$\dfrac{18}{25}$</strong><br>
+C) $\dfrac{19}{25}$<br>
+D) $\dfrac{4}{5}$<br>
+E) $\dfrac{3}{5}$</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: B</strong></p>
+<p><em>Multiplication principle.</em> First digit $9$ ways; second $9$ (exclude first, allow $0$); third $8$. Total $=9\cdot9\cdot8=648$. Out of $900$ numbers ⇒ $648/900=18/25$.</p>
+</details>
+<hr>
+<h3 id="23">23.<a hidden class="anchor" aria-hidden="true" href="#23">#</a></h3>
+<p><em>Tags: AM–GM / Max with Fixed Sum · Easy/Medium · source: Original (AMC-style)</em></p>
+<p>For positive $x,y$ with $x+y=10$, the maximum of $xy$ is</p>
+<p>A) 20<br>
+B) 21<br>
+C) <strong>25</strong><br>
+D) 24<br>
+E) 26</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: C</strong></p>
+<p><em>AM–GM / symmetry.</em> Max at $x=y=5$ ⇒ $xy=25$.</p>
+</details>
+<hr>
+<h3 id="24">24.<a hidden class="anchor" aria-hidden="true" href="#24">#</a></h3>
+<p><em>Tags: Telescoping (Finite Differences) · Easy/Medium · source: Original (AMC-style)</em></p>
+<p>Compute $\displaystyle \sum_{k=1}^{50} \big[(k+1)^2-k^2\big]$.</p>
+<p>A) 2500<br>
+B) 2550<br>
+C) <strong>2600</strong><br>
+D) 2650<br>
+E) 2700</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: C</strong></p>
+<p><em>Telescoping.</em> Sum collapses to $(51^2-1^2)=2601-1=2600$.</p>
+</details>
+<hr>
+<h3 id="25">25.<a hidden class="anchor" aria-hidden="true" href="#25">#</a></h3>
+<p><em>Tags: Complex Modulus · Ratio Trick · Medium · source: Original (AMC-style)</em></p>
+<p>Compute $\left|\dfrac{3+4i}{1-2i}\right|$.</p>
+<p>A) 1<br>
+B) $\sqrt2$<br>
+C) <strong>$\sqrt5$</strong><br>
+D) 2<br>
+E) 5</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: C</strong></p>
+<p><em>Modulus of a quotient.</em> $|3+4i|/|1-2i|=5/\sqrt5=\sqrt5$.</p>
+</details>
+<hr>
+<h2 id="answer-key">Answer Key<a hidden class="anchor" aria-hidden="true" href="#answer-key">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>#</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+          <th>6</th>
+          <th>7</th>
+          <th>8</th>
+          <th>9</th>
+          <th>10</th>
+          <th>11</th>
+          <th>12</th>
+          <th>13</th>
+          <th>14</th>
+          <th>15</th>
+          <th>16</th>
+          <th>17</th>
+          <th>18</th>
+          <th>19</th>
+          <th>20</th>
+          <th>21</th>
+          <th>22</th>
+          <th>23</th>
+          <th>24</th>
+          <th>25</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Ans</strong></td>
+          <td>A</td>
+          <td>B</td>
+          <td>C</td>
+          <td>D</td>
+          <td>E</td>
+          <td>A</td>
+          <td>B</td>
+          <td>C</td>
+          <td>D</td>
+          <td>E</td>
+          <td>A</td>
+          <td>B</td>
+          <td>C</td>
+          <td>D</td>
+          <td>E</td>
+          <td>A</td>
+          <td>B</td>
+          <td>C</td>
+          <td>D</td>
+          <td>E</td>
+          <td>A</td>
+          <td>B</td>
+          <td>C</td>
+          <td>D</td>
+          <td>E</td>
+      </tr>
+  </tbody>
+</table>
+<p><a href="../_index.md">Back to Strategy Practice</a> • <a href="../..">Back to Strategy Guide</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/strategy/">Strategy</a></li>
+      <li><a href="http://localhost:1313/tags/practice/">Practice</a></li>
+      <li><a href="http://localhost:1313/tags/mixed/">Mixed</a></li>
+      <li><a href="http://localhost:1313/tags/test-taking/">Test Taking</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

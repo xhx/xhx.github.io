@@ -576,6 +576,13 @@
       <description></description>
     </item>
     <item>
+      <title>Complete Session</title>
+      <link>http://localhost:1313/tags/complete-session/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/complete-session/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Completion</title>
       <link>http://localhost:1313/tags/completion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -639,6 +646,13 @@
       <description></description>
     </item>
     <item>
+      <title>Construction</title>
+      <link>http://localhost:1313/tags/construction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/construction/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Contest Format</title>
       <link>http://localhost:1313/tags/contest-format/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -664,6 +678,13 @@
       <link>http://localhost:1313/tags/countdown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/countdown/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Counting-Probability</title>
+      <link>http://localhost:1313/tags/counting-probability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/counting-probability/</guid>
       <description></description>
     </item>
     <item>
@@ -716,6 +737,13 @@
       <description></description>
     </item>
     <item>
+      <title>Decision Making</title>
+      <link>http://localhost:1313/tags/decision-making/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/decision-making/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Decision Tree</title>
       <link>http://localhost:1313/tags/decision-tree/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -755,6 +783,13 @@
       <link>http://localhost:1313/tags/digits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/digits/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dimensional Analysis</title>
+      <link>http://localhost:1313/tags/dimensional-analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/dimensional-analysis/</guid>
       <description></description>
     </item>
     <item>
@@ -881,6 +916,13 @@
       <link>http://localhost:1313/tags/examples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/examples/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Exams</title>
+      <link>http://localhost:1313/tags/exams/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/exams/</guid>
       <description></description>
     </item>
     <item>
@@ -1290,10 +1332,38 @@
       <description></description>
     </item>
     <item>
+      <title>Mixed</title>
+      <link>http://localhost:1313/tags/mixed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mixed/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Mixture</title>
       <link>http://localhost:1313/tags/mixture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/mixture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mock Exam</title>
+      <link>http://localhost:1313/tags/mock-exam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mock-exam/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mock Exams</title>
+      <link>http://localhost:1313/tags/mock-exams/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mock-exams/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mock Tests</title>
+      <link>http://localhost:1313/tags/mock-tests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mock-tests/</guid>
       <description></description>
     </item>
     <item>
@@ -1392,6 +1462,13 @@
       <link>http://localhost:1313/tags/parameters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/parameters/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Parity</title>
+      <link>http://localhost:1313/tags/parity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/parity/</guid>
       <description></description>
     </item>
     <item>
@@ -1609,6 +1686,13 @@
       <link>http://localhost:1313/tags/quadrilaterals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/quadrilaterals/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quick Decision</title>
+      <link>http://localhost:1313/tags/quick-decision/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/quick-decision/</guid>
       <description></description>
     </item>
     <item>
@@ -1941,6 +2025,13 @@
       <description></description>
     </item>
     <item>
+      <title>Strategic Analysis</title>
+      <link>http://localhost:1313/tags/strategic-analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/strategic-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Strategies</title>
       <link>http://localhost:1313/tags/strategies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2088,6 +2179,20 @@
       <description></description>
     </item>
     <item>
+      <title>Three-Pass</title>
+      <link>http://localhost:1313/tags/three-pass/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/three-pass/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Three-Pass Method</title>
+      <link>http://localhost:1313/tags/three-pass-method/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/three-pass-method/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Tilings</title>
       <link>http://localhost:1313/tags/tilings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2120,6 +2225,20 @@
       <link>http://localhost:1313/tags/tips/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/tips/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Topic</title>
+      <link>http://localhost:1313/tags/topic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/topic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Topic Drills</title>
+      <link>http://localhost:1313/tags/topic-drills/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/topic-drills/</guid>
       <description></description>
     </item>
     <item>
@@ -2183,6 +2302,13 @@
       <link>http://localhost:1313/tags/unit-circle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/unit-circle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Units</title>
+      <link>http://localhost:1313/tags/units/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/units/</guid>
       <description></description>
     </item>
     <item>

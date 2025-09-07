@@ -9,16 +9,6 @@ ShowToc: true
 
 # 🔢 Number Theory Mastery Guide
 
-Welcome to your comprehensive **Number Theory** study guide for AMC 10 & AMC 12! This guide is designed to take you from basic concepts to contest-ready problem-solving strategies.
-
-## 🎯 What You'll Master
-
-- **Core Concepts**: Divisibility, congruences, modular arithmetic, and prime factorization
-- **Advanced Topics**: Chinese Remainder Theorem, Diophantine equations, and order theory
-- **Problem Patterns**: Recognition cues and solution templates for common AMC problem types
-- **Essential Formulas**: Quick reference with usage examples
-- **Strategic Tips**: Timing, heuristics, and common pitfalls to avoid
-
 ## 🗺️ Study Path
 
 ### 🗂️ Reference Materials
@@ -60,13 +50,8 @@ Welcome to your comprehensive **Number Theory** study guide for AMC 10 & AMC 12!
 ### 💡 Strategic Tips
 - **[Problem-Solving Tips](tips/problem-solving-tips)**: Heuristics, checklists, and timing strategies
 
-<!-- ## 🚀 Getting Started
-
-1. **Begin with Reference**: Check the [scope map](reference/scope-map) to understand AMC 10 vs AMC 12 coverage
-2. **Study Core Topics**: Work through topics in order, focusing on your target contest level
-3. **Practice Problem Types**: Use the pattern catalog to recognize and solve common problem structures
-4. **Master Formulas**: Keep the [essential formulas](formulas/essential-formulas) handy during practice
-5. **Apply Strategic Tips**: Use the [problem-solving tips](tips/problem-solving-tips) to improve your contest performance -->
+### 🔢 Practice Problems
+- **[Practice Hub](practice)** — Comprehensive AMC-style practice with mixed sets, topic drills, and mock exams
 
 ## 🎯 Contest Strategy
 
@@ -76,7 +61,5 @@ Welcome to your comprehensive **Number Theory** study guide for AMC 10 & AMC 12!
 - **Pattern Recognition**: Look for cycles, parity, and factorization opportunities
 
 ---
-
-
 
 **Next**: [Precalculus](../precalculus) | **Prev**: [Counting & Probability](../counting-probability) | **Back**: [AMC 10 Overview](../)

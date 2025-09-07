@@ -9,8 +9,6 @@ ShowToc: true
 
 # 🎯 Counting & Probability Mastery Guide
 
-Welcome to your complete **AMC 10 & AMC 12 Counting & Probability** study resource! This guide is designed to take you from basic principles to contest-ready problem-solving strategies.
-
 ## 🗺️ Navigation Map
 
 ### 📘 Reference Materials
@@ -36,13 +34,8 @@ Welcome to your complete **AMC 10 & AMC 12 Counting & Probability** study resour
 - **[Essential Formulas](04-formulas/essential-formulas)** - Complete formula bank
 - **[Problem-Solving Tips](05-tips/problem-solving-tips)** - Strategies and checklists
 
-<!-- ## 🎯 How to Use This Guide
-
-1. **Start with Reference** - Check the scope map to see what's tested at your level
-2. **Master Core Topics** - Work through each topic systematically
-3. **Practice Patterns** - Use problem types to recognize common setups
-4. **Memorize Formulas** - Keep the essential formulas handy
-5. **Apply Strategies** - Use the tips section for problem-solving approaches -->
+### 🎲 Practice Problems
+- **[Practice Hub](practice)** — Comprehensive AMC-style practice with mixed sets, topic drills, and mock exams
 
 ## 🏆 Contest Strategy
 
@@ -52,7 +45,5 @@ Welcome to your complete **AMC 10 & AMC 12 Counting & Probability** study resour
 - **Common Traps**: Watch for indistinguishable objects, circular arrangements, and replacement vs. no-replacement
 
 ---
-
-*Ready to master counting and probability? Start with the [Reference Materials](01-reference/) or jump directly to [Core Topics](02-topics/).*
 
 **Next**: [Number Theory](../number-theory) | **Prev**: [Geometry](../geometry) | **Back**: [AMC 10 Overview](../)

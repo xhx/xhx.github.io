@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Complete AMC12 Strategy Session | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC12, Strategy, Practice, Complete Session, Three-Pass Method">
+<meta name="description" content="Full 25-problem strategic practice session with complete three-pass method and strategic analysis for AMC12 contests.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/strategy/practice/mock-strategies/complete-amc12-strategy/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/strategy/practice/mock-strategies/complete-amc12-strategy/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/">AMC 10/12 Contest Strategy &amp; Tactics Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/practice/">Strategy Practice Hub</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/practice/mock-strategies/">Mock Strategy Sessions</a></div>
+    <div class="post-meta">12 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-complete-amc12-strategy-session" aria-label="🎯 Complete AMC12 Strategy Session">🎯 Complete AMC12 Strategy Session</a><ul>
+                        
+                <li>
+                    <a href="#-time-allocation" aria-label="⏱️ Time Allocation">⏱️ Time Allocation</a></li>
+                <li>
+                    <a href="#-first-pass-foundation-problems-1-15" aria-label="🧠 First Pass: Foundation (Problems 1-15)">🧠 First Pass: Foundation (Problems 1-15)</a><ul>
+                        
+                <li>
+                    <a href="#problem-1" aria-label="Problem 1">Problem 1</a></li>
+                <li>
+                    <a href="#problem-2" aria-label="Problem 2">Problem 2</a></li>
+                <li>
+                    <a href="#problem-3" aria-label="Problem 3">Problem 3</a></li>
+                <li>
+                    <a href="#problem-4" aria-label="Problem 4">Problem 4</a></li>
+                <li>
+                    <a href="#problem-5" aria-label="Problem 5">Problem 5</a></li>
+                <li>
+                    <a href="#problem-6" aria-label="Problem 6">Problem 6</a></li>
+                <li>
+                    <a href="#problem-7" aria-label="Problem 7">Problem 7</a></li>
+                <li>
+                    <a href="#problem-8" aria-label="Problem 8">Problem 8</a></li>
+                <li>
+                    <a href="#problem-9" aria-label="Problem 9">Problem 9</a></li>
+                <li>
+                    <a href="#problem-10" aria-label="Problem 10">Problem 10</a></li>
+                <li>
+                    <a href="#problem-11" aria-label="Problem 11">Problem 11</a></li>
+                <li>
+                    <a href="#problem-12" aria-label="Problem 12">Problem 12</a></li>
+                <li>
+                    <a href="#problem-13" aria-label="Problem 13">Problem 13</a></li>
+                <li>
+                    <a href="#problem-14" aria-label="Problem 14">Problem 14</a></li>
+                <li>
+                    <a href="#problem-15" aria-label="Problem 15">Problem 15</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-second-pass-strategic-problems-16-25" aria-label="🎯 Second Pass: Strategic (Problems 16-25)">🎯 Second Pass: Strategic (Problems 16-25)</a><ul>
+                        
+                <li>
+                    <a href="#problem-16" aria-label="Problem 16">Problem 16</a></li>
+                <li>
+                    <a href="#problem-17" aria-label="Problem 17">Problem 17</a></li>
+                <li>
+                    <a href="#problem-18" aria-label="Problem 18">Problem 18</a></li>
+                <li>
+                    <a href="#problem-19" aria-label="Problem 19">Problem 19</a></li>
+                <li>
+                    <a href="#problem-20" aria-label="Problem 20">Problem 20</a></li>
+                <li>
+                    <a href="#problem-21" aria-label="Problem 21">Problem 21</a></li>
+                <li>
+                    <a href="#problem-22" aria-label="Problem 22">Problem 22</a></li>
+                <li>
+                    <a href="#problem-23" aria-label="Problem 23">Problem 23</a></li>
+                <li>
+                    <a href="#problem-24" aria-label="Problem 24">Problem 24</a></li>
+                <li>
+                    <a href="#problem-25" aria-label="Problem 25">Problem 25</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-third-pass-final-review-5-minutes" aria-label="🎯 Third Pass: Final Review (5 minutes)">🎯 Third Pass: Final Review (5 minutes)</a><ul>
+                        
+                <li>
+                    <a href="#review-checklist" aria-label="Review Checklist">Review Checklist</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-session-success-metrics" aria-label="📊 Session Success Metrics">📊 Session Success Metrics</a><ul>
+                        
+                <li>
+                    <a href="#time-targets" aria-label="Time Targets">Time Targets</a></li>
+                <li>
+                    <a href="#strategic-goals" aria-label="Strategic Goals">Strategic Goals</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-complete-amc12-strategy-session">🎯 Complete AMC12 Strategy Session<a hidden class="anchor" aria-hidden="true" href="#-complete-amc12-strategy-session">#</a></h1>
+<h2 id="-time-allocation">⏱️ Time Allocation<a hidden class="anchor" aria-hidden="true" href="#-time-allocation">#</a></h2>
+<ul>
+<li><strong>First Pass (Problems 1-15)</strong>: 45 minutes</li>
+<li><strong>Second Pass (Problems 16-25)</strong>: 25 minutes</li>
+<li><strong>Third Pass (Review &amp; Guessing)</strong>: 5 minutes</li>
+</ul>
+<h2 id="-first-pass-foundation-problems-1-15">🧠 First Pass: Foundation (Problems 1-15)<a hidden class="anchor" aria-hidden="true" href="#-first-pass-foundation-problems-1-15">#</a></h2>
+<h3 id="problem-1">Problem 1<a hidden class="anchor" aria-hidden="true" href="#problem-1">#</a></h3>
+<p><em>Tags: First Pass · source: AMC12 2020 #1</em></p>
+<p>What is the value of $2 + 3 \times 4$?</p>
+<p>A) $14$<br>
+B) $15$<br>
+C) $16$<br>
+D) $17$<br>
+E) $18$</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>First Pass:</strong> Problem #1, straightforward. Order of operations: $2 + 3 \times 4 = 2 + 12 = 14$.</p>
+<p><strong>Time Target:</strong> 30 seconds</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: A</strong></p>
+<p>Using order of operations: $2 + 3 \times 4 = 2 + 12 = 14$.</p>
+</details>
+<h3 id="problem-2">Problem 2<a hidden class="anchor" aria-hidden="true" href="#problem-2">#</a></h3>
+<p><em>Tags: First Pass · source: AMC12 2020 #2</em></p>
+<p>What is the value of $1 + 2 + 3 + \cdots + 10$?</p>
+<p>A) $45$<br>
+B) $50$<br>
+C) $55$<br>
+D) $60$<br>
+E) $65$</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>First Pass:</strong> Problem #2, manageable. Formula: $\frac{n(n+1)}{2} = \frac{10 \cdot 11}{2} = 55$.</p>
+<p><strong>Time Target:</strong> 45 seconds</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: C</strong></p>
+<p>Using sum formula: $\frac{n(n+1)}{2} = \frac{10 \cdot 11}{2} = 55$.</p>
+</details>
+<h3 id="problem-3">Problem 3<a hidden class="anchor" aria-hidden="true" href="#problem-3">#</a></h3>
+<p><em>Tags: First Pass · source: AMC12 2020 #3</em></p>
+<p>A rectangle has length 8 and width 6. What is its area?</p>
+<p>A) $14$<br>
+B) $24$<br>
+C) $28$<br>
+D) $48$<br>
+E) $64$</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>First Pass:</strong> Problem #3, straightforward. Area = length × width = 8 × 6 = 48.</p>
+<p><strong>Time Target:</strong> 30 seconds</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: D</strong></p>
+<p>Area = length × width = 8 × 6 = 48 square units.</p>
+</details>
+<h3 id="problem-4">Problem 4<a hidden class="anchor" aria-hidden="true" href="#problem-4">#</a></h3>
+<p><em>Tags: First Pass · source: AMC12 2020 #4</em></p>
+<p>What is the remainder when $2^{10}$ is divided by 7?</p>
+<p>A) $1$<br>
+B) $2$<br>
+C) $3$<br>
+D) $4$<br>
+E) $5$</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>First Pass:</strong> Problem #4, manageable. Use modular arithmetic: $2^3 = 8 \equiv 1 \pmod{7}$, so $2^{10} = 2^{3 \cdot 3 + 1} \equiv 2 \pmod{7}$.</p>
+<p><strong>Time Target:</strong> 1 minute</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: B</strong></p>
+<p>Since $2^3 = 8 \equiv 1 \pmod{7}$, we have $2^{10} = 2^{3 \cdot 3 + 1} \equiv 2 \pmod{7}$.</p>
+</details>
+<h3 id="problem-5">Problem 5<a hidden class="anchor" aria-hidden="true" href="#problem-5">#</a></h3>
+<p><em>Tags: First Pass · source: AMC12 2020 #5</em></p>
+<p>A fair coin is flipped 3 times. What is the probability of getting exactly 2 heads?</p>
+<p>A) $\frac{1}{8}$<br>
+B) $\frac{1}{4}$<br>
+C) $\frac{3}{8}$<br>
+D) $\frac{1}{2}$<br>
+E) $\frac{3}{4}$</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>First Pass:</strong> Problem #5, manageable. There are $2^3 = 8$ total outcomes. Getting exactly 2 heads can happen in $\binom{3}{2} = 3$ ways: HHT, HTH, THH. So the probability is $\frac{3}{8}$.</p>
+<p><strong>Time Target:</strong> 1 minute</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: C</strong></p>
+<p>There are $2^3 = 8$ total outcomes. Getting exactly 2 heads can happen in $\binom{3}{2} = 3$ ways: HHT, HTH, THH. So the probability is $\frac{3}{8}$.</p>
+</details>
+<h3 id="problem-6">Problem 6<a hidden class="anchor" aria-hidden="true" href="#problem-6">#</a></h3>
+<p><em>Tags: First Pass · source: AMC12 2020 #6</em></p>
+<p>What is the value of $\sqrt{144}$?</p>
+<p>A) $10$<br>
+B) $11$<br>
+C) $12$<br>
+D) $13$<br>
+E) $14$</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>First Pass:</strong> Problem #6, straightforward. $\sqrt{144} = 12$ since $12^2 = 144$.</p>
+<p><strong>Time Target:</strong> 30 seconds</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: C</strong></p>
+<p>Since $12^2 = 144$, we have $\sqrt{144} = 12$.</p>
+</details>
+<h3 id="problem-7">Problem 7<a hidden class="anchor" aria-hidden="true" href="#problem-7">#</a></h3>
+<p><em>Tags: First Pass · source: AMC12 2020 #7</em></p>
+<p>A function $f$ is defined by $f(x) = x^2 + 2x + 1$. What is $f(3)$?</p>
+<p>A) $16$<br>
+B) $17$<br>
+C) $18$<br>
+D) $19$<br>
+E) $20$</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>First Pass:</strong> Problem #7, manageable. $f(3) = 3^2 + 2(3) + 1 = 9 + 6 + 1 = 16$.</p>
+<p><strong>Time Target:</strong> 45 seconds</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: A</strong></p>
+<p>Substituting $x = 3$: $f(3) = 3^2 + 2(3) + 1 = 9 + 6 + 1 = 16$.</p>
+</details>
+<h3 id="problem-8">Problem 8<a hidden class="anchor" aria-hidden="true" href="#problem-8">#</a></h3>
+<p><em>Tags: First Pass · source: AMC12 2020 #8</em></p>
+<p>What is 25% of 80?</p>
+<p>A) $15$<br>
+B) $20$<br>
+C) $25$<br>
+D) $30$<br>
+E) $35$</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>First Pass:</strong> Problem #8, straightforward. 25% of 80 = 0.25 × 80 = 20.</p>
+<p><strong>Time Target:</strong> 30 seconds</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: B</strong></p>
+<p>25% of 80 = 0.25 × 80 = 20.</p>
+</details>
+<h3 id="problem-9">Problem 9<a hidden class="anchor" aria-hidden="true" href="#problem-9">#</a></h3>
+<p><em>Tags: First Pass · source: AMC12 2020 #9</em></p>
+<p>Factor $x^2 - 5x + 6$.</p>
+<p>A) $(x-2)(x-3)$<br>
+B) $(x-1)(x-6)$<br>
+C) $(x+2)(x+3)$<br>
+D) $(x+1)(x+6)$<br>
+E) $(x-2)(x+3)$</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>First Pass:</strong> Problem #9, manageable. We need two numbers that multiply to 6 and add to -5. These are -2 and -3, so $(x-2)(x-3)$.</p>
+<p><strong>Time Target:</strong> 1 minute</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: A</strong></p>
+<p>We need two numbers that multiply to 6 and add to -5. These are -2 and -3, so $x^2 - 5x + 6 = (x-2)(x-3)$.</p>
+</details>
+<h3 id="problem-10">Problem 10<a hidden class="anchor" aria-hidden="true" href="#problem-10">#</a></h3>
+<p><em>Tags: First Pass · source: AMC12 2020 #10</em></p>
+<p>What is the distance between points $(0,0)$ and $(3,4)$?</p>
+<p>A) $3$<br>
+B) $4$<br>
+C) $5$<br>
+D) $6$<br>
+E) $7$</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>First Pass:</strong> Problem #10, manageable. Use distance formula: $\sqrt{(3-0)^2 + (4-0)^2} = \sqrt{9 + 16} = \sqrt{25} = 5$.</p>
+<p><strong>Time Target:</strong> 1 minute</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: C</strong></p>
+<p>Using distance formula: $\sqrt{(3-0)^2 + (4-0)^2} = \sqrt{9 + 16} = \sqrt{25} = 5$.</p>
+</details>
+<h3 id="problem-11">Problem 11<a hidden class="anchor" aria-hidden="true" href="#problem-11">#</a></h3>
+<p><em>Tags: First Pass · source: AMC12 2020 #11</em></p>
+<p>Solve the system: $x + y = 5$ and $x - y = 1$.</p>
+<p>A) $x = 2, y = 3$<br>
+B) $x = 3, y = 2$<br>
+C) $x = 4, y = 1$<br>
+D) $x = 1, y = 4$<br>
+E) $x = 5, y = 0$</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>First Pass:</strong> Problem #11, manageable. Adding the equations: $2x = 6$, so $x = 3$. Then $y = 5 - 3 = 2$.</p>
+<p><strong>Time Target:</strong> 1 minute</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: B</strong></p>
+<p>Adding the equations: $2x = 6$, so $x = 3$. Then $y = 5 - 3 = 2$.</p>
+</details>
+<h3 id="problem-12">Problem 12<a hidden class="anchor" aria-hidden="true" href="#problem-12">#</a></h3>
+<p><em>Tags: First Pass · source: AMC12 2020 #12</em></p>
+<p>What is the area of a circle with radius 5?</p>
+<p>A) $10\pi$<br>
+B) $15\pi$<br>
+C) $20\pi$<br>
+D) $25\pi$<br>
+E) $30\pi$</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>First Pass:</strong> Problem #12, manageable. Area = $\pi r^2 = \pi \cdot 5^2 = 25\pi$.</p>
+<p><strong>Time Target:</strong> 45 seconds</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: D</strong></p>
+<p>Area = $\pi r^2 = \pi \cdot 5^2 = 25\pi$.</p>
+</details>
+<h3 id="problem-13">Problem 13<a hidden class="anchor" aria-hidden="true" href="#problem-13">#</a></h3>
+<p><em>Tags: First Pass · source: AMC12 2020 #13</em></p>
+<p>How many ways can 4 people sit in a row?</p>
+<p>A) $12$<br>
+B) $16$<br>
+C) $20$<br>
+D) $24$<br>
+E) $28$</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>First Pass:</strong> Problem #13, manageable. This is $4! = 4 \cdot 3 \cdot 2 \cdot 1 = 24$.</p>
+<p><strong>Time Target:</strong> 45 seconds</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: D</strong></p>
+<p>This is $4! = 4 \cdot 3 \cdot 2 \cdot 1 = 24$ arrangements.</p>
+</details>
+<h3 id="problem-14">Problem 14<a hidden class="anchor" aria-hidden="true" href="#problem-14">#</a></h3>
+<p><em>Tags: First Pass · source: AMC12 2020 #14</em></p>
+<p>What are the solutions to $x^2 - 6x + 8 = 0$?</p>
+<p>A) $x = 2, 4$<br>
+B) $x = 1, 8$<br>
+C) $x = 2, 8$<br>
+D) $x = 1, 4$<br>
+E) $x = 3, 5$</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>First Pass:</strong> Problem #14, manageable. Factor: $(x-2)(x-4) = 0$, so $x = 2$ or $x = 4$.</p>
+<p><strong>Time Target:</strong> 1 minute</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: A</strong></p>
+<p>Factor: $(x-2)(x-4) = 0$, so $x = 2$ or $x = 4$.</p>
+</details>
+<h3 id="problem-15">Problem 15<a hidden class="anchor" aria-hidden="true" href="#problem-15">#</a></h3>
+<p><em>Tags: First Pass · source: AMC12 2020 #15</em></p>
+<p>What is the volume of a cube with side length 3?</p>
+<p>A) $9$<br>
+B) $18$<br>
+C) $27$<br>
+D) $36$<br>
+E) $54$</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>First Pass:</strong> Problem #15, manageable. Volume = side³ = 3³ = 27.</p>
+<p><strong>Time Target:</strong> 30 seconds</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: C</strong></p>
+<p>Volume = side³ = 3³ = 27 cubic units.</p>
+</details>
+<h2 id="-second-pass-strategic-problems-16-25">🎯 Second Pass: Strategic (Problems 16-25)<a hidden class="anchor" aria-hidden="true" href="#-second-pass-strategic-problems-16-25">#</a></h2>
+<h3 id="problem-16">Problem 16<a hidden class="anchor" aria-hidden="true" href="#problem-16">#</a></h3>
+<p><em>Tags: Second Pass · source: AMC12 2020 #16</em></p>
+<p>You&rsquo;re stuck on a problem with 5 answer choices. You can eliminate 2 choices. Should you guess or skip?</p>
+<p>A) Guess<br>
+B) Skip<br>
+C) Need more information<br>
+D) Both have same expected value<br>
+E) Cannot be determined</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>Second Pass:</strong> Problem #16, strategic decision. 3 choices remaining: $\text{EV}_\text{guess} = \frac{6}{3} = 2$ vs. $\text{EV}_\text{blank} = 1.5$. Since $2 > 1.5$, guess.</p>
+<p><strong>Time Target:</strong> 1 minute</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: A</strong></p>
+<p>With 3 remaining choices: $\text{EV}_\text{guess} = \frac{6}{3} = 2$ vs. $\text{EV}_\text{blank} = 1.5$. Since $2 > 1.5$, guess.</p>
+</details>
+<h3 id="problem-17">Problem 17<a hidden class="anchor" aria-hidden="true" href="#problem-17">#</a></h3>
+<p><em>Tags: Second Pass · source: AMC12 2020 #17</em></p>
+<p>You have 10 minutes left and are on problem 17. What should you do?</p>
+<p>A) Try to solve problem 17 completely<br>
+B) Try to eliminate some choices, then guess<br>
+C) Skip problem 17 and move on<br>
+D) Go back to check previous answers<br>
+E) Need more information</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>Second Pass:</strong> Problem #17, time management. With 10 minutes left, try to eliminate some choices first, then guess. This maximizes expected value.</p>
+<p><strong>Time Target:</strong> 2 minutes</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: B</strong></p>
+<p>With 10 minutes left and on problem 17, try to eliminate some choices first, then guess. This maximizes expected value while managing time.</p>
+</details>
+<h3 id="problem-18">Problem 18<a hidden class="anchor" aria-hidden="true" href="#problem-18">#</a></h3>
+<p><em>Tags: Second Pass · source: AMC12 2020 #18</em></p>
+<p>You solved a problem and got answer C. How should you verify?</p>
+<p>A) Solve it again the same way<br>
+B) Solve it using a different method<br>
+C) Check if the answer makes sense<br>
+D) All of the above<br>
+E) None of the above</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>Second Pass:</strong> Problem #18, verification strategy. The best verification strategy is to use multiple methods: solve again, use different approach, and check if answer makes sense.</p>
+<p><strong>Time Target:</strong> 1 minute</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: D</strong></p>
+<p>The best verification strategy is to use multiple methods: solve again, use different approach, and check if answer makes sense.</p>
+</details>
+<h3 id="problem-19">Problem 19<a hidden class="anchor" aria-hidden="true" href="#problem-19">#</a></h3>
+<p><em>Tags: Second Pass · source: AMC12 2020 #19</em></p>
+<p>A problem asks for the area of a triangle. Which answers can you eliminate immediately?</p>
+<p>A) Negative numbers<br>
+B) Zero<br>
+C) Very large numbers<br>
+D) All of the above<br>
+E) None of the above</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>Second Pass:</strong> Problem #19, elimination strategy. For area of a triangle, you can eliminate negative numbers (area must be positive), zero (unless degenerate), and very large numbers (unless reasonable).</p>
+<p><strong>Time Target:</strong> 1 minute</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: D</strong></p>
+<p>For area of a triangle, you can eliminate negative numbers (area must be positive), zero (unless degenerate), and very large numbers (unless reasonable).</p>
+</details>
+<h3 id="problem-20">Problem 20<a hidden class="anchor" aria-hidden="true" href="#problem-20">#</a></h3>
+<p><em>Tags: Second Pass · source: AMC12 2020 #20</em></p>
+<p>You have 5 minutes left and 2 problems remaining. You can eliminate 1 choice on each. What should you do?</p>
+<p>A) Try to solve both problems<br>
+B) Guess on both problems<br>
+C) Try to solve 1, guess on 1<br>
+D) Skip both problems<br>
+E) Need more information</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>Second Pass:</strong> Problem #20, final decision. With 5 minutes left and 2 problems, guess on both. With 1 elimination each: $\text{EV}_\text{guess} = \frac{6}{4} = 1.5$ points per problem, which equals the blank value.</p>
+<p><strong>Time Target:</strong> 2 minutes</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: B</strong></p>
+<p>With 5 minutes left and 2 problems, guess on both. With 1 elimination each, guessing gives the same expected value as skipping, but guessing gives you a chance to get points.</p>
+</details>
+<h3 id="problem-21">Problem 21<a hidden class="anchor" aria-hidden="true" href="#problem-21">#</a></h3>
+<p><em>Tags: Second Pass · source: AMC12 2020 #21</em></p>
+<p>A problem asks for the probability of an event. Which answers can you eliminate immediately?</p>
+<p>A) Negative numbers<br>
+B) Numbers greater than 1<br>
+C) Numbers between 0 and 1<br>
+D) All of the above<br>
+E) None of the above</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>Second Pass:</strong> Problem #21, elimination strategy. For probability, you can eliminate negative numbers (probability must be non-negative) and numbers greater than 1 (probability must be at most 1).</p>
+<p><strong>Time Target:</strong> 1 minute</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: A</strong></p>
+<p>For probability, you can eliminate negative numbers (probability must be non-negative) and numbers greater than 1 (probability must be at most 1).</p>
+</details>
+<h3 id="problem-22">Problem 22<a hidden class="anchor" aria-hidden="true" href="#problem-22">#</a></h3>
+<p><em>Tags: Second Pass · source: AMC12 2020 #22</em></p>
+<p>You have 3 minutes left and are on problem 22. What should you do?</p>
+<p>A) Try to solve problem 22 completely<br>
+B) Try to eliminate some choices, then guess<br>
+C) Skip problem 22 and move on<br>
+D) Go back to check previous answers<br>
+E) Need more information</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>Second Pass:</strong> Problem #22, time management. With 3 minutes left, try to eliminate some choices first, then guess. This maximizes expected value.</p>
+<p><strong>Time Target:</strong> 2 minutes</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: B</strong></p>
+<p>With 3 minutes left and on problem 22, try to eliminate some choices first, then guess. This maximizes expected value while managing time.</p>
+</details>
+<h3 id="problem-23">Problem 23<a hidden class="anchor" aria-hidden="true" href="#problem-23">#</a></h3>
+<p><em>Tags: Second Pass · source: AMC12 2020 #23</em></p>
+<p>You&rsquo;re stuck on a problem with 5 answer choices. You can eliminate 1 choice. Should you guess or skip?</p>
+<p>A) Guess<br>
+B) Skip<br>
+C) Need more information<br>
+D) Both have same expected value<br>
+E) Cannot be determined</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>Second Pass:</strong> Problem #23, strategic decision. 4 choices remaining: $\text{EV}_\text{guess} = \frac{6}{4} = 1.5$ vs. $\text{EV}_\text{blank} = 1.5$. Both have the same expected value.</p>
+<p><strong>Time Target:</strong> 1 minute</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: D</strong></p>
+<p>With 4 remaining choices: $\text{EV}_\text{guess} = \frac{6}{4} = 1.5$ vs. $\text{EV}_\text{blank} = 1.5$. Both have the same expected value.</p>
+</details>
+<h3 id="problem-24">Problem 24<a hidden class="anchor" aria-hidden="true" href="#problem-24">#</a></h3>
+<p><em>Tags: Second Pass · source: AMC12 2020 #24</em></p>
+<p>You have 2 minutes left and are on problem 24. What should you do?</p>
+<p>A) Try to solve problem 24 completely<br>
+B) Try to eliminate some choices, then guess<br>
+C) Skip problem 24 and move on<br>
+D) Go back to check previous answers<br>
+E) Need more information</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>Second Pass:</strong> Problem #24, time management. With 2 minutes left, try to eliminate some choices first, then guess. This maximizes expected value.</p>
+<p><strong>Time Target:</strong> 1 minute</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: B</strong></p>
+<p>With 2 minutes left and on problem 24, try to eliminate some choices first, then guess. This maximizes expected value while managing time.</p>
+</details>
+<h3 id="problem-25">Problem 25<a hidden class="anchor" aria-hidden="true" href="#problem-25">#</a></h3>
+<p><em>Tags: Second Pass · source: AMC12 2020 #25</em></p>
+<p>You have 1 minute left and are on problem 25. What should you do?</p>
+<p>A) Try to solve problem 25 completely<br>
+B) Try to eliminate some choices, then guess<br>
+C) Skip problem 25 and move on<br>
+D) Go back to check previous answers<br>
+E) Need more information</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>Second Pass:</strong> Problem #25, final decision. With 1 minute left, try to eliminate some choices first, then guess. This maximizes expected value while managing time.</p>
+<p><strong>Time Target:</strong> 1 minute</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: B</strong></p>
+<p>With 1 minute left and on problem 25, try to eliminate some choices first, then guess. This maximizes expected value while managing time.</p>
+</details>
+<h2 id="-third-pass-final-review-5-minutes">🎯 Third Pass: Final Review (5 minutes)<a hidden class="anchor" aria-hidden="true" href="#-third-pass-final-review-5-minutes">#</a></h2>
+<h3 id="review-checklist">Review Checklist<a hidden class="anchor" aria-hidden="true" href="#review-checklist">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Bubble check</strong>: Ensure all answers are marked</li>
+<li><input disabled="" type="checkbox"> <strong>Quick verification</strong>: Spot-check calculations</li>
+<li><input disabled="" type="checkbox"> <strong>Final guesses</strong>: Apply expected value to remaining blanks</li>
+<li><input disabled="" type="checkbox"> <strong>Time management</strong>: Stay within 5-minute limit</li>
+</ul>
+<h2 id="-session-success-metrics">📊 Session Success Metrics<a hidden class="anchor" aria-hidden="true" href="#-session-success-metrics">#</a></h2>
+<h3 id="time-targets">Time Targets<a hidden class="anchor" aria-hidden="true" href="#time-targets">#</a></h3>
+<ul>
+<li><strong>First Pass</strong>: 45 minutes for problems 1-15</li>
+<li><strong>Second Pass</strong>: 25 minutes for problems 16-25</li>
+<li><strong>Third Pass</strong>: 5 minutes for review and final decisions</li>
+</ul>
+<h3 id="strategic-goals">Strategic Goals<a hidden class="anchor" aria-hidden="true" href="#strategic-goals">#</a></h3>
+<ul>
+<li><strong>Elimination accuracy</strong>: 80%+ of eliminations should be correct</li>
+<li><strong>Expected value decisions</strong>: Make optimal guessing vs. skipping choices</li>
+<li><strong>Time management</strong>: Stay on pace with checkpoints</li>
+<li><strong>Error prevention</strong>: Catch mistakes before submission</li>
+</ul>
+<hr>
+<p><strong>Next Session:</strong> <a href="../">Strategy Practice Hub</a> | <strong>Back:</strong> <a href="_index">Mock Strategy Sessions</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/strategy/">Strategy</a></li>
+      <li><a href="http://localhost:1313/tags/practice/">Practice</a></li>
+      <li><a href="http://localhost:1313/tags/complete-session/">Complete Session</a></li>
+      <li><a href="http://localhost:1313/tags/three-pass-method/">Three-Pass Method</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

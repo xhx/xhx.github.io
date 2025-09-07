@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Algebra Absolute Value Piecewise (12 Focused Problems) | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Algebra, Practice, Topic Drills">
+<meta name="description" content="12 focused problems on absolute value and piecewise functions for AMC 10/12 preparation.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/algebra/practice/by-topic/absolute-value-piecewise/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/algebra/practice/by-topic/absolute-value-piecewise/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/algebra/">Algebra Mastery Guide — AMC 10 &amp; AMC 12</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/algebra/practice/">Algebra Practice Hub</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/algebra/practice/by-topic/">Algebra Topic-Specific Drills</a></div>
+    <div class="post-meta">5 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-algebra-absolute-value-piecewise-12-focused-problems" aria-label="🧮 Algebra Absolute Value Piecewise (12 Focused Problems)">🧮 Algebra Absolute Value Piecewise (12 Focused Problems)</a><ul>
+                        
+                <li>
+                    <a href="#problems" aria-label="Problems">Problems</a><ul>
+                        
+                <li>
+                    <a href="#1" aria-label="1.">1.</a></li>
+                <li>
+                    <a href="#2" aria-label="2.">2.</a></li>
+                <li>
+                    <a href="#3" aria-label="3.">3.</a></li>
+                <li>
+                    <a href="#4" aria-label="4.">4.</a></li>
+                <li>
+                    <a href="#5" aria-label="5.">5.</a></li>
+                <li>
+                    <a href="#6" aria-label="6.">6.</a></li>
+                <li>
+                    <a href="#7" aria-label="7.">7.</a></li>
+                <li>
+                    <a href="#8" aria-label="8.">8.</a></li>
+                <li>
+                    <a href="#9" aria-label="9.">9.</a></li>
+                <li>
+                    <a href="#10" aria-label="10.">10.</a></li>
+                <li>
+                    <a href="#11" aria-label="11.">11.</a></li>
+                <li>
+                    <a href="#12" aria-label="12.">12.</a></li></ul>
+                </li>
+                <li>
+                    <a href="#answer-key" aria-label="Answer Key">Answer Key</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="-algebra-absolute-value-piecewise-12-focused-problems">🧮 Algebra Absolute Value Piecewise (12 Focused Problems)<a hidden class="anchor" aria-hidden="true" href="#-algebra-absolute-value-piecewise-12-focused-problems">#</a></h1>
+<p><em>Recommended: 30–40 minutes. No calculator.</em></p>
+<h2 id="problems">Problems<a hidden class="anchor" aria-hidden="true" href="#problems">#</a></h2>
+<h3 id="1">1.<a hidden class="anchor" aria-hidden="true" href="#1">#</a></h3>
+<p><em>Tags: Basic Absolute Value · Easy · source: Original (AMC-style)</em></p>
+<p>What is $|5|$?</p>
+<p>A) $-5$<br>
+B) $0$<br>
+C) $5$<br>
+D) $10$<br>
+E) $25$</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: C</strong></p>
+<p>$|5| = 5$ since 5 is positive.</p>
+</details>
+<h3 id="2">2.<a hidden class="anchor" aria-hidden="true" href="#2">#</a></h3>
+<p><em>Tags: Basic Absolute Value · Easy · source: Original (AMC-style)</em></p>
+<p>What is $|-7|$?</p>
+<p>A) $-7$<br>
+B) $0$<br>
+C) $7$<br>
+D) $14$<br>
+E) $49$</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: C</strong></p>
+<p>$|-7| = 7$ since the absolute value of a negative number is its positive value.</p>
+</details>
+<h3 id="3">3.<a hidden class="anchor" aria-hidden="true" href="#3">#</a></h3>
+<p><em>Tags: Absolute Value Expression · Easy · source: Original (AMC-style)</em></p>
+<p>What is $|3 - 8|$?</p>
+<p>A) $-5$<br>
+B) $0$<br>
+C) $5$<br>
+D) $11$<br>
+E) $24$</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: C</strong></p>
+<p>$|3 - 8| = |-5| = 5$.</p>
+</details>
+<h3 id="4">4.<a hidden class="anchor" aria-hidden="true" href="#4">#</a></h3>
+<p><em>Tags: Absolute Value Expression · Easy · source: Original (AMC-style)</em></p>
+<p>What is $|2x - 6|$ when $x = 4$?</p>
+<p>A) $2$<br>
+B) $4$<br>
+C) $6$<br>
+D) $8$<br>
+E) $10$</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: A</strong></p>
+<p>When $x = 4$: $|2(4) - 6| = |8 - 6| = |2| = 2$.</p>
+</details>
+<h3 id="5">5.<a hidden class="anchor" aria-hidden="true" href="#5">#</a></h3>
+<p><em>Tags: Absolute Value Equation · Medium · source: Original (AMC-style)</em></p>
+<p>How many solutions does $|x - 3| = 5$ have?</p>
+<p>A) $0$<br>
+B) $1$<br>
+C) $2$<br>
+D) $3$<br>
+E) Infinitely many</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: C</strong></p>
+<p>We have $x - 3 = 5$ or $x - 3 = -5$, giving $x = 8$ or $x = -2$. So there are 2 solutions.</p>
+</details>
+<h3 id="6">6.<a hidden class="anchor" aria-hidden="true" href="#6">#</a></h3>
+<p><em>Tags: Absolute Value Equation · Medium · source: Original (AMC-style)</em></p>
+<p>Solve $|2x + 1| = 7$.</p>
+<p>A) $x = 3$ only<br>
+B) $x = -4$ only<br>
+C) $x = 3$ or $x = -4$<br>
+D) $x = 3$ or $x = 4$<br>
+E) No solution</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: C</strong></p>
+<p>We have $2x + 1 = 7$ or $2x + 1 = -7$. So $2x = 6$ or $2x = -8$, giving $x = 3$ or $x = -4$.</p>
+</details>
+<h3 id="7">7.<a hidden class="anchor" aria-hidden="true" href="#7">#</a></h3>
+<p><em>Tags: Absolute Value Inequality · Medium · source: Original (AMC-style)</em></p>
+<p>For what values of $x$ is $|x - 2| &lt; 3$?</p>
+<p>A) $-1 &lt; x &lt; 5$<br>
+B) $x &lt; -1$ or $x &gt; 5$<br>
+C) $-5 &lt; x &lt; 1$<br>
+D) $x &lt; -5$ or $x &gt; 1$<br>
+E) All real numbers</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: A</strong></p>
+<p>We have $-3 < x - 2 < 3$. Adding 2: $-1 < x < 5$.</p>
+</details>
+<h3 id="8">8.<a hidden class="anchor" aria-hidden="true" href="#8">#</a></h3>
+<p><em>Tags: Piecewise Function · Medium · source: Original (AMC-style)</em></p>
+<p>If $f(x) = \begin{cases} x + 1 &amp; \text{if } x &lt; 0 \ x - 1 &amp; \text{if } x \geq 0 \end{cases}$, what is $f(-2) + f(3)$?</p>
+<p>A) $1$<br>
+B) $2$<br>
+C) $3$<br>
+D) $4$<br>
+E) $5$</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: A</strong></p>
+<p>Since $-2 < 0$: $f(-2) = -2 + 1 = -1$. Since $3 \geq 0$: $f(3) = 3 - 1 = 2$. So $f(-2) + f(3) = -1 + 2 = 1$.</p>
+</details>
+<h3 id="9">9.<a hidden class="anchor" aria-hidden="true" href="#9">#</a></h3>
+<p><em>Tags: Absolute Value with Parameters · Hard · source: Original (AMC-style)</em></p>
+<p>How many integer solutions does $|x - 1| + |x - 3| = 2$ have?</p>
+<p>A) $0$<br>
+B) $1$<br>
+C) $2$<br>
+D) $3$<br>
+E) Infinitely many</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: E</strong></p>
+<p>For $x \leq 1$: $|x-1| + |x-3| = (1-x) + (3-x) = 4-2x = 2$, so $x = 1$. For $1 < x < 3$: $|x-1| + |x-3| = (x-1) + (3-x) = 2$, which is always true. For $x \geq 3$: $|x-1| + |x-3| = (x-1) + (x-3) = 2x-4 = 2$, so $x = 3$. Therefore, all $x$ with $1 \leq x \leq 3$ are solutions, giving infinitely many integer solutions.</p>
+</details>
+<h3 id="10">10.<a hidden class="anchor" aria-hidden="true" href="#10">#</a></h3>
+<p><em>Tags: Complex Absolute Value · Hard · source: Original (AMC-style)</em></p>
+<p>If $|x - 2| = |x + 4|$, what is $x$?</p>
+<p>A) $-1$<br>
+B) $0$<br>
+C) $1$<br>
+D) $2$<br>
+E) $3$</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: A</strong></p>
+<p>We have $x - 2 = x + 4$ or $x - 2 = -(x + 4)$. The first gives $0 = 6$, which is false. The second gives $x - 2 = -x - 4$, so $2x = -2$ and $x = -1$.</p>
+</details>
+<h3 id="11">11.<a hidden class="anchor" aria-hidden="true" href="#11">#</a></h3>
+<p><em>Tags: Piecewise with Absolute Value · Hard · source: Original (AMC-style)</em></p>
+<p>If $f(x) = \begin{cases} |x| &amp; \text{if } x &lt; 0 \ x^2 &amp; \text{if } x \geq 0 \end{cases}$, what is $f(-3) + f(2)$?</p>
+<p>A) $5$<br>
+B) $7$<br>
+C) $9$<br>
+D) $11$<br>
+E) $13$</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: D</strong></p>
+<p>Since $-3 < 0$: $f(-3) = |-3| = 3$. Since $2 \geq 0$: $f(2) = 2^2 = 4$. So $f(-3) + f(2) = 3 + 4 = 7$.</p>
+</details>
+<h3 id="12">12.<a hidden class="anchor" aria-hidden="true" href="#12">#</a></h3>
+<p><em>Tags: Advanced Absolute Value · Hard · source: Original (AMC-style)</em></p>
+<p>How many solutions does $|x - 1| + |x - 2| + |x - 3| = 2$ have?</p>
+<p>A) $0$<br>
+B) $1$<br>
+C) $2$<br>
+D) $3$<br>
+E) Infinitely many</p>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: A</strong></p>
+<p>The minimum value of $|x-1| + |x-2| + |x-3|$ occurs when $x = 2$ (the median), giving $|2-1| + |2-2| + |2-3| = 1 + 0 + 1 = 2$. So there is exactly one solution: $x = 2$.</p>
+</details>
+<h2 id="answer-key">Answer Key<a hidden class="anchor" aria-hidden="true" href="#answer-key">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>#</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+          <th>6</th>
+          <th>7</th>
+          <th>8</th>
+          <th>9</th>
+          <th>10</th>
+          <th>11</th>
+          <th>12</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Ans</strong></td>
+          <td>C</td>
+          <td>C</td>
+          <td>C</td>
+          <td>A</td>
+          <td>C</td>
+          <td>C</td>
+          <td>A</td>
+          <td>A</td>
+          <td>E</td>
+          <td>A</td>
+          <td>D</td>
+          <td>A</td>
+      </tr>
+  </tbody>
+</table>
+<p><a href="../_index.md">Back to Algebra Practice</a> • <a href="../..">Back to Algebra Guide</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/amc10/">AMC10</a></li>
+      <li><a href="http://localhost:1313/tags/amc12/">AMC12</a></li>
+      <li><a href="http://localhost:1313/tags/algebra/">Algebra</a></li>
+      <li><a href="http://localhost:1313/tags/practice/">Practice</a></li>
+      <li><a href="http://localhost:1313/tags/topic-drills/">Topic Drills</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

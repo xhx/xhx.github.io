@@ -9,8 +9,6 @@ ShowToc: true
 
 # 🎯 Algebra Mastery Guide — AMC 10 & AMC 12
 
-Welcome to your complete algebra preparation for AMC contests! This guide covers everything from basic operations to advanced techniques, organized for efficient study and quick reference.
-
 ## 🗺️ Quick Navigation
 
 ### 📚 Reference Materials
@@ -53,15 +51,7 @@ Welcome to your complete algebra preparation for AMC contests! This guide covers
 
 ### 🧮 Practice Problems
 - **[Algebra Problems](problems)** — Example problems and techniques for AMC 10 Algebra topics
-
-<!-- 
-## 🎯 Study Strategy
-
-1. **Start with Reference** — Get familiar with notation and scope
-2. **Master Core Topics** — Focus on AMC10 essentials first
-3. **Practice Problem Types** — Learn pattern recognition
-4. **Memorize Key Formulas** — Quick reference during contests
-5. **Apply Problem-Solving Tips** — Develop efficient strategies -->
+- **[Practice Hub](practice)** — Comprehensive AMC-style practice with mixed sets, topic drills, and mock exams
 
 ## ⚡ Quick Facts
 
@@ -71,7 +61,5 @@ Welcome to your complete algebra preparation for AMC contests! This guide covers
 - **Key Success Factors**: Pattern recognition, algebraic manipulation, strategic substitution
 
 ---
-<!-- 
-*Ready to master algebra for AMC contests? Start with the [Scope Map](reference/scope-map) to understand what you need to know!* -->
 
 **Next**: [Geometry](../geometry) | **Back**: [AMC 10/12](../)

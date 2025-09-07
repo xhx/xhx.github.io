@@ -415,6 +415,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/tags/complete-session/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/tags/completion/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -451,6 +455,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/tags/construction/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/tags/contest-format/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -464,6 +472,10 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/countdown/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/counting-probability/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -495,6 +507,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/tags/decision-making/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/tags/decision-tree/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -516,6 +532,10 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/digits/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/dimensional-analysis/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -588,6 +608,10 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/examples/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/exams/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -839,7 +863,23 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/tags/mixed/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/tags/mixture/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/mock-exam/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/mock-exams/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/mock-tests/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -900,6 +940,10 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/parameters/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/parity/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1028,6 +1072,10 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/quadrilaterals/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/quick-decision/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1223,6 +1271,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/tags/strategic-analysis/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/tags/strategies/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1307,6 +1359,14 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/tags/three-pass/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/three-pass-method/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/tags/tilings/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1324,6 +1384,14 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/tips/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/topic/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/topic-drills/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1360,6 +1428,10 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/unit-circle/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/units/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>

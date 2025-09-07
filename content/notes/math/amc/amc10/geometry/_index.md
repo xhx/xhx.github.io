@@ -9,16 +9,6 @@ ShowToc: true
 
 # 📐 Geometry Mastery Guide
 
-Welcome to your comprehensive AMC 10 & AMC 12 geometry study companion! This guide is designed to take you from basic concepts to contest-ready problem-solving mastery.
-
-<!-- ## 🎯 What You'll Master
-
-- **Core geometric relationships** and their AMC applications
-- **Problem pattern recognition** for faster solving
-- **Essential formulas** with usage strategies
-- **Advanced techniques** like mass points, transformations, and coordinate geometry
-- **Contest-specific tips** for timing and accuracy -->
-
 ## 📚 Quick Navigation
 
 ### 📖 Reference Materials
@@ -62,13 +52,8 @@ Welcome to your comprehensive AMC 10 & AMC 12 geometry study companion! This gui
 - [**Essential Formulas**](formulas/essential-formulas) - Compact formula bank with examples
 - [**Problem-Solving Tips**](tips/problem-solving-tips) - Heuristics, checklists, timing strategies
 
-<!-- ## 🚀 How to Use This Guide
-
-1. **Start with Reference** - Get familiar with notation and scope
-2. **Study Topics** - Work through each topic systematically
-3. **Practice Patterns** - Use problem types to recognize common setups
-4. **Memorize Formulas** - Essential formulas for quick reference
-5. **Apply Tips** - Use problem-solving strategies in practice -->
+### 📐 Practice Problems
+- [**Practice Hub**](practice) — Comprehensive AMC-style practice with mixed sets, topic drills, and mock exams
 
 ## 💡 Pro Tips
 

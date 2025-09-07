@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Timing Practice | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="AMC10, AMC12, Strategy, Timing, Pacing, Practice">
+<meta name="description" content="Master time management and pacing strategies for AMC contests with real problems.">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/math/amc/amc10/strategy/practice/timing-practice/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/notes/math/amc/amc10/strategy/practice/timing-practice/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/math/amc/amc10/strategy/practice/timing-practice/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/">AMC 10/12 Contest Strategy &amp; Tactics Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/strategy/practice/">Strategy Practice Hub</a></div>
+</header>
+<div class="post-content"><h1 id="-timing-practice">⏱️ Timing Practice<a hidden class="anchor" aria-hidden="true" href="#-timing-practice">#</a></h1>
+<h2 id="-practice-problems">🧠 Practice Problems<a hidden class="anchor" aria-hidden="true" href="#-practice-problems">#</a></h2>
+<h3 id="problem-1">Problem 1<a hidden class="anchor" aria-hidden="true" href="#problem-1">#</a></h3>
+<p><em>Tags: First Pass · source: AMC10 2020 #3</em></p>
+<p>What is the value of $2 + 3 \times 4$?</p>
+<p>A) $14$<br>
+B) $15$<br>
+C) $16$<br>
+D) $17$<br>
+E) $18$</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>Timing:</strong> Problem #3, first pass. Should take 30 seconds. Order of operations: $2 + 3 \times 4 = 2 + 12 = 14$.</p>
+<p><strong>Expected Value:</strong> 1 choice remaining, EV = 6 points.</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: A</strong></p>
+<p>Using order of operations: $2 + 3 \times 4 = 2 + 12 = 14$.</p>
+</details>
+<h3 id="problem-2">Problem 2<a hidden class="anchor" aria-hidden="true" href="#problem-2">#</a></h3>
+<p><em>Tags: First Pass · source: AMC10 2020 #8</em></p>
+<p>What is the value of $1 + 2 + 3 + \cdots + 10$?</p>
+<p>A) $45$<br>
+B) $50$<br>
+C) $55$<br>
+D) $60$<br>
+E) $65$</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>Timing:</strong> Problem #8, first pass. Should take 45 seconds. Formula: $\frac{n(n+1)}{2} = \frac{10 \cdot 11}{2} = 55$.</p>
+<p><strong>Expected Value:</strong> 1 choice remaining, EV = 6 points.</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: C</strong></p>
+<p>Using sum formula: $\frac{n(n+1)}{2} = \frac{10 \cdot 11}{2} = 55$.</p>
+</details>
+<h3 id="problem-3">Problem 3<a hidden class="anchor" aria-hidden="true" href="#problem-3">#</a></h3>
+<p><em>Tags: First Pass · source: AMC10 2020 #12</em></p>
+<p>A rectangle has length 8 and width 6. What is its area?</p>
+<p>A) $14$<br>
+B) $24$<br>
+C) $28$<br>
+D) $48$<br>
+E) $64$</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>Timing:</strong> Problem #12, first pass. Should take 30 seconds. Area = length × width = 8 × 6 = 48.</p>
+<p><strong>Expected Value:</strong> 1 choice remaining, EV = 6 points.</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: D</strong></p>
+<p>Area = length × width = 8 × 6 = 48 square units.</p>
+</details>
+<h3 id="problem-4">Problem 4<a hidden class="anchor" aria-hidden="true" href="#problem-4">#</a></h3>
+<p><em>Tags: First Pass · source: AMC10 2020 #15</em></p>
+<p>What is the value of $\sqrt{144}$?</p>
+<p>A) $10$<br>
+B) $11$<br>
+C) $12$<br>
+D) $13$<br>
+E) $14$</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>Timing:</strong> Problem #15, first pass. Should take 30 seconds. $\sqrt{144} = 12$ since $12^2 = 144$.</p>
+<p><strong>Expected Value:</strong> 1 choice remaining, EV = 6 points.</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: C</strong></p>
+<p>Since $12^2 = 144$, we have $\sqrt{144} = 12$.</p>
+</details>
+<h3 id="problem-5">Problem 5<a hidden class="anchor" aria-hidden="true" href="#problem-5">#</a></h3>
+<p><em>Tags: Second Pass · source: AMC10 2020 #18</em></p>
+<p>A function $f$ is defined by $f(x) = x^2 + 2x + 1$. What is $f(3)$?</p>
+<p>A) $16$<br>
+B) $17$<br>
+C) $18$<br>
+D) $19$<br>
+E) $20$</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>Timing:</strong> Problem #18, second pass. Should take 1-2 minutes. $f(3) = 3^2 + 2(3) + 1 = 9 + 6 + 1 = 16$.</p>
+<p><strong>Expected Value:</strong> 1 choice remaining, EV = 6 points.</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: A</strong></p>
+<p>Substituting $x = 3$: $f(3) = 3^2 + 2(3) + 1 = 9 + 6 + 1 = 16$.</p>
+</details>
+<h3 id="problem-6">Problem 6<a hidden class="anchor" aria-hidden="true" href="#problem-6">#</a></h3>
+<p><em>Tags: Second Pass · source: AMC10 2020 #20</em></p>
+<p>You&rsquo;re stuck on a problem with 5 answer choices. You can eliminate 2 choices. Should you guess or skip?</p>
+<p>A) Guess<br>
+B) Skip<br>
+C) Need more information<br>
+D) Both have same expected value<br>
+E) Cannot be determined</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>Timing:</strong> Problem #20, second pass. Should take 1 minute. 3 choices remaining: $\text{EV}_\text{guess} = \frac{6}{3} = 2$ vs. $\text{EV}_\text{blank} = 1.5$. Since $2 > 1.5$, guess.</p>
+<p><strong>Expected Value:</strong> 1 choice remaining, EV = 6 points.</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: A</strong></p>
+<p>With 3 remaining choices: $\text{EV}_\text{guess} = \frac{6}{3} = 2$ vs. $\text{EV}_\text{blank} = 1.5$. Since $2 > 1.5$, guess.</p>
+</details>
+<h3 id="problem-7">Problem 7<a hidden class="anchor" aria-hidden="true" href="#problem-7">#</a></h3>
+<p><em>Tags: Second Pass · source: AMC10 2020 #22</em></p>
+<p>You have 10 minutes left and are on problem 22. What should you do?</p>
+<p>A) Try to solve problem 22 completely<br>
+B) Try to eliminate some choices, then guess<br>
+C) Skip problem 22 and move on<br>
+D) Go back to check previous answers<br>
+E) Need more information</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>Timing:</strong> Problem #22, second pass. With 10 minutes left, try to eliminate some choices first, then guess. This maximizes expected value.</p>
+<p><strong>Expected Value:</strong> 1 choice remaining, EV = 6 points.</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: B</strong></p>
+<p>With 10 minutes left and on problem 22, try to eliminate some choices first, then guess. This maximizes expected value while managing time.</p>
+</details>
+<h3 id="problem-8">Problem 8<a hidden class="anchor" aria-hidden="true" href="#problem-8">#</a></h3>
+<p><em>Tags: Second Pass · source: AMC10 2020 #24</em></p>
+<p>You&rsquo;re stuck on a problem with 5 answer choices. You can eliminate 1 choice. Should you guess or skip?</p>
+<p>A) Guess<br>
+B) Skip<br>
+C) Need more information<br>
+D) Both have same expected value<br>
+E) Cannot be determined</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>Timing:</strong> Problem #24, second pass. Should take 1 minute. 4 choices remaining: $\text{EV}_\text{guess} = \frac{6}{4} = 1.5$ vs. $\text{EV}_\text{blank} = 1.5$. Both have same expected value.</p>
+<p><strong>Expected Value:</strong> 1 choice remaining, EV = 6 points.</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: D</strong></p>
+<p>With 4 remaining choices: $\text{EV}_\text{guess} = \frac{6}{4} = 1.5$ vs. $\text{EV}_\text{blank} = 1.5$. Both have same expected value.</p>
+</details>
+<h3 id="problem-9">Problem 9<a hidden class="anchor" aria-hidden="true" href="#problem-9">#</a></h3>
+<p><em>Tags: Third Pass · source: AMC10 2020 #25</em></p>
+<p>You have 5 minutes left and 2 problems remaining. You can eliminate 1 choice on each. What should you do?</p>
+<p>A) Try to solve both problems<br>
+B) Guess on both problems<br>
+C) Try to solve 1, guess on 1<br>
+D) Skip both problems<br>
+E) Need more information</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>Timing:</strong> Problem #25, third pass. With 5 minutes left and 2 problems, guess on both. With 1 elimination each: $\text{EV}_\text{guess} = \frac{6}{4} = 1.5$ points per problem, which equals the blank value.</p>
+<p><strong>Expected Value:</strong> 1 choice remaining, EV = 6 points.</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: B</strong></p>
+<p>With 5 minutes left and 2 problems, guess on both. With 1 elimination each, guessing gives the same expected value as skipping, but guessing gives you a chance to get points.</p>
+</details>
+<h3 id="problem-10">Problem 10<a hidden class="anchor" aria-hidden="true" href="#problem-10">#</a></h3>
+<p><em>Tags: Third Pass · source: AMC10 2020 #25</em></p>
+<p>You have 1 minute left and are on problem 25. What should you do?</p>
+<p>A) Try to solve problem 25 completely<br>
+B) Try to eliminate some choices, then guess<br>
+C) Skip problem 25 and move on<br>
+D) Go back to check previous answers<br>
+E) Need more information</p>
+<details><summary>Strategic Analysis</summary>
+<p><strong>Timing:</strong> Problem #25, third pass. With 1 minute left, try to eliminate some choices first, then guess. This maximizes expected value while managing time.</p>
+<p><strong>Expected Value:</strong> 1 choice remaining, EV = 6 points.</p>
+</details>
+<details><summary>Answer & Solution</summary>
+<p><strong>Answer: B</strong></p>
+<p>With 1 minute left and on problem 25, try to eliminate some choices first, then guess. This maximizes expected value while managing time.</p>
+</details>
+<h2 id="-time-checkpoints">📊 Time Checkpoints<a hidden class="anchor" aria-hidden="true" href="#-time-checkpoints">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Time</th>
+          <th>Should Be On</th>
+          <th>First Pass</th>
+          <th>Second Pass</th>
+          <th>Third Pass</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>15 min</td>
+          <td>Problem 5-6</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>30 min</td>
+          <td>Problem 10-12</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>45 min</td>
+          <td>Problem 15-17</td>
+          <td>✓</td>
+          <td>✓</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>60 min</td>
+          <td>Problem 20-22</td>
+          <td></td>
+          <td>✓</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>75 min</td>
+          <td>Contest End</td>
+          <td></td>
+          <td></td>
+          <td>✓</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<p><strong>Back:</strong> <a href="../">Strategy Practice Hub</a> | <strong>Next:</strong> <a href="mock-strategies/">Mock Strategy Sessions</a></p>
+
+
+</div>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

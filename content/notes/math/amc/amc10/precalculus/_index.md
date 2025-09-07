@@ -9,8 +9,6 @@ ShowToc: true
 
 # 🎯 Precalculus Mastery Guide
 
-Welcome to your comprehensive **AMC 10 & AMC 12 Precalculus** preparation hub! This guide is designed to take you from basic concepts to competition-ready problem-solving mastery.
-
 ## 🗺️ Quick Navigation
 
 ### 📚 [Reference Materials](reference/)
@@ -43,23 +41,9 @@ Quick reference for all key formulas with usage examples.
 ### 💡 [Problem-Solving Tips](tips/)
 Strategic approaches, checklists, and timing advice.
 
-<!-- ## 🎯 How to Use This Guide
-
-1. **Start with Reference** - Get familiar with notation and scope
-2. **Study Topics** - Work through each topic systematically
-3. **Practice Patterns** - Use problem types to recognize common patterns
-4. **Memorize Formulas** - Keep essential formulas at your fingertips
-5. **Apply Tips** - Use strategic approaches during practice -->
-
-<!-- ## 🏆 AMC Success Strategy
-
-- **AMC 10**: Focus on core topics, master basic techniques
-- **AMC 12**: Add advanced topics, develop sophisticated problem-solving
-- **Practice**: Work through past problems using these patterns
-- **Timing**: Learn to recognize and apply techniques quickly -->
+### 📘 Practice Problems
+- **[Practice Hub](practice)** — Comprehensive AMC-style practice with mixed sets, topic drills, and mock exams
 
 ---
-
-
 
 **Next**: [Strategy](../strategy) | **Prev**: [Number Theory](../number-theory) | **Back**: [AMC 10 Overview](../)
