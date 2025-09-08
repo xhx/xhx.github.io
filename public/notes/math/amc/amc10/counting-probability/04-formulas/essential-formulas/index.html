@@ -71,6 +71,9 @@
 
 
 
+
+<link rel="stylesheet" href="/css/callouts.css">
+
 </head>
 
 <body class="" id="top">
@@ -121,7 +124,7 @@
 <article class="post-single">
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/counting-probability/">Counting &amp; Probability Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/counting-probability/04-formulas/">Essential Formulas</a></div>
-    <div class="post-meta">5 min&nbsp;·&nbsp;Xiaohui Xie
+    <div class="post-meta">6 min&nbsp;·&nbsp;Xiaohui Xie
 
 </div>
   </header> <div class="toc">
@@ -134,6 +137,8 @@
                 <li>
                     <a href="#-essential-formulas" aria-label="📏 Essential Formulas">📏 Essential Formulas</a><ul>
                         
+                <li>
+                    <a href="#-table-of-contents" aria-label="🗂️ Table of Contents">🗂️ Table of Contents</a></li>
                 <li>
                     <a href="#-basic-counting-principles" aria-label="🔢 Basic Counting Principles">🔢 Basic Counting Principles</a><ul>
                         
@@ -221,37 +226,199 @@
 </div>
 
   <div class="post-content"><h1 id="-essential-formulas">📏 Essential Formulas<a hidden class="anchor" aria-hidden="true" href="#-essential-formulas">#</a></h1>
-<p>Complete formula bank for AMC counting and probability problems with usage notes and micro-examples.</p>
+<div class="callout callout-info"><div class="callout-header"><span class="callout-icon">ℹ️</span><span class="callout-title">Quick Reference Guide</span>
+  </div><div class="callout-content">
+    Complete formula bank for AMC counting and probability problems with usage notes and micro-examples. Master these for contest success!
+  </div>
+</div>
+
+<h2 id="-table-of-contents">🗂️ Table of Contents<a hidden class="anchor" aria-hidden="true" href="#-table-of-contents">#</a></h2>
+<ul>
+<li><a href="#-basic-counting-principles">🔢 Basic Counting Principles</a></li>
+<li><a href="#-permutations--combinations">🔄 Permutations &amp; Combinations</a></li>
+<li><a href="#-advanced-counting">🎯 Advanced Counting</a></li>
+<li><a href="#-probability">🎲 Probability</a></li>
+<li><a href="#-expected-value">📊 Expected Value</a></li>
+<li><a href="#-probability-distributions">📈 Probability Distributions</a></li>
+<li><a href="#-special-arrangements">🔄 Special Arrangements</a></li>
+<li><a href="#-quick-reference-table">🎯 Quick Reference Table</a></li>
+</ul>
 <h2 id="-basic-counting-principles">🔢 Basic Counting Principles<a hidden class="anchor" aria-hidden="true" href="#-basic-counting-principles">#</a></h2>
+<div class="callout callout-tip"><div class="callout-header"><span class="callout-icon">💡</span><span class="callout-title">🎯 Foundation of Counting</span>
+  </div><div class="callout-content">
+    These three principles form the foundation of all counting problems in AMC contests!
+  </div>
+</div>
+
 <h3 id="addition-principle">Addition Principle<a hidden class="anchor" aria-hidden="true" href="#addition-principle">#</a></h3>
-<p>$$|A \cup B| = |A| + |B| - |A \cap B|$$
-<strong>Usage</strong>: When counting elements in unions of sets
-<strong>Example</strong>: How many numbers from 1 to 100 are divisible by 2 or 3? $50 + 33 - 16 = 67$</p>
+<div class="formula-highlight">
+<p><strong>Addition Principle:</strong>
+$$|A \cup B| = |A| + |B| - |A \cap B|$$</p>
+</div>
+<table>
+  <thead>
+      <tr>
+          <th>Usage</th>
+          <th>Example</th>
+          <th>Key Insight</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>When counting elements in unions of sets</td>
+          <td>How many numbers from 1 to 100 are divisible by 2 or 3? $50 + 33 - 16 = 67$</td>
+          <td>Subtract overlap to avoid double counting</td>
+      </tr>
+  </tbody>
+</table>
 <h3 id="multiplication-principle">Multiplication Principle<a hidden class="anchor" aria-hidden="true" href="#multiplication-principle">#</a></h3>
-<p>$$|A \times B| = |A| \cdot |B|$$
-<strong>Usage</strong>: When counting sequences of independent choices
-<strong>Example</strong>: How many ways to choose a shirt and pants? $3 \cdot 4 = 12$ ways</p>
+<div class="formula-highlight">
+<p><strong>Multiplication Principle:</strong>
+$$|A \times B| = |A| \cdot |B|$$</p>
+</div>
+<table>
+  <thead>
+      <tr>
+          <th>Usage</th>
+          <th>Example</th>
+          <th>Key Insight</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>When counting sequences of independent choices</td>
+          <td>How many ways to choose a shirt and pants? $3 \cdot 4 = 12$ ways</td>
+          <td>Multiply choices at each step</td>
+      </tr>
+  </tbody>
+</table>
 <h3 id="complement-principle">Complement Principle<a hidden class="anchor" aria-hidden="true" href="#complement-principle">#</a></h3>
-<p>$$|A| = |S| - |A^c|$$
-<strong>Usage</strong>: When counting &ldquo;at least&rdquo; or &ldquo;at most&rdquo; problems
-<strong>Example</strong>: How many 3-digit numbers contain at least one 7? $900 - 648 = 252$</p>
+<div class="callout callout-note"><div class="callout-header"><span class="callout-icon">📝</span><span class="callout-title">💡 Complement Counting</span>
+  </div><div class="callout-content">
+    Often easier to count what you DON&rsquo;T want, then subtract from total!
+  </div>
+</div>
+
+<div class="formula-highlight">
+<p><strong>Complement Principle:</strong>
+$$|A| = |S| - |A^c|$$</p>
+</div>
+<table>
+  <thead>
+      <tr>
+          <th>Usage</th>
+          <th>Example</th>
+          <th>Key Insight</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>When counting &ldquo;at least&rdquo; or &ldquo;at most&rdquo; problems</td>
+          <td>How many 3-digit numbers contain at least one 7? $900 - 648 = 252$</td>
+          <td>Count complement, then subtract</td>
+      </tr>
+  </tbody>
+</table>
 <h2 id="-permutations--combinations">🔄 Permutations &amp; Combinations<a hidden class="anchor" aria-hidden="true" href="#-permutations--combinations">#</a></h2>
+<div class="callout callout-warning"><div class="callout-header"><span class="callout-icon">⚠️</span><span class="callout-title">⚠️ Critical Distinction</span>
+  </div><div class="callout-content">
+    The key difference: <strong>Permutations</strong> = order matters, <strong>Combinations</strong> = order doesn&rsquo;t matter!
+  </div>
+</div>
+
 <h3 id="permutations">Permutations<a hidden class="anchor" aria-hidden="true" href="#permutations">#</a></h3>
-<p>$$P(n,k) = \frac{n!}{(n-k)!}$$
-<strong>Usage</strong>: Arrangements where order matters
-<strong>Example</strong>: How many ways to arrange 3 books from 5? $P(5,3) = 60$ ways</p>
+<div class="formula-highlight">
+<p><strong>Permutation Formula:</strong>
+$$P(n,k) = \frac{n!}{(n-k)!}$$</p>
+</div>
+<table>
+  <thead>
+      <tr>
+          <th>Usage</th>
+          <th>Example</th>
+          <th>Key Insight</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Arrangements where order matters</td>
+          <td>How many ways to arrange 3 books from 5? $P(5,3) = 60$ ways</td>
+          <td>Order matters: ABC ≠ BAC</td>
+      </tr>
+  </tbody>
+</table>
 <h3 id="combinations">Combinations<a hidden class="anchor" aria-hidden="true" href="#combinations">#</a></h3>
-<p>$$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$
-<strong>Usage</strong>: Selections where order doesn&rsquo;t matter
-<strong>Example</strong>: How many ways to choose 3 books from 5? $\binom{5}{3} = 10$ ways</p>
+<div class="formula-highlight">
+<p><strong>Combination Formula:</strong>
+$$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$</p>
+</div>
+<table>
+  <thead>
+      <tr>
+          <th>Usage</th>
+          <th>Example</th>
+          <th>Key Insight</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Selections where order doesn&rsquo;t matter</td>
+          <td>How many ways to choose 3 books from 5? $\binom{5}{3} = 10$ ways</td>
+          <td>Order doesn&rsquo;t matter: {A,B,C} = {C,A,B}</td>
+      </tr>
+  </tbody>
+</table>
 <h3 id="circular-permutations">Circular Permutations<a hidden class="anchor" aria-hidden="true" href="#circular-permutations">#</a></h3>
-<p>$$(n-1)! \text{ (no reflection)} \quad \text{or} \quad \frac{(n-1)!}{2} \text{ (with reflection)}$$
-<strong>Usage</strong>: Arrangements in a circle
-<strong>Example</strong>: How many ways to seat 4 people around a table? $(4-1)! = 6$ ways</p>
+<div class="callout callout-note"><div class="callout-header"><span class="callout-icon">📝</span><span class="callout-title">🔄 Circular Arrangements</span>
+  </div><div class="callout-content">
+    In circular arrangements, rotations are considered the same!
+  </div>
+</div>
+
+<div class="formula-highlight">
+<p><strong>Circular Permutations:</strong></p>
+<ul>
+<li>No reflection: $(n-1)!$</li>
+<li>With reflection: $\frac{(n-1)!}{2}$</li>
+</ul>
+</div>
+<table>
+  <thead>
+      <tr>
+          <th>Usage</th>
+          <th>Example</th>
+          <th>Key Insight</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Arrangements in a circle</td>
+          <td>How many ways to seat 4 people around a table? $(4-1)! = 6$ ways</td>
+          <td>Fix one person, arrange the rest</td>
+      </tr>
+  </tbody>
+</table>
 <h3 id="multinomial-coefficient">Multinomial Coefficient<a hidden class="anchor" aria-hidden="true" href="#multinomial-coefficient">#</a></h3>
-<p>$$\binom{n}{k_1,k_2,\ldots,k_r} = \frac{n!}{k_1!k_2!\cdots k_r!}$$
-<strong>Usage</strong>: Arrangements with repeated objects
-<strong>Example</strong>: How many ways to arrange &ldquo;MISSISSIPPI&rdquo;? $\frac{11!}{1!4!4!2!} = 34650$ ways</p>
+<div class="formula-highlight">
+<p><strong>Multinomial Formula:</strong>
+$$\binom{n}{k_1,k_2,\ldots,k_r} = \frac{n!}{k_1!k_2!\cdots k_r!}$$</p>
+</div>
+<table>
+  <thead>
+      <tr>
+          <th>Usage</th>
+          <th>Example</th>
+          <th>Key Insight</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Arrangements with repeated objects</td>
+          <td>How many ways to arrange &ldquo;MISSISSIPPI&rdquo;? $\frac{11!}{1!4!4!2!} = 34650$ ways</td>
+          <td>Divide by factorials of repeated elements</td>
+      </tr>
+  </tbody>
+</table>
 <h2 id="-advanced-counting">🎯 Advanced Counting<a hidden class="anchor" aria-hidden="true" href="#-advanced-counting">#</a></h2>
 <h3 id="stars-and-bars-nonnegative">Stars and Bars (Nonnegative)<a hidden class="anchor" aria-hidden="true" href="#stars-and-bars-nonnegative">#</a></h3>
 <p>$$\binom{n+k-1}{k-1}$$
@@ -274,26 +441,129 @@
 <strong>Usage</strong>: Proving existence results
 <strong>Example</strong>: In 25 people, at least $\lceil \frac{25}{12} \rceil = 3$ share a birthday month</p>
 <h2 id="-probability">🎲 Probability<a hidden class="anchor" aria-hidden="true" href="#-probability">#</a></h2>
+<div class="callout callout-tip"><div class="callout-header"><span class="callout-icon">💡</span><span class="callout-title">🎯 Probability Mastery</span>
+  </div><div class="callout-content">
+    Probability problems are <strong>very common</strong> in AMC contests. Master these fundamental concepts!
+  </div>
+</div>
+
 <h3 id="basic-probability">Basic Probability<a hidden class="anchor" aria-hidden="true" href="#basic-probability">#</a></h3>
-<p>$$P(A) = \frac{\text{number of favorable outcomes}}{\text{total number of outcomes}}$$
-<strong>Usage</strong>: When all outcomes are equally likely
-<strong>Example</strong>: Probability of rolling a 6? $P(6) = \frac{1}{6}$</p>
+<div class="formula-highlight">
+<p><strong>Basic Probability Formula:</strong>
+$$P(A) = \frac{\text{number of favorable outcomes}}{\text{total number of outcomes}}$$</p>
+</div>
+<table>
+  <thead>
+      <tr>
+          <th>Usage</th>
+          <th>Example</th>
+          <th>Key Insight</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>When all outcomes are equally likely</td>
+          <td>Probability of rolling a 6? $P(6) = \frac{1}{6}$</td>
+          <td>Favorable over total</td>
+      </tr>
+  </tbody>
+</table>
 <h3 id="conditional-probability">Conditional Probability<a hidden class="anchor" aria-hidden="true" href="#conditional-probability">#</a></h3>
-<p>$$P(A \mid B) = \frac{P(A \cap B)}{P(B)}$$
-<strong>Usage</strong>: Probability given additional information
-<strong>Example</strong>: Given a red card, probability it&rsquo;s a heart? $P(\text{heart} \mid \text{red}) = \frac{1}{2}$</p>
+<div class="callout callout-warning"><div class="callout-header"><span class="callout-icon">⚠️</span><span class="callout-title">⚠️ Common Mistake</span>
+  </div><div class="callout-content">
+    Don&rsquo;t confuse $P(A \mid B)$ with $P(A \cap B)$ - they&rsquo;re different!
+  </div>
+</div>
+
+<div class="formula-highlight">
+<p><strong>Conditional Probability:</strong>
+$$P(A \mid B) = \frac{P(A \cap B)}{P(B)}$$</p>
+</div>
+<table>
+  <thead>
+      <tr>
+          <th>Usage</th>
+          <th>Example</th>
+          <th>Key Insight</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Probability given additional information</td>
+          <td>Given a red card, probability it&rsquo;s a heart? $P(\text{heart} \mid \text{red}) = \frac{1}{2}$</td>
+          <td>Restrict sample space to B</td>
+      </tr>
+  </tbody>
+</table>
 <h3 id="independence">Independence<a hidden class="anchor" aria-hidden="true" href="#independence">#</a></h3>
-<p>$$P(A \cap B) = P(A)P(B)$$
-<strong>Usage</strong>: When events don&rsquo;t affect each other
-<strong>Example</strong>: Consecutive coin flips are independent</p>
+<div class="formula-highlight">
+<p><strong>Independence Test:</strong>
+$$P(A \cap B) = P(A)P(B)$$</p>
+</div>
+<table>
+  <thead>
+      <tr>
+          <th>Usage</th>
+          <th>Example</th>
+          <th>Key Insight</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>When events don&rsquo;t affect each other</td>
+          <td>Consecutive coin flips are independent</td>
+          <td>Events don&rsquo;t influence each other</td>
+      </tr>
+  </tbody>
+</table>
 <h3 id="law-of-total-probability">Law of Total Probability<a hidden class="anchor" aria-hidden="true" href="#law-of-total-probability">#</a></h3>
-<p>$$P(A) = \sum_{i=1}^{n} P(A \mid B_i)P(B_i)$$
-<strong>Usage</strong>: When you have mutually exclusive and exhaustive events
-<strong>Example</strong>: Probability of rain given weather forecasts</p>
+<div class="callout callout-note"><div class="callout-header"><span class="callout-icon">📝</span><span class="callout-title">📊 Partitioning</span>
+  </div><div class="callout-content">
+    Break complex probability into simpler parts using mutually exclusive events!
+  </div>
+</div>
+
+<div class="formula-highlight">
+<p><strong>Law of Total Probability:</strong>
+$$P(A) = \sum_{i=1}^{n} P(A \mid B_i)P(B_i)$$</p>
+</div>
+<table>
+  <thead>
+      <tr>
+          <th>Usage</th>
+          <th>Example</th>
+          <th>Key Insight</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>When you have mutually exclusive and exhaustive events</td>
+          <td>Probability of rain given weather forecasts</td>
+          <td>Sum over all possible scenarios</td>
+      </tr>
+  </tbody>
+</table>
 <h3 id="bayes-theorem">Bayes&rsquo; Theorem<a hidden class="anchor" aria-hidden="true" href="#bayes-theorem">#</a></h3>
-<p>$$P(B_i \mid A) = \frac{P(A \mid B_i)P(B_i)}{P(A)}$$
-<strong>Usage</strong>: Finding cause probabilities given effects
-<strong>Example</strong>: Given a positive test, probability of having the disease</p>
+<div class="formula-highlight">
+<p><strong>Bayes&rsquo; Theorem:</strong>
+$$P(B_i \mid A) = \frac{P(A \mid B_i)P(B_i)}{P(A)}$$</p>
+</div>
+<table>
+  <thead>
+      <tr>
+          <th>Usage</th>
+          <th>Example</th>
+          <th>Key Insight</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Finding cause probabilities given effects</td>
+          <td>Given a positive test, probability of having the disease</td>
+          <td>Reverse conditional probability</td>
+      </tr>
+  </tbody>
+</table>
 <h2 id="-expected-value">📊 Expected Value<a hidden class="anchor" aria-hidden="true" href="#-expected-value">#</a></h2>
 <h3 id="expected-value-definition">Expected Value Definition<a hidden class="anchor" aria-hidden="true" href="#expected-value-definition">#</a></h3>
 <p>$$\mathbb{E}[X] = \sum_{x} x \cdot P(X = x)$$
@@ -326,58 +596,81 @@
 <strong>Usage</strong>: Permutations with no fixed points
 <strong>Example</strong>: How many ways to arrange 5 people so no one sits in their assigned seat? $!5 = 44$ ways</p>
 <h2 id="-quick-reference-table">🎯 Quick Reference Table<a hidden class="anchor" aria-hidden="true" href="#-quick-reference-table">#</a></h2>
+<div class="callout callout-info"><div class="callout-header"><span class="callout-icon">ℹ️</span><span class="callout-title">📚 Problem Type Guide</span>
+  </div><div class="callout-content">
+    Use this table to quickly identify which formula applies to each problem type!
+  </div>
+</div>
+
+<div class="formula-table">
 <table>
   <thead>
       <tr>
           <th>Problem Type</th>
           <th>Formula</th>
           <th>When to Use</th>
+          <th>Key Insight</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>Arrangements</td>
+          <td><strong>Arrangements</strong></td>
           <td>$P(n,k) = \frac{n!}{(n-k)!}$</td>
           <td>Order matters</td>
+          <td>ABC ≠ BAC</td>
       </tr>
       <tr>
-          <td>Selections</td>
+          <td><strong>Selections</strong></td>
           <td>$\binom{n}{k} = \frac{n!}{k!(n-k)!}$</td>
           <td>Order doesn&rsquo;t matter</td>
+          <td>{A,B,C} = {C,A,B}</td>
       </tr>
       <tr>
-          <td>Circular</td>
+          <td><strong>Circular</strong></td>
           <td>$(n-1)!$</td>
           <td>Around a table</td>
+          <td>Fix one, arrange rest</td>
       </tr>
       <tr>
-          <td>With repetition</td>
+          <td><strong>With repetition</strong></td>
           <td>$n^k$</td>
           <td>$k$ positions, $n$ choices each</td>
+          <td>Independent choices</td>
       </tr>
       <tr>
-          <td>Stars and bars</td>
+          <td><strong>Stars and bars</strong></td>
           <td>$\binom{n+k-1}{k-1}$</td>
           <td>Nonnegative solutions</td>
+          <td>Distribute identical objects</td>
       </tr>
       <tr>
-          <td>At least</td>
+          <td><strong>At least</strong></td>
           <td>$1 - P(\text{complement})$</td>
           <td>Complement counting</td>
+          <td>Count what you don&rsquo;t want</td>
       </tr>
       <tr>
-          <td>Expected value</td>
+          <td><strong>Expected value</strong></td>
           <td>$\mathbb{E}[X] = \sum x \cdot P(X = x)$</td>
           <td>Average value</td>
+          <td>Weighted average</td>
       </tr>
       <tr>
-          <td>Linearity</td>
+          <td><strong>Linearity</strong></td>
           <td>$\mathbb{E}[X + Y] = \mathbb{E}[X] + \mathbb{E}[Y]$</td>
           <td>Sum of expectations</td>
+          <td>Add expectations</td>
       </tr>
   </tbody>
 </table>
+</div>
 <hr>
+<div class="callout callout-success"><div class="callout-header"><span class="callout-icon">🎉</span><span class="callout-title">🎉 You&#39;re Ready!</span>
+  </div><div class="callout-content">
+    You now have a comprehensive counting and probability formula reference! Practice regularly and use this as your go-to resource during contests.
+  </div>
+</div>
+
 <p><em>Next: <a href="05-tips/">Problem-Solving Tips</a> → <a href="02-topics/">Back to Topics</a></em></p>
 
 

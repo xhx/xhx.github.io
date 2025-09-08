@@ -35,11 +35,16 @@ Pattern recognition and solution templates:
 - **Complex Number Geometry** - rotations, loci, roots of unity
 - **Inequality Techniques** - AM-GM, Cauchy-Schwarz
 
-### 📏 [Essential Formulas](formulas/)
+
+### 📏 Essential Resources
+- **[Essential Formulas](formulas/essential-formulas)** — Compact formula bank with micro-examples
+- **[Problem-Solving Tips](tips/problem-solving-tips)** — Heuristics, checklists, timing strategies
+
+<!-- ### 📏 [Essential Formulas](formulas/)
 Quick reference for all key formulas with usage examples.
 
 ### 💡 [Problem-Solving Tips](tips/)
-Strategic approaches, checklists, and timing advice.
+Strategic approaches, checklists, and timing advice. -->
 
 ### 📘 Practice Problems
 - **[Practice Hub](practice)** — Comprehensive AMC-style practice with mixed sets, topic drills, and mock exams

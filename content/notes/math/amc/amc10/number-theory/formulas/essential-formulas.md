@@ -9,52 +9,125 @@ ShowToc: true
 
 # 📏 Essential Formulas
 
-Complete formula bank for AMC number theory with usage examples and micro-examples.
+{{< callout type="info" title="Quick Reference Guide" >}}
+Complete formula bank for AMC number theory with usage examples and micro-examples. Master these for contest success!
+{{< /callout >}}
+
+## 🗂️ Table of Contents
+
+- [🔢 Basic Divisibility](#-basic-divisibility)
+- [🔄 Modular Arithmetic](#-modular-arithmetic)
+- [📊 Divisor Functions](#-divisor-functions)
+- [🔺 Diophantine Equations](#-diophantine-equations)
+- [📈 Special Functions](#-special-functions)
+- [⚡ Quick Reference Tables](#-quick-reference-tables)
 
 ## 🔢 Basic Divisibility
 
+{{< callout type="tip" title="🎯 GCD and LCM Mastery" >}}
+These fundamental concepts appear in **most** number theory problems. Master them well!
+{{< /callout >}}
+
 ### Euclidean Algorithm
+
+<div class="formula-highlight">
+
+**Euclidean Algorithm:**
 $$\gcd(a,b) = \gcd(b, a \bmod b)$$
 
-**Usage**: Compute GCD efficiently
-**Example**: $\gcd(48,18) = \gcd(18,12) = \gcd(12,6) = 6$
+</div>
+
+| Usage | Example | Key Insight |
+|-------|---------|-------------|
+| Compute GCD efficiently | $\gcd(48,18) = \gcd(18,12) = \gcd(12,6) = 6$ | Repeatedly apply the algorithm until remainder is 0 |
 
 ### Bézout's Identity
+
+{{< callout type="warning" title="⚠️ Linear Diophantine Equations" >}}
+This identity is crucial for solving linear Diophantine equations!
+{{< /callout >}}
+
+<div class="formula-highlight">
+
+**Bézout's Identity:**
 If $\gcd(a,b) = d$, then there exist integers $x,y$ such that:
 $$ax + by = d$$
 
-**Usage**: Find solutions to linear Diophantine equations
-**Example**: $\gcd(12,18) = 6$, and $12(-1) + 18(1) = 6$
+</div>
+
+| Usage | Example | Key Insight |
+|-------|---------|-------------|
+| Find solutions to linear Diophantine equations | $\gcd(12,18) = 6$, and $12(-1) + 18(1) = 6$ | Express GCD as linear combination |
 
 ### Fundamental Relationship
+
+<div class="formula-highlight">
+
+**GCD-LCM Relationship:**
 $$ab = \gcd(a,b) \cdot \operatorname{lcm}(a,b)$$
 
-**Usage**: Relate GCD and LCM
-**Example**: $12 \cdot 18 = 216 = \gcd(12,18) \cdot \operatorname{lcm}(12,18) = 6 \cdot 36$
+</div>
+
+| Usage | Example | Key Insight |
+|-------|---------|-------------|
+| Relate GCD and LCM | $12 \cdot 18 = 216 = \gcd(12,18) \cdot \operatorname{lcm}(12,18) = 6 \cdot 36$ | Product equals product of GCD and LCM |
 
 ## 🔄 Modular Arithmetic
 
+{{< callout type="tip" title="🎯 Modular Mastery" >}}
+Modular arithmetic is **essential** for AMC contests. Master these powerful theorems!
+{{< /callout >}}
+
 ### Fermat's Little Theorem
+
+<div class="formula-highlight">
+
+**Fermat's Little Theorem:**
 For prime $p$ and integer $a$ with $\gcd(a,p) = 1$:
 $$a^{p-1} \equiv 1 \pmod{p}$$
 
-**Usage**: Reduce large exponents modulo primes
-**Example**: $2^6 \equiv 1 \pmod{7}$ because $7$ is prime and $\gcd(2,7) = 1$
+</div>
+
+| Usage | Example | Key Insight |
+|-------|---------|-------------|
+| Reduce large exponents modulo primes | $2^6 \equiv 1 \pmod{7}$ because $7$ is prime and $\gcd(2,7) = 1$ | Very powerful for large exponents |
 
 ### Euler's Theorem
+
+{{< callout type="note" title="📊 Totient Function" >}}
+Euler's theorem generalizes Fermat's Little Theorem to composite numbers!
+{{< /callout >}}
+
+<div class="formula-highlight">
+
+**Euler's Theorem:**
 For positive integer $m$ and integer $a$ with $\gcd(a,m) = 1$:
 $$a^{\varphi(m)} \equiv 1 \pmod{m}$$
 
-**Usage**: Reduce large exponents modulo composite numbers
-**Example**: $3^4 \equiv 1 \pmod{10}$ because $\varphi(10) = 4$ and $\gcd(3,10) = 1$
+</div>
+
+| Usage | Example | Key Insight |
+|-------|---------|-------------|
+| Reduce large exponents modulo composite numbers | $3^4 \equiv 1 \pmod{10}$ because $\varphi(10) = 4$ and $\gcd(3,10) = 1$ | Generalizes Fermat's theorem |
 
 ### Chinese Remainder Theorem
+
+{{< callout type="warning" title="⚠️ System of Congruences" >}}
+This theorem is crucial for solving systems of modular equations!
+{{< /callout >}}
+
+<div class="formula-highlight">
+
+**Chinese Remainder Theorem:**
 If $m_1, m_2, \ldots, m_k$ are pairwise coprime, then the system:
 $$x \equiv a_1 \pmod{m_1}, \quad x \equiv a_2 \pmod{m_2}, \quad \ldots, \quad x \equiv a_k \pmod{m_k}$$
 has a unique solution modulo $M = m_1 m_2 \cdots m_k$.
 
-**Usage**: Solve systems of congruences
-**Example**: $x \equiv 2 \pmod{3}$ and $x \equiv 3 \pmod{5}$ has solution $x \equiv 8 \pmod{15}$
+</div>
+
+| Usage | Example | Key Insight |
+|-------|---------|-------------|
+| Solve systems of congruences | $x \equiv 2 \pmod{3}$ and $x \equiv 3 \pmod{5}$ has solution $x \equiv 8 \pmod{15}$ | Combine multiple modular equations |
 
 ## 📊 Divisor Functions
 
@@ -120,32 +193,59 @@ For prime $p$ and positive integer $n$, $v_p(n)$ is the highest power of $p$ div
 
 ## ⚡ Quick Reference Tables
 
+{{< callout type="info" title="📚 Essential Reference Tables" >}}
+These tables are invaluable for quick lookups during contests!
+{{< /callout >}}
+
 ### Common Totient Values
-| $n$ | $\varphi(n)$ | $n$ | $\varphi(n)$ |
-|-----|--------------|-----|--------------|
-| 1 | 1 | 6 | 2 |
-| 2 | 1 | 7 | 6 |
-| 3 | 2 | 8 | 4 |
-| 4 | 2 | 9 | 6 |
-| 5 | 4 | 10 | 4 |
+
+<div class="formula-table">
+
+| $n$ | $\varphi(n)$ | $n$ | $\varphi(n)$ | Key Pattern |
+|-----|--------------|-----|--------------|-------------|
+| **1** | 1 | **6** | 2 | $\varphi(p) = p-1$ for prime $p$ |
+| **2** | 1 | **7** | 6 | $\varphi(p^k) = p^{k-1}(p-1)$ |
+| **3** | 2 | **8** | 4 | $\varphi(ab) = \varphi(a)\varphi(b)$ if $\gcd(a,b)=1$ |
+| **4** | 2 | **9** | 6 | |
+| **5** | 4 | **10** | 4 | |
+
+</div>
 
 ### Common Orders Modulo Small Primes
-| Base | Mod 3 | Mod 5 | Mod 7 | Mod 11 |
-|------|-------|-------|-------|--------|
-| 2 | 2 | 4 | 3 | 10 |
-| 3 | 1 | 4 | 6 | 5 |
-| 5 | - | 1 | 6 | 5 |
-| 7 | - | - | 1 | 10 |
+
+<div class="formula-table">
+
+| Base | Mod 3 | Mod 5 | Mod 7 | Mod 11 | Key Insight |
+|------|-------|-------|-------|--------|-------------|
+| **2** | 2 | 4 | 3 | 10 | Order divides $\varphi(p)$ |
+| **3** | 1 | 4 | 6 | 5 | Order of $a$ mod $p$ is smallest $k$ with $a^k \equiv 1$ |
+| **5** | - | 1 | 6 | 5 | |
+| **7** | - | - | 1 | 10 | |
+
+</div>
 
 ### Divisibility Tests
-| Divisor | Test | Example |
-|---------|------|---------|
-| 2 | Last digit even | 1234 ✓, 1235 ✗ |
-| 3 | Sum of digits divisible by 3 | 123 ✓ (1+2+3=6) |
-| 5 | Last digit 0 or 5 | 1230 ✓, 1234 ✗ |
-| 9 | Sum of digits divisible by 9 | 1233 ✓ (1+2+3+3=9) |
-| 11 | Alternating sum divisible by 11 | 121 ✓ (1-2+1=0) |
+
+{{< callout type="tip" title="🔍 Quick Divisibility Checks" >}}
+These tests are essential for quickly checking divisibility without division!
+{{< /callout >}}
+
+<div class="formula-table">
+
+| Divisor | Test | Example | Key Insight |
+|---------|------|---------|-------------|
+| **2** | Last digit even | 1234 ✓, 1235 ✗ | Check units digit |
+| **3** | Sum of digits divisible by 3 | 123 ✓ (1+2+3=6) | Sum all digits |
+| **5** | Last digit 0 or 5 | 1230 ✓, 1234 ✗ | Check units digit |
+| **9** | Sum of digits divisible by 9 | 1233 ✓ (1+2+3+3=9) | Sum all digits |
+| **11** | Alternating sum divisible by 11 | 121 ✓ (1-2+1=0) | Alternating sum of digits |
+
+</div>
 
 ---
+
+{{< callout type="success" title="🎉 You're Ready!" >}}
+You now have a comprehensive number theory formula reference! Practice regularly and use this as your go-to resource during contests.
+{{< /callout >}}
 
 **Previous**: [Formulas Overview](_index) | **Next**: [Problem-Solving Tips](../tips/problem-solving-tips)

@@ -1,0 +1,209 @@
+/* Callout Styles */
+.callout {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid;
+  background-color: var(--callout-bg, #f8f9fa);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.callout-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.callout-icon {
+  margin-right: 0.5rem;
+  font-size: 1.1em;
+}
+
+.callout-title {
+  font-size: 1.05em;
+}
+
+.callout-content {
+  line-height: 1.6;
+}
+
+.callout-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Callout Types */
+.callout-info {
+  border-left-color: #0066cc;
+  background-color: #e6f3ff;
+}
+
+.callout-tip {
+  border-left-color: #28a745;
+  background-color: #e8f5e8;
+}
+
+.callout-warning {
+  border-left-color: #ffc107;
+  background-color: #fff8e1;
+}
+
+.callout-note {
+  border-left-color: #6c757d;
+  background-color: #f8f9fa;
+}
+
+.callout-success {
+  border-left-color: #28a745;
+  background-color: #d4edda;
+}
+
+.callout-danger {
+  border-left-color: #dc3545;
+  background-color: #f8d7da;
+}
+
+.callout-error {
+  border-left-color: #dc3545;
+  background-color: #f8d7da;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .callout {
+    background-color: var(--callout-bg-dark, #2d3748);
+    color: var(--text-dark, #e2e8f0);
+  }
+  
+  .callout-info {
+    background-color: #1a365d;
+  }
+  
+  .callout-tip {
+    background-color: #1a4d1a;
+  }
+  
+  .callout-warning {
+    background-color: #4d3a00;
+  }
+  
+  .callout-note {
+    background-color: #2d3748;
+  }
+  
+  .callout-success {
+    background-color: #1a4d1a;
+  }
+  
+  .callout-danger,
+  .callout-error {
+    background-color: #4d1a1a;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .callout {
+    margin: 1rem 0;
+    padding: 0.75rem;
+  }
+  
+  .callout-header {
+    font-size: 0.95em;
+  }
+}
+
+/* Formula highlighting */
+.formula-highlight {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.formula-highlight p {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+/* Study and contest tips */
+.study-tips,
+.contest-tips {
+  background-color: #f8f9fa;
+  border-left: 4px solid #0066cc;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0 6px 6px 0;
+}
+
+.study-tips li,
+.contest-tips li {
+  margin-bottom: 0.5rem;
+}
+
+.study-tips li:last-child,
+.contest-tips li:last-child {
+  margin-bottom: 0;
+}
+
+/* Formula table enhancements */
+.formula-table {
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.formula-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+.formula-table th,
+.formula-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.formula-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.formula-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Dark mode for additional elements */
+@media (prefers-color-scheme: dark) {
+  .formula-highlight {
+    background-color: #2d3748;
+    border-color: #4a5568;
+    color: #e2e8f0;
+  }
+  
+  .study-tips,
+  .contest-tips {
+    background-color: #2d3748;
+    border-left-color: #0066cc;
+    color: #e2e8f0;
+  }
+  
+  .formula-table th {
+    background-color: #2d3748;
+    border-bottom-color: #4a5568;
+  }
+  
+  .formula-table th,
+  .formula-table td {
+    border-bottom-color: #4a5568;
+  }
+  
+  .formula-table tr:hover {
+    background-color: #2d3748;
+  }
+}

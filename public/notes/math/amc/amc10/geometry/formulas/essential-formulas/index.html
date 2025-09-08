@@ -71,6 +71,9 @@
 
 
 
+
+<link rel="stylesheet" href="/css/callouts.css">
+
 </head>
 
 <body class="" id="top">
@@ -121,7 +124,7 @@
 <article class="post-single">
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/">Math</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/">AMC</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/">AMC 10/12</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/">Geometry Mastery Guide</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/math/amc/amc10/geometry/formulas/">Essential Formulas</a></div>
-    <div class="post-meta">5 min&nbsp;·&nbsp;Xiaohui Xie
+    <div class="post-meta">7 min&nbsp;·&nbsp;Xiaohui Xie
 
 </div>
   </header> <div class="toc">
@@ -134,6 +137,8 @@
                 <li>
                     <a href="#-essential-formulas-bank" aria-label="📏 Essential Formulas Bank">📏 Essential Formulas Bank</a><ul>
                         
+                <li>
+                    <a href="#-table-of-contents" aria-label="🗂️ Table of Contents">🗂️ Table of Contents</a></li>
                 <li>
                     <a href="#-triangle-formulas" aria-label="🔺 Triangle Formulas">🔺 Triangle Formulas</a><ul>
                         
@@ -188,13 +193,9 @@
                 <li>
                     <a href="#angle-bisector-theorem" aria-label="Angle Bisector Theorem">Angle Bisector Theorem</a></li>
                 <li>
-                    <a href="#stewarts-theorem" aria-label="Stewart&rsquo;s Theorem">Stewart&rsquo;s Theorem</a></li>
-                <li>
                     <a href="#law-of-sines-and-cosines" aria-label="Law of Sines and Cosines">Law of Sines and Cosines</a></li>
                 <li>
-                    <a href="#shoelace-area-formula" aria-label="Shoelace Area Formula">Shoelace Area Formula</a></li>
-                <li>
-                    <a href="#half-angle-identities" aria-label="Half-Angle Identities">Half-Angle Identities</a></li></ul>
+                    <a href="#shoelace-area-formula" aria-label="Shoelace Area Formula">Shoelace Area Formula</a></li></ul>
                 </li>
                 <li>
                     <a href="#-quick-reference-tips" aria-label="💡 Quick Reference Tips">💡 Quick Reference Tips</a><ul>
@@ -214,208 +215,340 @@
 </div>
 
   <div class="post-content"><h1 id="-essential-formulas-bank">📏 Essential Formulas Bank<a hidden class="anchor" aria-hidden="true" href="#-essential-formulas-bank">#</a></h1>
-<p>Complete reference for all essential AMC geometry formulas with usage notes and micro-examples.</p>
+<div class="callout callout-info"><div class="callout-header"><span class="callout-icon">ℹ️</span><span class="callout-title">Quick Reference Guide</span>
+  </div><div class="callout-content">
+    Complete reference for all essential AMC geometry formulas with usage notes and micro-examples. Master these formulas for contest success!
+  </div>
+</div>
+
+<h2 id="-table-of-contents">🗂️ Table of Contents<a hidden class="anchor" aria-hidden="true" href="#-table-of-contents">#</a></h2>
+<ul>
+<li><a href="#-triangle-formulas">🔺 Triangle Formulas</a>
+<ul>
+<li><a href="#area-formulas">Area Formulas</a></li>
+<li><a href="#length-formulas">Length Formulas</a></li>
+<li><a href="#center-formulas">Center Formulas</a></li>
+</ul>
+</li>
+<li><a href="#-circle-formulas">⭕ Circle Formulas</a>
+<ul>
+<li><a href="#basic-properties">Basic Properties</a></li>
+<li><a href="#power-of-a-point">Power of a Point</a></li>
+<li><a href="#chord-and-arc">Chord and Arc</a></li>
+</ul>
+</li>
+<li><a href="#-coordinate-formulas">📐 Coordinate Formulas</a>
+<ul>
+<li><a href="#basic-operations">Basic Operations</a></li>
+<li><a href="#area-and-lines">Area and Lines</a></li>
+</ul>
+</li>
+<li><a href="#-transformation-formulas">🔄 Transformation Formulas</a></li>
+<li><a href="#-3d-formulas">📦 3D Formulas</a></li>
+<li><a href="#-special-formulas">🎯 Special Formulas</a></li>
+<li><a href="#-quick-reference-tips">💡 Quick Reference Tips</a></li>
+</ul>
 <h2 id="-triangle-formulas">🔺 Triangle Formulas<a hidden class="anchor" aria-hidden="true" href="#-triangle-formulas">#</a></h2>
+<div class="callout callout-tip"><div class="callout-header"><span class="callout-icon">💡</span><span class="callout-title">🎯 Contest Strategy</span>
+  </div><div class="callout-content">
+    Triangle problems are <strong>extremely common</strong> in AMC contests. Master these area and length formulas!
+  </div>
+</div>
+
 <h3 id="area-formulas">Area Formulas<a hidden class="anchor" aria-hidden="true" href="#area-formulas">#</a></h3>
+<div class="callout callout-warning"><div class="callout-header"><span class="callout-icon">⚠️</span><span class="callout-title">⚠️ Critical for AMC</span>
+  </div><div class="callout-content">
+    These area formulas appear in <strong>90%</strong> of AMC geometry problems!
+  </div>
+</div>
+
+<div class="formula-table">
 <table>
   <thead>
       <tr>
           <th>Formula</th>
           <th>Usage</th>
           <th>Example</th>
+          <th>When to Use</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>$A = \frac{1}{2}bh$</td>
+          <td><strong>$A = \frac{1}{2}bh$</strong></td>
           <td>Basic triangle area</td>
           <td>Triangle with base 6, height 4: $A = \frac{1}{2} \cdot 6 \cdot 4 = 12$</td>
+          <td>When you have base and height</td>
       </tr>
       <tr>
-          <td>$A = \frac{1}{2}ab\sin C$</td>
+          <td><strong>$A = \frac{1}{2}ab\sin C$</strong></td>
           <td>Triangle with two sides and included angle</td>
           <td>Sides 5, 7, angle $60°$: $A = \frac{1}{2} \cdot 5 \cdot 7 \cdot \sin 60° = \frac{35\sqrt{3}}{4}$</td>
+          <td>When you have two sides and included angle</td>
       </tr>
       <tr>
-          <td>$A = \sqrt{s(s-a)(s-b)(s-c)}$</td>
+          <td><strong>$A = \sqrt{s(s-a)(s-b)(s-c)}$</strong></td>
           <td>Heron&rsquo;s formula (three sides)</td>
           <td>Sides 3, 4, 5: $s = 6$, $A = \sqrt{6 \cdot 3 \cdot 2 \cdot 1} = 6$</td>
+          <td>When you have all three sides</td>
       </tr>
   </tbody>
 </table>
+</div>
 <h3 id="length-formulas">Length Formulas<a hidden class="anchor" aria-hidden="true" href="#length-formulas">#</a></h3>
+<div class="formula-highlight">
+<p><strong>Key Formula:</strong>
+$$m_a = \frac{1}{2}\sqrt{2b^2 + 2c^2 - a^2}$$</p>
+</div>
 <table>
   <thead>
       <tr>
           <th>Formula</th>
           <th>Usage</th>
           <th>Example</th>
+          <th>Key Insight</th>
       </tr>
   </thead>
   <tbody>
       <tr>
+          <td><strong>Median length</strong></td>
           <td>$m_a = \frac{1}{2}\sqrt{2b^2 + 2c^2 - a^2}$</td>
-          <td>Median length</td>
           <td>Sides 3, 4, 5: $m = \frac{1}{2}\sqrt{2 \cdot 16 + 2 \cdot 9 - 25} = \frac{5}{2}$</td>
+          <td>Connects vertex to midpoint of opposite side</td>
       </tr>
       <tr>
+          <td><strong>Altitude length</strong></td>
           <td>$h_a = \frac{2A}{a}$</td>
-          <td>Altitude length</td>
           <td>Area 6, base 3: $h = \frac{2 \cdot 6}{3} = 4$</td>
+          <td>Perpendicular from vertex to opposite side</td>
       </tr>
       <tr>
+          <td><strong>Angle bisector</strong></td>
           <td>$t_a = \frac{2bc}{b+c}\cos\frac{A}{2}$</td>
-          <td>Angle bisector length</td>
           <td>Sides 3, 4, angle $60°$: $t = \frac{2 \cdot 3 \cdot 4}{7} \cdot \cos 30° = \frac{24\sqrt{3}}{14}$</td>
+          <td>Divides angle into two equal parts</td>
       </tr>
   </tbody>
 </table>
 <h3 id="center-formulas">Center Formulas<a hidden class="anchor" aria-hidden="true" href="#center-formulas">#</a></h3>
+<div class="callout callout-note"><div class="callout-header"><span class="callout-icon">📝</span><span class="callout-title">📐 Triangle Centers</span>
+  </div><div class="callout-content">
+    These centers are crucial for coordinate geometry and advanced triangle problems!
+  </div>
+</div>
+
 <table>
   <thead>
       <tr>
           <th>Formula</th>
           <th>Usage</th>
           <th>Example</th>
+          <th>Center Type</th>
       </tr>
   </thead>
   <tbody>
       <tr>
+          <td><strong>Centroid</strong></td>
           <td>$G = \left(\frac{x_1+x_2+x_3}{3}, \frac{y_1+y_2+y_3}{3}\right)$</td>
-          <td>Centroid coordinates</td>
           <td>Vertices $(0,0)$, $(4,0)$, $(2,3)$: $G = (2,1)$</td>
+          <td>Center of mass</td>
       </tr>
       <tr>
+          <td><strong>Inradius</strong></td>
           <td>$r = \frac{A}{s}$</td>
-          <td>Inradius</td>
           <td>Area 6, semi-perimeter 6: $r = 1$</td>
+          <td>Radius of inscribed circle</td>
       </tr>
       <tr>
+          <td><strong>Circumradius</strong></td>
           <td>$R = \frac{abc}{4A}$</td>
-          <td>Circumradius</td>
           <td>Sides 3, 4, 5, area 6: $R = \frac{3 \cdot 4 \cdot 5}{4 \cdot 6} = \frac{5}{2}$</td>
+          <td>Radius of circumscribed circle</td>
       </tr>
   </tbody>
 </table>
 <h2 id="-circle-formulas">⭕ Circle Formulas<a hidden class="anchor" aria-hidden="true" href="#-circle-formulas">#</a></h2>
+<div class="callout callout-tip"><div class="callout-header"><span class="callout-icon">💡</span><span class="callout-title">🎯 Circle Mastery</span>
+  </div><div class="callout-content">
+    Circle problems are <strong>high-frequency</strong> in AMC contests. Master both basic properties and power theorems!
+  </div>
+</div>
+
 <h3 id="basic-properties">Basic Properties<a hidden class="anchor" aria-hidden="true" href="#basic-properties">#</a></h3>
+<div class="formula-highlight">
+<p><strong>Core Circle Formulas:</strong></p>
+<ul>
+<li>Area: $A = \pi r^2$</li>
+<li>Circumference: $C = 2\pi r$</li>
+<li>Diameter: $d = 2r$</li>
+</ul>
+</div>
 <table>
   <thead>
       <tr>
           <th>Formula</th>
           <th>Usage</th>
           <th>Example</th>
+          <th>Key Insight</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>$A = \pi r^2$</td>
+          <td><strong>$A = \pi r^2$</strong></td>
           <td>Circle area</td>
           <td>Radius 5: $A = 25\pi$</td>
+          <td>Most common area formula</td>
       </tr>
       <tr>
-          <td>$C = 2\pi r$</td>
+          <td><strong>$C = 2\pi r$</strong></td>
           <td>Circumference</td>
           <td>Radius 5: $C = 10\pi$</td>
+          <td>Perimeter of circle</td>
       </tr>
       <tr>
-          <td>$d = 2r$</td>
+          <td><strong>$d = 2r$</strong></td>
           <td>Diameter</td>
           <td>Radius 5: $d = 10$</td>
+          <td>Longest chord through center</td>
       </tr>
   </tbody>
 </table>
 <h3 id="power-of-a-point">Power of a Point<a hidden class="anchor" aria-hidden="true" href="#power-of-a-point">#</a></h3>
+<div class="callout callout-warning"><div class="callout-header"><span class="callout-icon">⚠️</span><span class="callout-title">⚡ Power Theorems</span>
+  </div><div class="callout-content">
+    These power theorems are <strong>essential</strong> for advanced circle problems and often appear in AMC 12!
+  </div>
+</div>
+
 <table>
   <thead>
       <tr>
           <th>Formula</th>
           <th>Usage</th>
           <th>Example</th>
+          <th>When to Use</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>$PA^2 = PB \cdot PC$</td>
+          <td><strong>$PA^2 = PB \cdot PC$</strong></td>
           <td>Tangent-secant</td>
           <td>Tangent 6, secant segment 4: $6^2 = 4 \cdot PC$, so $PC = 9$</td>
+          <td>When you have tangent and secant</td>
       </tr>
       <tr>
-          <td>$PA \cdot PB = PC \cdot PD$</td>
+          <td><strong>$PA \cdot PB = PC \cdot PD$</strong></td>
           <td>Two secants/chords</td>
           <td>Secant segments 3, 4 and 2, 6: $3 \cdot 4 = 2 \cdot 6 = 12$</td>
+          <td>When you have two intersecting chords/secants</td>
       </tr>
   </tbody>
 </table>
 <h3 id="chord-and-arc">Chord and Arc<a hidden class="anchor" aria-hidden="true" href="#chord-and-arc">#</a></h3>
+<div class="formula-highlight">
+<p><strong>Key Formulas:</strong></p>
+<ul>
+<li>Chord length: $L = 2\sqrt{r^2 - d^2}$</li>
+<li>Arc length: $s = r\theta$</li>
+</ul>
+</div>
 <table>
   <thead>
       <tr>
           <th>Formula</th>
           <th>Usage</th>
           <th>Example</th>
+          <th>Key Insight</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>$L = 2\sqrt{r^2 - d^2}$</td>
+          <td><strong>$L = 2\sqrt{r^2 - d^2}$</strong></td>
           <td>Chord length</td>
           <td>Radius 5, distance 3: $L = 2\sqrt{25-9} = 8$</td>
+          <td>Distance from center to chord</td>
       </tr>
       <tr>
-          <td>$s = r\theta$</td>
+          <td><strong>$s = r\theta$</strong></td>
           <td>Arc length</td>
           <td>Radius 5, angle $\frac{\pi}{3}$: $s = \frac{5\pi}{3}$</td>
+          <td>Angle must be in radians</td>
       </tr>
   </tbody>
 </table>
 <h2 id="-coordinate-formulas">📐 Coordinate Formulas<a hidden class="anchor" aria-hidden="true" href="#-coordinate-formulas">#</a></h2>
+<div class="callout callout-tip"><div class="callout-header"><span class="callout-icon">💡</span><span class="callout-title">📊 Coordinate Mastery</span>
+  </div><div class="callout-content">
+    Coordinate geometry problems are <strong>very common</strong> in AMC contests. Master these fundamental formulas!
+  </div>
+</div>
+
 <h3 id="basic-operations">Basic Operations<a hidden class="anchor" aria-hidden="true" href="#basic-operations">#</a></h3>
+<div class="formula-highlight">
+<p><strong>Essential Coordinate Formulas:</strong></p>
+<ul>
+<li>Distance: $d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$</li>
+<li>Slope: $m = \frac{y_2-y_1}{x_2-x_1}$</li>
+<li>Midpoint: $\left(\frac{x_1+x_2}{2}, \frac{y_1+y_2}{2}\right)$</li>
+</ul>
+</div>
 <table>
   <thead>
       <tr>
           <th>Formula</th>
           <th>Usage</th>
           <th>Example</th>
+          <th>Key Insight</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>$d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$</td>
+          <td><strong>$d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$</strong></td>
           <td>Distance between points</td>
           <td>$(0,0)$ to $(3,4)$: $d = \sqrt{9+16} = 5$</td>
+          <td>Pythagorean theorem in 2D</td>
       </tr>
       <tr>
-          <td>$m = \frac{y_2-y_1}{x_2-x_1}$</td>
+          <td><strong>$m = \frac{y_2-y_1}{x_2-x_1}$</strong></td>
           <td>Slope</td>
           <td>$(1,2)$ to $(3,6)$: $m = \frac{6-2}{3-1} = 2$</td>
+          <td>Rise over run</td>
       </tr>
       <tr>
+          <td><strong>Midpoint</strong></td>
           <td>$\left(\frac{x_1+x_2}{2}, \frac{y_1+y_2}{2}\right)$</td>
-          <td>Midpoint</td>
           <td>$(0,0)$ to $(4,6)$: $(2,3)$</td>
+          <td>Average of coordinates</td>
       </tr>
   </tbody>
 </table>
 <h3 id="area-and-lines">Area and Lines<a hidden class="anchor" aria-hidden="true" href="#area-and-lines">#</a></h3>
+<div class="callout callout-note"><div class="callout-header"><span class="callout-icon">📝</span><span class="callout-title">📏 Line and Circle Equations</span>
+  </div><div class="callout-content">
+    These equations are fundamental for coordinate geometry problems!
+  </div>
+</div>
+
 <table>
   <thead>
       <tr>
           <th>Formula</th>
           <th>Usage</th>
           <th>Example</th>
+          <th>When to Use</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>$y = mx + b$</td>
+          <td><strong>$y = mx + b$</strong></td>
           <td>Line equation</td>
           <td>Slope 2, y-intercept 3: $y = 2x + 3$</td>
+          <td>When you have slope and y-intercept</td>
       </tr>
       <tr>
-          <td>$(x-h)^2 + (y-k)^2 = r^2$</td>
+          <td><strong>$(x-h)^2 + (y-k)^2 = r^2$</strong></td>
           <td>Circle equation</td>
           <td>Center $(2,3)$, radius 5: $(x-2)^2 + (y-3)^2 = 25$</td>
+          <td>When you have center and radius</td>
       </tr>
   </tbody>
 </table>
@@ -535,154 +668,161 @@
   </tbody>
 </table>
 <h2 id="-special-formulas">🎯 Special Formulas<a hidden class="anchor" aria-hidden="true" href="#-special-formulas">#</a></h2>
+<div class="callout callout-warning"><div class="callout-header"><span class="callout-icon">⚠️</span><span class="callout-title">🎯 Advanced Theorems</span>
+  </div><div class="callout-content">
+    These advanced theorems are <strong>crucial</strong> for AMC 12 and challenging AMC 10 problems!
+  </div>
+</div>
+
 <h3 id="ceva-and-menelaus">Ceva and Menelaus<a hidden class="anchor" aria-hidden="true" href="#ceva-and-menelaus">#</a></h3>
+<div class="formula-highlight">
+<p><strong>Ceva&rsquo;s Theorem:</strong>
+$$\frac{AF}{FB} \cdot \frac{BD}{DC} \cdot \frac{CE}{EA} = 1$$</p>
+<p><strong>Menelaus&rsquo;s Theorem:</strong>
+$$\frac{AF}{FB} \cdot \frac{BD}{DC} \cdot \frac{CE}{EA} = 1$$</p>
+</div>
 <table>
   <thead>
       <tr>
-          <th>Formula</th>
+          <th>Theorem</th>
           <th>Usage</th>
           <th>Example</th>
+          <th>When to Use</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>$\frac{AF}{FB} \cdot \frac{BD}{DC} \cdot \frac{CE}{EA} = 1$</td>
-          <td>Ceva&rsquo;s theorem</td>
+          <td><strong>Ceva&rsquo;s</strong></td>
           <td>Check concurrency of cevians</td>
+          <td>Three cevians meet at a point</td>
+          <td>Proving concurrency</td>
       </tr>
       <tr>
-          <td>$\frac{AF}{FB} \cdot \frac{BD}{DC} \cdot \frac{CE}{EA} = 1$</td>
-          <td>Menelaus&rsquo;s theorem</td>
+          <td><strong>Menelaus&rsquo;s</strong></td>
           <td>Check collinearity of points</td>
+          <td>Three points lie on a line</td>
+          <td>Proving collinearity</td>
       </tr>
   </tbody>
 </table>
 <h3 id="ptolemys-theorem">Ptolemy&rsquo;s Theorem<a hidden class="anchor" aria-hidden="true" href="#ptolemys-theorem">#</a></h3>
+<div class="callout callout-note"><div class="callout-header"><span class="callout-icon">📝</span><span class="callout-title">📐 Cyclic Quadrilaterals</span>
+  </div><div class="callout-content">
+    Ptolemy&rsquo;s theorem is essential for problems involving cyclic quadrilaterals!
+  </div>
+</div>
+
 <table>
   <thead>
       <tr>
           <th>Formula</th>
           <th>Usage</th>
           <th>Example</th>
+          <th>Key Insight</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>$AC \cdot BD = AB \cdot CD + BC \cdot AD$</td>
+          <td><strong>$AC \cdot BD = AB \cdot CD + BC \cdot AD$</strong></td>
           <td>Cyclic quadrilateral</td>
           <td>Sides 3, 4, 5, 6: $AC \cdot BD = 3 \cdot 5 + 4 \cdot 6 = 39$</td>
+          <td>Product of diagonals = sum of products of opposite sides</td>
       </tr>
   </tbody>
 </table>
 <h3 id="angle-bisector-theorem">Angle Bisector Theorem<a hidden class="anchor" aria-hidden="true" href="#angle-bisector-theorem">#</a></h3>
+<div class="formula-highlight">
+<p><strong>Angle Bisector Theorem:</strong>
+$$\frac{BD}{DC} = \frac{AB}{AC}$$</p>
+</div>
 <table>
   <thead>
       <tr>
           <th>Formula</th>
           <th>Usage</th>
           <th>Example</th>
+          <th>Key Insight</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>$\frac{BD}{DC} = \frac{AB}{AC}$</td>
+          <td><strong>$\frac{BD}{DC} = \frac{AB}{AC}$</strong></td>
           <td>Angle bisector</td>
           <td>Sides 6, 8, bisector divides opposite side: $\frac{BD}{DC} = \frac{6}{8} = \frac{3}{4}$</td>
-      </tr>
-  </tbody>
-</table>
-<h3 id="stewarts-theorem">Stewart&rsquo;s Theorem<a hidden class="anchor" aria-hidden="true" href="#stewarts-theorem">#</a></h3>
-<table>
-  <thead>
-      <tr>
-          <th>Formula</th>
-          <th>Usage</th>
-          <th>Example</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>$b^2m + c^2n = a(d^2 + mn)$</td>
-          <td>Cevian length</td>
-          <td>Triangle with sides 5, 6, 7, cevian divides side 5 into 2, 3: $6^2 \cdot 2 + 7^2 \cdot 3 = 5(d^2 + 6)$, so $d^2 = \frac{72 + 147 - 30}{5} = 37.8$</td>
+          <td>Bisector divides opposite side proportionally</td>
       </tr>
   </tbody>
 </table>
 <h3 id="law-of-sines-and-cosines">Law of Sines and Cosines<a hidden class="anchor" aria-hidden="true" href="#law-of-sines-and-cosines">#</a></h3>
+<div class="callout callout-tip"><div class="callout-header"><span class="callout-icon">💡</span><span class="callout-title">🔺 Triangle Laws</span>
+  </div><div class="callout-content">
+    These laws are <strong>essential</strong> for solving triangles with given information!
+  </div>
+</div>
+
 <table>
   <thead>
       <tr>
           <th>Formula</th>
           <th>Usage</th>
           <th>Example</th>
+          <th>When to Use</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>$\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R$</td>
+          <td><strong>$\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R$</strong></td>
           <td>Law of sines</td>
           <td>Triangle with angles 30°, 60°, 90° and side opposite 30° = 3: $a = 3$, $b = 3\sqrt{3}$, $c = 6$</td>
+          <td>When you have angles and sides</td>
       </tr>
       <tr>
-          <td>$a^2 = b^2 + c^2 - 2bc\cos A$</td>
+          <td><strong>$a^2 = b^2 + c^2 - 2bc\cos A$</strong></td>
           <td>Law of cosines</td>
           <td>Sides 3, 4, angle 60°: $a^2 = 9 + 16 - 24 \cdot \frac{1}{2} = 13$, so $a = \sqrt{13}$</td>
-      </tr>
-      <tr>
-          <td>$b^2 = a^2 + c^2 - 2ac\cos B$</td>
-          <td>Law of cosines</td>
-          <td>Find angle when given three sides</td>
-      </tr>
-      <tr>
-          <td>$c^2 = a^2 + b^2 - 2ab\cos C$</td>
-          <td>Law of cosines</td>
-          <td>Check if triangle is acute, right, or obtuse</td>
+          <td>When you have two sides and included angle</td>
       </tr>
   </tbody>
 </table>
 <h3 id="shoelace-area-formula">Shoelace Area Formula<a hidden class="anchor" aria-hidden="true" href="#shoelace-area-formula">#</a></h3>
-<p>$$A = \frac{1}{2}\left|\sum_{i=1}^n x_iy_{i+1} - \sum_{i=1}^n y_ix_{i+1}\right|$$</p>
-<h3 id="half-angle-identities">Half-Angle Identities<a hidden class="anchor" aria-hidden="true" href="#half-angle-identities">#</a></h3>
-<table>
-  <thead>
-      <tr>
-          <th>Formula</th>
-          <th>Usage</th>
-          <th>Example</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>$\sin\frac{A}{2} = \sqrt{\frac{1-\cos A}{2}}$</td>
-          <td>Half-angle sine</td>
-          <td>$\cos 60° = \frac{1}{2}$: $\sin 30° = \sqrt{\frac{1-\frac{1}{2}}{2}} = \frac{1}{2}$</td>
-      </tr>
-      <tr>
-          <td>$\cos\frac{A}{2} = \sqrt{\frac{1+\cos A}{2}}$</td>
-          <td>Half-angle cosine</td>
-          <td>$\cos 60° = \frac{1}{2}$: $\cos 30° = \sqrt{\frac{1+\frac{1}{2}}{2}} = \frac{\sqrt{3}}{2}$</td>
-      </tr>
-      <tr>
-          <td>$\tan\frac{A}{2} = \frac{1-\cos A}{\sin A} = \frac{\sin A}{1+\cos A}$</td>
-          <td>Half-angle tangent</td>
-          <td>$\cos 60° = \frac{1}{2}$, $\sin 60° = \frac{\sqrt{3}}{2}$: $\tan 30° = \frac{1-\frac{1}{2}}{\frac{\sqrt{3}}{2}} = \frac{1}{\sqrt{3}}$</td>
-      </tr>
-  </tbody>
-</table>
+<div class="formula-highlight">
+<p><strong>Shoelace Formula:</strong>
+$$A = \frac{1}{2}\left|\sum_{i=1}^n x_iy_{i+1} - \sum_{i=1}^n y_ix_{i+1}\right|$$</p>
+</div>
+<p><strong>Usage</strong>: Find area of any polygon given coordinates of vertices<br>
+<strong>Example</strong>: Triangle with vertices $(0,0)$, $(3,0)$, $(0,4)$: $A = \frac{1}{2}|0 \cdot 0 + 3 \cdot 4 + 0 \cdot 0 - (0 \cdot 0 + 0 \cdot 0 + 4 \cdot 3)| = 6$</p>
 <h2 id="-quick-reference-tips">💡 Quick Reference Tips<a hidden class="anchor" aria-hidden="true" href="#-quick-reference-tips">#</a></h2>
+<div class="callout callout-info"><div class="callout-header"><span class="callout-icon">ℹ️</span><span class="callout-title">📚 Study Strategy</span>
+  </div><div class="callout-content">
+    Use these tips to maximize your geometry formula mastery and contest performance!
+  </div>
+</div>
+
 <h3 id="memorization-strategy">Memorization Strategy<a hidden class="anchor" aria-hidden="true" href="#memorization-strategy">#</a></h3>
-<ul>
-<li><strong>Group by topic</strong> - Learn related formulas together</li>
-<li><strong>Practice applications</strong> - Work through examples</li>
-<li><strong>Build recognition</strong> - Learn when to use each formula</li>
-</ul>
+<div class="study-tips">
+<ol>
+<li><strong>🎯 Group by topic</strong> — Learn related formulas together for better retention</li>
+<li><strong>💡 Practice applications</strong> — Work through examples to understand when to use each formula</li>
+<li><strong>🔗 Build recognition</strong> — Learn to quickly identify which formula applies to each problem type</li>
+<li><strong>🔄 Review regularly</strong> — Keep formulas fresh in memory with spaced repetition</li>
+</ol>
+</div>
 <h3 id="common-mistakes">Common Mistakes<a hidden class="anchor" aria-hidden="true" href="#common-mistakes">#</a></h3>
-<ul>
-<li><strong>Wrong units</strong> - Make sure units match</li>
-<li><strong>Wrong order</strong> - Check formula order carefully</li>
-<li><strong>Missing factors</strong> - Don&rsquo;t forget $\frac{1}{2}$ or other factors</li>
-</ul>
+<div class="contest-tips">
+<ol>
+<li><strong>⚠️ Wrong units</strong> — Make sure units match (degrees vs radians, etc.)</li>
+<li><strong>📐 Wrong order</strong> — Check formula order carefully, especially in coordinate geometry</li>
+<li><strong>🔢 Missing factors</strong> — Don&rsquo;t forget $\frac{1}{2}$ or other factors in area formulas</li>
+<li><strong>📏 Sign errors</strong> — Be careful with signs in coordinate geometry and transformations</li>
+</ol>
+</div>
 <hr>
+<div class="callout callout-success"><div class="callout-header"><span class="callout-icon">🎉</span><span class="callout-title">🎉 You&#39;re Ready!</span>
+  </div><div class="callout-content">
+    You now have a comprehensive geometry formula reference! Practice regularly and use this as your go-to resource during contests.
+  </div>
+</div>
+
 <p><strong>Next:</strong> <a href="../tips/">Tips Overview →</a> | <strong>Prev:</strong> <a href="_index">Formulas Overview →</a> | <strong>Back to:</strong> <a href="../">Geometry Mastery Guide →</a></p>
 
 
