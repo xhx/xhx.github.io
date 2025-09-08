@@ -169,11 +169,13 @@ $$a_n = a_1 \cdot r^{n-1} \quad \text{and} \quad S_n = a_1 \frac{1-r^n}{1-r}$$
 
 </div>
 
-| Concept | Formula | Micro-Example | When to Use |
-|---------|---------|---------------|-------------|
-| **$n$th term** | $a_n = a_1 \cdot r^{n-1}$ | $a_4 = 2 \cdot 3^3 = 54$ | Finding specific terms |
-| **Sum of first $n$ terms** | $S_n = a_1 \frac{1-r^n}{1-r}$ | $S_5 = 2 \cdot \frac{1-3^5}{1-3} = 242$ | Finite geometric series |
-| **Infinite sum** (if $|r| < 1$) | $S_\infty = \frac{a_1}{1-r}$ | $S_\infty = \frac{3}{1-\frac{1}{2}} = 6$ | Convergent series |
+| Concept | Formula | When to Use |
+|---------|---------|-------------|
+| **$n$th term** | $a_n = a_1 \cdot r^{n-1}$ | Finding specific terms |
+| **Sum of first $n$ terms** | $S_n = a_1 \frac{1-r^n}{1-r}$ | Finite geometric series |
+| **Infinite sum** (if $\|r\| < 1$) | $S_\infty = \frac{a_1}{1-r}$ | Convergent series |
+
+---
 
 ## 🔢 Exponents & Logarithms
 
@@ -213,6 +215,7 @@ Logarithms are the **inverse** of exponentials. Use these rules to simplify log 
 | **Power** | $\log_a(x^y) = y \log_a x$ | $\log_3(9^2) = 2 \log_3 9 = 2 \cdot 2 = 4$ | Exponent becomes coefficient |
 | **Change of base** | $\log_a x = \frac{\log_b x}{\log_b a}$ | $\log_2 8 = \frac{\log_{10} 8}{\log_{10} 2} = \frac{0.903}{0.301} = 3$ | Convert to any base |
 
+---
 ## ⚖️ Inequalities
 
 {{< callout type="warning" title="🎯 AMC 12 Focus" >}}
@@ -253,16 +256,17 @@ $$i^2 = -1 \quad \text{and} \quad |a+bi| = \sqrt{a^2+b^2}$$
 |---------|---------|---------------|-------------|
 | **Imaginary unit** | $i^2 = -1$ | $i^3 = i^2 \cdot i = -i$ | Powers cycle: $i, -1, -i, 1$ |
 | **Complex conjugate** | $\overline{a+bi} = a-bi$ | $\overline{3+4i} = 3-4i$ | Conjugate flips sign of imaginary part |
-| **Modulus** | $|a+bi| = \sqrt{a^2+b^2}$ | $|3+4i| = \sqrt{9+16} = 5$ | Distance from origin |
+| **Modulus** | $\|a+bi\| = \sqrt{a^2+b^2}$ | $\|3+4i\| = \sqrt{9+16} = 5$ | Distance from origin |
 | **Product with conjugate** | $(a+bi)(a-bi) = a^2+b^2$ | $(3+4i)(3-4i) = 9+16 = 25$ | Always gives real number |
 
+<!-- ---
 ## 🎯 Quick Reference Tips
 
 {{< callout type="info" title="📚 Study Strategy" >}}
 Use these tips to maximize your formula mastery and contest performance!
-{{< /callout >}}
+{{< /callout >}} -->
 
-### Memorization Strategy
+<!-- ### Memorization Strategy
 
 <div class="study-tips">
 
@@ -280,7 +284,7 @@ Use these tips to maximize your formula mastery and contest performance!
 1. **⚡ Quick lookup** — Use as reference when stuck, but don't over-rely
 2. **🎯 Pattern matching** — Match problem structure to appropriate formula
 3. **✅ Verification** — Double-check your work using alternative methods
-4. **⏰ Time management** — Don't spend too long on formula lookup
+4. **⏰ Time management** — Don't spend too long on formula lookup -->
 
 </div>
 

@@ -507,7 +507,7 @@ $\displaystyle \frac{a_1 + a_2 + \cdots + a_n}{n} \geq \sqrt[n]{a_1 a_2 \cdots a
 
 **Example**: $\langle 2, 3 \rangle \cdot \langle -1, 4 \rangle = 2(-1) + 3(4) = 10$
 
----
+<!-- ---
 
 ## 📚 Quick Navigation
 
@@ -522,7 +522,7 @@ Explore these related resources to deepen your understanding and practice!
 - **[Geometry Formulas](/notes/math/amc/amc10/geometry/)** — Complete geometry reference
 - **[Strategy Guide](/notes/math/amc/amc10/strategy/)** — Contest strategies and tips
 
-</div>
+</div> -->
 
 ---
 

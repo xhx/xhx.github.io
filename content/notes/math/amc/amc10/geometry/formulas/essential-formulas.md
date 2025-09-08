@@ -265,7 +265,7 @@ $$A = \frac{1}{2}\left|\sum_{i=1}^n x_iy_{i+1} - \sum_{i=1}^n y_ix_{i+1}\right|$
 **Usage**: Find area of any polygon given coordinates of vertices  
 **Example**: Triangle with vertices $(0,0)$, $(3,0)$, $(0,4)$: $A = \frac{1}{2}|0 \cdot 0 + 3 \cdot 4 + 0 \cdot 0 - (0 \cdot 0 + 0 \cdot 0 + 4 \cdot 3)| = 6$
 
-## 💡 Quick Reference Tips
+<!-- ## 💡 Quick Reference Tips
 
 {{< callout type="info" title="📚 Study Strategy" >}}
 Use these tips to maximize your geometry formula mastery and contest performance!
@@ -280,7 +280,7 @@ Use these tips to maximize your geometry formula mastery and contest performance
 3. **🔗 Build recognition** — Learn to quickly identify which formula applies to each problem type
 4. **🔄 Review regularly** — Keep formulas fresh in memory with spaced repetition
 
-</div>
+</div> -->
 
 ### Common Mistakes
 
