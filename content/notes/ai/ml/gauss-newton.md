@@ -205,9 +205,9 @@ The GGN approximation offers several key advantages over the full Hessian for de
 
 | Property              | Full Hessian $H$          | GGN $G$ |
 |-----------------------|-----------------------------|-----------|
-| **Positive semi-definite** | ❌ No (can be indefinite)     | ✅ Yes (stable updates) |
+| **Positive semi-definite** |  No (can be indefinite)     |  Yes (stable updates) |
 | **Computational complexity** | Very high                    | Lower (no second derivatives of network) |
-| **Practical feasibility** | Hard to compute              | ✅ Practical with approximations |
+| **Practical feasibility** | Hard to compute              |  Practical with approximations |
 | **Theoretical foundation** | General but unstable         | Well-founded for many losses |
 
 **Key Benefits:**
@@ -394,7 +394,7 @@ G_t \approx v_t v_t^T
 $$
 Where $v_t$ is typically the current gradient or a random projection.
 
-**Moving Average Update:**
+**Moving Average Update:**  to preserve stability
 $$
 \hat{G}_t = \beta \hat{G}_{t-1} + (1-\beta) v_t v_t^T
 $$
@@ -418,8 +418,8 @@ Here's a comprehensive comparison of the optimization methods we've discussed:
 
 | Method    | Curvature Approximation | Cost | Accuracy | LLM Use Case |
 |-----------|--------------------------|------|----------|--------------|
-| **Adam**     | Diagonal (per-parameter) | Low  | Low      | General training ✅ |
-| **Rank-1**    | Single vector outer product | Low  | Very low | Fine-tuning ✅ |
+| **Adam**     | Diagonal (per-parameter) | Low  | Low      | General training  |
+| **Rank-1**    | Single vector outer product | Low  | Very low | Fine-tuning  |
 | **K-FAC**     | 2D Kronecker factors | Medium | Medium | Fine-tuning, RL |
 | **Shampoo**   | Multi-dim factorization | High | High | Research-scale |
 
