@@ -10,7 +10,7 @@ math: true
 
 # Gauss-Newton Optimization for Deep Neural Networks and LLM Training
 
-This document provides a brief technical overview of modern optimization techniques for large-scale deep learning. It progresses from classical optimization foundations through advanced **second-order methods**, culminating in practical **curvature approximations** that make these techniques feasible for billion-parameter models.
+This document provides a brief technical overview of modern optimization techniques for large-scale deep learning. It starts with classical optimization foundations, moves through advanced **second-order methods**, and ends with practical **curvature approximations** that make these techniques feasible for billion-parameter models.
 
 **What you'll learn:**
 - How classical optimization methods scale (or don't) to modern deep learning
