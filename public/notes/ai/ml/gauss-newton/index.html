@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Gauss-Newton Optimization | Xiaohui Xie&#39;s Site</title>
+<meta name="keywords" content="optimization, machine learning, deep learning, LLM, second-order methods, Gauss-Newton, K-FAC, Shampoo">
+<meta name="description" content="Gauss-Newton and second-order methods for deep learning">
+<meta name="author" content="Xiaohui Xie">
+<link rel="canonical" href="http://localhost:1313/notes/ai/ml/gauss-newton/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/ai/ml/gauss-newton/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+          delimiters:[
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false},
+            {left:'\\(', right:'\\)', display:false},
+            {left:'\\[', right:'\\]', display:true}
+          ],
+          throwOnError:false
+        });"></script>
+
+
+
+
+<link rel="stylesheet" href="/css/callouts.css">
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Xiaohui Xie&#39;s Site (Alt + H)">Xiaohui Xie&#39;s Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/">Notes</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/ai/">AI</a>&nbsp;»&nbsp;<a href="http://localhost:1313/notes/ai/ml/">Machine Learning</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Gauss-Newton Optimization
+    </h1>
+    <div class="post-description">
+      Gauss-Newton and second-order methods for deep learning
+    </div>
+    <div class="post-meta"><span title='2024-12-19 00:00:00 +0000 UTC'>December 19, 2024</span>&nbsp;·&nbsp;12 min&nbsp;·&nbsp;Xiaohui Xie
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="gauss-newton-optimization-for-deep-neural-networks-and-llm-training">Gauss-Newton Optimization for Deep Neural Networks and LLM Training<a hidden class="anchor" aria-hidden="true" href="#gauss-newton-optimization-for-deep-neural-networks-and-llm-training">#</a></h1>
+<p>This document provides a brief technical overview of modern optimization techniques for large-scale deep learning. It progresses from classical optimization foundations through advanced <strong>second-order methods</strong>, culminating in practical <strong>curvature approximations</strong> that make these techniques feasible for billion-parameter models.</p>
+<p><strong>What you&rsquo;ll learn:</strong></p>
+<ul>
+<li>How classical optimization methods scale (or don&rsquo;t) to modern deep learning</li>
+<li>The mathematical foundation of second-order optimization</li>
+<li>Practical approximations like <strong>K-FAC</strong>, <strong>Shampoo</strong>, and <strong>Rank-1 methods</strong></li>
+<li>When and why to use each optimization approach</li>
+</ul>
+<details>
+<summary><strong>📋 Table of Contents</strong></summary>
+<ol>
+<li><a href="#1-classical-optimization-foundations">Classical Optimization Foundations</a>
+<ul>
+<li><a href="#11-problem-setup">Problem Setup</a></li>
+<li><a href="#12-gradient-descent">Gradient Descent</a></li>
+<li><a href="#13-newtons-method">Newton&rsquo;s Method</a></li>
+</ul>
+</li>
+<li><a href="#2-gaussnewton-and-generalized-gaussnewton">Gauss–Newton and Generalized Gauss–Newton</a>
+<ul>
+<li><a href="#21-setup-network-outputs-and-loss">Setup: Network Outputs and Loss</a></li>
+<li><a href="#22-hessian-structure">Hessian Structure</a></li>
+<li><a href="#23-gaussnewton-gn-approximation">Gauss–Newton (GN) Approximation</a></li>
+<li><a href="#24-generalized-gaussnewton-ggn">Generalized Gauss–Newton (GGN)</a></li>
+<li><a href="#25-why-use-ggn">Why Use GGN?</a></li>
+</ul>
+</li>
+<li><a href="#3-practical-challenge-computing-j-and-g">Practical Challenge: Computing J and G</a></li>
+<li><a href="#4-approximating-ggn-in-practice">Approximating GGN in Practice</a>
+<ul>
+<li><a href="#41-gradient-descent-first-order-baseline">Gradient Descent (First-Order Baseline)</a></li>
+<li><a href="#42-adam">Adam</a></li>
+<li><a href="#43-k-fac-kronecker-factored-approximate-curvature">K-FAC: Kronecker-Factored Approximate Curvature</a></li>
+<li><a href="#44-shampoo-optimizer">Shampoo Optimizer</a></li>
+<li><a href="#45-rank-1-curvature-approximation">Rank-1 Curvature Approximation</a></li>
+</ul>
+</li>
+<li><a href="#5-summary-of-ggn-approximations">Summary of GGN Approximations</a></li>
+<li><a href="#6-intuitive-analogy-mountain-navigation">Intuitive Analogy: Mountain Navigation</a></li>
+<li><a href="#7-practical-guidance-for-optimizer-selection">Practical Guidance for Optimizer Selection</a></li>
+<li><a href="#8-key-takeaways">Key Takeaways</a></li>
+</ol>
+</details>
+<hr>
+<h2 id="1-classical-optimization-foundations"><strong>1. Classical Optimization Foundations</strong><a hidden class="anchor" aria-hidden="true" href="#1-classical-optimization-foundations">#</a></h2>
+<h3 id="11-problem-setup"><strong>1.1 Problem Setup</strong><a hidden class="anchor" aria-hidden="true" href="#11-problem-setup">#</a></h3>
+<p>The foundation of all optimization in deep learning is the <strong>empirical risk minimization</strong> problem. We consider the general problem of minimizing an objective function:
+$$
+L(\theta) = \mathbb{E}_{(x,y)\sim \mathcal{D}}[\ell(f(x; \theta), y)]
+$$</p>
+<p><strong>Notation:</strong></p>
+<ul>
+<li>$\theta \in \mathbb{R}^n$: model parameters (weights and biases)</li>
+<li>$f(x; \theta)$: the neural network model that maps inputs to outputs</li>
+<li>$\ell(\cdot, y)$: per-sample loss function (e.g., cross-entropy, MSE)</li>
+<li>$\mathcal{D}$: the data distribution from which we sample training examples</li>
+</ul>
+<p>This formulation captures the essence of supervised learning: we want to find parameters that minimize the expected loss over our data distribution.</p>
+<p>The optimization goal is to find:
+$$
+\theta^* = \arg\min_\theta L(\theta)
+$$</p>
+<hr>
+<h3 id="12-gradient-descent"><strong>1.2 Gradient Descent</strong><a hidden class="anchor" aria-hidden="true" href="#12-gradient-descent">#</a></h3>
+<p><strong>Gradient descent</strong> is the foundational first-order optimization method that powers most of deep learning. The core idea is simple: move in the direction opposite to the gradient to reduce the loss.
+$$
+\theta_{t+1} = \theta_t - \eta \nabla_\theta L(\theta_t)
+$$
+<strong>Parameters:</strong></p>
+<ul>
+<li>$\eta$: learning rate (step size)</li>
+<li>$\nabla_\theta L(\theta)$: gradient of the loss with respect to parameters</li>
+</ul>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li><strong>Computationally efficient</strong>: $O(n)$ cost per iteration</li>
+<li><strong>Memory efficient</strong>: only requires storing gradients</li>
+<li><strong>Scales well</strong>: works for models with millions or billions of parameters</li>
+<li><strong>Simple to implement</strong>: straightforward backpropagation</li>
+</ul>
+<p><strong>Limitations:</strong></p>
+<ul>
+<li><strong>Ignores curvature</strong>: treats all parameter directions equally</li>
+<li><strong>Sensitive to conditioning</strong>: slow convergence when the loss landscape is ill-conditioned</li>
+<li><strong>Requires careful tuning</strong>: learning rate significantly affects convergence</li>
+</ul>
+<hr>
+<h3 id="13-newton"><strong>1.3 Newton&rsquo;s Method</strong><a hidden class="anchor" aria-hidden="true" href="#13-newton">#</a></h3>
+<p>The limitations of gradient descent motivate the use of <strong>second-order methods</strong> that incorporate curvature information. <strong>Newton&rsquo;s method</strong> uses the Hessian matrix to adapt step sizes for each parameter direction.
+$$
+H(\theta) = \nabla^2_\theta L(\theta)
+$$</p>
+<p>The <strong>Newton update</strong>:
+$$
+\theta_{t+1} = \theta_t - H(\theta_t)^{-1} \nabla_\theta L(\theta_t)
+$$</p>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li><strong>Adaptive step sizes</strong>: automatically adjusts learning rate for each parameter direction</li>
+<li><strong>Quadratic convergence</strong>: converges in fewer iterations, especially near optima</li>
+<li><strong>Theoretically optimal</strong>: provides the best local step direction</li>
+</ul>
+<p><strong>Critical Limitations for Deep Learning:</strong></p>
+<ul>
+<li><strong>Computational intractability</strong>:
+<ul>
+<li>Hessian size: $n \times n$ → trillions of entries for LLMs (e.g., 175B parameters)</li>
+<li>Matrix inversion cost: $O(n^3)$ → computationally prohibitive</li>
+</ul>
+</li>
+<li><strong>Memory requirements</strong>: storing the full Hessian requires $O(n^2)$ memory</li>
+<li><strong>Numerical instability</strong>: Hessian may be singular or indefinite</li>
+</ul>
+<p>This motivates the need for <strong>practical approximations</strong> that capture the benefits of second-order information while remaining computationally feasible.</p>
+<hr>
+<h2 id="2-gaussnewton-and-generalized-gaussnewton"><strong>2. Gauss–Newton and Generalized Gauss–Newton</strong><a hidden class="anchor" aria-hidden="true" href="#2-gaussnewton-and-generalized-gaussnewton">#</a></h2>
+<p>The <strong>Gauss–Newton (GN)</strong> method provides a practical alternative to full Newton&rsquo;s method by exploiting the structure of specific loss functions. This approach leads to the <strong>Generalized Gauss–Newton (GGN)</strong> method, which forms the foundation for modern second-order optimization in deep learning.</p>
+<hr>
+<h3 id="21-setup-network-outputs-and-loss"><strong>2.1 Setup: Network Outputs and Loss</strong><a hidden class="anchor" aria-hidden="true" href="#21-setup-network-outputs-and-loss">#</a></h3>
+<p>To understand the Gauss–Newton approach, we need to examine how neural networks process data:</p>
+<p><strong>Key Components:</strong></p>
+<ul>
+<li>$z = f(x; \theta)$: network output (e.g., logits, embeddings)</li>
+<li>$\ell(z, y)$: per-example loss function</li>
+<li>$L(\theta)$: total empirical loss</li>
+</ul>
+<p>The total loss over a batch of $N$ examples:
+$$
+L(\theta) = \frac{1}{N} \sum_{i=1}^N \ell(z_i, y_i)
+$$</p>
+<hr>
+<h3 id="22-hessian-structure"><strong>2.2 Hessian Structure</strong><a hidden class="anchor" aria-hidden="true" href="#22-hessian-structure">#</a></h3>
+<p>The key insight of Gauss–Newton methods comes from analyzing the structure of the Hessian matrix. When we differentiate the loss with respect to parameters, the exact Hessian has a specific decomposition:
+$$
+H = J^T H_\ell J + \sum_{i} \left[\sum_k r_{i,k} \nabla^2_\theta z_{i,k}\right]
+$$</p>
+<p><strong>Term Analysis:</strong></p>
+<ul>
+<li>$J = \frac{\partial z}{\partial \theta}$: <strong>Jacobian matrix</strong> of network outputs with respect to parameters</li>
+<li>$H_\ell = \nabla^2_z \ell(z, y)$: <strong>Hessian of the loss</strong> with respect to network outputs</li>
+<li>$r_i = z_i - y_i$: <strong>residuals</strong> (prediction errors)</li>
+</ul>
+<p><strong>Physical Interpretation:</strong></p>
+<ul>
+<li><strong>First term</strong> ($J^T H_\ell J$): captures how sensitive the loss is to parameter changes through the network outputs</li>
+<li><strong>Second term</strong>: depends on the second derivatives of the network architecture itself</li>
+</ul>
+<p><strong>Key Insight:</strong> The second term is computationally expensive and often noisy for deep networks. The Gauss–Newton approximation <strong>drops this term</strong>, focusing only on the first term which captures the essential curvature information.</p>
+<hr>
+<h3 id="23-gaussnewton-gn-approximation"><strong>2.3 Gauss–Newton (GN) Approximation</strong><a hidden class="anchor" aria-hidden="true" href="#23-gaussnewton-gn-approximation">#</a></h3>
+<p>The classical Gauss–Newton method applies specifically to <strong>least squares regression</strong>. For this loss function:
+$$
+\ell(z, y) = \frac{1}{2}|z - y|^2
+$$
+we have $H_\ell = I$ (the identity matrix).</p>
+<p><strong>Gauss–Newton Approximation:</strong> By dropping the expensive second term, the Hessian simplifies to:
+$$
+G = J^T J
+$$</p>
+<p>This is the <strong>Gauss–Newton matrix</strong> — a positive semi-definite approximation of the full Hessian $H$. This approximation is:</p>
+<ul>
+<li><strong>Always positive semi-definite</strong> (unlike the full Hessian)</li>
+<li><strong>Much cheaper to compute</strong> (no second derivatives of the network)</li>
+<li><strong>Theoretically justified</strong> for least squares problems</li>
+</ul>
+<hr>
+<h3 id="24-generalized-gaussnewton-ggn"><strong>2.4 Generalized Gauss–Newton (GGN)</strong><a hidden class="anchor" aria-hidden="true" href="#24-generalized-gaussnewton-ggn">#</a></h3>
+<p>Most modern deep learning applications use <strong>non-quadratic losses</strong> like cross-entropy, not least squares. The <strong>Generalized Gauss–Newton (GGN)</strong> method extends the classical approach by preserving the loss curvature information:
+$$
+\boxed{G = J^T H_\ell J}
+$$</p>
+<p><strong>Component Roles:</strong></p>
+<ul>
+<li>$J$: encodes <strong>model sensitivity</strong> (how outputs change with parameters)</li>
+<li>$H_\ell$: encodes <strong>loss curvature</strong> (how the loss changes with outputs)</li>
+</ul>
+<p>This decomposition allows us to understand optimization from two perspectives: the network&rsquo;s sensitivity to parameter changes and the loss function&rsquo;s curvature properties.</p>
+<hr>
+<h3 id="25-why-use-ggn"><strong>2.5 Why Use GGN?</strong><a hidden class="anchor" aria-hidden="true" href="#25-why-use-ggn">#</a></h3>
+<p>The GGN approximation offers several key advantages over the full Hessian for deep learning applications:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Property</th>
+          <th>Full Hessian $H$</th>
+          <th>GGN $G$</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Positive semi-definite</strong></td>
+          <td>❌ No (can be indefinite)</td>
+          <td>✅ Yes (stable updates)</td>
+      </tr>
+      <tr>
+          <td><strong>Computational complexity</strong></td>
+          <td>Very high</td>
+          <td>Lower (no second derivatives of network)</td>
+      </tr>
+      <tr>
+          <td><strong>Practical feasibility</strong></td>
+          <td>Hard to compute</td>
+          <td>✅ Practical with approximations</td>
+      </tr>
+      <tr>
+          <td><strong>Theoretical foundation</strong></td>
+          <td>General but unstable</td>
+          <td>Well-founded for many losses</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Key Benefits:</strong></p>
+<ul>
+<li><strong>Numerical stability</strong>: GGN ignores unstable negative curvature that can cause optimization to diverge</li>
+<li><strong>Theoretical connection</strong>: For cross-entropy loss, GGN is equivalent to the <strong>Fisher Information Matrix</strong>, providing a principled foundation</li>
+<li><strong>Practical efficiency</strong>: Avoids computing expensive second derivatives of the network architecture</li>
+</ul>
+<hr>
+<h2 id="3-practical-challenge-computing-j-and-g"><strong>3. Practical Challenge: Computing $J$ and $G$</strong><a hidden class="anchor" aria-hidden="true" href="#3-practical-challenge-computing-j-and-g">#</a></h2>
+<p>While GGN provides a theoretically sound approximation, we face a <strong>massive computational challenge</strong> when applying it to modern deep learning:</p>
+<p><strong>Scale Problem:</strong></p>
+<ul>
+<li>$n = $  # parameters: billions of parameters (e.g., 175B for GPT-3)</li>
+<li>$J$ shape: $(m \times n)$ → impossible to store explicitly</li>
+<li>$G$ shape: $(n \times n)$ → trillions of entries</li>
+</ul>
+<p><strong>Solution:</strong> Use <strong>Jacobian-vector products (JVPs)</strong> instead of materializing full matrices.</p>
+<p><strong>JVP Operations:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Operation</th>
+          <th>Interpretation</th>
+          <th>Efficient Computation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$Jv$</td>
+          <td>Effect of parameter perturbation on outputs</td>
+          <td>Forward-mode autodiff</td>
+      </tr>
+      <tr>
+          <td>$J^T v$</td>
+          <td>Effect of output perturbation on parameters</td>
+          <td>Reverse-mode autodiff (backprop)</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Key Insight:</strong> We never explicitly materialize $J$ or $G$, only products like $Gv = J^T(H_\ell(Jv))$. This allows us to compute GGN-vector products efficiently using standard autodiff tools.</p>
+<hr>
+<h2 id="4-approximating-ggn-in-practice"><strong>4. Approximating GGN in Practice</strong><a hidden class="anchor" aria-hidden="true" href="#4-approximating-ggn-in-practice">#</a></h2>
+<p>Even with efficient JVPs, the GGN matrix $G$ is still too large to store or invert directly. We need <strong>structured approximations</strong> that capture the essential curvature information while remaining computationally tractable.</p>
+<p><strong>Approach:</strong> Instead of computing $G^{-1}$ exactly, we design approximations that can be efficiently applied to gradients.</p>
+<hr>
+<h3 id="41-gradient-descent-first-order-baseline"><strong>4.1 Gradient Descent (First-Order Baseline)</strong><a hidden class="anchor" aria-hidden="true" href="#41-gradient-descent-first-order-baseline">#</a></h3>
+<p>As our baseline, consider standard first-order gradient descent:
+$$
+\Delta \theta = -\eta \nabla_\theta L
+$$</p>
+<p><strong>Characteristics:</strong></p>
+<ul>
+<li><strong>Cost</strong>: $O(n)$ per iteration</li>
+<li><strong>Memory</strong>: $O(n)$ (just gradients)</li>
+<li><strong>Limitation</strong>: Ignores curvature completely, leading to inefficient updates in ill-conditioned optimization landscapes</li>
+</ul>
+<p>This motivates the need for curvature-aware methods that can adapt step sizes based on the local geometry.</p>
+<hr>
+<h3 id="42-adam"><strong>4.2 Adam</strong><a hidden class="anchor" aria-hidden="true" href="#42-adam">#</a></h3>
+<p><strong>Adam</strong> approximates curvature <strong>diagonally</strong> by tracking first and second moments of gradients:</p>
+<p>$$
+\theta_{t+1} = \theta_t - \eta \frac{\hat{m}_t}{\sqrt{\hat{v}_t} + \epsilon}
+$$</p>
+<p>This provides adaptive learning rates per parameter while maintaining $O(n)$ computational cost.</p>
+<hr>
+<h3 id="43-k-fac-kronecker-factored-approximate-curvature"><strong>4.3 K-FAC: Kronecker-Factored Approximate Curvature</strong><a hidden class="anchor" aria-hidden="true" href="#43-k-fac-kronecker-factored-approximate-curvature">#</a></h3>
+<p><strong>K-FAC</strong> (Kronecker-Factored Approximate Curvature) represents a major breakthrough in making second-order optimization practical for deep networks. It provides a structured <strong>layer-wise approximation</strong> to the GGN matrix.</p>
+<p><strong>Setup:</strong> Consider a fully connected layer with forward pass:
+$$
+z = W a + b
+$$
+<strong>Key Components:</strong></p>
+<ul>
+<li>$a$: input activations to the layer</li>
+<li>$\delta = \partial L / \partial z$: backpropagated error signals</li>
+<li>$W$: weight matrix</li>
+</ul>
+<p><strong>Gradient Computation:</strong>
+$$
+\nabla_W L = \delta a^T
+$$</p>
+<p><strong>Vectorized Form:</strong>
+$$
+\mathrm{vec}(\nabla_W L) = a \otimes \delta
+$$</p>
+<p><strong>K-FAC Key Insight:</strong> The GGN matrix for this layer can be approximated as a Kronecker product:
+$$
+G = \mathbb{E}[a a^T] \otimes \mathbb{E}[\delta \delta^T] = A \otimes S
+$$</p>
+<p><strong>Covariance Matrices:</strong></p>
+<ul>
+<li>$A = \mathbb{E}[a a^T]$: <strong>activation covariance</strong> (input statistics)</li>
+<li>$S = \mathbb{E}[\delta \delta^T]$: <strong>gradient covariance</strong> (output error statistics)</li>
+</ul>
+<p>This factorization dramatically reduces the computational complexity while preserving the essential curvature structure.</p>
+<hr>
+<h4 id="k-fac-update-rule"><strong>K-FAC Update Rule</strong><a hidden class="anchor" aria-hidden="true" href="#k-fac-update-rule">#</a></h4>
+<p>Using the Kronecker product property $(A \otimes S)^{-1} = A^{-1} \otimes S^{-1}$, the K-FAC update becomes:</p>
+<p>$$
+\boxed{\Delta W = -\eta S^{-1} (\nabla_W L) A^{-1}}
+$$</p>
+<p><strong>Geometric Interpretation:</strong></p>
+<ul>
+<li><strong>Left multiplication</strong> by $S^{-1}$: whitens the output gradients (normalizes error signal variance)</li>
+<li><strong>Right multiplication</strong> by $A^{-1}$: whitens the input activations (normalizes input signal variance)</li>
+</ul>
+<p><strong>Connection to Natural Gradients:</strong> This update approximates a <strong>natural gradient update</strong> for each layer, which respects the geometry of the parameter space and provides more effective optimization directions.</p>
+<hr>
+<h4 id="computational-complexity-analysis"><strong>Computational Complexity Analysis</strong><a hidden class="anchor" aria-hidden="true" href="#computational-complexity-analysis">#</a></h4>
+<p>The power of K-FAC lies in its dramatic complexity reduction:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Method</th>
+          <th>Memory per Layer</th>
+          <th>Update Cost</th>
+          <th>Curvature Quality</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Full GGN</strong></td>
+          <td>$O((d_{in} d_{out})^2)$</td>
+          <td>$O((d_{in} d_{out})^3)$</td>
+          <td>Exact</td>
+      </tr>
+      <tr>
+          <td><strong>Adam</strong></td>
+          <td>$O(d_{in} d_{out})$</td>
+          <td>$O(d_{in} d_{out})$</td>
+          <td>Diagonal only</td>
+      </tr>
+      <tr>
+          <td><strong>K-FAC</strong></td>
+          <td>$O(d_{in}^2 + d_{out}^2)$</td>
+          <td>$O(d_{in}^3 + d_{out}^3)$</td>
+          <td>Block-structured</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Key Benefits:</strong></p>
+<ul>
+<li><strong>Orders of magnitude cheaper</strong> than full GGN while maintaining rich curvature structure</li>
+<li><strong>Much richer than Adam</strong> by capturing cross-parameter interactions within each layer</li>
+<li><strong>Practical for large models</strong> where full GGN is computationally prohibitive</li>
+</ul>
+<hr>
+<h3 id="44-shampoo-optimizer"><strong>4.4 Shampoo Optimizer</strong><a hidden class="anchor" aria-hidden="true" href="#44-shampoo-optimizer">#</a></h3>
+<p><strong>Shampoo</strong> represents the next evolution beyond K-FAC, generalizing the Kronecker factorization to <strong>multi-dimensional tensors</strong>. While K-FAC factors the curvature into just two dimensions (input and output), Shampoo can handle arbitrary tensor shapes.</p>
+<p><strong>Setup:</strong> For a weight tensor $W$ with shape $(d_1, d_2, &hellip;, d_k)$, Shampoo maintains one factor per dimension:
+$$
+G \approx G_1 \otimes G_2 \otimes \dots \otimes G_k
+$$</p>
+<hr>
+<h4 id="shampoo-update-algorithm"><strong>Shampoo Update Algorithm</strong><a hidden class="anchor" aria-hidden="true" href="#shampoo-update-algorithm">#</a></h4>
+<p>The Shampoo update follows a systematic procedure:</p>
+<ol>
+<li><strong>Estimate per-dimension covariances</strong>: Compute $G_i$ for each tensor dimension</li>
+<li><strong>Apply damping</strong>: $\tilde{G}_i = G_i + \lambda I$ (regularization for numerical stability)</li>
+<li><strong>Compute inverse square roots</strong>: $\tilde{G}_i^{-1/2}$ (efficient matrix operations)</li>
+<li><strong>Apply preconditioning</strong>:
+$$
+\Delta W = -\eta \left(\bigotimes_{i=1}^k \tilde{G}_i^{-1/2}\right) \nabla_W L
+$$</li>
+</ol>
+<p><strong>Key Insight:</strong> The Kronecker product of inverse square roots provides an efficient way to apply the full preconditioning without materializing the complete matrix.</p>
+<hr>
+<h4 id="shampoo-vs-k-fac-trade-offs"><strong>Shampoo vs K-FAC Trade-offs</strong><a hidden class="anchor" aria-hidden="true" href="#shampoo-vs-k-fac-trade-offs">#</a></h4>
+<table>
+  <thead>
+      <tr>
+          <th>Feature</th>
+          <th>K-FAC</th>
+          <th>Shampoo</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Dimensions modeled</strong></td>
+          <td>2 (input/output)</td>
+          <td>All tensor dimensions</td>
+      </tr>
+      <tr>
+          <td><strong>Curvature fidelity</strong></td>
+          <td>Moderate</td>
+          <td>High</td>
+      </tr>
+      <tr>
+          <td><strong>Memory cost</strong></td>
+          <td>Lower</td>
+          <td>Higher</td>
+      </tr>
+      <tr>
+          <td><strong>Computational cost</strong></td>
+          <td>Lower</td>
+          <td>Higher</td>
+      </tr>
+      <tr>
+          <td><strong>Applicability</strong></td>
+          <td>FC layers</td>
+          <td>All tensor operations</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Production Usage:</strong> Shampoo is used at Google for training very large models (e.g., PaLM), where higher fidelity curvature information helps reduce total training steps and improve final performance.</p>
+<hr>
+<h3 id="45-rank-1-curvature-approximation"><strong>4.5 Rank-1 Curvature Approximation</strong><a hidden class="anchor" aria-hidden="true" href="#45-rank-1-curvature-approximation">#</a></h3>
+<p>For <strong>extremely large models</strong> (e.g., &gt;1T parameters), even K-FAC or Shampoo may be computationally prohibitive. <strong>Rank-1 methods</strong> provide an ultra-lightweight alternative.</p>
+<p><strong>Core Idea:</strong> Approximate the full curvature matrix with a single outer product:
+$$
+G_t \approx v_t v_t^T
+$$
+Where $v_t$ is typically the current gradient or a random projection.</p>
+<p><strong>Moving Average Update:</strong>
+$$
+\hat{G}<em>t = \beta \hat{G}</em>{t-1} + (1-\beta) v_t v_t^T
+$$</p>
+<p><strong>Characteristics:</strong></p>
+<ul>
+<li><strong>Memory cost</strong>: $O(n)$ (same as Adam)</li>
+<li><strong>Compute cost</strong>: $O(n)$ (extremely cheap)</li>
+<li><strong>Scalability</strong>: Works for models of any size</li>
+<li><strong>Curvature quality</strong>: Extremely coarse approximation</li>
+</ul>
+<p><strong>Use Cases:</strong> Primarily used in <strong>fine-tuning scenarios</strong> where computational efficiency is paramount, such as:</p>
+<ul>
+<li><strong>LoRA adapter training</strong></li>
+<li><strong>Parameter-efficient fine-tuning</strong></li>
+<li><strong>Resource-constrained environments</strong></li>
+</ul>
+<hr>
+<h2 id="5-summary-of-ggn-approximations"><strong>5. Summary of GGN Approximations</strong><a hidden class="anchor" aria-hidden="true" href="#5-summary-of-ggn-approximations">#</a></h2>
+<p>Here&rsquo;s a comprehensive comparison of the optimization methods we&rsquo;ve discussed:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Method</th>
+          <th>Curvature Approximation</th>
+          <th>Cost</th>
+          <th>Accuracy</th>
+          <th>LLM Use Case</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Adam</strong></td>
+          <td>Diagonal (per-parameter)</td>
+          <td>Low</td>
+          <td>Low</td>
+          <td>General training ✅</td>
+      </tr>
+      <tr>
+          <td><strong>Rank-1</strong></td>
+          <td>Single vector outer product</td>
+          <td>Low</td>
+          <td>Very low</td>
+          <td>Fine-tuning ✅</td>
+      </tr>
+      <tr>
+          <td><strong>K-FAC</strong></td>
+          <td>2D Kronecker factors</td>
+          <td>Medium</td>
+          <td>Medium</td>
+          <td>Fine-tuning, RL</td>
+      </tr>
+      <tr>
+          <td><strong>Shampoo</strong></td>
+          <td>Multi-dim factorization</td>
+          <td>High</td>
+          <td>High</td>
+          <td>Research-scale</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="6-intuitive-analogy-mountain-navigation"><strong>6. Intuitive Analogy: Mountain Navigation</strong><a hidden class="anchor" aria-hidden="true" href="#6-intuitive-analogy-mountain-navigation">#</a></h2>
+<p>Imagine you&rsquo;re navigating through a complex mountain landscape to reach the lowest valley (optimal solution):</p>
+<table>
+  <thead>
+      <tr>
+          <th>Optimizer</th>
+          <th>Navigation Tool</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>AdamW</strong></td>
+          <td><strong>Compass only</strong></td>
+          <td>Knows direction but ignores terrain steepness and obstacles</td>
+      </tr>
+      <tr>
+          <td><strong>Rank-1</strong></td>
+          <td><strong>Single slope measurement</strong></td>
+          <td>Minimal terrain info, very cheap to use</td>
+      </tr>
+      <tr>
+          <td><strong>K-FAC</strong></td>
+          <td><strong>2D topographic map per region</strong></td>
+          <td>Detailed local maps, simplified but highly useful</td>
+      </tr>
+      <tr>
+          <td><strong>Shampoo</strong></td>
+          <td><strong>Full 3D topographic map</strong></td>
+          <td>Complete terrain information, computationally expensive</td>
+      </tr>
+      <tr>
+          <td><strong>Full Newton</strong></td>
+          <td><strong>GPS with full terrain data</strong></td>
+          <td>Perfect information but impossible to compute in real-time</td>
+      </tr>
+  </tbody>
+</table>
+<p>This analogy helps understand the <strong>curvature fidelity vs. computational cost</strong> trade-off inherent in optimization method selection.</p>
+<hr>
+<h2 id="7-practical-guidance-for-optimizer-selection"><strong>7. Practical Guidance for Optimizer Selection</strong><a hidden class="anchor" aria-hidden="true" href="#7-practical-guidance-for-optimizer-selection">#</a></h2>
+<p>When choosing an optimization method for your specific use case, consider the following recommendations:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Scenario</th>
+          <th>Recommended Optimizer</th>
+          <th>Rationale</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>General training</strong></td>
+          <td>Adam</td>
+          <td>Proven stability, computational efficiency, widely used</td>
+      </tr>
+      <tr>
+          <td><strong>Fine-tuning adapters (LoRA)</strong></td>
+          <td>Rank-1 or Adam</td>
+          <td>Ultra-efficient for parameter-efficient methods</td>
+      </tr>
+      <tr>
+          <td><strong>Reinforcement learning</strong></td>
+          <td>K-FAC</td>
+          <td>Natural gradients help with policy optimization</td>
+      </tr>
+      <tr>
+          <td><strong>Advanced research</strong></td>
+          <td>Shampoo or hybrid approaches</td>
+          <td>Maximum curvature fidelity for cutting-edge work</td>
+      </tr>
+      <tr>
+          <td><strong>Resource-constrained</strong></td>
+          <td>Adam or Rank-1</td>
+          <td>Prioritize computational efficiency</td>
+      </tr>
+      <tr>
+          <td><strong>Convergence-critical</strong></td>
+          <td>Shampoo or K-FAC</td>
+          <td>Higher curvature fidelity for difficult optimization landscapes</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="8-key-takeaways"><strong>8. Key Takeaways</strong><a hidden class="anchor" aria-hidden="true" href="#8-key-takeaways">#</a></h2>
+<ol>
+<li>
+<p><strong>The GGN Framework</strong>: The Generalized Gauss–Newton method provides a stable, positive semi-definite curvature approximation that&rsquo;s theoretically sound and practically feasible for deep networks.</p>
+</li>
+<li>
+<p><strong>Adam&rsquo;s Role</strong>: Adam remains widely used due to its proven stability, computational efficiency, and robust performance across diverse architectures.</p>
+</li>
+<li>
+<p><strong>K-FAC Innovation</strong>: By factoring curvature into input and output covariances, K-FAC achieves near-natural gradient updates at dramatically reduced computational cost, making second-order methods practical for deep learning.</p>
+</li>
+<li>
+<p><strong>Shampoo Advancement</strong>: Shampoo generalizes K-FAC to handle arbitrary tensor dimensions, providing higher curvature fidelity at increased computational cost, suitable for research-scale applications.</p>
+</li>
+<li>
+<p><strong>Rank-1 Efficiency</strong>: For extremely large models, rank-1 methods provide ultra-cheap curvature approximations that maintain some second-order benefits while scaling to trillion-parameter models.</p>
+</li>
+<li>
+<p><strong>Fundamental Trade-off</strong>: The choice of optimization method fundamentally depends on balancing <strong>curvature fidelity</strong> against <strong>computational scalability</strong>, with no single method optimal for all scenarios.</p>
+</li>
+</ol>
+<p><strong>The Future</strong>: As models continue to grow in size and complexity, the development of efficient second-order methods will become increasingly critical for achieving optimal training performance.</p>
+<hr>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/optimization/">Optimization</a></li>
+      <li><a href="http://localhost:1313/tags/machine-learning/">Machine Learning</a></li>
+      <li><a href="http://localhost:1313/tags/deep-learning/">Deep Learning</a></li>
+      <li><a href="http://localhost:1313/tags/llm/">LLM</a></li>
+      <li><a href="http://localhost:1313/tags/second-order-methods/">Second-Order Methods</a></li>
+      <li><a href="http://localhost:1313/tags/gauss-newton/">Gauss-Newton</a></li>
+      <li><a href="http://localhost:1313/tags/k-fac/">K-FAC</a></li>
+      <li><a href="http://localhost:1313/tags/shampoo/">Shampoo</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Xiaohui Xie&#39;s Site</a></span> · 
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

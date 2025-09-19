@@ -144,6 +144,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Gauss-Newton Optimization
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Gauss-Newton Optimization for Deep Neural Networks and LLM Training This document provides a brief technical overview of modern optimization techniques for large-scale deep learning. It progresses from classical optimization foundations through advanced second-order methods, culminating in practical curvature approximations that make these techniques feasible for billion-parameter models.
+What you’ll learn:
+How classical optimization methods scale (or don’t) to modern deep learning The mathematical foundation of second-order optimization Practical approximations like K-FAC, Shampoo, and Rank-1 methods When and why to use each optimization approach 📋 Table of Contents Classical Optimization Foundations Problem Setup Gradient Descent Newton’s Method Gauss–Newton and Generalized Gauss–Newton Setup: Network Outputs and Loss Hessian Structure Gauss–Newton (GN) Approximation Generalized Gauss–Newton (GGN) Why Use GGN? Practical Challenge: Computing J and G Approximating GGN in Practice Gradient Descent (First-Order Baseline) Adam K-FAC: Kronecker-Factored Approximate Curvature Shampoo Optimizer Rank-1 Curvature Approximation Summary of GGN Approximations Intuitive Analogy: Mountain Navigation Practical Guidance for Optimizer Selection Key Takeaways 1. Classical Optimization Foundations 1.1 Problem Setup The foundation of all optimization in deep learning is the empirical risk minimization problem. We consider the general problem of minimizing an objective function: $$ L(\theta) = \mathbb{E}_{(x,y)\sim \mathcal{D}}[\ell(f(x; \theta), y)] $$
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-19 00:00:00 +0000 UTC'>December 19, 2024</span>&nbsp;·&nbsp;12 min&nbsp;·&nbsp;Xiaohui Xie</footer>
+  <a class="entry-link" aria-label="post link to Gauss-Newton Optimization" href="http://localhost:1313/notes/ai/ml/gauss-newton/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LSH Attention: Multiple Hyperplanes and Bucketing
     </h2>
   </header>

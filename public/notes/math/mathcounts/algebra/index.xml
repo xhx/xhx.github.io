@@ -8,6 +8,13 @@
     <language>en-us</language>
     <atom:link href="http://localhost:1313/notes/math/mathcounts/algebra/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Advanced Optimization for Deep Neural Networks and LLM Training</title>
+      <link>http://localhost:1313/notes/ai/ml/gauss-newton/</link>
+      <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/ai/ml/gauss-newton/</guid>
+      <description>A comprehensive guide to modern optimization techniques for large-scale deep learning, covering classical foundations through advanced second-order methods and practical curvature approximations.</description>
+    </item>
+    <item>
       <title>LSH Attention: Multiple Hyperplanes and Bucketing</title>
       <link>http://localhost:1313/notes/ai/ml/lsh-attention/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
